@@ -1,0 +1,257 @@
+/********************************************************************************************************************************************************************************
+********************* S E C T I O N   T O L K I E N *****************
+/********************************************************************************************************************************************************************************/
+
+.tolkien_section {
+	abbr {
+		border: 0;
+	}
+}
+#tolkien_side, #tolkien_thoughts {
+	padding: 2rem;
+}
+#tolkien_news {
+	padding-top: 2rem;
+	h2 {
+		color: $base-color-elbakin;
+	}
+}
+#tolkien_side {
+	h2 {
+		color: $base-color-elbakin;
+	}	
+}
+#all_new_chronique {
+	.desc_item {
+		font-style: normal !important;
+		margin: 1em 0;
+	}
+}
+.article_focus {
+	background: white;
+	padding: 1em;
+	@include border-radius(5px);
+	.inner_content {
+		text-align: justify;
+		a {
+			display: block;
+			overflow: hidden;
+			p {
+				display: block;
+				font-family: $font-stack-headings;
+				@include rem(2.2);
+				text-transform: uppercase;
+				position: relative;
+				background: white;
+				text-align: left;
+				&:before {
+					@include rotate(-3deg);
+					background: inherit;
+					content: '';
+					display: block;
+					height: 35px;
+					left: -20px;
+					position: absolute;
+					top: -20px;
+					width: 115%;
+				}
+				span {
+					position: relative;
+					top: -.5rem;
+				}
+			}
+		}
+	}
+}
+
+/* ============== L E G E N D A I R E
+========================================================== */
+
+#tolkien_thoughts {
+	h2 {
+		color: $base-color-elbakin;
+		margin: .5em 0 1em 0;
+		padding: 0;
+	}
+	.basic_list {
+		margin-top: 1em;
+	}
+}
+
+/* ============== N E W S
+========================================================== */
+
+#last_news {
+	@extend %clearfix;
+}
+.other_news {
+	list-style: none none;
+	margin: 0;
+	padding: 0;
+	li {
+		margin-bottom: 2em;
+		&:nth-child(4n+1) {
+			clear: left;
+		}
+		a {
+			background: white;
+			border: 1px solid #ccc;
+			display: block;
+			overflow: hidden;
+			&:hover, &:focus {
+				text-decoration: none;
+				p {
+					background: $orange-color-elbakin;
+					color: white;
+				}
+			}
+			img {
+				width: 100%;
+				height: auto;
+			}
+			p {
+				display: block;
+				font-family: $font-stack-headings;
+				padding: 0 .5rem;
+				position: relative;
+				background: white;
+				&:before {
+					@include rotate(-3deg);
+					background: inherit;
+					content: '';
+					display: block;
+					height: 35px;
+					left: -20px;
+					position: absolute;
+					top: -20px;
+					width: 115%;
+				}
+				span {
+					position: relative;
+					top: -.5rem;
+				}
+			}
+		}
+	}
+}
+
+/* ============== Q U I Z
+========================================================== */
+
+#quiz {
+	.btn {
+		margin-top: 1em;
+	}
+}
+
+/* ============== C O R R E C T I O N S
+========================================================== */
+
+#corrections {
+	.btn {
+		margin-top: 1em;
+	}
+}
+
+/* ============== P E T E R  J A C K S O N
+========================================================== */
+
+#tolkien_by_pj {
+	ul {
+		@extend %clearfix;
+		list-style: none none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		li {
+			a {
+				display: block;
+			}
+			img {
+				width: 100%;
+				height: 150px;
+			}
+		}
+	}
+}
+
+/* ============== R E S P O N S I V E
+========================================================== */
+
+@media (max-width: $medium-screen) {
+	#all_new_chronique {
+		.row_tab_all {
+			height: 270px;
+		}
+		.critiques {
+			li:nth-child(-n+6) {
+				display: block;
+				img {
+					height: 240px;
+				}
+			}
+			li {
+				display: none;
+			}
+		}
+	}
+}
+@media (min-width: $small-screen) and (max-width: $medium-screen) {
+	#all_new_chronique {
+		#chroniques {
+			.row_tab_all {
+				height: 310px;
+			}
+			.critiques {
+				li:nth-child(-n+4) {
+					display: block;
+					img {
+						height: 290px;
+					}
+				}
+				li {
+					display: none;
+				}
+			}
+		}
+	}
+}
+@media (min-width: $tiny-screen) and (max-width: $small-screen) {
+
+}
+@media (max-width: $tiny-screen) {
+	.tabs {
+		@include rem(1.3);
+	}
+	.desc_crit {
+		.h2_like, .type_item, .desc_item {
+			display: none;
+		}
+	}
+	#all_new_chronique {
+		#chroniques {
+			.row_tab_all {
+				height: 350px !important;
+			}
+			.all_chronicles {
+				display: block;
+				float: none;
+				margin: 0 auto 1em auto;
+				text-align: center;
+				width: 200px;
+			}
+			.critiques {
+				li:nth-child(-n+6) {
+					display: block !important;
+					margin-bottom: 1em;
+					img {
+						height: 160px;
+					}
+				}
+				li {
+					display: none !important;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+// font sizes
+$base-font-size	: 14px; // if "14px" then 1em = 14px
+$line-height	: 1.5; // equiv line-height 1.5
+$al-size    : 5rem; // equiv "32px"
+$h1-size	: 3.5rem; // equiv "32px"
+$h2-size	: 2.5rem; // equiv "28px"
+$h3-size	: 1.8rem; // equiv "24px"
+$h4-size	: 1.8rem; // equiv "20px"
+$h5-size	: 1.8rem; // equiv "18px"
+$h6-size	: 1.6rem; // equiv "16px"
+
+// sizes
+$row		: 91.429em; // equiv "1280px"
+
+// font stacks
+$font-stack-common		: 'Roboto', Helvetica, Arial, sans-serif; // common font
+$font-stack-condensed	: 'Roboto Condensed', 'Arial Narrow', sans-serif; // common font
+$font-stack-special		: 'Alegreya', Georgia, serif; // special font
+$font-stack-headings	: 'Montserrat', 'Roboto Condensed', 'Arial Narrow', sans-serif; // headings font
+$font-stack-caps		: 'Alegreya SC', Georgia, serif; // ornemental font
+$font-stack-simili		: 'Roboto Slab', serif; // title font
+$font-stack-monospace	: Consolas, 'DejaVu Sans Mono', Courier, monospace; // monospace font
+$font-stack-universal	: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif; // universal stack
+
+// font colors
+$base-color	: #272727; // text color on body and content
+$primary-color	: #000; // text color on primary elements
+$secondary-color	: #000; // text color on secondary elements
+$headings-color	: #000; // text color on headings
+$base-color-link	: #333; // base links color
+$base-color-link-hover	: #000; // base hovered/focused links color
+$base-color-elbakin	: #BE2700; // the famous red color
+$orange-color-elbakin	: #FE9E00; // the famous orange elbakin color
+
+// backgrounds
+$base-background	: #fff; // body background color
+$news-background	: #fff; // body background color
+$primary-background	: #fff; // primary elements background color
+$secondary-background	: #fff; // secondary elements background color
+$navigation-background: #141A1A; // main navigation background color
+
+// rotation degree ex: 0.5deg
+$rotate : 0deg;
+
+// breakpoints
+$tiny-screen	: 480px; // tiny screens media query (less than 480px)
+$small-screen	: 768px; // screens between 481px and 768px
+$medium-screen	: 1024px; // screens between 769px and 1024px
+$large-screen	: 1280px; // screens between 1025px and 1280px
+$extra-large-screen	: 1600px; // screens between 1281px and 1600px
+$ultra-large-screen	: 1920px; // ultra large screens

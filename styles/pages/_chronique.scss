@@ -1,0 +1,463 @@
+/********************************************************************************************************************************************************************************
+********************* C H R O N I Q U E *****************
+/********************************************************************************************************************************************************************************/
+
+#la_chronique {
+	margin-top: 3em;
+	.none {
+		display: none;
+	}
+	.preview {
+		margin-bottom: 1em;
+		img {
+			width: 100%;
+			height: auto;
+		}
+		h2 {
+			color: $orange-color-elbakin;
+			font-size: $h3-size;
+			text-transform: uppercase;
+			margin: 1em 0 .5em 0;
+			padding: 0;
+		}
+	}
+}
+.clickable {
+	cursor: pointer;
+}
+
+/* ================ P R E S E N T A T I O N
+===================================================== */
+
+.details {
+	p {
+		margin: 0;
+	}
+	.author {
+		font-family: $font-stack-special;
+		font-weight: bold;
+		@include rem(2);
+		color: #666;
+		text-transform: uppercase;
+		a {color: #666;}
+	}
+	.isbn {
+		color: #666;
+	}
+	.book-title {
+		color: $base-color-elbakin;
+		@include rem(6);
+		line-height: 1;
+		margin: 0;
+		text-transform: uppercase;
+	}
+}
+.meta {
+	margin-top: 2em;
+	strong {
+		text-transform: uppercase;
+	}
+	ul {
+		list-style: none none;
+		margin: 0;
+		padding: 0;
+	}
+}
+.extract {
+	margin: 1.5em 0 4em 0;
+	p {
+		@include rem(1.6);
+		margin-bottom: 1em;
+	}
+}
+.awards {
+	background: white;
+	border: 1px solid #ccc;
+	margin-top: 1.5em;
+	padding: 1rem 1rem 1rem 10rem;
+	position: relative;
+	li:last-child {
+		border: 0;
+	}
+	h2 {
+		color: $orange-color-elbakin;
+		text-transform: uppercase;
+		@include rem(1.6);
+		margin: 0;
+		padding: 0;
+	}
+	&:before {
+		@include rem(8);
+		color: $orange-color-elbakin;
+		content: "\e611";
+		display: block;
+		font-family: 'icomoon', sans-serif;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		line-height: 1;
+		speak: none;
+		text-transform: none;
+		position: absolute;
+		left: 1rem;
+		top: 1rem;
+		/* Better Font Rendering =========== */
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+	}
+}
+
+/* ================ C R I T I Q U E
+===================================================== */
+
+.body-chronique {
+	background: #efefef;
+	border: 1px solid #ccc;
+	margin: 2rem 0 1em;
+	position: relative;
+	.rating {
+		@include rotate(45deg);
+		background-color: white;
+		border: 1px solid #ccc;
+		height: 10rem;
+		left: 45%;
+		overflow: hidden;
+		position: absolute;
+		top: -5rem;
+		width: 10rem;
+		span {
+			@include rotate(-45deg);
+			font-family: $font-stack-headings;
+			line-height: 1;
+			position: absolute;
+			color: #ccc;
+		}
+		.bg {
+			@include blur(1px);
+			background-position: center center;
+			background-repeat: no-repeat;
+			height: 140%;
+			left: -20%;
+			top: -20%;
+			width: 140%;
+		}
+		.note {
+			@include rem(6);
+			color: $base-color-elbakin;
+			display: block;
+			font-weight: 900;
+			left: 15%;
+			top: 20%;
+		}
+		.sur {
+			@include rem(3);
+			left: 55%;
+			top: 30%;
+		}
+		.end_note {
+			@include rem(2);
+			left: 70%;
+			top: 25%;
+		}
+	}
+	.reviewed_by {
+		@include rem(2);
+		color: #666;
+		font-family: $font-stack-special;
+		margin: 8rem 0 1em 0;
+		text-align: center;
+	}
+	.review {
+		p {
+			@include rem(1.6);
+			margin: 0 0 1em 0;
+			text-align: justify;
+		}
+		a {
+			color: $base-color-elbakin;
+		}
+	}
+	.dropcaps {
+		font-family: "Palatino Linotype", Palatino, $font-stack-simili;
+		display: block;
+		font-style: normal;
+		font-size: 6.6em;
+		float: left;
+		margin: .08em .07em 0 0;
+		line-height: .67em;
+		color: black;
+	}
+}
+
+/* ================ D I S C O V E R
+===================================================== */
+
+#discover {
+	h2 {
+		text-transform: uppercase;
+	}
+}
+
+/* ================ R E S P O N S I V E
+===================================================== */
+
+@media (max-width: $medium-screen) {
+	.details {
+		.book-title {
+			@include rem(4);
+		}
+	}
+}
+@media (max-width: $small-screen) {
+	.details {
+		.book-title {
+			@include rem(2);
+		}
+	}
+}
+
+
+/********************************************************************************************************************************************************************************
+********************* B I B L I O T H E Q U E *****************
+/********************************************************************************************************************************************************************************/
+
+#classement, #most {
+	padding: 2rem 0;
+	h2 {
+		color: $base-color-elbakin;
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
+	}
+}
+.classement {
+	h3 {
+		text-transform: uppercase;
+		margin: .5em 0;
+		padding: 0;
+		font-weight: 400;
+	}
+	.basic_list {
+		@include column-count(2);
+	}
+}
+.follow_link {
+	float: right;
+	.icon {
+		position: relative;
+		top: 2px;
+	}
+}
+
+/* ================ H E A D E R
+===================================================== */
+
+#form_all {
+	margin: 1em 0 0;
+	label {
+		@include rem(2);
+		color: white;
+		display: block;
+		font-family: $font-stack-simili;
+		font-weight: bold;
+		padding: 0 0 1em 0;
+		text-transform: uppercase;
+	}
+	[type="text"] {
+		@include rem(1.6);
+		display: inline-block;
+		padding: .55em;
+		width: 84%;
+		margin: 0;
+	}
+}
+#destiny {
+	margin: 1em 0 0;
+	h2 {
+		@include rem(2);
+		color: white;
+		display: block;
+		font-family: $font-stack-simili;
+		font-weight: bold;
+		margin: 0;
+		padding: 0 0 1em 0;
+		text-transform: uppercase;
+	}
+}
+
+/* ================ L I S T S
+===================================================== */
+
+#les_listes {
+	@extend %clearfix;
+	h2 {
+		margin: 0 0 .5em 0;
+	}
+	.row {
+		@extend %clearfix;
+		list-style: none none;
+		padding: 0;
+		h3 {
+			margin: 0;
+			padding: 0;
+			text-transform: uppercase;
+			font-weight: 400;
+		}
+		article {
+			margin-bottom: 2em;
+			a {
+				background: white;
+				border: 1px solid #ccc;
+				display: block;
+				overflow: hidden;
+				&:hover, &:focus {
+					text-decoration: none;
+					p {
+						background: $orange-color-elbakin;
+						color: white;
+					}
+				}
+				img {
+					width: 100%;
+					height: auto;
+				}
+				p {
+					background: white;
+					display: block;
+					font-family: $font-stack-headings;
+					padding: 0 .5rem;
+					position: relative;
+					text-transform: uppercase;
+					&:before {
+						@include rotate(-3deg);
+						background: inherit;
+						content: '';
+						display: block;
+						height: 35px;
+						left: -20px;
+						position: absolute;
+						top: -20px;
+						width: 115%;
+					}
+					span {
+						position: relative;
+						top: -.5rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* ================ M O S T   V I S I T E D
+===================================================== */
+
+.article_focus {
+	@extend %clearfix;
+	h2 {
+		margin-bottom: .5em !important;
+	}
+	.inner_content {
+		@extend %clearfix;
+		@include border-radius(5px);
+		background: white;
+		padding: 1em;
+		text-align: justify;
+		em {
+			color: #666;
+			font-family: $font-stack-special;
+		}
+		a {
+			display: block;
+			overflow: hidden;
+			p {
+				display: block;
+				font-family: $font-stack-headings;
+				@include rem(2.2);
+				text-transform: uppercase;
+				position: relative;
+				background: white;
+				text-align: left;
+				&:before {
+					@include rotate(-3deg);
+					background: inherit;
+					content: '';
+					display: block;
+					height: 35px;
+					left: -20px;
+					position: absolute;
+					top: -20px;
+					width: 115%;
+				}
+				span {
+					position: relative;
+					top: -.5rem;
+				}
+			}
+		}
+		.follow_link {
+			margin-top: 1rem;
+		}
+	}
+}
+
+/* ================ L A S T  5 0
+===================================================== */
+
+#last_50 {
+	padding: 2rem 0;
+	.simili-title {
+		padding-bottom: 1rem;
+	}
+	article {
+		@include border-radius(5px);
+		background: white;
+		margin-bottom: 2em;
+		img {
+			height: auto;
+			width: 100%;
+		}
+		.entry-header {
+			display: block;
+			overflow: hidden;
+			padding: 1rem 1rem 0 1rem;
+			p {
+				display: block;
+				font-family: $font-stack-headings;
+				@include rem(1.6);
+				text-transform: uppercase;
+				position: relative;
+				background: white;
+				text-align: left;
+				&:before {
+					@include rotate(-3deg);
+					background: inherit;
+					content: '';
+					display: block;
+					height: 35px;
+					left: -20px;
+					position: absolute;
+					top: -20px;
+					width: 115%;
+				}
+				span {
+					position: relative;
+					top: -.5rem;
+				}
+			}
+		}
+		.genre {
+			color: #666;
+			font-family: $font-stack-special;
+			font-style: italic;
+			padding: 0 1rem;
+		}
+		.entry-meta {
+			border-top: 1px solid #ccc;
+			color: #666;
+			margin-top: 1rem;
+			padding: 1rem;
+			text-align: right;
+		}
+	}
+}

@@ -1,0 +1,133 @@
+/* ============== B L O C   C H R O N I Q U E S
+========================================================== */
+
+#all_new_chronique {
+	padding: 2rem 0 0;
+	.h2_like {
+		font-weight: 400;
+		line-height: 1;
+		margin: 0;
+		text-transform: uppercase;
+		& + p {
+			font-style: italic;
+			margin-bottom: .5em;
+		}
+		& + p + p {
+			margin-bottom: 1em;
+		}
+	}
+	.type_item {
+		font-family: $font-stack-special;
+		@include rem(2);
+		span {
+			font-family: $font-stack-caps;
+		}
+	}
+	.critiques {
+		@extend %clearfix;
+		list-style: none none;
+		margin: 0;
+		padding: 0;
+		li {
+			> a {
+				display: block;
+				position: relative;
+				&:before {
+					background: rgba(255,255,255,0.1);
+				}
+				&:hover {
+					&:before {
+						@include rem(4);
+						color: white;
+						content: '\e626';
+						display: block;
+						font-family: 'icomoon', sans-serif;
+						height: 100%;
+						left: 0;
+						line-height: 280px;
+						position: absolute;
+						text-align: center;
+						top: 0;
+						width: 100%;
+						z-index: 10;
+					}
+				}
+				img {
+					width: 100%;
+					height: 280px;
+				}
+			}
+			span, p {
+				@extend %visuallyhidden;
+			}
+		}
+	}
+}
+
+/* ============== B L O C   O N G L E T S
+========================================================== */
+
+.all_chronicles {
+	@include border-radius(3px);
+	background: white;
+	display: inline-block;
+	float: right;
+	padding: .5em 1.2em;
+	font-family: $font-stack-condensed;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.tabs {
+	list-style: none none;
+	margin: 0 0 1em 0;
+	padding: 0;
+	float: left;
+	li {
+		display: inline-block;
+		a {
+			background: transparent;
+			display: inline-block;
+			color: white;
+			font-family: $font-stack-condensed;
+			text-transform: uppercase;
+			font-weight: 700;
+			padding: .5em 1em;
+			@include transition(background .2s ease-out);
+			@include border-radius(3px);
+			&.active, &:hover, &:focus {
+				background: white;
+				color: black;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.row_tab_all {
+	clear: both;
+	height: 310px;
+	position: relative;
+}
+.row_tab {
+	@include transition(all .2s ease-out);
+	display: none;
+	position: absolute;
+	width: 100%;
+	&.open {
+		display: block;
+		.active {
+			position: relative;
+			&:after {
+				border-color: transparent transparent white transparent;
+				border-style: solid;
+				border-width: 0 15px 25px 15px;
+				bottom: -30px;
+				content: '';
+				display: block;
+				height: 0;
+				left: 41%;
+				position: absolute;
+				width: 0;
+			}
+		}
+	}
+}

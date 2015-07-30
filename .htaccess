@@ -1,0 +1,2 @@
+# Use UTF-8 encoding for anything served text/plain or text/html
+AddDefaultCharset utf-8

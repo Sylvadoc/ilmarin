@@ -1,0 +1,350 @@
+/********************************************************************************************************************************************************************************
+********************* P R O F I L E    C A R D *****************
+/********************************************************************************************************************************************************************************/
+
+.profile-card {
+	@include border-radius(3px);
+	background: white;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	.bg-profile {
+		background-color: #E59924;
+		height: 75px;
+		em {
+		    position: absolute; 
+		    height: 30px; 
+		    width: 0px; 
+		    top: 117px;
+		    left: 54px;
+		    border-left: 10px solid $base-color-elbakin; 
+		    border-right: 10px solid $base-color-elbakin; 
+		    border-bottom: 5px solid transparent;
+		    span {
+		    	left: -3px;
+		    	top: 2px;
+		    	position: absolute;
+		    	color: white;
+				font-family: $font-stack-condensed;
+				font-style: normal;
+				font-weight: 400;
+		    }
+		}
+	}
+	.img-profile {
+		position: relative;
+		margin: 0;
+		width: 130px;
+		height: 110px;
+		padding: 10px;
+		top: 0;
+		.shinchu {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			@include border-radius(10px);
+			em {
+				background: white;
+				color: $base-color-elbakin;
+				display: block;
+				padding: 2px;
+				position: absolute;
+				width: 150px;
+				top: -35px;
+				left: 0;
+				@include opacity(0);
+				transition: all .5s cubic-bezier(0, 1, 0.5, 1);
+			}
+			&:hover {
+				cursor: help;
+				em {
+					top: -30px;
+					left: 0;
+					@include opacity(1);
+				}
+			}
+		}
+		.first {left: 100px; top: 50px;}
+		.two {left: 90px; top: 80px;}
+		.platine {background-color: #EEB111;}
+		.special {background-color: $base-color-elbakin;}
+	}
+	.avatar {
+		border: thick solid white;
+		width: 110px;
+		height: 110px;
+		overflow: hidden;
+		@include border-radius(55px);
+	}
+	.wrapper {
+		width: 110px;
+		height: 110px;
+		left: 10px;
+		top: 10px;
+		position: absolute;
+		clip: rect(0px, 110px, 110px, 55px);
+	}
+	.circle {
+		width: 110px;
+		height: 110px;
+		border: 3px solid $base-color-elbakin;
+		@include border-radius(55px);
+		position: absolute;
+		clip: rect(0px, 55px, 110px, 0px);
+	}
+	div[data-anim~=base] {
+	  -webkit-animation-iteration-count: 1;
+	  -webkit-animation-fill-mode: forwards;
+	  -webkit-animation-timing-function:linear;
+	}
+	.wrapper[data-anim~=wrapper] {
+	  -webkit-animation-duration: 0.01s;
+	  -webkit-animation-delay: 0.5s;
+	  -webkit-animation-name: close-wrapper;
+	}
+	.circle[data-anim~=left] {
+	  -webkit-animation-duration: 1s;
+	  -webkit-animation-name: left-spin;
+	}
+	.circle[data-anim~=right] {
+	  -webkit-animation-duration: 0.5s;
+	  -webkit-animation-name: right-spin;
+	}
+	@-webkit-keyframes right-spin {
+	  from {
+	    -webkit-transform: rotate(0deg);
+	  }
+	  to {
+	    -webkit-transform: rotate(180deg);
+	  }
+	}
+	/* Rotate the left side of the progress bar from 0 to 360 degrees */
+	@-webkit-keyframes left-spin {
+	  from {
+	    -webkit-transform: rotate(0deg);
+	  }
+	  to {
+	    -webkit-transform: rotate(272deg);
+	  }
+	}
+	/* Set the wrapper clip to auto, effectively removing the clip */
+	@-webkit-keyframes close-wrapper {
+	  to {
+	    clip: rect(auto, auto, auto, auto);
+	  }
+	}
+	h2 {
+		font-family: $font-stack-headings;
+		font-weight: 400;
+		text-align: right;
+		text-transform: uppercase;
+		margin-top: 0;
+		line-height: 1;
+		padding: 0 10px;
+		text-indent: 110px;
+		margin-bottom: 10px;
+	}
+	h3 {
+		font-family: $font-stack-common;
+		font-size: $h6-size;
+		font-weight: 300;
+		margin: 0;
+		text-transform: uppercase;
+	}
+	.detail-profile {
+		padding: 0 10px;
+		margin-top: 50px;
+		.trophy {
+			margin-bottom: 10px;
+			li {
+				display: inline-block;
+			}
+			strong, em {
+				display: block;
+			}
+			em {
+				font-family: $font-stack-condensed;
+				font-style: normal;
+				font-weight: 400;
+			}
+			.icon-trophy {
+				color: $base-color-elbakin;
+				@include rem(3.5);
+			}
+		}
+	}
+	.meta-info {
+		background-color: #E5E8EA;
+		border-top: 1px solid #ccc;
+		color: #36302F;
+		display: table;
+		width: 100%;
+		.icon {
+			color: #666;
+			@include rem(2);
+			float: left;
+			margin-right: 10px;
+		}
+		> div {
+			display: table-cell;
+			vertical-align: middle;
+			font-family: $font-stack-condensed;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 1;
+			padding: 10px;
+			&:hover {
+				background: $orange-color-elbakin;
+				color: white;
+				cursor: pointer;
+				.icon {
+					color: white;
+					@include scale(1.5);
+					top: 5px;
+				}
+				a {
+					color: white;
+					&:hover, &:focus {
+						color: white;
+					}
+				}
+			}
+			.icon {
+				@include transition(all .2s ease-in);
+				position: relative;
+				top: 0;
+			}
+			a {
+				display: block;
+				@include rem(1.7);
+				font-family: $font-stack-condensed;
+				font-style: normal;
+				font-weight: 700;
+				&:hover, &:focus {
+					text-decoration: none;
+				}
+			}
+		}
+		.message, .nb-trophy {
+			border-right: 1px solid #ccc;
+		}
+	}
+}
+
+/* ============== profile card in menu
+========================================================== */
+
+#mp-menu {
+	.bg-profile {
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 200;
+		em {
+		    border-bottom: 5px solid transparent;
+		    border-left: 10px solid $base-color-elbakin; 
+		    border-right: 10px solid $base-color-elbakin; 
+		    height: 30px; 
+		    left: 40px;
+		    position: absolute; 
+		    top: 89px;
+		    width: 0px; 
+		    span {
+				font-family: $font-stack-condensed;
+				font-style: normal;
+				font-weight: 400;
+		    	color: white;
+		    	left: -3px;
+		    	position: absolute;
+		    	top: 2px;
+		    }
+		}
+		h2 {
+			font-family: $font-stack-common;
+			font-weight: 400;
+			line-height: 1;
+			text-align: center;
+			padding: 1.5em 0 0;
+			a {
+				color: white;
+			}
+		}
+	}
+	.img-profile {
+		height: 80px;
+		margin: 0 auto;
+		padding: 10px;
+		position: relative;
+		top: 0;
+		width: 100px;
+	}
+	.avatar {
+		@include border-radius(40px);
+		border: thick solid white;
+		height: 80px;
+		overflow: hidden;
+		width: 80px;
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+	.wrapper {
+		clip: rect(0px, 80px, 80px, 40px);
+		height: 80px;
+		left: 110px;
+		position: absolute;
+		top: 10px;
+		width: 80px;
+	}
+	.circle {
+		@include border-radius(40px);
+		border: 3px solid $base-color-elbakin;
+		clip: rect(0px, 40px, 80px, 0px);
+		height: 80px;
+		position: absolute;
+		width: 80px;
+	}
+	div[data-anim~=base] {
+	  -webkit-animation-iteration-count: 1;
+	  -webkit-animation-fill-mode: forwards;
+	  -webkit-animation-timing-function:linear;
+	}
+	.wrapper[data-anim~=wrapper] {
+	  -webkit-animation-duration: 0.01s;
+	  -webkit-animation-delay: 0.5s;
+	  -webkit-animation-name: close-wrapper;
+	}
+	.circle[data-anim~=left] {
+	  -webkit-animation-duration: 1s;
+	  -webkit-animation-name: left-spin;
+	}
+	.circle[data-anim~=right] {
+	  -webkit-animation-duration: 0.5s;
+	  -webkit-animation-name: right-spin;
+	}
+	@-webkit-keyframes right-spin {
+	  from {
+	    -webkit-transform: rotate(0deg);
+	  }
+	  to {
+	    -webkit-transform: rotate(180deg);
+	  }
+	}
+	/* Rotate the left side of the progress bar from 0 to 360 degrees */
+	@-webkit-keyframes left-spin {
+	  from {
+	    -webkit-transform: rotate(0deg);
+	  }
+	  to {
+	    -webkit-transform: rotate(272deg);
+	  }
+	}
+	/* Set the wrapper clip to auto, effectively removing the clip */
+	@-webkit-keyframes close-wrapper {
+	  to {
+	    clip: rect(auto, auto, auto, auto);
+	  }
+	}
+}

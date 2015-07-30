@@ -1,0 +1,73 @@
+/********************************************************************************************************************************************************************************
+********************* B U T T O N S *****************
+/********************************************************************************************************************************************************************************/
+
+.btn {
+	@include border-radius(4px);
+	@include rem(1.6);
+	@include transition(all 300ms ease-out);
+	border: 0;
+	color: white;
+	display: block;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 40px;
+	margin: 0 auto;
+	max-height: 40px;
+	max-width: 275px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	&:hover {
+		color: white;
+		text-decoration: none;
+	}
+	&:active, &:focus {
+		color: white;
+		text-decoration: none;
+		position: relative;
+		top: 1px;
+	}
+}
+.inline_btn {
+	display: inline-block;
+	margin: 0 0 0 1em;
+}
+.btn_default {
+	background: $orange-color-elbakin;
+	&:hover {
+		background: $base-color-elbakin;
+	}
+	&:active {
+		background: $base-color-elbakin;
+	}
+}
+.btn_neutral {
+	background: #c8c2ae;
+	&:hover {
+		background: #afae98;
+	}
+	&:active {
+		background: #afae98;
+	}
+}
+.btn_simple {
+	background: $orange-color-elbakin;
+	color: white !important;
+	display: inline-block;
+	font-family: $font-stack-headings;
+	margin: 0;
+	padding: .5em 2em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	&:hover, &:focus {
+		background: $base-color-elbakin;
+		color: white;
+		text-decoration: none;
+	}
+	&:active {
+		position: relative;
+		top: 1px;
+	}
+}

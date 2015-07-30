@@ -1,0 +1,119 @@
+/********************************************************************************************************************************************************************************
+********************* F O O T E R *****************
+/********************************************************************************************************************************************************************************/
+
+#footer {
+	abbr {
+		border: 0;
+	}
+	h2 {
+		color: white;
+		text-transform: uppercase;
+		@include rem(2);
+		margin: 1em 0;
+		padding: 0;
+		font-weight: 300;
+		&~ p {
+			margin-bottom: 1em;
+		}
+	}
+	.newsletterform {
+		position: relative;
+		margin-bottom: 1em;
+		label {
+			position: absolute;
+			text-transform: uppercase;
+			font-family: $font-stack-condensed;
+			font-weight: 100;
+			color: $base-color-elbakin;
+			top: 0;
+			left: .5em;
+		}
+		#email {
+			background: white;
+			border: 1px solid #ccc;
+			@include border-radius(3px);
+			padding: 1.5em .4em .4em;
+			@include rem(1.6);
+			width: 100%;
+			font-style: italic;
+		}
+		.btn-submit {
+			position: absolute;
+			top: 0;
+			right: 0;
+			border: 0;
+			border-left: 1px solid #ccc;
+			background: transparent;
+			text-transform: uppercase;
+			font-family: $font-stack-condensed;
+			font-weight: 700;
+			padding: .4em;
+			line-height: 1;
+			@include rem(2.8);
+			&:hover, &:focus {
+				color: $base-color-elbakin;
+			}
+		} 
+	}
+	.social_footer {
+		list-style: none none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		li {
+			display: inline-block;
+			margin: 0 .5em;
+			a {
+				@include rem(3);
+			}
+			.icon-twitter {color: #55ACEE;}
+			.icon-facebook {color: #47639E;}
+			.icon-google-plus {color: #DD4B39;}
+		}
+	}
+}
+
+#footer[data-weather="sunny"], #footer[data-weather="cloudy"] {
+	.social_footer {
+		li {
+			.icon-twitter {color: white;}
+		}
+	}
+}
+
+#cnil {
+	background: #fbdcbf;
+	border-top: 1px solid #fff;
+	padding: 5px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	p {
+		color: #333;
+		@include rem(1.2);
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		button {
+			display: inline-block;
+			padding: .2em .5em;
+			text-transform: uppercase;
+		}
+	}
+}
+
+/* ============== R E S P O N S I V E
+========================================================== */
+
+@media (max-width: $medium-screen) {
+	#footer .columns:nth-child(-n+2) {
+		height: 20rem;
+	}
+}
+@media (max-width: $tiny-screen) {
+	#footer .columns:nth-child(-n+2) {
+		height: auto;
+	}	
+}

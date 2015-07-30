@@ -1,0 +1,157 @@
+/* ============== S E C T I O N S
+========================================================== */
+
+section:nth-child(2n+2) {
+	@include gradient(#ECE9E6,#FFFFFF);
+}
+#header_section {
+	&.tolkien_section {
+		background: #2E1437 url('../images/section_jrr.jpg') no-repeat top right;
+		background-size: cover;
+		// @include gradient(#2E1437,#948E99);
+		color: white;
+	}
+	&.library_section {
+		@include gradient(#2E1437,#948E99);
+		color: white;		
+	}
+}
+#all_new_chronique {
+	@include gradient(#4b6cb7,#182848);
+	color: white;
+	&.jeff {
+		@include gradient(#24C6DC,#514A9D);
+	}
+}
+#prix_elbakin_net {
+	// @include gradient(#2E1437,#948E99);
+	background: transparent url('../images/argonath.jpg') no-repeat center bottom fixed;
+	background-size: cover;
+	color: white;
+}
+#moreover {
+	@include gradient(#2E1437,#948E99);
+}
+#discover {
+	@include gradient(#24C6DC,#514A9D);
+	color: white;
+}
+#last_50 {
+	@include gradient(#24C6DC,#514A9D);
+	color: white;
+}
+#footer {
+	background: #262626;
+	p {
+		color: white;
+	}
+	a {
+		color: #727272;
+		&:hover {
+			color: white;
+			text-decoration: none;
+		}
+	}
+	&[data-weather="sunny"] {
+		@include gradient(#00BBFF,#00BBFF);
+		color: #f1f1f1;
+		a {
+			color: white;
+			&:hover {
+				color: white;
+				text-decoration: underline;
+			}
+		}
+		p, h2, #weather_city {color: white;}
+		#weather_city {
+			border-bottom: 2px solid white;
+		}
+	}
+	&[data-weather="cloudy"] {
+		@include gradient(#2EB5E5,#2EB5E5);
+		color: #f1f1f1;
+		a {
+			color: white;
+			&:hover {
+				color: white;
+				text-decoration: underline;
+			}
+		}
+		p, h2, #weather_city {color: white;}
+		#weather_city {
+			border-bottom: 2px solid white;
+		}
+	}
+	&[data-weather="rainy"] {
+		@include gradient(#E6E6E6,#E6E6E6);
+		a {
+			color: #333;
+			&:hover {
+				color: #333;
+				text-decoration: underline;
+			}
+		}
+		p, h2, #weather_city {color: black;}
+		#weather_city {
+			border-bottom: 2px solid black;
+		}
+	}
+	&[data-weather="snowy"] {
+		@include gradient(#85DB8C,#85DB8C );
+		a {
+			color: #333;
+			&:hover {
+				color: #333;
+				text-decoration: underline;
+			}
+		}
+		p, h2, #weather_city {color: black;}
+		#weather_city {
+			border-bottom: 2px solid black;
+		}
+	}
+	&[data-weather="rainbow"] {
+		@include gradient(#F3D166,#F3D166);
+		a {
+			color: #333;
+			&:hover {
+				color: #333;
+				text-decoration: underline;
+			}
+		}
+		p, h2, #weather_city {color: black;}
+		#weather_city {
+			border-bottom: 2px solid black;
+		}
+	}
+	&[data-weather="starry"] {
+		@include gradient(#222233,#222233);
+		color: #f1f1f1;
+		a {
+			color: white;
+			&:hover {
+				color: white;
+				text-decoration: underline;
+			}
+		}
+		p, h2, #weather_city {color: white;}
+		#weather_city {
+			border-bottom: 2px solid white;
+		}
+	}
+	&[data-weather="stormy"] {
+		@include gradient(#444444,#444444);
+		color: #f1f1f1;
+		a {
+			color: white;
+			&:hover {
+				color: white;
+				text-decoration: underline;
+			}
+		}
+		p, h2, #weather_city {color: white;}
+		#weather_city {
+			border-bottom: 2px solid white;
+		}
+	}
+}

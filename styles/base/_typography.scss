@@ -1,0 +1,332 @@
+// Special fonts
+// usage
+// font-family: 'Droid Sans', sans-serif;
+// font-family: 'Droid Serif', serif;
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,300,300italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,900italic,400,700,900|Alegreya+SC:400,400italic,700,700italic,900,900italic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100);
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/special/icomoon.eot?-t4a46o');
+	src:url('../fonts/special/icomoon.eot?#iefix-t4a46o') format('embedded-opentype'),
+		url('../fonts/special/icomoon.woff?-t4a46o') format('woff'),
+		url('../fonts/special/icomoon.ttf?-t4a46o') format('truetype'),
+		url('../fonts/special/icomoon.svg?-t4a46o#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/********************************************************************************************************************************************************************************
+********************* B A S E *****************
+/********************************************************************************************************************************************************************************/
+
+html {
+	font-size: 62.5%;
+	font-size: calc(1em * 0.625);
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body {
+	/* set body font-size in em (1.4em equiv "14px") */
+	font-size: ($base-font-size / 10px) + em;
+	background-color: $base-background;
+	color: $base-color;
+	font-family: $font-stack-common;
+	line-height: $line-height;
+	@include font-enhancements;
+}
+
+/* ============== D E F A U L T
+========================================================== */
+
+a {
+	color: $base-color-link;
+	text-decoration: none;
+	&:hover, &:focus, &:active {
+		color: $base-color-link-hover;
+		text-decoration: underline;
+	}
+}
+code, pre, samp, kbd {
+	white-space: pre-line;
+	white-space: pre-wrap;
+	font-family: $font-stack-monospace;
+	line-height: normal;
+}
+em, .italic, address, cite, dfn, i, var {
+	font-style: italic;
+}
+strong, b, .bold {
+	font-weight: bold;
+}
+small, sub, sup {
+	font-size: smaller;
+}
+sup, sub {
+   vertical-align: baseline;
+   position: relative;
+   top: -0.4em;
+}
+sub { top: 0.4em; }
+button {cursor: pointer;}
+.hidden {
+	@extend %visuallyhidden;
+}
+p, .p-like, ul, ol, dl, blockquote, pre, td, th, label, textarea, caption,
+details, figure {
+	margin: 0;
+	line-height: $line-height;
+}
+
+/* ============== T I T L E S
+========================================================== */
+
+h1, .h1-like {
+	font-family: $font-stack-headings;
+	font-size: $h1-size;
+	font-weight: 700;
+	@include font-kerning;
+}
+h2, .h2-like {
+	font-family: $font-stack-headings;
+	font-size: $h2-size;
+	font-weight: 300;
+	@include font-kerning;
+}
+h3, .h3-like {
+	font-family: $font-stack-headings;
+	font-size: $h3-size;
+	@include font-kerning;
+}
+h4, .h4-like {
+	font-size: $h4-size;
+}
+h5, .h5-like {
+	font-size: $h5-size;
+}
+h6, .h6-like {
+	font-size: $h6-size;
+}
+p {
+	@include font-kerning;
+}
+.simili-title {
+	display: block;
+	font-family: $font-stack-simili;
+	font-weight: 300;
+	font-size: $h1-size;
+	text-align: center;
+	margin: 0 0 1rem 0;
+	span {
+		font-family: $font-stack-caps;
+		font-style: italic;
+	}
+	strong {
+		font-weight: 700;
+	}
+}
+.more {
+	display: inline-block;
+	color: black;
+	padding: 0 .2em;
+	margin-left: .5em;
+	.icon {
+		color: $base-color-elbakin;
+	}
+}
+
+/* ============== I C O N O G R A P H Y
+========================================================== */
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon', sans-serif;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon {
+	display: none;
+}
+.fontface {
+	.icon {
+		display: inline-block;
+	}
+	.text {
+		@extend %visuallyhidden;
+	}
+	.icon-question:before {
+		content: "\e61a";
+	}
+	.icon-home:before {
+		content: "\e62a";
+	}
+	.icon-share:before {
+		content: "\e629";
+	}
+	.icon-cart:before {
+		content: "\e628";
+	}
+	.icon-play:before {
+		content: "\e622";
+	}
+	.icon-fire:before {
+		content: "\e623";
+	}
+	.icon-quill:before {
+		content: "\e624";
+	}
+	.icon-hipster:before {
+		content: "\e61b";
+	}
+	.icon-books:before {
+		content: "\e61c";
+	}
+	.icon-section:before {
+		content: "\e61d";
+	}
+	.icon-magic-wand:before {
+		content: "\e61e";
+	}
+	.icon-newspaper:before {
+		content: "\e61f";
+	}
+	.icon-folder-open:before {
+		content: "\e620";
+	}
+	.icon-podcast:before {
+		content: "\e603";
+	}
+	.icon-book:before {
+		content: "\e604";
+	}
+	.icon-bubbles:before {
+		content: "\e605";
+	}
+	.icon-price-tags:before {
+		content: "\e606";
+	}
+	.icon-lifebuoy:before {
+		content: "\e607";
+	}
+	.icon-quotes-left:before {
+		content: "\e608";
+	}
+	.icon-bookmarks:before {
+		content: "\e609";
+	}
+	.icon-star-half:before {
+		content: "\e60a";
+	}
+	.icon-star-full:before {
+		content: "\e60b";
+	}
+	.icon-star-empty:before {
+		content: "\e60c";
+	}
+	.icon-bookmark:before {
+		content: "\e60d";
+	}
+	.icon-user:before {
+		content: "\e60e";
+	}
+	.icon-calendar:before {
+		content: "\e60f";
+	}
+	.icon-clock:before {
+		content: "\e610";
+	}
+	.icon-trophy:before {
+		content: "\e611";
+	}
+	.icon-search:before {
+		content: "\e612";
+	}
+	.icon-twitter:before {
+		content: "\e613";
+	}
+	.icon-facebook:before {
+		content: "\e614";
+	}
+	.icon-google-plus:before {
+		content: "\e615";
+	}
+	.icon-feed:before {
+		content: "\e616";
+	}
+	.icon-feed2:before {
+		content: "\e617";
+	}
+	.icon-speaker-notes:before {
+		content: "\e625";
+	}
+	.icon-keyboard-arrow-right:before {
+		content: "\e618";
+	}
+	.icon-keyboard-arrow-left:before {
+		content: "\e619";
+	}
+	.icon-image:before {
+		content: "\e600";
+	}
+	.icon-arrow-down:before {
+		content: "\e627";
+	}
+	.icon-plus:before {
+		content: "\e626";
+	}
+	.icon-arrow-left:before {
+		content: "\e621";
+	}
+	.icon-mail:before {
+		content: "\e601";
+	}
+	.icon-list:before {
+		content: "\e602";
+	}
+}
+
+	/* ============== I C O N   B U R G E R
+	========================================================== */
+
+	.icon-burger {
+		@include border-radius(3px);
+		@include transition(all .4s);
+		background-color: $base-color-link;
+		height: 3px;
+		width: 20px;
+		&:before, &:after {
+			background-color: $base-color-link;
+			content: '';
+			display: block;
+			width: 20px;
+			height: 3px;
+			position: relative;
+		}
+		&:before {
+			top: -6px;
+		}
+		&:after {
+			top: 3px;
+		}
+	}
+	.mp-pushed {
+		.icon-burger {
+			@include transform(translateY(0) translateX(-40px) rotate(0deg));
+			&:before {
+				@include transform(translateY(6px) translateX(40px) rotate(-45deg));
+			}
+			&:after {
+				@include transform(translateY(-6px) translateX(40px) rotate(45deg));
+			}
+		}
+	}

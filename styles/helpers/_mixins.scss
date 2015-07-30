@@ -1,0 +1,179 @@
+/* ==========================================================================
+   $TYPO SIZE usage
+   @include font-size(14px)
+   ========================================================================== */
+
+@mixin rem($size) {	
+	@if unitless($size) {
+		font-size: ($size * 1rem) / 1rem * $base-font-size;
+		font-size: $size * 1rem;
+	}
+	@else {
+		@warn "Please make sure `$size` is unitless."
+	}
+}
+@mixin em($size) {	
+	@if unitless($size) {
+		$bf: $base-font-size / 1px;
+		font-size: $size / $bf * 1em;
+	}
+	@else {
+		@warn "Please make sure `$size` is unitless."
+	}
+}
+@mixin px($size) {	
+	@if unitless($size) {
+		$bf: $base-font-size / 1px;
+		font-size: $size * $bf * 1px;
+	}
+	@else {
+		@warn "Please make sure `$size` is unitless."
+	}
+}
+@mixin font-enhancements() {
+	text-rendering: optimizeLegibility; /* optional: for older browsers */
+	-moz-osx-font-smoothing: grayscale; /* firefox on osx */
+    -moz-font-feature-settings: "liga=1, dlig=1"; 
+    -moz-font-feature-settings: "liga", "dlig"; /* EDIT: new syntax for FF 15+ */ 
+    -ms-font-feature-settings: "liga", "dlig"; 
+    -o-font-feature-settings: "liga", "dlig"; 
+    -webkit-font-feature-settings: "liga", "dlig"; 
+    font-feature-settings: "liga", "dlig";
+	-webkit-font-variant-ligatures: common-ligatures; /* for iOS and Safari 6 */
+	font-variant-ligatures: common-ligatures discretionary-ligatures; /* for up-to-date browsers, including IE10 and Opera 21 */
+}
+@mixin font-kerning() {
+	-moz-font-feature-settings: "kern=1"; /* pre-Firefox 14+ */
+	-webkit-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern"; /* Firefox 14+ */
+	font-feature-settings: "kern"; /* standard */
+	font-kerning: normal; /* Safari 7+, Firefox 24+, Chrome 33(?)+, Opera 21+*/
+}
+
+/* ==========================================================================
+   $CSS3
+   ========================================================================== */
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+	background-clip: padding-box;
+}
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie);
+}
+@mixin scale($scale) {
+	-moz-transform: scale($scale);
+	-o-transform: scale($scale);
+	-webkit-transform: scale($scale);
+	transform: scale($scale);
+}
+@mixin scale3d($scale1, $scale2, $scale3) {
+	-moz-transform: scale3d($scale1, $scale2, $scale3);
+	-o-transform: scale3d($scale1, $scale2, $scale3);
+	-webkit-transform: scale3d($scale1, $scale2, $scale3);
+	transform: scale3d($scale1, $scale2, $scale3);
+}
+@mixin skewX($deg) {
+	-webkit-transform: skewX($deg);
+	-moz-transform: skewX($deg);
+	-ms-transform: skewX($deg);
+	-o-transform: skewX($deg);
+	transform: skewX($deg); 
+}
+@mixin rotate($degrees) {
+	transform: rotate($degrees);
+	-moz-transform: rotate($degrees);
+	-o-transform: rotate($degrees);
+	-webkit-transform: rotate($degrees);
+	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+	zoom: 1;
+}
+@mixin rotateX($degrees) {
+	-moz-transform: rotateX($degrees);
+	-ms-transform: rotateX($degrees);
+	-webkit-transform: rotateX($degrees);
+	transform: rotateX($degrees);
+}
+@mixin translate($arg1, $arg2) {
+	transform: translate($arg1, $arg2);
+	-moz-transform: translate($arg1, $arg2);
+	-ms-transform: translate($arg1, $arg2);
+	-webkit-transform: translate($arg1, $arg2);
+	zoom: 1;
+}
+@mixin translate3d($arg1, $arg2, $arg3) {
+	transform: translate3d($arg1, $arg2, $arg3);
+	-moz-transform: translate3d($arg1, $arg2, $arg3);
+	-ms-transform: translate3d($arg1, $arg2, $arg3);
+	-webkit-transform: translate3d($arg1, $arg2, $arg3);
+	zoom: 1;
+}
+@mixin transform($args...) {
+	-webkit-transform: $args;
+	-moz-transform: $args;
+	-ms-transform: $args;
+	-o-transform: $args;
+	transform: $args;
+}
+@mixin gradient($from-color, $to-color) {
+    background-color: mix($from-color, $to-color); /* Fallback */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from-color), to($to-color));
+    background-image: -webkit-linear-gradient(left, $from-color, $to-color); 
+    background-image: -moz-linear-gradient(left, $from-color, $to-color);
+    background-image: -ms-linear-gradient(left, $from-color, $to-color);
+    background-image: -o-linear-gradient(left, $from-color, $to-color);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$from-color}', EndColorStr='#{$to-color}')";
+}
+@mixin box-shadow($params...) {
+	-webkit-box-shadow: $params;
+	-moz-box-shadow: $params;
+	box-shadow: $params;
+}
+@mixin text-shadow($shad) {
+	-webkit-text-shadow: $shad;
+	-moz-text-shadow: $shad;
+	text-shadow: $shad;
+}
+@mixin perspective($value) {
+	-webkit-perspective: $value;
+	-moz-perspective: $value;
+	perspective: $value;
+}
+@mixin backface-visibility($vision) {
+	-webkit-backface-visibility: $vision;
+	-moz-backface-visibility: $vision;
+	backface-visibility: $vision;
+}
+@mixin transform-style($style) {
+	-webkit-transform-style: $style;
+	-moz-transform-style: $style;
+	transform-style: $style;
+}
+@mixin transform-origin($origin) {
+	-webkit-transform-origin: $origin;
+	-moz-transform-origin: $origin;
+	transform-origin: $origin;
+}
+@mixin blur($amount) {
+  -webkit-filter: blur($amount);
+  -moz-filter: blur($amount);
+  -o-filter: blur($amount);
+  -ms-filter: blur($amount);
+  filter: blur($amount);
+}
+@mixin column-count($number) {
+  -webkit-column-count: $number;
+     -moz-column-count: $number;
+          column-count: $number;
+}

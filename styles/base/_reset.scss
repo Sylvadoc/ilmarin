@@ -1,0 +1,55 @@
+/* ==========================================================================
+   $RESET
+   ========================================================================== */
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+ul, ol {
+	padding-left: 2em;
+}
+ul.unstyled {
+	list-style: none none;
+	padding-left: 0;
+}
+img {
+	height: auto;
+	vertical-align: middle;
+	border: 0;
+}
+blockquote, figure {
+	margin-left: 0;
+	margin-right: 0;
+}
+audio, canvas, video {
+	display: inline-block;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+.clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+.clear {
+	visibility: hidden;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}

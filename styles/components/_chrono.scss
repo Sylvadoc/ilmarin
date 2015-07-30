@@ -1,0 +1,103 @@
+/* ============== C H R O N O
+========================================================== */
+
+#chrono {
+	background: white;
+	border: 1px solid #ccc;
+	margin-bottom: 2rem;
+	.header_chrono {
+		background: #BE2700;
+		padding: 1rem;
+		* {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		option {
+			display: block;
+		}
+		h2 {
+			.icon {
+				@include scale(0.8);
+				vertical-align: top;
+			}
+			color: white;
+			font-family: $font-stack-headings;
+			@include rem(2.1);
+			text-transform: uppercase;
+			line-height: 1;
+			margin: 0 1rem 0 0;
+			padding: 0;
+		}
+		select {
+			border: 0;
+			font-family: $font-stack-condensed;
+			width: 55%;
+			margin: 0 1rem 0 0;
+		}
+		.rss {
+			color: white;
+		}
+	}
+	ul {
+		list-style: none none;
+		padding: 0;
+	}
+	.scroller_chrono {
+		abbr {
+			border: 0;
+		}
+		li {
+			border-bottom: 1px solid #ccc;
+			@include rem(1.3);
+			padding: .5rem 0;
+			&:hover {
+				background: #efefef;
+			}
+		}
+		span, a {
+			display: inline-block;
+			vertical-align: text-top;
+		}
+		span {
+			font-weight: 700;
+			text-align: center;
+			width: 15%;
+		}
+		a {
+			width: 85%;
+		}
+	}
+	.footer_chrono {
+		background: #efefef;
+		padding: 1rem;
+		ul, li {
+			display: inline-block;
+		}
+		li {
+			vertical-align: top;
+			font-weight: 700;
+		}
+		ul + a {
+			background-color: $base-color-elbakin;
+			color: white;
+			display: inline-block;
+			float: right;
+			padding: 2px 5px;
+			text-align: right;
+			@include rem(1.2);
+		}
+	}
+}
+
+/* ============== R E S P O N S I V E
+========================================================== */
+
+@media (max-width: $large-screen) {
+	#chrono {
+		.header_chrono {
+			select {
+				width: 43%;
+			}
+		}
+	}
+}

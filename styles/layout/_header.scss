@@ -1,0 +1,121 @@
+/********************************************************************************************************************************************************************************
+********************* H E A D E R *****************
+/********************************************************************************************************************************************************************************/
+
+header {
+	@extend %clearfix;
+	@include transition(all .2s ease-out);
+	.columns {
+		padding: 0;
+	}
+	&.sticky {
+		background: #fff;
+		min-height: 85px;
+		padding: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 100;
+		.sub_header {
+			@include opacity(0);
+			display: none;
+			z-index: -1;
+		}
+		.columns {
+			position: absolute;
+			padding: 0;
+			top: 0;
+		}
+		.launch-nav {
+			margin: 0;
+			padding: 0;
+			li {
+				span + span {
+					display: none;
+				}
+			}
+		}
+		.social {
+			.link {
+				display: none;
+			}
+		}
+		.branding {
+			@include transform(rotate(45deg) translate(-45%,40%));
+			background: white;
+			width: 100px;
+			height: 100px;
+			img {
+				@include rotate(-45deg);
+			}
+			span {
+				display: none;
+			}
+		}
+	}
+}
+
+.branding {
+	@include translate(-50%,0);
+	position: absolute;
+	left: 50%;
+	top: 0;
+	img {
+		display: block;
+	}
+}
+
+/* ============== R E S P O N S I V E
+========================================================== */
+
+@media (max-width: $small-screen) {
+	header {
+		&.sticky {
+			.launch-nav {
+				.palantir, .forum {
+					display: none;
+				}
+			}
+			.social {
+				display: none;
+			}
+		}
+	}
+}
+
+/* ============== H E A D  S E C T I O N
+========================================================== */
+
+.header_section {
+	padding: 2rem 0;
+	h1 {
+		font-family: $font-stack-simili;
+		font-size: $al-size;
+		margin: 0;
+		padding: 0;
+		abbr {
+			border: 0;
+		}
+	}
+	p {
+		@include rem(1.8);
+		font-family: $font-stack-simili;
+		font-weight: 300;
+		.dropcaps {
+			font-family: "Palatino Linotype", Palatino, $font-stack-simili;
+			display: block;
+			font-style: normal;
+			font-size: 6.6em;
+			float: left;
+			margin: .08em .07em 0 0;
+			line-height: .67em;
+			color: white;
+		}
+	}
+	.more {
+		color: white;
+		.icon {
+			color: white;
+		}
+	}
+}
