@@ -2457,6 +2457,8 @@ body {
   ======================================= */
   /* ====== L O G   I N
   ======================================= */
+  /* ====== N E T W O R K
+  ======================================= */
 }
 /* line 270, ../styles/layout/_header.scss */
 .the-header .branding {
@@ -2650,34 +2652,47 @@ body {
 .the-header #search .input-style {
   width: 84%;
 }
+/* line 430, ../styles/layout/_header.scss */
+.the-header #web ul {
+  text-align: center;
+}
+/* line 432, ../styles/layout/_header.scss */
+.the-header #web ul li {
+  margin: 0 1rem;
+}
+/* line 436, ../styles/layout/_header.scss */
+.the-header #web a {
+  color: white;
+  text-transform: uppercase;
+}
 
 /* ============== R E S P O N S I V E
 ========================================================== */
 /* ============== H E A D  S E C T I O N
 ========================================================== */
-/* line 443, ../styles/layout/_header.scss */
+/* line 457, ../styles/layout/_header.scss */
 .header_section {
   padding: 2rem 0;
 }
-/* line 445, ../styles/layout/_header.scss */
+/* line 459, ../styles/layout/_header.scss */
 .header_section h1 {
   font-family: "Roboto Slab", serif;
   font-size: 5rem;
   margin: 0;
   padding: 0;
 }
-/* line 450, ../styles/layout/_header.scss */
+/* line 464, ../styles/layout/_header.scss */
 .header_section h1 abbr {
   border: 0;
 }
-/* line 454, ../styles/layout/_header.scss */
+/* line 468, ../styles/layout/_header.scss */
 .header_section p {
   font-size: 25.2px;
   font-size: 1.8rem;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
 }
-/* line 458, ../styles/layout/_header.scss */
+/* line 472, ../styles/layout/_header.scss */
 .header_section p .dropcaps {
   font-family: "Palatino Linotype", Palatino, "Roboto Slab", serif;
   display: block;
@@ -2688,11 +2703,11 @@ body {
   line-height: .67em;
   color: white;
 }
-/* line 469, ../styles/layout/_header.scss */
+/* line 483, ../styles/layout/_header.scss */
 .header_section .more {
   color: white;
 }
-/* line 471, ../styles/layout/_header.scss */
+/* line 485, ../styles/layout/_header.scss */
 .header_section .more .icon {
   color: white;
 }

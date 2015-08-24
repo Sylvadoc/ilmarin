@@ -424,6 +424,20 @@
 	#log_in {
 
 	}
+	/* ====== N E T W O R K
+	======================================= */
+	#web {
+		ul {
+			text-align: center;
+			li {
+				margin: 0 1rem;
+			}
+		}
+		a {
+			color: white;
+			text-transform: uppercase;
+		}
+	}
 }
 
 
