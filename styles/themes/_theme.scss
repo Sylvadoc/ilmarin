@@ -1,3 +1,17 @@
+/* ============== P A G E S
+========================================================== */
+
+@media (max-width: $ultra-large-screen) {
+	.m-scene {
+		background: transparent url('../images/simonetti_1920.jpg') no-repeat 0 0;
+	}
+}
+@media (max-width: $large-screen) {
+	.m-scene {
+		background: transparent url('../images/simonetti_1280.jpg') no-repeat 0 -300px;
+	}
+}
+
 /* ============== S E C T I O N S
 ========================================================== */
 
@@ -39,6 +53,9 @@ section:nth-child(2n+2) {
 #last_50 {
 	@include gradient(#24C6DC,#514A9D);
 	color: white;
+}
+#agenda_parutions {
+	background: white;
 }
 #footer {
 	background: #262626;

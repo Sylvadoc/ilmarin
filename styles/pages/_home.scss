@@ -249,6 +249,11 @@
 			left: 566px;
 			top: 113px;
 		}
+		&:nth-child(7) {
+			@include opacity(0.8);
+			left: 679px;
+			top: 0;
+		}
 	}
 	.le-prix {
 		@include rotate(45deg);

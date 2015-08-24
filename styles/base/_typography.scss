@@ -299,34 +299,39 @@ p {
 	========================================================== */
 
 	.icon-burger {
-		@include border-radius(3px);
 		@include transition(all .4s);
 		background-color: $base-color-link;
-		height: 3px;
-		width: 20px;
+		height: 2px;
+		width: 15px;
 		&:before, &:after {
 			background-color: $base-color-link;
 			content: '';
 			display: block;
-			width: 20px;
-			height: 3px;
+			width: 15px;
+			height: 2px;
 			position: relative;
 		}
 		&:before {
-			top: -6px;
+			top: -4px;
 		}
 		&:after {
-			top: 3px;
+			top: 2px;
+		}
+	}
+	.the-header {
+		.icon-burger {
+			position: relative;
+			top: -4px;
 		}
 	}
 	.mp-pushed {
 		.icon-burger {
-			@include transform(translateY(0) translateX(-40px) rotate(0deg));
+			@include transform(translateY(0) translateX(-30px) rotate(0deg));
 			&:before {
-				@include transform(translateY(6px) translateX(40px) rotate(-45deg));
+				@include transform(translateY(4px) translateX(30px) rotate(-45deg));
 			}
 			&:after {
-				@include transform(translateY(-6px) translateX(40px) rotate(45deg));
+				@include transform(translateY(-4px) translateX(30px) rotate(45deg));
 			}
 		}
 	}

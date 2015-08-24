@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width" />
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="favicon.ico" />
 
         <!-- windows 8 stuff -->
         <meta name="apple-mobile-web-app-title" content="Elbakin.net"/>
@@ -173,38 +173,92 @@
             <div class="relative_content">
 
                 <!-- HEADER -->
-                <header role="banner" class="m-header scene_element scene_element--fadein">
-                    <div class="branding">
-                        <a href="#" title="Elbakin.net" role="heading">
+                <header role="banner" class="the-header m-header">
+                    <div class="branding" role="heading">
+                        <div class="logotype">
                             <img src="images/logo_elbakin.png" alt="Elbakin.net, la fantasy au quotiden" />
-                        </a>
+                        </div>
+                        <div class="elbakin">
+                            <img src="images/elbakin_txt.png" alt="Elbakin.net" />
+                        </div>
                     </div>
-                    <div class="small-6 small-push-6 columns">
-                        <ul class="social">
-                            <li class="connect"><a href="#log_in" class="launch_modal" title="Se connecter au site (modal)"><span class="icon icon-user" aria-hidden="true"></span><span>se connecter</span></a></li>
-                            <li class="network"><a href=""><span class="icon icon-arrow-down" aria-hidden="true"></span><span class="link">notre réseau</span></a>
-                            </li>
-                        </ul>
+                    <ul class="visit">
+                        <li>
+                            <a href="#" class="menu-trigger" id="trigger" title="Parcourir le menu du site">
+                                <span class="icon icon-burger" aria-hidden="true"></span>
+                                <span>Menu</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visiter le forum">
+                                <span class="icon icon-bubbles" aria-hidden="true"></span>
+                                <span>Forum</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#search" class="toggle-panel" title="Faire une recherche">
+                                <span class="icon icon-search" aria-hidden="true"></span>
+                                <span class="text">Rechercher</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="aside_menu">
+                        <li>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/Elbakin.net" title="Profil Facebook Elbakin.net">
+                                        <span class="icon icon-facebook" aria-hidden="true"></span>
+                                        <span class="text">Facebook</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/elbakin" title="Compte Twitter Elbakin.net">
+                                        <span class="icon icon-twitter" aria-hidden="true"></span>
+                                        <span class="text">Twitter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/ElbakinNetFantasy" title="Chaîne YouTube Elbakin.net">
+                                        <span class="icon icon-google-plus" aria-hidden="true"></span>
+                                        <span class="text">YouTube</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="network">
+                            <a href="#web" class="toggle-panel" title="Notre réseau">
+                                <span class="icon icon-bookmark" aria-hidden="true"></span>
+                                <span class="text">Notre réseau</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#log_in" class="toggle-panel" title="Se connecter au site">
+                                <span>Se connecter</span>
+                                <span class="icon icon-user" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="search" class="panel hide-panel">
+                        <form class="form">
+                            <label for="search-keyword" class="ersatz-title">Rechercher sur le site :</label>
+                            <input type="text" id="search-keyword" placeholder="Mots-clefs" class="input-style" />
+                            <button class="btn btn_default inline_btn">OK</button>
+                            <p>Exemple : <a href="#">Jaworski</a>, <a href="#">Pevel</a>, <a href="#">Le Seigneur des Anneaux</a></p>
+                        </form>
                     </div>
-                    <div class="small-6 small-pull-6 columns">
-                        <ul class="launch-nav">
-                            <li class="all-nav">
-                                <a href="#" class="menu-trigger" id="trigger" title="Parcourir le menu du site">
-                                    <span class="icon icon-burger" aria-hidden="true"></span>
-                                </a>
-                            </li>
-                            <li class="agora">
-                                <a href="#" class="menu-trigger" id="trigger" title="Visiter le forum">
-                                    <span class="icon icon-bubbles" aria-hidden="true"></span>
-                                    <span>forum</span>
-                                </a>
-                            </li>
-                            <li class="palantir">
-                                <a href="#palantir" class="launch_modal" title="Faire une recherche sur le site">
-                                    <span class="icon icon-search" aria-hidden="true"></span>
-                                </a>
-                            </li>
-                        </ul>
+                    <div id="log_in" class="panel hide-panel">
+                        <form class="form">
+                            <div class="wrap-form half-form">
+                                <label for="login" class="ersatz-title">Votre pseudo :</label>
+                                <input type="text" id="login" placeholder="Pseudo" class="input-style" />
+                            </div>
+                            <div class="wrap-form half-form">
+                                <label for="password" class="ersatz-title">Votre mot de passe :</label>
+                                <input type="password" id="password" placeholder="Mot de passe" class="input-style" />
+                            </div>
+                            <button class="btn btn_default inline_btn">OK</button>
+                            <p><a href="#">Vous n'êtes pas encore inscrit ?</a></p>
+                        </form>
                     </div>
                 </header>
                 <!-- /HEADER -->
@@ -779,7 +833,7 @@
                                         <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
                                     </div>
                                 </div>
-                                
+
                                 <div class="item" data-id="12/05/2012" data-description="Lorem ipsum dolor sit">
                                     <img src="images/flat/default/2.jpg" alt="" />
                                     <h2>12 mai</h2>
@@ -791,7 +845,7 @@
                                         <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
                                     </div>
                                 </div>
-                                
+
                                 <div class="item" data-id="21/06/2012" data-description="Lorem ipsum dolor">
                                     <img src="images/flat/default/3.jpg" alt=""/>
                                     <h2>21 juin</h2>
@@ -816,8 +870,8 @@
                                         <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
                                     </div>
                                 </div>
-                                
-                                
+
+
                                 <div class="item" data-id="03/07/2012" data-description="Lorem ipsum dolor">
                                     <img src="images/flat/default/5.jpg" alt=""/>
                                     <h2>3 juillet</h2>
@@ -829,9 +883,9 @@
                                         <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
                                     </div>
                                 </div>
-                                
-                                
-                                
+
+
+
                                 <div class="item" data-id="13/07/2012" data-description="Lorem ipsum dolor">
                                     <img src="images/flat/default/6.jpg" alt=""/>
                                     <h2>13 juillet</h2>
@@ -843,7 +897,7 @@
                                         <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
                                     </div>
                                 </div>
-                                
+
                                 <div class="item" data-id="17/07/2012" data-description="Lorem ipsum dolor sit amet">
                                     <img src="images/flat/default/7.jpg" alt=""/>
                                     <h2>17 juillet</h2>
@@ -855,7 +909,7 @@
                                         <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
                                     </div>
                                 </div>
-                                
+
                                 <div class="item" data-id="25/07/2012" data-description="Lorem ipsum">
                                     <img src="images/flat/default/8.jpg" alt=""/>
                                     <h2>25 juillet</h2>
@@ -867,7 +921,7 @@
                                         <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
                                     </div>
                                 </div>
-                                
+
                                 <div class="item" data-id="06/08/2012" data-description="Lorem ipsum dolor">
                                     <img src="images/flat/default/9.jpg" alt=""/>
                                     <h2>6 août</h2>
@@ -879,7 +933,7 @@
                                         <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
                                     </div>
                                 </div>
-                                
+
                                 <div class="item" data-id="15/08/2012" data-name="August 15th" data-description="Lorem ipsum dolor sit">
                                     <img src="images/flat/default/10.jpg" alt=""/>
                                     <h2>15 août</h2>
@@ -891,7 +945,7 @@
                                         <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
                                     </div>
                                 </div>
-                                
+
                                 <div class="item" data-id="20/08/2012" data-description="Lorem ipsum">
                                     <img src="images/flat/default/11.jpg" alt=""/>
                                     <h2>20 août</h2>
@@ -903,7 +957,7 @@
                                         <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
                                     </div>
                                 </div>
-                                
+
                                 <div class="item" data-id="26/08/2012" data-description="Lorem ipsum dolor">
                                     <img src="images/flat/default/12.jpg" alt=""/>
                                     <h2>26 août</h2>
@@ -937,7 +991,7 @@
                                 <li><a href="#">Les cartes en fantasy</a></li>
                                 <li><a href="#">Les auteurs et leurs &oelig;uvres</a></li>
                                 <li><a href="#">La fantasy urbaine</a></li>
-                            </ul>                
+                            </ul>
                         </div>
                         <div class="small-12 medium-6 large-6 columns">
                             <h2><span class="icon icon-play"></span> Dessine-moi un Dragon</h2>
@@ -947,7 +1001,7 @@
                                 <li><a href="#">La Reine des neiges</a></li>
                                 <li><a href="#">A comme association</a></li>
                                 <li><a href="#">Lou!</a></li>
-                            </ul> 
+                            </ul>
                         </div>
                     </div>
                     </section>
@@ -1024,6 +1078,15 @@
                                             <div class="detail_price">
                                                 <h3>2015</h3>
                                                 <em><a href="#" title="Voir le détail du prix 2015">Voir le détail</a></em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="le-prix">
+                                        <div class="contenu-prix">
+                                            <div class="detail_price">
+                                                <h3>2016</h3>
                                             </div>
                                         </div>
                                     </div>

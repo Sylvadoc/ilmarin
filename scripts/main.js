@@ -7,21 +7,21 @@ $(document).ready(function() {
 
 	// onscroll sticky header
 	$('.m-scene').scroll(function() {
-		if ($(this).scrollTop() < 300 && $("html").hasClass("desktop")) {
-			$('header').removeClass("sticky");
+		if ($(this).scrollTop() < 150 && $("html").hasClass("desktop")) {
+			$('.the-header').removeClass("sticky");
 			$('.to_be_fixed').removeClass("sidebar_fixed");
 		}
 		else if($(this).scrollTop() > 700 && $("html").hasClass("desktop")) {
 			$('.to_be_fixed').addClass("sidebar_fixed");
 		}
 		else {
-			$('header').addClass("sticky");
+			$('.the-header').addClass("sticky");
 		}
 	});
 
 	// mobile
 	if ($("html").hasClass("tablet") || $("html").hasClass("mobile") || $("html").hasClass("smallscreen")) {
-		$('header').addClass("sticky");
+		$('.the-header').addClass("sticky");
 		$('.to_be_fixed').removeClass("sidebar_fixed");
 	}
 
@@ -31,30 +31,22 @@ $(document).ready(function() {
 		$('#cnil_ok').click(function(e){
 			$.cookie('cookie_cnil', 'viewed');
 			$('#cnil').fadeOut();
-		});	
+		});
 	}
 
-	// modal windows
-	$('.launch_modal').click(function(){
-		var the_modal = $(this).attr('href');
-		if (!$(''+the_modal+'').hasClass("modal_open")) {
-			$(''+the_modal+'').addClass('modal_open');
+	// panel header
+	$('.toggle-panel').click(function(){
+		var the_panel = $(this).attr('href');
+		if (!$(''+the_panel+'').hasClass("show-panel")) {
+			$('.branding').removeClass('appear').addClass('disappear').delay(300).hide();
+			$(''+the_panel+'').addClass('show-panel');
+			$(''+the_panel+'').removeClass('hide-panel');
 		}
 		else {
-			$(''+the_modal+'').removeClass('modal_open');
+			$('.branding').removeClass('disappear').addClass('appear').delay(300).show();
+			$('.panel').removeClass('show-panel');
+			$(''+the_panel+'').addClass('hide-panel');
 		}
-		return false;
-	});
-	$('.modal_close').click(function(){
-		$(this).parent().parent('.modal').removeClass('modal_open');
-	});
-	$('.modal_overlay').click(function(){
-		$('.modal').removeClass('modal_open');
-	});
-
-	// satellites toggle
-	$('.network > a').click(function(){
-		$(this).toggleClass('open-copernic');
 		return false;
 	});
 
@@ -81,11 +73,11 @@ $(document).ready(function() {
 
 	// tabs
 	$('.tabs a').click(function(e) {
-		
+
 		var tab_id = $(this).attr('href');
 		var all_tabs = $(this).parent().parent().next('.row_tab_all').children();
 		var all_links = $(this).parent().parent().children().children();
-		
+
 		$(all_links).removeClass('active');
 		$(this).addClass('active');
 

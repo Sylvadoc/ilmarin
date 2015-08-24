@@ -1,69 +1,431 @@
+	/* ====== Concerning Logo
+	======================================= */
+
+	@-webkit-keyframes LogoArrives {
+		0%   {
+			@include opacity(0);
+			@include translate3d(0,-2rem,0);
+		}
+		100% {
+			@include opacity(1);
+			@include translate3d(0,0,0);
+		}
+	}
+	@-moz-keyframes LogoArrives {
+		0%   {
+			@include opacity(0);
+			@include translate3d(0,-2rem,0);
+		}
+		100% {
+			@include opacity(1);
+			@include translate3d(0,0,0);
+		}
+	}
+	@-o-keyframes LogoArrives {
+		0%   {
+			@include opacity(0);
+			@include translate3d(0,-2rem,0);
+		}
+		100% {
+			@include opacity(1);
+			@include translate3d(0,0,0);
+		}
+	}
+	@keyframes LogoArrives {
+		0%   {
+			@include opacity(0);
+			@include translate3d(0,-2rem,0);
+		}
+		100% {
+			@include opacity(1);
+			@include translate3d(0,0,0);
+		}
+	}
+		/* ================================ */
+		@-webkit-keyframes Disappear {
+			0%   {
+				@include opacity(1);
+				@include scale(1);
+			}
+			100% {
+				@include opacity(0);
+				@include scale(0);
+			}
+		}
+		@-moz-keyframes Disappear {
+			0%   {
+				@include opacity(1);
+				@include scale(1);
+			}
+			100% {
+				@include opacity(0);
+				@include scale(0);
+			}
+		}
+		@-o-keyframes Disappear {
+			0%   {
+				@include opacity(1);
+				@include scale(1);
+			}
+			100% {
+				@include opacity(0);
+				@include scale(0);
+			}
+		}
+		@keyframes Disappear {
+			0%   {
+				@include opacity(1);
+				@include scale(1);
+			}
+			100% {
+				@include opacity(0);
+				@include scale(0);
+			}
+		}
+		/* ================================ */
+		@-webkit-keyframes Appear {
+			0%   {
+				@include opacity(0);
+				@include scale(0);
+			}
+			100% {
+				@include opacity(1);
+				@include scale(1);
+			}
+		}
+		@-moz-keyframes Appear {
+			0%   {
+				@include opacity(0);
+				@include scale(0);
+			}
+			100% {
+				@include opacity(1);
+				@include scale(1);
+			}
+		}
+		@-o-keyframes Appear {
+			0%   {
+				@include opacity(0);
+				@include scale(0);
+			}
+			100% {
+				@include opacity(1);
+				@include scale(1);
+			}
+		}
+		@keyframes Appear {
+			0%   {
+				@include opacity(0);
+				@include scale(0);
+			}
+			100% {
+				@include opacity(1);
+				@include scale(1);
+			}
+		}
+
+	/* ====== Concerning title logo
+	======================================= */
+
+	@-webkit-keyframes ElbakinArrives {
+		0%   {
+			@include opacity(0);
+			@include translate3d(0,1rem,0);
+		}
+		100% {
+			@include opacity(1);
+			@include translate3d(0,-1rem,0);
+		}
+	}
+	@-moz-keyframes ElbakinArrives {
+		0%   {
+			@include opacity(0);
+			@include translate3d(0,1rem,0);
+		}
+		100% {
+			@include opacity(1);
+			@include translate3d(0,-1rem,0);
+		}
+	}
+	@-o-keyframes ElbakinArrives {
+		0%   {
+			@include opacity(0);
+			@include translate3d(0,1rem,0);
+		}
+		100% {
+			@include opacity(1);
+			@include translate3d(0,-1rem,0);
+		}
+	}
+	@keyframes ElbakinArrives {
+		0%   {
+			@include opacity(0);
+			@include translate3d(0,1rem,0);
+		}
+		100% {
+			@include opacity(1);
+			@include translate3d(0,-1rem,0);
+		}
+	}
+
+	/* ====== ShowPanel
+	======================================= */
+
+	@-webkit-keyframes ShowPanel {
+		0%   {
+			@include opacity(0);
+			@include translate3d(0,-1rem,0);
+		}
+		100% {
+			@include opacity(1);
+			@include translate3d(0,0,0);
+		}
+	}
+	@-moz-keyframes ShowPanel {
+		0%   {
+			@include opacity(0);
+			@include translate3d(0,-1rem,0);
+		}
+		100% {
+			@include opacity(1);
+			@include translate3d(0,0,0);
+		}
+	}
+	@-o-keyframes ShowPanel {
+		0%   {
+			@include opacity(0);
+			@include translate3d(0,-1rem,0);
+		}
+		100% {
+			@include opacity(1);
+			@include translate3d(0,0,0);
+		}
+	}
+	@keyframes ShowPanel {
+		0%   {
+			@include opacity(0);
+			@include translate3d(0,-1rem,0);
+		}
+		100% {
+			@include opacity(1);
+			@include translate3d(0,0,0);
+		}
+	}
+
+	/* ====== HidePanel
+	======================================= */
+
+	@-webkit-keyframes HidePanel {
+		0%   {
+			@include opacity(1);
+			@include translate3d(0,0,0);
+		}
+		100% {
+			@include opacity(0);
+			@include translate3d(0,1rem,0);
+		}
+	}
+	@-moz-keyframes HidePanel {
+		0%   {
+			@include opacity(1);
+			@include translate3d(0,0,0);
+		}
+		100% {
+			@include opacity(0);
+			@include translate3d(0,1rem,0);
+		}
+	}
+	@-o-keyframes HidePanel {
+		0%   {
+			@include opacity(1);
+			@include translate3d(0,0,0);
+		}
+		100% {
+			@include opacity(0);
+			@include translate3d(0,1rem,0);
+		}
+	}
+	@keyframes HidePanel {
+		0%   {
+			@include opacity(1);
+			@include translate3d(0,0,0);
+		}
+		100% {
+			@include opacity(0);
+			@include translate3d(0,1rem,0);
+		}
+	}
+
 /********************************************************************************************************************************************************************************
 ********************* H E A D E R *****************
 /********************************************************************************************************************************************************************************/
 
-header {
+.the-header {
+	background: transparent url('../images/bg-grad.png') no-repeat bottom center;
 	@extend %clearfix;
-	@include transition(all .2s ease-out);
-	.columns {
+	height: 190px;
+	position: relative;
+	/* ====== LOGO
+	======================================= */
+	.branding {
+		display: block;
+		margin: 0 auto;
+		width: 150px;
+		.logotype {
+			-webkit-animation: LogoArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+			-moz-animation: LogoArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+			-o-animation: LogoArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+			animation: LogoArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+		}
+		.elbakin {
+			-webkit-animation: ElbakinArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+			-moz-animation: ElbakinArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+			-o-animation: ElbakinArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+			animation: ElbakinArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+			@include translate3d(0,-1rem,0);
+		}
+	}
+	.disappear {
+		-webkit-animation: Disappear .5s 1;
+		-moz-animation: Disappear .5s 1;
+		-o-animation: Disappear .5s 1;
+		animation: Disappear .5s 1;
+	}
+	.appear {
+		-webkit-animation: Appear .5s 1;
+		-moz-animation: Appear .5s 1;
+		-o-animation: Appear .5s 1;
+		animation: Appear .5s 1;
+	}	
+	/* ====== MENU HEADER SIMPLE
+	======================================= */
+	ul {
+		list-style: none none;
+		margin: 0;
 		padding: 0;
+		text-align: center;
+		li {
+			display: inline-block;
+		}
+		a {
+			display: block;
+			padding: .3rem .6rem;
+		}
+		a:hover, a:focus, a:visited { text-decoration: none; outline: 0; }
+	}
+	.visit {
+		left: 1rem;
+		position: absolute;
+		text-transform: uppercase;
+		top: 1rem;
+		z-index: 100;
+		li {
+			background: #fff;
+			margin-right: 1px;
+			&:last-child { margin: 0; }
+		}
+	}
+	.aside_menu {
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+		text-transform: uppercase;
+		li {
+			background: #fff;
+			margin-left: 1px;
+			&:last-child { margin: 0;}
+		}
+		.social {
+			li { background: transparent; }
+			.icon-twitter {color: #55ACEE;}
+			.icon-facebook {color: #47639E;}
+			.icon-google-plus {color: #DD4B39;}
+		}
 	}
 	&.sticky {
+		@include opacity(0.95);
 		background: #fff;
-		min-height: 85px;
 		padding: 0;
+		height: 50px;
 		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: 100;
-		.sub_header {
-			@include opacity(0);
-			display: none;
-			z-index: -1;
-		}
-		.columns {
-			position: absolute;
-			padding: 0;
-			top: 0;
-		}
-		.launch-nav {
-			margin: 0;
-			padding: 0;
-			li {
-				span + span {
-					display: none;
-				}
+		li {
+			span + span {
+				@extend %visuallyhidden;
 			}
 		}
-		.social {
-			.link {
-				display: none;
-			}
-		}
+		.social, .network { display: none;}
 		.branding {
-			@include transform(rotate(45deg) translate(-45%,40%));
-			background: white;
-			width: 100px;
-			height: 100px;
-			img {
-				@include rotate(-45deg);
-			}
-			span {
+			width: 50px;
+			.elbakin {
 				display: none;
 			}
 		}
+	}
+	/* ====== P A N E L    M E N U
+	======================================= */
+	.panel {
+		display: none;
+		width: 33%;
+		margin: 3rem auto;
+		.form {
+			label {
+				color: white;
+				display: block;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			.half-form {
+				width: 40%;
+				margin-right: 1rem;
+				&:last-of-type {
+					margin-right: 0;
+				}
+				display: inline-block;
+			}
+			.input-style {
+				@include border-radius(2px);
+				@include rem(2);
+				background: white;
+				border: 0;
+				font-style: italic;
+				padding: .5rem;
+				width: 100%;
+			}
+			p, a {
+				color: white;
+			}
+		}
+	}
+	.hide-panel {
+		-webkit-animation: HidePanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+		-moz-animation: HidePanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+		-o-animation: HidePanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+		animation: HidePanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+	}
+	.show-panel {
+		-webkit-animation: ShowPanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+		-moz-animation: ShowPanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+		-o-animation: ShowPanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+		animation: ShowPanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+		display: block;
+	}
+	/* ====== R E C H E R C H E R
+	======================================= */
+	#search {
+		.input-style {
+			width: 84%;
+		}
+	}
+	/* ====== L O G   I N
+	======================================= */
+	#log_in {
+
 	}
 }
 
-.branding {
-	@include translate(-50%,0);
-	position: absolute;
-	left: 50%;
-	top: 0;
-	img {
-		display: block;
-	}
-}
 
 /* ============== R E S P O N S I V E
 ========================================================== */
@@ -71,14 +433,6 @@ header {
 @media (max-width: $small-screen) {
 	header {
 		&.sticky {
-			.launch-nav {
-				.palantir, .forum {
-					display: none;
-				}
-			}
-			.social {
-				display: none;
-			}
 		}
 	}
 }

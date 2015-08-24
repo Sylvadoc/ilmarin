@@ -11,7 +11,6 @@
 	@extend %clearfix;
 	background: $news-background;
 	padding: 1vh 0 0 1vh;
-	margin-top: 100px;
 	.simili-title {
 		color: white;
 		margin: 20px 0;
@@ -144,28 +143,28 @@
 	}
 	.mosaic-large {
 		width: 48.5vw;
-		height: 61vh;
+		height: 45vh;
 		.the-title {
 			font-size: $h1-size;
 		}
 	}
 	.mosaic-medium {
 		width: 48.5vw;
-		height: calc(60vh / 2);
+		height: calc(44vh / 2);
 		.the-title {
 			font-size: $h2-size;
 		}
 	}
 	.mosaic-tall {
 		width: 24vw;
-		height: 61vh;
+		height: 45vh;
 		.the-title {
 			font-size: $h2-size;
 		}
 	}
 	.mosaic-little {
 		width: 24vw;
-		height: calc(60vh / 2);
+		height: calc(44vh / 2);
 		.the-title {
 			font-size: $h3-size;
 		}
