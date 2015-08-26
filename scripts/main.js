@@ -37,15 +37,16 @@ $(document).ready(function() {
 	// panel header
 	$('.toggle-panel').click(function(){
 		var the_panel = $(this).attr('href');
-		if (!$(''+the_panel+'').hasClass("show-panel")) {
-			$('.branding').removeClass('appear').addClass('disappear').delay(300).hide();
-			$(''+the_panel+'').addClass('show-panel');
-			$(''+the_panel+'').removeClass('hide-panel');
+		var panels = $(".panel");
+		var logo = $(".branding");
+		if ($(the_panel).hasClass("show-panel")) {
+			$(panels).removeClass('show-panel');
+			$(logo).show();
 		}
 		else {
-			$('.branding').removeClass('disappear').addClass('appear').delay(300).show();
-			$('.panel').removeClass('show-panel');
-			$(''+the_panel+'').addClass('hide-panel');
+			$(panels).removeClass('show-panel');
+			$(the_panel).addClass('show-panel');
+			$(logo).hide();
 		}
 		return false;
 	});
