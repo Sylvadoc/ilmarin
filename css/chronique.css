@@ -2652,15 +2652,37 @@ body {
 .the-header #search .input-style {
   width: 84%;
 }
-/* line 430, ../styles/layout/_header.scss */
+/* line 429, ../styles/layout/_header.scss */
+.the-header #web {
+  margin: 0 auto;
+  width: 45%;
+}
+/* line 432, ../styles/layout/_header.scss */
 .the-header #web ul {
   text-align: center;
 }
-/* line 432, ../styles/layout/_header.scss */
+/* line 434, ../styles/layout/_header.scss */
 .the-header #web ul li {
+  display: inline-block;
   margin: 0 1rem;
+  max-width: 130px;
 }
-/* line 436, ../styles/layout/_header.scss */
+/* line 438, ../styles/layout/_header.scss */
+.the-header #web ul li img {
+  height: auto;
+  width: 100%;
+}
+/* line 442, ../styles/layout/_header.scss */
+.the-header #web ul li span {
+  display: block;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  line-height: 1;
+}
+/* line 448, ../styles/layout/_header.scss */
+.the-header #web ul li:hover span {
+  color: #FE9E00;
+}
+/* line 454, ../styles/layout/_header.scss */
 .the-header #web a {
   color: white;
   text-transform: uppercase;
@@ -2670,29 +2692,29 @@ body {
 ========================================================== */
 /* ============== H E A D  S E C T I O N
 ========================================================== */
-/* line 457, ../styles/layout/_header.scss */
+/* line 475, ../styles/layout/_header.scss */
 .header_section {
   padding: 2rem 0;
 }
-/* line 459, ../styles/layout/_header.scss */
+/* line 477, ../styles/layout/_header.scss */
 .header_section h1 {
   font-family: "Roboto Slab", serif;
   font-size: 5rem;
   margin: 0;
   padding: 0;
 }
-/* line 464, ../styles/layout/_header.scss */
+/* line 482, ../styles/layout/_header.scss */
 .header_section h1 abbr {
   border: 0;
 }
-/* line 468, ../styles/layout/_header.scss */
+/* line 486, ../styles/layout/_header.scss */
 .header_section p {
   font-size: 25.2px;
   font-size: 1.8rem;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
 }
-/* line 472, ../styles/layout/_header.scss */
+/* line 490, ../styles/layout/_header.scss */
 .header_section p .dropcaps {
   font-family: "Palatino Linotype", Palatino, "Roboto Slab", serif;
   display: block;
@@ -2703,11 +2725,11 @@ body {
   line-height: .67em;
   color: white;
 }
-/* line 483, ../styles/layout/_header.scss */
+/* line 501, ../styles/layout/_header.scss */
 .header_section .more {
   color: white;
 }
-/* line 485, ../styles/layout/_header.scss */
+/* line 503, ../styles/layout/_header.scss */
 .header_section .more .icon {
   color: white;
 }

@@ -427,10 +427,28 @@
 	/* ====== N E T W O R K
 	======================================= */
 	#web {
+		margin: 0 auto;
+		width: 45%;
 		ul {
 			text-align: center;
 			li {
+				display: inline-block;
 				margin: 0 1rem;
+				max-width: 130px;
+				img {
+					height: auto;
+					width: 100%;
+				}
+				span {
+					display: block;
+					font-family: $font-stack-headings;
+					line-height: 1;
+				}
+				&:hover {
+					span {
+						color: $orange-color-elbakin;
+					}
+				}
 			}
 		}
 		a {
