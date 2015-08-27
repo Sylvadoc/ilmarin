@@ -42,47 +42,6 @@
 		}
 	}
 		/* ================================ */
-		@-webkit-keyframes Disappear {
-			0%   {
-				@include opacity(1);
-				@include scale(1);
-			}
-			100% {
-				@include opacity(0);
-				@include scale(0);
-			}
-		}
-		@-moz-keyframes Disappear {
-			0%   {
-				@include opacity(1);
-				@include scale(1);
-			}
-			100% {
-				@include opacity(0);
-				@include scale(0);
-			}
-		}
-		@-o-keyframes Disappear {
-			0%   {
-				@include opacity(1);
-				@include scale(1);
-			}
-			100% {
-				@include opacity(0);
-				@include scale(0);
-			}
-		}
-		@keyframes Disappear {
-			0%   {
-				@include opacity(1);
-				@include scale(1);
-			}
-			100% {
-				@include opacity(0);
-				@include scale(0);
-			}
-		}
-		/* ================================ */
 		@-webkit-keyframes Appear {
 			0%   {
 				@include opacity(0);
@@ -261,10 +220,13 @@
 /********************************************************************************************************************************************************************************/
 
 .the-header {
-	background: transparent url('../images/bg-grad.png') no-repeat bottom center;
 	@extend %clearfix;
-	height: 190px;
 	position: relative;
+	.inner-wrap {
+		background: transparent url('../images/bg-grad.png') no-repeat bottom center;
+		height: 190px;
+		overflow: hidden;
+	}
 	/* ====== LOGO
 	======================================= */
 	.branding {
@@ -285,18 +247,12 @@
 			@include translate3d(0,-1rem,0);
 		}
 	}
-	.disappear {
-		-webkit-animation: Disappear .5s 1;
-		-moz-animation: Disappear .5s 1;
-		-o-animation: Disappear .5s 1;
-		animation: Disappear .5s 1;
-	}
 	.appear {
 		-webkit-animation: Appear .5s 1;
 		-moz-animation: Appear .5s 1;
 		-o-animation: Appear .5s 1;
 		animation: Appear .5s 1;
-	}	
+	}
 	/* ====== MENU HEADER SIMPLE
 	======================================= */
 	ul {
@@ -344,13 +300,17 @@
 	}
 	&.sticky {
 		@include opacity(0.95);
-		background: #fff;
+		background: #fff !important;
 		padding: 0;
 		height: 50px;
 		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: 100;
+		.inner-wrap {
+			background: none;
+			height: auto;
+		}
 		li {
 			span + span {
 				@extend %visuallyhidden;
