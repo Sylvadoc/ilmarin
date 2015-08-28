@@ -10,6 +10,11 @@
 	.the-header {
 		background: transparent url('../images/simonetti_1280.jpg') no-repeat 0 -300px;
 	}
+	#header_section {
+		&.tolkien_section {
+			background: transparent url('../images/simonetti_1280.jpg') no-repeat 0 0;
+		}
+	}
 }
 
 /* ============== S E C T I O N S
@@ -20,14 +25,11 @@ section:nth-child(2n+2) {
 }
 #header_section {
 	&.tolkien_section {
-		background: #2E1437 url('../images/section_jrr.jpg') no-repeat top right;
-		background-size: cover;
-		// @include gradient(#2E1437,#948E99);
 		color: white;
 	}
 	&.library_section {
 		@include gradient(#2E1437,#948E99);
-		color: white;		
+		color: white;
 	}
 }
 #all_new_chronique {

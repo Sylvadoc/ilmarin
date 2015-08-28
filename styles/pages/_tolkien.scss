@@ -2,13 +2,29 @@
 ********************* S E C T I O N   T O L K I E N *****************
 /********************************************************************************************************************************************************************************/
 
+.page-tolkien {
+	.the-header {
+		background: transparent;
+		.inner-wrap {
+			background: transparent;
+		}
+	}
+	#header_section {
+		padding-top: 190px;
+		margin-top: -190px;
+	}
+}
+
+/* ============== R E D E S I G N
+========================================================== */
+
 .tolkien_section {
 	abbr {
 		border: 0;
 	}
 }
 #tolkien_side, #tolkien_thoughts {
-	padding: 2rem;
+	padding: 2rem 0;
 }
 #tolkien_news {
 	padding-top: 2rem;
@@ -83,6 +99,7 @@
 
 #last_news {
 	@extend %clearfix;
+	padding-bottom: 1em;
 }
 .other_news {
 	list-style: none none;
