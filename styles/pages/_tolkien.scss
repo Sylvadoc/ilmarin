@@ -99,7 +99,7 @@
 
 #last_news {
 	@extend %clearfix;
-	padding-bottom: 1em;
+	padding: 1em 0;
 }
 .other_news {
 	list-style: none none;
@@ -149,6 +149,15 @@
 				}
 			}
 		}
+	}
+}
+
+/* ============== T O L K I E N D I L
+========================================================== */
+
+#tolkiendil {
+	.article_focus {
+		
 	}
 }
 

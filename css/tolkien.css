@@ -4092,7 +4092,7 @@ body {
 ========================================================== */
 /* line 100, ../styles/pages/_tolkien.scss */
 #last_news {
-  padding-bottom: 1em;
+  padding: 1em 0;
 }
 
 /* line 104, ../styles/pages/_tolkien.scss */
@@ -4162,34 +4162,36 @@ body {
   top: -.5rem;
 }
 
+/* ============== T O L K I E N D I L
+========================================================== */
 /* ============== Q U I Z
 ========================================================== */
-/* line 159, ../styles/pages/_tolkien.scss */
+/* line 168, ../styles/pages/_tolkien.scss */
 #quiz .btn {
   margin-top: 1em;
 }
 
 /* ============== C O R R E C T I O N S
 ========================================================== */
-/* line 168, ../styles/pages/_tolkien.scss */
+/* line 177, ../styles/pages/_tolkien.scss */
 #corrections .btn {
   margin-top: 1em;
 }
 
 /* ============== P E T E R  J A C K S O N
 ========================================================== */
-/* line 177, ../styles/pages/_tolkien.scss */
+/* line 186, ../styles/pages/_tolkien.scss */
 #tolkien_by_pj ul {
   list-style: none none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 184, ../styles/pages/_tolkien.scss */
+/* line 193, ../styles/pages/_tolkien.scss */
 #tolkien_by_pj ul li a {
   display: block;
 }
-/* line 187, ../styles/pages/_tolkien.scss */
+/* line 196, ../styles/pages/_tolkien.scss */
 #tolkien_by_pj ul li img {
   width: 100%;
   height: 150px;
@@ -4198,58 +4200,58 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 @media (max-width: 1024px) {
-  /* line 200, ../styles/pages/_tolkien.scss */
+  /* line 209, ../styles/pages/_tolkien.scss */
   #all_new_chronique .row_tab_all {
     height: 270px;
   }
-  /* line 204, ../styles/pages/_tolkien.scss */
+  /* line 213, ../styles/pages/_tolkien.scss */
   #all_new_chronique .critiques li:nth-child(-n+6) {
     display: block;
   }
-  /* line 206, ../styles/pages/_tolkien.scss */
+  /* line 215, ../styles/pages/_tolkien.scss */
   #all_new_chronique .critiques li:nth-child(-n+6) img {
     height: 240px;
   }
-  /* line 210, ../styles/pages/_tolkien.scss */
+  /* line 219, ../styles/pages/_tolkien.scss */
   #all_new_chronique .critiques li {
     display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 219, ../styles/pages/_tolkien.scss */
+  /* line 228, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .row_tab_all {
     height: 310px;
   }
-  /* line 223, ../styles/pages/_tolkien.scss */
+  /* line 232, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .critiques li:nth-child(-n+4) {
     display: block;
   }
-  /* line 225, ../styles/pages/_tolkien.scss */
+  /* line 234, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .critiques li:nth-child(-n+4) img {
     height: 290px;
   }
-  /* line 229, ../styles/pages/_tolkien.scss */
+  /* line 238, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .critiques li {
     display: none;
   }
 }
 @media (max-width: 480px) {
-  /* line 240, ../styles/pages/_tolkien.scss */
+  /* line 249, ../styles/pages/_tolkien.scss */
   .tabs {
     font-size: 18.2px;
     font-size: 1.3rem;
   }
 
-  /* line 244, ../styles/pages/_tolkien.scss */
+  /* line 253, ../styles/pages/_tolkien.scss */
   .desc_crit .h2_like, .desc_crit .type_item, .desc_crit .desc_item {
     display: none;
   }
 
-  /* line 250, ../styles/pages/_tolkien.scss */
+  /* line 259, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .row_tab_all {
     height: 350px !important;
   }
-  /* line 253, ../styles/pages/_tolkien.scss */
+  /* line 262, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .all_chronicles {
     display: block;
     float: none;
@@ -4257,16 +4259,16 @@ body {
     text-align: center;
     width: 200px;
   }
-  /* line 261, ../styles/pages/_tolkien.scss */
+  /* line 270, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .critiques li:nth-child(-n+6) {
     display: block !important;
     margin-bottom: 1em;
   }
-  /* line 264, ../styles/pages/_tolkien.scss */
+  /* line 273, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .critiques li:nth-child(-n+6) img {
     height: 160px;
   }
-  /* line 268, ../styles/pages/_tolkien.scss */
+  /* line 277, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .critiques li {
     display: none !important;
   }
