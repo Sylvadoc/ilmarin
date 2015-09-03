@@ -4047,7 +4047,7 @@ body {
 @media (max-width: 1920px) {
   /* line 5, ../styles/themes/_theme.scss */
   .the-header {
-    background: transparent url("../images/simonetti_1920.jpg") no-repeat 0 0;
+    background: transparent url("../images/simonetti_1920.jpg") no-repeat 0 -792px;
   }
 }
 @media (max-width: 1280px) {
