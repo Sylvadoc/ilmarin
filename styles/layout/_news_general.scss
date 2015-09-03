@@ -2,267 +2,98 @@
 ********************* N E W S *****************
 /********************************************************************************************************************************************************************************/
 
-.row_all {
-	@extend %clearfix;
-	height: 65vh;
-	width: 100vw;
-}
 #news_general {
 	@extend %clearfix;
 	background: $news-background;
-	padding: 1vh 0 0 1vh;
-	.simili-title {
-		color: white;
-		margin: 20px 0;
+	padding: 2rem 0;
+}
+.post {
+	background-color: white;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.the-title {
+		margin-top: 1rem;
+		a {display: block;}
 	}
-	.post {
-		float: left;
-		overflow: hidden;
-		position: relative;
-		margin: 0 1vh 1vh 0;
-		figure {
-			height: 100%;
-			width: 100%;
-		}
-		img {
-			@include transition(transform 0.35s);
-			display: block;
-			height: 100%;
-			max-width: none;
-			width: 100%;
-		}
-		&:hover {
-			cursor: pointer;
-			img {
-				@include scale3d(1.05,1.05,1);
-			}
-			.entry-extract {
-				.post-info {
-					@include opacity(1);
-					@include translate(0, 0);
-				}
-				p {
-					@include opacity(1);
-					@include translate(0, 0);				
-				}
-			}
-		}
+}
+.post-teaser {
+	-moz-perspective : 600px;
+	perspective : 600px;
+	.the-title {
+		@include transition(transform .2s);
+		background-color: rgba(0,0,0,0.6);
+		display: block;
+		font-family: $font-stack-headings;
+		line-height: 1.2;
+		margin-bottom: 0;
+		padding: 1rem;
+		text-align: center;
+		text-transform: uppercase;
+		a {color: white;}
 	}
-	.teaser-tribune {
-		background: #FE9E00;
-		position: relative;
-		&:hover {
-			&:before {
-				@include opacity(1);
-				@include translate(-10px, 0);
-			}
-		}
-		&:before {
-			@include transition(all 0.35s);
-			@include rem(10);
-			color: rgba(255,255,255,0.5);
-			content: "\e608";
-			display: block;
-			font-family: 'icomoon', sans-serif;
-			line-height: 1;
-			position: absolute;
-			right: 0;
-			speak: none;
-			top: -10px;
-			@include opacity(0);
-		}
-		.entry-extract {
-			padding: 10px;
-			position: relative;
-		}
-		.the-title {
-			margin: 0;
-			z-index: 10;
-			a {
-				color: black;
-				font-family: $font-stack-special;
-				font-style: italic;
-				text-decoration: none;
-			}
-		}
+	.entry-extract {
+		@include transition(transform .2s);
+		@include opacity(0);
+		@include translate3d(0,-20px,0);
+		margin-top: 1rem;
 		.post-info {
+			color: white;
 			font-family: $font-stack-special;
 			font-style: italic;
-			padding: 5px 0;
-			text-align: right;
+			margin-bottom: 1rem;
+			text-align: center;
 		}
-		.post-info, p {
-			color: black;
-			@include rem(1.3);
-			z-index: 10;
+		p {
+			background-color: rgba(0,0,0,0.6);
+			padding: 1rem;
+			color: white;
 		}
 	}
-	.teaser-news, .teaser-chronique {
+	&:hover {
+		.the-title {
+			-moz-transform: rotateX(25deg);
+			transform: rotateX(25deg);
+			a {text-decoration: none;}
+		}
 		.entry-extract {
-			height: 100%;
-			left: 0;
-			padding: 2rem;
-			position: absolute;
-			top: 0;
-			width: 100%;
-			.the-title {
-				@include text-shadow(1px 1px 0 rgba(0,0,0,1));
-				display: block;
-				font-family: $font-stack-headings;
-				margin: 0;
-				position: relative;
-				text-align: center;
-				text-transform: uppercase;
-				a {
-					color: white;
-					text-decoration: none;
-					&:hover, &:focus {
-						text-decoration: none;
-					}
-				}
-			}
-			.post-info, p {
-				@include opacity(0);
-				@include transition(all 0.35s);
-				@include translate(0, 10%);
-			}
-			.post-info {
-				color: white;
-				font-family: $font-stack-special;
-				font-style: italic;
-				padding: 1rem 0;
-				text-align: center;
-				& + p {
-					color: $base-color;
-					background: white;
-					padding: 1rem;
-					text-align: left;
-				}
-			}
+			@include opacity(1);
+			@include translate3d(0,-10px,0);
 		}
 	}
-	.mosaic-large {
-		width: 48.5vw;
-		height: 45vh;
-		.the-title {
-			font-size: $h1-size;
-		}
-	}
-	.mosaic-medium {
-		width: 48.5vw;
-		height: calc(44vh / 2);
-		.the-title {
-			font-size: $h2-size;
-		}
-	}
-	.mosaic-tall {
-		width: 24vw;
-		height: 45vh;
-		.the-title {
-			font-size: $h2-size;
-		}
-	}
-	.mosaic-little {
-		width: 24vw;
-		height: calc(44vh / 2);
-		.the-title {
-			font-size: $h3-size;
-		}
+}
+.post-tribune {
+	background: #ccc;
+	text-align: center;
+	.the-title {
+		font-family: $font-stack-caps;
+		line-height: 1;
+		margin-bottom: 0;
+		a {color: black;}
 	}
 }
 
 /* ============== R E S P O N S I V E
 ========================================================== */
 
-@media (min-width: $ultra-large-screen) {
-	#news_general {
-		.mosaic {
-		}
-		.mosaic-large {
-		}
-		.mosaic-medium {
-		}
-	}
-}
-@media (min-width: $extra-large-screen) and (max-width: $ultra-large-screen) {
-	#news_general {
-		.mosaic {
-		}
-		.mosaic-large {
-		}
-		.mosaic-medium {
-		}
-	}
-}
-@media (max-width: $extra-large-screen) {
-	#news_general {
-		.mosaic {
-		}
-		.mosaic-large {
-		}
-		.mosaic-medium {
-		}
-	}
-}
 @media (max-width: $large-screen) {
-	#news_general {
-		.mosaic {
-		}
-		.mosaic-large {
-			.the-title {
-				line-height: 1;
-			}
-		}
-		.mosaic-medium {
-			.the-title {
-				line-height: 1;
-			}
+	.column-01, .column-03, .column-04 {
+		.the-title {font-size: $h3-size;}
+		.post {
+			height: 320px;
+			margin-bottom: 1px;
 		}
 	}
+	.column-02 {
+		.the-title {font-size: $h1-size;}
+		.post {height: 641px;}
+	}
 }
-@media (max-width: $tiny-screen) {
-	#news_general {
-		padding-top: 6rem;
-		.mosaic {
-			.section {
-				display: none;
-			}
-			&.post {
-				img {
-					@include opacity(0.6);
-				}
-				.entry-extract {
-					.post-info {
-						display: none;
-					}
-					p {
-						margin-top: 1em;
-						@include translate(0,0);
-						@include opacity(1);
-					}
-				}
-			}
-			&.teaser-news, &.teaser-chroniques {
-				.entry-extract {
-					p {
-						@include text-shadow(0 0 3px rgba(0,0,0,0.9));
-					}
-				}
-			}
-		}
-		.mosaic-large {
-			width: 100%;
-			height: calc(100% * 1.618033988749);
-			.the-title {
-				font-size: 2.4em;
-			}
-		}
-		.mosaic-medium {
-			width: 100%;
-			height: calc(100% * 1.618033988749);
-			.the-title {
-				font-size: 2em;
-			}
-		}
+@media (min-width: $extra-large-screen) {
+	.column-01, .column-03, .column-04 {
+		.the-title {font-size: $h2-size;}
+	}
+	.column-02 {
+		.the-title {font-size: $h1-size;}
 	}
 }

@@ -1177,9 +1177,13 @@ p {
 .the-header .icon-burger {
   position: relative;
   top: -4px;
+  -webkit-transition: transform 350ms;
+  -moz-transition: transform 350ms;
+  -o-transition: transform 350ms;
+  transition: transform 350ms;
 }
 
-/* line 328, ../styles/base/_typography.scss */
+/* line 332, ../styles/base/_typography.scss */
 .mp-pushed .icon-burger {
   -webkit-transform: translateY(0) translateX(-30px) rotate(0deg);
   -moz-transform: translateY(0) translateX(-30px) rotate(0deg);
@@ -1187,7 +1191,7 @@ p {
   -o-transform: translateY(0) translateX(-30px) rotate(0deg);
   transform: translateY(0) translateX(-30px) rotate(0deg);
 }
-/* line 330, ../styles/base/_typography.scss */
+/* line 334, ../styles/base/_typography.scss */
 .mp-pushed .icon-burger:before {
   -webkit-transform: translateY(4px) translateX(30px) rotate(-45deg);
   -moz-transform: translateY(4px) translateX(30px) rotate(-45deg);
@@ -1195,7 +1199,7 @@ p {
   -o-transform: translateY(4px) translateX(30px) rotate(-45deg);
   transform: translateY(4px) translateX(30px) rotate(-45deg);
 }
-/* line 333, ../styles/base/_typography.scss */
+/* line 337, ../styles/base/_typography.scss */
 .mp-pushed .icon-burger:after {
   -webkit-transform: translateY(-4px) translateX(30px) rotate(45deg);
   -moz-transform: translateY(-4px) translateX(30px) rotate(45deg);

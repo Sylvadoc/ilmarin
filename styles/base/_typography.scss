@@ -322,6 +322,10 @@ p {
 		.icon-burger {
 			position: relative;
 			top: -4px;
+			-webkit-transition: transform 350ms;
+			-moz-transition: transform 350ms;
+			-o-transition: transform 350ms;
+			transition: transform 350ms;
 		}
 	}
 	.mp-pushed {
