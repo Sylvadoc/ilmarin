@@ -3,16 +3,25 @@
 
 @media (max-width: $ultra-large-screen) {
 	.the-header {
-		background: transparent url('../images/simonetti_1920.jpg') no-repeat 0 -792px;
+		background-color: transparent;
+		background-image: url('../images/simonetti_1920.jpg');
+		background-repeat: no-repeat;
+		background-position: 0 -792px;
 	}
 }
 @media (max-width: $large-screen) {
 	.the-header {
-		background: transparent url('../images/simonetti_1280.jpg') no-repeat 0 -300px;
+		background-color: transparent;
+		background-image: url('../images/simonetti_1280.jpg');
+		background-repeat: no-repeat;
+		background-position: 0 -300px;
 	}
 	#header_section {
 		&.tolkien_section {
-			background: transparent url('../images/simonetti_1280.jpg') no-repeat 0 0;
+			background-color: transparent;
+			background-image: url('../images/simonetti_1280.jpg');
+			background-repeat: no-repeat;
+			background-position: 0 0;
 		}
 	}
 }
@@ -41,8 +50,11 @@ section:nth-child(2n+2) {
 }
 #prix_elbakin_net {
 	// @include gradient(#2E1437,#948E99);
-	background: transparent url('../images/argonath.jpg') no-repeat center bottom fixed;
-	background-size: cover;
+	@include background-size(cover);
+	background-attachment: fixed;
+	background-color: transparent;
+	background-image: url('../images/argonath.jpg');
+	background-repeat: no-repeat;
 	color: white;
 }
 #moreover {

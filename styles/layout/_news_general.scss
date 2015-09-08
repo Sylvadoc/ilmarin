@@ -11,24 +11,37 @@
 	}
 }
 .post {
+	@include background-size(cover);
 	background-color: white;
 	background-position: 0 0;
 	background-repeat: no-repeat;
-	background-size: cover;
+	overflow: hidden;
 	.the-title {
-		margin-top: 1rem;
-		z-index: 1;
-		a {display: block;}
+		margin-top: 1.5rem;
+		z-index: 2;
+		a {display: block; z-index: 2;}
 	}
 }
 .post-teaser {
 	position: relative;
+	&:before {
+		@include transition(all .2s);
+		content: '';
+		background: transparent;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
 	.the-title {
 		@include transition(all .2s);
 		font-family: $font-stack-simili;
 		font-weight: 300;
 		line-height: 1.2;
 		margin-bottom: 0;
+		position: relative;
 		text-align: left;
 		text-transform: uppercase;
 		a {
@@ -37,7 +50,6 @@
 			color: white;
 			display: inline;
 			padding: .1rem .2em;
-			z-index: 1;
 		}
 	}
 	.entry-extract {
@@ -45,25 +57,37 @@
 		@include opacity(0);
 		@include translate3d(0,-20px,0);
 		margin-top: 1rem;
-		z-index: 1;
+		z-index: 2;
 		.post-info {
-			font-family: $font-stack-headings;
+			font-family: $font-stack-simili;
+			font-weight: 400;
 			margin-bottom: 1rem;
 			time {
 				box-decoration-break: clone;
 				background: white;
-				color: black;
+				color: #666;
 				padding: .1em .2em;
 			}
 		}
-		p {	color: white; text-align: justify; }
+		p {
+			color: white;
+			line-height: 1.4;
+			text-overflow: ellipsis;
+		}
 	}
 	&:hover {
+		&:before {
+			background: rgba(0,0,0,0.5);
+		}
 		.the-title {
+			z-index: 2;
 			a {
 				background: white;
 				color: black;
 				text-decoration: none;
+				&:hover {
+					color: $base-color-elbakin;
+				}
 			}
 		}
 		.entry-extract {
@@ -81,23 +105,6 @@
 		margin-bottom: 0;
 		a {color: black;}
 	}
-}
-
-.column-02 {
-	 .post-teaser {
- 		p {
-			&:first-letter {
-				font-family: "Palatino Linotype", Palatino, $font-stack-simili;
-				display: block;
-				font-style: normal;
-				font-size: 6.6em;
-				float: left;
-				margin: .08em .07em 0 0;
-				line-height: .67em;
-				color: white;
-			}
- 		}
-	 }
 }
 
 /* ============== R E S P O N S I V E

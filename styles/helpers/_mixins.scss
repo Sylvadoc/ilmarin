@@ -54,6 +54,12 @@
    $CSS3
    ========================================================================== */
 
+@mixin background-size($what) {
+	-webkit-background-size: $what;
+	-moz-background-size: $what;
+	-o-background-size: $what;
+	background-size: $what;
+}
 @mixin border-radius($radius) {
 	-webkit-border-radius: $radius;
 	border-radius: $radius;
