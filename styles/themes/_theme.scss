@@ -8,6 +8,14 @@
 		background-repeat: no-repeat;
 		background-position: 0 -792px;
 	}
+	#header_section {
+		&.tolkien_section {
+			background-color: transparent;
+			background-image: url('../images/simonetti_1920.jpg');
+			background-repeat: no-repeat;
+			background-position: 0 0;
+		}
+	}
 }
 @media (max-width: $large-screen) {
 	.the-header {

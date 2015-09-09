@@ -192,25 +192,26 @@
 
 #prix_elbakin_net {
 	padding: 2rem 0;
+	@include translate(0,0);
 	h3 {
-		font-weight: 400;
-		text-transform: uppercase;
 		@include rem(2);
+		font-weight: 400;
 		position: relative;
+		text-transform: uppercase;
 	}
 	p {
 		@include rem(1.8);
 		font-family: $font-stack-simili;
 		font-weight: 300;
 		.dropcaps {
-			font-family: "Palatino Linotype", Palatino, $font-stack-simili;
-			display: block;
-			font-style: normal;
-			font-size: 6.6em;
-			float: left;
-			margin: .08em .07em 0 0;
-			line-height: .67em;
 			color: white;
+			display: block;
+			float: left;
+			font-family: "Palatino Linotype", Palatino, $font-stack-simili;
+			font-size: 6.6em;
+			font-style: normal;
+			line-height: .67em;
+			margin: .08em .07em 0 0;
 		}
 	}
 	li {
