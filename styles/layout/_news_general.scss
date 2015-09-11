@@ -93,17 +93,71 @@
 		.entry-extract {
 			@include opacity(1);
 			@include translate3d(0,10px,0);
+			position: relative;
 		}
 	}
 }
 .post-tribune {
-	background: #ccc;
-	text-align: center;
+	@include background-size(cover);
+	background-color: #404447;
+	background-image: url('../images/quote.jpg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	overflow: hidden;
 	.the-title {
-		font-family: $font-stack-caps;
-		line-height: 1;
-		margin-bottom: 0;
-		a {color: black;}
+		font-family: $font-stack-simili;
+		font-size: $h1-size;
+		font-weight: 400;
+		line-height: 1.2;
+		margin-bottom: 2rem;
+		text-align: center;
+		text-transform: uppercase;
+		a {
+			color: white;
+			text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
+			&:hover, &:focus, &:active {
+				text-decoration: none;
+			}
+		}
+	}
+	.entry-extract {
+		p {
+			color: white;
+			margin-bottom: 2rem;
+			text-align: justify;
+			.dropcaps {
+				font-family: "Palatino Linotype", Palatino, $font-stack-simili;
+				display: block;
+				font-style: normal;
+				font-size: 5.3em;
+				float: left;
+				margin: .1em .04em 0 0;
+				line-height: .67em;
+				color: white;
+			}
+		}
+		.post-info {
+			@include skewX(-45deg);
+			background-color: #26CCC5;
+			color: white;
+			left: 3.5rem;
+			overflow: hidden;
+			position: relative;
+			span, time {
+				@include skewX(45deg);
+				display: block;
+				font-family: $font-stack-simili;
+				text-transform: uppercase;
+			}
+			img {
+				@include skewX(45deg);
+				display: block;
+				float: left;
+				margin: 0 2rem 0 2.5rem;
+				position: relative;
+				top: 1px;
+			}
+		}
 	}
 }
 
@@ -150,7 +204,7 @@
 		.row {margin-left: 0.03em;}
 	}
 	.column-01, .column-03, .column-04 {
-		.the-title {font-size: $h3-size;}
+		.the-title {font-size: $h2-size;}
 		.post {
 			height: 320px;
 			margin-bottom: 1.86em;
