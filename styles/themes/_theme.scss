@@ -9,7 +9,7 @@
 		background-position: 0 -380px;
 	}
 	#header_section {
-		&.tolkien_section {
+		&.tolkien_section, &.library_section {
 			background-color: transparent;
 			background-image: url('../images/simonetti_1920.jpg');
 			background-repeat: no-repeat;
@@ -25,7 +25,7 @@
 		background-position: 0 -300px;
 	}
 	#header_section {
-		&.tolkien_section {
+		&.tolkien_section, &.library_section {
 			background-color: transparent;
 			background-image: url('../images/simonetti_1280.jpg');
 			background-repeat: no-repeat;
@@ -37,7 +37,7 @@
 /* ============== S E C T I O N S
 ========================================================== */
 
-section:nth-child(2n+2) {
+section:nth-child(2n+2), #most {
 	@include gradient(#ECE9E6,#FFFFFF);
 }
 #header_section {
@@ -45,7 +45,6 @@ section:nth-child(2n+2) {
 		color: white;
 	}
 	&.library_section {
-		@include gradient(#2E1437,#948E99);
 		color: white;
 	}
 }
@@ -57,7 +56,6 @@ section:nth-child(2n+2) {
 	}
 }
 #prix_elbakin_net {
-	// @include gradient(#2E1437,#948E99);
 	@include background-size(cover);
 	background-attachment: fixed;
 	background-color: transparent;
@@ -77,6 +75,9 @@ section:nth-child(2n+2) {
 	color: white;
 }
 #agenda_parutions {
+	background: white;
+}
+#classement {
 	background: white;
 }
 #footer {

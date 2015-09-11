@@ -3619,26 +3619,43 @@ body {
 }
 
 /********************************************************************************************************************************************************************************
+********************* S E C T I O N   B I B L I O T H E Q U E *****************
+/********************************************************************************************************************************************************************************/
+/* line 6, ../styles/pages/_chronique.scss */
+.page-library .the-header {
+  background: transparent;
+}
+/* line 8, ../styles/pages/_chronique.scss */
+.page-library .the-header .inner-wrap {
+  background: transparent;
+}
+/* line 12, ../styles/pages/_chronique.scss */
+.page-library #header_section {
+  padding-top: 190px;
+  margin-top: -190px;
+}
+
+/********************************************************************************************************************************************************************************
 ********************* C H R O N I Q U E *****************
 /********************************************************************************************************************************************************************************/
-/* line 5, ../styles/pages/_chronique.scss */
+/* line 22, ../styles/pages/_chronique.scss */
 #la_chronique {
   margin-top: 3em;
 }
-/* line 7, ../styles/pages/_chronique.scss */
+/* line 24, ../styles/pages/_chronique.scss */
 #la_chronique .none {
   display: none;
 }
-/* line 10, ../styles/pages/_chronique.scss */
+/* line 27, ../styles/pages/_chronique.scss */
 #la_chronique .preview {
   margin-bottom: 1em;
 }
-/* line 12, ../styles/pages/_chronique.scss */
+/* line 29, ../styles/pages/_chronique.scss */
 #la_chronique .preview img {
   width: 100%;
   height: auto;
 }
-/* line 16, ../styles/pages/_chronique.scss */
+/* line 33, ../styles/pages/_chronique.scss */
 #la_chronique .preview h2 {
   color: #FE9E00;
   font-size: 1.8rem;
@@ -3647,18 +3664,18 @@ body {
   padding: 0;
 }
 
-/* line 25, ../styles/pages/_chronique.scss */
+/* line 42, ../styles/pages/_chronique.scss */
 .clickable {
   cursor: pointer;
 }
 
 /* ================ P R E S E N T A T I O N
 ===================================================== */
-/* line 33, ../styles/pages/_chronique.scss */
+/* line 50, ../styles/pages/_chronique.scss */
 .details p {
   margin: 0;
 }
-/* line 36, ../styles/pages/_chronique.scss */
+/* line 53, ../styles/pages/_chronique.scss */
 .details .author {
   font-family: "Alegreya", Georgia, serif;
   font-weight: bold;
@@ -3667,15 +3684,15 @@ body {
   color: #666;
   text-transform: uppercase;
 }
-/* line 42, ../styles/pages/_chronique.scss */
+/* line 59, ../styles/pages/_chronique.scss */
 .details .author a {
   color: #666;
 }
-/* line 44, ../styles/pages/_chronique.scss */
+/* line 61, ../styles/pages/_chronique.scss */
 .details .isbn {
   color: #666;
 }
-/* line 47, ../styles/pages/_chronique.scss */
+/* line 64, ../styles/pages/_chronique.scss */
 .details .book-title {
   color: #BE2700;
   font-size: 84px;
@@ -3685,33 +3702,33 @@ body {
   text-transform: uppercase;
 }
 
-/* line 55, ../styles/pages/_chronique.scss */
+/* line 72, ../styles/pages/_chronique.scss */
 .meta {
   margin-top: 2em;
 }
-/* line 57, ../styles/pages/_chronique.scss */
+/* line 74, ../styles/pages/_chronique.scss */
 .meta strong {
   text-transform: uppercase;
 }
-/* line 60, ../styles/pages/_chronique.scss */
+/* line 77, ../styles/pages/_chronique.scss */
 .meta ul {
   list-style: none none;
   margin: 0;
   padding: 0;
 }
 
-/* line 66, ../styles/pages/_chronique.scss */
+/* line 83, ../styles/pages/_chronique.scss */
 .extract {
   margin: 1.5em 0 4em 0;
 }
-/* line 68, ../styles/pages/_chronique.scss */
+/* line 85, ../styles/pages/_chronique.scss */
 .extract p {
   font-size: 22.4px;
   font-size: 1.6rem;
   margin-bottom: 1em;
 }
 
-/* line 73, ../styles/pages/_chronique.scss */
+/* line 90, ../styles/pages/_chronique.scss */
 .awards {
   background: white;
   border: 1px solid #ccc;
@@ -3719,11 +3736,11 @@ body {
   padding: 1rem 1rem 1rem 10rem;
   position: relative;
 }
-/* line 79, ../styles/pages/_chronique.scss */
+/* line 96, ../styles/pages/_chronique.scss */
 .awards li:last-child {
   border: 0;
 }
-/* line 82, ../styles/pages/_chronique.scss */
+/* line 99, ../styles/pages/_chronique.scss */
 .awards h2 {
   color: #FE9E00;
   text-transform: uppercase;
@@ -3732,7 +3749,7 @@ body {
   margin: 0;
   padding: 0;
 }
-/* line 89, ../styles/pages/_chronique.scss */
+/* line 106, ../styles/pages/_chronique.scss */
 .awards:before {
   font-size: 112px;
   font-size: 8rem;
@@ -3756,14 +3773,14 @@ body {
 
 /* ================ C R I T I Q U E
 ===================================================== */
-/* line 113, ../styles/pages/_chronique.scss */
+/* line 130, ../styles/pages/_chronique.scss */
 .body-chronique {
   background: #efefef;
   border: 1px solid #ccc;
   margin: 2rem 0 1em;
   position: relative;
 }
-/* line 118, ../styles/pages/_chronique.scss */
+/* line 135, ../styles/pages/_chronique.scss */
 .body-chronique .rating {
   transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -3781,7 +3798,7 @@ body {
   top: -5rem;
   width: 10rem;
 }
-/* line 128, ../styles/pages/_chronique.scss */
+/* line 145, ../styles/pages/_chronique.scss */
 .body-chronique .rating span {
   transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -3795,7 +3812,7 @@ body {
   position: absolute;
   color: #ccc;
 }
-/* line 135, ../styles/pages/_chronique.scss */
+/* line 152, ../styles/pages/_chronique.scss */
 .body-chronique .rating .bg {
   -webkit-filter: blur(1px);
   -moz-filter: blur(1px);
@@ -3809,7 +3826,7 @@ body {
   top: -20%;
   width: 140%;
 }
-/* line 144, ../styles/pages/_chronique.scss */
+/* line 161, ../styles/pages/_chronique.scss */
 .body-chronique .rating .note {
   font-size: 84px;
   font-size: 6rem;
@@ -3819,21 +3836,21 @@ body {
   left: 15%;
   top: 20%;
 }
-/* line 152, ../styles/pages/_chronique.scss */
+/* line 169, ../styles/pages/_chronique.scss */
 .body-chronique .rating .sur {
   font-size: 42px;
   font-size: 3rem;
   left: 55%;
   top: 30%;
 }
-/* line 157, ../styles/pages/_chronique.scss */
+/* line 174, ../styles/pages/_chronique.scss */
 .body-chronique .rating .end_note {
   font-size: 28px;
   font-size: 2rem;
   left: 70%;
   top: 25%;
 }
-/* line 163, ../styles/pages/_chronique.scss */
+/* line 180, ../styles/pages/_chronique.scss */
 .body-chronique .reviewed_by {
   font-size: 28px;
   font-size: 2rem;
@@ -3842,18 +3859,18 @@ body {
   margin: 8rem 0 1em 0;
   text-align: center;
 }
-/* line 171, ../styles/pages/_chronique.scss */
+/* line 188, ../styles/pages/_chronique.scss */
 .body-chronique .review p {
   font-size: 22.4px;
   font-size: 1.6rem;
   margin: 0 0 1em 0;
   text-align: justify;
 }
-/* line 176, ../styles/pages/_chronique.scss */
+/* line 193, ../styles/pages/_chronique.scss */
 .body-chronique .review a {
   color: #BE2700;
 }
-/* line 180, ../styles/pages/_chronique.scss */
+/* line 197, ../styles/pages/_chronique.scss */
 .body-chronique .dropcaps {
   font-family: "Palatino Linotype", Palatino, "Roboto Slab", serif;
   display: block;
@@ -3867,7 +3884,7 @@ body {
 
 /* ================ D I S C O V E R
 ===================================================== */
-/* line 196, ../styles/pages/_chronique.scss */
+/* line 213, ../styles/pages/_chronique.scss */
 #discover h2 {
   text-transform: uppercase;
 }
@@ -3875,14 +3892,14 @@ body {
 /* ================ R E S P O N S I V E
 ===================================================== */
 @media (max-width: 1024px) {
-  /* line 206, ../styles/pages/_chronique.scss */
+  /* line 223, ../styles/pages/_chronique.scss */
   .details .book-title {
     font-size: 56px;
     font-size: 4rem;
   }
 }
 @media (max-width: 768px) {
-  /* line 213, ../styles/pages/_chronique.scss */
+  /* line 230, ../styles/pages/_chronique.scss */
   .details .book-title {
     font-size: 28px;
     font-size: 2rem;
@@ -3891,11 +3908,11 @@ body {
 /********************************************************************************************************************************************************************************
 ********************* B I B L I O T H E Q U E *****************
 /********************************************************************************************************************************************************************************/
-/* line 224, ../styles/pages/_chronique.scss */
+/* line 241, ../styles/pages/_chronique.scss */
 #classement, #most {
   padding: 2rem 0;
 }
-/* line 226, ../styles/pages/_chronique.scss */
+/* line 243, ../styles/pages/_chronique.scss */
 #classement h2, #most h2 {
   color: #BE2700;
   margin: 0;
@@ -3903,25 +3920,25 @@ body {
   text-transform: uppercase;
 }
 
-/* line 234, ../styles/pages/_chronique.scss */
+/* line 251, ../styles/pages/_chronique.scss */
 .classement h3 {
   text-transform: uppercase;
   margin: .5em 0;
   padding: 0;
   font-weight: 400;
 }
-/* line 240, ../styles/pages/_chronique.scss */
+/* line 257, ../styles/pages/_chronique.scss */
 .classement .basic_list {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
 }
 
-/* line 244, ../styles/pages/_chronique.scss */
+/* line 261, ../styles/pages/_chronique.scss */
 .follow_link {
   float: right;
 }
-/* line 246, ../styles/pages/_chronique.scss */
+/* line 263, ../styles/pages/_chronique.scss */
 .follow_link .icon {
   position: relative;
   top: 2px;
@@ -3929,11 +3946,11 @@ body {
 
 /* ================ H E A D E R
 ===================================================== */
-/* line 255, ../styles/pages/_chronique.scss */
+/* line 272, ../styles/pages/_chronique.scss */
 #form_all {
   margin: 1em 0 0;
 }
-/* line 257, ../styles/pages/_chronique.scss */
+/* line 274, ../styles/pages/_chronique.scss */
 #form_all label {
   font-size: 28px;
   font-size: 2rem;
@@ -3944,7 +3961,7 @@ body {
   padding: 0 0 1em 0;
   text-transform: uppercase;
 }
-/* line 266, ../styles/pages/_chronique.scss */
+/* line 283, ../styles/pages/_chronique.scss */
 #form_all [type="text"] {
   font-size: 22.4px;
   font-size: 1.6rem;
@@ -3954,11 +3971,11 @@ body {
   margin: 0;
 }
 
-/* line 274, ../styles/pages/_chronique.scss */
+/* line 291, ../styles/pages/_chronique.scss */
 #destiny {
   margin: 1em 0 0;
 }
-/* line 276, ../styles/pages/_chronique.scss */
+/* line 293, ../styles/pages/_chronique.scss */
 #destiny h2 {
   font-size: 28px;
   font-size: 2rem;
@@ -3973,48 +3990,48 @@ body {
 
 /* ================ L I S T S
 ===================================================== */
-/* line 293, ../styles/pages/_chronique.scss */
+/* line 310, ../styles/pages/_chronique.scss */
 #les_listes h2 {
   margin: 0 0 .5em 0;
 }
-/* line 296, ../styles/pages/_chronique.scss */
+/* line 313, ../styles/pages/_chronique.scss */
 #les_listes .row {
   list-style: none none;
   padding: 0;
 }
-/* line 300, ../styles/pages/_chronique.scss */
+/* line 317, ../styles/pages/_chronique.scss */
 #les_listes .row h3 {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   font-weight: 400;
 }
-/* line 306, ../styles/pages/_chronique.scss */
+/* line 323, ../styles/pages/_chronique.scss */
 #les_listes .row article {
   margin-bottom: 2em;
 }
-/* line 308, ../styles/pages/_chronique.scss */
+/* line 325, ../styles/pages/_chronique.scss */
 #les_listes .row article a {
   background: white;
   border: 1px solid #ccc;
   display: block;
   overflow: hidden;
 }
-/* line 313, ../styles/pages/_chronique.scss */
+/* line 330, ../styles/pages/_chronique.scss */
 #les_listes .row article a:hover, #les_listes .row article a:focus {
   text-decoration: none;
 }
-/* line 315, ../styles/pages/_chronique.scss */
+/* line 332, ../styles/pages/_chronique.scss */
 #les_listes .row article a:hover p, #les_listes .row article a:focus p {
   background: #FE9E00;
   color: white;
 }
-/* line 320, ../styles/pages/_chronique.scss */
+/* line 337, ../styles/pages/_chronique.scss */
 #les_listes .row article a img {
   width: 100%;
   height: auto;
 }
-/* line 324, ../styles/pages/_chronique.scss */
+/* line 341, ../styles/pages/_chronique.scss */
 #les_listes .row article a p {
   background: white;
   display: block;
@@ -4023,7 +4040,7 @@ body {
   position: relative;
   text-transform: uppercase;
 }
-/* line 331, ../styles/pages/_chronique.scss */
+/* line 348, ../styles/pages/_chronique.scss */
 #les_listes .row article a p:before {
   transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -4041,7 +4058,7 @@ body {
   top: -20px;
   width: 115%;
 }
-/* line 342, ../styles/pages/_chronique.scss */
+/* line 359, ../styles/pages/_chronique.scss */
 #les_listes .row article a p span {
   position: relative;
   top: -.5rem;
@@ -4049,11 +4066,11 @@ body {
 
 /* ================ M O S T   V I S I T E D
 ===================================================== */
-/* line 357, ../styles/pages/_chronique.scss */
+/* line 374, ../styles/pages/_chronique.scss */
 .article_focus h2 {
   margin-bottom: .5em !important;
 }
-/* line 360, ../styles/pages/_chronique.scss */
+/* line 377, ../styles/pages/_chronique.scss */
 .article_focus .inner_content {
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -4062,17 +4079,17 @@ body {
   padding: 1em;
   text-align: justify;
 }
-/* line 366, ../styles/pages/_chronique.scss */
+/* line 383, ../styles/pages/_chronique.scss */
 .article_focus .inner_content em {
   color: #666;
   font-family: "Alegreya", Georgia, serif;
 }
-/* line 370, ../styles/pages/_chronique.scss */
+/* line 387, ../styles/pages/_chronique.scss */
 .article_focus .inner_content a {
   display: block;
   overflow: hidden;
 }
-/* line 373, ../styles/pages/_chronique.scss */
+/* line 390, ../styles/pages/_chronique.scss */
 .article_focus .inner_content a p {
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
@@ -4083,7 +4100,7 @@ body {
   background: white;
   text-align: left;
 }
-/* line 381, ../styles/pages/_chronique.scss */
+/* line 398, ../styles/pages/_chronique.scss */
 .article_focus .inner_content a p:before {
   transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -4101,27 +4118,27 @@ body {
   top: -20px;
   width: 115%;
 }
-/* line 392, ../styles/pages/_chronique.scss */
+/* line 409, ../styles/pages/_chronique.scss */
 .article_focus .inner_content a p span {
   position: relative;
   top: -.5rem;
 }
-/* line 398, ../styles/pages/_chronique.scss */
+/* line 415, ../styles/pages/_chronique.scss */
 .article_focus .inner_content .follow_link {
   margin-top: 1rem;
 }
 
 /* ================ L A S T  5 0
 ===================================================== */
-/* line 407, ../styles/pages/_chronique.scss */
+/* line 424, ../styles/pages/_chronique.scss */
 #last_50 {
   padding: 2rem 0;
 }
-/* line 409, ../styles/pages/_chronique.scss */
+/* line 426, ../styles/pages/_chronique.scss */
 #last_50 .simili-title {
   padding-bottom: 1rem;
 }
-/* line 412, ../styles/pages/_chronique.scss */
+/* line 429, ../styles/pages/_chronique.scss */
 #last_50 article {
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -4129,18 +4146,18 @@ body {
   background: white;
   margin-bottom: 2em;
 }
-/* line 416, ../styles/pages/_chronique.scss */
+/* line 433, ../styles/pages/_chronique.scss */
 #last_50 article img {
   height: auto;
   width: 100%;
 }
-/* line 420, ../styles/pages/_chronique.scss */
+/* line 437, ../styles/pages/_chronique.scss */
 #last_50 article .entry-header {
   display: block;
   overflow: hidden;
   padding: 1rem 1rem 0 1rem;
 }
-/* line 424, ../styles/pages/_chronique.scss */
+/* line 441, ../styles/pages/_chronique.scss */
 #last_50 article .entry-header p {
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
@@ -4151,7 +4168,7 @@ body {
   background: white;
   text-align: left;
 }
-/* line 432, ../styles/pages/_chronique.scss */
+/* line 449, ../styles/pages/_chronique.scss */
 #last_50 article .entry-header p:before {
   transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -4169,19 +4186,19 @@ body {
   top: -20px;
   width: 115%;
 }
-/* line 443, ../styles/pages/_chronique.scss */
+/* line 460, ../styles/pages/_chronique.scss */
 #last_50 article .entry-header p span {
   position: relative;
   top: -.5rem;
 }
-/* line 449, ../styles/pages/_chronique.scss */
+/* line 466, ../styles/pages/_chronique.scss */
 #last_50 article .genre {
   color: #666;
   font-family: "Alegreya", Georgia, serif;
   font-style: italic;
   padding: 0 1rem;
 }
-/* line 455, ../styles/pages/_chronique.scss */
+/* line 472, ../styles/pages/_chronique.scss */
 #last_50 article .entry-meta {
   border-top: 1px solid #ccc;
   color: #666;
@@ -4202,7 +4219,7 @@ body {
   }
 
   /* line 12, ../styles/themes/_theme.scss */
-  #header_section.tolkien_section {
+  #header_section.tolkien_section, #header_section.library_section {
     background-color: transparent;
     background-image: url("../images/simonetti_1920.jpg");
     background-repeat: no-repeat;
@@ -4219,7 +4236,7 @@ body {
   }
 
   /* line 28, ../styles/themes/_theme.scss */
-  #header_section.tolkien_section {
+  #header_section.tolkien_section, #header_section.library_section {
     background-color: transparent;
     background-image: url("../images/simonetti_1280.jpg");
     background-repeat: no-repeat;
@@ -4229,7 +4246,7 @@ body {
 /* ============== S E C T I O N S
 ========================================================== */
 /* line 40, ../styles/themes/_theme.scss */
-section:nth-child(2n+2) {
+section:nth-child(2n+2), #most {
   background-color: #f5f4f2;
   /* Fallback */
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ECE9E6), to(#FFFFFF));
@@ -4246,18 +4263,10 @@ section:nth-child(2n+2) {
 }
 /* line 47, ../styles/themes/_theme.scss */
 #header_section.library_section {
-  background-color: #615168;
-  /* Fallback */
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2E1437), to(#948E99));
-  background-image: -webkit-linear-gradient(left, #2E1437, #948E99);
-  background-image: -moz-linear-gradient(left, #2E1437, #948E99);
-  background-image: -ms-linear-gradient(left, #2E1437, #948E99);
-  background-image: -o-linear-gradient(left, #2E1437, #948E99);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2E1437', EndColorStr='#948E99')";
   color: white;
 }
 
-/* line 52, ../styles/themes/_theme.scss */
+/* line 51, ../styles/themes/_theme.scss */
 #all_new_chronique {
   background-color: #314a7f;
   /* Fallback */
@@ -4269,7 +4278,7 @@ section:nth-child(2n+2) {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#4b6cb7', EndColorStr='#182848')";
   color: white;
 }
-/* line 55, ../styles/themes/_theme.scss */
+/* line 54, ../styles/themes/_theme.scss */
 #all_new_chronique.jeff {
   background-color: #3a88bc;
   /* Fallback */
@@ -4281,7 +4290,7 @@ section:nth-child(2n+2) {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', EndColorStr='#514A9D')";
 }
 
-/* line 59, ../styles/themes/_theme.scss */
+/* line 58, ../styles/themes/_theme.scss */
 #prix_elbakin_net {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -4294,7 +4303,7 @@ section:nth-child(2n+2) {
   color: white;
 }
 
-/* line 68, ../styles/themes/_theme.scss */
+/* line 66, ../styles/themes/_theme.scss */
 #moreover {
   background-color: #615168;
   /* Fallback */
@@ -4306,7 +4315,7 @@ section:nth-child(2n+2) {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2E1437', EndColorStr='#948E99')";
 }
 
-/* line 71, ../styles/themes/_theme.scss */
+/* line 69, ../styles/themes/_theme.scss */
 #discover {
   background-color: #3a88bc;
   /* Fallback */
@@ -4319,7 +4328,7 @@ section:nth-child(2n+2) {
   color: white;
 }
 
-/* line 75, ../styles/themes/_theme.scss */
+/* line 73, ../styles/themes/_theme.scss */
 #last_50 {
   background-color: #3a88bc;
   /* Fallback */
@@ -4332,29 +4341,34 @@ section:nth-child(2n+2) {
   color: white;
 }
 
-/* line 79, ../styles/themes/_theme.scss */
+/* line 77, ../styles/themes/_theme.scss */
 #agenda_parutions {
   background: white;
 }
 
-/* line 82, ../styles/themes/_theme.scss */
+/* line 80, ../styles/themes/_theme.scss */
+#classement {
+  background: white;
+}
+
+/* line 83, ../styles/themes/_theme.scss */
 #footer {
   background: #262626;
 }
-/* line 84, ../styles/themes/_theme.scss */
+/* line 85, ../styles/themes/_theme.scss */
 #footer p {
   color: white;
 }
-/* line 87, ../styles/themes/_theme.scss */
+/* line 88, ../styles/themes/_theme.scss */
 #footer a {
   color: #727272;
 }
-/* line 89, ../styles/themes/_theme.scss */
+/* line 90, ../styles/themes/_theme.scss */
 #footer a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 94, ../styles/themes/_theme.scss */
+/* line 95, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] {
   background-color: #00bbff;
   /* Fallback */
@@ -4366,24 +4380,24 @@ section:nth-child(2n+2) {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#00BBFF', EndColorStr='#00BBFF')";
   color: #f1f1f1;
 }
-/* line 97, ../styles/themes/_theme.scss */
+/* line 98, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] a {
   color: white;
 }
-/* line 99, ../styles/themes/_theme.scss */
+/* line 100, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 104, ../styles/themes/_theme.scss */
+/* line 105, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] p, #footer[data-weather="sunny"] h2, #footer[data-weather="sunny"] #weather_city {
   color: white;
 }
-/* line 105, ../styles/themes/_theme.scss */
+/* line 106, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] #weather_city {
   border-bottom: 2px solid white;
 }
-/* line 109, ../styles/themes/_theme.scss */
+/* line 110, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] {
   background-color: #2eb5e5;
   /* Fallback */
@@ -4395,24 +4409,24 @@ section:nth-child(2n+2) {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2EB5E5', EndColorStr='#2EB5E5')";
   color: #f1f1f1;
 }
-/* line 112, ../styles/themes/_theme.scss */
+/* line 113, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] a {
   color: white;
 }
-/* line 114, ../styles/themes/_theme.scss */
+/* line 115, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 119, ../styles/themes/_theme.scss */
+/* line 120, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] p, #footer[data-weather="cloudy"] h2, #footer[data-weather="cloudy"] #weather_city {
   color: white;
 }
-/* line 120, ../styles/themes/_theme.scss */
+/* line 121, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] #weather_city {
   border-bottom: 2px solid white;
 }
-/* line 124, ../styles/themes/_theme.scss */
+/* line 125, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] {
   background-color: #e6e6e6;
   /* Fallback */
@@ -4423,24 +4437,24 @@ section:nth-child(2n+2) {
   background-image: -o-linear-gradient(left, #E6E6E6, #E6E6E6);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#E6E6E6', EndColorStr='#E6E6E6')";
 }
-/* line 126, ../styles/themes/_theme.scss */
+/* line 127, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] a {
   color: #333;
 }
-/* line 128, ../styles/themes/_theme.scss */
+/* line 129, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] a:hover {
   color: #333;
   text-decoration: underline;
 }
-/* line 133, ../styles/themes/_theme.scss */
+/* line 134, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] p, #footer[data-weather="rainy"] h2, #footer[data-weather="rainy"] #weather_city {
   color: black;
 }
-/* line 134, ../styles/themes/_theme.scss */
+/* line 135, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] #weather_city {
   border-bottom: 2px solid black;
 }
-/* line 138, ../styles/themes/_theme.scss */
+/* line 139, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] {
   background-color: #85db8c;
   /* Fallback */
@@ -4451,24 +4465,24 @@ section:nth-child(2n+2) {
   background-image: -o-linear-gradient(left, #85DB8C, #85DB8C);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#85DB8C', EndColorStr='#85DB8C')";
 }
-/* line 140, ../styles/themes/_theme.scss */
+/* line 141, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] a {
   color: #333;
 }
-/* line 142, ../styles/themes/_theme.scss */
+/* line 143, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] a:hover {
   color: #333;
   text-decoration: underline;
 }
-/* line 147, ../styles/themes/_theme.scss */
+/* line 148, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] p, #footer[data-weather="snowy"] h2, #footer[data-weather="snowy"] #weather_city {
   color: black;
 }
-/* line 148, ../styles/themes/_theme.scss */
+/* line 149, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] #weather_city {
   border-bottom: 2px solid black;
 }
-/* line 152, ../styles/themes/_theme.scss */
+/* line 153, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] {
   background-color: #f3d166;
   /* Fallback */
@@ -4479,24 +4493,24 @@ section:nth-child(2n+2) {
   background-image: -o-linear-gradient(left, #F3D166, #F3D166);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#F3D166', EndColorStr='#F3D166')";
 }
-/* line 154, ../styles/themes/_theme.scss */
+/* line 155, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] a {
   color: #333;
 }
-/* line 156, ../styles/themes/_theme.scss */
+/* line 157, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] a:hover {
   color: #333;
   text-decoration: underline;
 }
-/* line 161, ../styles/themes/_theme.scss */
+/* line 162, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] p, #footer[data-weather="rainbow"] h2, #footer[data-weather="rainbow"] #weather_city {
   color: black;
 }
-/* line 162, ../styles/themes/_theme.scss */
+/* line 163, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] #weather_city {
   border-bottom: 2px solid black;
 }
-/* line 166, ../styles/themes/_theme.scss */
+/* line 167, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] {
   background-color: #222233;
   /* Fallback */
@@ -4508,24 +4522,24 @@ section:nth-child(2n+2) {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#222233', EndColorStr='#222233')";
   color: #f1f1f1;
 }
-/* line 169, ../styles/themes/_theme.scss */
+/* line 170, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] a {
   color: white;
 }
-/* line 171, ../styles/themes/_theme.scss */
+/* line 172, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 176, ../styles/themes/_theme.scss */
+/* line 177, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] p, #footer[data-weather="starry"] h2, #footer[data-weather="starry"] #weather_city {
   color: white;
 }
-/* line 177, ../styles/themes/_theme.scss */
+/* line 178, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] #weather_city {
   border-bottom: 2px solid white;
 }
-/* line 181, ../styles/themes/_theme.scss */
+/* line 182, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] {
   background-color: #444444;
   /* Fallback */
@@ -4537,20 +4551,20 @@ section:nth-child(2n+2) {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#444444', EndColorStr='#444444')";
   color: #f1f1f1;
 }
-/* line 184, ../styles/themes/_theme.scss */
+/* line 185, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] a {
   color: white;
 }
-/* line 186, ../styles/themes/_theme.scss */
+/* line 187, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 191, ../styles/themes/_theme.scss */
+/* line 192, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] p, #footer[data-weather="stormy"] h2, #footer[data-weather="stormy"] #weather_city {
   color: white;
 }
-/* line 192, ../styles/themes/_theme.scss */
+/* line 193, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] #weather_city {
   border-bottom: 2px solid white;
 }
