@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width" />
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="favicon.ico" />
 
         <!-- windows 8 stuff -->
         <meta name="apple-mobile-web-app-title" content="Elbakin.net"/>
@@ -171,91 +171,164 @@
 
         <div class="m-scene">
             <div class="relative_content">
-                <header role="banner" class="m-header scene_element scene_element--fadein">
-                    <div class="branding">
-                        <a href="#" title="Elbakin.net" role="heading">
-                            <img src="images/logo_elbakin.png" alt="Elbakin.net, la fantasy au quotiden" />
-                        </a>
-                    </div>
-                    <div class="small-6 small-push-6 columns">
-                        <ul class="social">
-                            <li class="connect"><a href="#log_in" class="launch_modal" title="Se connecter au site (modal)"><span class="icon icon-user" aria-hidden="true"></span><span>se connecter</span></a></li>
-                            <li class="network"><a href=""><span class="icon icon-arrow-down" aria-hidden="true"></span><span class="link">notre réseau</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="small-6 small-pull-6 columns">
-                        <ul class="launch-nav">
-                            <li class="all-nav">
+
+                <!-- HEADER -->
+                <header role="banner" class="the-header m-header">
+                    <div class="inner-wrap">
+                        <div class="branding appear" role="heading">
+                            <div class="logotype">
+                                <img src="images/logo_elbakin.png" alt="Elbakin.net, la fantasy au quotiden" />
+                            </div>
+                            <div class="elbakin">
+                                <img src="images/elbakin_txt.png" alt="Elbakin.net" />
+                            </div>
+                        </div>
+                        <ul class="visit">
+                            <li>
                                 <a href="#" class="menu-trigger" id="trigger" title="Parcourir le menu du site">
                                     <span class="icon icon-burger" aria-hidden="true"></span>
+                                    <span>Menu</span>
                                 </a>
                             </li>
-                            <li class="agora">
-                                <a href="#" class="menu-trigger" id="trigger" title="Visiter le forum">
+                            <li>
+                                <a href="#" title="Visiter le forum">
                                     <span class="icon icon-bubbles" aria-hidden="true"></span>
-                                    <span>forum</span>
+                                    <span>Forum</span>
                                 </a>
                             </li>
-                            <li class="palantir">
-                                <a href="#palantir" class="launch_modal" title="Faire une recherche sur le site">
+                            <li>
+                                <a href="#search" class="toggle-panel" title="Faire une recherche">
                                     <span class="icon icon-search" aria-hidden="true"></span>
+                                    <span class="text">Rechercher</span>
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                </header>
-
-                <main role="main" class="m-page scene_element scene_element--fadeinup">
-
-                    <!-- begin section elbakin -->
-                    <section role="region" id="elbakin">
-                        <div class="row clearfix">
-                            <span class="simili-title"><strong>Elbakin.net</strong>, c'est&hellip;</span>
-                            <div class="small-12 medium-8 large-8 columns">
-                                <ul class="saint_marc">
+                        <ul class="aside_menu">
+                            <li>
+                                <ul class="social">
                                     <li>
-                                        <div class="evangile">
-                                            <span class="icon icon-bubbles"></span>
-                                            <h2>Plus de <span>5000</span> membres</h2>
-                                            <p>Car nous sommes nombreux</p>
-                                        </div>
+                                        <a href="https://www.facebook.com/Elbakin.net" title="Profil Facebook Elbakin.net">
+                                            <span class="icon icon-facebook" aria-hidden="true"></span>
+                                            <span class="text">Facebook</span>
+                                        </a>
                                     </li>
                                     <li>
-                                        <div class="evangile">
-                                            <span class="icon icon-books"></span>
-                                            <h2>Plus de <span>4000</span> chroniques</h2>
-                                            <p>Car nous sommes passionnés</p>
-                                        </div>
+                                        <a href="https://twitter.com/elbakin" title="Compte Twitter Elbakin.net">
+                                            <span class="icon icon-twitter" aria-hidden="true"></span>
+                                            <span class="text">Twitter</span>
+                                        </a>
                                     </li>
                                     <li>
-                                        <div class="evangile">
-                                            <span class="icon icon-book"></span>
-                                            <h2><span>15 ans</span> d'ancienneté</h2>
-                                            <p>Car nous sommes des pionniers</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="evangile">
-                                            <span class="icon icon-fire"></span>
-                                            <h2><span>Beaucoup</span> de projets</h2>
-                                            <p>Car nous sommes curieux</p>
-                                        </div>
+                                        <a href="https://www.youtube.com/ElbakinNetFantasy" title="Chaîne YouTube Elbakin.net">
+                                            <span class="icon icon-google-plus" aria-hidden="true"></span>
+                                            <span class="text">YouTube</span>
+                                        </a>
                                     </li>
                                 </ul>
+                            </li>
+                            <li class="network">
+                                <a href="#web" class="toggle-panel" title="Notre réseau">
+                                    <span class="icon icon-bookmark" aria-hidden="true"></span>
+                                    <span class="text">Notre réseau</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#log_in" class="toggle-panel" title="Se connecter au site">
+                                    <span>Se connecter</span>
+                                    <span class="icon icon-user" aria-hidden="true"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="search" class="panel">
+                            <form class="form">
+                                <label for="search-keyword" class="ersatz-title">Rechercher sur le site :</label>
+                                <input type="text" id="search-keyword" placeholder="Mots-clefs" class="input-style" />
+                                <button class="btn btn_default inline_btn">OK</button>
+                                <p>Exemple : <a href="#">Jaworski</a>, <a href="#">Pevel</a>, <a href="#">Le Seigneur des Anneaux</a></p>
+                            </form>
+                        </div>
+                        <div id="log_in" class="panel">
+                            <form class="form">
+                                <div class="wrap-form half-form">
+                                    <label for="login" class="ersatz-title">Votre pseudo :</label>
+                                    <input type="text" id="login" placeholder="Pseudo" class="input-style" />
+                                </div>
+                                <div class="wrap-form half-form">
+                                    <label for="password" class="ersatz-title">Votre mot de passe :</label>
+                                    <input type="password" id="password" placeholder="Mot de passe" class="input-style" />
+                                </div>
+                                <button class="btn btn_default inline_btn">OK</button>
+                                <p><a href="#">Vous n'êtes pas encore inscrit ?</a></p>
+                            </form>
+                        </div>
+                        <div id="web" class="panel">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/logo_asso.png" alt="Logo de l'Association Elbakin.net" />
+                                        <span>Association<br />Elbakin.net</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/logo_archy.png" alt="Logo des Aventures d'Archibald Bellérophon" />
+                                        <span>Archibald<br />Bellérophon</span>
+                                    </a>
+                                    </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/logo_periannath.png" alt="Logo de Periannath" />
+                                        <span>Periannath<br />Le jeu</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <!-- /HEADER -->
+
+                <main role="main" class="m-page">
+
+                    <!-- begin author biography -->
+                    <section role="region" id="author_bibliography">
+                        <div class="row clearfix" itemscope itemtype="http://schema.org/Person">
+                            <div class="small-12 medium-4 large-5 columns">
+                                <p>Photo de l'auteur</p>
                             </div>
-                            <div class="small-12 medium-4 large-4 columns">
-                                <aside role="complementary">
-                                    <h2><span class="icon icon-star-full"></span> Lumière sur&hellip;</h2>
-                                    <h3><a href="#">Sur les rivages de la Terre du Milieu</a></h3>
-                                    <p>Ce livre est remarquable à tout point de vue. Vincent Ferré réussit à nous livrer un livre d’une inespérée clarté et d’une grande érudition malgré un contenu des plus diverses et imposant. Je retiendrai de la première partie sa réflexion sur l’entrelacement [&hellip;] <a href="#"><span class="icon-quill"></span> Lire la suite</a></p>
-                                </aside>
-                                <h2>Laissez le destin guider votre main :</h2>
-                                <a class="btn btn_default" href="#"><span class="icon icon-keyboard-arrow-right"></span> page aléatoire</a>
+                            <div class="small-12 medium-8 large-7 columns">
+                                <div>
+                                    <h1 itemprop="name">Pierre Pevel</h1>
+                                    <ul class="basic_list">
+                                        <li><strong>Site web :</strong> <span itemprop="mainEntityOfPage"><a href="http://twitter.com/pierrepevel" title="(nouvelle fenêtre)">http://twitter.com/pierrepevel</a></span></li>
+                                        <li><strong>Nationalité</strong> <span itemprop="nationality">Française</span></li>
+                                    </ul>
+                                    <div itemprop="description">
+                                        <p>Initialement auteur de jeux de rôle, Pierre Pevel à aujourd’hui plus de 7 romans à son actif sous son nom, et deux autres précédemment sous le nom de Pierre Jacq. Les Ombres de Wielstadt, premier opus de la trilogie mettant en scène le chevalier Kantz, a reçu le prix de l’Imaginaire en 2002. Puis L’Elixir d’oubli a été récompensé aux Imaginales en 2005.</p>
+                                        <p>Mais la plus belle reconnaissance pour cet auteur qui aime entraîner ses lecteurs dans les méandres de l’Histoire, est sans aucun doute la traduction en langue anglaise de son livre publié en 2008 et qui ouvre une nouvelle trilogie : Les Lames du Cardinal.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
-                    <!-- end section elbakin -->
+                    <!-- end author biography -->
+
+                    <!-- begin author bibliography -->
+                    <section role="region" id="author_bibliography">
+                        <div class="row clearfix">
+                            <span class="simili-title">Sa <strong>bibliographie</strong></span>
+
+                        </div>
+                    </section>
+                    <!-- end author bibliography -->
+
+                    <!-- begin author news -->
+                    <section role="region" id="author_news">
+                        <div class="row clearfix">
+                            <span class="simili-title">Son <strong>actualité</strong></span>
+
+                        </div>
+                    </section>
+                    <!-- end author news -->
 
                 </main>
 
@@ -317,49 +390,11 @@
                 </footer>
                 <!-- /end footer -->
 
-                <!-- list of modal windows -->
-                <div id="log_in" class="modal">
-                    <div class="modal_content">
-                        <button class="modal_close">Fermer</button>
-                        <h3 class="modal_title">Se connecter</h3>
-                        <form id="login_form" action="" method="">
-                            <div class="form_row">
-                                <label for="email">Identifiant :</label>
-                                <input type="text" name="email" id="email" placeholder="identifiant" />
-                            </div>
-                            <div class="form_row">
-                                <label for="password">Mot de passe :</label>
-                                <input type="password" name="password" id="password" placeholder="Mot de passe" />
-                            </div>
-                            <button class="btn inline_btn btn_default">Se connecter</button>
-                        </form>
-                        <ul class="modal_links">
-                            <li><a href="#">Vous voulez vous inscrire ?</a></li>
-                            <li><a href="#">Vous avez oublié votre mot de passe ?</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="palantir" class="modal">
-                    <div class="modal_content">
-                        <button class="modal_close">Fermer</button>
-                        <h3 class="modal_title">Rechercher sur le site</h3>
-                        <form id="palantir_form" action="" method="">
-                            <div class="form_row">
-                                <label for="keyword">Mots clefs :</label>
-                                <input type="text" name="keyword" id="keyword" placeholder="Mots clefs" />
-                            </div>
-                            <button class="btn inline_btn btn_default">rechercher</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="modal_overlay"></div>
-                <!-- /end modal windows -->
-
                 <!-- ALL JS BEFORE /BODY -->
                 <!-- libraries -->
                 <script type="text/javascript" src="scripts/classie.js"></script>
                 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-                 <script>window.jQuery || document.write('<script src="scripts/jquery-2.1.3.min.js"><\/script>')</script>
+                <script>window.jQuery || document.write('<script src="scripts/jquery-2.1.3.min.js"><\/script>')</script>
                 <script type="text/javascript" src="scripts/jquery.cookie.js"></script>
                 <!-- timeline -->
                 <script type="text/javascript" src="scripts/jquery.mCustomScrollbar.js"></script>
