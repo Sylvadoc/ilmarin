@@ -233,6 +233,7 @@
 		display: block;
 		margin: 0 auto;
 		width: 150px;
+		position: relative;
 		.logotype {
 			-webkit-animation: LogoArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
 			-moz-animation: LogoArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
@@ -245,6 +246,46 @@
 			-o-animation: ElbakinArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
 			animation: ElbakinArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
 			@include translate3d(0,-1rem,0);
+		}
+		.phylactere {
+			@include transform-origin(0 0);
+			@include opacity(0);
+			@include transition(all .3s cubic-bezier(.68,-0.55,.27,1.55));
+			@include rotate(90deg);
+			background: white;
+			border-radius: 220px / 80px;
+			color: #666;
+			font-style: italic;
+			line-height: 1;
+			margin: 0;
+			padding: 20px;
+			position: absolute;
+			text-align: center;
+			width: 190px;
+			top: 9px;
+			left: 130px;
+			&:before {
+				@include transform-origin(0 0);
+				@include rotate(-33deg);
+				content: '';
+				position: absolute;
+				left: 10px;
+				top: 60px;
+				width: 0;
+				height: 0;
+				border-top: 10px solid transparent;
+				border-bottom: 10px solid transparent;
+				border-right: 25px solid white;
+			}
+		}
+		a {
+			display: block;
+			&:hover {
+				.phylactere {
+					@include opacity(1);
+					@include rotate(0);
+				}
+			}
 		}
 	}
 	.appear {

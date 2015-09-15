@@ -421,7 +421,7 @@
 /* ================ L A S T  5 0
 ===================================================== */
 
-#last_50 {
+.liste_ouvrage {
 	padding: 2rem 0;
 	.simili-title {
 		padding-bottom: 1rem;
@@ -475,6 +475,49 @@
 			margin-top: 1rem;
 			padding: 1rem;
 			text-align: right;
+		}
+	}
+}
+
+/* ================ F I C H E   B I O
+===================================================== */
+
+#author_bibliography {
+	margin-top: 3em;
+	.life {
+		font-family: $font-stack-headings;
+		font-weight: bold;
+		@include rem(2);
+		color: #666;
+		text-transform: uppercase;
+	}
+	.bio-title {
+		color: $base-color-elbakin;
+		@include rem(6);
+		line-height: 1;
+		margin: 0 0 2rem 0;
+		text-transform: uppercase;
+	}
+	.basic_list {
+		margin-bottom: 2rem;
+		strong {
+			display: inline-block;
+			text-align: right;
+			width: 7rem;
+		}
+		li:last-child {
+			border: 0;
+		}
+	}
+	.bio p {
+		margin: 0 0 1em 0;
+	}
+	.portrait {
+		width: 50%;
+		margin: 0 auto;
+		img {
+			width: 100%;
+			height: auto;
 		}
 	}
 }

@@ -126,7 +126,7 @@ $(document).ready(function() {
 	}
 
 	// masonry list
-	if ($('#last_50').length) {
+	if ($('.liste_ouvrage').length) {
 		var $container = $('#masonry_last');
 		var $container_02 = $('#masonry_lists');
 		// initialize

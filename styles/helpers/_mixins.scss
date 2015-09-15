@@ -125,6 +125,13 @@
 	-webkit-transform: translate3d($arg1, $arg2, $arg3);
 	zoom: 1;
 }
+@mixin transform-origin ($origin) {
+	-moz-transform-origin: $origin;
+	-o-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	-webkit-transform-origin: $origin;
+	transform-origin: $origin;
+}
 @mixin transform($args...) {
 	-webkit-transform: $args;
 	-moz-transform: $args;

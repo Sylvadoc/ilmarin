@@ -35,7 +35,7 @@
 
         <!-- stylesheets -->
         <link rel="stylesheet" href="css/vendors/foundation.min.css" />
-        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/chronique.css" />
 
         <!-- scripts -->
         <script src="scripts/modernizr.custom.js"></script>
@@ -177,7 +177,10 @@
                     <div class="inner-wrap">
                         <div class="branding appear" role="heading">
                             <div class="logotype">
-                                <img src="images/logo_elbakin.png" alt="Elbakin.net, la fantasy au quotiden" />
+                                <a href="index.html">
+                                    <img src="images/logo_elbakin.png" alt="Elbakin.net, la fantasy au quotiden" />
+                                    <span class="phylactere" aria-hidden="true">Je sens poindre en vous une idée saugrenue&hellip;</span>
+                                </a>
                             </div>
                             <div class="elbakin">
                                 <img src="images/elbakin_txt.png" alt="Elbakin.net" />
@@ -293,19 +296,26 @@
                     <section role="region" id="author_bibliography">
                         <div class="row clearfix" itemscope itemtype="http://schema.org/Person">
                             <div class="small-12 medium-4 large-5 columns">
-                                <p>Photo de l'auteur</p>
+                                <div class="portrait">
+                                    <img src="images/illustrations/pierre.jpg" alt="Photo de Pierre Pevel" />
+                                </div>
                             </div>
                             <div class="small-12 medium-8 large-7 columns">
-                                <div>
-                                    <h1 itemprop="name">Pierre Pevel</h1>
-                                    <ul class="basic_list">
-                                        <li><strong>Site web :</strong> <span itemprop="mainEntityOfPage"><a href="http://twitter.com/pierrepevel" title="(nouvelle fenêtre)">http://twitter.com/pierrepevel</a></span></li>
-                                        <li><strong>Nationalité</strong> <span itemprop="nationality">Française</span></li>
-                                    </ul>
-                                    <div itemprop="description">
-                                        <p>Initialement auteur de jeux de rôle, Pierre Pevel à aujourd’hui plus de 7 romans à son actif sous son nom, et deux autres précédemment sous le nom de Pierre Jacq. Les Ombres de Wielstadt, premier opus de la trilogie mettant en scène le chevalier Kantz, a reçu le prix de l’Imaginaire en 2002. Puis L’Elixir d’oubli a été récompensé aux Imaginales en 2005.</p>
-                                        <p>Mais la plus belle reconnaissance pour cet auteur qui aime entraîner ses lecteurs dans les méandres de l’Histoire, est sans aucun doute la traduction en langue anglaise de son livre publié en 2008 et qui ouvre une nouvelle trilogie : Les Lames du Cardinal.</p>
-                                    </div>
+                                <p class="life"><span class="birth">Né en 1968</span></p>
+                                <h1 class="bio-title" itemprop="name">Pierre Pevel</h1>
+                                <ul class="basic_list">
+                                    <li><strong>Site web :</strong> <span itemprop="mainEntityOfPage"><a href="http://twitter.com/pierrepevel" title="(nouvelle fenêtre)">http://twitter.com/pierrepevel</a></span></li>
+                                    <li><strong>Pays :</strong> <span itemprop="nationality">France</span></li>
+                                </ul>
+                                <div class="bio" itemprop="description">
+                                    <p>Initialement auteur de jeux de rôle, <strong>Pierre Pevel</strong> à aujourd’hui plus de 7 romans à son actif sous son nom, et deux autres précédemment sous le nom de Pierre Jacq. <em>Les Ombres de Wielstadt</em>, premier opus de la trilogie mettant en scène le chevalier Kantz, a reçu le prix de l’Imaginaire en 2002. Puis <em>L’Elixir d’oubli</em> a été récompensé aux Imaginales en 2005.</p>
+                                    <p>Mais la plus belle reconnaissance pour cet auteur qui aime entraîner ses lecteurs dans les méandres de l’Histoire, est sans aucun doute la traduction en langue anglaise de son livre publié en 2008 et qui ouvre une nouvelle trilogie : <a href="#">Les Lames du Cardinal</a>.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 </div>
                             </div>
                         </div>
@@ -313,10 +323,119 @@
                     <!-- end author biography -->
 
                     <!-- begin author bibliography -->
-                    <section role="region" id="author_bibliography">
+                    <section role="region" id="author_bibliography" class="liste_ouvrage">
                         <div class="row clearfix">
                             <span class="simili-title">Sa <strong>bibliographie</strong></span>
-
+                            <div id="masonry_last">
+                                <div class="small-6 medium-3 large-2 columns">
+                                    <article>
+                                        <a class="entry-header" href="#">
+                                            <img src="images/illustrations/pevel_02.jpg" alt="Les Enchantements d'Ambremer" />
+                                            <p><span>Les Enchantements d'Ambremer</span></p>
+                                        </a>
+                                        <p class="genre">Uchronie</p>
+                                        <div class="entry-meta">
+                                            par <a href="#">Gillossen</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="small-6 medium-3 large-2 columns">
+                                    <article>
+                                        <a class="entry-header" href="#">
+                                            <img src="images/illustrations/pevel_03.jpg" alt="L'Élixir d'oubli" />
+                                            <p><span>L'Élixir d'oubli</span></p>
+                                        </a>
+                                        <p class="genre">Uchronie</p>
+                                        <div class="entry-meta">
+                                            par <a href="#">Gillossen</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="small-6 medium-3 large-2 columns">
+                                    <article>
+                                        <a class="entry-header" href="#">
+                                            <img src="images/illustrations/pevel_01.jpg" alt="Le Royaume Immobile" />
+                                            <p><span>Le Royaume Immobile</span></p>
+                                        </a>
+                                        <p class="genre">Uchronie</p>
+                                        <div class="entry-meta">
+                                            par <a href="#">Gillossen</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="small-6 medium-3 large-2 columns">
+                                    <article>
+                                        <a class="entry-header" href="#">
+                                            <img src="images/illustrations/pevel_06.jpg" alt="Les Lames du Cardinal" />
+                                            <p><span>Les Lames du Cardinal</span></p>
+                                        </a>
+                                        <p class="genre">Dumaserie</p>
+                                        <div class="entry-meta">
+                                            par <a href="#">Aléthia</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="small-6 medium-3 large-2 columns">
+                                    <article>
+                                        <a class="entry-header" href="#">
+                                            <img src="images/illustrations/pevel_04.jpg" alt="L'Alchimiste des Ombres" />
+                                            <p><span>L'Alchimiste des Ombres</span></p>
+                                        </a>
+                                        <p class="genre">Dumaserie</p>
+                                        <div class="entry-meta">
+                                            par <a href="#">Aléthia</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="small-6 medium-3 large-2 columns">
+                                    <article>
+                                        <a class="entry-header" href="#">
+                                            <img src="images/illustrations/pevel_05.jpg" alt="Le Dragon des Arcanes" />
+                                            <p><span>Le Dragon des Arcanes</span></p>
+                                        </a>
+                                        <p class="genre">Dumaserie</p>
+                                        <div class="entry-meta">
+                                            par <a href="#">Aléthia</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="small-6 medium-3 large-2 columns">
+                                    <article>
+                                        <a class="entry-header" href="#">
+                                            <img src="images/illustrations/pevel_09.jpg" alt="Les Ombres de Wielstadt" />
+                                            <p><span>Les Ombres de Wielstadt</span></p>
+                                        </a>
+                                        <p class="genre">Uchronie</p>
+                                        <div class="entry-meta">
+                                            par <a href="#">Asavar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="small-6 medium-3 large-2 columns">
+                                    <article>
+                                        <a class="entry-header" href="#">
+                                            <img src="images/illustrations/pevel_08.jpg" alt="Les masques de Wielstadt" />
+                                            <p><span>Les masques de Wielstadt</span></p>
+                                        </a>
+                                        <p class="genre">Uchronie</p>
+                                        <div class="entry-meta">
+                                            par <a href="#">Asavar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="small-6 medium-3 large-2 columns">
+                                    <article>
+                                        <a class="entry-header" href="#">
+                                            <img src="images/illustrations/pevel_07.jpg" alt="Le Chevalier de Wielstadt" />
+                                            <p><span>Le Chevalier de Wielstadt</span></p>
+                                        </a>
+                                        <p class="genre">Uchronie</p>
+                                        <div class="entry-meta">
+                                            par <a href="#">Asavar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
                         </div>
                     </section>
                     <!-- end author bibliography -->
@@ -396,11 +515,7 @@
                 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
                 <script>window.jQuery || document.write('<script src="scripts/jquery-2.1.3.min.js"><\/script>')</script>
                 <script type="text/javascript" src="scripts/jquery.cookie.js"></script>
-                <!-- timeline -->
-                <script type="text/javascript" src="scripts/jquery.mCustomScrollbar.js"></script>
-                <script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
-                <script type="text/javascript" src="scripts/jquery.timeline.min.js"></script>
-                <!-- /end timeline -->
+                <script type="text/javascript" src="scripts/masonry.pkgd.min.js"></script>
                 <!-- custom scripts -->
                 <script type="text/javascript" src="scripts/mlpushmenu.js"></script>
                 <script type="text/javascript" src="scripts/main.js"></script>
