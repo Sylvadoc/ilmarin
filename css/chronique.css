@@ -1969,6 +1969,58 @@ body {
   float: none;
 }
 
+/* line 35, ../styles/layout/_grid.scss */
+.article_focus {
+  background: white;
+  padding: 1em;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+/* line 39, ../styles/layout/_grid.scss */
+.article_focus .inner_content {
+  text-align: justify;
+}
+/* line 41, ../styles/layout/_grid.scss */
+.article_focus .inner_content a {
+  display: block;
+  overflow: hidden;
+}
+/* line 44, ../styles/layout/_grid.scss */
+.article_focus .inner_content a p {
+  display: block;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-size: 30.8px;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  position: relative;
+  background: white;
+  text-align: left;
+}
+/* line 52, ../styles/layout/_grid.scss */
+.article_focus .inner_content a p:before {
+  transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99863, M12=--0.05234, M21=-0.05234, M22=0.99863);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99863, M12=--0.05234, M21=-0.05234, M22=0.99863)";
+  zoom: 1;
+  background: inherit;
+  content: '';
+  display: block;
+  height: 35px;
+  left: -20px;
+  position: absolute;
+  top: -20px;
+  width: 115%;
+}
+/* line 63, ../styles/layout/_grid.scss */
+.article_focus .inner_content a p span {
+  position: relative;
+  top: -.5rem;
+}
+
 /* ====== Concerning Logo
 ======================================= */
 @-webkit-keyframes LogoArrives {
@@ -3531,7 +3583,7 @@ body {
 ========================================================== */
 /* line 4, ../styles/components/_carousel.scss */
 #all_new_chronique {
-  padding: 2rem 0 0;
+  padding: 2rem 0 1rem 0;
 }
 /* line 6, ../styles/components/_carousel.scss */
 #all_new_chronique .h2_like {
@@ -3594,7 +3646,7 @@ body {
 /* line 55, ../styles/components/_carousel.scss */
 #all_new_chronique .critiques li > a img {
   width: 100%;
-  height: 280px;
+  height: auto;
 }
 
 /* ============== B L O C   O N G L E T S
@@ -3604,59 +3656,65 @@ body {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   background-clip: padding-box;
-  background: white;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
   display: inline-block;
   float: right;
-  padding: .5em 1.2em;
   font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
+  padding: .5em 1.2em;
+  text-transform: uppercase;
+}
+/* line 81, ../styles/components/_carousel.scss */
+.all_chronicles:hover, .all_chronicles:focus, .all_chronicles:active {
+  background: white;
+  color: black;
+  text-decoration: none;
 }
 
-/* line 80, ../styles/components/_carousel.scss */
+/* line 87, ../styles/components/_carousel.scss */
 .tabs {
+  float: left;
   list-style: none none;
   margin: 0 0 1em 0;
   padding: 0;
-  float: left;
 }
-/* line 85, ../styles/components/_carousel.scss */
+/* line 92, ../styles/components/_carousel.scss */
 .tabs li {
   display: inline-block;
 }
-/* line 87, ../styles/components/_carousel.scss */
+/* line 94, ../styles/components/_carousel.scss */
 .tabs li a {
-  background: transparent;
-  display: inline-block;
-  color: white;
-  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  padding: .5em 1em;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
   -webkit-transition: background 0.2s ease-out;
   -moz-transition: background 0.2s ease-out;
   -ms-transition: background 0.2s ease-out;
   -o-transition: background 0.2s ease-out;
   transition: background 0.2s ease-out;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  background-clip: padding-box;
+  background: transparent;
+  color: white;
+  display: inline-block;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  padding: .5em 1em;
+  text-transform: uppercase;
 }
-/* line 97, ../styles/components/_carousel.scss */
+/* line 104, ../styles/components/_carousel.scss */
 .tabs li a.active, .tabs li a:hover, .tabs li a:focus {
   background: white;
   color: black;
   text-decoration: none;
 }
 
-/* line 105, ../styles/components/_carousel.scss */
+/* line 112, ../styles/components/_carousel.scss */
 .row_tab_all {
   clear: both;
-  height: 310px;
-  position: relative;
 }
 
-/* line 110, ../styles/components/_carousel.scss */
+/* line 115, ../styles/components/_carousel.scss */
 .row_tab {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -3664,31 +3722,64 @@ body {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   display: none;
-  position: absolute;
   width: 100%;
 }
-/* line 115, ../styles/components/_carousel.scss */
+/* line 119, ../styles/components/_carousel.scss */
 .row_tab.open {
   display: block;
 }
-/* line 117, ../styles/components/_carousel.scss */
+/* line 121, ../styles/components/_carousel.scss */
 .row_tab.open .active {
   position: relative;
 }
-/* line 119, ../styles/components/_carousel.scss */
-.row_tab.open .active:after {
-  border-color: transparent transparent white transparent;
-  border-style: solid;
-  border-width: 0 15px 25px 15px;
-  bottom: -30px;
-  content: '';
-  display: block;
-  height: 0;
-  left: 41%;
-  position: absolute;
-  width: 0;
-}
 
+/* ============== R E S P O N S I V E
+========================================================== */
+@media (min-width: 1280px) {
+  /* line 131, ../styles/components/_carousel.scss */
+  .desc_crit {
+    height: 160px;
+    max-height: 160px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 139, ../styles/components/_carousel.scss */
+  .desc_crit {
+    height: 180px;
+    max-height: 180px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 145, ../styles/components/_carousel.scss */
+  .tabs {
+    font-size: 18.2px;
+    font-size: 1.3rem;
+    float: none;
+    text-align: center;
+  }
+
+  /* line 150, ../styles/components/_carousel.scss */
+  .desc_crit {
+    display: none;
+  }
+
+  /* line 155, ../styles/components/_carousel.scss */
+  #all_new_chronique #chroniques .all_chronicles {
+    display: block;
+    float: none;
+    margin: 0 auto 1em auto;
+    text-align: center;
+    width: 200px;
+  }
+  /* line 163, ../styles/components/_carousel.scss */
+  #all_new_chronique #chroniques .critiques .columns {
+    margin-bottom: 2em;
+  }
+  /* line 166, ../styles/components/_carousel.scss */
+  #all_new_chronique #chroniques .critiques img {
+    height: 250px;
+  }
+}
 /********************************************************************************************************************************************************************************
 ********************* S E C T I O N   B I B L I O T H E Q U E *****************
 /********************************************************************************************************************************************************************************/
@@ -4340,6 +4431,8 @@ body {
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   -webkit-clip-path: url("#polygon-clip-hexagon");
+  -moz-clip-path: url("#polygon-clip-hexagon");
+  -o-clip-path: url("#polygon-clip-hexagon");
   clip-path: url("#polygon-clip-hexagon");
 }
 

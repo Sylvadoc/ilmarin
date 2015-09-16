@@ -32,3 +32,39 @@ body {
 		float: none;
 	}
 }
+.article_focus {
+	background: white;
+	padding: 1em;
+	@include border-radius(5px);
+	.inner_content {
+		text-align: justify;
+		a {
+			display: block;
+			overflow: hidden;
+			p {
+				display: block;
+				font-family: $font-stack-headings;
+				@include rem(2.2);
+				text-transform: uppercase;
+				position: relative;
+				background: white;
+				text-align: left;
+				&:before {
+					@include rotate(-3deg);
+					background: inherit;
+					content: '';
+					display: block;
+					height: 35px;
+					left: -20px;
+					position: absolute;
+					top: -20px;
+					width: 115%;
+				}
+				span {
+					position: relative;
+					top: -.5rem;
+				}
+			}
+		}
+	}
+}

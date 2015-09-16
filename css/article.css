@@ -1268,6 +1268,58 @@ body {
   float: none;
 }
 
+/* line 35, ../styles/layout/_grid.scss */
+.article_focus {
+  background: white;
+  padding: 1em;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+/* line 39, ../styles/layout/_grid.scss */
+.article_focus .inner_content {
+  text-align: justify;
+}
+/* line 41, ../styles/layout/_grid.scss */
+.article_focus .inner_content a {
+  display: block;
+  overflow: hidden;
+}
+/* line 44, ../styles/layout/_grid.scss */
+.article_focus .inner_content a p {
+  display: block;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-size: 30.8px;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  position: relative;
+  background: white;
+  text-align: left;
+}
+/* line 52, ../styles/layout/_grid.scss */
+.article_focus .inner_content a p:before {
+  transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99863, M12=--0.05234, M21=-0.05234, M22=0.99863);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99863, M12=--0.05234, M21=-0.05234, M22=0.99863)";
+  zoom: 1;
+  background: inherit;
+  content: '';
+  display: block;
+  height: 35px;
+  left: -20px;
+  position: absolute;
+  top: -20px;
+  width: 115%;
+}
+/* line 63, ../styles/layout/_grid.scss */
+.article_focus .inner_content a p span {
+  position: relative;
+  top: -.5rem;
+}
+
 /* ====== Concerning Logo
 ======================================= */
 @-webkit-keyframes LogoArrives {
@@ -2886,7 +2938,11 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 @media (max-width: 1280px) {
-  /* line 98, ../styles/components/_chrono.scss */
+  /* line 96, ../styles/components/_chrono.scss */
+  #chrono {
+    margin-top: 2rem;
+  }
+  /* line 99, ../styles/components/_chrono.scss */
   #chrono .header_chrono select {
     width: 43%;
   }
