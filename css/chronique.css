@@ -4552,7 +4552,11 @@ body {
 #author_news #breves h2 {
   text-transform: uppercase;
 }
-/* line 549, ../styles/pages/_chronique.scss */
+/* line 548, ../styles/pages/_chronique.scss */
+#author_news #breves .basic_list {
+  margin-bottom: 1em;
+}
+/* line 550, ../styles/pages/_chronique.scss */
 #author_news #breves .basic_list a {
   padding: .5em 0;
 }
