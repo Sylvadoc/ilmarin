@@ -74,6 +74,13 @@ section:nth-child(2n+2), #most {
 	@include gradient(#24C6DC,#514A9D);
 	color: white;
 }
+#author_bibliography {
+	@include gradient(#24C6DC,#514A9D);
+	color: white;
+}
+#author_news {
+	@include gradient(#ECE9E6,#FFFFFF);
+}
 #agenda_parutions {
 	background: white;
 }

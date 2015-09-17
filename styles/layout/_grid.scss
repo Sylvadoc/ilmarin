@@ -32,6 +32,10 @@ body {
 		float: none;
 	}
 }
+
+/* ============== C O M M U N   M I S E   E N   P A G E   A R T I C L E
+============================================================================== */
+
 .article_focus {
 	background: white;
 	padding: 1em;
@@ -64,6 +68,79 @@ body {
 					position: relative;
 					top: -.5rem;
 				}
+			}
+		}
+	}
+}
+.other_news {
+	list-style: none none;
+	margin: 0;
+	padding: 0;
+	li {
+		margin-bottom: 2em;
+		a {
+			background: white;
+			border: 1px solid #ccc;
+			display: block;
+			overflow: hidden;
+			&:hover, &:focus {
+				text-decoration: none;
+				p {
+					background: $orange-color-elbakin;
+					color: white;
+				}
+			}
+			img {
+				width: 100%;
+				height: auto;
+			}
+			p {
+				display: block;
+				font-family: $font-stack-headings;
+				padding: 0 .5rem;
+				position: relative;
+				background: white;
+				&:before {
+					@include rotate(-3deg);
+					background: inherit;
+					content: '';
+					display: block;
+					height: 35px;
+					left: -20px;
+					position: absolute;
+					top: -20px;
+					width: 115%;
+				}
+				span {
+					position: relative;
+					top: -.5rem;
+				}
+			}
+		}
+	}
+}
+
+/* ============== B L O C   N O S   A R T I C L E S
+========================================================== */
+
+#other_news {padding: 2rem 0;}
+#articles, #itws {
+	h2 {
+		text-transform: uppercase;
+		@include rem(2);
+		margin: 1em 0;
+		padding: 0;
+	}
+	ul {
+		list-style: none none;
+		padding: 0;
+		margin: 0;
+		li {
+			display: block;
+			border-bottom: 1px solid #ccc;
+			a {
+				display: block;
+				padding: .5em 0;
 			}
 		}
 	}

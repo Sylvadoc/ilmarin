@@ -1893,7 +1893,9 @@ body {
   float: none;
 }
 
-/* line 35, ../styles/layout/_grid.scss */
+/* ============== C O M M U N   M I S E   E N   P A G E   A R T I C L E
+============================================================================== */
+/* line 39, ../styles/layout/_grid.scss */
 .article_focus {
   background: white;
   padding: 1em;
@@ -1901,16 +1903,16 @@ body {
   border-radius: 5px;
   background-clip: padding-box;
 }
-/* line 39, ../styles/layout/_grid.scss */
+/* line 43, ../styles/layout/_grid.scss */
 .article_focus .inner_content {
   text-align: justify;
 }
-/* line 41, ../styles/layout/_grid.scss */
+/* line 45, ../styles/layout/_grid.scss */
 .article_focus .inner_content a {
   display: block;
   overflow: hidden;
 }
-/* line 44, ../styles/layout/_grid.scss */
+/* line 48, ../styles/layout/_grid.scss */
 .article_focus .inner_content a p {
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
@@ -1921,7 +1923,7 @@ body {
   background: white;
   text-align: left;
 }
-/* line 52, ../styles/layout/_grid.scss */
+/* line 56, ../styles/layout/_grid.scss */
 .article_focus .inner_content a p:before {
   transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -1939,10 +1941,105 @@ body {
   top: -20px;
   width: 115%;
 }
-/* line 63, ../styles/layout/_grid.scss */
+/* line 67, ../styles/layout/_grid.scss */
 .article_focus .inner_content a p span {
   position: relative;
   top: -.5rem;
+}
+
+/* line 75, ../styles/layout/_grid.scss */
+.other_news {
+  list-style: none none;
+  margin: 0;
+  padding: 0;
+}
+/* line 79, ../styles/layout/_grid.scss */
+.other_news li {
+  margin-bottom: 2em;
+}
+/* line 81, ../styles/layout/_grid.scss */
+.other_news li a {
+  background: white;
+  border: 1px solid #ccc;
+  display: block;
+  overflow: hidden;
+}
+/* line 86, ../styles/layout/_grid.scss */
+.other_news li a:hover, .other_news li a:focus {
+  text-decoration: none;
+}
+/* line 88, ../styles/layout/_grid.scss */
+.other_news li a:hover p, .other_news li a:focus p {
+  background: #FE9E00;
+  color: white;
+}
+/* line 93, ../styles/layout/_grid.scss */
+.other_news li a img {
+  width: 100%;
+  height: auto;
+}
+/* line 97, ../styles/layout/_grid.scss */
+.other_news li a p {
+  display: block;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  padding: 0 .5rem;
+  position: relative;
+  background: white;
+}
+/* line 103, ../styles/layout/_grid.scss */
+.other_news li a p:before {
+  transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99863, M12=--0.05234, M21=-0.05234, M22=0.99863);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99863, M12=--0.05234, M21=-0.05234, M22=0.99863)";
+  zoom: 1;
+  background: inherit;
+  content: '';
+  display: block;
+  height: 35px;
+  left: -20px;
+  position: absolute;
+  top: -20px;
+  width: 115%;
+}
+/* line 114, ../styles/layout/_grid.scss */
+.other_news li a p span {
+  position: relative;
+  top: -.5rem;
+}
+
+/* ============== B L O C   N O S   A R T I C L E S
+========================================================== */
+/* line 126, ../styles/layout/_grid.scss */
+#other_news {
+  padding: 2rem 0;
+}
+
+/* line 128, ../styles/layout/_grid.scss */
+#articles h2, #itws h2 {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-size: 2rem;
+  margin: 1em 0;
+  padding: 0;
+}
+/* line 134, ../styles/layout/_grid.scss */
+#articles ul, #itws ul {
+  list-style: none none;
+  padding: 0;
+  margin: 0;
+}
+/* line 138, ../styles/layout/_grid.scss */
+#articles ul li, #itws ul li {
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+/* line 141, ../styles/layout/_grid.scss */
+#articles ul li a, #itws ul li a {
+  display: block;
+  padding: .5em 0;
 }
 
 /* ====== Concerning Logo
@@ -4209,103 +4306,41 @@ body {
   padding: 1em 0;
 }
 
-/* line 68, ../styles/pages/_tolkien.scss */
-.other_news {
-  list-style: none none;
-  margin: 0;
-  padding: 0;
-}
-/* line 72, ../styles/pages/_tolkien.scss */
-.other_news li {
-  margin-bottom: 2em;
-}
-/* line 74, ../styles/pages/_tolkien.scss */
+/* line 70, ../styles/pages/_tolkien.scss */
 .other_news li:nth-child(4n+1) {
   clear: left;
-}
-/* line 77, ../styles/pages/_tolkien.scss */
-.other_news li a {
-  background: white;
-  border: 1px solid #ccc;
-  display: block;
-  overflow: hidden;
-}
-/* line 82, ../styles/pages/_tolkien.scss */
-.other_news li a:hover, .other_news li a:focus {
-  text-decoration: none;
-}
-/* line 84, ../styles/pages/_tolkien.scss */
-.other_news li a:hover p, .other_news li a:focus p {
-  background: #FE9E00;
-  color: white;
-}
-/* line 89, ../styles/pages/_tolkien.scss */
-.other_news li a img {
-  width: 100%;
-  height: auto;
-}
-/* line 93, ../styles/pages/_tolkien.scss */
-.other_news li a p {
-  display: block;
-  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
-  padding: 0 .5rem;
-  position: relative;
-  background: white;
-}
-/* line 99, ../styles/pages/_tolkien.scss */
-.other_news li a p:before {
-  transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -webkit-transform: rotate(-3deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99863, M12=--0.05234, M21=-0.05234, M22=0.99863);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99863, M12=--0.05234, M21=-0.05234, M22=0.99863)";
-  zoom: 1;
-  background: inherit;
-  content: '';
-  display: block;
-  height: 35px;
-  left: -20px;
-  position: absolute;
-  top: -20px;
-  width: 115%;
-}
-/* line 110, ../styles/pages/_tolkien.scss */
-.other_news li a p span {
-  position: relative;
-  top: -.5rem;
 }
 
 /* ============== T O L K I E N D I L
 ========================================================== */
 /* ============== Q U I Z
 ========================================================== */
-/* line 132, ../styles/pages/_tolkien.scss */
+/* line 89, ../styles/pages/_tolkien.scss */
 #quiz .btn {
   margin-top: 1em;
 }
 
 /* ============== C O R R E C T I O N S
 ========================================================== */
-/* line 141, ../styles/pages/_tolkien.scss */
+/* line 98, ../styles/pages/_tolkien.scss */
 #corrections .btn {
   margin-top: 1em;
 }
 
 /* ============== P E T E R  J A C K S O N
 ========================================================== */
-/* line 150, ../styles/pages/_tolkien.scss */
+/* line 107, ../styles/pages/_tolkien.scss */
 #tolkien_by_pj ul {
   list-style: none none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 157, ../styles/pages/_tolkien.scss */
+/* line 114, ../styles/pages/_tolkien.scss */
 #tolkien_by_pj ul li a {
   display: block;
 }
-/* line 160, ../styles/pages/_tolkien.scss */
+/* line 117, ../styles/pages/_tolkien.scss */
 #tolkien_by_pj ul li img {
   width: 100%;
   height: 150px;
@@ -4314,58 +4349,58 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 @media (max-width: 1024px) {
-  /* line 173, ../styles/pages/_tolkien.scss */
+  /* line 130, ../styles/pages/_tolkien.scss */
   #all_new_chronique .row_tab_all {
     height: 270px;
   }
-  /* line 177, ../styles/pages/_tolkien.scss */
+  /* line 134, ../styles/pages/_tolkien.scss */
   #all_new_chronique .critiques li:nth-child(-n+6) {
     display: block;
   }
-  /* line 179, ../styles/pages/_tolkien.scss */
+  /* line 136, ../styles/pages/_tolkien.scss */
   #all_new_chronique .critiques li:nth-child(-n+6) img {
     height: 240px;
   }
-  /* line 183, ../styles/pages/_tolkien.scss */
+  /* line 140, ../styles/pages/_tolkien.scss */
   #all_new_chronique .critiques li {
     display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 192, ../styles/pages/_tolkien.scss */
+  /* line 149, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .row_tab_all {
     height: 310px;
   }
-  /* line 196, ../styles/pages/_tolkien.scss */
+  /* line 153, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .critiques li:nth-child(-n+4) {
     display: block;
   }
-  /* line 198, ../styles/pages/_tolkien.scss */
+  /* line 155, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .critiques li:nth-child(-n+4) img {
     height: 290px;
   }
-  /* line 202, ../styles/pages/_tolkien.scss */
+  /* line 159, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .critiques li {
     display: none;
   }
 }
 @media (max-width: 480px) {
-  /* line 213, ../styles/pages/_tolkien.scss */
+  /* line 170, ../styles/pages/_tolkien.scss */
   .tabs {
     font-size: 18.2px;
     font-size: 1.3rem;
   }
 
-  /* line 217, ../styles/pages/_tolkien.scss */
+  /* line 174, ../styles/pages/_tolkien.scss */
   .desc_crit .h2_like, .desc_crit .type_item, .desc_crit .desc_item {
     display: none;
   }
 
-  /* line 223, ../styles/pages/_tolkien.scss */
+  /* line 180, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .row_tab_all {
     height: 350px !important;
   }
-  /* line 226, ../styles/pages/_tolkien.scss */
+  /* line 183, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .all_chronicles {
     display: block;
     float: none;
@@ -4373,16 +4408,16 @@ body {
     text-align: center;
     width: 200px;
   }
-  /* line 234, ../styles/pages/_tolkien.scss */
+  /* line 191, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .critiques li:nth-child(-n+6) {
     display: block !important;
     margin-bottom: 1em;
   }
-  /* line 237, ../styles/pages/_tolkien.scss */
+  /* line 194, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .critiques li:nth-child(-n+6) img {
     height: 160px;
   }
-  /* line 241, ../styles/pages/_tolkien.scss */
+  /* line 198, ../styles/pages/_tolkien.scss */
   #all_new_chronique #chroniques .critiques li {
     display: none !important;
   }
@@ -4522,33 +4557,58 @@ section:nth-child(2n+2), #most {
 }
 
 /* line 77, ../styles/themes/_theme.scss */
+#author_bibliography {
+  background-color: #3a88bc;
+  /* Fallback */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#24C6DC), to(#514A9D));
+  background-image: -webkit-linear-gradient(left, #24C6DC, #514A9D);
+  background-image: -moz-linear-gradient(left, #24C6DC, #514A9D);
+  background-image: -ms-linear-gradient(left, #24C6DC, #514A9D);
+  background-image: -o-linear-gradient(left, #24C6DC, #514A9D);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', EndColorStr='#514A9D')";
+  color: white;
+}
+
+/* line 81, ../styles/themes/_theme.scss */
+#author_news {
+  background-color: #f5f4f2;
+  /* Fallback */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ECE9E6), to(#FFFFFF));
+  background-image: -webkit-linear-gradient(left, #ECE9E6, #FFFFFF);
+  background-image: -moz-linear-gradient(left, #ECE9E6, #FFFFFF);
+  background-image: -ms-linear-gradient(left, #ECE9E6, #FFFFFF);
+  background-image: -o-linear-gradient(left, #ECE9E6, #FFFFFF);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ECE9E6', EndColorStr='#FFFFFF')";
+}
+
+/* line 84, ../styles/themes/_theme.scss */
 #agenda_parutions {
   background: white;
 }
 
-/* line 80, ../styles/themes/_theme.scss */
+/* line 87, ../styles/themes/_theme.scss */
 #classement {
   background: white;
 }
 
-/* line 83, ../styles/themes/_theme.scss */
+/* line 90, ../styles/themes/_theme.scss */
 #footer {
   background: #262626;
 }
-/* line 85, ../styles/themes/_theme.scss */
+/* line 92, ../styles/themes/_theme.scss */
 #footer p {
   color: white;
 }
-/* line 88, ../styles/themes/_theme.scss */
+/* line 95, ../styles/themes/_theme.scss */
 #footer a {
   color: #727272;
 }
-/* line 90, ../styles/themes/_theme.scss */
+/* line 97, ../styles/themes/_theme.scss */
 #footer a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 95, ../styles/themes/_theme.scss */
+/* line 102, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] {
   background-color: #00bbff;
   /* Fallback */
@@ -4560,24 +4620,24 @@ section:nth-child(2n+2), #most {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#00BBFF', EndColorStr='#00BBFF')";
   color: #f1f1f1;
 }
-/* line 98, ../styles/themes/_theme.scss */
+/* line 105, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] a {
   color: white;
 }
-/* line 100, ../styles/themes/_theme.scss */
+/* line 107, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 105, ../styles/themes/_theme.scss */
+/* line 112, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] p, #footer[data-weather="sunny"] h2, #footer[data-weather="sunny"] #weather_city {
   color: white;
 }
-/* line 106, ../styles/themes/_theme.scss */
+/* line 113, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] #weather_city {
   border-bottom: 2px solid white;
 }
-/* line 110, ../styles/themes/_theme.scss */
+/* line 117, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] {
   background-color: #2eb5e5;
   /* Fallback */
@@ -4589,24 +4649,24 @@ section:nth-child(2n+2), #most {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2EB5E5', EndColorStr='#2EB5E5')";
   color: #f1f1f1;
 }
-/* line 113, ../styles/themes/_theme.scss */
+/* line 120, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] a {
   color: white;
 }
-/* line 115, ../styles/themes/_theme.scss */
+/* line 122, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 120, ../styles/themes/_theme.scss */
+/* line 127, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] p, #footer[data-weather="cloudy"] h2, #footer[data-weather="cloudy"] #weather_city {
   color: white;
 }
-/* line 121, ../styles/themes/_theme.scss */
+/* line 128, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] #weather_city {
   border-bottom: 2px solid white;
 }
-/* line 125, ../styles/themes/_theme.scss */
+/* line 132, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] {
   background-color: #e6e6e6;
   /* Fallback */
@@ -4617,24 +4677,24 @@ section:nth-child(2n+2), #most {
   background-image: -o-linear-gradient(left, #E6E6E6, #E6E6E6);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#E6E6E6', EndColorStr='#E6E6E6')";
 }
-/* line 127, ../styles/themes/_theme.scss */
+/* line 134, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] a {
   color: #333;
 }
-/* line 129, ../styles/themes/_theme.scss */
+/* line 136, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] a:hover {
   color: #333;
   text-decoration: underline;
 }
-/* line 134, ../styles/themes/_theme.scss */
+/* line 141, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] p, #footer[data-weather="rainy"] h2, #footer[data-weather="rainy"] #weather_city {
   color: black;
 }
-/* line 135, ../styles/themes/_theme.scss */
+/* line 142, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] #weather_city {
   border-bottom: 2px solid black;
 }
-/* line 139, ../styles/themes/_theme.scss */
+/* line 146, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] {
   background-color: #85db8c;
   /* Fallback */
@@ -4645,24 +4705,24 @@ section:nth-child(2n+2), #most {
   background-image: -o-linear-gradient(left, #85DB8C, #85DB8C);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#85DB8C', EndColorStr='#85DB8C')";
 }
-/* line 141, ../styles/themes/_theme.scss */
+/* line 148, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] a {
   color: #333;
 }
-/* line 143, ../styles/themes/_theme.scss */
+/* line 150, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] a:hover {
   color: #333;
   text-decoration: underline;
 }
-/* line 148, ../styles/themes/_theme.scss */
+/* line 155, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] p, #footer[data-weather="snowy"] h2, #footer[data-weather="snowy"] #weather_city {
   color: black;
 }
-/* line 149, ../styles/themes/_theme.scss */
+/* line 156, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] #weather_city {
   border-bottom: 2px solid black;
 }
-/* line 153, ../styles/themes/_theme.scss */
+/* line 160, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] {
   background-color: #f3d166;
   /* Fallback */
@@ -4673,24 +4733,24 @@ section:nth-child(2n+2), #most {
   background-image: -o-linear-gradient(left, #F3D166, #F3D166);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#F3D166', EndColorStr='#F3D166')";
 }
-/* line 155, ../styles/themes/_theme.scss */
+/* line 162, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] a {
   color: #333;
 }
-/* line 157, ../styles/themes/_theme.scss */
+/* line 164, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] a:hover {
   color: #333;
   text-decoration: underline;
 }
-/* line 162, ../styles/themes/_theme.scss */
+/* line 169, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] p, #footer[data-weather="rainbow"] h2, #footer[data-weather="rainbow"] #weather_city {
   color: black;
 }
-/* line 163, ../styles/themes/_theme.scss */
+/* line 170, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] #weather_city {
   border-bottom: 2px solid black;
 }
-/* line 167, ../styles/themes/_theme.scss */
+/* line 174, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] {
   background-color: #222233;
   /* Fallback */
@@ -4702,24 +4762,24 @@ section:nth-child(2n+2), #most {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#222233', EndColorStr='#222233')";
   color: #f1f1f1;
 }
-/* line 170, ../styles/themes/_theme.scss */
+/* line 177, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] a {
   color: white;
 }
-/* line 172, ../styles/themes/_theme.scss */
+/* line 179, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 177, ../styles/themes/_theme.scss */
+/* line 184, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] p, #footer[data-weather="starry"] h2, #footer[data-weather="starry"] #weather_city {
   color: white;
 }
-/* line 178, ../styles/themes/_theme.scss */
+/* line 185, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] #weather_city {
   border-bottom: 2px solid white;
 }
-/* line 182, ../styles/themes/_theme.scss */
+/* line 189, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] {
   background-color: #444444;
   /* Fallback */
@@ -4731,20 +4791,20 @@ section:nth-child(2n+2), #most {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#444444', EndColorStr='#444444')";
   color: #f1f1f1;
 }
-/* line 185, ../styles/themes/_theme.scss */
+/* line 192, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] a {
   color: white;
 }
-/* line 187, ../styles/themes/_theme.scss */
+/* line 194, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 192, ../styles/themes/_theme.scss */
+/* line 199, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] p, #footer[data-weather="stormy"] h2, #footer[data-weather="stormy"] #weather_city {
   color: white;
 }
-/* line 193, ../styles/themes/_theme.scss */
+/* line 200, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] #weather_city {
   border-bottom: 2px solid white;
 }

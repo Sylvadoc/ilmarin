@@ -369,51 +369,55 @@
 /* ================ M O S T   V I S I T E D
 ===================================================== */
 
-.article_focus {
-	@extend %clearfix;
-	h2 {
-		margin-bottom: .5em !important;
-	}
-	.inner_content {
+#most {
+	.article_focus {
 		@extend %clearfix;
-		@include border-radius(5px);
-		background: white;
-		padding: 1em;
-		text-align: justify;
-		em {
-			color: #666;
-			font-family: $font-stack-special;
+		@include border-radius(0);
+		background: transparent;
+		h2 {
+			margin-bottom: .5em !important;
 		}
-		a {
-			display: block;
-			overflow: hidden;
-			p {
+		.inner_content {
+			@extend %clearfix;
+			@include border-radius(5px);
+			background: white;
+			padding: 1em;
+			text-align: justify;
+			em {
+				color: #666;
+				font-family: $font-stack-special;
+			}
+			a {
 				display: block;
-				font-family: $font-stack-headings;
-				@include rem(2.2);
-				text-transform: uppercase;
-				position: relative;
-				background: white;
-				text-align: left;
-				&:before {
-					@include rotate(-3deg);
-					background: inherit;
-					content: '';
+				overflow: hidden;
+				p {
 					display: block;
-					height: 35px;
-					left: -20px;
-					position: absolute;
-					top: -20px;
-					width: 115%;
-				}
-				span {
+					font-family: $font-stack-headings;
+					@include rem(2.2);
+					text-transform: uppercase;
 					position: relative;
-					top: -.5rem;
+					background: white;
+					text-align: left;
+					&:before {
+						@include rotate(-3deg);
+						background: inherit;
+						content: '';
+						display: block;
+						height: 35px;
+						left: -20px;
+						position: absolute;
+						top: -20px;
+						width: 115%;
+					}
+					span {
+						position: relative;
+						top: -.5rem;
+					}
 				}
 			}
-		}
-		.follow_link {
-			margin-top: 1rem;
+			.follow_link {
+				margin-top: 1rem;
+			}
 		}
 	}
 }
@@ -482,7 +486,7 @@
 /* ================ F I C H E   B I O
 ===================================================== */
 
-#author_bibliography {
+#author_biography {
 	margin-top: 3em;
 	.life {
 		font-family: $font-stack-headings;
@@ -522,6 +526,29 @@
 		img {
 			max-width: 100%;
 			height: auto;
+		}
+	}
+}
+#author_news {
+	padding: 2rem 0;
+	.simili-title {
+		margin-bottom: 2rem;
+	}
+	.article_focus {
+		margin-bottom: 1em;
+	}
+	h2 {
+		color: $base-color-elbakin;
+		margin: 0;
+	}
+	#breves {
+		h2 {
+			text-transform: uppercase;
+		}
+		.basic_list {
+			a {
+	   			padding: .5em 0;
+			}
 		}
 	}
 }
