@@ -32,6 +32,13 @@ body {
 		float: none;
 	}
 }
+.m-scene {
+	background: white;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: relative;
+}
 
 /* ============== C O M M U N   M I S E   E N   P A G E   A R T I C L E
 ============================================================================== */

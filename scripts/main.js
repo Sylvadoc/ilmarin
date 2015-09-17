@@ -1,7 +1,3 @@
-// variables d'environnement
-var mobileLimit = 768;
-var isMobile = false;
-
 $(document).ready(function() {
 	'use strict';
 
