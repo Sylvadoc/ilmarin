@@ -156,24 +156,47 @@
 		}
 		&.animate {
 			span {
-				animation: ClosingSwordsLeft cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+				animation: ClosingSwordsLeft cubic-bezier(.68,-0.55,.27,1.55) .5s 1;
 				@include rotate(-45deg);
 			}
 			span+span {
-				animation: ClosingSwordsRight cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
+				animation: ClosingSwordsRight cubic-bezier(.68,-0.55,.27,1.55) .5s 1;
 				@include rotate(45deg);
 			}
 		}
 	}
 }
 .section-item {
+	overflow: hidden;
 	position: absolute;
-	background-color: transparent;
-	background-repeat: no-repeat;
-	background-size: cover;
+	&:before {
+		@include scale(1.2);
+		@include transition(transform 0.35s ease 0s);
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-size: cover;
+		content: '';
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+	}
+	&:hover {
+		a {
+			&:hover, &:active, &:focus {text-decoration: none;}
+		}
+		&:before {
+			@include scale(1.05);
+		}
+		.inner-section {
+			@include translate3d(0,25%,0);
+		}
+	}
 	.inner-section {
+		@include transition(transform 0.2s ease 0s);
 		@include translate3d(0,40%,0);
-		// @include rotate(5deg);
 		position: relative;
 		top: 30%;
 		text-align: center;
@@ -188,29 +211,35 @@
 }
 .section-01 {
 	// section bibliotheque
-	background-image: url('../images/library.jpg');
-	background-position: bottom left;
 	height: 100vh;
 	left: 33vw;
 	top: 0;
 	width: 34vw;
+	&:before {
+		background-image: url('../images/library.jpg');
+		background-position: bottom left;
+	}
 }
 .section-02 {
 	// section tolkien
-	background-image: url('../images/argonath.jpg');
 	height: 50vh;
 	left: 0;
 	top: 50vh;
 	width: 33vw;
+	&:before {
+		background-image: url('../images/argonath.jpg');
+	}
 }
 .section-03 {
 	// section fantasy
-	background-image: url('../images/fantasy.jpg');
-	background-position: bottom right;
 	height: 50vh;
 	left: 0;
 	top: 0;
 	width: 33vw;
+	&:before {
+		background-image: url('../images/fantasy.jpg');
+		background-position: bottom right;
+	}
 }
 .section-04 {
 	// section forum

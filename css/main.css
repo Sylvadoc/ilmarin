@@ -1358,6 +1358,11 @@ svg:not(:root) {
   line-height: 0;
 }
 
+/* line 56, ../styles/base/_reset.scss */
+.clickable {
+  cursor: pointer;
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/special/icomoon.eot?-t4a46o");
@@ -4257,7 +4262,7 @@ body {
 }
 /* line 158, ../styles/components/_navigation.scss */
 .overlay .menu-close.animate span {
-  animation: ClosingSwordsLeft cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s 1;
+  animation: ClosingSwordsLeft cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s 1;
   transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -4268,7 +4273,7 @@ body {
 }
 /* line 162, ../styles/components/_navigation.scss */
 .overlay .menu-close.animate span + span {
-  animation: ClosingSwordsRight cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s 1;
+  animation: ClosingSwordsRight cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s 1;
   transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -4280,13 +4285,57 @@ body {
 
 /* line 169, ../styles/components/_navigation.scss */
 .section-item {
+  overflow: hidden;
   position: absolute;
+}
+/* line 172, ../styles/components/_navigation.scss */
+.section-item:before {
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: transform 0.35s ease 0s;
+  -moz-transition: transform 0.35s ease 0s;
+  -ms-transition: transform 0.35s ease 0s;
+  -o-transition: transform 0.35s ease 0s;
+  transition: transform 0.35s ease 0s;
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
-/* line 174, ../styles/components/_navigation.scss */
+/* line 188, ../styles/components/_navigation.scss */
+.section-item:hover a:hover, .section-item:hover a:active, .section-item:hover a:focus {
+  text-decoration: none;
+}
+/* line 190, ../styles/components/_navigation.scss */
+.section-item:hover:before {
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+/* line 193, ../styles/components/_navigation.scss */
+.section-item:hover .inner-section {
+  transform: translate3d(0, 25%, 0);
+  -moz-transform: translate3d(0, 25%, 0);
+  -ms-transform: translate3d(0, 25%, 0);
+  -webkit-transform: translate3d(0, 25%, 0);
+  zoom: 1;
+}
+/* line 197, ../styles/components/_navigation.scss */
 .section-item .inner-section {
+  -webkit-transition: transform 0.2s ease 0s;
+  -moz-transition: transform 0.2s ease 0s;
+  -ms-transition: transform 0.2s ease 0s;
+  -o-transition: transform 0.2s ease 0s;
+  transition: transform 0.2s ease 0s;
   transform: translate3d(0, 40%, 0);
   -moz-transform: translate3d(0, 40%, 0);
   -ms-transform: translate3d(0, 40%, 0);
@@ -4296,12 +4345,12 @@ body {
   top: 30%;
   text-align: center;
 }
-/* line 180, ../styles/components/_navigation.scss */
+/* line 203, ../styles/components/_navigation.scss */
 .section-item .inner-section a, .section-item .inner-section em {
   color: white;
   display: block;
 }
-/* line 181, ../styles/components/_navigation.scss */
+/* line 204, ../styles/components/_navigation.scss */
 .section-item .inner-section a {
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   font-size: 5rem;
@@ -4309,36 +4358,45 @@ body {
   text-transform: uppercase;
 }
 
-/* line 189, ../styles/components/_navigation.scss */
+/* line 212, ../styles/components/_navigation.scss */
 .section-01 {
-  background-image: url("../images/library.jpg");
-  background-position: bottom left;
   height: 100vh;
   left: 33vw;
   top: 0;
   width: 34vw;
 }
+/* line 218, ../styles/components/_navigation.scss */
+.section-01:before {
+  background-image: url("../images/library.jpg");
+  background-position: bottom left;
+}
 
-/* line 198, ../styles/components/_navigation.scss */
+/* line 223, ../styles/components/_navigation.scss */
 .section-02 {
-  background-image: url("../images/argonath.jpg");
   height: 50vh;
   left: 0;
   top: 50vh;
   width: 33vw;
 }
+/* line 229, ../styles/components/_navigation.scss */
+.section-02:before {
+  background-image: url("../images/argonath.jpg");
+}
 
-/* line 206, ../styles/components/_navigation.scss */
+/* line 233, ../styles/components/_navigation.scss */
 .section-03 {
-  background-image: url("../images/fantasy.jpg");
-  background-position: bottom right;
   height: 50vh;
   left: 0;
   top: 0;
   width: 33vw;
 }
+/* line 239, ../styles/components/_navigation.scss */
+.section-03:before {
+  background-image: url("../images/fantasy.jpg");
+  background-position: bottom right;
+}
 
-/* line 215, ../styles/components/_navigation.scss */
+/* line 244, ../styles/components/_navigation.scss */
 .section-04 {
   background: DarkSeaGreen;
   right: 0;
@@ -4347,7 +4405,7 @@ body {
   height: 33vh;
 }
 
-/* line 223, ../styles/components/_navigation.scss */
+/* line 252, ../styles/components/_navigation.scss */
 .section-05 {
   background: DarkSlateGray;
   right: 0;
@@ -4356,7 +4414,7 @@ body {
   height: 33vh;
 }
 
-/* line 231, ../styles/components/_navigation.scss */
+/* line 260, ../styles/components/_navigation.scss */
 .section-06 {
   background: GoldenRod;
   right: 0;
