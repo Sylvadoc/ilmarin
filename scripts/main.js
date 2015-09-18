@@ -1,6 +1,16 @@
 $(document).ready(function() {
 	'use strict';
 
+	// overlay navigation
+	$('.menu-trigger').click(function() {
+		$('.m-scene').toggleClass('overlay-open');
+		$('.overlay').toggleClass('open');
+	});
+	$('.menu-close').click(function() {
+		$('.m-scene').removeClass('overlay-open');
+		$('.overlay').removeClass('open');
+	});
+
 	// onscroll sticky header
 	$('.m-scene').scroll(function() {
 		if ($(this).scrollTop() < 150 && $("html").hasClass("desktop")) {

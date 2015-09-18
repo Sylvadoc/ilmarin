@@ -1900,11 +1900,25 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   position: relative;
+  /* overlay stuff */
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+}
+/* line 43, ../styles/layout/_grid.scss */
+.m-scene.overlay-open {
+  transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  -webkit-transform: translate3d(100%, 0, 0);
+  zoom: 1;
 }
 
 /* ============== C O M M U N   M I S E   E N   P A G E   A R T I C L E
 ============================================================================== */
-/* line 46, ../styles/layout/_grid.scss */
+/* line 51, ../styles/layout/_grid.scss */
 .article_focus {
   background: white;
   padding: 1em;
@@ -1912,16 +1926,16 @@ body {
   border-radius: 5px;
   background-clip: padding-box;
 }
-/* line 50, ../styles/layout/_grid.scss */
+/* line 55, ../styles/layout/_grid.scss */
 .article_focus .inner_content {
   text-align: justify;
 }
-/* line 52, ../styles/layout/_grid.scss */
+/* line 57, ../styles/layout/_grid.scss */
 .article_focus .inner_content a {
   display: block;
   overflow: hidden;
 }
-/* line 55, ../styles/layout/_grid.scss */
+/* line 60, ../styles/layout/_grid.scss */
 .article_focus .inner_content a p {
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
@@ -1932,7 +1946,7 @@ body {
   background: white;
   text-align: left;
 }
-/* line 63, ../styles/layout/_grid.scss */
+/* line 68, ../styles/layout/_grid.scss */
 .article_focus .inner_content a p:before {
   transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -1950,44 +1964,44 @@ body {
   top: -20px;
   width: 115%;
 }
-/* line 74, ../styles/layout/_grid.scss */
+/* line 79, ../styles/layout/_grid.scss */
 .article_focus .inner_content a p span {
   position: relative;
   top: -.5rem;
 }
 
-/* line 82, ../styles/layout/_grid.scss */
+/* line 87, ../styles/layout/_grid.scss */
 .other_news {
   list-style: none none;
   margin: 0;
   padding: 0;
 }
-/* line 86, ../styles/layout/_grid.scss */
+/* line 91, ../styles/layout/_grid.scss */
 .other_news li {
   margin-bottom: 2em;
 }
-/* line 88, ../styles/layout/_grid.scss */
+/* line 93, ../styles/layout/_grid.scss */
 .other_news li a {
   background: white;
   border: 1px solid #ccc;
   display: block;
   overflow: hidden;
 }
-/* line 93, ../styles/layout/_grid.scss */
+/* line 98, ../styles/layout/_grid.scss */
 .other_news li a:hover, .other_news li a:focus {
   text-decoration: none;
 }
-/* line 95, ../styles/layout/_grid.scss */
+/* line 100, ../styles/layout/_grid.scss */
 .other_news li a:hover p, .other_news li a:focus p {
   background: #FE9E00;
   color: white;
 }
-/* line 100, ../styles/layout/_grid.scss */
+/* line 105, ../styles/layout/_grid.scss */
 .other_news li a img {
   width: 100%;
   height: auto;
 }
-/* line 104, ../styles/layout/_grid.scss */
+/* line 109, ../styles/layout/_grid.scss */
 .other_news li a p {
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
@@ -1995,7 +2009,7 @@ body {
   position: relative;
   background: white;
 }
-/* line 110, ../styles/layout/_grid.scss */
+/* line 115, ../styles/layout/_grid.scss */
 .other_news li a p:before {
   transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -2013,7 +2027,7 @@ body {
   top: -20px;
   width: 115%;
 }
-/* line 121, ../styles/layout/_grid.scss */
+/* line 126, ../styles/layout/_grid.scss */
 .other_news li a p span {
   position: relative;
   top: -.5rem;
@@ -2021,12 +2035,12 @@ body {
 
 /* ============== B L O C   N O S   A R T I C L E S
 ========================================================== */
-/* line 133, ../styles/layout/_grid.scss */
+/* line 138, ../styles/layout/_grid.scss */
 #other_news {
   padding: 2rem 0;
 }
 
-/* line 135, ../styles/layout/_grid.scss */
+/* line 140, ../styles/layout/_grid.scss */
 #articles h2, #itws h2 {
   text-transform: uppercase;
   font-size: 28px;
@@ -2034,18 +2048,18 @@ body {
   margin: 1em 0;
   padding: 0;
 }
-/* line 141, ../styles/layout/_grid.scss */
+/* line 146, ../styles/layout/_grid.scss */
 #articles ul, #itws ul {
   list-style: none none;
   padding: 0;
   margin: 0;
 }
-/* line 145, ../styles/layout/_grid.scss */
+/* line 150, ../styles/layout/_grid.scss */
 #articles ul li, #itws ul li {
   display: block;
   border-bottom: 1px solid #ccc;
 }
-/* line 148, ../styles/layout/_grid.scss */
+/* line 153, ../styles/layout/_grid.scss */
 #articles ul li a, #itws ul li a {
   display: block;
   padding: .5em 0;
@@ -4113,6 +4127,152 @@ body {
 /* line 78, ../styles/components/_navigation.scss */
 .share li {
   margin-left: 1em;
+}
+
+/* ============== P A G E   D E   G A R D E
+========================================================== */
+/* line 86, ../styles/components/_navigation.scss */
+#garde {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 100;
+}
+
+/* line 95, ../styles/components/_navigation.scss */
+.overlay {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: transform 0.5s, visibility 0s 0.5s;
+  -moz-transition: transform 0.5s, visibility 0s 0.5s;
+  -ms-transition: transform 0.5s, visibility 0s 0.5s;
+  -o-transition: transform 0.5s, visibility 0s 0.5s;
+  transition: transform 0.5s, visibility 0s 0.5s;
+  transform: translate(-100%, 0);
+  -moz-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -webkit-transform: translate(-100%, 0);
+  zoom: 1;
+  backface-visibility: hidden;
+  visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+/* line 104, ../styles/components/_navigation.scss */
+.overlay.open {
+  transform: translate3d(0%, 0, 0);
+  -moz-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -webkit-transform: translate3d(0%, 0, 0);
+  zoom: 1;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  visibility: visible;
+}
+/* line 109, ../styles/components/_navigation.scss */
+.overlay .menu-close {
+  background: white;
+  border: 0;
+  display: block;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  z-index: 500;
+}
+
+/* line 119, ../styles/components/_navigation.scss */
+.section-item {
+  position: absolute;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 124, ../styles/components/_navigation.scss */
+.section-item .inner-section {
+  transform: translate3d(0, 40%, 0);
+  -moz-transform: translate3d(0, 40%, 0);
+  -ms-transform: translate3d(0, 40%, 0);
+  -webkit-transform: translate3d(0, 40%, 0);
+  zoom: 1;
+  position: relative;
+  top: 30%;
+  text-align: center;
+}
+/* line 130, ../styles/components/_navigation.scss */
+.section-item .inner-section a, .section-item .inner-section em {
+  color: white;
+  display: block;
+}
+/* line 131, ../styles/components/_navigation.scss */
+.section-item .inner-section a {
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-size: 5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 139, ../styles/components/_navigation.scss */
+.section-01 {
+  background-image: url("../images/library.jpg");
+  background-position: bottom left;
+  height: 100vh;
+  left: 33vw;
+  top: 0;
+  width: 34vw;
+}
+
+/* line 148, ../styles/components/_navigation.scss */
+.section-02 {
+  background-image: url("../images/argonath.jpg");
+  height: 50vh;
+  left: 0;
+  top: 50vh;
+  width: 33vw;
+}
+
+/* line 156, ../styles/components/_navigation.scss */
+.section-03 {
+  background-image: url("../images/fantasy.jpg");
+  background-position: bottom right;
+  height: 50vh;
+  left: 0;
+  top: 0;
+  width: 33vw;
+}
+
+/* line 165, ../styles/components/_navigation.scss */
+.section-04 {
+  background: DarkSeaGreen;
+  right: 0;
+  top: 0;
+  width: 33vw;
+  height: 33vh;
+}
+
+/* line 173, ../styles/components/_navigation.scss */
+.section-05 {
+  background: DarkSlateGray;
+  right: 0;
+  top: 33vh;
+  width: 33vw;
+  height: 33vh;
+}
+
+/* line 181, ../styles/components/_navigation.scss */
+.section-06 {
+  background: GoldenRod;
+  right: 0;
+  bottom: 0;
+  width: 33vw;
+  height: 34vh;
 }
 
 /* ============== B L O C   C H R O N I Q U E S
