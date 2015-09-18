@@ -3154,7 +3154,47 @@ body {
 
 /* ============== P A G E   D E   G A R D E
 ========================================================== */
-/* line 86, ../styles/components/_navigation.scss */
+@keyframes ClosingSwordsLeft {
+  0% {
+    transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=-0, M21=0, M22=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=-0, M21=0, M22=1)";
+    zoom: 1;
+  }
+  100% {
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70711, M12=--0.70711, M21=-0.70711, M22=0.70711);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70711, M12=--0.70711, M21=-0.70711, M22=0.70711)";
+    zoom: 1;
+  }
+}
+@keyframes ClosingSwordsRight {
+  0% {
+    transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=-0, M21=0, M22=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=-0, M21=0, M22=1)";
+    zoom: 1;
+  }
+  100% {
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70711, M12=-0.70711, M21=0.70711, M22=0.70711);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70711, M12=-0.70711, M21=0.70711, M22=0.70711)";
+    zoom: 1;
+  }
+}
+/* line 103, ../styles/components/_navigation.scss */
 #garde {
   position: fixed;
   width: 100%;
@@ -3165,28 +3205,28 @@ body {
   z-index: 100;
 }
 
-/* line 95, ../styles/components/_navigation.scss */
+/* line 112, ../styles/components/_navigation.scss */
 .overlay {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-transition: transform 0.5s, visibility 0s 0.5s;
   -moz-transition: transform 0.5s, visibility 0s 0.5s;
   -ms-transition: transform 0.5s, visibility 0s 0.5s;
   -o-transition: transform 0.5s, visibility 0s 0.5s;
   transition: transform 0.5s, visibility 0s 0.5s;
-  transform: translate(-100%, 0);
-  -moz-transform: translate(-100%, 0);
-  -ms-transform: translate(-100%, 0);
-  -webkit-transform: translate(-100%, 0);
+  transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
   zoom: 1;
   backface-visibility: hidden;
   visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
 }
-/* line 104, ../styles/components/_navigation.scss */
+/* line 119, ../styles/components/_navigation.scss */
 .overlay.open {
   transform: translate3d(0%, 0, 0);
   -moz-transform: translate3d(0%, 0, 0);
@@ -3200,25 +3240,75 @@ body {
   transition: transform 0.5s;
   visibility: visible;
 }
-/* line 109, ../styles/components/_navigation.scss */
+/* line 124, ../styles/components/_navigation.scss */
 .overlay .menu-close {
-  background: white;
-  border: 0;
+  background: transparent;
   display: block;
   position: absolute;
   right: 1em;
   top: 1em;
   z-index: 500;
+  text-indent: -999em;
+  width: 3rem;
+  height: 3rem;
+}
+/* line 134, ../styles/components/_navigation.scss */
+.overlay .menu-close span {
+  background: white;
+  content: '';
+  display: block;
+  height: 3rem;
+  width: 2px;
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+}
+/* line 143, ../styles/components/_navigation.scss */
+.overlay .menu-close span:before {
+  content: '';
+  display: block;
+  width: 1rem;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 70%;
+  left: -0.4rem;
+}
+/* line 154, ../styles/components/_navigation.scss */
+.overlay .menu-close span + span {
+  right: 1.5rem;
+}
+/* line 158, ../styles/components/_navigation.scss */
+.overlay .menu-close.animate span {
+  animation: ClosingSwordsLeft cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s 1;
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70711, M12=--0.70711, M21=-0.70711, M22=0.70711);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70711, M12=--0.70711, M21=-0.70711, M22=0.70711)";
+  zoom: 1;
+}
+/* line 162, ../styles/components/_navigation.scss */
+.overlay .menu-close.animate span + span {
+  animation: ClosingSwordsRight cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s 1;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70711, M12=-0.70711, M21=0.70711, M22=0.70711);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70711, M12=-0.70711, M21=0.70711, M22=0.70711)";
+  zoom: 1;
 }
 
-/* line 119, ../styles/components/_navigation.scss */
+/* line 169, ../styles/components/_navigation.scss */
 .section-item {
   position: absolute;
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 124, ../styles/components/_navigation.scss */
+/* line 174, ../styles/components/_navigation.scss */
 .section-item .inner-section {
   transform: translate3d(0, 40%, 0);
   -moz-transform: translate3d(0, 40%, 0);
@@ -3229,12 +3319,12 @@ body {
   top: 30%;
   text-align: center;
 }
-/* line 130, ../styles/components/_navigation.scss */
+/* line 180, ../styles/components/_navigation.scss */
 .section-item .inner-section a, .section-item .inner-section em {
   color: white;
   display: block;
 }
-/* line 131, ../styles/components/_navigation.scss */
+/* line 181, ../styles/components/_navigation.scss */
 .section-item .inner-section a {
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   font-size: 5rem;
@@ -3242,7 +3332,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 139, ../styles/components/_navigation.scss */
+/* line 189, ../styles/components/_navigation.scss */
 .section-01 {
   background-image: url("../images/library.jpg");
   background-position: bottom left;
@@ -3252,7 +3342,7 @@ body {
   width: 34vw;
 }
 
-/* line 148, ../styles/components/_navigation.scss */
+/* line 198, ../styles/components/_navigation.scss */
 .section-02 {
   background-image: url("../images/argonath.jpg");
   height: 50vh;
@@ -3261,7 +3351,7 @@ body {
   width: 33vw;
 }
 
-/* line 156, ../styles/components/_navigation.scss */
+/* line 206, ../styles/components/_navigation.scss */
 .section-03 {
   background-image: url("../images/fantasy.jpg");
   background-position: bottom right;
@@ -3271,7 +3361,7 @@ body {
   width: 33vw;
 }
 
-/* line 165, ../styles/components/_navigation.scss */
+/* line 215, ../styles/components/_navigation.scss */
 .section-04 {
   background: DarkSeaGreen;
   right: 0;
@@ -3280,7 +3370,7 @@ body {
   height: 33vh;
 }
 
-/* line 173, ../styles/components/_navigation.scss */
+/* line 223, ../styles/components/_navigation.scss */
 .section-05 {
   background: DarkSlateGray;
   right: 0;
@@ -3289,7 +3379,7 @@ body {
   height: 33vh;
 }
 
-/* line 181, ../styles/components/_navigation.scss */
+/* line 231, ../styles/components/_navigation.scss */
 .section-06 {
   background: GoldenRod;
   right: 0;
