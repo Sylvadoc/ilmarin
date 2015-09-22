@@ -4801,37 +4801,47 @@ body {
 /* line 123, ../styles/pages/_home.scss */
 #emissions h2 {
   color: #BE2700;
+  text-align: center;
 }
-/* line 126, ../styles/pages/_home.scss */
+/* line 127, ../styles/pages/_home.scss */
 #emissions h3 {
-  color: #FE9E00;
+  color: #BE2700;
   text-transform: uppercase;
   font-size: 25.2px;
   font-size: 1.8rem;
-  margin: 1em 0;
+  margin: 1em 0 0 0;
   padding: 0;
   font-weight: 300;
 }
-/* line 134, ../styles/pages/_home.scss */
+/* line 135, ../styles/pages/_home.scss */
 #emissions ul {
   list-style: none none;
   padding: 0;
   margin: 0;
 }
-/* line 138, ../styles/pages/_home.scss */
+/* line 139, ../styles/pages/_home.scss */
 #emissions ul li {
   display: block;
   border-bottom: 1px solid #ccc;
 }
-/* line 141, ../styles/pages/_home.scss */
+/* line 142, ../styles/pages/_home.scss */
 #emissions ul li a {
   display: block;
   padding: .5em 0;
 }
 
+/* line 150, ../styles/pages/_home.scss */
+#dmud .article_focus {
+  background: white url("../images/illustrations/dmud.jpg") no-repeat bottom right;
+}
+/* line 153, ../styles/pages/_home.scss */
+#dmud li:nth-last-child(-n+4) {
+  width: 50%;
+}
+
 /* ============== B L O C   P R I X   E L B A K I N . N E T
 ======================================================================== */
-/* line 152, ../styles/pages/_home.scss */
+/* line 161, ../styles/pages/_home.scss */
 #prix_elbakin_net {
   padding: 2rem 0;
   transform: translate(0, 0);
@@ -4840,7 +4850,7 @@ body {
   -webkit-transform: translate(0, 0);
   zoom: 1;
 }
-/* line 155, ../styles/pages/_home.scss */
+/* line 164, ../styles/pages/_home.scss */
 #prix_elbakin_net h3 {
   font-size: 28px;
   font-size: 2rem;
@@ -4848,14 +4858,14 @@ body {
   position: relative;
   text-transform: uppercase;
 }
-/* line 161, ../styles/pages/_home.scss */
+/* line 170, ../styles/pages/_home.scss */
 #prix_elbakin_net p {
   font-size: 25.2px;
   font-size: 1.8rem;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
 }
-/* line 165, ../styles/pages/_home.scss */
+/* line 174, ../styles/pages/_home.scss */
 #prix_elbakin_net p .dropcaps {
   color: white;
   display: block;
@@ -4866,12 +4876,12 @@ body {
   line-height: .67em;
   margin: .08em .07em 0 0;
 }
-/* line 177, ../styles/pages/_home.scss */
+/* line 186, ../styles/pages/_home.scss */
 #prix_elbakin_net li h3 {
   font-weight: 700;
 }
 
-/* line 182, ../styles/pages/_home.scss */
+/* line 191, ../styles/pages/_home.scss */
 .all_prices {
   list-style: none none;
   padding: 0;
@@ -4879,45 +4889,45 @@ body {
   position: relative;
   height: 280px;
 }
-/* line 188, ../styles/pages/_home.scss */
+/* line 197, ../styles/pages/_home.scss */
 .all_prices li {
   position: absolute;
   display: inline-block;
   margin: 0;
 }
-/* line 192, ../styles/pages/_home.scss */
+/* line 201, ../styles/pages/_home.scss */
 .all_prices li:nth-child(2) {
   left: 113px;
   top: 113px;
 }
-/* line 196, ../styles/pages/_home.scss */
+/* line 205, ../styles/pages/_home.scss */
 .all_prices li:nth-child(3) {
   left: 226px;
   top: 0;
 }
-/* line 200, ../styles/pages/_home.scss */
+/* line 209, ../styles/pages/_home.scss */
 .all_prices li:nth-child(4) {
   left: 339px;
   top: 113px;
 }
-/* line 204, ../styles/pages/_home.scss */
+/* line 213, ../styles/pages/_home.scss */
 .all_prices li:nth-child(5) {
   left: 453px;
   top: 0;
 }
-/* line 208, ../styles/pages/_home.scss */
+/* line 217, ../styles/pages/_home.scss */
 .all_prices li:nth-child(6) {
   left: 566px;
   top: 113px;
 }
-/* line 212, ../styles/pages/_home.scss */
+/* line 221, ../styles/pages/_home.scss */
 .all_prices li:nth-child(7) {
   opacity: 0.8;
   filter: alpha(opacity=80);
   left: 679px;
   top: 0;
 }
-/* line 218, ../styles/pages/_home.scss */
+/* line 227, ../styles/pages/_home.scss */
 .all_prices .le-prix {
   transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -4933,7 +4943,7 @@ body {
   width: 140px;
   overflow: hidden;
 }
-/* line 226, ../styles/pages/_home.scss */
+/* line 235, ../styles/pages/_home.scss */
 .all_prices .le-prix .contenu-prix {
   transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -4949,7 +4959,7 @@ body {
   width: 140px;
   z-index: 10;
 }
-/* line 234, ../styles/pages/_home.scss */
+/* line 243, ../styles/pages/_home.scss */
 .all_prices .le-prix .contenu-prix img {
   position: absolute;
   left: -40%;
@@ -4959,7 +4969,7 @@ body {
   transform: scale(1.4);
   top: -20px;
 }
-/* line 240, ../styles/pages/_home.scss */
+/* line 249, ../styles/pages/_home.scss */
 .all_prices .le-prix .contenu-prix .detail_price {
   background: rgba(255, 255, 255, 0.7);
   left: -28%;
@@ -4967,21 +4977,21 @@ body {
   top: 17px;
   width: 120px;
 }
-/* line 246, ../styles/pages/_home.scss */
+/* line 255, ../styles/pages/_home.scss */
 .all_prices .le-prix .contenu-prix .detail_price:hover {
   background: white;
 }
-/* line 248, ../styles/pages/_home.scss */
+/* line 257, ../styles/pages/_home.scss */
 .all_prices .le-prix .contenu-prix .detail_price:hover h3::after {
   background: #ccc;
 }
-/* line 252, ../styles/pages/_home.scss */
+/* line 261, ../styles/pages/_home.scss */
 .all_prices .le-prix .contenu-prix .detail_price h3 {
   font-family: "Roboto Slab", serif;
   color: #BE2700;
   margin: 0;
 }
-/* line 256, ../styles/pages/_home.scss */
+/* line 265, ../styles/pages/_home.scss */
 .all_prices .le-prix .contenu-prix .detail_price h3:after {
   background: white;
   bottom: 0;
@@ -4992,36 +5002,36 @@ body {
   position: absolute;
   width: 80%;
 }
-/* line 267, ../styles/pages/_home.scss */
+/* line 276, ../styles/pages/_home.scss */
 .all_prices .le-prix .contenu-prix .detail_price a {
   color: black;
 }
-/* line 269, ../styles/pages/_home.scss */
+/* line 278, ../styles/pages/_home.scss */
 .all_prices .le-prix .contenu-prix .detail_price a:hover {
   text-decoration: none;
 }
 
 /* ============== B L O C   A G E N D A
 ========================================================== */
-/* line 281, ../styles/pages/_home.scss */
+/* line 290, ../styles/pages/_home.scss */
 #agenda_parutions {
   padding: 2rem 0 1rem 0;
 }
 
 /* ============== B L O C   E L B A K I N
 ========================================================== */
-/* line 288, ../styles/pages/_home.scss */
+/* line 297, ../styles/pages/_home.scss */
 #elbakin {
   padding: 2rem 0;
 }
-/* line 290, ../styles/pages/_home.scss */
+/* line 299, ../styles/pages/_home.scss */
 #elbakin .saint_marc {
   list-style: none none;
   margin: 0 2rem 0;
   padding: 0;
   position: relative;
 }
-/* line 296, ../styles/pages/_home.scss */
+/* line 305, ../styles/pages/_home.scss */
 #elbakin .saint_marc:before {
   content: '';
   display: block;
@@ -5035,29 +5045,29 @@ body {
   border-radius: 3px;
   background-clip: padding-box;
 }
-/* line 307, ../styles/pages/_home.scss */
+/* line 316, ../styles/pages/_home.scss */
 #elbakin .saint_marc li {
   display: block;
   width: 100%;
   margin: 1rem 0;
 }
-/* line 313, ../styles/pages/_home.scss */
+/* line 322, ../styles/pages/_home.scss */
 #elbakin .saint_marc li:nth-child(odd) .evangile {
   text-align: right;
   float: left !important;
 }
-/* line 316, ../styles/pages/_home.scss */
+/* line 325, ../styles/pages/_home.scss */
 #elbakin .saint_marc li:nth-child(odd) .evangile:after {
   top: 45%;
   right: -15px;
   left: auto;
 }
-/* line 321, ../styles/pages/_home.scss */
+/* line 330, ../styles/pages/_home.scss */
 #elbakin .saint_marc li:nth-child(odd) .evangile .icon {
   float: right;
   margin: 0 0 0 1rem;
 }
-/* line 328, ../styles/pages/_home.scss */
+/* line 337, ../styles/pages/_home.scss */
 #elbakin .saint_marc .evangile {
   -webkit-border-radius: 35px;
   border-radius: 35px;
@@ -5069,7 +5079,7 @@ body {
   width: 47%;
   position: relative;
 }
-/* line 337, ../styles/pages/_home.scss */
+/* line 346, ../styles/pages/_home.scss */
 #elbakin .saint_marc .evangile:after {
   position: absolute;
   top: 45%;
@@ -5084,7 +5094,7 @@ body {
   background-clip: padding-box;
   background: #ECE9E6;
 }
-/* line 349, ../styles/pages/_home.scss */
+/* line 358, ../styles/pages/_home.scss */
 #elbakin .saint_marc .evangile h2 {
   display: inline-block;
   font-size: 22.4px;
@@ -5093,15 +5103,15 @@ body {
   padding: 0;
   text-transform: uppercase;
 }
-/* line 355, ../styles/pages/_home.scss */
+/* line 364, ../styles/pages/_home.scss */
 #elbakin .saint_marc .evangile h2 span {
   color: #BE2700;
 }
-/* line 359, ../styles/pages/_home.scss */
+/* line 368, ../styles/pages/_home.scss */
 #elbakin .saint_marc .evangile p {
   font-style: italic;
 }
-/* line 362, ../styles/pages/_home.scss */
+/* line 371, ../styles/pages/_home.scss */
 #elbakin .saint_marc .evangile .icon {
   -webkit-border-radius: 30px;
   border-radius: 30px;
@@ -5118,7 +5128,7 @@ body {
   text-align: center;
   width: 50px;
 }
-/* line 377, ../styles/pages/_home.scss */
+/* line 386, ../styles/pages/_home.scss */
 #elbakin aside {
   background-color: #f5f4f2;
   /* Fallback */
@@ -5133,11 +5143,11 @@ body {
   border-radius: 5px;
   background-clip: padding-box;
 }
-/* line 381, ../styles/pages/_home.scss */
+/* line 390, ../styles/pages/_home.scss */
 #elbakin aside .icon {
   color: #FE9E00;
 }
-/* line 384, ../styles/pages/_home.scss */
+/* line 393, ../styles/pages/_home.scss */
 #elbakin aside + h2 {
   text-transform: uppercase;
   font-size: 22.4px;
@@ -5147,12 +5157,12 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 @media (max-width: 1024px) {
-  /* line 396, ../styles/pages/_home.scss */
+  /* line 405, ../styles/pages/_home.scss */
   #association .asso_card {
     height: 26rem;
     margin-bottom: 2rem;
   }
-  /* line 399, ../styles/pages/_home.scss */
+  /* line 408, ../styles/pages/_home.scss */
   #association .asso_card:hover {
     -moz-transform: scale(1);
     -o-transform: scale(1);
@@ -5160,41 +5170,41 @@ body {
     transform: scale(1);
   }
 
-  /* line 404, ../styles/pages/_home.scss */
+  /* line 413, ../styles/pages/_home.scss */
   #prix_elbakin_net {
     background-attachment: scroll !important;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 410, ../styles/pages/_home.scss */
+  /* line 419, ../styles/pages/_home.scss */
   #association .asso_card {
     height: auto;
   }
-  /* line 412, ../styles/pages/_home.scss */
+  /* line 421, ../styles/pages/_home.scss */
   #association .asso_card:hover {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-  /* line 415, ../styles/pages/_home.scss */
+  /* line 424, ../styles/pages/_home.scss */
   #association .asso_card .icon {
     float: left;
     margin-right: 2rem;
   }
-  /* line 419, ../styles/pages/_home.scss */
+  /* line 428, ../styles/pages/_home.scss */
   #association .asso_card h2 {
     text-align: left;
   }
 
-  /* line 425, ../styles/pages/_home.scss */
+  /* line 434, ../styles/pages/_home.scss */
   #prix_elbakin_net .all_prices {
     margin: 2rem auto 0;
     height: auto;
     width: 100%;
     text-align: center;
   }
-  /* line 430, ../styles/pages/_home.scss */
+  /* line 439, ../styles/pages/_home.scss */
   #prix_elbakin_net .all_prices li {
     position: static;
     display: inline-block;
@@ -5206,28 +5216,28 @@ body {
     -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=-0, M21=0, M22=1)";
     zoom: 1;
   }
-  /* line 434, ../styles/pages/_home.scss */
+  /* line 443, ../styles/pages/_home.scss */
   #prix_elbakin_net .all_prices li .le-prix {
     height: 200px;
   }
-  /* line 437, ../styles/pages/_home.scss */
+  /* line 446, ../styles/pages/_home.scss */
   #prix_elbakin_net .all_prices li .contenu-prix {
     position: relative;
   }
-  /* line 439, ../styles/pages/_home.scss */
+  /* line 448, ../styles/pages/_home.scss */
   #prix_elbakin_net .all_prices li .contenu-prix img {
     position: static;
     width: 100%;
     height: auto;
   }
-  /* line 444, ../styles/pages/_home.scss */
+  /* line 453, ../styles/pages/_home.scss */
   #prix_elbakin_net .all_prices li .contenu-prix .detail_price {
     position: absolute;
     left: -5px;
     top: 10%;
     width: 140px;
   }
-  /* line 451, ../styles/pages/_home.scss */
+  /* line 460, ../styles/pages/_home.scss */
   #prix_elbakin_net .all_prices li * {
     transform: rotate(0);
     -moz-transform: rotate(0);
@@ -5239,14 +5249,14 @@ body {
   }
 }
 @media (max-width: 480px) {
-  /* line 460, ../styles/pages/_home.scss */
+  /* line 469, ../styles/pages/_home.scss */
   #prix_elbakin_net .all_prices {
     margin: 2rem auto 0;
     height: auto;
     width: 100%;
     text-align: center;
   }
-  /* line 465, ../styles/pages/_home.scss */
+  /* line 474, ../styles/pages/_home.scss */
   #prix_elbakin_net .all_prices li {
     position: static;
     display: inline-block;
@@ -5258,28 +5268,28 @@ body {
     -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=-0, M21=0, M22=1)";
     zoom: 1;
   }
-  /* line 469, ../styles/pages/_home.scss */
+  /* line 478, ../styles/pages/_home.scss */
   #prix_elbakin_net .all_prices li .le-prix {
     height: 200px;
   }
-  /* line 472, ../styles/pages/_home.scss */
+  /* line 481, ../styles/pages/_home.scss */
   #prix_elbakin_net .all_prices li .contenu-prix {
     position: relative;
   }
-  /* line 474, ../styles/pages/_home.scss */
+  /* line 483, ../styles/pages/_home.scss */
   #prix_elbakin_net .all_prices li .contenu-prix img {
     position: static;
     width: 100%;
     height: auto;
   }
-  /* line 479, ../styles/pages/_home.scss */
+  /* line 488, ../styles/pages/_home.scss */
   #prix_elbakin_net .all_prices li .contenu-prix .detail_price {
     position: absolute;
     left: -5px;
     top: 10%;
     width: 140px;
   }
-  /* line 486, ../styles/pages/_home.scss */
+  /* line 495, ../styles/pages/_home.scss */
   #prix_elbakin_net .all_prices li * {
     transform: rotate(0);
     -moz-transform: rotate(0);
@@ -5290,16 +5300,16 @@ body {
     zoom: 1;
   }
 
-  /* line 492, ../styles/pages/_home.scss */
+  /* line 501, ../styles/pages/_home.scss */
   #elbakin {
     display: none;
   }
 
-  /* line 496, ../styles/pages/_home.scss */
+  /* line 505, ../styles/pages/_home.scss */
   #association .asso_card {
     height: auto;
   }
-  /* line 498, ../styles/pages/_home.scss */
+  /* line 507, ../styles/pages/_home.scss */
   #association .asso_card:hover {
     -moz-transform: scale(1);
     -o-transform: scale(1);
