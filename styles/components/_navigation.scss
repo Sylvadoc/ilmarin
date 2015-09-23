@@ -258,10 +258,126 @@
 	height: 33vh;
 }
 .section-06 {
-	// section emission
+	// section boutique
 	background: GoldenRod;
 	right: 0;
 	bottom: 0;
 	width: 33vw;
 	height: 34vh;
+}
+
+/* ============== R E S P O N S I V E
+========================================================== */
+
+@media (max-width: $small-screen) and (orientation: portrait) {
+	.section-item {
+		display: block;
+		margin: 0;
+		width: 100vw !important;
+		.inner-section {
+			a { font-size: $h3-size;}
+			em {display: none;}
+		}
+	}
+	.section-01 {
+		// section bibliotheque
+		left: 0;
+		top: 0;
+		height: 17vh !important;
+	}
+	.section-02 {
+		// section tolkien
+		left: 0;
+		top: 17vh;
+		height: 17vh !important;
+	}
+	.section-03 {
+		// section fantasy
+		left: 0;
+		top: 34vh;
+		height: 17vh !important;
+	}
+	.section-04 {
+		// section forum
+		left: 0;
+		top: 51vh;
+		height: 17vh !important;
+	}
+	.section-05 {
+		// section emission
+		left: 0;
+		top: 68vh;
+		height: 16vh !important;
+	}
+	.section-06 {
+		// section boutique
+		left: 0;
+		top: 84vh;
+		height: 16vh !important;
+	}
+}
+@media (max-width: $small-screen) and (orientation: landscape) {
+	.section-item {
+		.inner-section {
+			top: 24%;
+			a { font-size: $h2-size;}
+			em {display: none;}
+		}
+	}
+	.section-01 {
+		// section bibliotheque
+		height: 33vh;
+		left: 0;
+		top: 34vh;
+		width: 100vw;
+		&:before {
+			background-position: center center;
+		}
+	}
+	.section-02 {
+		// section tolkien
+		height: 34vh;
+		left: 50vw;
+		top: 0;
+		width: 50vw;
+		&:before {
+			background-position: center center;
+		}
+	}
+	.section-03 {
+		// section fantasy
+		height: 34vh;
+		left: 0;
+		top: 0;
+		width: 50vw;
+		&:before {
+			background-position: center center;
+		}
+	}
+	.section-04 {
+		// section forum
+		left: 0;
+		right: auto;
+		top: 67vh;
+		width: 33vw;
+		height: 33vh;
+	}
+	.section-05 {
+		// section emission
+		background: DarkSlateGray;
+		left: 33vw;
+		right: auto;
+		top: 67vh;
+		width: 34vw;
+		height: 33vh;
+	}
+	.section-06 {
+		// section boutique
+		background: GoldenRod;
+		right: 0;
+		left: auto;
+		bottom: 0;
+		width: 33vw;
+		height: 33vh;
+	}
 }

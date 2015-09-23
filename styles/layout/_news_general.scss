@@ -237,3 +237,40 @@
 		}
 	}
 }
+@media (max-width: $tiny-screen) {
+	.column-01, .column-03, .column-04 {
+		.the-title {font-size: $h5-size;}
+		.post {
+			height: 260px;
+			margin-bottom: 0.93em;
+		}
+	}
+	.column-02 {
+		.the-title {font-size: $h2-size;}
+		.post {height: calc(520px + 0.93em); margin-bottom: 0.93em;}
+	}
+	#news_general {
+		.post-tribune {
+			.entry-extract p { display: none; }
+			.post-info {
+				text-align: center;
+				@include skewX(0);
+				background-color: transparent;
+				position: static;
+				span, time {
+					@include skewX(0);
+					display: block;
+					font-family: $font-stack-simili;
+					text-transform: uppercase;
+				}
+				img {
+					@include skewX(0);
+					display: block;
+					float: none;
+					margin: 0 auto 1em auto;
+					position: static;
+				}
+			}
+		}
+	}
+}

@@ -2146,6 +2146,14 @@ body {
   padding: .5em 0;
 }
 
+/* ============== R E S P O N S I V E
+========================================================== */
+@media (max-width: 768px) {
+  /* line 165, ../styles/layout/_grid.scss */
+  .m-page {
+    padding-top: 50px;
+  }
+}
 /* ====== Concerning Logo
 ======================================= */
 @-webkit-keyframes LogoArrives {
@@ -3586,6 +3594,145 @@ body {
   height: 34vh;
 }
 
+/* ============== R E S P O N S I V E
+========================================================== */
+@media (max-width: 768px) and (orientation: portrait) {
+  /* line 273, ../styles/components/_navigation.scss */
+  .section-item {
+    display: block;
+    margin: 0;
+    width: 100vw !important;
+  }
+  /* line 278, ../styles/components/_navigation.scss */
+  .section-item .inner-section a {
+    font-size: 1.8rem;
+  }
+  /* line 279, ../styles/components/_navigation.scss */
+  .section-item .inner-section em {
+    display: none;
+  }
+
+  /* line 282, ../styles/components/_navigation.scss */
+  .section-01 {
+    left: 0;
+    top: 0;
+    height: 17vh !important;
+  }
+
+  /* line 288, ../styles/components/_navigation.scss */
+  .section-02 {
+    left: 0;
+    top: 17vh;
+    height: 17vh !important;
+  }
+
+  /* line 294, ../styles/components/_navigation.scss */
+  .section-03 {
+    left: 0;
+    top: 34vh;
+    height: 17vh !important;
+  }
+
+  /* line 300, ../styles/components/_navigation.scss */
+  .section-04 {
+    left: 0;
+    top: 51vh;
+    height: 17vh !important;
+  }
+
+  /* line 306, ../styles/components/_navigation.scss */
+  .section-05 {
+    left: 0;
+    top: 68vh;
+    height: 16vh !important;
+  }
+
+  /* line 312, ../styles/components/_navigation.scss */
+  .section-06 {
+    left: 0;
+    top: 84vh;
+    height: 16vh !important;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  /* line 321, ../styles/components/_navigation.scss */
+  .section-item .inner-section {
+    top: 24%;
+  }
+  /* line 323, ../styles/components/_navigation.scss */
+  .section-item .inner-section a {
+    font-size: 2.5rem;
+  }
+  /* line 324, ../styles/components/_navigation.scss */
+  .section-item .inner-section em {
+    display: none;
+  }
+
+  /* line 327, ../styles/components/_navigation.scss */
+  .section-01 {
+    height: 33vh;
+    left: 0;
+    top: 34vh;
+    width: 100vw;
+  }
+  /* line 333, ../styles/components/_navigation.scss */
+  .section-01:before {
+    background-position: center center;
+  }
+
+  /* line 337, ../styles/components/_navigation.scss */
+  .section-02 {
+    height: 34vh;
+    left: 50vw;
+    top: 0;
+    width: 50vw;
+  }
+  /* line 343, ../styles/components/_navigation.scss */
+  .section-02:before {
+    background-position: center center;
+  }
+
+  /* line 347, ../styles/components/_navigation.scss */
+  .section-03 {
+    height: 34vh;
+    left: 0;
+    top: 0;
+    width: 50vw;
+  }
+  /* line 353, ../styles/components/_navigation.scss */
+  .section-03:before {
+    background-position: center center;
+  }
+
+  /* line 357, ../styles/components/_navigation.scss */
+  .section-04 {
+    left: 0;
+    right: auto;
+    top: 67vh;
+    width: 33vw;
+    height: 33vh;
+  }
+
+  /* line 365, ../styles/components/_navigation.scss */
+  .section-05 {
+    background: DarkSlateGray;
+    left: 33vw;
+    right: auto;
+    top: 67vh;
+    width: 34vw;
+    height: 33vh;
+  }
+
+  /* line 374, ../styles/components/_navigation.scss */
+  .section-06 {
+    background: GoldenRod;
+    right: 0;
+    left: auto;
+    bottom: 0;
+    width: 33vw;
+    height: 33vh;
+  }
+}
 /* ============== B L O C   C H R O N I Q U E S
 ========================================================== */
 /* line 4, ../styles/components/_carousel.scss */
@@ -3785,6 +3932,16 @@ body {
   /* line 166, ../styles/components/_carousel.scss */
   #all_new_chronique #chroniques .critiques img {
     height: 250px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 177, ../styles/components/_carousel.scss */
+  #all_new_chronique #chroniques .critiques .columns {
+    margin-bottom: 2em;
+  }
+  /* line 180, ../styles/components/_carousel.scss */
+  #all_new_chronique #chroniques .critiques img {
+    height: 155px;
   }
 }
 /********************************************************************************************************************************************************************************

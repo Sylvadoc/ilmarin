@@ -157,3 +157,10 @@ body {
 		}
 	}
 }
+
+/* ============== R E S P O N S I V E
+========================================================== */
+
+@media (max-width: $small-screen) {
+	.m-page { padding-top: 50px; }
+}

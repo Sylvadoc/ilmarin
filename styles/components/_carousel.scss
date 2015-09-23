@@ -170,3 +170,17 @@
 		}
 	}
 }
+@media (max-width: $tiny-screen) {
+	#all_new_chronique {
+		#chroniques {
+			.critiques {
+				.columns {
+					margin-bottom: 2em;
+				}
+				img {
+					height: 155px;
+				}
+			}
+		}
+	}
+}
