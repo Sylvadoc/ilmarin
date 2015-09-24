@@ -3255,11 +3255,11 @@ body {
 ========================================================== */
 /* line 33, ../styles/components/_navigation.scss */
 .tools {
-  width: 100%;
-  padding: .5em 0;
   background: #f3f3f3;
-  border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: .5em 0;
+  width: 100%;
 }
 /* line 40, ../styles/components/_navigation.scss */
 .tools ul {
@@ -3293,16 +3293,6 @@ body {
 /* line 68, ../styles/components/_navigation.scss */
 .breadcrumb li:last-child:after {
   content: "";
-}
-
-/* line 75, ../styles/components/_navigation.scss */
-.share {
-  float: right;
-  text-transform: uppercase;
-}
-/* line 78, ../styles/components/_navigation.scss */
-.share li {
-  margin-left: 1em;
 }
 
 /* ============== P A G E   D E   G A R D E
@@ -3347,18 +3337,18 @@ body {
     zoom: 1;
   }
 }
-/* line 103, ../styles/components/_navigation.scss */
+/* line 96, ../styles/components/_navigation.scss */
 #garde {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   background: white;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 100;
 }
 
-/* line 112, ../styles/components/_navigation.scss */
+/* line 105, ../styles/components/_navigation.scss */
 .overlay {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -3376,10 +3366,9 @@ body {
   -ms-transform: translate3d(-100%, 0, 0);
   -webkit-transform: translate3d(-100%, 0, 0);
   zoom: 1;
-  backface-visibility: hidden;
   visibility: hidden;
 }
-/* line 119, ../styles/components/_navigation.scss */
+/* line 111, ../styles/components/_navigation.scss */
 .overlay.open {
   transform: translate3d(0%, 0, 0);
   -moz-transform: translate3d(0%, 0, 0);
@@ -3393,45 +3382,45 @@ body {
   transition: transform 0.5s;
   visibility: visible;
 }
-/* line 124, ../styles/components/_navigation.scss */
+/* line 116, ../styles/components/_navigation.scss */
 .overlay .menu-close {
   background: transparent;
   display: block;
+  height: 3rem;
   position: absolute;
   right: 1em;
-  top: 1em;
-  z-index: 500;
   text-indent: -999em;
+  top: 1em;
   width: 3rem;
-  height: 3rem;
+  z-index: 500;
 }
-/* line 134, ../styles/components/_navigation.scss */
+/* line 126, ../styles/components/_navigation.scss */
 .overlay .menu-close span {
   background: white;
   content: '';
   display: block;
   height: 3rem;
-  width: 2px;
+  left: 1.5rem;
   position: absolute;
   top: 0;
-  left: 1.5rem;
+  width: 2px;
 }
-/* line 143, ../styles/components/_navigation.scss */
+/* line 135, ../styles/components/_navigation.scss */
 .overlay .menu-close span:before {
+  background: white;
   content: '';
   display: block;
-  width: 1rem;
   height: 2px;
-  background: white;
+  left: -0.4rem;
   position: absolute;
   top: 70%;
-  left: -0.4rem;
+  width: 1rem;
 }
-/* line 154, ../styles/components/_navigation.scss */
+/* line 146, ../styles/components/_navigation.scss */
 .overlay .menu-close span + span {
   right: 1.5rem;
 }
-/* line 158, ../styles/components/_navigation.scss */
+/* line 150, ../styles/components/_navigation.scss */
 .overlay .menu-close.animate span {
   animation: ClosingSwordsLeft cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s 1;
   transform: rotate(-45deg);
@@ -3442,7 +3431,7 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70711, M12=--0.70711, M21=-0.70711, M22=0.70711)";
   zoom: 1;
 }
-/* line 162, ../styles/components/_navigation.scss */
+/* line 154, ../styles/components/_navigation.scss */
 .overlay .menu-close.animate span + span {
   animation: ClosingSwordsRight cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s 1;
   transform: rotate(45deg);
@@ -3454,12 +3443,12 @@ body {
   zoom: 1;
 }
 
-/* line 169, ../styles/components/_navigation.scss */
+/* line 161, ../styles/components/_navigation.scss */
 .section-item {
   overflow: hidden;
   position: absolute;
 }
-/* line 172, ../styles/components/_navigation.scss */
+/* line 164, ../styles/components/_navigation.scss */
 .section-item:before {
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
@@ -3481,18 +3470,18 @@ body {
   width: 100%;
   z-index: -1;
 }
-/* line 188, ../styles/components/_navigation.scss */
+/* line 180, ../styles/components/_navigation.scss */
 .section-item:hover a:hover, .section-item:hover a:active, .section-item:hover a:focus {
   text-decoration: none;
 }
-/* line 190, ../styles/components/_navigation.scss */
+/* line 182, ../styles/components/_navigation.scss */
 .section-item:hover:before {
   -moz-transform: scale(1.05);
   -o-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
-/* line 193, ../styles/components/_navigation.scss */
+/* line 185, ../styles/components/_navigation.scss */
 .section-item:hover .inner-section {
   transform: translate3d(0, 25%, 0);
   -moz-transform: translate3d(0, 25%, 0);
@@ -3500,7 +3489,7 @@ body {
   -webkit-transform: translate3d(0, 25%, 0);
   zoom: 1;
 }
-/* line 197, ../styles/components/_navigation.scss */
+/* line 189, ../styles/components/_navigation.scss */
 .section-item .inner-section {
   -webkit-transition: transform 0.2s ease 0s;
   -moz-transition: transform 0.2s ease 0s;
@@ -3516,12 +3505,12 @@ body {
   top: 30%;
   text-align: center;
 }
-/* line 203, ../styles/components/_navigation.scss */
+/* line 195, ../styles/components/_navigation.scss */
 .section-item .inner-section a, .section-item .inner-section em {
   color: white;
   display: block;
 }
-/* line 204, ../styles/components/_navigation.scss */
+/* line 196, ../styles/components/_navigation.scss */
 .section-item .inner-section a {
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   font-size: 5rem;
@@ -3529,45 +3518,45 @@ body {
   text-transform: uppercase;
 }
 
-/* line 212, ../styles/components/_navigation.scss */
+/* line 204, ../styles/components/_navigation.scss */
 .section-01 {
   height: 100vh;
   left: 33vw;
   top: 0;
   width: 34vw;
 }
-/* line 218, ../styles/components/_navigation.scss */
+/* line 210, ../styles/components/_navigation.scss */
 .section-01:before {
   background-image: url("../images/library.jpg");
   background-position: bottom left;
 }
 
-/* line 223, ../styles/components/_navigation.scss */
+/* line 215, ../styles/components/_navigation.scss */
 .section-02 {
   height: 50vh;
   left: 0;
   top: 50vh;
   width: 33vw;
 }
-/* line 229, ../styles/components/_navigation.scss */
+/* line 221, ../styles/components/_navigation.scss */
 .section-02:before {
   background-image: url("../images/argonath.jpg");
 }
 
-/* line 233, ../styles/components/_navigation.scss */
+/* line 225, ../styles/components/_navigation.scss */
 .section-03 {
   height: 50vh;
   left: 0;
   top: 0;
   width: 33vw;
 }
-/* line 239, ../styles/components/_navigation.scss */
+/* line 231, ../styles/components/_navigation.scss */
 .section-03:before {
   background-image: url("../images/fantasy.jpg");
   background-position: bottom right;
 }
 
-/* line 244, ../styles/components/_navigation.scss */
+/* line 236, ../styles/components/_navigation.scss */
 .section-04 {
   background: DarkSeaGreen;
   right: 0;
@@ -3576,7 +3565,7 @@ body {
   height: 33vh;
 }
 
-/* line 252, ../styles/components/_navigation.scss */
+/* line 244, ../styles/components/_navigation.scss */
 .section-05 {
   background: DarkSlateGray;
   right: 0;
@@ -3585,7 +3574,7 @@ body {
   height: 33vh;
 }
 
-/* line 260, ../styles/components/_navigation.scss */
+/* line 252, ../styles/components/_navigation.scss */
 .section-06 {
   background: GoldenRod;
   right: 0;
@@ -3597,57 +3586,57 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 @media (max-width: 768px) and (orientation: portrait) {
-  /* line 273, ../styles/components/_navigation.scss */
+  /* line 265, ../styles/components/_navigation.scss */
   .section-item {
     display: block;
     margin: 0;
     width: 100vw !important;
   }
-  /* line 278, ../styles/components/_navigation.scss */
+  /* line 270, ../styles/components/_navigation.scss */
   .section-item .inner-section a {
     font-size: 1.8rem;
   }
-  /* line 279, ../styles/components/_navigation.scss */
+  /* line 271, ../styles/components/_navigation.scss */
   .section-item .inner-section em {
     display: none;
   }
 
-  /* line 282, ../styles/components/_navigation.scss */
+  /* line 274, ../styles/components/_navigation.scss */
   .section-01 {
     left: 0;
     top: 0;
     height: 17vh !important;
   }
 
-  /* line 288, ../styles/components/_navigation.scss */
+  /* line 280, ../styles/components/_navigation.scss */
   .section-02 {
     left: 0;
     top: 17vh;
     height: 17vh !important;
   }
 
-  /* line 294, ../styles/components/_navigation.scss */
+  /* line 286, ../styles/components/_navigation.scss */
   .section-03 {
     left: 0;
     top: 34vh;
     height: 17vh !important;
   }
 
-  /* line 300, ../styles/components/_navigation.scss */
+  /* line 292, ../styles/components/_navigation.scss */
   .section-04 {
     left: 0;
     top: 51vh;
     height: 17vh !important;
   }
 
-  /* line 306, ../styles/components/_navigation.scss */
+  /* line 298, ../styles/components/_navigation.scss */
   .section-05 {
     left: 0;
     top: 68vh;
     height: 16vh !important;
   }
 
-  /* line 312, ../styles/components/_navigation.scss */
+  /* line 304, ../styles/components/_navigation.scss */
   .section-06 {
     left: 0;
     top: 84vh;
@@ -3655,56 +3644,56 @@ body {
   }
 }
 @media (max-width: 768px) and (orientation: landscape) {
-  /* line 321, ../styles/components/_navigation.scss */
+  /* line 313, ../styles/components/_navigation.scss */
   .section-item .inner-section {
     top: 24%;
   }
-  /* line 323, ../styles/components/_navigation.scss */
+  /* line 315, ../styles/components/_navigation.scss */
   .section-item .inner-section a {
     font-size: 2.5rem;
   }
-  /* line 324, ../styles/components/_navigation.scss */
+  /* line 316, ../styles/components/_navigation.scss */
   .section-item .inner-section em {
     display: none;
   }
 
-  /* line 327, ../styles/components/_navigation.scss */
+  /* line 319, ../styles/components/_navigation.scss */
   .section-01 {
     height: 33vh;
     left: 0;
     top: 34vh;
     width: 100vw;
   }
-  /* line 333, ../styles/components/_navigation.scss */
+  /* line 325, ../styles/components/_navigation.scss */
   .section-01:before {
     background-position: center center;
   }
 
-  /* line 337, ../styles/components/_navigation.scss */
+  /* line 329, ../styles/components/_navigation.scss */
   .section-02 {
     height: 34vh;
     left: 50vw;
     top: 0;
     width: 50vw;
   }
-  /* line 343, ../styles/components/_navigation.scss */
+  /* line 335, ../styles/components/_navigation.scss */
   .section-02:before {
     background-position: center center;
   }
 
-  /* line 347, ../styles/components/_navigation.scss */
+  /* line 339, ../styles/components/_navigation.scss */
   .section-03 {
     height: 34vh;
     left: 0;
     top: 0;
     width: 50vw;
   }
-  /* line 353, ../styles/components/_navigation.scss */
+  /* line 345, ../styles/components/_navigation.scss */
   .section-03:before {
     background-position: center center;
   }
 
-  /* line 357, ../styles/components/_navigation.scss */
+  /* line 349, ../styles/components/_navigation.scss */
   .section-04 {
     left: 0;
     right: auto;
@@ -3713,7 +3702,7 @@ body {
     height: 33vh;
   }
 
-  /* line 365, ../styles/components/_navigation.scss */
+  /* line 357, ../styles/components/_navigation.scss */
   .section-05 {
     background: DarkSlateGray;
     left: 33vw;
@@ -3723,7 +3712,7 @@ body {
     height: 33vh;
   }
 
-  /* line 374, ../styles/components/_navigation.scss */
+  /* line 366, ../styles/components/_navigation.scss */
   .section-06 {
     background: GoldenRod;
     right: 0;

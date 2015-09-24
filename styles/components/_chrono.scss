@@ -16,17 +16,17 @@
 			display: block;
 		}
 		h2 {
+			@include rem(2.1);
+			color: white;
+			font-family: $font-stack-headings;
+			line-height: 1;
+			margin: 0 1rem 0 0;
+			padding: 0;
+			text-transform: uppercase;
 			.icon {
 				@include scale(0.8);
 				vertical-align: top;
 			}
-			color: white;
-			font-family: $font-stack-headings;
-			@include rem(2.1);
-			text-transform: uppercase;
-			line-height: 1;
-			margin: 0 1rem 0 0;
-			padding: 0;
 		}
 		select {
 			border: 0;
@@ -74,17 +74,17 @@
 			display: inline-block;
 		}
 		li {
-			vertical-align: top;
 			font-weight: 700;
+			vertical-align: top;
 		}
 		ul + a {
+			@include rem(1.2);
 			background-color: $base-color-elbakin;
 			color: white;
 			display: inline-block;
 			float: right;
 			padding: 2px 5px;
 			text-align: right;
-			@include rem(1.2);
 		}
 	}
 }

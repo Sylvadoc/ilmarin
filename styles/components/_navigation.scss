@@ -31,12 +31,12 @@
 ========================================================== */
 
 .tools {
-	width: 100%;
-	padding: .5em 0;
-	background: #f3f3f3;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
 	@extend %clearfix;
+	background: #f3f3f3;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	padding: .5em 0;
+	width: 100%;
 	ul {
 		list-style: none none;
 		margin: 0;
@@ -72,13 +72,6 @@
 		}
 	}
 }
-.share {
-	float: right;
-	text-transform: uppercase;
-	li {
-		margin-left: 1em;
-	}
-}
 
 /* ============== P A G E   D E   G A R D E
 ========================================================== */
@@ -101,12 +94,12 @@
 }
 
 #garde {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
 	background: white;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
 	z-index: 100;
 }
 .overlay {
@@ -114,7 +107,6 @@
 	@include transform-style(preserve-3d);
 	@include transition(transform 0.5s, visibility 0s 0.5s);
 	@include translate3d(-100%,0,0);
-	backface-visibility: hidden;
 	visibility: hidden;
 	&.open {
 		@include translate3d(0%,0,0);
@@ -124,31 +116,31 @@
 	.menu-close {
 		background: transparent;
 		display: block;
+		height: 3rem;
 		position: absolute;
 		right: 1em;
-		top: 1em;
-		z-index: 500;
 		text-indent: -999em;
+		top: 1em;
 		width: 3rem;
-		height: 3rem;
+		z-index: 500;
 		span {
 			background: white;
 			content: '';
 			display: block;
 			height: 3rem;
-			width: 2px;
+			left: 1.5rem;
 			position: absolute;
 			top: 0;
-			left: 1.5rem;
+			width: 2px;
 			&:before {
+				background: white;
 				content: '';
 				display: block;
-				width: 1rem;
 				height: 2px;
-				background: white;
+				left: -0.4rem;
 				position: absolute;
 				top: 70%;
-				left: -0.4rem;
+				width: 1rem;
 			}
 		}
 		span + span {

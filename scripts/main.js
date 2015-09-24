@@ -135,6 +135,10 @@ $(document).ready(function() {
 		$('#les_auteurs').select2();
 	}
 
+});
+
+$(window).load(function() {
+
 	// masonry list
 	if ($('.liste_ouvrage').length) {
 		var $container = $('#masonry_last');
