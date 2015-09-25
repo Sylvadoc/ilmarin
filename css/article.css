@@ -1224,12 +1224,12 @@ body {
 
 /* line 9, ../styles/layout/_grid.scss */
 .oblique {
-  transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=-0, M21=0, M22=1);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=-0, M21=0, M22=1)";
+  transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99985, M12=--0.01745, M21=-0.01745, M22=0.99985);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99985, M12=--0.01745, M21=-0.01745, M22=0.99985)";
   zoom: 1;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -1241,12 +1241,12 @@ body {
 
 /* line 16, ../styles/layout/_grid.scss */
 .oblique .row {
-  transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=-0, M21=0, M22=1);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=-0, M21=0, M22=1)";
+  transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99985, M12=-0.01745, M21=0.01745, M22=0.99985);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99985, M12=-0.01745, M21=0.01745, M22=0.99985)";
   zoom: 1;
 }
 /* line 18, ../styles/layout/_grid.scss */
@@ -2453,6 +2453,47 @@ body {
   top: 1px;
 }
 
+/* line 74, ../styles/components/_buttons.scss */
+.shadow-btn {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  -webkit-transition: all 150ms ease-out;
+  -moz-transition: all 150ms ease-out;
+  -ms-transition: all 150ms ease-out;
+  -o-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+  background: transparent;
+  display: inline-block;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  padding: .5em 1.2em;
+  text-transform: uppercase;
+}
+/* line 83, ../styles/components/_buttons.scss */
+.shadow-btn.light-shadow-btn {
+  border: 2px solid white;
+  color: white;
+}
+/* line 86, ../styles/components/_buttons.scss */
+.shadow-btn.light-shadow-btn:hover, .shadow-btn.light-shadow-btn:focus, .shadow-btn.light-shadow-btn:active {
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+/* line 92, ../styles/components/_buttons.scss */
+.shadow-btn.dark-shadow-btn {
+  border: 2px solid #666;
+  color: #666;
+}
+/* line 95, ../styles/components/_buttons.scss */
+.shadow-btn.dark-shadow-btn:hover, .shadow-btn.dark-shadow-btn:focus, .shadow-btn.dark-shadow-btn:active {
+  border: 2px solid #BE2700;
+  background: #BE2700;
+  color: white;
+  text-decoration: none;
+}
+
 /********************************************************************************************************************************************************************************
 ********************* P R O F I L E    C A R D *****************
 /********************************************************************************************************************************************************************************/
@@ -2617,6 +2658,160 @@ body {
   border-right: 1px solid #ccc;
 }
 
+/********************************************************************************************************************************************************************************
+********************* P R O F I L E    P A G E *****************
+/********************************************************************************************************************************************************************************/
+/* line 133, ../styles/components/_card.scss */
+#head {
+  margin: 3em 0 2em 0;
+}
+
+/* line 136, ../styles/components/_card.scss */
+.bloc-profil {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  position: relative;
+}
+/* line 140, ../styles/components/_card.scss */
+.bloc-profil .avatar {
+  position: absolute;
+  top: -55px;
+  left: -55px;
+}
+/* line 144, ../styles/components/_card.scss */
+.bloc-profil .avatar .title {
+  -webkit-transform: skewY(-10deg);
+  -moz-transform: skewY(-10deg);
+  -ms-transform: skewY(-10deg);
+  -o-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+  background-color: #BE2700;
+  bottom: -23px;
+  color: white;
+  overflow: hidden;
+  padding: 5px 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  text-transform: uppercase;
+  bottom: -42px;
+  left: 0;
+}
+/* line 160, ../styles/components/_card.scss */
+.bloc-profil .bloc {
+  float: left;
+  height: 200px;
+  margin: 50px 0;
+}
+/* line 165, ../styles/components/_card.scss */
+.bloc-profil .bloc-princeps {
+  padding-left: 150px;
+  width: 62%;
+  margin-right: 50px;
+}
+/* line 169, ../styles/components/_card.scss */
+.bloc-profil .bloc-princeps h1 {
+  color: #BE2700;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+/* line 175, ../styles/components/_card.scss */
+.bloc-profil .bloc-princeps .socially-engaged-on {
+  margin: 1em 0;
+  padding: 0;
+  list-style: none none;
+}
+/* line 179, ../styles/components/_card.scss */
+.bloc-profil .bloc-princeps .socially-engaged-on li {
+  font-size: 28px;
+  font-size: 2rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+/* line 183, ../styles/components/_card.scss */
+.bloc-profil .bloc-princeps .socially-engaged-on li .icon-facebook {
+  color: #47639E;
+}
+/* line 184, ../styles/components/_card.scss */
+.bloc-profil .bloc-princeps .socially-engaged-on li .icon-google-plus {
+  color: #DD4B39;
+}
+/* line 185, ../styles/components/_card.scss */
+.bloc-profil .bloc-princeps .socially-engaged-on li .icon-twitter {
+  color: #55ACEE;
+}
+/* line 188, ../styles/components/_card.scss */
+.bloc-profil .bloc-princeps p {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+/* line 193, ../styles/components/_card.scss */
+.bloc-profil .bloc-duke {
+  border-left: 1px solid #ccc;
+  width: 33%;
+}
+/* line 196, ../styles/components/_card.scss */
+.bloc-profil .bloc-duke .side-head {
+  transform: translate(0, 50%);
+  -moz-transform: translate(0, 50%);
+  -ms-transform: translate(0, 50%);
+  -webkit-transform: translate(0, 50%);
+  zoom: 1;
+  list-style: none none;
+  position: relative;
+  text-align: center;
+  top: 30%;
+}
+/* line 202, ../styles/components/_card.scss */
+.bloc-profil .bloc-duke .side-head li {
+  display: inline-block;
+}
+/* line 204, ../styles/components/_card.scss */
+.bloc-profil .bloc-duke .side-head li strong, .bloc-profil .bloc-duke .side-head li span {
+  display: block;
+}
+/* line 205, ../styles/components/_card.scss */
+.bloc-profil .bloc-duke .side-head li span {
+  text-transform: uppercase;
+}
+/* line 206, ../styles/components/_card.scss */
+.bloc-profil .bloc-duke .side-head li .icon {
+  font-size: 28px;
+  font-size: 2rem;
+  float: left;
+  margin-right: 1rem;
+}
+/* line 211, ../styles/components/_card.scss */
+.bloc-profil .bloc-duke .side-head li:first-child {
+  padding-right: 2rem;
+  margin-right: 2rem;
+  border-right: 1px solid #ccc;
+}
+/* line 219, ../styles/components/_card.scss */
+.bloc-profil .bloc-noble {
+  background: #eaeaea;
+  border-top: 1px solid #ccc;
+  clear: both;
+  padding: 1rem;
+}
+/* line 224, ../styles/components/_card.scss */
+.bloc-profil .bloc-noble .tabs {
+  float: none;
+}
+
+/* ============== R E S P O N S I V E
+========================================================== */
+@media (min-width: 1024px) and (min-width: 1280px) {
+  /* line 232, ../styles/components/_card.scss */
+  .bloc-profil {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 /* ============== C H R O N O
 ========================================================== */
 /* line 4, ../styles/components/_chrono.scss */
@@ -4144,23 +4339,47 @@ section:nth-child(2n+2), #most {
 }
 
 /* line 90, ../styles/themes/_theme.scss */
+#perfect {
+  background-color: #314a7f;
+  /* Fallback */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4b6cb7), to(#182848));
+  background-image: -webkit-linear-gradient(left, #4b6cb7, #182848);
+  background-image: -moz-linear-gradient(left, #4b6cb7, #182848);
+  background-image: -ms-linear-gradient(left, #4b6cb7, #182848);
+  background-image: -o-linear-gradient(left, #4b6cb7, #182848);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#4b6cb7', EndColorStr='#182848')";
+  color: white;
+}
+/* line 93, ../styles/themes/_theme.scss */
+#perfect.jeff {
+  background-color: #3a88bc;
+  /* Fallback */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#24C6DC), to(#514A9D));
+  background-image: -webkit-linear-gradient(left, #24C6DC, #514A9D);
+  background-image: -moz-linear-gradient(left, #24C6DC, #514A9D);
+  background-image: -ms-linear-gradient(left, #24C6DC, #514A9D);
+  background-image: -o-linear-gradient(left, #24C6DC, #514A9D);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', EndColorStr='#514A9D')";
+}
+
+/* line 97, ../styles/themes/_theme.scss */
 #footer {
   background: #262626;
 }
-/* line 92, ../styles/themes/_theme.scss */
+/* line 99, ../styles/themes/_theme.scss */
 #footer p {
   color: white;
 }
-/* line 95, ../styles/themes/_theme.scss */
+/* line 102, ../styles/themes/_theme.scss */
 #footer a {
   color: #727272;
 }
-/* line 97, ../styles/themes/_theme.scss */
+/* line 104, ../styles/themes/_theme.scss */
 #footer a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 102, ../styles/themes/_theme.scss */
+/* line 109, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] {
   background-color: #00bbff;
   /* Fallback */
@@ -4172,24 +4391,24 @@ section:nth-child(2n+2), #most {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#00BBFF', EndColorStr='#00BBFF')";
   color: #f1f1f1;
 }
-/* line 105, ../styles/themes/_theme.scss */
+/* line 112, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] a {
   color: white;
 }
-/* line 107, ../styles/themes/_theme.scss */
+/* line 114, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 112, ../styles/themes/_theme.scss */
+/* line 119, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] p, #footer[data-weather="sunny"] h2, #footer[data-weather="sunny"] #weather_city {
   color: white;
 }
-/* line 113, ../styles/themes/_theme.scss */
+/* line 120, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] #weather_city {
   border-bottom: 2px solid white;
 }
-/* line 117, ../styles/themes/_theme.scss */
+/* line 124, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] {
   background-color: #2eb5e5;
   /* Fallback */
@@ -4201,24 +4420,24 @@ section:nth-child(2n+2), #most {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2EB5E5', EndColorStr='#2EB5E5')";
   color: #f1f1f1;
 }
-/* line 120, ../styles/themes/_theme.scss */
+/* line 127, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] a {
   color: white;
 }
-/* line 122, ../styles/themes/_theme.scss */
+/* line 129, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 127, ../styles/themes/_theme.scss */
+/* line 134, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] p, #footer[data-weather="cloudy"] h2, #footer[data-weather="cloudy"] #weather_city {
   color: white;
 }
-/* line 128, ../styles/themes/_theme.scss */
+/* line 135, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] #weather_city {
   border-bottom: 2px solid white;
 }
-/* line 132, ../styles/themes/_theme.scss */
+/* line 139, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] {
   background-color: #e6e6e6;
   /* Fallback */
@@ -4229,24 +4448,24 @@ section:nth-child(2n+2), #most {
   background-image: -o-linear-gradient(left, #E6E6E6, #E6E6E6);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#E6E6E6', EndColorStr='#E6E6E6')";
 }
-/* line 134, ../styles/themes/_theme.scss */
+/* line 141, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] a {
   color: #333;
 }
-/* line 136, ../styles/themes/_theme.scss */
+/* line 143, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] a:hover {
   color: #333;
   text-decoration: underline;
 }
-/* line 141, ../styles/themes/_theme.scss */
+/* line 148, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] p, #footer[data-weather="rainy"] h2, #footer[data-weather="rainy"] #weather_city {
   color: black;
 }
-/* line 142, ../styles/themes/_theme.scss */
+/* line 149, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] #weather_city {
   border-bottom: 2px solid black;
 }
-/* line 146, ../styles/themes/_theme.scss */
+/* line 153, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] {
   background-color: #85db8c;
   /* Fallback */
@@ -4257,24 +4476,24 @@ section:nth-child(2n+2), #most {
   background-image: -o-linear-gradient(left, #85DB8C, #85DB8C);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#85DB8C', EndColorStr='#85DB8C')";
 }
-/* line 148, ../styles/themes/_theme.scss */
+/* line 155, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] a {
   color: #333;
 }
-/* line 150, ../styles/themes/_theme.scss */
+/* line 157, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] a:hover {
   color: #333;
   text-decoration: underline;
 }
-/* line 155, ../styles/themes/_theme.scss */
+/* line 162, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] p, #footer[data-weather="snowy"] h2, #footer[data-weather="snowy"] #weather_city {
   color: black;
 }
-/* line 156, ../styles/themes/_theme.scss */
+/* line 163, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] #weather_city {
   border-bottom: 2px solid black;
 }
-/* line 160, ../styles/themes/_theme.scss */
+/* line 167, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] {
   background-color: #f3d166;
   /* Fallback */
@@ -4285,24 +4504,24 @@ section:nth-child(2n+2), #most {
   background-image: -o-linear-gradient(left, #F3D166, #F3D166);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#F3D166', EndColorStr='#F3D166')";
 }
-/* line 162, ../styles/themes/_theme.scss */
+/* line 169, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] a {
   color: #333;
 }
-/* line 164, ../styles/themes/_theme.scss */
+/* line 171, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] a:hover {
   color: #333;
   text-decoration: underline;
 }
-/* line 169, ../styles/themes/_theme.scss */
+/* line 176, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] p, #footer[data-weather="rainbow"] h2, #footer[data-weather="rainbow"] #weather_city {
   color: black;
 }
-/* line 170, ../styles/themes/_theme.scss */
+/* line 177, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] #weather_city {
   border-bottom: 2px solid black;
 }
-/* line 174, ../styles/themes/_theme.scss */
+/* line 181, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] {
   background-color: #222233;
   /* Fallback */
@@ -4314,24 +4533,24 @@ section:nth-child(2n+2), #most {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#222233', EndColorStr='#222233')";
   color: #f1f1f1;
 }
-/* line 177, ../styles/themes/_theme.scss */
+/* line 184, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] a {
   color: white;
 }
-/* line 179, ../styles/themes/_theme.scss */
+/* line 186, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 184, ../styles/themes/_theme.scss */
+/* line 191, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] p, #footer[data-weather="starry"] h2, #footer[data-weather="starry"] #weather_city {
   color: white;
 }
-/* line 185, ../styles/themes/_theme.scss */
+/* line 192, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] #weather_city {
   border-bottom: 2px solid white;
 }
-/* line 189, ../styles/themes/_theme.scss */
+/* line 196, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] {
   background-color: #444444;
   /* Fallback */
@@ -4343,20 +4562,20 @@ section:nth-child(2n+2), #most {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#444444', EndColorStr='#444444')";
   color: #f1f1f1;
 }
-/* line 192, ../styles/themes/_theme.scss */
+/* line 199, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] a {
   color: white;
 }
-/* line 194, ../styles/themes/_theme.scss */
+/* line 201, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 199, ../styles/themes/_theme.scss */
+/* line 206, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] p, #footer[data-weather="stormy"] h2, #footer[data-weather="stormy"] #weather_city {
   color: white;
 }
-/* line 200, ../styles/themes/_theme.scss */
+/* line 207, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] #weather_city {
   border-bottom: 2px solid white;
 }

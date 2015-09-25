@@ -71,3 +71,32 @@
 		top: 1px;
 	}
 }
+.shadow-btn {
+	@include border-radius(3px);
+	@include transition(all 150ms ease-out);
+	background: transparent;
+	display: inline-block;
+	font-family: $font-stack-condensed;
+	font-weight: 700;
+	padding: .5em 1.2em;
+	text-transform: uppercase;
+	&.light-shadow-btn {
+		border: 2px solid white;
+		color: white;
+		&:hover, &:focus, &:active {
+			background: white;
+			color: black;
+			text-decoration: none;
+		}
+	}
+	&.dark-shadow-btn {
+		border: 2px solid #666;
+		color: #666;
+		&:hover, &:focus, &:active {
+			border: 2px solid $base-color-elbakin;
+			background: $base-color-elbakin;
+			color: white;
+			text-decoration: none;
+		}
+	}
+}

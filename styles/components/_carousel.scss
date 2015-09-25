@@ -62,28 +62,12 @@
 			}
 		}
 	}
+	.shadow-btn { float: right; }
 }
 
 /* ============== B L O C   O N G L E T S
 ========================================================== */
 
-.all_chronicles {
-	@include border-radius(3px);
-	background: transparent;
-	border: 2px solid white;
-	color: white;
-	display: inline-block;
-	float: right;
-	font-family: $font-stack-condensed;
-	font-weight: 700;
-	padding: .5em 1.2em;
-	text-transform: uppercase;
-	&:hover, &:focus, &:active {
-		background: white;
-		color: black;
-		text-decoration: none;
-	}
-}
 .tabs {
 	float: left;
 	list-style: none none;

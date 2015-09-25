@@ -87,6 +87,13 @@ section:nth-child(2n+2), #most {
 #classement {
 	background: white;
 }
+#perfect {
+	@include gradient(#4b6cb7,#182848);
+	color: white;
+	&.jeff {
+		@include gradient(#24C6DC,#514A9D);
+	}
+}
 #footer {
 	background: #262626;
 	p {

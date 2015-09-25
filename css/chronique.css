@@ -1925,12 +1925,12 @@ body {
 
 /* line 9, ../styles/layout/_grid.scss */
 .oblique {
-  transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=-0, M21=0, M22=1);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=-0, M21=0, M22=1)";
+  transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99985, M12=--0.01745, M21=-0.01745, M22=0.99985);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99985, M12=--0.01745, M21=-0.01745, M22=0.99985)";
   zoom: 1;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -1942,12 +1942,12 @@ body {
 
 /* line 16, ../styles/layout/_grid.scss */
 .oblique .row {
-  transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=-0, M21=0, M22=1);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=-0, M21=0, M22=1)";
+  transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99985, M12=-0.01745, M21=0.01745, M22=0.99985);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99985, M12=-0.01745, M21=0.01745, M22=0.99985)";
   zoom: 1;
 }
 /* line 18, ../styles/layout/_grid.scss */
@@ -3154,6 +3154,47 @@ body {
   top: 1px;
 }
 
+/* line 74, ../styles/components/_buttons.scss */
+.shadow-btn {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  -webkit-transition: all 150ms ease-out;
+  -moz-transition: all 150ms ease-out;
+  -ms-transition: all 150ms ease-out;
+  -o-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+  background: transparent;
+  display: inline-block;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  padding: .5em 1.2em;
+  text-transform: uppercase;
+}
+/* line 83, ../styles/components/_buttons.scss */
+.shadow-btn.light-shadow-btn {
+  border: 2px solid white;
+  color: white;
+}
+/* line 86, ../styles/components/_buttons.scss */
+.shadow-btn.light-shadow-btn:hover, .shadow-btn.light-shadow-btn:focus, .shadow-btn.light-shadow-btn:active {
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+/* line 92, ../styles/components/_buttons.scss */
+.shadow-btn.dark-shadow-btn {
+  border: 2px solid #666;
+  color: #666;
+}
+/* line 95, ../styles/components/_buttons.scss */
+.shadow-btn.dark-shadow-btn:hover, .shadow-btn.dark-shadow-btn:focus, .shadow-btn.dark-shadow-btn:active {
+  border: 2px solid #BE2700;
+  background: #BE2700;
+  color: white;
+  text-decoration: none;
+}
+
 /********************************************************************************************************************************************************************************
 ********************* N A V I G A T I O N *****************
 /********************************************************************************************************************************************************************************/
@@ -3725,43 +3766,25 @@ body {
   width: 100%;
   height: auto;
 }
+/* line 65, ../styles/components/_carousel.scss */
+#all_new_chronique .shadow-btn {
+  float: right;
+}
 
 /* ============== B L O C   O N G L E T S
 ========================================================== */
-/* line 70, ../styles/components/_carousel.scss */
-.all_chronicles {
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  background-clip: padding-box;
-  background: transparent;
-  border: 2px solid white;
-  color: white;
-  display: inline-block;
-  float: right;
-  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
-  font-weight: 700;
-  padding: .5em 1.2em;
-  text-transform: uppercase;
-}
-/* line 81, ../styles/components/_carousel.scss */
-.all_chronicles:hover, .all_chronicles:focus, .all_chronicles:active {
-  background: white;
-  color: black;
-  text-decoration: none;
-}
-
-/* line 87, ../styles/components/_carousel.scss */
+/* line 71, ../styles/components/_carousel.scss */
 .tabs {
   float: left;
   list-style: none none;
   margin: 0 0 1em 0;
   padding: 0;
 }
-/* line 92, ../styles/components/_carousel.scss */
+/* line 76, ../styles/components/_carousel.scss */
 .tabs li {
   display: inline-block;
 }
-/* line 94, ../styles/components/_carousel.scss */
+/* line 78, ../styles/components/_carousel.scss */
 .tabs li a {
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -3779,19 +3802,19 @@ body {
   padding: .5em 1em;
   text-transform: uppercase;
 }
-/* line 104, ../styles/components/_carousel.scss */
+/* line 88, ../styles/components/_carousel.scss */
 .tabs li a.active, .tabs li a:hover, .tabs li a:focus {
   background: white;
   color: black;
   text-decoration: none;
 }
 
-/* line 112, ../styles/components/_carousel.scss */
+/* line 96, ../styles/components/_carousel.scss */
 .row_tab_all {
   clear: both;
 }
 
-/* line 115, ../styles/components/_carousel.scss */
+/* line 99, ../styles/components/_carousel.scss */
 .row_tab {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -3801,11 +3824,11 @@ body {
   display: none;
   width: 100%;
 }
-/* line 119, ../styles/components/_carousel.scss */
+/* line 103, ../styles/components/_carousel.scss */
 .row_tab.open {
   display: block;
 }
-/* line 121, ../styles/components/_carousel.scss */
+/* line 105, ../styles/components/_carousel.scss */
 .row_tab.open .active {
   position: relative;
 }
@@ -3813,21 +3836,21 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 @media (min-width: 1280px) {
-  /* line 131, ../styles/components/_carousel.scss */
+  /* line 115, ../styles/components/_carousel.scss */
   .desc_crit {
     height: 160px;
     max-height: 160px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 139, ../styles/components/_carousel.scss */
+  /* line 123, ../styles/components/_carousel.scss */
   .desc_crit {
     height: 180px;
     max-height: 180px;
   }
 }
 @media (max-width: 768px) {
-  /* line 145, ../styles/components/_carousel.scss */
+  /* line 129, ../styles/components/_carousel.scss */
   .tabs {
     font-size: 18.2px;
     font-size: 1.3rem;
@@ -3835,12 +3858,12 @@ body {
     text-align: center;
   }
 
-  /* line 150, ../styles/components/_carousel.scss */
+  /* line 134, ../styles/components/_carousel.scss */
   .desc_crit {
     display: none;
   }
 
-  /* line 155, ../styles/components/_carousel.scss */
+  /* line 139, ../styles/components/_carousel.scss */
   #all_new_chronique #chroniques .all_chronicles {
     display: block;
     float: none;
@@ -3848,25 +3871,104 @@ body {
     text-align: center;
     width: 200px;
   }
-  /* line 163, ../styles/components/_carousel.scss */
+  /* line 147, ../styles/components/_carousel.scss */
   #all_new_chronique #chroniques .critiques .columns {
     margin-bottom: 2em;
   }
-  /* line 166, ../styles/components/_carousel.scss */
+  /* line 150, ../styles/components/_carousel.scss */
   #all_new_chronique #chroniques .critiques img {
     height: 250px;
   }
 }
 @media (max-width: 480px) {
-  /* line 177, ../styles/components/_carousel.scss */
+  /* line 161, ../styles/components/_carousel.scss */
   #all_new_chronique #chroniques .critiques .columns {
     margin-bottom: 2em;
   }
-  /* line 180, ../styles/components/_carousel.scss */
+  /* line 164, ../styles/components/_carousel.scss */
   #all_new_chronique #chroniques .critiques img {
     height: 155px;
   }
 }
+/* ================ M A S O N R Y
+===================================================== */
+/* line 4, ../styles/components/_masonry.scss */
+.liste_ouvrage {
+  padding: 2rem 0;
+}
+/* line 6, ../styles/components/_masonry.scss */
+.liste_ouvrage .simili-title {
+  padding-bottom: 1rem;
+}
+/* line 9, ../styles/components/_masonry.scss */
+.liste_ouvrage article {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  background: white;
+  margin-bottom: 2em;
+}
+/* line 13, ../styles/components/_masonry.scss */
+.liste_ouvrage article img {
+  height: auto;
+  width: 100%;
+}
+/* line 17, ../styles/components/_masonry.scss */
+.liste_ouvrage article .entry-header {
+  display: block;
+  overflow: hidden;
+  padding: 1rem 1rem 0 1rem;
+}
+/* line 21, ../styles/components/_masonry.scss */
+.liste_ouvrage article .entry-header p {
+  display: block;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-size: 22.4px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  position: relative;
+  background: white;
+  text-align: left;
+}
+/* line 29, ../styles/components/_masonry.scss */
+.liste_ouvrage article .entry-header p:before {
+  transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99863, M12=--0.05234, M21=-0.05234, M22=0.99863);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99863, M12=--0.05234, M21=-0.05234, M22=0.99863)";
+  zoom: 1;
+  background: inherit;
+  content: '';
+  display: block;
+  height: 35px;
+  left: -20px;
+  position: absolute;
+  top: -20px;
+  width: 115%;
+}
+/* line 40, ../styles/components/_masonry.scss */
+.liste_ouvrage article .entry-header p span {
+  position: relative;
+  top: -.5rem;
+}
+/* line 46, ../styles/components/_masonry.scss */
+.liste_ouvrage article .genre {
+  color: #666;
+  font-family: "Alegreya", Georgia, serif;
+  font-style: italic;
+  padding: 0 1rem;
+}
+/* line 52, ../styles/components/_masonry.scss */
+.liste_ouvrage article .entry-meta {
+  border-top: 1px solid #ccc;
+  color: #666;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: right;
+}
+
 /********************************************************************************************************************************************************************************
 ********************* S E C T I O N   B I B L I O T H E Q U E *****************
 /********************************************************************************************************************************************************************************/
@@ -4384,92 +4486,13 @@ body {
   margin-top: 1rem;
 }
 
-/* ================ L A S T  5 0
-===================================================== */
-/* line 428, ../styles/pages/_chronique.scss */
-.liste_ouvrage {
-  padding: 2rem 0;
-}
-/* line 430, ../styles/pages/_chronique.scss */
-.liste_ouvrage .simili-title {
-  padding-bottom: 1rem;
-}
-/* line 433, ../styles/pages/_chronique.scss */
-.liste_ouvrage article {
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  background-clip: padding-box;
-  background: white;
-  margin-bottom: 2em;
-}
-/* line 437, ../styles/pages/_chronique.scss */
-.liste_ouvrage article img {
-  height: auto;
-  width: 100%;
-}
-/* line 441, ../styles/pages/_chronique.scss */
-.liste_ouvrage article .entry-header {
-  display: block;
-  overflow: hidden;
-  padding: 1rem 1rem 0 1rem;
-}
-/* line 445, ../styles/pages/_chronique.scss */
-.liste_ouvrage article .entry-header p {
-  display: block;
-  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
-  font-size: 22.4px;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  position: relative;
-  background: white;
-  text-align: left;
-}
-/* line 453, ../styles/pages/_chronique.scss */
-.liste_ouvrage article .entry-header p:before {
-  transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -webkit-transform: rotate(-3deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99863, M12=--0.05234, M21=-0.05234, M22=0.99863);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.99863, M12=--0.05234, M21=-0.05234, M22=0.99863)";
-  zoom: 1;
-  background: inherit;
-  content: '';
-  display: block;
-  height: 35px;
-  left: -20px;
-  position: absolute;
-  top: -20px;
-  width: 115%;
-}
-/* line 464, ../styles/pages/_chronique.scss */
-.liste_ouvrage article .entry-header p span {
-  position: relative;
-  top: -.5rem;
-}
-/* line 470, ../styles/pages/_chronique.scss */
-.liste_ouvrage article .genre {
-  color: #666;
-  font-family: "Alegreya", Georgia, serif;
-  font-style: italic;
-  padding: 0 1rem;
-}
-/* line 476, ../styles/pages/_chronique.scss */
-.liste_ouvrage article .entry-meta {
-  border-top: 1px solid #ccc;
-  color: #666;
-  margin-top: 1rem;
-  padding: 1rem;
-  text-align: right;
-}
-
 /* ================ F I C H E   B I O
 ===================================================== */
-/* line 489, ../styles/pages/_chronique.scss */
+/* line 428, ../styles/pages/_chronique.scss */
 #author_biography {
   margin-top: 3em;
 }
-/* line 491, ../styles/pages/_chronique.scss */
+/* line 430, ../styles/pages/_chronique.scss */
 #author_biography .life {
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   font-weight: bold;
@@ -4478,7 +4501,7 @@ body {
   color: #666;
   text-transform: uppercase;
 }
-/* line 498, ../styles/pages/_chronique.scss */
+/* line 437, ../styles/pages/_chronique.scss */
 #author_biography .bio-title {
   color: #BE2700;
   font-size: 84px;
@@ -4487,58 +4510,42 @@ body {
   margin: 0 0 2rem 0;
   text-transform: uppercase;
 }
-/* line 505, ../styles/pages/_chronique.scss */
+/* line 444, ../styles/pages/_chronique.scss */
 #author_biography .basic_list {
   margin-bottom: 2rem;
 }
-/* line 507, ../styles/pages/_chronique.scss */
+/* line 446, ../styles/pages/_chronique.scss */
 #author_biography .basic_list strong {
   display: inline-block;
   text-align: right;
   width: 7rem;
 }
-/* line 512, ../styles/pages/_chronique.scss */
+/* line 451, ../styles/pages/_chronique.scss */
 #author_biography .basic_list li:last-child {
   border: 0;
 }
-/* line 516, ../styles/pages/_chronique.scss */
+/* line 455, ../styles/pages/_chronique.scss */
 #author_biography .bio p {
   margin: 0 0 1em 0;
 }
-/* line 519, ../styles/pages/_chronique.scss */
+/* line 458, ../styles/pages/_chronique.scss */
 #author_biography .clip-svg {
   width: 0;
   height: 0;
 }
-/* line 523, ../styles/pages/_chronique.scss */
+/* line 462, ../styles/pages/_chronique.scss */
 #author_biography .portrait {
   width: 50%;
   margin: 0 auto;
   position: relative;
 }
-/* line 527, ../styles/pages/_chronique.scss */
+/* line 466, ../styles/pages/_chronique.scss */
 #author_biography .portrait img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 533, ../styles/pages/_chronique.scss */
-.ruban, .ruban-02 {
-  position: absolute;
-  bottom: 0;
-}
-
-/* line 537, ../styles/pages/_chronique.scss */
-.ruban-02 {
-  background-color: white;
-  height: 45px;
-  overflow: hidden;
-  padding: 5px 0;
-  right: 0;
-  width: 50%;
-}
-
-/* line 545, ../styles/pages/_chronique.scss */
+/* line 472, ../styles/pages/_chronique.scss */
 .ruban {
   -webkit-transform: skewY(-10deg);
   -moz-transform: skewY(-10deg);
@@ -4546,25 +4553,27 @@ body {
   -o-transform: skewY(-10deg);
   transform: skewY(-10deg);
   background-color: #BE2700;
+  bottom: -23px;
   color: white;
   height: 45px;
   overflow: hidden;
   padding: 5px 0;
+  position: absolute;
   text-align: center;
-  z-index: 1;
   width: 100%;
+  z-index: 1;
 }
-/* line 555, ../styles/pages/_chronique.scss */
+/* line 484, ../styles/pages/_chronique.scss */
 .ruban span {
   line-height: 1;
 }
-/* line 556, ../styles/pages/_chronique.scss */
+/* line 485, ../styles/pages/_chronique.scss */
 .ruban .ruban-text {
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   text-transform: uppercase;
 }
-/* line 561, ../styles/pages/_chronique.scss */
+/* line 490, ../styles/pages/_chronique.scss */
 .ruban .ruban-deco {
   border-top: 1px solid white;
   display: block;
@@ -4574,13 +4583,13 @@ body {
   top: 4px;
   width: 60%;
 }
-/* line 569, ../styles/pages/_chronique.scss */
+/* line 498, ../styles/pages/_chronique.scss */
 .ruban .ruban-deco:before, .ruban .ruban-deco:after {
   content: '';
   position: absolute;
   top: -5px;
 }
-/* line 574, ../styles/pages/_chronique.scss */
+/* line 503, ../styles/pages/_chronique.scss */
 .ruban .ruban-deco:before {
   width: 0;
   height: 0;
@@ -4590,7 +4599,7 @@ body {
   left: -5px;
   right: auto;
 }
-/* line 583, ../styles/pages/_chronique.scss */
+/* line 512, ../styles/pages/_chronique.scss */
 .ruban .ruban-deco:after {
   width: 0;
   height: 0;
@@ -4600,7 +4609,7 @@ body {
   right: -5px;
   left: auto;
 }
-/* line 592, ../styles/pages/_chronique.scss */
+/* line 521, ../styles/pages/_chronique.scss */
 .ruban .ruban-deco span {
   background: #BE2700;
   display: inline-block;
@@ -4608,7 +4617,7 @@ body {
   position: relative;
   top: -5px;
 }
-/* line 600, ../styles/pages/_chronique.scss */
+/* line 529, ../styles/pages/_chronique.scss */
 .ruban .ruban-text-02 {
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
@@ -4617,32 +4626,32 @@ body {
   top: -5px;
 }
 
-/* line 608, ../styles/pages/_chronique.scss */
+/* line 537, ../styles/pages/_chronique.scss */
 #author_news {
   padding: 2rem 0;
 }
-/* line 610, ../styles/pages/_chronique.scss */
+/* line 539, ../styles/pages/_chronique.scss */
 #author_news .simili-title {
   margin-bottom: 2rem;
 }
-/* line 613, ../styles/pages/_chronique.scss */
+/* line 542, ../styles/pages/_chronique.scss */
 #author_news .article_focus {
   margin-bottom: 1em;
 }
-/* line 616, ../styles/pages/_chronique.scss */
+/* line 545, ../styles/pages/_chronique.scss */
 #author_news h2 {
   color: #BE2700;
   margin: 0;
 }
-/* line 621, ../styles/pages/_chronique.scss */
+/* line 550, ../styles/pages/_chronique.scss */
 #author_news #breves h2 {
   text-transform: uppercase;
 }
-/* line 624, ../styles/pages/_chronique.scss */
+/* line 553, ../styles/pages/_chronique.scss */
 #author_news #breves .basic_list {
   margin-bottom: 1em;
 }
-/* line 626, ../styles/pages/_chronique.scss */
+/* line 555, ../styles/pages/_chronique.scss */
 #author_news #breves .basic_list a {
   padding: .5em 0;
 }
@@ -4817,23 +4826,47 @@ section:nth-child(2n+2), #most {
 }
 
 /* line 90, ../styles/themes/_theme.scss */
+#perfect {
+  background-color: #314a7f;
+  /* Fallback */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4b6cb7), to(#182848));
+  background-image: -webkit-linear-gradient(left, #4b6cb7, #182848);
+  background-image: -moz-linear-gradient(left, #4b6cb7, #182848);
+  background-image: -ms-linear-gradient(left, #4b6cb7, #182848);
+  background-image: -o-linear-gradient(left, #4b6cb7, #182848);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#4b6cb7', EndColorStr='#182848')";
+  color: white;
+}
+/* line 93, ../styles/themes/_theme.scss */
+#perfect.jeff {
+  background-color: #3a88bc;
+  /* Fallback */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#24C6DC), to(#514A9D));
+  background-image: -webkit-linear-gradient(left, #24C6DC, #514A9D);
+  background-image: -moz-linear-gradient(left, #24C6DC, #514A9D);
+  background-image: -ms-linear-gradient(left, #24C6DC, #514A9D);
+  background-image: -o-linear-gradient(left, #24C6DC, #514A9D);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', EndColorStr='#514A9D')";
+}
+
+/* line 97, ../styles/themes/_theme.scss */
 #footer {
   background: #262626;
 }
-/* line 92, ../styles/themes/_theme.scss */
+/* line 99, ../styles/themes/_theme.scss */
 #footer p {
   color: white;
 }
-/* line 95, ../styles/themes/_theme.scss */
+/* line 102, ../styles/themes/_theme.scss */
 #footer a {
   color: #727272;
 }
-/* line 97, ../styles/themes/_theme.scss */
+/* line 104, ../styles/themes/_theme.scss */
 #footer a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 102, ../styles/themes/_theme.scss */
+/* line 109, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] {
   background-color: #00bbff;
   /* Fallback */
@@ -4845,24 +4878,24 @@ section:nth-child(2n+2), #most {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#00BBFF', EndColorStr='#00BBFF')";
   color: #f1f1f1;
 }
-/* line 105, ../styles/themes/_theme.scss */
+/* line 112, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] a {
   color: white;
 }
-/* line 107, ../styles/themes/_theme.scss */
+/* line 114, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 112, ../styles/themes/_theme.scss */
+/* line 119, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] p, #footer[data-weather="sunny"] h2, #footer[data-weather="sunny"] #weather_city {
   color: white;
 }
-/* line 113, ../styles/themes/_theme.scss */
+/* line 120, ../styles/themes/_theme.scss */
 #footer[data-weather="sunny"] #weather_city {
   border-bottom: 2px solid white;
 }
-/* line 117, ../styles/themes/_theme.scss */
+/* line 124, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] {
   background-color: #2eb5e5;
   /* Fallback */
@@ -4874,24 +4907,24 @@ section:nth-child(2n+2), #most {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2EB5E5', EndColorStr='#2EB5E5')";
   color: #f1f1f1;
 }
-/* line 120, ../styles/themes/_theme.scss */
+/* line 127, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] a {
   color: white;
 }
-/* line 122, ../styles/themes/_theme.scss */
+/* line 129, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 127, ../styles/themes/_theme.scss */
+/* line 134, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] p, #footer[data-weather="cloudy"] h2, #footer[data-weather="cloudy"] #weather_city {
   color: white;
 }
-/* line 128, ../styles/themes/_theme.scss */
+/* line 135, ../styles/themes/_theme.scss */
 #footer[data-weather="cloudy"] #weather_city {
   border-bottom: 2px solid white;
 }
-/* line 132, ../styles/themes/_theme.scss */
+/* line 139, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] {
   background-color: #e6e6e6;
   /* Fallback */
@@ -4902,24 +4935,24 @@ section:nth-child(2n+2), #most {
   background-image: -o-linear-gradient(left, #E6E6E6, #E6E6E6);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#E6E6E6', EndColorStr='#E6E6E6')";
 }
-/* line 134, ../styles/themes/_theme.scss */
+/* line 141, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] a {
   color: #333;
 }
-/* line 136, ../styles/themes/_theme.scss */
+/* line 143, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] a:hover {
   color: #333;
   text-decoration: underline;
 }
-/* line 141, ../styles/themes/_theme.scss */
+/* line 148, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] p, #footer[data-weather="rainy"] h2, #footer[data-weather="rainy"] #weather_city {
   color: black;
 }
-/* line 142, ../styles/themes/_theme.scss */
+/* line 149, ../styles/themes/_theme.scss */
 #footer[data-weather="rainy"] #weather_city {
   border-bottom: 2px solid black;
 }
-/* line 146, ../styles/themes/_theme.scss */
+/* line 153, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] {
   background-color: #85db8c;
   /* Fallback */
@@ -4930,24 +4963,24 @@ section:nth-child(2n+2), #most {
   background-image: -o-linear-gradient(left, #85DB8C, #85DB8C);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#85DB8C', EndColorStr='#85DB8C')";
 }
-/* line 148, ../styles/themes/_theme.scss */
+/* line 155, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] a {
   color: #333;
 }
-/* line 150, ../styles/themes/_theme.scss */
+/* line 157, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] a:hover {
   color: #333;
   text-decoration: underline;
 }
-/* line 155, ../styles/themes/_theme.scss */
+/* line 162, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] p, #footer[data-weather="snowy"] h2, #footer[data-weather="snowy"] #weather_city {
   color: black;
 }
-/* line 156, ../styles/themes/_theme.scss */
+/* line 163, ../styles/themes/_theme.scss */
 #footer[data-weather="snowy"] #weather_city {
   border-bottom: 2px solid black;
 }
-/* line 160, ../styles/themes/_theme.scss */
+/* line 167, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] {
   background-color: #f3d166;
   /* Fallback */
@@ -4958,24 +4991,24 @@ section:nth-child(2n+2), #most {
   background-image: -o-linear-gradient(left, #F3D166, #F3D166);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#F3D166', EndColorStr='#F3D166')";
 }
-/* line 162, ../styles/themes/_theme.scss */
+/* line 169, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] a {
   color: #333;
 }
-/* line 164, ../styles/themes/_theme.scss */
+/* line 171, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] a:hover {
   color: #333;
   text-decoration: underline;
 }
-/* line 169, ../styles/themes/_theme.scss */
+/* line 176, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] p, #footer[data-weather="rainbow"] h2, #footer[data-weather="rainbow"] #weather_city {
   color: black;
 }
-/* line 170, ../styles/themes/_theme.scss */
+/* line 177, ../styles/themes/_theme.scss */
 #footer[data-weather="rainbow"] #weather_city {
   border-bottom: 2px solid black;
 }
-/* line 174, ../styles/themes/_theme.scss */
+/* line 181, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] {
   background-color: #222233;
   /* Fallback */
@@ -4987,24 +5020,24 @@ section:nth-child(2n+2), #most {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#222233', EndColorStr='#222233')";
   color: #f1f1f1;
 }
-/* line 177, ../styles/themes/_theme.scss */
+/* line 184, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] a {
   color: white;
 }
-/* line 179, ../styles/themes/_theme.scss */
+/* line 186, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 184, ../styles/themes/_theme.scss */
+/* line 191, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] p, #footer[data-weather="starry"] h2, #footer[data-weather="starry"] #weather_city {
   color: white;
 }
-/* line 185, ../styles/themes/_theme.scss */
+/* line 192, ../styles/themes/_theme.scss */
 #footer[data-weather="starry"] #weather_city {
   border-bottom: 2px solid white;
 }
-/* line 189, ../styles/themes/_theme.scss */
+/* line 196, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] {
   background-color: #444444;
   /* Fallback */
@@ -5016,20 +5049,20 @@ section:nth-child(2n+2), #most {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#444444', EndColorStr='#444444')";
   color: #f1f1f1;
 }
-/* line 192, ../styles/themes/_theme.scss */
+/* line 199, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] a {
   color: white;
 }
-/* line 194, ../styles/themes/_theme.scss */
+/* line 201, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 199, ../styles/themes/_theme.scss */
+/* line 206, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] p, #footer[data-weather="stormy"] h2, #footer[data-weather="stormy"] #weather_city {
   color: white;
 }
-/* line 200, ../styles/themes/_theme.scss */
+/* line 207, ../styles/themes/_theme.scss */
 #footer[data-weather="stormy"] #weather_city {
   border-bottom: 2px solid white;
 }

@@ -125,3 +125,112 @@
 		}
 	}
 }
+
+/********************************************************************************************************************************************************************************
+********************* P R O F I L E    P A G E *****************
+/********************************************************************************************************************************************************************************/
+
+	#head {
+		margin: 3em 0 2em 0;
+	}
+	.bloc-profil {
+		@include border-radius(5px);
+		border: 1px solid #ccc;
+		position: relative;
+		.avatar {
+			position: absolute;
+			top: -55px;
+			left: -55px;
+			.title {
+				@include skewY(-10deg);
+				background-color: $base-color-elbakin;
+				bottom: -23px;
+				color: white;
+				overflow: hidden;
+				padding: 5px 0;
+				position: absolute;
+				text-align: center;
+				width: 100%;
+				font-family: $font-stack-headings;
+				text-transform: uppercase;
+				bottom: -42px;
+				left: 0;
+			}
+		}
+		.bloc {
+			float: left;
+			height: 200px;
+			margin: 50px 0;
+		}
+		.bloc-princeps {
+			padding-left: 150px;
+			width: 62%;
+			margin-right: 50px;
+			h1 {
+				color: $base-color-elbakin;
+				margin: 0;
+				padding: 0;
+				text-transform: uppercase;
+			}
+			.socially-engaged-on {
+				margin: 1em 0;
+				padding: 0;
+				list-style: none none;
+				li {
+					@include rem(2);
+					display: inline-block;
+					margin-right: 1rem;
+					.icon-facebook { color: #47639E; }
+					.icon-google-plus { color: #DD4B39; }
+					.icon-twitter { color: #55ACEE; }
+				}
+			}
+			p {
+				border-top: 1px solid #ccc;
+				padding-top: 1rem;
+			}
+		}
+		.bloc-duke {
+			border-left: 1px solid #ccc;
+			width: 33%;
+			.side-head {
+				@include translate(0,50%);
+				list-style: none none;
+				position: relative;
+				text-align: center;
+				top: 30%;
+				li {
+					display: inline-block;
+					strong, span { display: block; }
+					span { text-transform: uppercase; }
+					.icon {
+						@include rem(2);
+						float: left;
+						margin-right: 1rem;
+					}
+					&:first-child {
+						padding-right: 2rem;
+						margin-right: 2rem;
+						border-right: 1px solid #ccc;
+					}
+				}
+			}
+		}
+		.bloc-noble {
+			background: #eaeaea;
+			border-top: 1px solid #ccc;
+			clear: both;
+			padding: 1rem;
+			.tabs { float: none; }
+		}
+	}
+
+	/* ============== R E S P O N S I V E
+	========================================================== */
+
+	@media (min-width: $medium-screen) and (min-width: $large-screen) {
+		.bloc-profil {
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
