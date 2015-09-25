@@ -523,10 +523,86 @@
 	.portrait {
 		width: 50%;
 		margin: 0 auto;
+		position: relative;
 		img {
 			max-width: 100%;
 			height: auto;
 		}
+	}
+}
+.ruban, .ruban-02 {
+	position: absolute;
+	bottom: 0;
+}
+.ruban-02 {
+	background-color: white;
+	height: 45px;
+	overflow: hidden;
+	padding: 5px 0;
+	right: 0;
+	width: 50%;
+}
+.ruban {
+	@include skewY(-10deg);
+	background-color: $base-color-elbakin;
+	color: white;
+	height: 45px;
+	overflow: hidden;
+	padding: 5px 0;
+	text-align: center;
+	z-index: 1;
+	width: 100%;
+	span { line-height: 1; }
+	.ruban-text {
+		display: block;
+		font-family: $font-stack-headings;
+		text-transform: uppercase;
+	}
+	.ruban-deco {
+		border-top: 1px solid white;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+		top: 4px;
+		width: 60%;
+		&:before, &:after {
+			content: '';
+			position: absolute;
+			top: -5px;
+		}
+		&:before {
+			width: 0;
+			height: 0;
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+			border-left: 5px solid white;
+			left: -5px;
+			right: auto;
+		}
+		&:after {
+			width: 0;
+			height: 0;
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+			border-right: 5px solid white;
+			right: -5px;
+			left: auto;
+		}
+		span {
+			background: $base-color-elbakin;
+			display: inline-block;
+			padding: 0 5px;
+			position: relative;
+			top: -5px;
+		}
+	}
+	.ruban-text-02 {
+		display: block;
+		font-family: $font-stack-headings;
+		text-transform: uppercase;
+		position: relative;
+		top: -5px;
 	}
 }
 #author_news {

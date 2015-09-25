@@ -96,6 +96,13 @@
 	-o-transform: skewX($deg);
 	transform: skewX($deg); 
 }
+@mixin skewY($deg) {
+	-webkit-transform: skewY($deg);
+	-moz-transform: skewY($deg);
+	-ms-transform: skewY($deg);
+	-o-transform: skewY($deg);
+	transform: skewY($deg); 
+}
 @mixin rotate($degrees) {
 	transform: rotate($degrees);
 	-moz-transform: rotate($degrees);
