@@ -118,6 +118,12 @@
 	-webkit-transform: rotateX($degrees);
 	transform: rotateX($degrees);
 }
+@mixin rotateY($degrees) {
+	-moz-transform: rotateY($degrees);
+	-ms-transform: rotateY($degrees);
+	-webkit-transform: rotateY($degrees);
+	transform: rotateY($degrees);
+}
 @mixin translate($arg1, $arg2) {
 	transform: translate($arg1, $arg2);
 	-moz-transform: translate($arg1, $arg2);

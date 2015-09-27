@@ -463,14 +463,17 @@
 		width: 50%;
 		margin: 0 auto;
 		position: relative;
-		img {
-			max-width: 100%;
-			height: auto;
+		.blason {
+			img {
+				@include rotateY(20deg);
+				max-width: 100%;
+				height: auto;
+			}
 		}
 	}
 }
 .ruban {
-	@include skewY(-10deg);
+	@include rotateY(20deg);
 	background-color: $base-color-elbakin;
 	bottom: -23px;
 	color: white;

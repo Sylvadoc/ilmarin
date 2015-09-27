@@ -4539,19 +4539,22 @@ body {
   margin: 0 auto;
   position: relative;
 }
-/* line 466, ../styles/pages/_chronique.scss */
-#author_biography .portrait img {
+/* line 467, ../styles/pages/_chronique.scss */
+#author_biography .portrait .blason img {
+  -moz-transform: rotateY(20deg);
+  -ms-transform: rotateY(20deg);
+  -webkit-transform: rotateY(20deg);
+  transform: rotateY(20deg);
   max-width: 100%;
   height: auto;
 }
 
-/* line 472, ../styles/pages/_chronique.scss */
+/* line 475, ../styles/pages/_chronique.scss */
 .ruban {
-  -webkit-transform: skewY(-10deg);
-  -moz-transform: skewY(-10deg);
-  -ms-transform: skewY(-10deg);
-  -o-transform: skewY(-10deg);
-  transform: skewY(-10deg);
+  -moz-transform: rotateY(20deg);
+  -ms-transform: rotateY(20deg);
+  -webkit-transform: rotateY(20deg);
+  transform: rotateY(20deg);
   background-color: #BE2700;
   bottom: -23px;
   color: white;
@@ -4563,17 +4566,17 @@ body {
   width: 100%;
   z-index: 1;
 }
-/* line 484, ../styles/pages/_chronique.scss */
+/* line 487, ../styles/pages/_chronique.scss */
 .ruban span {
   line-height: 1;
 }
-/* line 485, ../styles/pages/_chronique.scss */
+/* line 488, ../styles/pages/_chronique.scss */
 .ruban .ruban-text {
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   text-transform: uppercase;
 }
-/* line 490, ../styles/pages/_chronique.scss */
+/* line 493, ../styles/pages/_chronique.scss */
 .ruban .ruban-deco {
   border-top: 1px solid white;
   display: block;
@@ -4583,13 +4586,13 @@ body {
   top: 4px;
   width: 60%;
 }
-/* line 498, ../styles/pages/_chronique.scss */
+/* line 501, ../styles/pages/_chronique.scss */
 .ruban .ruban-deco:before, .ruban .ruban-deco:after {
   content: '';
   position: absolute;
   top: -5px;
 }
-/* line 503, ../styles/pages/_chronique.scss */
+/* line 506, ../styles/pages/_chronique.scss */
 .ruban .ruban-deco:before {
   width: 0;
   height: 0;
@@ -4599,7 +4602,7 @@ body {
   left: -5px;
   right: auto;
 }
-/* line 512, ../styles/pages/_chronique.scss */
+/* line 515, ../styles/pages/_chronique.scss */
 .ruban .ruban-deco:after {
   width: 0;
   height: 0;
@@ -4609,7 +4612,7 @@ body {
   right: -5px;
   left: auto;
 }
-/* line 521, ../styles/pages/_chronique.scss */
+/* line 524, ../styles/pages/_chronique.scss */
 .ruban .ruban-deco span {
   background: #BE2700;
   display: inline-block;
@@ -4617,7 +4620,7 @@ body {
   position: relative;
   top: -5px;
 }
-/* line 529, ../styles/pages/_chronique.scss */
+/* line 532, ../styles/pages/_chronique.scss */
 .ruban .ruban-text-02 {
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
@@ -4626,32 +4629,32 @@ body {
   top: -5px;
 }
 
-/* line 537, ../styles/pages/_chronique.scss */
+/* line 540, ../styles/pages/_chronique.scss */
 #author_news {
   padding: 2rem 0;
 }
-/* line 539, ../styles/pages/_chronique.scss */
+/* line 542, ../styles/pages/_chronique.scss */
 #author_news .simili-title {
   margin-bottom: 2rem;
 }
-/* line 542, ../styles/pages/_chronique.scss */
+/* line 545, ../styles/pages/_chronique.scss */
 #author_news .article_focus {
   margin-bottom: 1em;
 }
-/* line 545, ../styles/pages/_chronique.scss */
+/* line 548, ../styles/pages/_chronique.scss */
 #author_news h2 {
   color: #BE2700;
   margin: 0;
 }
-/* line 550, ../styles/pages/_chronique.scss */
+/* line 553, ../styles/pages/_chronique.scss */
 #author_news #breves h2 {
   text-transform: uppercase;
 }
-/* line 553, ../styles/pages/_chronique.scss */
+/* line 556, ../styles/pages/_chronique.scss */
 #author_news #breves .basic_list {
   margin-bottom: 1em;
 }
-/* line 555, ../styles/pages/_chronique.scss */
+/* line 558, ../styles/pages/_chronique.scss */
 #author_news #breves .basic_list a {
   padding: .5em 0;
 }
