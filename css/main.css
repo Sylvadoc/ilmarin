@@ -3702,8 +3702,57 @@ body {
 #head {
   margin: 3em 0 2em 0;
 }
-
 /* line 136, ../styles/components/_card.scss */
+#head .tabs a {
+  background-color: white;
+  color: #333;
+}
+/* line 139, ../styles/components/_card.scss */
+#head .tabs a.active {
+  background-color: #BE2700;
+  color: white;
+}
+/* line 146, ../styles/components/_card.scss */
+#head .row_tab .basic_list {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  -o-columns: 2;
+  columns: 2;
+  margin: 1rem;
+}
+/* line 152, ../styles/components/_card.scss */
+#head .trophies-list strong, #head .trophies-list em {
+  display: block;
+}
+/* line 153, ../styles/components/_card.scss */
+#head .trophies-list strong {
+  text-transform: uppercase;
+}
+/* line 154, ../styles/components/_card.scss */
+#head .trophies-list .icon {
+  font-size: 54.6px;
+  font-size: 3.9rem;
+  float: left;
+  margin-right: 1rem;
+}
+/* line 155, ../styles/components/_card.scss */
+#head .trophies-list li {
+  padding: 1rem 0;
+}
+/* line 156, ../styles/components/_card.scss */
+#head .trophies-list .gold-trophy .icon {
+  color: goldenrod;
+}
+/* line 157, ../styles/components/_card.scss */
+#head .trophies-list .silver-trophy .icon {
+  color: lightslategray;
+}
+/* line 158, ../styles/components/_card.scss */
+#head .trophies-list .bronze-trophy .icon {
+  color: sienna;
+}
+
+/* line 161, ../styles/components/_card.scss */
 .bloc-profil {
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -3711,87 +3760,98 @@ body {
   border: 1px solid #ccc;
   position: relative;
 }
-/* line 140, ../styles/components/_card.scss */
+/* line 165, ../styles/components/_card.scss */
+.bloc-profil .nonsense {
+  background-color: #BE2700;
+  height: 66%;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+/* line 174, ../styles/components/_card.scss */
 .bloc-profil .avatar {
+  -webkit-border-radius: 55px;
+  border-radius: 55px;
+  background-clip: padding-box;
+  border: thick solid white;
+  height: 110px;
+  overflow: hidden;
+  width: 110px;
   position: absolute;
   top: -55px;
   left: -55px;
+  z-index: 1;
 }
-/* line 144, ../styles/components/_card.scss */
-.bloc-profil .avatar .title {
-  -webkit-transform: skewY(-10deg);
-  -moz-transform: skewY(-10deg);
-  -ms-transform: skewY(-10deg);
-  -o-transform: skewY(-10deg);
-  transform: skewY(-10deg);
-  background-color: #BE2700;
-  bottom: -23px;
-  color: white;
-  overflow: hidden;
-  padding: 5px 0;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
-  text-transform: uppercase;
-  bottom: -42px;
-  left: 0;
-}
-/* line 160, ../styles/components/_card.scss */
+/* line 185, ../styles/components/_card.scss */
 .bloc-profil .bloc {
   float: left;
   height: 200px;
   margin: 50px 0;
 }
-/* line 165, ../styles/components/_card.scss */
+/* line 190, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps {
   padding-left: 150px;
   width: 62%;
   margin-right: 50px;
 }
-/* line 169, ../styles/components/_card.scss */
+/* line 194, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps h1 {
+  font-size: 5rem;
   color: #BE2700;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  line-height: 1;
 }
-/* line 175, ../styles/components/_card.scss */
+/* line 202, ../styles/components/_card.scss */
+.bloc-profil .bloc-princeps .title {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+/* line 208, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .socially-engaged-on {
   margin: 1em 0;
   padding: 0;
   list-style: none none;
 }
-/* line 179, ../styles/components/_card.scss */
+/* line 212, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .socially-engaged-on li {
   font-size: 28px;
   font-size: 2rem;
   display: inline-block;
   margin-right: 1rem;
 }
-/* line 183, ../styles/components/_card.scss */
+/* line 216, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .socially-engaged-on li .icon-facebook {
   color: #47639E;
 }
-/* line 184, ../styles/components/_card.scss */
+/* line 217, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .socially-engaged-on li .icon-google-plus {
   color: #DD4B39;
 }
-/* line 185, ../styles/components/_card.scss */
+/* line 218, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .socially-engaged-on li .icon-twitter {
   color: #55ACEE;
 }
-/* line 188, ../styles/components/_card.scss */
+/* line 221, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps p {
   border-top: 1px solid #ccc;
   padding-top: 1rem;
 }
-/* line 193, ../styles/components/_card.scss */
+/* line 224, ../styles/components/_card.scss */
+.bloc-profil .bloc-princeps p strong {
+  text-transform: uppercase;
+}
+/* line 229, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke {
   border-left: 1px solid #ccc;
   width: 33%;
 }
-/* line 196, ../styles/components/_card.scss */
+/* line 232, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head {
   transform: translate(0, 50%);
   -moz-transform: translate(0, 50%);
@@ -3803,39 +3863,43 @@ body {
   text-align: center;
   top: 30%;
 }
-/* line 202, ../styles/components/_card.scss */
+/* line 238, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li {
   display: inline-block;
 }
-/* line 204, ../styles/components/_card.scss */
+/* line 240, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li strong, .bloc-profil .bloc-duke .side-head li span {
   display: block;
 }
-/* line 205, ../styles/components/_card.scss */
+/* line 241, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li span {
   text-transform: uppercase;
 }
-/* line 206, ../styles/components/_card.scss */
+/* line 242, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li .icon {
   font-size: 28px;
   font-size: 2rem;
   float: left;
   margin-right: 1rem;
 }
-/* line 211, ../styles/components/_card.scss */
+/* line 247, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li:first-child {
   padding-right: 2rem;
   margin-right: 2rem;
   border-right: 1px solid #ccc;
 }
-/* line 219, ../styles/components/_card.scss */
+/* line 255, ../styles/components/_card.scss */
 .bloc-profil .bloc-noble {
-  background: #eaeaea;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  background-clip: padding-box;
+  background: white;
   border-top: 1px solid #ccc;
   clear: both;
   padding: 1rem;
+  position: relative;
 }
-/* line 224, ../styles/components/_card.scss */
+/* line 262, ../styles/components/_card.scss */
 .bloc-profil .bloc-noble .tabs {
   float: none;
 }
@@ -3843,7 +3907,7 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 @media (min-width: 1024px) and (min-width: 1280px) {
-  /* line 232, ../styles/components/_card.scss */
+  /* line 270, ../styles/components/_card.scss */
   .bloc-profil {
     width: 90%;
     margin: 0 auto;

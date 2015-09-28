@@ -132,30 +132,55 @@
 
 	#head {
 		margin: 3em 0 2em 0;
+		.tabs {
+			a {
+				background-color: white;
+				color: $base-color-link;
+				&.active {
+					background-color: $base-color-elbakin;
+					color: white;
+				}
+			}
+		}
+		.row_tab {
+			.basic_list {
+				@include columns(2);
+				margin: 1rem;
+			}
+		}
+		.trophies-list {
+			strong, em { display: block; }
+			strong { text-transform: uppercase; }
+			.icon { @include rem(3.9); float: left; margin-right: 1rem; }
+			li { padding: 1rem 0;}
+			.gold-trophy .icon { color: goldenrod; }
+			.silver-trophy .icon { color: lightslategray; }
+			.bronze-trophy .icon { color: sienna; }
+		}
 	}
 	.bloc-profil {
 		@include border-radius(5px);
 		border: 1px solid #ccc;
 		position: relative;
+		.nonsense {
+			background-color: $base-color-elbakin;
+			height: 66%;
+			width: 100px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 0;
+		}
 		.avatar {
+			@include border-radius(55px);
+			border: thick solid white;
+			height: 110px;
+			overflow: hidden;
+			width: 110px;
 			position: absolute;
 			top: -55px;
 			left: -55px;
-			.title {
-				@include skewY(-10deg);
-				background-color: $base-color-elbakin;
-				bottom: -23px;
-				color: white;
-				overflow: hidden;
-				padding: 5px 0;
-				position: absolute;
-				text-align: center;
-				width: 100%;
-				font-family: $font-stack-headings;
-				text-transform: uppercase;
-				bottom: -42px;
-				left: 0;
-			}
+			z-index: 1;
 		}
 		.bloc {
 			float: left;
@@ -167,10 +192,18 @@
 			width: 62%;
 			margin-right: 50px;
 			h1 {
+				font-size: $al-size;
 				color: $base-color-elbakin;
 				margin: 0;
 				padding: 0;
 				text-transform: uppercase;
+				line-height: 1;
+			}
+			.title {
+				display: block;
+				text-transform: uppercase;
+				font-weight: bold;
+				margin-bottom: 1rem;
 			}
 			.socially-engaged-on {
 				margin: 1em 0;
@@ -188,6 +221,9 @@
 			p {
 				border-top: 1px solid #ccc;
 				padding-top: 1rem;
+				strong {
+					text-transform: uppercase;
+				}
 			}
 		}
 		.bloc-duke {
@@ -217,10 +253,12 @@
 			}
 		}
 		.bloc-noble {
-			background: #eaeaea;
+			@include border-radius(0 0 5px 5px);
+			background: white;
 			border-top: 1px solid #ccc;
 			clear: both;
 			padding: 1rem;
+			position: relative;
 			.tabs { float: none; }
 		}
 	}

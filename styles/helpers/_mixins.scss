@@ -54,6 +54,12 @@
    $CSS3
    ========================================================================== */
 
+@mixin columns($nb) {
+	-webkit-columns: $nb;
+	-moz-columns: $nb;
+	-o-columns: $nb;
+	columns: $nb;
+}
 @mixin background-size($what) {
 	-webkit-background-size: $what;
 	-moz-background-size: $what;
