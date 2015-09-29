@@ -215,8 +215,8 @@
 	top: 0;
 	width: 34vw;
 	&:before {
-		background-image: url('../images/library.jpg');
-		background-position: bottom left;
+		background-image: url('../images/argonath.jpg');
+		background-position: center left;
 	}
 }
 .section-02 {
@@ -226,7 +226,7 @@
 	top: 50vh;
 	width: 33vw;
 	&:before {
-		background-image: url('../images/argonath.jpg');
+		background-image: url('../images/map.jpg');
 	}
 }
 .section-03 {
@@ -237,7 +237,7 @@
 	width: 33vw;
 	&:before {
 		background-image: url('../images/fantasy.jpg');
-		background-position: bottom right;
+		background-position: right bottom;
 	}
 }
 .section-04 {
