@@ -200,6 +200,13 @@
 			text-transform: uppercase;
 		}
 	}
+	.copyright {
+		position: absolute;
+		bottom: 1rem;
+		right: 1rem;
+		color: rgba(255,255,255,0.5);
+		font-size: small;
+	}
 }
 .section-01 {
 	// section bibliotheque

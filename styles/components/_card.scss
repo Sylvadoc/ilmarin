@@ -237,6 +237,9 @@
 				top: 30%;
 				li {
 					display: inline-block;
+					padding-right: 2rem;
+					margin-right: 2rem;
+					border-right: 1px solid #ccc;
 					strong, span { display: block; }
 					span { text-transform: uppercase; }
 					.icon {
@@ -244,10 +247,10 @@
 						float: left;
 						margin-right: 1rem;
 					}
-					&:first-child {
-						padding-right: 2rem;
-						margin-right: 2rem;
-						border-right: 1px solid #ccc;
+					&:last-child {
+						border: 0;
+						margin-right: 0;
+						padding-right: 0;
 					}
 				}
 			}

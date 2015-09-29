@@ -3454,29 +3454,32 @@ body {
 /* line 238, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li {
   display: inline-block;
+  padding-right: 2rem;
+  margin-right: 2rem;
+  border-right: 1px solid #ccc;
 }
-/* line 240, ../styles/components/_card.scss */
+/* line 243, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li strong, .bloc-profil .bloc-duke .side-head li span {
   display: block;
 }
-/* line 241, ../styles/components/_card.scss */
+/* line 244, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li span {
   text-transform: uppercase;
 }
-/* line 242, ../styles/components/_card.scss */
+/* line 245, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li .icon {
   font-size: 28px;
   font-size: 2rem;
   float: left;
   margin-right: 1rem;
 }
-/* line 247, ../styles/components/_card.scss */
-.bloc-profil .bloc-duke .side-head li:first-child {
-  padding-right: 2rem;
-  margin-right: 2rem;
-  border-right: 1px solid #ccc;
+/* line 250, ../styles/components/_card.scss */
+.bloc-profil .bloc-duke .side-head li:last-child {
+  border: 0;
+  margin-right: 0;
+  padding-right: 0;
 }
-/* line 255, ../styles/components/_card.scss */
+/* line 258, ../styles/components/_card.scss */
 .bloc-profil .bloc-noble {
   -webkit-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
@@ -3487,7 +3490,7 @@ body {
   padding: 1rem;
   position: relative;
 }
-/* line 262, ../styles/components/_card.scss */
+/* line 265, ../styles/components/_card.scss */
 .bloc-profil .bloc-noble .tabs {
   float: none;
 }
@@ -3495,7 +3498,7 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 @media (min-width: 1024px) and (min-width: 1280px) {
-  /* line 270, ../styles/components/_card.scss */
+  /* line 273, ../styles/components/_card.scss */
   .bloc-profil {
     width: 90%;
     margin: 0 auto;
@@ -3798,46 +3801,54 @@ body {
   font-weight: 300;
   text-transform: uppercase;
 }
+/* line 203, ../styles/components/_navigation.scss */
+.section-item .copyright {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: small;
+}
 
-/* line 204, ../styles/components/_navigation.scss */
+/* line 211, ../styles/components/_navigation.scss */
 .section-01 {
   height: 100vh;
   left: 33vw;
   top: 0;
   width: 34vw;
 }
-/* line 210, ../styles/components/_navigation.scss */
+/* line 217, ../styles/components/_navigation.scss */
 .section-01:before {
   background-image: url("../images/library.jpg");
   background-position: bottom left;
 }
 
-/* line 215, ../styles/components/_navigation.scss */
+/* line 222, ../styles/components/_navigation.scss */
 .section-02 {
   height: 50vh;
   left: 0;
   top: 50vh;
   width: 33vw;
 }
-/* line 221, ../styles/components/_navigation.scss */
+/* line 228, ../styles/components/_navigation.scss */
 .section-02:before {
   background-image: url("../images/argonath.jpg");
 }
 
-/* line 225, ../styles/components/_navigation.scss */
+/* line 232, ../styles/components/_navigation.scss */
 .section-03 {
   height: 50vh;
   left: 0;
   top: 0;
   width: 33vw;
 }
-/* line 231, ../styles/components/_navigation.scss */
+/* line 238, ../styles/components/_navigation.scss */
 .section-03:before {
   background-image: url("../images/fantasy.jpg");
   background-position: bottom right;
 }
 
-/* line 236, ../styles/components/_navigation.scss */
+/* line 243, ../styles/components/_navigation.scss */
 .section-04 {
   background: DarkSeaGreen;
   right: 0;
@@ -3846,7 +3857,7 @@ body {
   height: 33vh;
 }
 
-/* line 244, ../styles/components/_navigation.scss */
+/* line 251, ../styles/components/_navigation.scss */
 .section-05 {
   background: DarkSlateGray;
   right: 0;
@@ -3855,7 +3866,7 @@ body {
   height: 33vh;
 }
 
-/* line 252, ../styles/components/_navigation.scss */
+/* line 259, ../styles/components/_navigation.scss */
 .section-06 {
   background: GoldenRod;
   right: 0;
@@ -3867,57 +3878,57 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 @media (max-width: 768px) and (orientation: portrait) {
-  /* line 265, ../styles/components/_navigation.scss */
+  /* line 272, ../styles/components/_navigation.scss */
   .section-item {
     display: block;
     margin: 0;
     width: 100vw !important;
   }
-  /* line 270, ../styles/components/_navigation.scss */
+  /* line 277, ../styles/components/_navigation.scss */
   .section-item .inner-section a {
     font-size: 1.8rem;
   }
-  /* line 271, ../styles/components/_navigation.scss */
+  /* line 278, ../styles/components/_navigation.scss */
   .section-item .inner-section em {
     display: none;
   }
 
-  /* line 274, ../styles/components/_navigation.scss */
+  /* line 281, ../styles/components/_navigation.scss */
   .section-01 {
     left: 0;
     top: 0;
     height: 17vh !important;
   }
 
-  /* line 280, ../styles/components/_navigation.scss */
+  /* line 287, ../styles/components/_navigation.scss */
   .section-02 {
     left: 0;
     top: 17vh;
     height: 17vh !important;
   }
 
-  /* line 286, ../styles/components/_navigation.scss */
+  /* line 293, ../styles/components/_navigation.scss */
   .section-03 {
     left: 0;
     top: 34vh;
     height: 17vh !important;
   }
 
-  /* line 292, ../styles/components/_navigation.scss */
+  /* line 299, ../styles/components/_navigation.scss */
   .section-04 {
     left: 0;
     top: 51vh;
     height: 17vh !important;
   }
 
-  /* line 298, ../styles/components/_navigation.scss */
+  /* line 305, ../styles/components/_navigation.scss */
   .section-05 {
     left: 0;
     top: 68vh;
     height: 16vh !important;
   }
 
-  /* line 304, ../styles/components/_navigation.scss */
+  /* line 311, ../styles/components/_navigation.scss */
   .section-06 {
     left: 0;
     top: 84vh;
@@ -3925,56 +3936,56 @@ body {
   }
 }
 @media (max-width: 768px) and (orientation: landscape) {
-  /* line 313, ../styles/components/_navigation.scss */
+  /* line 320, ../styles/components/_navigation.scss */
   .section-item .inner-section {
     top: 24%;
   }
-  /* line 315, ../styles/components/_navigation.scss */
+  /* line 322, ../styles/components/_navigation.scss */
   .section-item .inner-section a {
     font-size: 2.5rem;
   }
-  /* line 316, ../styles/components/_navigation.scss */
+  /* line 323, ../styles/components/_navigation.scss */
   .section-item .inner-section em {
     display: none;
   }
 
-  /* line 319, ../styles/components/_navigation.scss */
+  /* line 326, ../styles/components/_navigation.scss */
   .section-01 {
     height: 33vh;
     left: 0;
     top: 34vh;
     width: 100vw;
   }
-  /* line 325, ../styles/components/_navigation.scss */
+  /* line 332, ../styles/components/_navigation.scss */
   .section-01:before {
     background-position: center center;
   }
 
-  /* line 329, ../styles/components/_navigation.scss */
+  /* line 336, ../styles/components/_navigation.scss */
   .section-02 {
     height: 34vh;
     left: 50vw;
     top: 0;
     width: 50vw;
   }
-  /* line 335, ../styles/components/_navigation.scss */
+  /* line 342, ../styles/components/_navigation.scss */
   .section-02:before {
     background-position: center center;
   }
 
-  /* line 339, ../styles/components/_navigation.scss */
+  /* line 346, ../styles/components/_navigation.scss */
   .section-03 {
     height: 34vh;
     left: 0;
     top: 0;
     width: 50vw;
   }
-  /* line 345, ../styles/components/_navigation.scss */
+  /* line 352, ../styles/components/_navigation.scss */
   .section-03:before {
     background-position: center center;
   }
 
-  /* line 349, ../styles/components/_navigation.scss */
+  /* line 356, ../styles/components/_navigation.scss */
   .section-04 {
     left: 0;
     right: auto;
@@ -3983,7 +3994,7 @@ body {
     height: 33vh;
   }
 
-  /* line 357, ../styles/components/_navigation.scss */
+  /* line 364, ../styles/components/_navigation.scss */
   .section-05 {
     background: DarkSlateGray;
     left: 33vw;
@@ -3993,7 +4004,7 @@ body {
     height: 33vh;
   }
 
-  /* line 366, ../styles/components/_navigation.scss */
+  /* line 373, ../styles/components/_navigation.scss */
   .section-06 {
     background: GoldenRod;
     right: 0;
