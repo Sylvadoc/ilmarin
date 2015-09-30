@@ -1441,8 +1441,8 @@ svg:not(:root) {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/special/icomoon.eot?-t4a46o");
-  src: url("../fonts/special/icomoon.eot?#iefix-t4a46o") format("embedded-opentype"), url("../fonts/special/icomoon.woff?-t4a46o") format("woff"), url("../fonts/special/icomoon.ttf?-t4a46o") format("truetype"), url("../fonts/special/icomoon.svg?-t4a46o#icomoon") format("svg");
+  src: url("../fonts/special/icomoon.eot?9nlfzs");
+  src: url("../fonts/special/icomoon.eot?#iefix9nlfzs") format("embedded-opentype"), url("../fonts/special/icomoon.woff?9nlfzs") format("woff"), url("../fonts/special/icomoon.ttf?9nlfzs") format("truetype"), url("../fonts/special/icomoon.svg?9nlfzs#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1676,181 +1676,281 @@ p {
   display: inline-block;
 }
 /* line 167, ../styles/base/_typography.scss */
-.fontface .icon-question:before {
-  content: "\e61a";
+.fontface .icon-exclamation-triangle:before {
+  content: "\e600";
 }
 /* line 170, ../styles/base/_typography.scss */
-.fontface .icon-home:before {
-  content: "\e62a";
+.fontface .icon-shield:before {
+  content: "\e601";
 }
 /* line 173, ../styles/base/_typography.scss */
-.fontface .icon-share:before {
-  content: "\e629";
+.fontface .icon-mail:before {
+  content: "\e602";
 }
 /* line 176, ../styles/base/_typography.scss */
-.fontface .icon-cart:before {
-  content: "\e628";
+.fontface .icon-minus:before {
+  content: "\e603";
 }
 /* line 179, ../styles/base/_typography.scss */
-.fontface .icon-play:before {
-  content: "\e622";
+.fontface .icon-folder-minus:before {
+  content: "\e604";
 }
 /* line 182, ../styles/base/_typography.scss */
+.fontface .icon-cross:before {
+  content: "\e605";
+}
+/* line 185, ../styles/base/_typography.scss */
+.fontface .icon-folder-plus:before {
+  content: "\e606";
+}
+/* line 188, ../styles/base/_typography.scss */
+.fontface .icon-warning:before {
+  content: "\e607";
+}
+/* line 191, ../styles/base/_typography.scss */
+.fontface .icon-unlocked:before {
+  content: "\e608";
+}
+/* line 194, ../styles/base/_typography.scss */
+.fontface .icon-shield2:before {
+  content: "\e609";
+}
+/* line 197, ../styles/base/_typography.scss */
+.fontface .icon-lock:before {
+  content: "\e60a";
+}
+/* line 200, ../styles/base/_typography.scss */
+.fontface .icon-camera:before {
+  content: "\e60b";
+}
+/* line 203, ../styles/base/_typography.scss */
+.fontface .icon-linkedin:before {
+  content: "\e60c";
+}
+/* line 206, ../styles/base/_typography.scss */
+.fontface .icon-linkedin2:before {
+  content: "\e60d";
+}
+/* line 209, ../styles/base/_typography.scss */
+.fontface .icon-link:before {
+  content: "\e60e";
+}
+/* line 212, ../styles/base/_typography.scss */
+.fontface .icon-printer:before {
+  content: "\e60f";
+}
+/* line 215, ../styles/base/_typography.scss */
+.fontface .icon-list-numbered:before {
+  content: "\e610";
+}
+/* line 218, ../styles/base/_typography.scss */
+.fontface .icon-question:before {
+  content: "\e611";
+}
+/* line 221, ../styles/base/_typography.scss */
+.fontface .icon-arrow-left:before {
+  content: "\e612";
+}
+/* line 224, ../styles/base/_typography.scss */
+.fontface .icon-arrow-down:before {
+  content: "\e613";
+}
+/* line 227, ../styles/base/_typography.scss */
+.fontface .icon-arrow-up:before {
+  content: "\e614";
+}
+/* line 230, ../styles/base/_typography.scss */
+.fontface .icon-arrow-right:before {
+  content: "\e615";
+}
+/* line 233, ../styles/base/_typography.scss */
+.fontface .icon-lifebuoy:before {
+  content: "\e616";
+}
+/* line 236, ../styles/base/_typography.scss */
+.fontface .icon-price-tags:before {
+  content: "\e617";
+}
+/* line 239, ../styles/base/_typography.scss */
+.fontface .icon-price-tag:before {
+  content: "\e618";
+}
+/* line 242, ../styles/base/_typography.scss */
+.fontface .icon-bookmarks:before {
+  content: "\e619";
+}
+/* line 245, ../styles/base/_typography.scss */
+.fontface .icon-bookmark:before {
+  content: "\e61a";
+}
+/* line 248, ../styles/base/_typography.scss */
+.fontface .icon-star-half:before {
+  content: "\e61b";
+}
+/* line 251, ../styles/base/_typography.scss */
+.fontface .icon-star-full:before {
+  content: "\e61c";
+}
+/* line 254, ../styles/base/_typography.scss */
+.fontface .icon-star-empty:before {
+  content: "\e61d";
+}
+/* line 257, ../styles/base/_typography.scss */
+.fontface .icon-cog:before {
+  content: "\e61e";
+}
+/* line 260, ../styles/base/_typography.scss */
+.fontface .icon-bubbles:before {
+  content: "\e61f";
+}
+/* line 263, ../styles/base/_typography.scss */
+.fontface .icon-home:before {
+  content: "\e620";
+}
+/* line 266, ../styles/base/_typography.scss */
+.fontface .icon-share:before {
+  content: "\e621";
+}
+/* line 269, ../styles/base/_typography.scss */
+.fontface .icon-cart:before {
+  content: "\e622";
+}
+/* line 272, ../styles/base/_typography.scss */
 .fontface .icon-fire:before {
   content: "\e623";
 }
-/* line 185, ../styles/base/_typography.scss */
-.fontface .icon-quill:before {
+/* line 275, ../styles/base/_typography.scss */
+.fontface .icon-quotes-right:before {
   content: "\e624";
 }
-/* line 188, ../styles/base/_typography.scss */
-.fontface .icon-hipster:before {
-  content: "\e61b";
-}
-/* line 191, ../styles/base/_typography.scss */
-.fontface .icon-books:before {
-  content: "\e61c";
-}
-/* line 194, ../styles/base/_typography.scss */
-.fontface .icon-section:before {
-  content: "\e61d";
-}
-/* line 197, ../styles/base/_typography.scss */
-.fontface .icon-magic-wand:before {
-  content: "\e61e";
-}
-/* line 200, ../styles/base/_typography.scss */
-.fontface .icon-newspaper:before {
-  content: "\e61f";
-}
-/* line 203, ../styles/base/_typography.scss */
-.fontface .icon-folder-open:before {
-  content: "\e620";
-}
-/* line 206, ../styles/base/_typography.scss */
-.fontface .icon-podcast:before {
-  content: "\e603";
-}
-/* line 209, ../styles/base/_typography.scss */
-.fontface .icon-book:before {
-  content: "\e604";
-}
-/* line 212, ../styles/base/_typography.scss */
-.fontface .icon-bubbles:before {
-  content: "\e605";
-}
-/* line 215, ../styles/base/_typography.scss */
-.fontface .icon-price-tags:before {
-  content: "\e606";
-}
-/* line 218, ../styles/base/_typography.scss */
-.fontface .icon-lifebuoy:before {
-  content: "\e607";
-}
-/* line 221, ../styles/base/_typography.scss */
+/* line 278, ../styles/base/_typography.scss */
 .fontface .icon-quotes-left:before {
-  content: "\e608";
-}
-/* line 224, ../styles/base/_typography.scss */
-.fontface .icon-bookmarks:before {
-  content: "\e609";
-}
-/* line 227, ../styles/base/_typography.scss */
-.fontface .icon-star-half:before {
-  content: "\e60a";
-}
-/* line 230, ../styles/base/_typography.scss */
-.fontface .icon-star-full:before {
-  content: "\e60b";
-}
-/* line 233, ../styles/base/_typography.scss */
-.fontface .icon-star-empty:before {
-  content: "\e60c";
-}
-/* line 236, ../styles/base/_typography.scss */
-.fontface .icon-bookmark:before {
-  content: "\e60d";
-}
-/* line 239, ../styles/base/_typography.scss */
-.fontface .icon-user:before {
-  content: "\e60e";
-}
-/* line 242, ../styles/base/_typography.scss */
-.fontface .icon-calendar:before {
-  content: "\e60f";
-}
-/* line 245, ../styles/base/_typography.scss */
-.fontface .icon-clock:before {
-  content: "\e610";
-}
-/* line 248, ../styles/base/_typography.scss */
-.fontface .icon-trophy:before {
-  content: "\e611";
-}
-/* line 251, ../styles/base/_typography.scss */
-.fontface .icon-search:before {
-  content: "\e612";
-}
-/* line 254, ../styles/base/_typography.scss */
-.fontface .icon-twitter:before {
-  content: "\e613";
-}
-/* line 257, ../styles/base/_typography.scss */
-.fontface .icon-facebook:before {
-  content: "\e614";
-}
-/* line 260, ../styles/base/_typography.scss */
-.fontface .icon-google-plus:before {
-  content: "\e615";
-}
-/* line 263, ../styles/base/_typography.scss */
-.fontface .icon-feed:before {
-  content: "\e616";
-}
-/* line 266, ../styles/base/_typography.scss */
-.fontface .icon-feed2:before {
-  content: "\e617";
-}
-/* line 269, ../styles/base/_typography.scss */
-.fontface .icon-speaker-notes:before {
   content: "\e625";
 }
-/* line 272, ../styles/base/_typography.scss */
-.fontface .icon-keyboard-arrow-right:before {
-  content: "\e618";
-}
-/* line 275, ../styles/base/_typography.scss */
-.fontface .icon-keyboard-arrow-left:before {
-  content: "\e619";
-}
-/* line 278, ../styles/base/_typography.scss */
-.fontface .icon-image:before {
-  content: "\e600";
-}
 /* line 281, ../styles/base/_typography.scss */
-.fontface .icon-arrow-down:before {
-  content: "\e627";
-}
-/* line 284, ../styles/base/_typography.scss */
-.fontface .icon-plus:before {
+.fontface .icon-calendar:before {
   content: "\e626";
 }
+/* line 284, ../styles/base/_typography.scss */
+.fontface .icon-user:before {
+  content: "\e627";
+}
 /* line 287, ../styles/base/_typography.scss */
-.fontface .icon-arrow-left:before {
-  content: "\e621";
+.fontface .icon-clock:before {
+  content: "\e628";
 }
 /* line 290, ../styles/base/_typography.scss */
-.fontface .icon-mail:before {
-  content: "\e601";
+.fontface .icon-clock2:before {
+  content: "\e629";
 }
 /* line 293, ../styles/base/_typography.scss */
-.fontface .icon-list:before {
-  content: "\e602";
+.fontface .icon-search:before {
+  content: "\e62a";
+}
+/* line 296, ../styles/base/_typography.scss */
+.fontface .icon-feed:before {
+  content: "\e62b";
+}
+/* line 299, ../styles/base/_typography.scss */
+.fontface .icon-feed2:before {
+  content: "\e62c";
+}
+/* line 302, ../styles/base/_typography.scss */
+.fontface .icon-feed3:before {
+  content: "\e62d";
+}
+/* line 305, ../styles/base/_typography.scss */
+.fontface .icon-youtube:before {
+  content: "\e62e";
+}
+/* line 308, ../styles/base/_typography.scss */
+.fontface .icon-youtube2:before {
+  content: "\e62f";
+}
+/* line 311, ../styles/base/_typography.scss */
+.fontface .icon-youtube3:before {
+  content: "\e630";
+}
+/* line 314, ../styles/base/_typography.scss */
+.fontface .icon-image:before {
+  content: "\e631";
+}
+/* line 317, ../styles/base/_typography.scss */
+.fontface .icon-podcast:before {
+  content: "\e632";
+}
+/* line 320, ../styles/base/_typography.scss */
+.fontface .icon-book:before {
+  content: "\e633";
+}
+/* line 323, ../styles/base/_typography.scss */
+.fontface .icon-books:before {
+  content: "\e634";
+}
+/* line 326, ../styles/base/_typography.scss */
+.fontface .icon-plus:before {
+  content: "\e635";
+}
+/* line 329, ../styles/base/_typography.scss */
+.fontface .icon-quill:before {
+  content: "\e636";
+}
+/* line 332, ../styles/base/_typography.scss */
+.fontface .icon-trophy:before {
+  content: "\e637";
+}
+/* line 335, ../styles/base/_typography.scss */
+.fontface .icon-heart-broken:before {
+  content: "\e638";
+}
+/* line 338, ../styles/base/_typography.scss */
+.fontface .icon-heart:before {
+  content: "\e639";
+}
+/* line 341, ../styles/base/_typography.scss */
+.fontface .icon-twitter:before {
+  content: "\e63a";
+}
+/* line 344, ../styles/base/_typography.scss */
+.fontface .icon-twitter2:before {
+  content: "\e63b";
+}
+/* line 347, ../styles/base/_typography.scss */
+.fontface .icon-twitter3:before {
+  content: "\e63c";
+}
+/* line 350, ../styles/base/_typography.scss */
+.fontface .icon-facebook:before {
+  content: "\e63d";
+}
+/* line 353, ../styles/base/_typography.scss */
+.fontface .icon-facebook2:before {
+  content: "\e63e";
+}
+/* line 356, ../styles/base/_typography.scss */
+.fontface .icon-facebook3:before {
+  content: "\e63f";
+}
+/* line 359, ../styles/base/_typography.scss */
+.fontface .icon-google-plus:before {
+  content: "\e640";
+}
+/* line 362, ../styles/base/_typography.scss */
+.fontface .icon-google-plus2:before {
+  content: "\e641";
+}
+/* line 365, ../styles/base/_typography.scss */
+.fontface .icon-google-plus3:before {
+  content: "\e642";
+}
+/* line 368, ../styles/base/_typography.scss */
+.fontface .icon-plus2:before {
+  content: "\e643";
 }
 
 /* ============== I C O N   B U R G E R
 ========================================================== */
-/* line 301, ../styles/base/_typography.scss */
+/* line 376, ../styles/base/_typography.scss */
 .icon-burger {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -1861,7 +1961,7 @@ p {
   height: 2px;
   width: 15px;
 }
-/* line 306, ../styles/base/_typography.scss */
+/* line 381, ../styles/base/_typography.scss */
 .icon-burger:before, .icon-burger:after {
   background-color: #333;
   content: '';
@@ -1870,16 +1970,16 @@ p {
   height: 2px;
   position: relative;
 }
-/* line 314, ../styles/base/_typography.scss */
+/* line 389, ../styles/base/_typography.scss */
 .icon-burger:before {
   top: -4px;
 }
-/* line 317, ../styles/base/_typography.scss */
+/* line 392, ../styles/base/_typography.scss */
 .icon-burger:after {
   top: 2px;
 }
 
-/* line 322, ../styles/base/_typography.scss */
+/* line 397, ../styles/base/_typography.scss */
 .the-header .icon-burger {
   position: relative;
   top: -4px;
@@ -1889,7 +1989,7 @@ p {
   transition: transform 350ms;
 }
 
-/* line 332, ../styles/base/_typography.scss */
+/* line 407, ../styles/base/_typography.scss */
 .mp-pushed .icon-burger {
   -webkit-transform: translateY(0) translateX(-30px) rotate(0deg);
   -moz-transform: translateY(0) translateX(-30px) rotate(0deg);
@@ -1897,7 +1997,7 @@ p {
   -o-transform: translateY(0) translateX(-30px) rotate(0deg);
   transform: translateY(0) translateX(-30px) rotate(0deg);
 }
-/* line 334, ../styles/base/_typography.scss */
+/* line 409, ../styles/base/_typography.scss */
 .mp-pushed .icon-burger:before {
   -webkit-transform: translateY(4px) translateX(30px) rotate(-45deg);
   -moz-transform: translateY(4px) translateX(30px) rotate(-45deg);
@@ -1905,7 +2005,7 @@ p {
   -o-transform: translateY(4px) translateX(30px) rotate(-45deg);
   transform: translateY(4px) translateX(30px) rotate(-45deg);
 }
-/* line 337, ../styles/base/_typography.scss */
+/* line 412, ../styles/base/_typography.scss */
 .mp-pushed .icon-burger:after {
   -webkit-transform: translateY(-4px) translateX(30px) rotate(45deg);
   -moz-transform: translateY(-4px) translateX(30px) rotate(45deg);
