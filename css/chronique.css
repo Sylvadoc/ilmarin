@@ -4028,13 +4028,42 @@ body {
   cursor: pointer;
 }
 
+/* line 45, ../styles/pages/_chronique.scss */
+.toolbar {
+  border: 1px solid #ccc;
+  list-style: none none;
+  margin-top: 2rem;
+  text-align: center;
+}
+/* line 50, ../styles/pages/_chronique.scss */
+.toolbar li {
+  display: inline-block;
+  text-align: inherit;
+}
+/* line 53, ../styles/pages/_chronique.scss */
+.toolbar li:last-child a {
+  border: 0;
+}
+/* line 54, ../styles/pages/_chronique.scss */
+.toolbar li a {
+  display: inline-block;
+  padding: .5rem;
+  border-right: 1px solid #ccc;
+}
+/* line 58, ../styles/pages/_chronique.scss */
+.toolbar li a:hover, .toolbar li a:active, .toolbar li a:focus {
+  background-color: #BE2700;
+  color: white;
+  text-decoration: none;
+}
+
 /* ================ P R E S E N T A T I O N
 ===================================================== */
-/* line 50, ../styles/pages/_chronique.scss */
+/* line 71, ../styles/pages/_chronique.scss */
 .details p {
   margin: 0;
 }
-/* line 53, ../styles/pages/_chronique.scss */
+/* line 74, ../styles/pages/_chronique.scss */
 .details .author {
   font-family: "Alegreya", Georgia, serif;
   font-weight: bold;
@@ -4043,15 +4072,15 @@ body {
   color: #666;
   text-transform: uppercase;
 }
-/* line 59, ../styles/pages/_chronique.scss */
+/* line 80, ../styles/pages/_chronique.scss */
 .details .author a {
   color: #666;
 }
-/* line 61, ../styles/pages/_chronique.scss */
+/* line 82, ../styles/pages/_chronique.scss */
 .details .isbn {
   color: #666;
 }
-/* line 64, ../styles/pages/_chronique.scss */
+/* line 85, ../styles/pages/_chronique.scss */
 .details .book-title {
   color: #BE2700;
   font-size: 84px;
@@ -4061,33 +4090,33 @@ body {
   text-transform: uppercase;
 }
 
-/* line 72, ../styles/pages/_chronique.scss */
+/* line 93, ../styles/pages/_chronique.scss */
 .meta {
   margin-top: 2em;
 }
-/* line 74, ../styles/pages/_chronique.scss */
+/* line 95, ../styles/pages/_chronique.scss */
 .meta strong {
   text-transform: uppercase;
 }
-/* line 77, ../styles/pages/_chronique.scss */
+/* line 98, ../styles/pages/_chronique.scss */
 .meta ul {
   list-style: none none;
   margin: 0;
   padding: 0;
 }
 
-/* line 83, ../styles/pages/_chronique.scss */
+/* line 104, ../styles/pages/_chronique.scss */
 .extract {
   margin: 1.5em 0 4em 0;
 }
-/* line 85, ../styles/pages/_chronique.scss */
+/* line 106, ../styles/pages/_chronique.scss */
 .extract p {
   font-size: 22.4px;
   font-size: 1.6rem;
   margin-bottom: 1em;
 }
 
-/* line 90, ../styles/pages/_chronique.scss */
+/* line 111, ../styles/pages/_chronique.scss */
 .awards {
   background: white;
   border: 1px solid #ccc;
@@ -4095,11 +4124,11 @@ body {
   padding: 1rem 1rem 1rem 10rem;
   position: relative;
 }
-/* line 96, ../styles/pages/_chronique.scss */
+/* line 117, ../styles/pages/_chronique.scss */
 .awards li:last-child {
   border: 0;
 }
-/* line 99, ../styles/pages/_chronique.scss */
+/* line 120, ../styles/pages/_chronique.scss */
 .awards h2 {
   color: #FE9E00;
   text-transform: uppercase;
@@ -4108,7 +4137,7 @@ body {
   margin: 0;
   padding: 0;
 }
-/* line 106, ../styles/pages/_chronique.scss */
+/* line 127, ../styles/pages/_chronique.scss */
 .awards:before {
   font-size: 112px;
   font-size: 8rem;
@@ -4132,14 +4161,14 @@ body {
 
 /* ================ C R I T I Q U E
 ===================================================== */
-/* line 130, ../styles/pages/_chronique.scss */
+/* line 151, ../styles/pages/_chronique.scss */
 .body-chronique {
   background: #efefef;
   border: 1px solid #ccc;
   margin: 2rem 0 1em;
   position: relative;
 }
-/* line 135, ../styles/pages/_chronique.scss */
+/* line 156, ../styles/pages/_chronique.scss */
 .body-chronique .rating {
   transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -4157,7 +4186,7 @@ body {
   top: -5rem;
   width: 10rem;
 }
-/* line 145, ../styles/pages/_chronique.scss */
+/* line 166, ../styles/pages/_chronique.scss */
 .body-chronique .rating span {
   transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -4171,7 +4200,7 @@ body {
   position: absolute;
   color: #ccc;
 }
-/* line 152, ../styles/pages/_chronique.scss */
+/* line 173, ../styles/pages/_chronique.scss */
 .body-chronique .rating .bg {
   -webkit-filter: blur(1px);
   -moz-filter: blur(1px);
@@ -4185,7 +4214,7 @@ body {
   top: -20%;
   width: 140%;
 }
-/* line 161, ../styles/pages/_chronique.scss */
+/* line 182, ../styles/pages/_chronique.scss */
 .body-chronique .rating .note {
   font-size: 84px;
   font-size: 6rem;
@@ -4195,21 +4224,21 @@ body {
   left: 15%;
   top: 20%;
 }
-/* line 169, ../styles/pages/_chronique.scss */
+/* line 190, ../styles/pages/_chronique.scss */
 .body-chronique .rating .sur {
   font-size: 42px;
   font-size: 3rem;
   left: 55%;
   top: 30%;
 }
-/* line 174, ../styles/pages/_chronique.scss */
+/* line 195, ../styles/pages/_chronique.scss */
 .body-chronique .rating .end_note {
   font-size: 28px;
   font-size: 2rem;
   left: 70%;
   top: 25%;
 }
-/* line 180, ../styles/pages/_chronique.scss */
+/* line 201, ../styles/pages/_chronique.scss */
 .body-chronique .reviewed_by {
   font-size: 28px;
   font-size: 2rem;
@@ -4218,18 +4247,18 @@ body {
   margin: 8rem 0 1em 0;
   text-align: center;
 }
-/* line 188, ../styles/pages/_chronique.scss */
+/* line 209, ../styles/pages/_chronique.scss */
 .body-chronique .review p {
   font-size: 22.4px;
   font-size: 1.6rem;
   margin: 0 0 1em 0;
   text-align: justify;
 }
-/* line 193, ../styles/pages/_chronique.scss */
+/* line 214, ../styles/pages/_chronique.scss */
 .body-chronique .review a {
   color: #BE2700;
 }
-/* line 197, ../styles/pages/_chronique.scss */
+/* line 218, ../styles/pages/_chronique.scss */
 .body-chronique .dropcaps {
   font-family: "Palatino Linotype", Palatino, "Roboto Slab", serif;
   display: block;
@@ -4243,7 +4272,7 @@ body {
 
 /* ================ D I S C O V E R
 ===================================================== */
-/* line 213, ../styles/pages/_chronique.scss */
+/* line 234, ../styles/pages/_chronique.scss */
 #discover h2 {
   text-transform: uppercase;
 }
@@ -4251,14 +4280,14 @@ body {
 /* ================ R E S P O N S I V E
 ===================================================== */
 @media (max-width: 1024px) {
-  /* line 223, ../styles/pages/_chronique.scss */
+  /* line 244, ../styles/pages/_chronique.scss */
   .details .book-title {
     font-size: 56px;
     font-size: 4rem;
   }
 }
 @media (max-width: 768px) {
-  /* line 230, ../styles/pages/_chronique.scss */
+  /* line 251, ../styles/pages/_chronique.scss */
   .details .book-title {
     font-size: 28px;
     font-size: 2rem;
@@ -4267,11 +4296,11 @@ body {
 /********************************************************************************************************************************************************************************
 ********************* B I B L I O T H E Q U E *****************
 /********************************************************************************************************************************************************************************/
-/* line 241, ../styles/pages/_chronique.scss */
+/* line 262, ../styles/pages/_chronique.scss */
 #classement, #most {
   padding: 2rem 0;
 }
-/* line 243, ../styles/pages/_chronique.scss */
+/* line 264, ../styles/pages/_chronique.scss */
 #classement h2, #most h2 {
   color: #BE2700;
   margin: 0;
@@ -4279,25 +4308,25 @@ body {
   text-transform: uppercase;
 }
 
-/* line 251, ../styles/pages/_chronique.scss */
+/* line 272, ../styles/pages/_chronique.scss */
 .classement h3 {
   text-transform: uppercase;
   margin: .5em 0;
   padding: 0;
   font-weight: 400;
 }
-/* line 257, ../styles/pages/_chronique.scss */
+/* line 278, ../styles/pages/_chronique.scss */
 .classement .basic_list {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
 }
 
-/* line 261, ../styles/pages/_chronique.scss */
+/* line 282, ../styles/pages/_chronique.scss */
 .follow_link {
   float: right;
 }
-/* line 263, ../styles/pages/_chronique.scss */
+/* line 284, ../styles/pages/_chronique.scss */
 .follow_link .icon {
   position: relative;
   top: 2px;
@@ -4305,11 +4334,11 @@ body {
 
 /* ================ H E A D E R
 ===================================================== */
-/* line 272, ../styles/pages/_chronique.scss */
+/* line 293, ../styles/pages/_chronique.scss */
 #form_all {
   margin: 1em 0 0;
 }
-/* line 274, ../styles/pages/_chronique.scss */
+/* line 295, ../styles/pages/_chronique.scss */
 #form_all label {
   font-size: 28px;
   font-size: 2rem;
@@ -4320,7 +4349,7 @@ body {
   padding: 0 0 1em 0;
   text-transform: uppercase;
 }
-/* line 283, ../styles/pages/_chronique.scss */
+/* line 304, ../styles/pages/_chronique.scss */
 #form_all [type="text"] {
   font-size: 22.4px;
   font-size: 1.6rem;
@@ -4330,11 +4359,11 @@ body {
   margin: 0;
 }
 
-/* line 291, ../styles/pages/_chronique.scss */
+/* line 312, ../styles/pages/_chronique.scss */
 #destiny {
   margin: 1em 0 0;
 }
-/* line 293, ../styles/pages/_chronique.scss */
+/* line 314, ../styles/pages/_chronique.scss */
 #destiny h2 {
   font-size: 28px;
   font-size: 2rem;
@@ -4349,48 +4378,48 @@ body {
 
 /* ================ L I S T S
 ===================================================== */
-/* line 310, ../styles/pages/_chronique.scss */
+/* line 331, ../styles/pages/_chronique.scss */
 #les_listes h2 {
   margin: 0 0 .5em 0;
 }
-/* line 313, ../styles/pages/_chronique.scss */
+/* line 334, ../styles/pages/_chronique.scss */
 #les_listes .row {
   list-style: none none;
   padding: 0;
 }
-/* line 317, ../styles/pages/_chronique.scss */
+/* line 338, ../styles/pages/_chronique.scss */
 #les_listes .row h3 {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   font-weight: 400;
 }
-/* line 323, ../styles/pages/_chronique.scss */
+/* line 344, ../styles/pages/_chronique.scss */
 #les_listes .row article {
   margin-bottom: 2em;
 }
-/* line 325, ../styles/pages/_chronique.scss */
+/* line 346, ../styles/pages/_chronique.scss */
 #les_listes .row article a {
   background: white;
   border: 1px solid #ccc;
   display: block;
   overflow: hidden;
 }
-/* line 330, ../styles/pages/_chronique.scss */
+/* line 351, ../styles/pages/_chronique.scss */
 #les_listes .row article a:hover, #les_listes .row article a:focus {
   text-decoration: none;
 }
-/* line 332, ../styles/pages/_chronique.scss */
+/* line 353, ../styles/pages/_chronique.scss */
 #les_listes .row article a:hover p, #les_listes .row article a:focus p {
   background: #FE9E00;
   color: white;
 }
-/* line 337, ../styles/pages/_chronique.scss */
+/* line 358, ../styles/pages/_chronique.scss */
 #les_listes .row article a img {
   width: 100%;
   height: auto;
 }
-/* line 341, ../styles/pages/_chronique.scss */
+/* line 362, ../styles/pages/_chronique.scss */
 #les_listes .row article a p {
   background: white;
   display: block;
@@ -4399,7 +4428,7 @@ body {
   position: relative;
   text-transform: uppercase;
 }
-/* line 348, ../styles/pages/_chronique.scss */
+/* line 369, ../styles/pages/_chronique.scss */
 #les_listes .row article a p:before {
   transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -4417,7 +4446,7 @@ body {
   top: -20px;
   width: 115%;
 }
-/* line 359, ../styles/pages/_chronique.scss */
+/* line 380, ../styles/pages/_chronique.scss */
 #les_listes .row article a p span {
   position: relative;
   top: -.5rem;
@@ -4425,18 +4454,18 @@ body {
 
 /* ================ M O S T   V I S I T E D
 ===================================================== */
-/* line 373, ../styles/pages/_chronique.scss */
+/* line 394, ../styles/pages/_chronique.scss */
 #most .article_focus {
   -webkit-border-radius: 0;
   border-radius: 0;
   background-clip: padding-box;
   background: transparent;
 }
-/* line 377, ../styles/pages/_chronique.scss */
+/* line 398, ../styles/pages/_chronique.scss */
 #most .article_focus h2 {
   margin-bottom: .5em !important;
 }
-/* line 380, ../styles/pages/_chronique.scss */
+/* line 401, ../styles/pages/_chronique.scss */
 #most .article_focus .inner_content {
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -4445,17 +4474,17 @@ body {
   padding: 1em;
   text-align: justify;
 }
-/* line 386, ../styles/pages/_chronique.scss */
+/* line 407, ../styles/pages/_chronique.scss */
 #most .article_focus .inner_content em {
   color: #666;
   font-family: "Alegreya", Georgia, serif;
 }
-/* line 390, ../styles/pages/_chronique.scss */
+/* line 411, ../styles/pages/_chronique.scss */
 #most .article_focus .inner_content a {
   display: block;
   overflow: hidden;
 }
-/* line 393, ../styles/pages/_chronique.scss */
+/* line 414, ../styles/pages/_chronique.scss */
 #most .article_focus .inner_content a p {
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
@@ -4466,7 +4495,7 @@ body {
   background: white;
   text-align: left;
 }
-/* line 401, ../styles/pages/_chronique.scss */
+/* line 422, ../styles/pages/_chronique.scss */
 #most .article_focus .inner_content a p:before {
   transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -4484,23 +4513,23 @@ body {
   top: -20px;
   width: 115%;
 }
-/* line 412, ../styles/pages/_chronique.scss */
+/* line 433, ../styles/pages/_chronique.scss */
 #most .article_focus .inner_content a p span {
   position: relative;
   top: -.5rem;
 }
-/* line 418, ../styles/pages/_chronique.scss */
+/* line 439, ../styles/pages/_chronique.scss */
 #most .article_focus .inner_content .follow_link {
   margin-top: 1rem;
 }
 
 /* ================ F I C H E   B I O
 ===================================================== */
-/* line 428, ../styles/pages/_chronique.scss */
+/* line 449, ../styles/pages/_chronique.scss */
 #author_biography {
   margin-top: 3em;
 }
-/* line 430, ../styles/pages/_chronique.scss */
+/* line 451, ../styles/pages/_chronique.scss */
 #author_biography .life {
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   font-weight: bold;
@@ -4509,7 +4538,7 @@ body {
   color: #666;
   text-transform: uppercase;
 }
-/* line 437, ../styles/pages/_chronique.scss */
+/* line 458, ../styles/pages/_chronique.scss */
 #author_biography .bio-title {
   color: #BE2700;
   font-size: 84px;
@@ -4518,36 +4547,36 @@ body {
   margin: 0 0 2rem 0;
   text-transform: uppercase;
 }
-/* line 444, ../styles/pages/_chronique.scss */
+/* line 465, ../styles/pages/_chronique.scss */
 #author_biography .basic_list {
   margin-bottom: 2rem;
 }
-/* line 446, ../styles/pages/_chronique.scss */
+/* line 467, ../styles/pages/_chronique.scss */
 #author_biography .basic_list strong {
   display: inline-block;
   text-align: right;
   width: 7rem;
 }
-/* line 451, ../styles/pages/_chronique.scss */
+/* line 472, ../styles/pages/_chronique.scss */
 #author_biography .basic_list li:last-child {
   border: 0;
 }
-/* line 455, ../styles/pages/_chronique.scss */
+/* line 476, ../styles/pages/_chronique.scss */
 #author_biography .bio p {
   margin: 0 0 1em 0;
 }
-/* line 458, ../styles/pages/_chronique.scss */
+/* line 479, ../styles/pages/_chronique.scss */
 #author_biography .clip-svg {
   width: 0;
   height: 0;
 }
-/* line 462, ../styles/pages/_chronique.scss */
+/* line 483, ../styles/pages/_chronique.scss */
 #author_biography .portrait {
   width: 50%;
   margin: 0 auto;
   position: relative;
 }
-/* line 467, ../styles/pages/_chronique.scss */
+/* line 488, ../styles/pages/_chronique.scss */
 #author_biography .portrait .blason img {
   -moz-transform: rotateY(20deg);
   -ms-transform: rotateY(20deg);
@@ -4557,7 +4586,7 @@ body {
   height: auto;
 }
 
-/* line 475, ../styles/pages/_chronique.scss */
+/* line 496, ../styles/pages/_chronique.scss */
 .ruban {
   -moz-transform: rotateY(20deg);
   -ms-transform: rotateY(20deg);
@@ -4574,17 +4603,17 @@ body {
   width: 100%;
   z-index: 1;
 }
-/* line 487, ../styles/pages/_chronique.scss */
+/* line 508, ../styles/pages/_chronique.scss */
 .ruban span {
   line-height: 1;
 }
-/* line 488, ../styles/pages/_chronique.scss */
+/* line 509, ../styles/pages/_chronique.scss */
 .ruban .ruban-text {
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   text-transform: uppercase;
 }
-/* line 493, ../styles/pages/_chronique.scss */
+/* line 514, ../styles/pages/_chronique.scss */
 .ruban .ruban-deco {
   border-top: 1px solid white;
   display: block;
@@ -4594,13 +4623,13 @@ body {
   top: 4px;
   width: 60%;
 }
-/* line 501, ../styles/pages/_chronique.scss */
+/* line 522, ../styles/pages/_chronique.scss */
 .ruban .ruban-deco:before, .ruban .ruban-deco:after {
   content: '';
   position: absolute;
   top: -5px;
 }
-/* line 506, ../styles/pages/_chronique.scss */
+/* line 527, ../styles/pages/_chronique.scss */
 .ruban .ruban-deco:before {
   width: 0;
   height: 0;
@@ -4610,7 +4639,7 @@ body {
   left: -5px;
   right: auto;
 }
-/* line 515, ../styles/pages/_chronique.scss */
+/* line 536, ../styles/pages/_chronique.scss */
 .ruban .ruban-deco:after {
   width: 0;
   height: 0;
@@ -4620,7 +4649,7 @@ body {
   right: -5px;
   left: auto;
 }
-/* line 524, ../styles/pages/_chronique.scss */
+/* line 545, ../styles/pages/_chronique.scss */
 .ruban .ruban-deco span {
   background: #BE2700;
   display: inline-block;
@@ -4628,7 +4657,7 @@ body {
   position: relative;
   top: -5px;
 }
-/* line 532, ../styles/pages/_chronique.scss */
+/* line 553, ../styles/pages/_chronique.scss */
 .ruban .ruban-text-02 {
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
@@ -4637,32 +4666,32 @@ body {
   top: -5px;
 }
 
-/* line 540, ../styles/pages/_chronique.scss */
+/* line 561, ../styles/pages/_chronique.scss */
 #author_news {
   padding: 2rem 0;
 }
-/* line 542, ../styles/pages/_chronique.scss */
+/* line 563, ../styles/pages/_chronique.scss */
 #author_news .simili-title {
   margin-bottom: 2rem;
 }
-/* line 545, ../styles/pages/_chronique.scss */
+/* line 566, ../styles/pages/_chronique.scss */
 #author_news .article_focus {
   margin-bottom: 1em;
 }
-/* line 548, ../styles/pages/_chronique.scss */
+/* line 569, ../styles/pages/_chronique.scss */
 #author_news h2 {
   color: #BE2700;
   margin: 0;
 }
-/* line 553, ../styles/pages/_chronique.scss */
+/* line 574, ../styles/pages/_chronique.scss */
 #author_news #breves h2 {
   text-transform: uppercase;
 }
-/* line 556, ../styles/pages/_chronique.scss */
+/* line 577, ../styles/pages/_chronique.scss */
 #author_news #breves .basic_list {
   margin-bottom: 1em;
 }
-/* line 558, ../styles/pages/_chronique.scss */
+/* line 579, ../styles/pages/_chronique.scss */
 #author_news #breves .basic_list a {
   padding: .5em 0;
 }

@@ -42,6 +42,27 @@
 .clickable {
 	cursor: pointer;
 }
+.toolbar {
+	border: 1px solid #ccc;
+	list-style: none none;
+	margin-top: 2rem;
+	text-align: center;
+	li {
+		display: inline-block;
+		text-align: inherit;
+		&:last-child a { border: 0; }
+		a {
+			display: inline-block;
+			padding: .5rem;
+			border-right: 1px solid #ccc;
+			&:hover, &:active, &:focus {
+				background-color: $base-color-elbakin;
+				color: white;
+				text-decoration: none;
+			}
+		}
+	}
+}
 
 /* ================ P R E S E N T A T I O N
 ===================================================== */
