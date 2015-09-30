@@ -43,18 +43,23 @@
 	cursor: pointer;
 }
 .toolbar {
-	border: 1px solid #ccc;
 	list-style: none none;
-	margin-top: 2rem;
+	margin: 2rem 0 0 0;
+	padding: 0;
 	text-align: center;
 	li {
+		@include border-radius(3px);
+		border: 1px solid #ccc;
 		display: inline-block;
+		margin: 0 1rem;
+		padding: 0;
 		text-align: inherit;
-		&:last-child a { border: 0; }
+		&:first-child { margin-left: 0; }
+		&:last-child { margin-right: 0; }
 		a {
 			display: inline-block;
+			margin: 0;
 			padding: .5rem;
-			border-right: 1px solid #ccc;
 			&:hover, &:active, &:focus {
 				background-color: $base-color-elbakin;
 				color: white;
@@ -127,7 +132,7 @@
 	&:before {
 		@include rem(8);
 		color: $orange-color-elbakin;
-		content: "\e611";
+		content: "\e637";
 		display: block;
 		font-family: 'icomoon', sans-serif;
 		font-style: normal;
