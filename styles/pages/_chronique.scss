@@ -51,12 +51,15 @@
 		@include border-radius(3px);
 		border: 1px solid #ccc;
 		display: inline-block;
-		margin: 0 1rem;
+		margin: 0 .5rem;
 		padding: 0;
 		text-align: inherit;
 		&:first-child { margin-left: 0; }
 		&:last-child { margin-right: 0; }
 		a {
+			@include border-radius(2px);
+			@include transition(background-color 300ms ease-out);
+			background-color: white;
 			display: inline-block;
 			margin: 0;
 			padding: .5rem;
@@ -64,6 +67,10 @@
 				background-color: $base-color-elbakin;
 				color: white;
 				text-decoration: none;
+			}
+			&.active-link {
+				background-color: $base-color-elbakin;
+				color: white;
 			}
 		}
 	}
@@ -170,27 +177,21 @@
 		width: 10rem;
 		span {
 			@include rotate(-45deg);
+			color: #ccc;
 			font-family: $font-stack-headings;
 			line-height: 1;
 			position: absolute;
-			color: #ccc;
-		}
-		.bg {
-			@include blur(1px);
-			background-position: center center;
-			background-repeat: no-repeat;
-			height: 140%;
-			left: -20%;
-			top: -20%;
-			width: 140%;
 		}
 		.note {
-			@include rem(6);
+			@include rem(4);
 			color: $base-color-elbakin;
 			display: block;
 			font-weight: 900;
-			left: 15%;
-			top: 20%;
+			left: 4px;
+			text-align: right;
+			top: 45px;
+			white-space: nowrap;
+			width: 60px;
 		}
 		.sur {
 			@include rem(3);
@@ -207,7 +208,7 @@
 		@include rem(2);
 		color: #666;
 		font-family: $font-stack-special;
-		margin: 8rem 0 1em 0;
+		margin: 0 0 1em 0;
 		text-align: center;
 	}
 	.review {
@@ -229,6 +230,56 @@
 		margin: .08em .07em 0 0;
 		line-height: .67em;
 		color: black;
+	}
+}
+
+#review-all {
+	.tabs {
+		@include translate3d(0,-45%,0);
+		float: right;
+		margin: 0;
+		li { margin: 0 1.5rem; }
+		a {
+			@include border-radius(0);
+			@include rotate(45deg);
+			background-color: white;
+			border: 1px solid #ccc;
+			height: 5rem;
+			margin: 0;
+			overflow: hidden;
+			padding: 0;
+			text-align: center;
+			width: 5rem;
+			position: relative;
+			font-weight: 400;
+			.include {
+				@include rotate(-45deg);
+				color: #ccc;
+				font-family: $font-stack-headings;
+				line-height: 1;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				position: absolute;
+				top: 6px;
+				left: 0;
+				span { display: block; margin: 0 auto; text-align: center;}
+				.icon {
+					@include rem(2);
+					color: $orange-color-elbakin;
+					margin-bottom: .2rem;
+				}
+			}
+			&:hover, &:active, &:focus, &.active {
+				background-color: $base-color-elbakin;
+				border-color: white;
+				span { color: white; }
+				.icon { color: white; }
+			}
+		}
+	}
+	.row_tab {
+		padding: 1rem;
 	}
 }
 
