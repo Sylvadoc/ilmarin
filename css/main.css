@@ -4488,8 +4488,8 @@ body {
 }
 /* line 239, ../styles/components/_navigation.scss */
 .section-01:before {
-  background-image: url("../images/argonath.jpg");
-  background-position: center left;
+  background-image: url("../images/library.jpg");
+  background-position: center bottom;
 }
 
 /* line 244, ../styles/components/_navigation.scss */
@@ -4501,23 +4501,24 @@ body {
 }
 /* line 250, ../styles/components/_navigation.scss */
 .section-02:before {
-  background-image: url("../images/map.jpg");
+  background-image: url("../images/argonath.jpg");
+  background-position: center center;
 }
 
-/* line 254, ../styles/components/_navigation.scss */
+/* line 255, ../styles/components/_navigation.scss */
 .section-03 {
   height: 50vh;
   left: 0;
   top: 0;
   width: 33vw;
 }
-/* line 260, ../styles/components/_navigation.scss */
+/* line 261, ../styles/components/_navigation.scss */
 .section-03:before {
   background-image: url("../images/fantasy.jpg");
   background-position: right bottom;
 }
 
-/* line 265, ../styles/components/_navigation.scss */
+/* line 266, ../styles/components/_navigation.scss */
 .section-04 {
   background: DarkSeaGreen;
   right: 0;
@@ -4526,7 +4527,7 @@ body {
   height: 33vh;
 }
 
-/* line 273, ../styles/components/_navigation.scss */
+/* line 274, ../styles/components/_navigation.scss */
 .section-05 {
   background: DarkSlateGray;
   right: 0;
@@ -4535,7 +4536,7 @@ body {
   height: 33vh;
 }
 
-/* line 281, ../styles/components/_navigation.scss */
+/* line 282, ../styles/components/_navigation.scss */
 .section-06 {
   background: GoldenRod;
   right: 0;
@@ -4547,57 +4548,57 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 @media (max-width: 768px) and (orientation: portrait) {
-  /* line 294, ../styles/components/_navigation.scss */
+  /* line 295, ../styles/components/_navigation.scss */
   .section-item {
     display: block;
     margin: 0;
     width: 100vw !important;
   }
-  /* line 299, ../styles/components/_navigation.scss */
+  /* line 300, ../styles/components/_navigation.scss */
   .section-item .inner-section a {
     font-size: 1.8rem;
   }
-  /* line 300, ../styles/components/_navigation.scss */
+  /* line 301, ../styles/components/_navigation.scss */
   .section-item .inner-section em {
     display: none;
   }
 
-  /* line 303, ../styles/components/_navigation.scss */
+  /* line 304, ../styles/components/_navigation.scss */
   .section-01 {
     left: 0;
     top: 0;
     height: 17vh !important;
   }
 
-  /* line 309, ../styles/components/_navigation.scss */
+  /* line 310, ../styles/components/_navigation.scss */
   .section-02 {
     left: 0;
     top: 17vh;
     height: 17vh !important;
   }
 
-  /* line 315, ../styles/components/_navigation.scss */
+  /* line 316, ../styles/components/_navigation.scss */
   .section-03 {
     left: 0;
     top: 34vh;
     height: 17vh !important;
   }
 
-  /* line 321, ../styles/components/_navigation.scss */
+  /* line 322, ../styles/components/_navigation.scss */
   .section-04 {
     left: 0;
     top: 51vh;
     height: 17vh !important;
   }
 
-  /* line 327, ../styles/components/_navigation.scss */
+  /* line 328, ../styles/components/_navigation.scss */
   .section-05 {
     left: 0;
     top: 68vh;
     height: 16vh !important;
   }
 
-  /* line 333, ../styles/components/_navigation.scss */
+  /* line 334, ../styles/components/_navigation.scss */
   .section-06 {
     left: 0;
     top: 84vh;
@@ -4605,56 +4606,56 @@ body {
   }
 }
 @media (max-width: 768px) and (orientation: landscape) {
-  /* line 342, ../styles/components/_navigation.scss */
+  /* line 343, ../styles/components/_navigation.scss */
   .section-item .inner-section {
     top: 24%;
   }
-  /* line 344, ../styles/components/_navigation.scss */
+  /* line 345, ../styles/components/_navigation.scss */
   .section-item .inner-section a {
     font-size: 2.5rem;
   }
-  /* line 345, ../styles/components/_navigation.scss */
+  /* line 346, ../styles/components/_navigation.scss */
   .section-item .inner-section em {
     display: none;
   }
 
-  /* line 348, ../styles/components/_navigation.scss */
+  /* line 349, ../styles/components/_navigation.scss */
   .section-01 {
     height: 33vh;
     left: 0;
     top: 34vh;
     width: 100vw;
   }
-  /* line 354, ../styles/components/_navigation.scss */
+  /* line 355, ../styles/components/_navigation.scss */
   .section-01:before {
     background-position: center center;
   }
 
-  /* line 358, ../styles/components/_navigation.scss */
+  /* line 359, ../styles/components/_navigation.scss */
   .section-02 {
     height: 34vh;
     left: 50vw;
     top: 0;
     width: 50vw;
   }
-  /* line 364, ../styles/components/_navigation.scss */
+  /* line 365, ../styles/components/_navigation.scss */
   .section-02:before {
     background-position: center center;
   }
 
-  /* line 368, ../styles/components/_navigation.scss */
+  /* line 369, ../styles/components/_navigation.scss */
   .section-03 {
     height: 34vh;
     left: 0;
     top: 0;
     width: 50vw;
   }
-  /* line 374, ../styles/components/_navigation.scss */
+  /* line 375, ../styles/components/_navigation.scss */
   .section-03:before {
     background-position: center center;
   }
 
-  /* line 378, ../styles/components/_navigation.scss */
+  /* line 379, ../styles/components/_navigation.scss */
   .section-04 {
     left: 0;
     right: auto;
@@ -4663,7 +4664,7 @@ body {
     height: 33vh;
   }
 
-  /* line 386, ../styles/components/_navigation.scss */
+  /* line 387, ../styles/components/_navigation.scss */
   .section-05 {
     background: DarkSlateGray;
     left: 33vw;
@@ -4673,7 +4674,7 @@ body {
     height: 33vh;
   }
 
-  /* line 395, ../styles/components/_navigation.scss */
+  /* line 396, ../styles/components/_navigation.scss */
   .section-06 {
     background: GoldenRod;
     right: 0;

@@ -237,8 +237,8 @@
 	top: 0;
 	width: 34vw;
 	&:before {
-		background-image: url('../images/argonath.jpg');
-		background-position: center left;
+		background-image: url('../images/library.jpg');
+		background-position: center bottom;
 	}
 }
 .section-02 {
@@ -248,7 +248,8 @@
 	top: 50vh;
 	width: 33vw;
 	&:before {
-		background-image: url('../images/map.jpg');
+		background-image: url('../images/argonath.jpg');
+		background-position: center center;
 	}
 }
 .section-03 {
