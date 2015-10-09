@@ -1,36 +1,378 @@
+<!doctype html>
+<html lang="fr" class="no-js html">
+    <head>
 
-<form id="form-inscription">
-	<div id="content-form">
-		<label for="pseudo">Pseudo</label>
-		<input type="text" id="pseudo"/>
-	</div>
-	<div>
-		<label for="email">Adresse Mail</label>
-		<input type="email" id="email"/>
-	</div>
-	<div>
-		<label for="pwd">Mot De Passe</label>
-		<input type="password" id="pwd"/>
-	</div>
-	<div>
-	<label for="avatar">Avatar</label>
-	<input type="file" id="avatar"/>
-	</div>
-	<div>
-	<label for="site">Site Perso</label>
-	<input type="text" id="site"/>
-	</div>
-	<div>
-	<label for="twitter">Twitter</label>
-	<input type="text" id="twitter"/>
-	</div>
-	<div>
-	<label for="facebook">Facebook</label>
-	<input type="text" id="facebook"/>
-	</div>
-	<div>
-	<label for="google">G+</label>
-	<input type="text" id="google"/>
-	</div>
-</form>
+        <meta charset="utf-8">
+        <title>Elbakin.net, la fantasy au quotidien</title>
+        <meta name="description" content="fantasy"/>
+        <meta name="viewport" content="width=device-width" />
 
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <!-- windows 8 stuff -->
+        <meta name="apple-mobile-web-app-title" content="Elbakin.net"/>
+        <meta name="application-name" content="Elbakin.net"/>
+        <meta name="msapplication-TileColor" content="#BE2700"/>
+        <meta name="msapplication-TileImage" content="windows_tile_144_b.png" />
+
+        <!-- better google results -->
+        <link rel="publisher" href="https://plus.google.com/116698928900965945603" />
+
+        <!-- opengraph stuff -->
+        <meta property="og:url" content="http://www.elbakin.net" />
+        <meta property="og:description" content="Site d'actualité sur la fantasy, le merveilleux. Chroniques littéraires, de films, essais sur J.R.R Tolkien" />
+        <meta property="og:image" content="gu-logo-fallback.png"/>
+        <meta property="og:type" content="website" />
+        <meta property="fb:app_id" content="180444840287" />
+        <meta property="og:site_name" content="Elbakin.net" />
+
+        <!-- twitter stuff -->
+        <meta name="twitter:site" content="@elbakin" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:url" content="http://www.elbakin.net"/>
+        <meta property="og:title" content="Fantasy, actualité littéraire, cinéma, fantasy et merveilleux | Elbakin.net"/>
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="css/vendors/foundation.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+
+        <!-- scripts -->
+        <script src="scripts/modernizr-custom.js"></script>
+        <script src="scripts/detectizr.min.js"></script>
+
+    </head>
+
+    <body role="document">
+
+		<nav id="garde" class="overlay" role="navigation">
+		    <a class="menu-close" title="Fermer le menu"><span></span><span></span>
+		    </a>
+		    <div class="section-item section-01 clickable">
+		        <div class="inner-section">
+		            <a href="bibliotheque.html">Bibliothèque</a>
+		            <em>Chroniques, recherche et découvertes</em>
+		        </div>
+                <span class="copyright">&copy; Marc Simonetti</span>
+		    </div>
+		    <div class="section-item section-02 clickable">
+		        <div class="inner-section">
+		            <a href="index_section_jrr.html">Tolkien</a>
+		            <em>Rien ne vaut la recherche lorsqu’on veut trouver quelque chose.</em>
+		        </div>
+                <span class="copyright">&copy; Marc Simonetti</span>
+		    </div>
+		    <div class="section-item section-03 clickable">
+		        <div class="inner-section">
+		            <a href="#">Fantasy</a>
+		            <em>Dossiers, Articles, Interviews</em>
+		        </div>
+                <span class="copyright">&copy; Marc Simonetti</span>
+		    </div>
+		    <div class="section-item section-04 clickable">
+		        <div class="inner-section">
+		            <a href="#">Forum</a>
+		        </div>
+		    </div>
+		    <div class="section-item section-05 clickable">
+		        <div class="inner-section">
+		            <a href="#">&Eacute;missions</a>
+		        </div>
+		    </div>
+		    <div class="section-item section-06 clickable">
+		        <div class="inner-section">
+		            <a href="#">Boutique</a>
+		        </div>
+		    </div>
+		</nav>
+
+        <div class="m-scene">
+
+            <!-- HEADER -->
+            <header role="banner" class="the-header m-header">
+                <div class="inner-wrap">
+                    <div class="branding appear" role="heading">
+                        <div class="logotype">
+                            <img src="images/logo_elbakin.png" alt="Elbakin.net, la fantasy au quotiden" />
+                        </div>
+                        <div class="elbakin">
+                            <img src="images/elbakin_txt.png" alt="Elbakin.net" />
+                        </div>
+                    </div>
+                    <ul class="visit">
+                        <li>
+                            <a href="#" class="menu-trigger" id="trigger" title="Parcourir le menu du site">
+                                <span class="icon icon-burger" aria-hidden="true"></span>
+                                <span>Menu</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visiter le forum">
+                                <span class="icon icon-bubbles" aria-hidden="true"></span>
+                                <span>Forum</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#search" class="toggle-panel" title="Faire une recherche">
+                                <span class="icon icon-search" aria-hidden="true"></span>
+                                <span class="text">Rechercher</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="aside_menu">
+                        <li>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/Elbakin.net" title="Profil Facebook Elbakin.net">
+                                        <span class="icon icon-facebook" aria-hidden="true"></span>
+                                        <span class="text">Facebook</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/elbakin" title="Compte Twitter Elbakin.net">
+                                        <span class="icon icon-twitter" aria-hidden="true"></span>
+                                        <span class="text">Twitter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/ElbakinNetFantasy" title="Chaîne YouTube Elbakin.net">
+                                        <span class="icon icon-google-plus" aria-hidden="true"></span>
+                                        <span class="text">YouTube</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="network">
+                            <a href="#web" class="toggle-panel" title="Notre réseau">
+                                <span class="icon icon-bookmark" aria-hidden="true"></span>
+                                <span class="text">Notre réseau</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#log_in" class="toggle-panel" title="Se connecter au site">
+                                <span>Se connecter</span>
+                                <span class="icon icon-user" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="search" class="panel">
+                        <form class="form">
+                            <label for="search-keyword" class="ersatz-title">Rechercher sur le site :</label>
+                            <input type="text" id="search-keyword" placeholder="Mots-clefs" class="input-style" />
+                            <button class="btn btn_default inline_btn">OK</button>
+                            <p>Exemple : <a href="#">Jaworski</a>, <a href="#">Pevel</a>, <a href="#">Le Seigneur des Anneaux</a></p>
+                        </form>
+                    </div>
+                    <div id="log_in" class="panel">
+                        <form class="form">
+                            <div class="wrap-form half-form">
+                                <label for="login" class="ersatz-title">Votre pseudo :</label>
+                                <input type="text" id="login" placeholder="Pseudo" class="input-style" />
+                            </div>
+                            <div class="wrap-form half-form">
+                                <label for="password" class="ersatz-title">Votre mot de passe :</label>
+                                <input type="password" id="password" placeholder="Mot de passe" class="input-style" />
+                            </div>
+                            <button class="btn btn_default inline_btn">OK</button>
+                            <p><a href="#">Vous n'êtes pas encore inscrit ?</a></p>
+                        </form>
+                    </div>
+                    <div id="web" class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="images/logo_asso.png" alt="Logo de l'Association Elbakin.net" />
+                                    <span>Association<br />Elbakin.net</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/logo_archy.png" alt="Logo des Aventures d'Archibald Bellérophon" />
+                                    <span>Archibald<br />Bellérophon</span>
+                                </a>
+                                </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/logo_periannath.png" alt="Logo de Periannath" />
+                                    <span>Periannath<br />Le jeu</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- /HEADER -->
+
+            <main role="main" class="m-page">
+
+            	<section role="region" id="forms-website">
+            		<div class="row">
+            			<div class="small-12 medium-6 columns">
+            				<span class="simili-title"><strong>Je ne possède pas</strong> de compte</span>
+            				<p>Ce compte est unique et vous servira aussi à poster sur le forum. <a href="#">Pourquoi m'inscrire ?</a></p>
+            				<aside role="complementary" id="form-sign-in">
+	            				<div class="row">
+	            					<div class="small-6 columns">
+										<input type="file" name="file" id="file" class="inputfile" />
+										<label for="file">Choisissez une image</label>
+	            					</div>
+	            				</div>
+	            				<div class="row collapse">
+	            					<label for="pseudo">Mon pseudo</label>
+	            					<div class="small-1 columns">
+	            						<span class="prefix">ico</span>
+	            					</div>
+	            					<div class="small-11 columns">
+	            						<input type="text" name="pseudo" id="pseudo" />
+	            					</div>
+	            				</div>
+	            				<div class="row collapse">
+	            					<label for="mail">Mon e-mail</label>
+	            					<div class="small-1 columns">
+	            						<span class="prefix">ico</span>
+	            					</div>
+	            					<div class="small-11 columns">
+	            						<input type="text" name="mail" id="mail" />
+	            					</div>
+	            				</div>
+	            				<div class="row collapse">
+	            					<label for="pwd">Mon mot de passe</label>
+	            					<div class="small-1 columns">
+	            						<span class="prefix">ico</span>
+	            					</div>
+	            					<div class="small-11 columns">
+	            						<input type="password" name="pwd" id="pwd" />
+	            					</div>
+	            				</div>
+	            				<input type="submit" name="btn-submit" id="btn-submit" class="btn btn_default" value="m'inscrire"/>
+            				</aside>
+            			</div>
+            			<div class="small-12 medium-6 columns">
+            				<div class="flip">
+	            				<span class="simili-title">Je possède <strong>déjà</strong> un compte</span>
+	            				<p>Ce compte est unique et il est identique à celui du forum.</p>
+	            				<aside role="complementary" id="form-log-in">
+		            				<div class="row collapse">
+		            					<label for="login-pseudo">Mon pseudo</label>
+		            					<div class="small-1 columns">
+		            						<span class="prefix">ico</span>
+		            					</div>
+		            					<div class="small-11 columns">
+		            						<input type="text" name="login-pseudo" id="login-pseudo" />
+		            					</div>
+		            				</div>
+		            				<div class="row collapse">
+		            					<label for="login-pwd">Mon mot de passe</label>
+		            					<div class="small-1 columns">
+		            						<span class="prefix">ico</span>
+		            					</div>
+		            					<div class="small-11 columns">
+		            						<input type="password" name="login-pwd" id="login-pwd" />
+		            					</div>
+		            					<p><a href="#">J'ai oublié mon mot de passe</a></p>
+		            				</div>
+		            				<input type="submit" name="login-btn-submit" id="login-btn-submit" class="btn btn_default" value="me connecter"/>
+	            				</aside>
+	            			</div>
+	            			<div class="flap">
+	            				<span class="simili-title">Pourquoi s'inscrire ?</span>
+	            				<aside role="complementary" id="why-sign">
+		            				<ul class="basic_list">
+		            					<li class="because-forum">
+		            						<p>D'abord, pour que vous puissiez participer au forum. Si vous êtes un habitué des lieux, votre compte forum a été fusionné avec celui du site web. </p>
+		            					</li>
+		            					<li class="because-activity">
+		            						<p>Ensuite, pour avoir accès à de nouvelles fonctionnalités :</p>
+		            						<ul>
+		            							<li>Indiquer si vous avez aimé - ou pas - une oeuvre chroniqué sur le site</li>
+		            							<li>Vous construire une pile à lire</li>
+		            							<li>Indiquer au monde entier de quoi est constitué votre bibliothèque idéale</li>
+		            							<li>Suivre un membre du site afin d'être au courant de son activité (savoir si votre chroniqueur préféré a apprécié une oeuvre, observer combien votre meilleur(e) ami(e) a mauvais goût, etc.)</li>
+		            							<li>Et enfin recevoir des trophées pour votre activité sur le site !</li>
+		            						</ul>
+		            					</li>
+		            				</ul>
+	            				</aside>
+	            			</div>
+            			</div>
+            		</div>
+            	</section>
+
+            </main>
+
+            <!-- footer -->
+            <footer role="contentinfo" data-weather="" id="footer">
+            <div class="row">
+                <div class="medium-3 large-2 columns">
+                    <span id="weather_city">
+                        <em>la météo à</em>
+                        <strong></strong>
+                    </span>
+                    <div id="content_icon">
+                        <div id="weather"></div>
+                    </div>
+                </div>
+                <div class="small-6 medium-3 large-2 columns">
+                    <h2>Notre réseau</h2>
+                    <ul class="basic_list">
+                        <li><a href="http://association.elbakin.net" target="_blank" title="Site de l'association Elbakin.net (nouvelle fenêtre)">L'Association Elbakin.net</a></li>
+                        <li><a href="http://archibald.elbakin.net" target="_blank" title="Feuilleton numérique des Fabuleuses Aventures d'Archibald Bellérophon (nouvelle fenêtre)">Archibald Bellérophon</a></li>
+                        <li><a href="http://periannath.elbakin.net" target="_blank" title="Site du jeu vidéo Periannath (nouvelle fenêtre)">Periannath</a></li>
+                    </ul>
+                </div>
+                <div class="small-6 medium-6 large-2 columns">
+                    <h2>Le site</h2>
+                    <ul class="basic_list">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Plan du site</a></li>
+                        <li><a href="#">Légende</a> du site</a></li>
+                        <li><a href="#">Chronologie</a> du site</a></li>
+                        <li><a href="#"><abbr title="Foire aux Questions">Faq</abbr> Elbakin.net</a></li>
+                    </ul>
+                </div>
+                <div class="small-12 medium-6 large-3 columns">
+                    <h2>Contactez-nous</h2>
+                    <ul class="basic_list">
+                        <li><a href="#">Une coquille, une erreur ?</a></li>
+                        <li><a href="#">L'équipe du site</a></li>
+                        <li><a href="#">&Agrave; propos de la ligne éditoriale</a></li>
+                        <li><a href="#">&Agrave; propos de la publicité/partenariats</a></li>
+                        <li><a href="#">Pour participer à la vie du site</a></li>
+                    </ul>
+                </div>
+                <div class="small-12 medium-6 large-3 columns">
+                    <h2>Restons en contact !</h2>
+                    <form class="newsletterform" method="get" action="/">
+                        <label for="email">Abonnez-vous à notre newletter :</label>
+                        <input type="email" id="email" name="email" required aria-required="true" placeholder="Votre e-mail" />
+                        <button class="btn-submit">ok</button>
+                    </form>
+                    <p>Et rejoignez-nous sur les réseaux sociaux :</p>
+                    <ul class="social_footer">
+                        <li><a href="http://twitter.com/elbakin"><span class="icon icon-twitter" aria-hidden="true"></span><span class="text">Twitter</span></a></li>
+                        <li><a href="https://www.facebook.com/Elbakin.net"><span class="icon icon-facebook" aria-hidden="true"></span><span class="text">Facebook</span></a></li>
+                        <li><a href="https://plus.google.com/116698928900965945603"><span class="icon icon-google-plus" aria-hidden="true"></span><span class="text">Google Plus</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            </footer>
+            <!-- /end footer -->
+
+        </div> <!-- /end m-scene-->
+
+        <!-- ALL JS BEFORE /BODY -->
+        <!-- libraries -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="scripts/jquery-2.1.3.min.js"><\/script>')</script>
+        <script type="text/javascript" src="scripts/jquery.cookie.js"></script>
+        <!-- timeline -->
+        <script type="text/javascript" src="scripts/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="scripts/jquery.timeline.min.js"></script>
+        <!-- /end timeline -->
+        <!-- custom scripts -->
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <!-- / END JS -->
+
+    </body>
+</html>
