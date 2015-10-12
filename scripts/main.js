@@ -104,7 +104,7 @@ $(document).ready(function() {
 	});
 
 	// flip forms
-	$('#form-sign-in input').click(function() {
+	$('#form-sign-in input, .why-account').click(function() {
 		$('#cards').addClass('flipped');
 	});
 	$('.allready-an-account').click(function() {
