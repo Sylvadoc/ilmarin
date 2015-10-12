@@ -1,0 +1,196 @@
+/********************************************************************************************************************************************************************************
+********************* F O R M S *****************
+/********************************************************************************************************************************************************************************/
+
+#forms-website {
+	@include gradient(#C04848, #480048);
+	color: white;
+	margin: 2em 0;
+	padding-bottom: 2rem;
+	.simili-title {
+		margin: 1em 0;
+	}
+}
+#form-sign-in, #form-log-in {
+	.row {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+/* ==========================================================================
+   $IN GENERAL
+   ========================================================================== */
+
+   .prefix, .suffix {
+		display: block;
+		height: 3rem;
+		line-height: 3rem;
+		overflow: visible;
+		padding-bottom: 0;
+		padding-top: 0;
+		position: relative;
+		text-align: center;
+		width: 100%;
+		z-index: 2;
+   }
+   .suffix {
+		@include border-radius(0 2px 2px 0);
+		background-color: $base-color-elbakin;
+		color: white;
+   }
+   .prefix {
+		@include border-radius(2px 0 0 2px);
+		background-color: $base-color-elbakin;
+		color: white;
+   }
+   .card {
+		@include border-radius(5px);
+		background: white;
+		padding: 1rem;
+		color: $base-color;
+		.form-desc {
+			color: #666;
+			margin-bottom: 1em;
+		}
+   }
+   .form {
+		label {
+			cursor: pointer;
+			display: block;
+			font-family: $font-stack-headings;
+			text-transform: uppercase;
+		}
+		input[type=text], input[type=password] {
+			@include border-radius(0 3px 3px 0);
+			background-color: #FFF;
+			border-style: solid;
+			border-width: 1px;
+			border-color: #CCC;
+			box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;
+			color: rgba(0, 0, 0, 0.75);
+			display: block;
+			font-family: inherit;
+			height: 3rem;
+			margin: 0px 0px 0.88889rem;
+			padding: 0.44444rem;
+			width: 100%;
+		}
+		input[type=submit] {
+			margin: 1em auto;
+		}
+   }
+   .chose-an-avatar {
+   		padding: 0 0 1em 0;
+		.inputfile {
+			width: 0.1px;
+			height: 0.1px;
+			opacity: 0;
+			overflow: hidden;
+			position: absolute;
+			z-index: -1;
+			&+ label {
+				@include border-radius(50%);
+				background: #eaeaea;
+				border: 2px solid #ccc;
+				display: block;
+				height: 110px;
+				margin: 0 auto;
+				position: relative;
+				text-indent: -999em;
+				width: 110px;
+				&:before {
+					@include transition(all .2s);
+						@include opacity(0);
+						@include rem(3);
+						@include translate(0,45px);
+						content: '\e631';
+						font-family: 'icomoon', sans-serif;
+						left: 0;
+						line-height: 1;
+						position: absolute;
+						text-align: center;
+						text-indent: 0;
+						top: 0;
+						width: 100%;
+				}
+				&:hover {
+					&:before {
+						@include opacity(1);
+						@include translate(0,35px);
+					}
+				}
+			}
+	   		&:focus {
+	   			+ label {
+					outline: 1px dotted #000;
+					outline: -webkit-focus-ring-color auto 5px;
+	   			}
+	   		}
+		}
+   }
+
+/* ==========================================================================
+   $SPECIFIC LOG IN
+   ========================================================================== */
+
+	#form-log-in {
+		.simili-title { color: white; }
+		&.card {
+			@include border-radius(0);
+			background: transparent;
+			padding: 0;
+			color: inherit;
+			.form {
+				@include border-radius(5px);
+				background: white;
+				padding: 1rem;
+				color: $base-color;
+			}
+		}
+	}
+
+/* ==========================================================================
+   $FLIPPING FORMS
+   ========================================================================== */
+
+	.flip-container {
+		@include perspective(800px);
+		position: relative;
+		width: 100%;
+		.flipped {
+			transform: translateX(-100%) rotateY(-180deg);
+			.front .simili-title { visibility: hidden; }
+		}
+	}
+	#cards {
+		@include transform-style(preserve-3d);
+		@include transition(transform .5s);
+		@include transform-origin(right center);
+		height: 250px;
+		position: absolute;
+		width: 100%;
+		.to-flip {
+			@include backface-visibility(hidden);
+			color: $base-color;
+			display: block;
+			height: 100%;
+			margin: 0;
+			position: absolute;
+			width: 100%;
+		}
+		.back {
+			.simili-title { color: white; }
+			@include rotateY(180deg);
+			z-index: 3;
+			.basic_list {
+				padding: 1rem;
+			}
+			aside {
+				@include border-radius(5px);
+				background: white;
+				height: 352px;
+			}
+			.btn { margin: 0 auto 1em auto; }
+		}
+	}

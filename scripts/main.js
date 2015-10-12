@@ -103,6 +103,14 @@ $(document).ready(function() {
 		window.location = $(this).find("a").attr("href");
 	});
 
+	// flip forms
+	$('#form-sign-in input').click(function() {
+		$('#cards').addClass('flipped');
+	});
+	$('.allready-an-account').click(function() {
+		$('#cards').removeClass('flipped');
+	});
+
 	// Anathema
 	var weather = ['sunny','cloudy','rainy','snowy','rainbow','starry','stormy'];
 	var cities = ['Minas Tirith','Fendeval','Hobbiteville','Minas Morgul','Camorr','Ankh-Morpork','Tar Valon','Port-Réal','Castelcerf','Poudlard','Wielstadt','Edoras','Luthadel','Lorgol','Dros Delnoch','Ymrrir','Sunnydale','Konoha'];

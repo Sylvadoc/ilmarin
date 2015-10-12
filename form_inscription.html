@@ -209,18 +209,21 @@
             		<div class="row">
             			<div class="small-12 medium-6 columns">
             				<span class="simili-title"><strong>Je ne possède pas</strong> de compte</span>
-            				<p>Ce compte est unique et vous servira aussi à poster sur le forum. <a href="#">Pourquoi m'inscrire ?</a></p>
-            				<aside role="complementary" id="form-sign-in">
+            				<aside role="complementary" id="form-sign-in" class="card">
+            				<form class="form" action="#" method="post">
+            					<p class="form-desc">Ce compte est unique et vous servira aussi à poster sur le forum. <a href="#">Pourquoi m'inscrire ?</a></p>
 	            				<div class="row">
-	            					<div class="small-6 columns">
-										<input type="file" name="file" id="file" class="inputfile" />
-										<label for="file">Choisissez une image</label>
+	            					<div class="small-12 columns">
+	            						<div class="chose-an-avatar">
+											<input type="file" name="file" id="file" class="inputfile" />
+											<label for="file" title="Choisissez une image">Choisissez une image</label>
+										</div>
 	            					</div>
 	            				</div>
 	            				<div class="row collapse">
 	            					<label for="pseudo">Mon pseudo</label>
 	            					<div class="small-1 columns">
-	            						<span class="prefix">ico</span>
+	            						<span class="prefix"><span class="ico icon-user" aria-hidden="true"></span></span>
 	            					</div>
 	            					<div class="small-11 columns">
 	            						<input type="text" name="pseudo" id="pseudo" />
@@ -229,7 +232,7 @@
 	            				<div class="row collapse">
 	            					<label for="mail">Mon e-mail</label>
 	            					<div class="small-1 columns">
-	            						<span class="prefix">ico</span>
+	            						<span class="prefix"><span class="ico icon-mail" aria-hidden="true"></span></span>
 	            					</div>
 	            					<div class="small-11 columns">
 	            						<input type="text" name="mail" id="mail" />
@@ -238,62 +241,70 @@
 	            				<div class="row collapse">
 	            					<label for="pwd">Mon mot de passe</label>
 	            					<div class="small-1 columns">
-	            						<span class="prefix">ico</span>
+	            						<span class="prefix"><span class="ico icon-lock" aria-hidden="true"></span></span>
 	            					</div>
 	            					<div class="small-11 columns">
 	            						<input type="password" name="pwd" id="pwd" />
 	            					</div>
 	            				</div>
 	            				<input type="submit" name="btn-submit" id="btn-submit" class="btn btn_default" value="m'inscrire"/>
+	            			</form>
             				</aside>
             			</div>
             			<div class="small-12 medium-6 columns">
-            				<div class="flip">
-	            				<span class="simili-title">Je possède <strong>déjà</strong> un compte</span>
-	            				<p>Ce compte est unique et il est identique à celui du forum.</p>
-	            				<aside role="complementary" id="form-log-in">
-		            				<div class="row collapse">
-		            					<label for="login-pseudo">Mon pseudo</label>
-		            					<div class="small-1 columns">
-		            						<span class="prefix">ico</span>
-		            					</div>
-		            					<div class="small-11 columns">
-		            						<input type="text" name="login-pseudo" id="login-pseudo" />
-		            					</div>
-		            				</div>
-		            				<div class="row collapse">
-		            					<label for="login-pwd">Mon mot de passe</label>
-		            					<div class="small-1 columns">
-		            						<span class="prefix">ico</span>
-		            					</div>
-		            					<div class="small-11 columns">
-		            						<input type="password" name="login-pwd" id="login-pwd" />
-		            					</div>
-		            					<p><a href="#">J'ai oublié mon mot de passe</a></p>
-		            				</div>
-		            				<input type="submit" name="login-btn-submit" id="login-btn-submit" class="btn btn_default" value="me connecter"/>
-	            				</aside>
-	            			</div>
-	            			<div class="flap">
-	            				<span class="simili-title">Pourquoi s'inscrire ?</span>
-	            				<aside role="complementary" id="why-sign">
-		            				<ul class="basic_list">
-		            					<li class="because-forum">
-		            						<p>D'abord, pour que vous puissiez participer au forum. Si vous êtes un habitué des lieux, votre compte forum a été fusionné avec celui du site web. </p>
-		            					</li>
-		            					<li class="because-activity">
-		            						<p>Ensuite, pour avoir accès à de nouvelles fonctionnalités :</p>
-		            						<ul>
-		            							<li>Indiquer si vous avez aimé - ou pas - une oeuvre chroniqué sur le site</li>
-		            							<li>Vous construire une pile à lire</li>
-		            							<li>Indiquer au monde entier de quoi est constitué votre bibliothèque idéale</li>
-		            							<li>Suivre un membre du site afin d'être au courant de son activité (savoir si votre chroniqueur préféré a apprécié une oeuvre, observer combien votre meilleur(e) ami(e) a mauvais goût, etc.)</li>
-		            							<li>Et enfin recevoir des trophées pour votre activité sur le site !</li>
-		            						</ul>
-		            					</li>
-		            				</ul>
-	            				</aside>
-	            			</div>
+            				<div class="flip-container">
+	            				<div id="cards">
+		            				<div class="front to-flip">
+			            				<aside role="complementary" id="form-log-in" class="card">
+		            						<span class="simili-title">Je possède <strong>déjà</strong> un compte</span>
+				            				<form class="form" action="#" method="post">
+				            					<p class="form-desc">Ce compte est unique et il est identique à celui du forum.</p>
+					            				<div class="row collapse">
+					            					<label for="login-pseudo">Mon pseudo</label>
+					            					<div class="small-1 columns">
+					            						<span class="prefix"><span class="ico icon-user" aria-hidden="true"></span></span>
+					            					</div>
+					            					<div class="small-11 columns">
+					            						<input type="text" name="login-pseudo" id="login-pseudo" />
+					            					</div>
+					            				</div>
+					            				<div class="row collapse">
+					            					<label for="login-pwd">Mon mot de passe</label>
+					            					<div class="small-1 columns">
+					            						<span class="prefix"><span class="ico icon-lock" aria-hidden="true"></span></span>
+					            					</div>
+					            					<div class="small-11 columns">
+					            						<input type="password" name="login-pwd" id="login-pwd" />
+					            					</div>
+					            					<p><a href="#">J'ai oublié mon mot de passe</a></p>
+					            				</div>
+					            				<input type="submit" name="login-btn-submit" id="login-btn-submit" class="btn btn_default" value="me connecter"/>
+					            			</form>
+			            				</aside>
+			            			</div>
+			            			<div class="back to-flip">
+			            				<span class="simili-title">Pourquoi s'inscrire ?</span>
+			            				<aside role="complementary" id="why-sign">
+				            				<ul class="basic_list">
+				            					<li class="because-forum">
+				            						<p>D'abord, pour que vous puissiez participer au forum. Si vous êtes un habitué des lieux, votre compte forum a été fusionné avec celui du site web. </p>
+				            					</li>
+				            					<li class="because-activity">
+				            						<p>Ensuite, pour avoir accès à de nouvelles fonctionnalités :</p>
+				            						<ul>
+				            							<li>Indiquer si vous avez aimé - ou pas - une oeuvre chroniqué sur le site</li>
+				            							<li>Vous construire une pile à lire</li>
+				            							<li>Indiquer au monde entier de quoi est constitué votre bibliothèque idéale</li>
+				            							<li>Suivre un membre du site afin d'être au courant de son activité (savoir si votre chroniqueur préféré a apprécié une oeuvre, observer combien votre meilleur(e) ami(e) a mauvais goût, etc.)</li>
+				            							<li>Et enfin recevoir des trophées pour votre activité sur le site !</li>
+				            						</ul>
+				            					</li>
+				            				</ul>
+				            				<a class="allready-an-account btn btn_neutral" href="#">j'ai déjà un compte</a>
+			            				</aside>
+			            			</div>
+			            		</div>
+		            		</div>
             			</div>
             		</div>
             	</section>
