@@ -2472,25 +2472,23 @@ body {
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
   border: 0;
-  cursor: pointer;
   color: white;
+  cursor: pointer;
   display: block;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   line-height: 40px;
   margin: 0 auto;
-  max-height: 40px;
   max-width: 275px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 22, ../styles/components/_buttons.scss */
+/* line 20, ../styles/components/_buttons.scss */
 .btn:hover {
   color: white;
   text-decoration: none;
 }
-/* line 26, ../styles/components/_buttons.scss */
+/* line 24, ../styles/components/_buttons.scss */
 .btn:active, .btn:focus {
   color: white;
   text-decoration: none;
@@ -2498,39 +2496,39 @@ body {
   top: 1px;
 }
 
-/* line 33, ../styles/components/_buttons.scss */
+/* line 31, ../styles/components/_buttons.scss */
 .inline_btn {
   display: inline-block;
   margin: 0 0 0 1em;
 }
 
-/* line 37, ../styles/components/_buttons.scss */
+/* line 35, ../styles/components/_buttons.scss */
 .btn_default {
   background: #FE9E00;
 }
-/* line 39, ../styles/components/_buttons.scss */
+/* line 37, ../styles/components/_buttons.scss */
 .btn_default:hover {
   background: #BE2700;
 }
-/* line 42, ../styles/components/_buttons.scss */
+/* line 40, ../styles/components/_buttons.scss */
 .btn_default:active {
   background: #BE2700;
 }
 
-/* line 46, ../styles/components/_buttons.scss */
+/* line 44, ../styles/components/_buttons.scss */
 .btn_neutral {
   background: #c8c2ae;
 }
-/* line 48, ../styles/components/_buttons.scss */
+/* line 46, ../styles/components/_buttons.scss */
 .btn_neutral:hover {
   background: #afae98;
 }
-/* line 51, ../styles/components/_buttons.scss */
+/* line 49, ../styles/components/_buttons.scss */
 .btn_neutral:active {
   background: #afae98;
 }
 
-/* line 55, ../styles/components/_buttons.scss */
+/* line 53, ../styles/components/_buttons.scss */
 .btn_simple {
   background: #FE9E00;
   color: white !important;
@@ -2542,19 +2540,19 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 65, ../styles/components/_buttons.scss */
+/* line 63, ../styles/components/_buttons.scss */
 .btn_simple:hover, .btn_simple:focus {
   background: #BE2700;
   color: white;
   text-decoration: none;
 }
-/* line 70, ../styles/components/_buttons.scss */
+/* line 68, ../styles/components/_buttons.scss */
 .btn_simple:active {
   position: relative;
   top: 1px;
 }
 
-/* line 75, ../styles/components/_buttons.scss */
+/* line 73, ../styles/components/_buttons.scss */
 .shadow-btn {
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -2571,23 +2569,23 @@ body {
   padding: .5em 1.2em;
   text-transform: uppercase;
 }
-/* line 84, ../styles/components/_buttons.scss */
+/* line 82, ../styles/components/_buttons.scss */
 .shadow-btn.light-shadow-btn {
   border: 2px solid white;
   color: white;
 }
-/* line 87, ../styles/components/_buttons.scss */
+/* line 85, ../styles/components/_buttons.scss */
 .shadow-btn.light-shadow-btn:hover, .shadow-btn.light-shadow-btn:focus, .shadow-btn.light-shadow-btn:active {
   background: white;
   color: black;
   text-decoration: none;
 }
-/* line 93, ../styles/components/_buttons.scss */
+/* line 91, ../styles/components/_buttons.scss */
 .shadow-btn.dark-shadow-btn {
   border: 2px solid #666;
   color: #666;
 }
-/* line 96, ../styles/components/_buttons.scss */
+/* line 94, ../styles/components/_buttons.scss */
 .shadow-btn.dark-shadow-btn:hover, .shadow-btn.dark-shadow-btn:focus, .shadow-btn.dark-shadow-btn:active {
   border: 2px solid #BE2700;
   background: #BE2700;
@@ -3039,7 +3037,7 @@ body {
 }
 /* line 46, ../styles/components/_chrono.scss */
 #chrono .scroller_chrono abbr {
-  border: 0;
+  text-decoration: none;
 }
 /* line 49, ../styles/components/_chrono.scss */
 #chrono .scroller_chrono li {
@@ -3069,20 +3067,12 @@ body {
 }
 /* line 70, ../styles/components/_chrono.scss */
 #chrono .footer_chrono {
+  overflow: hidden;
   background: #efefef;
   padding: 1rem;
 }
-/* line 73, ../styles/components/_chrono.scss */
-#chrono .footer_chrono ul, #chrono .footer_chrono li {
-  display: inline-block;
-}
-/* line 76, ../styles/components/_chrono.scss */
-#chrono .footer_chrono li {
-  font-weight: 700;
-  vertical-align: top;
-}
-/* line 80, ../styles/components/_chrono.scss */
-#chrono .footer_chrono ul + a {
+/* line 74, ../styles/components/_chrono.scss */
+#chrono .footer_chrono a {
   font-size: 16.8px;
   font-size: 1.2rem;
   background-color: #BE2700;
@@ -3095,12 +3085,12 @@ body {
 
 /* ============== R E S P O N S I V E
 ========================================================== */
-@media (max-width: 1280px) {
-  /* line 96, ../styles/components/_chrono.scss */
+@media (max-width: 1024px) {
+  /* line 90, ../styles/components/_chrono.scss */
   #chrono {
     margin-top: 2rem;
   }
-  /* line 99, ../styles/components/_chrono.scss */
+  /* line 93, ../styles/components/_chrono.scss */
   #chrono .header_chrono select {
     width: 43%;
   }

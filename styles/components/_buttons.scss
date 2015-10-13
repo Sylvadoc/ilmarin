@@ -7,14 +7,12 @@
 	@include rem(1.6);
 	@include transition(all 300ms ease-out);
 	border: 0;
-	cursor: pointer;
 	color: white;
+	cursor: pointer;
 	display: block;
-	font-weight: 700;
-	letter-spacing: 1px;
+	font-family: $font-stack-headings;
 	line-height: 40px;
 	margin: 0 auto;
-	max-height: 40px;
 	max-width: 275px;
 	text-align: center;
 	text-decoration: none;

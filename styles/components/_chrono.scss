@@ -44,7 +44,7 @@
 	}
 	.scroller_chrono {
 		abbr {
-			border: 0;
+			text-decoration: none;
 		}
 		li {
 			border-bottom: 1px solid #ccc;
@@ -68,16 +68,10 @@
 		}
 	}
 	.footer_chrono {
+		overflow: hidden;
 		background: #efefef;
 		padding: 1rem;
-		ul, li {
-			display: inline-block;
-		}
-		li {
-			font-weight: 700;
-			vertical-align: top;
-		}
-		ul + a {
+		a {
 			@include rem(1.2);
 			background-color: $base-color-elbakin;
 			color: white;
@@ -92,7 +86,7 @@
 /* ============== R E S P O N S I V E
 ========================================================== */
 
-@media (max-width: $large-screen) {
+@media (max-width: $medium-screen) {
 	#chrono {
 		margin-top: 2rem;
 		.header_chrono {

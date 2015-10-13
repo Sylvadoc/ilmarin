@@ -5,7 +5,7 @@
 #forms-website {
 	@include gradient(#C04848, #480048);
 	color: white;
-	margin: 2em 0;
+	margin: 2em 0 0;
 	padding-bottom: 2rem;
 	.simili-title {
 		margin: 1em 0;
@@ -100,24 +100,23 @@
 				text-indent: -999em;
 				width: 110px;
 				&:before {
-					@include transition(all .2s);
-						@include opacity(0);
-						@include rem(3);
-						@include translate(0,45px);
-						content: '\e631';
-						font-family: 'icomoon', sans-serif;
-						left: 0;
-						line-height: 1;
-						position: absolute;
-						text-align: center;
-						text-indent: 0;
-						top: 0;
-						width: 100%;
+					@include transition(opacity .2s);
+					@include opacity(0.5);
+					@include rem(3);
+					@include translate(0,35px);
+					content: '\e631';
+					font-family: 'icomoon', sans-serif;
+					left: 0;
+					line-height: 1;
+					position: absolute;
+					text-align: center;
+					text-indent: 0;
+					top: 0;
+					width: 100%;
 				}
 				&:hover {
 					&:before {
 						@include opacity(1);
-						@include translate(0,35px);
 					}
 				}
 			}
@@ -180,17 +179,38 @@
 			width: 100%;
 		}
 		.back {
-			.simili-title { color: white; }
 			@include rotateY(180deg);
 			z-index: 3;
-			.basic_list {
-				padding: 1rem;
-			}
 			aside {
 				@include border-radius(5px);
 				background: white;
-				height: 352px;
+				height: 433px;
 			}
 			.btn { margin: 0 auto 1em auto; }
+			.simili-title { color: white; }
+			.basic_list {
+				padding: 1rem;
+				.icon {
+					@include rem(4);
+					color: $base-color-elbakin;
+					float: left;
+					margin-right: 1rem;
+				}
+				ul { margin-top: 1rem; }
+				li {
+					margin-bottom: 1rem;
+					padding: 0 0 1rem 0;
+					&:last-child {
+						border: 0;
+						margin: 0;
+					}
+					li {
+						&:last-child { margin: 0; }
+						.icon {
+							@include rem(2);
+						}
+					}
+				}
+			}
 		}
 	}

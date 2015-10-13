@@ -3509,25 +3509,23 @@ body {
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
   border: 0;
-  cursor: pointer;
   color: white;
+  cursor: pointer;
   display: block;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   line-height: 40px;
   margin: 0 auto;
-  max-height: 40px;
   max-width: 275px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 22, ../styles/components/_buttons.scss */
+/* line 20, ../styles/components/_buttons.scss */
 .btn:hover {
   color: white;
   text-decoration: none;
 }
-/* line 26, ../styles/components/_buttons.scss */
+/* line 24, ../styles/components/_buttons.scss */
 .btn:active, .btn:focus {
   color: white;
   text-decoration: none;
@@ -3535,39 +3533,39 @@ body {
   top: 1px;
 }
 
-/* line 33, ../styles/components/_buttons.scss */
+/* line 31, ../styles/components/_buttons.scss */
 .inline_btn {
   display: inline-block;
   margin: 0 0 0 1em;
 }
 
-/* line 37, ../styles/components/_buttons.scss */
+/* line 35, ../styles/components/_buttons.scss */
 .btn_default {
   background: #FE9E00;
 }
-/* line 39, ../styles/components/_buttons.scss */
+/* line 37, ../styles/components/_buttons.scss */
 .btn_default:hover {
   background: #BE2700;
 }
-/* line 42, ../styles/components/_buttons.scss */
+/* line 40, ../styles/components/_buttons.scss */
 .btn_default:active {
   background: #BE2700;
 }
 
-/* line 46, ../styles/components/_buttons.scss */
+/* line 44, ../styles/components/_buttons.scss */
 .btn_neutral {
   background: #c8c2ae;
 }
-/* line 48, ../styles/components/_buttons.scss */
+/* line 46, ../styles/components/_buttons.scss */
 .btn_neutral:hover {
   background: #afae98;
 }
-/* line 51, ../styles/components/_buttons.scss */
+/* line 49, ../styles/components/_buttons.scss */
 .btn_neutral:active {
   background: #afae98;
 }
 
-/* line 55, ../styles/components/_buttons.scss */
+/* line 53, ../styles/components/_buttons.scss */
 .btn_simple {
   background: #FE9E00;
   color: white !important;
@@ -3579,19 +3577,19 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 65, ../styles/components/_buttons.scss */
+/* line 63, ../styles/components/_buttons.scss */
 .btn_simple:hover, .btn_simple:focus {
   background: #BE2700;
   color: white;
   text-decoration: none;
 }
-/* line 70, ../styles/components/_buttons.scss */
+/* line 68, ../styles/components/_buttons.scss */
 .btn_simple:active {
   position: relative;
   top: 1px;
 }
 
-/* line 75, ../styles/components/_buttons.scss */
+/* line 73, ../styles/components/_buttons.scss */
 .shadow-btn {
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -3608,23 +3606,23 @@ body {
   padding: .5em 1.2em;
   text-transform: uppercase;
 }
-/* line 84, ../styles/components/_buttons.scss */
+/* line 82, ../styles/components/_buttons.scss */
 .shadow-btn.light-shadow-btn {
   border: 2px solid white;
   color: white;
 }
-/* line 87, ../styles/components/_buttons.scss */
+/* line 85, ../styles/components/_buttons.scss */
 .shadow-btn.light-shadow-btn:hover, .shadow-btn.light-shadow-btn:focus, .shadow-btn.light-shadow-btn:active {
   background: white;
   color: black;
   text-decoration: none;
 }
-/* line 93, ../styles/components/_buttons.scss */
+/* line 91, ../styles/components/_buttons.scss */
 .shadow-btn.dark-shadow-btn {
   border: 2px solid #666;
   color: #666;
 }
-/* line 96, ../styles/components/_buttons.scss */
+/* line 94, ../styles/components/_buttons.scss */
 .shadow-btn.dark-shadow-btn:hover, .shadow-btn.dark-shadow-btn:focus, .shadow-btn.dark-shadow-btn:active {
   border: 2px solid #BE2700;
   background: #BE2700;
@@ -4076,7 +4074,7 @@ body {
 }
 /* line 46, ../styles/components/_chrono.scss */
 #chrono .scroller_chrono abbr {
-  border: 0;
+  text-decoration: none;
 }
 /* line 49, ../styles/components/_chrono.scss */
 #chrono .scroller_chrono li {
@@ -4106,20 +4104,12 @@ body {
 }
 /* line 70, ../styles/components/_chrono.scss */
 #chrono .footer_chrono {
+  overflow: hidden;
   background: #efefef;
   padding: 1rem;
 }
-/* line 73, ../styles/components/_chrono.scss */
-#chrono .footer_chrono ul, #chrono .footer_chrono li {
-  display: inline-block;
-}
-/* line 76, ../styles/components/_chrono.scss */
-#chrono .footer_chrono li {
-  font-weight: 700;
-  vertical-align: top;
-}
-/* line 80, ../styles/components/_chrono.scss */
-#chrono .footer_chrono ul + a {
+/* line 74, ../styles/components/_chrono.scss */
+#chrono .footer_chrono a {
   font-size: 16.8px;
   font-size: 1.2rem;
   background-color: #BE2700;
@@ -4132,12 +4122,12 @@ body {
 
 /* ============== R E S P O N S I V E
 ========================================================== */
-@media (max-width: 1280px) {
-  /* line 96, ../styles/components/_chrono.scss */
+@media (max-width: 1024px) {
+  /* line 90, ../styles/components/_chrono.scss */
   #chrono {
     margin-top: 2rem;
   }
-  /* line 99, ../styles/components/_chrono.scss */
+  /* line 93, ../styles/components/_chrono.scss */
   #chrono .header_chrono select {
     width: 43%;
   }
@@ -4156,7 +4146,7 @@ body {
   background-image: -o-linear-gradient(left, #C04848, #480048);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#C04848', EndColorStr='#480048')";
   color: white;
-  margin: 2em 0;
+  margin: 2em 0 0;
   padding-bottom: 2rem;
 }
 /* line 10, ../styles/components/_forms.scss */
@@ -4279,19 +4269,19 @@ body {
 }
 /* line 102, ../styles/components/_forms.scss */
 .chose-an-avatar .inputfile + label:before {
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-  opacity: 0;
-  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   font-size: 42px;
   font-size: 3rem;
-  transform: translate(0, 45px);
-  -moz-transform: translate(0, 45px);
-  -ms-transform: translate(0, 45px);
-  -webkit-transform: translate(0, 45px);
+  transform: translate(0, 35px);
+  -moz-transform: translate(0, 35px);
+  -ms-transform: translate(0, 35px);
+  -webkit-transform: translate(0, 35px);
   zoom: 1;
   content: '\e631';
   font-family: 'icomoon', sans-serif;
@@ -4307,13 +4297,8 @@ body {
 .chose-an-avatar .inputfile + label:hover:before {
   opacity: 1;
   filter: alpha(opacity=100);
-  transform: translate(0, 35px);
-  -moz-transform: translate(0, 35px);
-  -ms-transform: translate(0, 35px);
-  -webkit-transform: translate(0, 35px);
-  zoom: 1;
 }
-/* line 125, ../styles/components/_forms.scss */
+/* line 124, ../styles/components/_forms.scss */
 .chose-an-avatar .inputfile:focus + label {
   outline: 1px dotted #000;
   outline: -webkit-focus-ring-color auto 5px;
@@ -4322,11 +4307,11 @@ body {
 /* ==========================================================================
    $SPECIFIC LOG IN
    ========================================================================== */
-/* line 138, ../styles/components/_forms.scss */
+/* line 137, ../styles/components/_forms.scss */
 #form-log-in .simili-title {
   color: white;
 }
-/* line 139, ../styles/components/_forms.scss */
+/* line 138, ../styles/components/_forms.scss */
 #form-log-in.card {
   -webkit-border-radius: 0;
   border-radius: 0;
@@ -4335,7 +4320,7 @@ body {
   padding: 0;
   color: inherit;
 }
-/* line 144, ../styles/components/_forms.scss */
+/* line 143, ../styles/components/_forms.scss */
 #form-log-in.card .form {
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -4348,7 +4333,7 @@ body {
 /* ==========================================================================
    $FLIPPING FORMS
    ========================================================================== */
-/* line 157, ../styles/components/_forms.scss */
+/* line 156, ../styles/components/_forms.scss */
 .flip-container {
   -webkit-perspective: 800px;
   -moz-perspective: 800px;
@@ -4357,16 +4342,16 @@ body {
   position: relative;
   width: 100%;
 }
-/* line 161, ../styles/components/_forms.scss */
+/* line 160, ../styles/components/_forms.scss */
 .flip-container .flipped {
   transform: translateX(-100%) rotateY(-180deg);
 }
-/* line 163, ../styles/components/_forms.scss */
+/* line 162, ../styles/components/_forms.scss */
 .flip-container .flipped .front .simili-title {
   visibility: hidden;
 }
 
-/* line 166, ../styles/components/_forms.scss */
+/* line 165, ../styles/components/_forms.scss */
 #cards {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -4383,7 +4368,7 @@ body {
   position: absolute;
   width: 100%;
 }
-/* line 173, ../styles/components/_forms.scss */
+/* line 172, ../styles/components/_forms.scss */
 #cards .to-flip {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -4395,7 +4380,7 @@ body {
   position: absolute;
   width: 100%;
 }
-/* line 182, ../styles/components/_forms.scss */
+/* line 181, ../styles/components/_forms.scss */
 #cards .back {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -4403,25 +4388,56 @@ body {
   transform: rotateY(180deg);
   z-index: 3;
 }
-/* line 183, ../styles/components/_forms.scss */
-#cards .back .simili-title {
-  color: white;
-}
-/* line 186, ../styles/components/_forms.scss */
-#cards .back .basic_list {
-  padding: 1rem;
-}
-/* line 189, ../styles/components/_forms.scss */
+/* line 184, ../styles/components/_forms.scss */
 #cards .back aside {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   background-clip: padding-box;
   background: white;
-  height: 352px;
+  height: 433px;
 }
-/* line 194, ../styles/components/_forms.scss */
+/* line 189, ../styles/components/_forms.scss */
 #cards .back .btn {
   margin: 0 auto 1em auto;
+}
+/* line 190, ../styles/components/_forms.scss */
+#cards .back .simili-title {
+  color: white;
+}
+/* line 191, ../styles/components/_forms.scss */
+#cards .back .basic_list {
+  padding: 1rem;
+}
+/* line 193, ../styles/components/_forms.scss */
+#cards .back .basic_list .icon {
+  font-size: 56px;
+  font-size: 4rem;
+  color: #BE2700;
+  float: left;
+  margin-right: 1rem;
+}
+/* line 199, ../styles/components/_forms.scss */
+#cards .back .basic_list ul {
+  margin-top: 1rem;
+}
+/* line 200, ../styles/components/_forms.scss */
+#cards .back .basic_list li {
+  margin-bottom: 1rem;
+  padding: 0 0 1rem 0;
+}
+/* line 203, ../styles/components/_forms.scss */
+#cards .back .basic_list li:last-child {
+  border: 0;
+  margin: 0;
+}
+/* line 208, ../styles/components/_forms.scss */
+#cards .back .basic_list li li:last-child {
+  margin: 0;
+}
+/* line 209, ../styles/components/_forms.scss */
+#cards .back .basic_list li li .icon {
+  font-size: 28px;
+  font-size: 2rem;
 }
 
 /********************************************************************************************************************************************************************************
