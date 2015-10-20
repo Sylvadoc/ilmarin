@@ -11,147 +11,9 @@
 	background: #f3f3f3;
 	text-align: center;
 	padding: 2rem 0;
-	.asso_card {
-		@include transition(all .2s ease-out);
-		@include border-radius(3px);
-		background: white;
-		display: inline-block;
-		margin: 0 1rem;
-		padding: 1rem;
-		height: 32rem;
-		vertical-align: top;
-		@extend %clearfix;
-		.icon {
-			@include rem(5);
-			color: $base-color-elbakin;
-			display: block;
-			margin: 2rem auto 0;
-			text-align: center;
-		}
-		h2 {
-			@include font-kerning();
-			font-variant: small-caps;
-			font-weight: 700;
-			text-align: center;
-			text-transform: lowercase;
-		}
-		p {
-			color: #6D6D6D;
-			text-align: left;
-		}
-		&:hover {
-			@include scale(1.05);
-			background: $orange-color-elbakin;
-			cursor: pointer;
-			p, .icon {
-				color: white;
-			}
-		}
-	}
 	.btn {
 		margin: 1em auto 0;
 		clear: both;
-	}
-}
-
-/* ============== B L O C   O P I N I O N S
-========================================================== */
-
-#opinions {
-	padding: 2rem 0;
-	ul {
-		list-style: none none;
-		padding: 0;
-		margin: 0;
-		li {
-			display: block;
-			border-bottom: 1px solid #ccc;
-			a {
-				display: block;
-				padding: .5em 0;
-			}
-		}
-	}
-}
-#edito {
-	h3 {
-		text-transform: uppercase;
-		@include rem(1.8);
-		margin: 1em 0;
-		padding: 0;
-		font-weight: 300;
-	}
-}
-#hot {
-	background: white;
-	@include border-radius(5px);
-	padding: 0 2rem 2rem;
-	a {
-		color: $base-color-elbakin;
-	}
-}
-#edito, #hot {
-	blockquote {
-		font-family: $font-stack-special;
-		font-style: italic;
-		font-weight: 300;
-		margin: 0;
-		@include rem(1.5);
-		@include font-kerning();
-		p {
-			margin: 0;
-		}
-		footer {
-			text-align: right;
-			font-style: normal;
-			cite {
-				font-family: $font-stack-caps;
-				font-weight: 500;
-				font-style: normal;
-				@include rem(1.4);
-				@include font-kerning();
-			}
-		}
-	}
-}
-
-/* ============== B L O C   N O S   E M I S S I O N S
-========================================================== */
-
-#emissions {
-	padding: 2rem 0;
-	h2 {
-		color: $base-color-elbakin;
-		text-align: center;
-	}
-	h3 {
-		color: $base-color-elbakin;
-		text-transform: uppercase;
-		@include rem(1.8);
-		margin: 1em 0 0 0;
-		padding: 0;
-		font-weight: 300;
-	}
-	ul {
-		list-style: none none;
-		padding: 0;
-		margin: 0;
-		li {
-			display: block;
-			border-bottom: 1px solid #ccc;
-			a {
-				display: block;
-				padding: .5em 0;
-			}
-		}
-	}
-}
-#dmud {
-	.article_focus {
-		background: white url('../images/illustrations/dmud.jpg') no-repeat bottom right;
-	}
-	li:nth-last-child(-n+4) {
-		width: 50%;
 	}
 }
 
@@ -291,145 +153,15 @@
 	padding: 2rem 0 1rem 0;
 }
 
-/* ============== B L O C   E L B A K I N
-========================================================== */
-
-#elbakin {
-	padding: 2rem 0;
-	.saint_marc {
-		@extend %clearfix;
-		list-style: none none;
-		margin: 0 2rem 0;
-		padding: 0;
-		position: relative;
-		&:before {
-			content: '';
-			display: block;
-			height: 100%;
-			width: 3px;
-			background: #ECE9E6;
-			position: absolute;
-			top: 0;
-			left: 50%;
-			@include border-radius(3px);
-		}
-		li {
-			@extend %clearfix;
-			display: block;
-			width: 100%;
-			margin: 1rem 0;
-			&:nth-child(odd) {
-				.evangile {
-					text-align: right;
-					float: left !important;
-					&:after {
-						top: 45%;
-						right: -15px;
-						left: auto;
-					}
-					.icon {
-						float: right;
-						margin: 0 0 0 1rem;
-					}
-				}
-			}
-		}
-		.evangile {
-			@extend %clearfix;
-			@include border-radius(35px);
-			background: #ECE9E6;
-			float: right;
-			padding: 10px;
-			text-align: left;
-			width: 47%;
-			position: relative;
-			&:after {
-				position: absolute;
-				top: 45%;
-				left: -12px;
-				right: auto;
-				content: '';
-				display: block;
-				width: 5px;
-				height: 5px;
-				@include border-radius(3px);
-				background: #ECE9E6;
-			}
-			h2 {
-				display: inline-block;
-				@include rem(1.6);
-				margin: 0;
-				padding: 0;
-				text-transform: uppercase;
-				span {
-					color: $base-color-elbakin;
-				}
-			}
-			p {
-				font-style: italic;
-			}
-			.icon {
-				@include border-radius(30px);
-				@include rem(2.5);
-				background: $base-color-elbakin;
-				color: white;
-				float: left;
-				height: 50px;
-				line-height: 30px;
-				margin: 0 1rem 0 0;
-				padding: 10px;
-				text-align: center;
-				width: 50px;
-			}
-		}
-	}
-	aside {
-		@include gradient(#ECE9E6,#FFFFFF);
-		padding: .1rem 2rem 2rem;
-		@include border-radius(5px);
-		.icon {
-			color: $orange-color-elbakin;
-		}
-		&+h2 {
-			text-transform: uppercase;
-			@include rem(1.6);
-		}
-	}
-}
-
 /* ============== R E S P O N S I V E
 ========================================================== */
 
 @media (max-width: $medium-screen) {
-	#association {
-		.asso_card {
-			height: 26rem;
-			margin-bottom: 2rem;
-			&:hover {
-				@include scale(1);
-			}
-		}
-	}
 	#prix_elbakin_net {
 		background-attachment: scroll !important;
 	}
 }
 @media (min-width: $tiny-screen) and (max-width: $small-screen) {
-	#association {
-		.asso_card {
-			height: auto;
-			&:hover {
-				@include scale(1);
-			}
-			.icon {
-				float: left;
-				margin-right: 2rem;
-			}
-			h2 {
-				text-align: left;
-			}
-		}
-	}
 	#prix_elbakin_net {
 		.all_prices {
 			margin: 2rem auto 0;
@@ -500,13 +232,5 @@
 	}
 	#elbakin {
 		display: none;
-	}
-	#association {
-		.asso_card {
-			height: auto;
-			&:hover {
-				@include scale(1);
-			}
-		}
 	}
 }

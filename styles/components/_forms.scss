@@ -214,3 +214,48 @@
 			}
 		}
 	}
+
+/* ==========================================================================
+   $NARRATIVE FORMS
+   ========================================================================== */
+
+   #palantir {
+		padding-bottom: 1em;
+		text-align: center;
+		h2 {
+			@include rem(1.4);
+			background: white;
+			color: $base-color;
+			display: inline-block;
+			font-family: $font-stack-simili;
+			font-weight: 400;
+			margin: 0 auto;
+			padding: .1em .5em;
+			span { position: relative; z-index: 1; }
+		}
+   }
+   .narrative-form {
+		border: 1px dotted white;
+		padding: 3rem;
+		position: relative;
+		top: -1.2rem;
+		.form-row {
+			display: inline-block;
+			color: white;
+			margin-bottom: 2rem;
+			label {
+				@include rem(3);
+				color: rgba(255,255,255,0.6);
+				display: inline-block;
+				font-family: $font-stack-simili;
+			}
+			select {
+				@include rem(3);
+				background: transparent;
+				border: 0;
+				color: white;
+				display: inline-block;
+				width: auto;
+			}
+		}
+   }

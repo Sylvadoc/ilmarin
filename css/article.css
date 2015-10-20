@@ -5,16 +5,16 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100);
 /* line 4, ../styles/helpers/_helpers.scss */
-.row-group, .the-header, .tools, .tools ul, .main_news .body-article, .other_news, .news_section {
+.row-group, .the-header, .some_card, .tools, .tools ul, .main_news .body-article, .other_news, .news_section {
   *zoom: 1;
 }
 /* line 6, ../styles/helpers/_helpers.scss */
-.row-group:before, .the-header:before, .tools:before, .tools ul:before, .main_news .body-article:before, .other_news:before, .news_section:before, .row-group:after, .the-header:after, .tools:after, .tools ul:after, .main_news .body-article:after, .other_news:after, .news_section:after {
+.row-group:before, .the-header:before, .some_card:before, .tools:before, .tools ul:before, .main_news .body-article:before, .other_news:before, .news_section:before, .row-group:after, .the-header:after, .some_card:after, .tools:after, .tools ul:after, .main_news .body-article:after, .other_news:after, .news_section:after {
   content: " ";
   display: table;
 }
 /* line 10, ../styles/helpers/_helpers.scss */
-.row-group:after, .the-header:after, .tools:after, .tools ul:after, .main_news .body-article:after, .other_news:after, .news_section:after {
+.row-group:after, .the-header:after, .some_card:after, .tools:after, .tools ul:after, .main_news .body-article:after, .other_news:after, .news_section:after {
   clear: both;
 }
 
@@ -2593,10 +2593,120 @@ body {
   text-decoration: none;
 }
 
-/********************************************************************************************************************************************************************************
-********************* P R O F I L E    C A R D *****************
-/********************************************************************************************************************************************************************************/
-/* line 5, ../styles/components/_card.scss */
+/* ============== D E F A U L T   C A R D
+========================================================== */
+/* line 4, ../styles/components/_card.scss */
+.some_card {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  background: white;
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 1rem;
+  vertical-align: top;
+}
+/* line 13, ../styles/components/_card.scss */
+.some_card .icon {
+  font-size: 70px;
+  font-size: 5rem;
+  color: #BE2700;
+  display: block;
+  margin: 2rem auto 0;
+  text-align: center;
+}
+/* line 20, ../styles/components/_card.scss */
+.some_card h2 {
+  font-size: 28px;
+  font-size: 2rem;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 27, ../styles/components/_card.scss */
+.some_card p {
+  color: #6D6D6D;
+  text-align: left;
+}
+/* line 31, ../styles/components/_card.scss */
+.some_card:hover {
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  background: #FE9E00;
+  cursor: pointer;
+}
+/* line 35, ../styles/components/_card.scss */
+.some_card:hover p, .some_card:hover .icon {
+  color: white;
+}
+
+/* line 41, ../styles/components/_card.scss */
+#association .some_card {
+  height: 32rem;
+}
+
+/* ============== R E S P O N S I V E
+========================================================== */
+@media (max-width: 1024px) {
+  /* line 51, ../styles/components/_card.scss */
+  #association .some_card {
+    height: 26rem;
+    margin-bottom: 2rem;
+  }
+  /* line 54, ../styles/components/_card.scss */
+  #association .some_card:hover {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  /* line 62, ../styles/components/_card.scss */
+  #association .some_card {
+    height: auto;
+  }
+  /* line 64, ../styles/components/_card.scss */
+  #association .some_card:hover {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  /* line 67, ../styles/components/_card.scss */
+  #association .some_card .icon {
+    float: left;
+    margin-right: 2rem;
+  }
+  /* line 71, ../styles/components/_card.scss */
+  #association .some_card h2 {
+    text-align: left;
+  }
+}
+@media (max-width: 480px) {
+  /* line 79, ../styles/components/_card.scss */
+  #association .some_card {
+    height: auto;
+  }
+  /* line 81, ../styles/components/_card.scss */
+  #association .some_card:hover {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* ============== P R O F I L E   C A R D
+========================================================== */
+/* line 91, ../styles/components/_card.scss */
 .profile-card {
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -2606,12 +2716,12 @@ body {
   overflow: hidden;
   position: relative;
 }
-/* line 11, ../styles/components/_card.scss */
+/* line 97, ../styles/components/_card.scss */
 .profile-card .bg-profile {
   background-color: #E59924;
   height: 75px;
 }
-/* line 15, ../styles/components/_card.scss */
+/* line 101, ../styles/components/_card.scss */
 .profile-card .img-profile {
   height: 130px;
   margin: 0;
@@ -2620,7 +2730,7 @@ body {
   top: 0;
   width: 130px;
 }
-/* line 23, ../styles/components/_card.scss */
+/* line 109, ../styles/components/_card.scss */
 .profile-card .avatar {
   -webkit-border-radius: 55px;
   border-radius: 55px;
@@ -2630,7 +2740,7 @@ body {
   overflow: hidden;
   width: 110px;
 }
-/* line 30, ../styles/components/_card.scss */
+/* line 116, ../styles/components/_card.scss */
 .profile-card h2 {
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   font-weight: 400;
@@ -2642,7 +2752,7 @@ body {
   text-indent: 110px;
   text-transform: uppercase;
 }
-/* line 41, ../styles/components/_card.scss */
+/* line 127, ../styles/components/_card.scss */
 .profile-card h3 {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
@@ -2650,37 +2760,37 @@ body {
   margin: 0;
   text-transform: uppercase;
 }
-/* line 48, ../styles/components/_card.scss */
+/* line 134, ../styles/components/_card.scss */
 .profile-card .detail-profile {
   padding: 0 10px;
   margin-top: 10px;
 }
-/* line 51, ../styles/components/_card.scss */
+/* line 137, ../styles/components/_card.scss */
 .profile-card .detail-profile .trophy {
   margin-bottom: 10px;
 }
-/* line 53, ../styles/components/_card.scss */
+/* line 139, ../styles/components/_card.scss */
 .profile-card .detail-profile .trophy li {
   display: inline-block;
 }
-/* line 56, ../styles/components/_card.scss */
+/* line 142, ../styles/components/_card.scss */
 .profile-card .detail-profile .trophy strong, .profile-card .detail-profile .trophy em {
   display: block;
 }
-/* line 59, ../styles/components/_card.scss */
+/* line 145, ../styles/components/_card.scss */
 .profile-card .detail-profile .trophy em {
   font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
-/* line 64, ../styles/components/_card.scss */
+/* line 150, ../styles/components/_card.scss */
 .profile-card .detail-profile .trophy .icon-trophy {
   font-size: 49px;
   font-size: 3.5rem;
   color: #BE2700;
   margin-right: .1em;
 }
-/* line 71, ../styles/components/_card.scss */
+/* line 157, ../styles/components/_card.scss */
 .profile-card .meta-info {
   background-color: #E5E8EA;
   border-top: 1px solid #ccc;
@@ -2688,7 +2798,7 @@ body {
   display: table;
   width: 100%;
 }
-/* line 77, ../styles/components/_card.scss */
+/* line 163, ../styles/components/_card.scss */
 .profile-card .meta-info .icon {
   color: #666;
   font-size: 28px;
@@ -2696,7 +2806,7 @@ body {
   float: left;
   margin-right: 10px;
 }
-/* line 83, ../styles/components/_card.scss */
+/* line 169, ../styles/components/_card.scss */
 .profile-card .meta-info > div {
   display: table-cell;
   vertical-align: middle;
@@ -2706,13 +2816,13 @@ body {
   line-height: 1;
   padding: 10px;
 }
-/* line 91, ../styles/components/_card.scss */
+/* line 177, ../styles/components/_card.scss */
 .profile-card .meta-info > div:hover {
   background: #FE9E00;
   color: white;
   cursor: pointer;
 }
-/* line 95, ../styles/components/_card.scss */
+/* line 181, ../styles/components/_card.scss */
 .profile-card .meta-info > div:hover .icon {
   color: white;
   -moz-transform: scale(1.5);
@@ -2721,15 +2831,15 @@ body {
   transform: scale(1.5);
   top: 5px;
 }
-/* line 100, ../styles/components/_card.scss */
+/* line 186, ../styles/components/_card.scss */
 .profile-card .meta-info > div:hover a {
   color: white;
 }
-/* line 102, ../styles/components/_card.scss */
+/* line 188, ../styles/components/_card.scss */
 .profile-card .meta-info > div:hover a:hover, .profile-card .meta-info > div:hover a:focus, .profile-card .meta-info > div:hover a:active {
   color: white;
 }
-/* line 107, ../styles/components/_card.scss */
+/* line 193, ../styles/components/_card.scss */
 .profile-card .meta-info > div .icon {
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -2739,7 +2849,7 @@ body {
   position: relative;
   top: 0;
 }
-/* line 112, ../styles/components/_card.scss */
+/* line 198, ../styles/components/_card.scss */
 .profile-card .meta-info > div a {
   font-size: 23.8px;
   font-size: 1.7rem;
@@ -2748,11 +2858,11 @@ body {
   font-style: normal;
   font-weight: 700;
 }
-/* line 118, ../styles/components/_card.scss */
+/* line 204, ../styles/components/_card.scss */
 .profile-card .meta-info > div a:hover, .profile-card .meta-info > div a:focus {
   text-decoration: none;
 }
-/* line 123, ../styles/components/_card.scss */
+/* line 209, ../styles/components/_card.scss */
 .profile-card .meta-info .message, .profile-card .meta-info .nb-trophy {
   border-right: 1px solid #ccc;
 }
@@ -2760,21 +2870,21 @@ body {
 /********************************************************************************************************************************************************************************
 ********************* P R O F I L E    P A G E *****************
 /********************************************************************************************************************************************************************************/
-/* line 133, ../styles/components/_card.scss */
+/* line 219, ../styles/components/_card.scss */
 #head {
   margin: 3em 0 2em 0;
 }
-/* line 136, ../styles/components/_card.scss */
+/* line 222, ../styles/components/_card.scss */
 #head .tabs a {
   background-color: white;
   color: #333;
 }
-/* line 139, ../styles/components/_card.scss */
+/* line 225, ../styles/components/_card.scss */
 #head .tabs a.active {
   background-color: #BE2700;
   color: white;
 }
-/* line 146, ../styles/components/_card.scss */
+/* line 232, ../styles/components/_card.scss */
 #head .row_tab .basic_list {
   -webkit-columns: 2;
   -moz-columns: 2;
@@ -2782,39 +2892,39 @@ body {
   columns: 2;
   margin: 1rem;
 }
-/* line 152, ../styles/components/_card.scss */
+/* line 238, ../styles/components/_card.scss */
 #head .trophies-list strong, #head .trophies-list em {
   display: block;
 }
-/* line 153, ../styles/components/_card.scss */
+/* line 239, ../styles/components/_card.scss */
 #head .trophies-list strong {
   text-transform: uppercase;
 }
-/* line 154, ../styles/components/_card.scss */
+/* line 240, ../styles/components/_card.scss */
 #head .trophies-list .icon {
   font-size: 54.6px;
   font-size: 3.9rem;
   float: left;
   margin-right: 1rem;
 }
-/* line 155, ../styles/components/_card.scss */
+/* line 241, ../styles/components/_card.scss */
 #head .trophies-list li {
   padding: 1rem 0;
 }
-/* line 156, ../styles/components/_card.scss */
+/* line 242, ../styles/components/_card.scss */
 #head .trophies-list .gold-trophy .icon {
   color: goldenrod;
 }
-/* line 157, ../styles/components/_card.scss */
+/* line 243, ../styles/components/_card.scss */
 #head .trophies-list .silver-trophy .icon {
   color: lightslategray;
 }
-/* line 158, ../styles/components/_card.scss */
+/* line 244, ../styles/components/_card.scss */
 #head .trophies-list .bronze-trophy .icon {
   color: sienna;
 }
 
-/* line 161, ../styles/components/_card.scss */
+/* line 247, ../styles/components/_card.scss */
 .bloc-profil {
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -2822,7 +2932,7 @@ body {
   border: 1px solid #ccc;
   position: relative;
 }
-/* line 165, ../styles/components/_card.scss */
+/* line 251, ../styles/components/_card.scss */
 .bloc-profil .nonsense {
   background-color: #BE2700;
   height: 66%;
@@ -2832,7 +2942,7 @@ body {
   left: 0;
   z-index: 0;
 }
-/* line 174, ../styles/components/_card.scss */
+/* line 260, ../styles/components/_card.scss */
 .bloc-profil .avatar {
   -webkit-border-radius: 55px;
   border-radius: 55px;
@@ -2846,19 +2956,19 @@ body {
   left: -55px;
   z-index: 1;
 }
-/* line 185, ../styles/components/_card.scss */
+/* line 271, ../styles/components/_card.scss */
 .bloc-profil .bloc {
   float: left;
   height: 200px;
   margin: 50px 0;
 }
-/* line 190, ../styles/components/_card.scss */
+/* line 276, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps {
   padding-left: 150px;
   width: 62%;
   margin-right: 50px;
 }
-/* line 194, ../styles/components/_card.scss */
+/* line 280, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps h1 {
   font-size: 5rem;
   color: #BE2700;
@@ -2867,53 +2977,53 @@ body {
   text-transform: uppercase;
   line-height: 1;
 }
-/* line 202, ../styles/components/_card.scss */
+/* line 288, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .title {
   display: block;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-/* line 208, ../styles/components/_card.scss */
+/* line 294, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .socially-engaged-on {
   margin: 1em 0;
   padding: 0;
   list-style: none none;
 }
-/* line 212, ../styles/components/_card.scss */
+/* line 298, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .socially-engaged-on li {
   font-size: 28px;
   font-size: 2rem;
   display: inline-block;
   margin-right: 1rem;
 }
-/* line 216, ../styles/components/_card.scss */
+/* line 302, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .socially-engaged-on li .icon-facebook {
   color: #47639E;
 }
-/* line 217, ../styles/components/_card.scss */
+/* line 303, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .socially-engaged-on li .icon-google-plus {
   color: #DD4B39;
 }
-/* line 218, ../styles/components/_card.scss */
+/* line 304, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .socially-engaged-on li .icon-twitter {
   color: #55ACEE;
 }
-/* line 221, ../styles/components/_card.scss */
+/* line 307, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps p {
   border-top: 1px solid #ccc;
   padding-top: 1rem;
 }
-/* line 224, ../styles/components/_card.scss */
+/* line 310, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps p strong {
   text-transform: uppercase;
 }
-/* line 229, ../styles/components/_card.scss */
+/* line 315, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke {
   border-left: 1px solid #ccc;
   width: 33%;
 }
-/* line 232, ../styles/components/_card.scss */
+/* line 318, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head {
   transform: translate(0, 50%);
   -moz-transform: translate(0, 50%);
@@ -2925,35 +3035,35 @@ body {
   text-align: center;
   top: 30%;
 }
-/* line 238, ../styles/components/_card.scss */
+/* line 324, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li {
   display: inline-block;
   padding-right: 2rem;
   margin-right: 2rem;
   border-right: 1px solid #ccc;
 }
-/* line 243, ../styles/components/_card.scss */
+/* line 329, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li strong, .bloc-profil .bloc-duke .side-head li span {
   display: block;
 }
-/* line 244, ../styles/components/_card.scss */
+/* line 330, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li span {
   text-transform: uppercase;
 }
-/* line 245, ../styles/components/_card.scss */
+/* line 331, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li .icon {
   font-size: 28px;
   font-size: 2rem;
   float: left;
   margin-right: 1rem;
 }
-/* line 250, ../styles/components/_card.scss */
+/* line 336, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li:last-child {
   border: 0;
   margin-right: 0;
   padding-right: 0;
 }
-/* line 258, ../styles/components/_card.scss */
+/* line 344, ../styles/components/_card.scss */
 .bloc-profil .bloc-noble {
   -webkit-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
@@ -2964,7 +3074,7 @@ body {
   padding: 1rem;
   position: relative;
 }
-/* line 265, ../styles/components/_card.scss */
+/* line 351, ../styles/components/_card.scss */
 .bloc-profil .bloc-noble .tabs {
   float: none;
 }
@@ -2972,7 +3082,7 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 @media (min-width: 1024px) and (min-width: 1280px) {
-  /* line 273, ../styles/components/_card.scss */
+  /* line 359, ../styles/components/_card.scss */
   .bloc-profil {
     width: 90%;
     margin: 0 auto;
@@ -4380,7 +4490,7 @@ body {
   }
 
   /* line 12, ../styles/themes/_theme.scss */
-  #header_section.tolkien_section, #header_section.library_section {
+  #header_section.tolkien_section, #header_section.library_section, #header_section.fantasy_section {
     background-color: transparent;
     background-image: url("../images/simonetti_1920.jpg");
     background-repeat: no-repeat;
@@ -4397,7 +4507,7 @@ body {
   }
 
   /* line 28, ../styles/themes/_theme.scss */
-  #header_section.tolkien_section, #header_section.library_section {
+  #header_section.tolkien_section, #header_section.library_section, #header_section.fantasy_section {
     background-color: transparent;
     background-image: url("../images/simonetti_1280.jpg");
     background-repeat: no-repeat;
@@ -4452,7 +4562,7 @@ section:nth-child(2n+2), #most {
 }
 
 /* line 58, ../styles/themes/_theme.scss */
-#prix_elbakin_net {
+#prix_elbakin_net, #palantir {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -4477,7 +4587,7 @@ section:nth-child(2n+2), #most {
 }
 
 /* line 69, ../styles/themes/_theme.scss */
-#discover {
+#discover, #social_block {
   background-color: #3a88bc;
   /* Fallback */
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#24C6DC), to(#514A9D));
@@ -4516,7 +4626,7 @@ section:nth-child(2n+2), #most {
 }
 
 /* line 81, ../styles/themes/_theme.scss */
-#author_news {
+#author_news, #editorial_section, #emissions {
   background-color: #f5f4f2;
   /* Fallback */
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ECE9E6), to(#FFFFFF));

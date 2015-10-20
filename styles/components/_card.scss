@@ -1,6 +1,92 @@
-/********************************************************************************************************************************************************************************
-********************* P R O F I L E    C A R D *****************
-/********************************************************************************************************************************************************************************/
+/* ============== D E F A U L T   C A R D
+========================================================== */
+
+.some_card {
+	@include transition(all .2s ease-out);
+	@include border-radius(3px);
+	background: white;
+	display: inline-block;
+	margin: 0 1rem;
+	padding: 1rem;
+	vertical-align: top;
+	@extend %clearfix;
+	.icon {
+		@include rem(5);
+		color: $base-color-elbakin;
+		display: block;
+		margin: 2rem auto 0;
+		text-align: center;
+	}
+	h2 {
+		@include rem(2);
+		font-family: $font-stack-headings;
+		font-weight: 400;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	p {
+		color: #6D6D6D;
+		text-align: left;
+	}
+	&:hover {
+		@include scale(1.05);
+		background: $orange-color-elbakin;
+		cursor: pointer;
+		p, .icon {
+			color: white;
+		}
+	}
+}
+#association {
+	.some_card {
+		height: 32rem;
+	}
+}
+
+/* ============== R E S P O N S I V E
+========================================================== */
+
+@media (max-width: $medium-screen) {
+	#association {
+		.some_card {
+			height: 26rem;
+			margin-bottom: 2rem;
+			&:hover {
+				@include scale(1);
+			}
+		}
+	}
+}
+@media (min-width: $tiny-screen) and (max-width: $small-screen) {
+	#association {
+		.some_card {
+			height: auto;
+			&:hover {
+				@include scale(1);
+			}
+			.icon {
+				float: left;
+				margin-right: 2rem;
+			}
+			h2 {
+				text-align: left;
+			}
+		}
+	}
+}
+@media (max-width: $tiny-screen) {
+	#association {
+		.some_card {
+			height: auto;
+			&:hover {
+				@include scale(1);
+			}
+		}
+	}
+}
+
+/* ============== P R O F I L E   C A R D
+========================================================== */
 
 .profile-card {
 	@include border-radius(3px);

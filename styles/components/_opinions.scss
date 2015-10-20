@@ -1,0 +1,60 @@
+/* ============== B L O C   O P I N I O N S
+========================================================== */
+
+#opinions {
+	padding: 2rem 0;
+	ul {
+		list-style: none none;
+		padding: 0;
+		margin: 0;
+		li {
+			display: block;
+			border-bottom: 1px solid #ccc;
+			a {
+				display: block;
+				padding: .5em 0;
+			}
+		}
+	}
+}
+#edito {
+	h3 {
+		text-transform: uppercase;
+		@include rem(1.8);
+		margin: 1em 0;
+		padding: 0;
+		font-weight: 300;
+	}
+}
+#hot {
+	background: white;
+	@include border-radius(5px);
+	padding: 0 2rem 2rem;
+	a {
+		color: $base-color-elbakin;
+	}
+}
+#edito, #hot {
+	blockquote {
+		font-family: $font-stack-special;
+		font-style: italic;
+		font-weight: 300;
+		margin: 0;
+		@include rem(1.5);
+		@include font-kerning();
+		p {
+			margin: 0;
+		}
+		footer {
+			text-align: right;
+			font-style: normal;
+			cite {
+				font-family: $font-stack-caps;
+				font-weight: 500;
+				font-style: normal;
+				@include rem(1.4);
+				@include font-kerning();
+			}
+		}
+	}
+}

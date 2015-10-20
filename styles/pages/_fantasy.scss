@@ -1,0 +1,57 @@
+/********************************************************************************************************************************************************************************
+********************* S E C T I O N   F A N T A S Y *****************
+/********************************************************************************************************************************************************************************/
+
+.page-fantasy {
+	.the-header {
+		background: transparent;
+		.inner-wrap {
+			background: transparent;
+		}
+	}
+	#header_section {
+		padding-top: 190px;
+		margin-top: -190px;
+	}
+}
+
+/* ============== H E A D E R
+========================================================== */
+
+.fantasy_section {
+	h1 {color: white;}
+	.quote {
+		background: white;
+		color: $base-color;
+		width: 33%;
+		q {
+			display: block;
+			padding: 1rem 1rem 0;
+			&+ span {
+				display: block;
+				font-style: italic;
+				padding: 0 1rem;
+			}
+		}
+		.more {
+			background-color: $orange-color-elbakin;
+			color: white;
+			display: block;
+			margin: 0;
+			padding: 1rem;
+		}
+	}
+	.quote-01 {
+		float: left;
+	}
+	.quote-02 {
+		float: right;
+	}
+}
+
+/* ============== R E D E S I G N
+========================================================== */
+
+#begin_fantasy, #editorial_section {
+	padding: 2rem 0;
+}

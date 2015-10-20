@@ -20,13 +20,16 @@
 @import "layout/news_general";
 
 // Components and modules
+@import "components/autopromo";
 @import "components/buttons";
 @import "components/card";
 @import "components/chrono";
+@import "components/emissions";
 @import "components/forms";
 @import "components/navigation";
 @import "components/carousel";
 @import "components/masonry";
+@import "components/opinions";
 
 // Page-specific stylesheets
 @import "pages/home";
