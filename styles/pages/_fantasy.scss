@@ -19,33 +19,95 @@
 ========================================================== */
 
 .fantasy_section {
+	height: 800px;
 	h1 {color: white;}
+	.columns {
+		position: relative;
+	}
+	.flipping-quote {
+		position: absolute;
+	}
 	.quote {
-		background: white;
+		background: rgba(255,255,255,0.8);
 		color: $base-color;
-		width: 33%;
+		margin-bottom: 1rem;
 		q {
 			display: block;
 			padding: 1rem 1rem 0;
+			text-align: justify;
 			&+ span {
 				display: block;
 				font-style: italic;
-				padding: 0 1rem;
+				padding: 0 1rem 1rem;
+				text-align: right;
 			}
 		}
-		.more {
-			background-color: $orange-color-elbakin;
-			color: white;
+	}
+	.more {
+		background-color: $orange-color-elbakin;
+		color: white;
+		display: inline-block;
+		font-family: $font-stack-headings;
+		margin: 0;
+		padding: 1rem;
+		text-transform: uppercase;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.author {
+		@include transition(transform .3s);
+		display: block;
+		width: 135px;
+		padding: 5px;
+		background: white;
+		span {
 			display: block;
-			margin: 0;
-			padding: 1rem;
+			height: 100%;
 		}
 	}
 	.quote-01 {
-		float: left;
+		top: 12rem;
+		left: 0.9375em;
+		width: 40%;
+		.quote {
+			margin-left: 145px;
+		}
+		.author {
+			@include translate3d(0,0,0);
+			float: left;
+			height: 167px;
+			span {
+				background: transparent url('../images/illustrations/tolkien.jpg') no-repeat center top;
+			}
+		}
+		.more {
+			float: right;
+			text-align: right;
+			width: 45%;
+		}
 	}
 	.quote-02 {
-		float: right;
+		top: 24rem;
+		left: auto;
+		right: 2em;
+		width: 40%;
+		.quote {
+			margin-right: 145px;
+		}
+		.author {
+			@include translate3d(0,0,0);
+			float: right;
+			height: 209px;
+			span {
+				background: transparent url('../images/illustrations/gracq.jpg') no-repeat center top;
+			}
+		}
+		.more {
+			float: left;
+			text-align: left;
+			width: 65%;
+		}
 	}
 }
 
@@ -54,4 +116,114 @@
 
 #begin_fantasy, #editorial_section {
 	padding: 2rem 0;
+}
+#begin_fantasy {
+	.medium-4 h2 {
+		@include border-radius(5px 5px 0 0);
+		background: white;
+		color: #BE2700;
+		margin: 0;
+		padding: 1rem 1rem 0 1rem;
+	}
+	.article_focus {
+		@include border-radius(0 0 5px 5px);
+		&+ .article_focus {
+			margin-top: 1rem;
+		}
+	}
+}
+#editorial_section {
+	h2, h2 a {
+		color: $base-color-elbakin;
+	}
+}
+
+/* ============== R E S P O N S I V E
+========================================================== */
+
+@media (min-width: $medium-screen) {
+	.fantasy_section {
+		.flipping-quote {
+			@include perspective(1000px);
+			@include transform-style(preserve-3d);
+			&:hover {
+				.quote {
+					@include rotateY(0);
+				}
+				.author {
+					@include translate3d(0,-10px,0);
+				}
+				.more {
+					width: 100%;
+					@include rotateY(0);
+				}
+			}
+		}
+		.quote {
+			@include backface-visibility(hidden);
+			@include transform-style(preserve-3d);
+			@include transition(transform .3s);
+		}
+		.more {
+			@include backface-visibility(hidden);
+			@include transform-style(preserve-3d);
+			@include transition(all .3s);
+		}
+		.quote-01 {
+			.quote {
+				@include transform-origin(left top);
+				@include rotateY(20.0001deg);
+			}
+			.more {
+				@include transform-origin(right top);
+				@include rotateY(-20.0001deg);
+			}
+		}
+		.quote-02 {
+			.quote {
+				@include transform-origin(right top);
+				@include rotateY(-20.0001deg);
+			}
+			.more {
+				@include transform-origin(left top);
+				@include rotateY(20.0001deg);
+			}
+		}
+	}
+}
+@media (min-width: $tiny-screen) and (max-width: $medium-screen) {
+	.fantasy_section {
+		.flipping-quote {
+			position: static;
+		}
+		.quote-01 {
+			width: auto;
+			float: left;
+			margin-bottom: 2em;
+		}
+		.quote-02 {
+			clear: left;
+			float: right;
+			width: auto;
+		}
+	}
+}
+@media (max-width: $tiny-screen) {
+	.fantasy_section {
+		height: 450px;
+		.flipping-quote {
+			position: static;
+			clear: both;
+			float: none;
+			width: 100%;
+			margin-bottom: 1em;
+			.author, .quote { display: none;}
+			.more {
+				display: block;
+				float: none;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
 }

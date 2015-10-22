@@ -138,6 +138,14 @@ p {
 		color: $base-color-elbakin;
 	}
 }
+.section-jump {
+	@include gradient($base-color-elbakin,$orange-color-elbakin);
+	border: 0;
+	height: 2px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
 
 /* ============== I C O N O G R A P H Y
 ========================================================== */

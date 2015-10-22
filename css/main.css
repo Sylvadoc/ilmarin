@@ -1574,9 +1574,26 @@ p {
   color: #BE2700;
 }
 
+/* line 141, ../styles/base/_typography.scss */
+.section-jump {
+  background-color: #de6200;
+  /* Fallback */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#BE2700), to(#FE9E00));
+  background-image: -webkit-linear-gradient(left, #BE2700, #FE9E00);
+  background-image: -moz-linear-gradient(left, #BE2700, #FE9E00);
+  background-image: -ms-linear-gradient(left, #BE2700, #FE9E00);
+  background-image: -o-linear-gradient(left, #BE2700, #FE9E00);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#BE2700', EndColorStr='#FE9E00')";
+  border: 0;
+  height: 2px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
 /* ============== I C O N O G R A P H Y
 ========================================================== */
-/* line 145, ../styles/base/_typography.scss */
+/* line 153, ../styles/base/_typography.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon', sans-serif;
   speak: none;
@@ -1590,291 +1607,291 @@ p {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 157, ../styles/base/_typography.scss */
+/* line 165, ../styles/base/_typography.scss */
 .icon {
   display: none;
 }
 
-/* line 161, ../styles/base/_typography.scss */
+/* line 169, ../styles/base/_typography.scss */
 .fontface .icon {
   display: inline-block;
 }
-/* line 167, ../styles/base/_typography.scss */
+/* line 175, ../styles/base/_typography.scss */
 .fontface .icon-exclamation-triangle:before {
   content: "\e600";
 }
-/* line 170, ../styles/base/_typography.scss */
+/* line 178, ../styles/base/_typography.scss */
 .fontface .icon-shield:before {
   content: "\e601";
 }
-/* line 173, ../styles/base/_typography.scss */
+/* line 181, ../styles/base/_typography.scss */
 .fontface .icon-mail:before {
   content: "\e602";
 }
-/* line 176, ../styles/base/_typography.scss */
+/* line 184, ../styles/base/_typography.scss */
 .fontface .icon-minus:before {
   content: "\e603";
 }
-/* line 179, ../styles/base/_typography.scss */
+/* line 187, ../styles/base/_typography.scss */
 .fontface .icon-folder-minus:before {
   content: "\e604";
 }
-/* line 182, ../styles/base/_typography.scss */
+/* line 190, ../styles/base/_typography.scss */
 .fontface .icon-cross:before {
   content: "\e605";
 }
-/* line 185, ../styles/base/_typography.scss */
+/* line 193, ../styles/base/_typography.scss */
 .fontface .icon-folder-plus:before {
   content: "\e606";
 }
-/* line 188, ../styles/base/_typography.scss */
+/* line 196, ../styles/base/_typography.scss */
 .fontface .icon-warning:before {
   content: "\e607";
 }
-/* line 191, ../styles/base/_typography.scss */
+/* line 199, ../styles/base/_typography.scss */
 .fontface .icon-unlocked:before {
   content: "\e608";
 }
-/* line 194, ../styles/base/_typography.scss */
+/* line 202, ../styles/base/_typography.scss */
 .fontface .icon-shield2:before {
   content: "\e609";
 }
-/* line 197, ../styles/base/_typography.scss */
+/* line 205, ../styles/base/_typography.scss */
 .fontface .icon-lock:before {
   content: "\e60a";
 }
-/* line 200, ../styles/base/_typography.scss */
+/* line 208, ../styles/base/_typography.scss */
 .fontface .icon-camera:before {
   content: "\e60b";
 }
-/* line 203, ../styles/base/_typography.scss */
+/* line 211, ../styles/base/_typography.scss */
 .fontface .icon-linkedin:before {
   content: "\e60c";
 }
-/* line 206, ../styles/base/_typography.scss */
+/* line 214, ../styles/base/_typography.scss */
 .fontface .icon-linkedin2:before {
   content: "\e60d";
 }
-/* line 209, ../styles/base/_typography.scss */
+/* line 217, ../styles/base/_typography.scss */
 .fontface .icon-link:before {
   content: "\e60e";
 }
-/* line 212, ../styles/base/_typography.scss */
+/* line 220, ../styles/base/_typography.scss */
 .fontface .icon-printer:before {
   content: "\e60f";
 }
-/* line 215, ../styles/base/_typography.scss */
+/* line 223, ../styles/base/_typography.scss */
 .fontface .icon-list-numbered:before {
   content: "\e610";
 }
-/* line 218, ../styles/base/_typography.scss */
+/* line 226, ../styles/base/_typography.scss */
 .fontface .icon-question:before {
   content: "\e611";
 }
-/* line 221, ../styles/base/_typography.scss */
+/* line 229, ../styles/base/_typography.scss */
 .fontface .icon-arrow-left:before {
   content: "\e612";
 }
-/* line 224, ../styles/base/_typography.scss */
+/* line 232, ../styles/base/_typography.scss */
 .fontface .icon-arrow-down:before {
   content: "\e613";
 }
-/* line 227, ../styles/base/_typography.scss */
+/* line 235, ../styles/base/_typography.scss */
 .fontface .icon-arrow-up:before {
   content: "\e614";
 }
-/* line 230, ../styles/base/_typography.scss */
+/* line 238, ../styles/base/_typography.scss */
 .fontface .icon-arrow-right:before {
   content: "\e615";
 }
-/* line 233, ../styles/base/_typography.scss */
+/* line 241, ../styles/base/_typography.scss */
 .fontface .icon-lifebuoy:before {
   content: "\e616";
 }
-/* line 236, ../styles/base/_typography.scss */
+/* line 244, ../styles/base/_typography.scss */
 .fontface .icon-price-tags:before {
   content: "\e617";
 }
-/* line 239, ../styles/base/_typography.scss */
+/* line 247, ../styles/base/_typography.scss */
 .fontface .icon-price-tag:before {
   content: "\e618";
 }
-/* line 242, ../styles/base/_typography.scss */
+/* line 250, ../styles/base/_typography.scss */
 .fontface .icon-bookmarks:before {
   content: "\e619";
 }
-/* line 245, ../styles/base/_typography.scss */
+/* line 253, ../styles/base/_typography.scss */
 .fontface .icon-bookmark:before {
   content: "\e61a";
 }
-/* line 248, ../styles/base/_typography.scss */
+/* line 256, ../styles/base/_typography.scss */
 .fontface .icon-star-half:before {
   content: "\e61b";
 }
-/* line 251, ../styles/base/_typography.scss */
+/* line 259, ../styles/base/_typography.scss */
 .fontface .icon-star-full:before {
   content: "\e61c";
 }
-/* line 254, ../styles/base/_typography.scss */
+/* line 262, ../styles/base/_typography.scss */
 .fontface .icon-star-empty:before {
   content: "\e61d";
 }
-/* line 257, ../styles/base/_typography.scss */
+/* line 265, ../styles/base/_typography.scss */
 .fontface .icon-cog:before {
   content: "\e61e";
 }
-/* line 260, ../styles/base/_typography.scss */
+/* line 268, ../styles/base/_typography.scss */
 .fontface .icon-bubbles:before {
   content: "\e61f";
 }
-/* line 263, ../styles/base/_typography.scss */
+/* line 271, ../styles/base/_typography.scss */
 .fontface .icon-home:before {
   content: "\e620";
 }
-/* line 266, ../styles/base/_typography.scss */
+/* line 274, ../styles/base/_typography.scss */
 .fontface .icon-share:before {
   content: "\e621";
 }
-/* line 269, ../styles/base/_typography.scss */
+/* line 277, ../styles/base/_typography.scss */
 .fontface .icon-cart:before {
   content: "\e622";
 }
-/* line 272, ../styles/base/_typography.scss */
+/* line 280, ../styles/base/_typography.scss */
 .fontface .icon-fire:before {
   content: "\e623";
 }
-/* line 275, ../styles/base/_typography.scss */
+/* line 283, ../styles/base/_typography.scss */
 .fontface .icon-quotes-right:before {
   content: "\e624";
 }
-/* line 278, ../styles/base/_typography.scss */
+/* line 286, ../styles/base/_typography.scss */
 .fontface .icon-quotes-left:before {
   content: "\e625";
 }
-/* line 281, ../styles/base/_typography.scss */
+/* line 289, ../styles/base/_typography.scss */
 .fontface .icon-calendar:before {
   content: "\e626";
 }
-/* line 284, ../styles/base/_typography.scss */
+/* line 292, ../styles/base/_typography.scss */
 .fontface .icon-user:before {
   content: "\e627";
 }
-/* line 287, ../styles/base/_typography.scss */
+/* line 295, ../styles/base/_typography.scss */
 .fontface .icon-clock:before {
   content: "\e628";
 }
-/* line 290, ../styles/base/_typography.scss */
+/* line 298, ../styles/base/_typography.scss */
 .fontface .icon-clock2:before {
   content: "\e629";
 }
-/* line 293, ../styles/base/_typography.scss */
+/* line 301, ../styles/base/_typography.scss */
 .fontface .icon-search:before {
   content: "\e62a";
 }
-/* line 296, ../styles/base/_typography.scss */
+/* line 304, ../styles/base/_typography.scss */
 .fontface .icon-feed:before {
   content: "\e62b";
 }
-/* line 299, ../styles/base/_typography.scss */
+/* line 307, ../styles/base/_typography.scss */
 .fontface .icon-feed2:before {
   content: "\e62c";
 }
-/* line 302, ../styles/base/_typography.scss */
+/* line 310, ../styles/base/_typography.scss */
 .fontface .icon-feed3:before {
   content: "\e62d";
 }
-/* line 305, ../styles/base/_typography.scss */
+/* line 313, ../styles/base/_typography.scss */
 .fontface .icon-youtube:before {
   content: "\e62e";
 }
-/* line 308, ../styles/base/_typography.scss */
+/* line 316, ../styles/base/_typography.scss */
 .fontface .icon-youtube2:before {
   content: "\e62f";
 }
-/* line 311, ../styles/base/_typography.scss */
+/* line 319, ../styles/base/_typography.scss */
 .fontface .icon-youtube3:before {
   content: "\e630";
 }
-/* line 314, ../styles/base/_typography.scss */
+/* line 322, ../styles/base/_typography.scss */
 .fontface .icon-image:before {
   content: "\e631";
 }
-/* line 317, ../styles/base/_typography.scss */
+/* line 325, ../styles/base/_typography.scss */
 .fontface .icon-podcast:before {
   content: "\e632";
 }
-/* line 320, ../styles/base/_typography.scss */
+/* line 328, ../styles/base/_typography.scss */
 .fontface .icon-book:before {
   content: "\e633";
 }
-/* line 323, ../styles/base/_typography.scss */
+/* line 331, ../styles/base/_typography.scss */
 .fontface .icon-books:before {
   content: "\e634";
 }
-/* line 326, ../styles/base/_typography.scss */
+/* line 334, ../styles/base/_typography.scss */
 .fontface .icon-plus:before {
   content: "\e635";
 }
-/* line 329, ../styles/base/_typography.scss */
+/* line 337, ../styles/base/_typography.scss */
 .fontface .icon-quill:before {
   content: "\e636";
 }
-/* line 332, ../styles/base/_typography.scss */
+/* line 340, ../styles/base/_typography.scss */
 .fontface .icon-trophy:before {
   content: "\e637";
 }
-/* line 335, ../styles/base/_typography.scss */
+/* line 343, ../styles/base/_typography.scss */
 .fontface .icon-heart-broken:before {
   content: "\e638";
 }
-/* line 338, ../styles/base/_typography.scss */
+/* line 346, ../styles/base/_typography.scss */
 .fontface .icon-heart:before {
   content: "\e639";
 }
-/* line 341, ../styles/base/_typography.scss */
+/* line 349, ../styles/base/_typography.scss */
 .fontface .icon-twitter:before {
   content: "\e63a";
 }
-/* line 344, ../styles/base/_typography.scss */
+/* line 352, ../styles/base/_typography.scss */
 .fontface .icon-twitter2:before {
   content: "\e63b";
 }
-/* line 347, ../styles/base/_typography.scss */
+/* line 355, ../styles/base/_typography.scss */
 .fontface .icon-twitter3:before {
   content: "\e63c";
 }
-/* line 350, ../styles/base/_typography.scss */
+/* line 358, ../styles/base/_typography.scss */
 .fontface .icon-facebook:before {
   content: "\e63d";
 }
-/* line 353, ../styles/base/_typography.scss */
+/* line 361, ../styles/base/_typography.scss */
 .fontface .icon-facebook2:before {
   content: "\e63e";
 }
-/* line 356, ../styles/base/_typography.scss */
+/* line 364, ../styles/base/_typography.scss */
 .fontface .icon-facebook3:before {
   content: "\e63f";
 }
-/* line 359, ../styles/base/_typography.scss */
+/* line 367, ../styles/base/_typography.scss */
 .fontface .icon-google-plus:before {
   content: "\e640";
 }
-/* line 362, ../styles/base/_typography.scss */
+/* line 370, ../styles/base/_typography.scss */
 .fontface .icon-google-plus2:before {
   content: "\e641";
 }
-/* line 365, ../styles/base/_typography.scss */
+/* line 373, ../styles/base/_typography.scss */
 .fontface .icon-google-plus3:before {
   content: "\e642";
 }
-/* line 368, ../styles/base/_typography.scss */
+/* line 376, ../styles/base/_typography.scss */
 .fontface .icon-plus2:before {
   content: "\e643";
 }
 
 /* ============== I C O N   B U R G E R
 ========================================================== */
-/* line 376, ../styles/base/_typography.scss */
+/* line 384, ../styles/base/_typography.scss */
 .icon-burger {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -1885,7 +1902,7 @@ p {
   height: 2px;
   width: 15px;
 }
-/* line 381, ../styles/base/_typography.scss */
+/* line 389, ../styles/base/_typography.scss */
 .icon-burger:before, .icon-burger:after {
   background-color: #333;
   content: '';
@@ -1894,16 +1911,16 @@ p {
   height: 2px;
   position: relative;
 }
-/* line 389, ../styles/base/_typography.scss */
+/* line 397, ../styles/base/_typography.scss */
 .icon-burger:before {
   top: -4px;
 }
-/* line 392, ../styles/base/_typography.scss */
+/* line 400, ../styles/base/_typography.scss */
 .icon-burger:after {
   top: 2px;
 }
 
-/* line 397, ../styles/base/_typography.scss */
+/* line 405, ../styles/base/_typography.scss */
 .the-header .icon-burger {
   position: relative;
   top: -4px;
@@ -1913,7 +1930,7 @@ p {
   transition: transform 350ms;
 }
 
-/* line 407, ../styles/base/_typography.scss */
+/* line 415, ../styles/base/_typography.scss */
 .mp-pushed .icon-burger {
   -webkit-transform: translateY(0) translateX(-30px) rotate(0deg);
   -moz-transform: translateY(0) translateX(-30px) rotate(0deg);
@@ -1921,7 +1938,7 @@ p {
   -o-transform: translateY(0) translateX(-30px) rotate(0deg);
   transform: translateY(0) translateX(-30px) rotate(0deg);
 }
-/* line 409, ../styles/base/_typography.scss */
+/* line 417, ../styles/base/_typography.scss */
 .mp-pushed .icon-burger:before {
   -webkit-transform: translateY(4px) translateX(30px) rotate(-45deg);
   -moz-transform: translateY(4px) translateX(30px) rotate(-45deg);
@@ -1929,7 +1946,7 @@ p {
   -o-transform: translateY(4px) translateX(30px) rotate(-45deg);
   transform: translateY(4px) translateX(30px) rotate(-45deg);
 }
-/* line 412, ../styles/base/_typography.scss */
+/* line 420, ../styles/base/_typography.scss */
 .mp-pushed .icon-burger:after {
   -webkit-transform: translateY(-4px) translateX(30px) rotate(45deg);
   -moz-transform: translateY(-4px) translateX(30px) rotate(45deg);
@@ -3817,11 +3834,15 @@ body {
   cursor: pointer;
 }
 /* line 35, ../styles/components/_card.scss */
+.some_card:hover a:hover, .some_card:hover a:focus, .some_card:hover a:focus {
+  text-decoration: none;
+}
+/* line 38, ../styles/components/_card.scss */
 .some_card:hover p, .some_card:hover .icon {
   color: white;
 }
 
-/* line 41, ../styles/components/_card.scss */
+/* line 44, ../styles/components/_card.scss */
 #association .some_card {
   height: 32rem;
 }
@@ -3829,12 +3850,12 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 @media (max-width: 1024px) {
-  /* line 51, ../styles/components/_card.scss */
+  /* line 54, ../styles/components/_card.scss */
   #association .some_card {
     height: 26rem;
     margin-bottom: 2rem;
   }
-  /* line 54, ../styles/components/_card.scss */
+  /* line 57, ../styles/components/_card.scss */
   #association .some_card:hover {
     -moz-transform: scale(1);
     -o-transform: scale(1);
@@ -3843,33 +3864,33 @@ body {
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 62, ../styles/components/_card.scss */
+  /* line 65, ../styles/components/_card.scss */
   #association .some_card {
     height: auto;
   }
-  /* line 64, ../styles/components/_card.scss */
+  /* line 67, ../styles/components/_card.scss */
   #association .some_card:hover {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-  /* line 67, ../styles/components/_card.scss */
+  /* line 70, ../styles/components/_card.scss */
   #association .some_card .icon {
     float: left;
     margin-right: 2rem;
   }
-  /* line 71, ../styles/components/_card.scss */
+  /* line 74, ../styles/components/_card.scss */
   #association .some_card h2 {
     text-align: left;
   }
 }
 @media (max-width: 480px) {
-  /* line 79, ../styles/components/_card.scss */
+  /* line 82, ../styles/components/_card.scss */
   #association .some_card {
     height: auto;
   }
-  /* line 81, ../styles/components/_card.scss */
+  /* line 84, ../styles/components/_card.scss */
   #association .some_card:hover {
     -moz-transform: scale(1);
     -o-transform: scale(1);
@@ -3879,7 +3900,7 @@ body {
 }
 /* ============== P R O F I L E   C A R D
 ========================================================== */
-/* line 91, ../styles/components/_card.scss */
+/* line 94, ../styles/components/_card.scss */
 .profile-card {
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -3889,12 +3910,12 @@ body {
   overflow: hidden;
   position: relative;
 }
-/* line 97, ../styles/components/_card.scss */
+/* line 100, ../styles/components/_card.scss */
 .profile-card .bg-profile {
   background-color: #E59924;
   height: 75px;
 }
-/* line 101, ../styles/components/_card.scss */
+/* line 104, ../styles/components/_card.scss */
 .profile-card .img-profile {
   height: 130px;
   margin: 0;
@@ -3903,7 +3924,7 @@ body {
   top: 0;
   width: 130px;
 }
-/* line 109, ../styles/components/_card.scss */
+/* line 112, ../styles/components/_card.scss */
 .profile-card .avatar {
   -webkit-border-radius: 55px;
   border-radius: 55px;
@@ -3913,7 +3934,7 @@ body {
   overflow: hidden;
   width: 110px;
 }
-/* line 116, ../styles/components/_card.scss */
+/* line 119, ../styles/components/_card.scss */
 .profile-card h2 {
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   font-weight: 400;
@@ -3925,7 +3946,7 @@ body {
   text-indent: 110px;
   text-transform: uppercase;
 }
-/* line 127, ../styles/components/_card.scss */
+/* line 130, ../styles/components/_card.scss */
 .profile-card h3 {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
@@ -3933,37 +3954,37 @@ body {
   margin: 0;
   text-transform: uppercase;
 }
-/* line 134, ../styles/components/_card.scss */
+/* line 137, ../styles/components/_card.scss */
 .profile-card .detail-profile {
   padding: 0 10px;
   margin-top: 10px;
 }
-/* line 137, ../styles/components/_card.scss */
+/* line 140, ../styles/components/_card.scss */
 .profile-card .detail-profile .trophy {
   margin-bottom: 10px;
 }
-/* line 139, ../styles/components/_card.scss */
+/* line 142, ../styles/components/_card.scss */
 .profile-card .detail-profile .trophy li {
   display: inline-block;
 }
-/* line 142, ../styles/components/_card.scss */
+/* line 145, ../styles/components/_card.scss */
 .profile-card .detail-profile .trophy strong, .profile-card .detail-profile .trophy em {
   display: block;
 }
-/* line 145, ../styles/components/_card.scss */
+/* line 148, ../styles/components/_card.scss */
 .profile-card .detail-profile .trophy em {
   font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
-/* line 150, ../styles/components/_card.scss */
+/* line 153, ../styles/components/_card.scss */
 .profile-card .detail-profile .trophy .icon-trophy {
   font-size: 49px;
   font-size: 3.5rem;
   color: #BE2700;
   margin-right: .1em;
 }
-/* line 157, ../styles/components/_card.scss */
+/* line 160, ../styles/components/_card.scss */
 .profile-card .meta-info {
   background-color: #E5E8EA;
   border-top: 1px solid #ccc;
@@ -3971,7 +3992,7 @@ body {
   display: table;
   width: 100%;
 }
-/* line 163, ../styles/components/_card.scss */
+/* line 166, ../styles/components/_card.scss */
 .profile-card .meta-info .icon {
   color: #666;
   font-size: 28px;
@@ -3979,7 +4000,7 @@ body {
   float: left;
   margin-right: 10px;
 }
-/* line 169, ../styles/components/_card.scss */
+/* line 172, ../styles/components/_card.scss */
 .profile-card .meta-info > div {
   display: table-cell;
   vertical-align: middle;
@@ -3989,13 +4010,13 @@ body {
   line-height: 1;
   padding: 10px;
 }
-/* line 177, ../styles/components/_card.scss */
+/* line 180, ../styles/components/_card.scss */
 .profile-card .meta-info > div:hover {
   background: #FE9E00;
   color: white;
   cursor: pointer;
 }
-/* line 181, ../styles/components/_card.scss */
+/* line 184, ../styles/components/_card.scss */
 .profile-card .meta-info > div:hover .icon {
   color: white;
   -moz-transform: scale(1.5);
@@ -4004,15 +4025,15 @@ body {
   transform: scale(1.5);
   top: 5px;
 }
-/* line 186, ../styles/components/_card.scss */
+/* line 189, ../styles/components/_card.scss */
 .profile-card .meta-info > div:hover a {
   color: white;
 }
-/* line 188, ../styles/components/_card.scss */
+/* line 191, ../styles/components/_card.scss */
 .profile-card .meta-info > div:hover a:hover, .profile-card .meta-info > div:hover a:focus, .profile-card .meta-info > div:hover a:active {
   color: white;
 }
-/* line 193, ../styles/components/_card.scss */
+/* line 196, ../styles/components/_card.scss */
 .profile-card .meta-info > div .icon {
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -4022,7 +4043,7 @@ body {
   position: relative;
   top: 0;
 }
-/* line 198, ../styles/components/_card.scss */
+/* line 201, ../styles/components/_card.scss */
 .profile-card .meta-info > div a {
   font-size: 23.8px;
   font-size: 1.7rem;
@@ -4031,11 +4052,11 @@ body {
   font-style: normal;
   font-weight: 700;
 }
-/* line 204, ../styles/components/_card.scss */
+/* line 207, ../styles/components/_card.scss */
 .profile-card .meta-info > div a:hover, .profile-card .meta-info > div a:focus {
   text-decoration: none;
 }
-/* line 209, ../styles/components/_card.scss */
+/* line 212, ../styles/components/_card.scss */
 .profile-card .meta-info .message, .profile-card .meta-info .nb-trophy {
   border-right: 1px solid #ccc;
 }
@@ -4043,21 +4064,21 @@ body {
 /********************************************************************************************************************************************************************************
 ********************* P R O F I L E    P A G E *****************
 /********************************************************************************************************************************************************************************/
-/* line 219, ../styles/components/_card.scss */
+/* line 222, ../styles/components/_card.scss */
 #head {
   margin: 3em 0 2em 0;
 }
-/* line 222, ../styles/components/_card.scss */
+/* line 225, ../styles/components/_card.scss */
 #head .tabs a {
   background-color: white;
   color: #333;
 }
-/* line 225, ../styles/components/_card.scss */
+/* line 228, ../styles/components/_card.scss */
 #head .tabs a.active {
   background-color: #BE2700;
   color: white;
 }
-/* line 232, ../styles/components/_card.scss */
+/* line 235, ../styles/components/_card.scss */
 #head .row_tab .basic_list {
   -webkit-columns: 2;
   -moz-columns: 2;
@@ -4065,39 +4086,39 @@ body {
   columns: 2;
   margin: 1rem;
 }
-/* line 238, ../styles/components/_card.scss */
+/* line 241, ../styles/components/_card.scss */
 #head .trophies-list strong, #head .trophies-list em {
   display: block;
 }
-/* line 239, ../styles/components/_card.scss */
+/* line 242, ../styles/components/_card.scss */
 #head .trophies-list strong {
   text-transform: uppercase;
 }
-/* line 240, ../styles/components/_card.scss */
+/* line 243, ../styles/components/_card.scss */
 #head .trophies-list .icon {
   font-size: 54.6px;
   font-size: 3.9rem;
   float: left;
   margin-right: 1rem;
 }
-/* line 241, ../styles/components/_card.scss */
+/* line 244, ../styles/components/_card.scss */
 #head .trophies-list li {
   padding: 1rem 0;
 }
-/* line 242, ../styles/components/_card.scss */
+/* line 245, ../styles/components/_card.scss */
 #head .trophies-list .gold-trophy .icon {
   color: goldenrod;
 }
-/* line 243, ../styles/components/_card.scss */
+/* line 246, ../styles/components/_card.scss */
 #head .trophies-list .silver-trophy .icon {
   color: lightslategray;
 }
-/* line 244, ../styles/components/_card.scss */
+/* line 247, ../styles/components/_card.scss */
 #head .trophies-list .bronze-trophy .icon {
   color: sienna;
 }
 
-/* line 247, ../styles/components/_card.scss */
+/* line 250, ../styles/components/_card.scss */
 .bloc-profil {
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -4105,7 +4126,7 @@ body {
   border: 1px solid #ccc;
   position: relative;
 }
-/* line 251, ../styles/components/_card.scss */
+/* line 254, ../styles/components/_card.scss */
 .bloc-profil .nonsense {
   background-color: #BE2700;
   height: 66%;
@@ -4115,7 +4136,7 @@ body {
   left: 0;
   z-index: 0;
 }
-/* line 260, ../styles/components/_card.scss */
+/* line 263, ../styles/components/_card.scss */
 .bloc-profil .avatar {
   -webkit-border-radius: 55px;
   border-radius: 55px;
@@ -4129,19 +4150,19 @@ body {
   left: -55px;
   z-index: 1;
 }
-/* line 271, ../styles/components/_card.scss */
+/* line 274, ../styles/components/_card.scss */
 .bloc-profil .bloc {
   float: left;
   height: 200px;
   margin: 50px 0;
 }
-/* line 276, ../styles/components/_card.scss */
+/* line 279, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps {
   padding-left: 150px;
   width: 62%;
   margin-right: 50px;
 }
-/* line 280, ../styles/components/_card.scss */
+/* line 283, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps h1 {
   font-size: 5rem;
   color: #BE2700;
@@ -4150,53 +4171,53 @@ body {
   text-transform: uppercase;
   line-height: 1;
 }
-/* line 288, ../styles/components/_card.scss */
+/* line 291, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .title {
   display: block;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-/* line 294, ../styles/components/_card.scss */
+/* line 297, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .socially-engaged-on {
   margin: 1em 0;
   padding: 0;
   list-style: none none;
 }
-/* line 298, ../styles/components/_card.scss */
+/* line 301, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .socially-engaged-on li {
   font-size: 28px;
   font-size: 2rem;
   display: inline-block;
   margin-right: 1rem;
 }
-/* line 302, ../styles/components/_card.scss */
+/* line 305, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .socially-engaged-on li .icon-facebook {
   color: #47639E;
 }
-/* line 303, ../styles/components/_card.scss */
+/* line 306, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .socially-engaged-on li .icon-google-plus {
   color: #DD4B39;
 }
-/* line 304, ../styles/components/_card.scss */
+/* line 307, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps .socially-engaged-on li .icon-twitter {
   color: #55ACEE;
 }
-/* line 307, ../styles/components/_card.scss */
+/* line 310, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps p {
   border-top: 1px solid #ccc;
   padding-top: 1rem;
 }
-/* line 310, ../styles/components/_card.scss */
+/* line 313, ../styles/components/_card.scss */
 .bloc-profil .bloc-princeps p strong {
   text-transform: uppercase;
 }
-/* line 315, ../styles/components/_card.scss */
+/* line 318, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke {
   border-left: 1px solid #ccc;
   width: 33%;
 }
-/* line 318, ../styles/components/_card.scss */
+/* line 321, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head {
   transform: translate(0, 50%);
   -moz-transform: translate(0, 50%);
@@ -4208,35 +4229,35 @@ body {
   text-align: center;
   top: 30%;
 }
-/* line 324, ../styles/components/_card.scss */
+/* line 327, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li {
   display: inline-block;
   padding-right: 2rem;
   margin-right: 2rem;
   border-right: 1px solid #ccc;
 }
-/* line 329, ../styles/components/_card.scss */
+/* line 332, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li strong, .bloc-profil .bloc-duke .side-head li span {
   display: block;
 }
-/* line 330, ../styles/components/_card.scss */
+/* line 333, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li span {
   text-transform: uppercase;
 }
-/* line 331, ../styles/components/_card.scss */
+/* line 334, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li .icon {
   font-size: 28px;
   font-size: 2rem;
   float: left;
   margin-right: 1rem;
 }
-/* line 336, ../styles/components/_card.scss */
+/* line 339, ../styles/components/_card.scss */
 .bloc-profil .bloc-duke .side-head li:last-child {
   border: 0;
   margin-right: 0;
   padding-right: 0;
 }
-/* line 344, ../styles/components/_card.scss */
+/* line 347, ../styles/components/_card.scss */
 .bloc-profil .bloc-noble {
   -webkit-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
@@ -4247,7 +4268,7 @@ body {
   padding: 1rem;
   position: relative;
 }
-/* line 351, ../styles/components/_card.scss */
+/* line 354, ../styles/components/_card.scss */
 .bloc-profil .bloc-noble .tabs {
   float: none;
 }
@@ -4255,7 +4276,7 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 @media (min-width: 1024px) and (min-width: 1280px) {
-  /* line 359, ../styles/components/_card.scss */
+  /* line 362, ../styles/components/_card.scss */
   .bloc-profil {
     width: 90%;
     margin: 0 auto;

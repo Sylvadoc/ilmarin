@@ -32,6 +32,9 @@
 		@include scale(1.05);
 		background: $orange-color-elbakin;
 		cursor: pointer;
+		a:hover, a:focus, a:focus {
+			text-decoration: none;
+		}
 		p, .icon {
 			color: white;
 		}
