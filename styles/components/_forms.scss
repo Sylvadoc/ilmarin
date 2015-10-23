@@ -56,12 +56,13 @@
    }
    .form {
 		label {
+			color: $base-color;
 			cursor: pointer;
 			display: block;
 			font-family: $font-stack-headings;
 			text-transform: uppercase;
 		}
-		input[type=text], input[type=password] {
+		input[type=text], input[type=password], textarea {
 			@include border-radius(0 3px 3px 0);
 			background-color: #FFF;
 			border-style: solid;
@@ -75,6 +76,10 @@
 			margin: 0px 0px 0.88889rem;
 			padding: 0.44444rem;
 			width: 100%;
+		}
+		textarea {
+			resize: vertical;
+			height: 10rem;
 		}
 		input[type=submit] {
 			margin: 1em auto;
@@ -259,3 +264,104 @@
 			}
 		}
    }
+
+/* ==========================================================================
+   $CONTACT FORM
+   ========================================================================== */
+
+	.list-form {
+		@include border-radius(5px);
+		background: white;
+		padding: 1rem;
+		h2 {
+			@include rem(1.4);
+			color: $base-color;
+			margin: 0;
+			padding: 0;
+			text-transform: uppercase;
+		}
+		p {
+			color: $base-color;
+			a {
+				color: $base-color-elbakin;
+			}
+		}
+	}
+	.tablist {
+		margin: 1em 0 0 0;
+		padding: 0;
+		list-style: none none;
+		.sujet {
+			@include transition(all .3s);
+			background: white;
+			display: block;
+			padding: 1rem 0;
+			position: relative;
+			&:hover {
+				background: #eaeaea;
+				cursor: pointer;
+			}
+			span {
+				display: block;
+				&.tab-title+ span {
+					color: #666;
+				}
+			}
+			.spectre {
+				@include transition(all .3s);
+				@include border-radius(50%);
+				position: absolute;
+				left: 1.5rem;
+				top: 1.2rem;
+				width: 1.5rem;
+				height: 1.5rem;
+				background: white;
+				border: 1px solid #ccc;
+			}
+			.tab-title {
+				text-transform: uppercase;
+				color: $base-color;
+				font-family: $font-stack-headings;
+			}
+			.tab-title, .tab-title + span {
+				padding-left: 8.33333%;
+			}
+		}
+		.contenu_sujet {
+			@include transition(all .3s);
+			@include opacity(0);
+			@include translate3d(0,-10px,0);
+			height: 0;
+			overflow: hidden;
+		}
+		[type="radio"] {
+			clip:rect(0 0 0 0);
+			clip:rect(0, 0, 0, 0);
+			height:1px;
+			margin:-1px;
+			opacity:0;
+			overflow:hidden;
+			padding:0;
+			position:absolute;
+			width:1px;
+			&:checked {
+				~ .sujet {
+					&:hover {
+						background: white;
+					}
+					border-top: 1px solid #ccc;
+					.spectre {
+						border: 2px solid $base-color-elbakin;
+					}
+					.tab-title {
+						color: $base-color-elbakin;
+					}
+				}
+				~ .contenu_sujet {
+					@include opacity(1);
+					@include translate3d(0,0,0);
+					height: auto;
+				}
+			}
+		}
+	}

@@ -3937,13 +3937,14 @@ body {
 
 /* line 58, ../styles/components/_forms.scss */
 .form label {
+  color: #272727;
   cursor: pointer;
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   text-transform: uppercase;
 }
-/* line 64, ../styles/components/_forms.scss */
-.form input[type=text], .form input[type=password] {
+/* line 65, ../styles/components/_forms.scss */
+.form input[type=text], .form input[type=password], .form textarea {
   -webkit-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
   background-clip: padding-box;
@@ -3960,16 +3961,21 @@ body {
   padding: 0.44444rem;
   width: 100%;
 }
-/* line 79, ../styles/components/_forms.scss */
+/* line 80, ../styles/components/_forms.scss */
+.form textarea {
+  resize: vertical;
+  height: 10rem;
+}
+/* line 84, ../styles/components/_forms.scss */
 .form input[type=submit] {
   margin: 1em auto;
 }
 
-/* line 83, ../styles/components/_forms.scss */
+/* line 88, ../styles/components/_forms.scss */
 .chose-an-avatar {
   padding: 0 0 1em 0;
 }
-/* line 85, ../styles/components/_forms.scss */
+/* line 90, ../styles/components/_forms.scss */
 .chose-an-avatar .inputfile {
   width: 0.1px;
   height: 0.1px;
@@ -3978,7 +3984,7 @@ body {
   position: absolute;
   z-index: -1;
 }
-/* line 92, ../styles/components/_forms.scss */
+/* line 97, ../styles/components/_forms.scss */
 .chose-an-avatar .inputfile + label {
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -3992,7 +3998,7 @@ body {
   text-indent: -999em;
   width: 110px;
 }
-/* line 102, ../styles/components/_forms.scss */
+/* line 107, ../styles/components/_forms.scss */
 .chose-an-avatar .inputfile + label:before {
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
@@ -4018,12 +4024,12 @@ body {
   top: 0;
   width: 100%;
 }
-/* line 118, ../styles/components/_forms.scss */
+/* line 123, ../styles/components/_forms.scss */
 .chose-an-avatar .inputfile + label:hover:before {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-/* line 124, ../styles/components/_forms.scss */
+/* line 129, ../styles/components/_forms.scss */
 .chose-an-avatar .inputfile:focus + label {
   outline: 1px dotted #000;
   outline: -webkit-focus-ring-color auto 5px;
@@ -4032,11 +4038,11 @@ body {
 /* ==========================================================================
    $SPECIFIC LOG IN
    ========================================================================== */
-/* line 137, ../styles/components/_forms.scss */
+/* line 142, ../styles/components/_forms.scss */
 #form-log-in .simili-title {
   color: white;
 }
-/* line 138, ../styles/components/_forms.scss */
+/* line 143, ../styles/components/_forms.scss */
 #form-log-in.card {
   -webkit-border-radius: 0;
   border-radius: 0;
@@ -4045,7 +4051,7 @@ body {
   padding: 0;
   color: inherit;
 }
-/* line 143, ../styles/components/_forms.scss */
+/* line 148, ../styles/components/_forms.scss */
 #form-log-in.card .form {
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -4058,7 +4064,7 @@ body {
 /* ==========================================================================
    $FLIPPING FORMS
    ========================================================================== */
-/* line 156, ../styles/components/_forms.scss */
+/* line 161, ../styles/components/_forms.scss */
 .flip-container {
   -webkit-perspective: 800px;
   -moz-perspective: 800px;
@@ -4067,16 +4073,16 @@ body {
   position: relative;
   width: 100%;
 }
-/* line 160, ../styles/components/_forms.scss */
+/* line 165, ../styles/components/_forms.scss */
 .flip-container .flipped {
   transform: translateX(-100%) rotateY(-180deg);
 }
-/* line 162, ../styles/components/_forms.scss */
+/* line 167, ../styles/components/_forms.scss */
 .flip-container .flipped .front .simili-title {
   visibility: hidden;
 }
 
-/* line 165, ../styles/components/_forms.scss */
+/* line 170, ../styles/components/_forms.scss */
 #cards {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -4093,7 +4099,7 @@ body {
   position: absolute;
   width: 100%;
 }
-/* line 172, ../styles/components/_forms.scss */
+/* line 177, ../styles/components/_forms.scss */
 #cards .to-flip {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -4105,7 +4111,7 @@ body {
   position: absolute;
   width: 100%;
 }
-/* line 181, ../styles/components/_forms.scss */
+/* line 186, ../styles/components/_forms.scss */
 #cards .back {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -4113,7 +4119,7 @@ body {
   transform: rotateY(180deg);
   z-index: 3;
 }
-/* line 184, ../styles/components/_forms.scss */
+/* line 189, ../styles/components/_forms.scss */
 #cards .back aside {
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -4121,19 +4127,19 @@ body {
   background: white;
   height: 433px;
 }
-/* line 189, ../styles/components/_forms.scss */
+/* line 194, ../styles/components/_forms.scss */
 #cards .back .btn {
   margin: 0 auto 1em auto;
 }
-/* line 190, ../styles/components/_forms.scss */
+/* line 195, ../styles/components/_forms.scss */
 #cards .back .simili-title {
   color: white;
 }
-/* line 191, ../styles/components/_forms.scss */
+/* line 196, ../styles/components/_forms.scss */
 #cards .back .basic_list {
   padding: 1rem;
 }
-/* line 193, ../styles/components/_forms.scss */
+/* line 198, ../styles/components/_forms.scss */
 #cards .back .basic_list .icon {
   font-size: 56px;
   font-size: 4rem;
@@ -4141,25 +4147,25 @@ body {
   float: left;
   margin-right: 1rem;
 }
-/* line 199, ../styles/components/_forms.scss */
+/* line 204, ../styles/components/_forms.scss */
 #cards .back .basic_list ul {
   margin-top: 1rem;
 }
-/* line 200, ../styles/components/_forms.scss */
+/* line 205, ../styles/components/_forms.scss */
 #cards .back .basic_list li {
   margin-bottom: 1rem;
   padding: 0 0 1rem 0;
 }
-/* line 203, ../styles/components/_forms.scss */
+/* line 208, ../styles/components/_forms.scss */
 #cards .back .basic_list li:last-child {
   border: 0;
   margin: 0;
 }
-/* line 208, ../styles/components/_forms.scss */
+/* line 213, ../styles/components/_forms.scss */
 #cards .back .basic_list li li:last-child {
   margin: 0;
 }
-/* line 209, ../styles/components/_forms.scss */
+/* line 214, ../styles/components/_forms.scss */
 #cards .back .basic_list li li .icon {
   font-size: 28px;
   font-size: 2rem;
@@ -4168,12 +4174,12 @@ body {
 /* ==========================================================================
    $NARRATIVE FORMS
    ========================================================================== */
-/* line 222, ../styles/components/_forms.scss */
+/* line 227, ../styles/components/_forms.scss */
 #palantir {
   padding-bottom: 1em;
   text-align: center;
 }
-/* line 225, ../styles/components/_forms.scss */
+/* line 230, ../styles/components/_forms.scss */
 #palantir h2 {
   font-size: 19.6px;
   font-size: 1.4rem;
@@ -4185,26 +4191,26 @@ body {
   margin: 0 auto;
   padding: .1em .5em;
 }
-/* line 234, ../styles/components/_forms.scss */
+/* line 239, ../styles/components/_forms.scss */
 #palantir h2 span {
   position: relative;
   z-index: 1;
 }
 
-/* line 237, ../styles/components/_forms.scss */
+/* line 242, ../styles/components/_forms.scss */
 .narrative-form {
   border: 1px dotted white;
   padding: 3rem;
   position: relative;
   top: -1.2rem;
 }
-/* line 242, ../styles/components/_forms.scss */
+/* line 247, ../styles/components/_forms.scss */
 .narrative-form .form-row {
   display: inline-block;
   color: white;
   margin-bottom: 2rem;
 }
-/* line 246, ../styles/components/_forms.scss */
+/* line 251, ../styles/components/_forms.scss */
 .narrative-form .form-row label {
   font-size: 42px;
   font-size: 3rem;
@@ -4212,7 +4218,7 @@ body {
   display: inline-block;
   font-family: "Roboto Slab", serif;
 }
-/* line 252, ../styles/components/_forms.scss */
+/* line 257, ../styles/components/_forms.scss */
 .narrative-form .form-row select {
   font-size: 42px;
   font-size: 3rem;
@@ -4221,6 +4227,151 @@ body {
   color: white;
   display: inline-block;
   width: auto;
+}
+
+/* ==========================================================================
+   $CONTACT FORM
+   ========================================================================== */
+/* line 272, ../styles/components/_forms.scss */
+.list-form {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  background: white;
+  padding: 1rem;
+}
+/* line 276, ../styles/components/_forms.scss */
+.list-form h2 {
+  font-size: 19.6px;
+  font-size: 1.4rem;
+  color: #272727;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+/* line 283, ../styles/components/_forms.scss */
+.list-form p {
+  color: #272727;
+}
+/* line 285, ../styles/components/_forms.scss */
+.list-form p a {
+  color: #BE2700;
+}
+
+/* line 290, ../styles/components/_forms.scss */
+.tablist {
+  margin: 1em 0 0 0;
+  padding: 0;
+  list-style: none none;
+}
+/* line 294, ../styles/components/_forms.scss */
+.tablist .sujet {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background: white;
+  display: block;
+  padding: 1rem 0;
+  position: relative;
+}
+/* line 300, ../styles/components/_forms.scss */
+.tablist .sujet:hover {
+  background: #eaeaea;
+  cursor: pointer;
+}
+/* line 304, ../styles/components/_forms.scss */
+.tablist .sujet span {
+  display: block;
+}
+/* line 306, ../styles/components/_forms.scss */
+.tablist .sujet span.tab-title + span {
+  color: #666;
+}
+/* line 310, ../styles/components/_forms.scss */
+.tablist .sujet .spectre {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  border: 1px solid #ccc;
+}
+/* line 321, ../styles/components/_forms.scss */
+.tablist .sujet .tab-title {
+  text-transform: uppercase;
+  color: #272727;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+}
+/* line 326, ../styles/components/_forms.scss */
+.tablist .sujet .tab-title, .tablist .sujet .tab-title + span {
+  padding-left: 8.33333%;
+}
+/* line 330, ../styles/components/_forms.scss */
+.tablist .contenu_sujet {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: translate3d(0, -10px, 0);
+  -moz-transform: translate3d(0, -10px, 0);
+  -ms-transform: translate3d(0, -10px, 0);
+  -webkit-transform: translate3d(0, -10px, 0);
+  zoom: 1;
+  height: 0;
+  overflow: hidden;
+}
+/* line 337, ../styles/components/_forms.scss */
+.tablist [type="radio"] {
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 348, ../styles/components/_forms.scss */
+.tablist [type="radio"]:checked ~ .sujet {
+  border-top: 1px solid #ccc;
+}
+/* line 349, ../styles/components/_forms.scss */
+.tablist [type="radio"]:checked ~ .sujet:hover {
+  background: white;
+}
+/* line 353, ../styles/components/_forms.scss */
+.tablist [type="radio"]:checked ~ .sujet .spectre {
+  border: 2px solid #BE2700;
+}
+/* line 356, ../styles/components/_forms.scss */
+.tablist [type="radio"]:checked ~ .sujet .tab-title {
+  color: #BE2700;
+}
+/* line 360, ../styles/components/_forms.scss */
+.tablist [type="radio"]:checked ~ .contenu_sujet {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  zoom: 1;
+  height: auto;
 }
 
 /********************************************************************************************************************************************************************************
