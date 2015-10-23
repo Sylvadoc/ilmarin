@@ -4271,10 +4271,10 @@ body {
   padding: 0;
   text-transform: uppercase;
 }
-.list-form p {
+.list-form li {
   color: #272727;
 }
-.list-form p a {
+.list-form li a {
   color: #BE2700;
 }
 

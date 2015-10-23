@@ -4250,11 +4250,11 @@ body {
   text-transform: uppercase;
 }
 /* line 283, ../styles/components/_forms.scss */
-.list-form p {
+.list-form li {
   color: #272727;
 }
 /* line 285, ../styles/components/_forms.scss */
-.list-form p a {
+.list-form li a {
   color: #BE2700;
 }
 
