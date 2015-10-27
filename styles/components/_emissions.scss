@@ -37,3 +37,17 @@
 		width: 50%;
 	}
 }
+
+/* ============== RESPONSIVE EMISSIONS
+========================================================== */
+
+@media (max-width: $medium-screen) {
+	#dmud {
+		.article_focus {
+			background: white none;
+		}
+		li:nth-last-child(-n+4) {
+			width: 100%;
+		}
+	}
+}

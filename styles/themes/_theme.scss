@@ -94,6 +94,10 @@ section:nth-child(2n+2), #most {
 		@include gradient(#24C6DC,#514A9D);
 	}
 }
+
+/* ============== F O O T E R   C O L O R S
+========================================================== */
+
 #footer {
 	background: #262626;
 	p {
@@ -106,7 +110,7 @@ section:nth-child(2n+2), #most {
 			text-decoration: none;
 		}
 	}
-	&[data-weather="sunny"] {
+	&[data-weather="sunny"], &[data-weather="cloudy"] {
 		@include gradient(#00BBFF,#00BBFF);
 		color: #f1f1f1;
 		a {
@@ -121,22 +125,7 @@ section:nth-child(2n+2), #most {
 			border-bottom: 2px solid white;
 		}
 	}
-	&[data-weather="cloudy"] {
-		@include gradient(#2EB5E5,#2EB5E5);
-		color: #f1f1f1;
-		a {
-			color: white;
-			&:hover {
-				color: white;
-				text-decoration: underline;
-			}
-		}
-		p, h2, #weather_city {color: white;}
-		#weather_city {
-			border-bottom: 2px solid white;
-		}
-	}
-	&[data-weather="rainy"] {
+	&[data-weather="rainy"], &[data-weather="rainbow"] {
 		@include gradient(#E6E6E6,#E6E6E6);
 		a {
 			color: #333;
@@ -150,51 +139,22 @@ section:nth-child(2n+2), #most {
 			border-bottom: 2px solid black;
 		}
 	}
-	&[data-weather="snowy"] {
-		@include gradient(#85DB8C,#85DB8C );
+	&[data-weather="snowy"], &[data-weather="stormy"] {
+		@include gradient(#444444,#444444);
 		a {
-			color: #333;
+			color: #f1f1f1;
 			&:hover {
-				color: #333;
+				color: #fff;
 				text-decoration: underline;
 			}
 		}
-		p, h2, #weather_city {color: black;}
+		p, h2, #weather_city {color: #fff;}
 		#weather_city {
-			border-bottom: 2px solid black;
-		}
-	}
-	&[data-weather="rainbow"] {
-		@include gradient(#F3D166,#F3D166);
-		a {
-			color: #333;
-			&:hover {
-				color: #333;
-				text-decoration: underline;
-			}
-		}
-		p, h2, #weather_city {color: black;}
-		#weather_city {
-			border-bottom: 2px solid black;
+			border-bottom: 2px solid #fff;
 		}
 	}
 	&[data-weather="starry"] {
 		@include gradient(#222233,#222233);
-		color: #f1f1f1;
-		a {
-			color: white;
-			&:hover {
-				color: white;
-				text-decoration: underline;
-			}
-		}
-		p, h2, #weather_city {color: white;}
-		#weather_city {
-			border-bottom: 2px solid white;
-		}
-	}
-	&[data-weather="stormy"] {
-		@include gradient(#444444,#444444);
 		color: #f1f1f1;
 		a {
 			color: white;
