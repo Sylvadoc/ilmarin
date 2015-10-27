@@ -4,10 +4,6 @@
 @import "helpers/helpers";
 @import "helpers/mixins";
 
-// Vendors and external stylesheets
-@import "vendors/weather";
-@import "vendors/select2";
-
 // Base stuff
 @import "base/reset";
 @import "base/typography";
@@ -26,6 +22,10 @@
 
 // Page-specific stylesheets
 @import "pages/chronique";
+
+// Vendors and external stylesheets
+@import "vendors/weather";
+@import "vendors/select2";
 
 // Themes
 @import "themes/theme";
