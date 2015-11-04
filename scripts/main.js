@@ -113,7 +113,7 @@ $(document).ready(function() {
 
 	// Anathema
 	var weather = ['sunny','cloudy','rainy','snowy','rainbow','starry','stormy'];
-	var cities = ['Minas Tirith','Fendeval','Hobbiteville','Minas Morgul','Camorr','Ankh-Morpork','Tar Valon','Port-Réal','Castelcerf','Poudlard','Wielstadt','Edoras','Luthadel','Lorgol','Dros Delnoch','Ymrrir','Sunnydale','Konoha', 'Benden', 'Riva'];
+	var cities = ['Minas Tirith','Fendeval','Hobbiteville','Minas Morgul','Camorr','Ankh-Morpork','Tar Valon','Port-Réal','Castelcerf','Poudlard','Wielstadt','Edoras','Luthadel','Lorgol','Dros Delnoch','Ymrrir','Sunnydale','Konoha','Benden','Riva'];
 	function getCity() {
    		return cities[Math.floor(Math.random() * cities.length)];
 	}
@@ -141,6 +141,14 @@ $(document).ready(function() {
 	}
 	if ($('#les_auteurs').length) {
 		$('#les_auteurs').select2();
+	}
+
+	// truncate text or not
+	var mediaQuery = Modernizr.mq('(max-width: 1281px)');
+	if (mediaQuery) {
+		$('.truncate').succinct({
+			size: 120
+		});
 	}
 
 });
