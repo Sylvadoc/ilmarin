@@ -36,10 +36,10 @@ $(document).ready(function() {
 	}
 
 	// cnil
-	if ($.cookie('cookie_cnil') === undefined) {
-		$('#mp-pusher').append('<div id="cnil"><p>En poursuivant votre navigation sur le site, vous acceptez l\'utilisation de cookies. <a href="/cookies">En savoir plus</a>. <button id="cnil_ok">j\'accepte</button></p></div>');
+	if (Cookies.get('cookie_cnil') === undefined) {
+		$('.m-scene').append('<div id="cnil"><p>En poursuivant votre navigation sur le site, vous acceptez l\'utilisation de cookies. <a href="/cookies">En savoir plus</a>. <button id="cnil_ok">j\'accepte</button></p></div>');
 		$('#cnil_ok').click(function(e){
-			$.cookie('cookie_cnil', 'viewed');
+			Cookies.set('cookie_cnil', 'viewed');
 			$('#cnil').fadeOut();
 		});
 	}
