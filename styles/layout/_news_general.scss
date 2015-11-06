@@ -181,6 +181,32 @@
 		.post {height: calc(500px + 0.93em);}
 	}
 }
+@media (min-width: $small-screen) and (max-width: $medium-screen) {
+	#news_general {
+		.post-tribune {
+			.entry-extract p { margin-bottom: 1rem; }
+			.post-info {
+				text-align: center;
+				@include skewX(0);
+				background-color: transparent;
+				position: static;
+				span, time {
+					@include skewX(0);
+					display: block;
+					font-family: $font-stack-simili;
+					text-transform: uppercase;
+				}
+				img {
+					@include skewX(0);
+					display: block;
+					float: none;
+					margin: 0 auto 1em auto;
+					position: static;
+				}
+			}
+		}
+	}
+}
 @media (min-width: $small-screen) and (max-width: $large-screen) {
 	#news_general {
 		padding: 1.86em 0 0;
