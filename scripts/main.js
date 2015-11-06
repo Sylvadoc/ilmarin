@@ -144,11 +144,19 @@ $(document).ready(function() {
 	}
 
 	// truncate text or not
-	var mediaQuery = Modernizr.mq('(max-width: 1281px)');
-	if (mediaQuery) {
-		$('.truncate').succinct({
-			size: 120
-		});
+	if ($('#news_general').length) {
+		var mediaQuery = Modernizr.mq('(max-width: 1281px)');
+		var mediaQueryBis = Modernizr.mq('(max-width: 1025px)');
+		if (mediaQuery) {
+			$('.truncate').succinct({
+				size: 120
+			});
+		}
+		if (mediaQueryBis) {
+			$('.truncateBis').succinct({
+				size: 160
+			});
+		}
 	}
 
 });

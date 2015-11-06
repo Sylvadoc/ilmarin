@@ -54,7 +54,7 @@
 			&:hover, &:focus {
 				color: $base-color-elbakin;
 			}
-		} 
+		}
 	}
 	.social_footer {
 		list-style: none none;
@@ -85,14 +85,15 @@
 #cnil {
 	background: #fbdcbf;
 	border-top: 1px solid #fff;
-	padding: 5px;
-	position: fixed;
 	bottom: 0;
 	left: 0;
+	padding: 5px;
+	position: fixed;
 	width: 100%;
+	z-index: 999;
 	p {
-		color: #333;
 		@include rem(1.2);
+		color: #333;
 		margin: 0;
 		padding: 0;
 		text-align: center;
@@ -115,5 +116,5 @@
 @media (max-width: $tiny-screen) {
 	#footer .columns:nth-child(-n+2) {
 		height: auto;
-	}	
+	}
 }
