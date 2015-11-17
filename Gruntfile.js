@@ -7,11 +7,11 @@ grunt.initConfig({
         },
         dist: {
             files: {
-                'css/main.css': 'cssprod/main.css',
-                'css/article.css': 'cssprod/article.css',
-                'css/chronique.css': 'cssprod/chronique.css',
-                'css/fantasy.css': 'cssprod/fantasy.css',
-                'css/tolkien.css': 'cssprod/tolkien.css',
+                'cssprod/main.css': 'css/main.css',
+                'cssprod/article.css': 'css/article.css',
+                'cssprod/chronique.css': 'css/chronique.css',
+                'cssprod/fantasy.css': 'css/fantasy.css',
+                'cssprod/tolkien.css': 'css/tolkien.css',
             }
         }
     }
