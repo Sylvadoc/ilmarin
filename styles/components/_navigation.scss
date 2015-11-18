@@ -99,18 +99,22 @@
 
 @keyframes ClosingSwordsLeft {
 	0% {
-		@include rotate(0);
+		background: $base-color;
+		@include rotate(45deg);
 	}
 	100% {
 		@include rotate(-45deg);
+		background: $base-color-elbakin;
 	}
 }
 @keyframes ClosingSwordsRight {
 	0% {
-		@include rotate(0);
+		@include rotate(-45deg);
+		background: $base-color;
 	}
 	100% {
 		@include rotate(45deg);
+		background: $base-color-elbakin;
 	}
 }
 
@@ -135,26 +139,29 @@
 		visibility: visible;
 	}
 	.menu-close {
-		background: transparent;
+		background: white;
+		color: $base-color;
 		display: block;
 		height: 3rem;
+		line-height: 1rem;
+		padding: 1rem 4rem 1rem 1rem;
 		position: absolute;
-		right: 1em;
-		text-indent: -999em;
-		top: 1em;
-		width: 3rem;
+		right: 1rem;
+		text-transform: uppercase;
+		top: 1rem;
 		z-index: 500;
 		span {
-			background: white;
+			@include rotate(45deg);
+			background: $base-color;
 			content: '';
 			display: block;
 			height: 3rem;
-			left: 1.5rem;
+			right: 2rem;
 			position: absolute;
 			top: 0;
 			width: 2px;
 			&:before {
-				background: white;
+				background: inherit;
 				content: '';
 				display: block;
 				height: 2px;
@@ -165,17 +172,26 @@
 			}
 		}
 		span + span {
-			right: 1.5rem;
+			@include rotate(45deg);
 		}
 		&.animate {
+			@include transition(color cubic-bezier(.68,-0.55,.27,1.55) .5s);
+			color: $base-color-elbakin;
 			span {
-				animation: ClosingSwordsLeft cubic-bezier(.68,-0.55,.27,1.55) .5s 1;
 				@include rotate(-45deg);
+				animation: ClosingSwordsLeft cubic-bezier(.68,-0.55,.27,1.55) .5s 1;
+				background: $base-color-elbakin;
+				right: 2rem;
 			}
 			span+span {
-				animation: ClosingSwordsRight cubic-bezier(.68,-0.55,.27,1.55) .5s 1;
 				@include rotate(45deg);
+				animation: ClosingSwordsRight cubic-bezier(.68,-0.55,.27,1.55) .5s 1;
+				background: $base-color-elbakin;
+				right: 2rem;
 			}
+		}
+		&:hover {
+			text-decoration: none;
 		}
 	}
 }
@@ -228,6 +244,10 @@
 		color: rgba(255,255,255,0.5);
 		font-size: small;
 	}
+	.icon {
+		color: white;
+		@include rem(4);
+	}
 }
 .section-01 {
 	// section bibliotheque
@@ -260,6 +280,16 @@
 	&:before {
 		background-image: url('../images/fantasy.jpg');
 		background-position: right bottom;
+	}
+}
+.section-04, .section-05, .section-06 {
+	&:hover {
+		.inner-section {
+			@include translate3d(0,10%,0);
+		}
+	}
+	.inner-section {
+		@include translate3d(0,10%,0);
 	}
 }
 .section-04 {

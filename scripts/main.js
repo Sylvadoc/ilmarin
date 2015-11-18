@@ -5,9 +5,10 @@ $(document).ready(function() {
 	$('.menu-trigger').click(function() {
 		$('.m-scene').toggleClass('overlay-open');
 		$('.overlay').toggleClass('open');
-		setTimeout(function() {
-            $('.menu-close').addClass('animate');
-        }, 1000);
+		$('.menu-close').removeClass('animate');
+	});
+	$('.menu-close').hover(function() {
+		$(this).toggleClass('animate');
 	});
 	$('.menu-close').click(function() {
 		$(this).removeClass('animate');

@@ -19,7 +19,13 @@
 	.the-title {
 		margin-top: 1.5rem;
 		z-index: 2;
-		a {display: block; z-index: 2;}
+		a {
+			-webkit-box-decoration-break: clone;
+			-o-box-decoration-break: clone;
+			box-decoration-break: clone;
+			display: block;
+			z-index: 2;
+		}
 	}
 }
 .post-teaser {
