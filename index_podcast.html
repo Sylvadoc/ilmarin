@@ -35,7 +35,7 @@
 
         <!-- stylesheets -->
         <link rel="stylesheet" href="css/vendors/foundation.min.css" />
-        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/emissions.css" />
 
         <!-- scripts -->
         <script src="scripts/modernizr-custom.js"></script>
@@ -43,7 +43,7 @@
 
     </head>
 
-    <body role="document">
+    <body role="document" class="page-emission">
 
         <nav id="garde" class="overlay" role="navigation">
             <a class="menu-close" title="Fermer le menu">fermer<span></span><span></span>
@@ -193,202 +193,61 @@
 
             <main role="main" class="m-page">
 
-                <!-- begin section head profile -->
-                <section role="region" id="head">
+                <!-- begin header fantasy index -->
+                <section role="region" id="header_section" class="header_section emission_section">
                     <div class="row">
-                    	<div class="bloc-profil clearfix">
-	                        <div class="avatar">
-	                            <img src="images/illustrations/avatar_foradan.jpg" alt="Avatar de Foradan" />
-	                        </div>
-                            <div class="nonsense"></div>
-	                        <div class="bloc bloc-princeps">
-	                            <h1 class="h1-like">Foradan</h1>
-                                <span class="title">Quizzer draconique</span>
-	                            <a class="shadow-btn dark-shadow-btn" href="#">Le suivre</a>
-	                            <ul class="socially-engaged-on">
-	                                <li>
-	                                    <a href="https://www.facebook.com/Elbakin.net" title="Profil Facebook Foradan">
-	                                        <span class="icon icon-facebook" aria-hidden="true"></span>
-	                                        <span class="text">Facebook</span>
-	                                    </a>
-	                                </li>
-	                                <li>
-	                                    <a href="https://twitter.com/elbakin" title="Compte Twitter Foradan">
-	                                        <span class="icon icon-twitter" aria-hidden="true"></span>
-	                                        <span class="text">Twitter</span>
-	                                    </a>
-	                                </li>
-	                                <li>
-	                                    <a href="https://www.youtube.com/ElbakinNetFantasy" title="Chaîne YouTube Foradan">
-	                                        <span class="icon icon-google-plus" aria-hidden="true"></span>
-	                                        <span class="text">YouTube</span>
-	                                    </a>
-	                                </li>
-	                            </ul>
-	                            <p><strong>Son site personnel :</strong> <a href="#">r15lover.fr</a></p>
-	                        </div>
-	                        <div class="bloc bloc-duke">
-	                            <ul class="side-head">
-	                                <li>
-	                                	<span class="icon icon-trophy"></span>
-	                                    <strong>158</strong> trophées
-	                                </li>
-	                                <li>
-	                                	<span class="icon icon-user" aria-hidden="true"></span>
-	                                    <strong>666 </strong> followers
-	                                </li>
-                                    <li>
-                                        <span class="icon icon-bookmark" aria-hidden="true"></span>
-                                        <strong>042 </strong> favoris
-                                    </li>
-	                            </ul>
-	                        </div>
-	                        <div class="bloc-noble">
-	                            <ul class="tabs">
-	                                <li><a href="#prod">Sa production</a></li>
-	                                <li><a class="active" href="#achievements">Ses trophées</a></li>
-                                    <li><a href="#pal">Sa pile à lire</a></li>
-                                    <li><a href="#yes">Ce qu'il apprécie</a></li>
-                                    <li><a href="#no">Ce qu'il n'apprécie guère</a></li>
-	                            </ul>
-	                            <div class="row row_tab_all">
-	                                <div class="row_tab" id="prod">
-	                                    <ul class="basic_list">
-                                            <li><a href="#">Adaptation, cette expression bien commode</a></li>
-                                            <li><a href="#">Non, le Seigneur des Anneaux n'est pas une oeuvre réactionnaire</a></li>
-                                            <li><a href="#">Et si la meilleure adaptation du SDA n'était pas un film, mais un jeu ?</a></li>
-                                            <li><a href="#">Sur les sentiers de la guerre</a></li>
-                                            <li><a href="#">Dans Comics, il y a surtout "comic"&hellip;</a></li>
-                                            <li><a href="#">Où il est question de zèle chez les pompiers</a></li>
-                                        </ul>
-	                                </div>
-	                                <div class="row_tab open" id="achievements">
-	                                    <ul class="basic_list trophies-list">
-                                            <li class="bronze-trophy">
-                                                <span class="icon icon-trophy"></span>
-                                                <strong>Rat de bibliothèque</strong>
-                                                <em>Vous avez consulté plus de 250 ouvrages</em>
-                                            </li>
-                                            <li class="gold-trophy">
-                                                <span class="icon icon-trophy"></span>
-                                                <strong>Tolkiendil</strong>
-                                                <em>Vous avez reçu la note de 10/10 à un quiz Tolkien</em>
-                                            </li>
-                                            <li class="gold-trophy">
-                                                <span class="icon icon-trophy"></span>
-                                                <strong>Langue pendue</strong>
-                                                <em>Nous ne comptons plus le nombre de vos interventions sur le forum</em>
-                                            </li>
-                                            <li class="silver-trophy">
-                                                <span class="icon icon-trophy"></span>
-                                                <strong>Journaliste</strong>
-                                                <em>Vous avez rédigé 100 brèves</em>
-                                            </li>
-                                        </ul>
-	                                </div>
-                                    <div class="row_tab" id="pal">
-                                        <ul class="basic_list">
-                                            <li><a href="#">Pile à lire</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="row_tab" id="yes">
-                                        <ul class="basic_list">
-                                            <li><a href="#">Ce qu'il apprécie</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="row_tab" id="no">
-                                        <ul class="basic_list">
-                                            <li><a href="#">Ce qu'il n'apprécie guère</a></li>
-                                        </ul>
-                                    </div>
-	                            </div>
-	                        </div>
-						</div>
-                    </div>
-                </section>
-                <!-- /end section head profile -->
-
-                <!-- begin section perfect library -->
-                <section role="region" id="perfect" class="liste_ouvrage jeff">
-                    <div class="row clearfix">
-                        <span class="simili-title">Sa <strong>bibliothèque</strong> idéale</span>
-                        <div id="masonry_last">
-                            <div class="small-6 medium-3 large-2 columns">
-                                <article>
-                                    <a class="entry-header" href="#">
-                                        <img src="images/illustrations/pevel_02.jpg" alt="Les Enchantements d'Ambremer" />
-                                        <p><span>Les Enchantements d'Ambremer</span></p>
-                                    </a>
-                                </article>
-                            </div>
-                            <div class="small-6 medium-3 large-2 columns">
-                                <article>
-                                    <a class="entry-header" href="#">
-                                        <img src="images/illustrations/pevel_03.jpg" alt="L'Élixir d'oubli" />
-                                        <p><span>L'Élixir d'oubli</span></p>
-                                    </a>
-                                </article>
-                            </div>
-                            <div class="small-6 medium-3 large-2 columns">
-                                <article>
-                                    <a class="entry-header" href="#">
-                                        <img src="images/illustrations/pevel_01.jpg" alt="Le Royaume Immobile" />
-                                        <p><span>Le Royaume Immobile</span></p>
-                                    </a>
-                                </article>
-                            </div>
-                            <div class="small-6 medium-3 large-2 columns">
-                                <article>
-                                    <a class="entry-header" href="#">
-                                        <img src="images/illustrations/pevel_06.jpg" alt="Les Lames du Cardinal" />
-                                        <p><span>Les Lames du Cardinal</span></p>
-                                    </a>
-                                </article>
-                            </div>
-                            <div class="small-6 medium-3 large-2 columns">
-                                <article>
-                                    <a class="entry-header" href="#">
-                                        <img src="images/illustrations/pevel_04.jpg" alt="L'Alchimiste des Ombres" />
-                                        <p><span>L'Alchimiste des Ombres</span></p>
-                                    </a>
-                                </article>
-                            </div>
-                            <div class="small-6 medium-3 large-2 columns">
-                                <article>
-                                    <a class="entry-header" href="#">
-                                        <img src="images/illustrations/pevel_05.jpg" alt="Le Dragon des Arcanes" />
-                                        <p><span>Le Dragon des Arcanes</span></p>
-                                    </a>
-                                </article>
-                            </div>
-                            <div class="small-6 medium-3 large-2 columns">
-                                <article>
-                                    <a class="entry-header" href="#">
-                                        <img src="images/illustrations/pevel_09.jpg" alt="Les Ombres de Wielstadt" />
-                                        <p><span>Les Ombres de Wielstadt</span></p>
-                                    </a>
-                                </article>
-                            </div>
-                            <div class="small-6 medium-3 large-2 columns">
-                                <article>
-                                    <a class="entry-header" href="#">
-                                        <img src="images/illustrations/pevel_08.jpg" alt="Les masques de Wielstadt" />
-                                        <p><span>Les masques de Wielstadt</span></p>
-                                    </a>
-                                </article>
-                            </div>
-                            <div class="small-6 medium-3 large-2 columns">
-                                <article>
-                                    <a class="entry-header" href="#">
-                                        <img src="images/illustrations/pevel_07.jpg" alt="Le Chevalier de Wielstadt" />
-                                        <p><span>Le Chevalier de Wielstadt</span></p>
-                                    </a>
-                                </article>
-                            </div>
+                        <div class="small-12 columns">
+                            <h1>Les podcasts</h1>
                         </div>
                     </div>
                 </section>
-                <!-- end section perfect library -->
+                <!-- /end header fantasy index -->
+
+                <!-- begin section emissions  -->
+                <section role="region" id="emissions">
+                <div class="row">
+                    <span class="simili-title">Nos <strong>autres</strong> émissions</span>
+                    <aside id="dmud" role="complementary" class="small-12 medium-6 large-6 columns">
+                        <h2><span class="icon icon-youtube2"></span> Dessine-moi un Dragon</h2>
+                        <article class="article_focus" role="article">
+                            <div class="inner_content">
+                                <a href="#">
+                                    <img src="images/illustrations/gravity.jpg" alt="Gravity Falls" />
+                                    <p><span>Gravity Falls</span></p>
+                                </a>
+                            </div>
+                            <h3>Les dernières émissions :</h3>
+                            <ul>
+                                <li><a href="#">Gravity Falls</a></li>
+                                <li><a href="#">Scott Pilgrim</a></li>
+                                <li><a href="#">La Reine des Neiges</a></li>
+                                <li><a href="#">A comme Association</a></li>
+                                <li><a href="#">Lou!</a></li>
+                            </ul>
+                        </article>
+                    </aside>
+                    <aside id="lionel" role="complementary" class="small-12 medium-6 large-6 columns">
+                        <h2><span class="icon icon-podcast"></span> Procrastination&hellip;</h2>
+                        <article class="article_focus" role="article">
+                            <div class="inner_content">
+                                <a href="#">
+                                    <img src="images/illustrations/combat.jpg" alt="Combat" />
+                                    <p><span>Combat, with M. Brennan</span></p>
+                                </a>
+                            </div>
+                        <h3>Les dernières émissions :</h3>
+                        <ul>
+                            <li><a href="#">How Does Context Shape Dialog ?</a></li>
+                            <li><a href="#">Being a Good Panelist and a Great Moderator</a></li>
+                            <li><a href="#">How Does Context Shape Plot Twists?</a></li>
+                            <li><a href="#">Breaking In, With Charlie N. Holmberg</a></li>
+                            <li><a href="#">Q &amp; A on Pacing</a></li>
+                        </ul>
+                        </article>
+                    </aside>
+                </div>
+                </section>
+                <!-- end section emissions -->
 
             </main>
 
@@ -452,15 +311,14 @@
 
         </div><!-- /end m-scene -->
 
-        <!-- ALL JS BEFORE /BODY -->
-        <!-- libraries -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="scripts/jquery-2.1.3.min.js"><\/script>')</script>
-        <script type="text/javascript" src="scripts/jquery.cookie.js"></script>
-        <script type="text/javascript" src="scripts/masonry.pkgd.min.js"></script>
-        <!-- custom scripts -->
-        <script type="text/javascript" src="scripts/main.js"></script>
-        <!-- / END JS -->
+		<!-- ALL JS BEFORE /BODY -->
+		<!-- libraries -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="scripts/jquery-2.1.3.min.js"><\/script>')</script>
+		<script type="text/javascript" src="scripts/jquery.cookie.js"></script>
+		<!-- custom scripts -->
+		<script type="text/javascript" src="scripts/main.js"></script>
+		<!-- / END JS -->
 
     </body>
 </html>
