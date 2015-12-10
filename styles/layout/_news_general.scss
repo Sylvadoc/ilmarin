@@ -270,6 +270,10 @@
 	}
 }
 @media (max-width: $tiny-screen) {
+	#news_general {
+		padding: 0.93em 0;
+		.row {margin-left: 0.03em;}
+	}
 	.column-01, .column-03, .column-04 {
 		.the-title {font-size: $h5-size;}
 		.post {

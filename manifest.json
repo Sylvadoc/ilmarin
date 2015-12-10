@@ -1,0 +1,23 @@
+{
+	"lang": "fr",
+	"name":"Elbakin.net",
+	"short_name":"Elbakin.net",
+	"icons":[{
+		"type": "image/png",
+		"sizes": "152x152",
+		"src": "/css/152x152.png"
+	},
+	{
+		"type": "image/png",
+		"sizes": "114x114",
+		"src": "/css/114x114.png"
+	},
+	{
+		"type": "image/png",
+		"sizes": "96x96",
+		"src": "/css/96x96.png"
+	}],
+	"start_url": "/index.php",
+	"display": "standalone",
+	"orientation": "portrait"
+}
