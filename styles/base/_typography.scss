@@ -37,7 +37,7 @@ body {
 	color: $base-color;
 	font-family: $font-stack-common;
 	line-height: $line-height;
-	@include font-enhancements;
+	// @include font-enhancements;
 }
 
 /* ============== D E F A U L T
@@ -89,18 +89,18 @@ h1, .h1-like {
 	font-family: $font-stack-headings;
 	font-size: $h1-size;
 	font-weight: 700;
-	@include font-kerning;
+	// @include font-kerning;
 }
 h2, .h2-like {
 	font-family: $font-stack-headings;
 	font-size: $h2-size;
 	font-weight: 300;
-	@include font-kerning;
+	// @include font-kerning;
 }
 h3, .h3-like {
 	font-family: $font-stack-headings;
 	font-size: $h3-size;
-	@include font-kerning;
+	// @include font-kerning;
 }
 h4, .h4-like {
 	font-size: $h4-size;
@@ -112,7 +112,7 @@ h6, .h6-like {
 	font-size: $h6-size;
 }
 p {
-	@include font-kerning;
+	// @include font-kerning;
 }
 .simili-title {
 	display: block;
