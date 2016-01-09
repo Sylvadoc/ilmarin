@@ -220,6 +220,7 @@
 /********************************************************************************************************************************************************************************/
 
 .the-header {
+	@include transition(height .3s);
 	@extend %clearfix;
 	position: relative;
 	.inner-wrap {
@@ -301,9 +302,9 @@
 		}
 	}
 	&.sticky {
-		background: rgba(256,256,256,0.95);
-		padding: 0;
+		background: rgba(white,0.95) !important;
 		height: 50px;
+		padding: 0;
 		position: fixed;
 		top: 0;
 		width: 100%;
@@ -505,6 +506,7 @@
 		@include rem(1.8);
 		font-family: $font-stack-simili;
 		font-weight: 300;
+		margin-top: 1em;
 		.dropcaps {
 			font-family: "Palatino Linotype", Palatino, $font-stack-simili;
 			display: block;

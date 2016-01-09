@@ -5,7 +5,7 @@
 .btn {
 	@include border-radius(4px);
 	@include rem(1.6);
-	@include transition(all 300ms ease-out);
+	@include transition(all .3s ease-out);
 	border: 0;
 	color: white;
 	cursor: pointer;
@@ -13,7 +13,7 @@
 	font-family: $font-stack-headings;
 	line-height: 40px;
 	margin: 0 auto;
-	max-width: 275px;
+	max-width: 27.5rem;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;

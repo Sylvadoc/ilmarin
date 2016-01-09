@@ -2,6 +2,7 @@
 
 #General settings
 encoding = "utf-8"
+sourcemap = true
 
 #Folder settings
 relative_assets = true      #because we're not working from the root

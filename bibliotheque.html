@@ -200,17 +200,25 @@
                 <!-- begin header section -->
                 <section role="region" id="header_section" class="header_section library_section">
                 	<div class="row">
-                		<div class="small-12 medium-12 large-12 columns">
+                		<div class="small-12 columns">
                 			<h1>La Bibliothèque</h1>
                 			<p><span class="dropcaps">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     		<div class="row">
-    	                		<aside class="small-6 columns" id="form_all" role="complementary">
-    	                			<label for="in_biblio">Faire une recherche</span></label>
-    	                			<input type="text" id="in_biblio" name="in_biblio" />
-    	                			<button type="submit" class="btn btn_default inline_btn">OK</button>
+    	                		<aside class="small-12 medium-6 columns" id="form_all" role="complementary">
+                                    <div class="row">
+                                        <div class="small-12 columns">
+        	                			    <label for="in_biblio">Faire une recherche</span></label>
+                                        </div>
+                                        <div class="small-12 medium-8 columns">
+                                            <input type="text" id="in_biblio" name="in_biblio" />
+                                        </div>
+                                        <div class="small-12 medium-4 columns">
+                                            <button type="submit" class="btn btn_default inline_btn">chercher</button>
+                                        </div>
+                                    </div>
     	                		</aside>
-    	                		<aside class="small-6 columns" id="destiny" role="complementary">
+    	                		<aside class="small-12 medium-6 columns" id="destiny" role="complementary">
     	                			<h2>Ouvrage aléatoire</h2>
     	                			<a href="#" class="btn btn_default">Choisir pour moi</a>
     	                		</aside>
@@ -734,8 +742,7 @@
 
         <!-- ALL JS BEFORE /BODY -->
         <!-- libraries -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="scripts/jquery-2.1.3.min.js"><\/script>')</script>
+        <script type="text/javascript" src="scripts/jquery-2.1.3.min.js"></script>
         <script type="text/javascript" src="scripts/jquery.cookie.js"></script>
         <script type="text/javascript" src="scripts/select2.min.js"></script>
         <script type="text/javascript" src="scripts/masonry.pkgd.min.js"></script>
