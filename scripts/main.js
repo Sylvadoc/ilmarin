@@ -33,7 +33,7 @@ $(document).ready(function() {
 		}
 	});
 
-	// mobile
+	// mobil
 	if ($("html").hasClass("tablet") || $("html").hasClass("mobile") || $("html").hasClass("smallscreen") || isMobile) {
 		$('.the-header').addClass("sticky");
 		$('.to_be_fixed').removeClass("sidebar_fixed");
@@ -131,10 +131,10 @@ $(document).ready(function() {
 	var weather = ['sunny','cloudy','rainy','snowy','rainbow','starry','stormy'];
 	var cities = ['Minas Tirith','Fendeval','Hobbiteville','Minas Morgul','Camorr','Ankh-Morpork','Tar Valon','Port-Réal','Castelcerf','Poudlard','Wielstadt','Edoras','Luthadel','Lorgol','Dros Delnoch','Ymrrir','Sunnydale','Konoha','Benden','Riva'];
 	function getCity() {
-   		return cities[Math.floor(Math.random() * cities.length)];
+		return cities[Math.floor(Math.random() * cities.length)];
 	}
 	function getWeather() {
-   		return weather[Math.floor(Math.random() * weather.length)];
+		return weather[Math.floor(Math.random() * weather.length)];
 	}
 	var the_weather = getWeather();
 	$('#footer').attr('data-weather',the_weather);

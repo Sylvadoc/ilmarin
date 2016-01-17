@@ -1,1 +1,8 @@
+# Folders #
+######################
 .sass-cache/
+node_modules/
+
+# Logs and databases #
+######################
+*.log
