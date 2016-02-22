@@ -1,6 +1,7 @@
 # Folders #
 ######################
 .sass-cache/
+.idea/
 node_modules/
 
 # Logs and databases #

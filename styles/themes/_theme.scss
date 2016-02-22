@@ -39,8 +39,9 @@
 /* ============== S E C T I O N S
 ========================================================== */
 
-section:nth-child(2n+2), #most {
+section:nth-child(2n+2), #most, .grey-section {
 	@include gradient(#ECE9E6,#FFFFFF);
+	// oui
 }
 #header_section {
 	&.tolkien_section, &.library_section, &.emission_section {
@@ -69,7 +70,7 @@ section:nth-child(2n+2), #most {
 	@include gradient(#24C6DC,#514A9D);
 	color: white;
 }
-#last_50 {
+#last_50, .colored-section {
 	@include gradient(#24C6DC,#514A9D);
 	color: white;
 }
