@@ -41,7 +41,6 @@
 
 section:nth-child(2n+2), #most, .grey-section {
 	@include gradient(#ECE9E6,#FFFFFF);
-	// oui
 }
 #header_section {
 	&.tolkien_section, &.library_section, &.emission_section {
