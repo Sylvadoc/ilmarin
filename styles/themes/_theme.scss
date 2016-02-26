@@ -4,14 +4,14 @@
 @media (max-width: $ultra-large-screen) {
 	.the-header {
 		background-color: transparent;
-		background-image: url('../images/simonetti_1920.jpg');
+		background-image: url('../../images/simonetti_1920.jpg');
 		background-repeat: no-repeat;
 		background-position: 0 -380px;
 	}
 	#header_section {
 		&.tolkien_section, &.library_section, &.fantasy_section, &.emission_section {
 			background-color: transparent;
-			background-image: url('../images/simonetti_1920.jpg');
+			background-image: url('../../images/simonetti_1920.jpg');
 			background-repeat: no-repeat;
 			background-position: 0 77%;
 			background-attachment: fixed;
@@ -21,14 +21,14 @@
 @media (max-width: $large-screen) {
 	.the-header {
 		background-color: transparent;
-		background-image: url('../images/simonetti_1280.jpg');
+		background-image: url('../../images/simonetti_1280.jpg');
 		background-repeat: no-repeat;
 		background-position: 0 -300px;
 	}
 	#header_section {
 		&.tolkien_section, &.library_section, &.fantasy_section, &.emission_section {
 			background-color: transparent;
-			background-image: url('../images/simonetti_1280.jpg');
+			background-image: url('../../images/simonetti_1280.jpg');
 			background-repeat: no-repeat;
 			background-position: 0 77%;
 			background-attachment: fixed;
@@ -58,7 +58,7 @@ section:nth-child(2n+2), #most, .grey-section {
 	@include background-size(cover);
 	background-attachment: fixed;
 	background-color: transparent;
-	background-image: url('../images/argonath.jpg');
+	background-image: url('../../images/argonath.jpg');
 	background-repeat: no-repeat;
 	color: white;
 }
@@ -70,6 +70,7 @@ section:nth-child(2n+2), #most, .grey-section {
 	color: white;
 }
 #last_50, .colored-section {
+	// test
 	@include gradient(#24C6DC,#514A9D);
 	color: white;
 }
