@@ -78,7 +78,7 @@ $(document).ready(function() {
 	});
 
 	// bloc chroniques
-	$('.critiques a').hover(function(e) {
+	$('.critiques a').hover(function() {
 
 		var title_chronique = $(this).children('img').attr('alt');
 		var author_book = $(this).next('span').html();
@@ -115,7 +115,7 @@ $(document).ready(function() {
 	});
 
 	// clickable div
-	$('.clickable').click(function(e) {
+	$('.clickable').click(function() {
 		window.location = $(this).find("a").attr("href");
 	});
 

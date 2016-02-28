@@ -14,3 +14,41 @@
 		margin-top: -190px;
 	}
 }
+
+#une_emission {
+	padding: 2rem 0;
+	.article_focus {
+		background: transparent;
+		.inner_content {
+			background: white;
+			@include border-radius(5px);
+			padding: 1em;
+			text-align: justify;
+		}
+	}
+	h2 {
+		color: #be2700;
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
+	}
+}
+
+#all_pods {
+	padding: 2rem 0;
+	.shadow-btn {
+		float: right;
+	}
+}
+
+.legend-pod {
+	color: $base-color;
+	dt, dd {
+		display: inline-block;
+		margin: 0;
+		vertical-align: top;
+	}
+	dt {
+		font-weight: 600;
+	}
+}

@@ -208,11 +208,12 @@
                 <!-- /end header emission index -->
 
                 <!-- begin resume section -->
-                <section role="region" class="grey-section">
+                <section id="une_emission" role="region" class="grey-section">
                     <div class="row">
 						<span class="simili-title">&Agrave; <strong>la Une</strong></span>
-                        <div class="small-12 medium-6 large-6 columns">
+                        <div class="small-12 medium-6 large-4 columns">
                         <article class="article_focus">
+                            <h2><span class="icon icon-hot"></span> Le dernier podcast</h2>
                             <div class="inner_content">
 								<a href="#">
 									<img src="images/illustrations/sw7.jpg" alt="" />
@@ -222,7 +223,7 @@
 							</div>
                             </article>
                         </div>
-                        <div class="small-12 medium-6 large-6 columns">
+                        <div class="small-12 medium-6 large-4 columns">
                             <aside id="forum" role="complementary">
                                 <h2><span class="icon icon-bubbles"></span> Sur le forum</h2>
                                 <ul>
@@ -234,6 +235,9 @@
                                 </ul>
                             </aside>
                         </div>
+                        <div class="small-12 medium-6 large-4 columns">
+                            ???
+                        </div>
                     </div>
                 </section>
                 <!-- /end resume section -->
@@ -242,75 +246,81 @@
                 <section role="region" id="all_pods" class="colored-section">
                     <div class="row">
                         <div class="small-12 columns">
-                            <span class="simili-title">Les <strong>derniers</strong> podcasts</span>
-                            <ul class="tabs">
-                                <li><a href="#">Saison 1</a></li>
-                                <li><a href="#">Saison 2</a></li>
-                                <li><a href="#">Saison 3</a></li>
-                                <li><a href="#">Saison 4</a></li>
-                                <li><a href="#">Saison 5</a></li>
-                            </ul>
-                            <div id="masonry_pods">
-								<div class="small-6 medium-4 large-3 columns">
-									<article class="article_focus">
-										<div class="inner_content">
-											<a href="#">
-												<img src="images/illustrations/podcast_55.jpg" alt="" />
-												<p><span>le Bilan 2015 !</span></p>
-											</a>
-											<dl>
-												<dt>Participants :</dt>
-												<dd>Saffron, Guigz, Gillossen, Akallabeth, Merwin Tonnel</dd>
-											</dl>
-										</div>
-									</article>
-								</div>
-                                <div class="small-6 medium-4 large-3 columns">
-                                    <article class="article_focus">
-										<div class="inner_content">
-											<a href="#">
-												<img src="images/illustrations/podcast_54.jpg" alt="" />
-												<p><span>Le format “nouvelles”</span></p>
-											</a>
-											<dl>
-												<dt>Participants :</dt>
-												<dd>Witch, Guigz, Gillossen, Akallabeth, Merwin Tonnel</dd>
-												<dt>Invités :</dt>
-												<dd>Mélanie Fazi, Lionel Davoust</dd>
-											</dl>
-										</div>
-                                    </article>
-                                </div>
-								<div class="small-6 medium-4 large-3 columns">
-									<article class="article_focus">
-										<div class="inner_content">
-											<a href="#">
-												<img src="images/illustrations/podcast_53.jpg" alt="" />
-												<p><span>La fantasy sur petit écran !</span></p>
-											</a>
-											<dl>
-												<dt>Participants :</dt>
-												<dd>Witch, Guigz, Gillossen, Akallabeth, Merwin Tonnel</dd>
-											</dl>
-										</div>
-									</article>
-								</div>
-								<div class="small-6 medium-4 large-3 columns">
-									<article class="article_focus">
-										<div class="inner_content">
-											<a href="#">
-												<img src="images/illustrations/podcast_52.jpg" alt="" />
-												<p><span>La fantasy est-elle réac ?</span></p>
-											</a>
-											<dl>
-												<dt>Participants :</dt>
-												<dd>Witch, Guigz, Gillossen, Akallabeth, Merwin Tonnel</dd>
-											</dl>
-										</div>
-									</article>
-								</div>
-                            </div>
+                            <span class="simili-title"><strong>Tous</strong> les podcasts</span>
                             <a class="shadow-btn light-shadow-btn" href="#">Tous les podcasts</a>
+                            <ul class="tabs">
+                                <li><a href="#saison_01">Saison 1</a></li>
+                                <li><a href="#saison_02">Saison 2</a></li>
+                                <li><a href="#saison_03">Saison 3</a></li>
+                                <li><a href="#saison_04">Saison 4</a></li>
+                                <li><a class="active" href="#saison_05">Saison 5</a></li>
+                            </ul>
+                            <div class="row row_tab_all">
+                                <div class="row_tab" id="saison_01"></div>
+                                <div class="row_tab" id="saison_02"></div>
+                                <div class="row_tab" id="saison_03"></div>
+                                <div class="row_tab" id="saison_04"></div>
+                                <div class="row_tab open" id="saison_05">
+                                    <div class="small-6 medium-4 large-3 columns">
+                                        <article class="article_focus">
+                                            <div class="inner_content">
+                                                <a href="#">
+                                                    <img src="images/illustrations/podcast_55.jpg" alt="" />
+                                                    <p><span>le Bilan 2015 !</span></p>
+                                                </a>
+                                                <dl class="legend-pod">
+                                                    <dt>Participants :</dt>
+                                                    <dd>Saffron, Guigz, Gillossen, Akallabeth, Merwin Tonnel</dd>
+                                                </dl>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="small-6 medium-4 large-3 columns">
+                                        <article class="article_focus">
+                                            <div class="inner_content">
+                                                <a href="#">
+                                                    <img src="images/illustrations/podcast_54.jpg" alt="" />
+                                                    <p><span>Le format “nouvelles”</span></p>
+                                                </a>
+                                                <dl class="legend-pod">
+                                                    <dt>Participants :</dt>
+                                                    <dd>Witch, Guigz, Gillossen, Akallabeth, Merwin Tonnel</dd>
+                                                    <dt>Invités :</dt>
+                                                    <dd>Mélanie Fazi, Lionel Davoust</dd>
+                                                </dl>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="small-6 medium-4 large-3 columns">
+                                        <article class="article_focus">
+                                            <div class="inner_content">
+                                                <a href="#">
+                                                    <img src="images/illustrations/podcast_53.jpg" alt="" />
+                                                    <p><span>La fantasy sur petit écran !</span></p>
+                                                </a>
+                                                <dl class="legend-pod">
+                                                    <dt>Participants :</dt>
+                                                    <dd>Witch, Guigz, Gillossen, Akallabeth, Merwin Tonnel</dd>
+                                                </dl>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="small-6 medium-4 large-3 columns">
+                                        <article class="article_focus">
+                                            <div class="inner_content">
+                                                <a href="#">
+                                                    <img src="images/illustrations/podcast_52.jpg" alt="" />
+                                                    <p><span>La fantasy est-elle réac ?</span></p>
+                                                </a>
+                                                <dl class="legend-pod">
+                                                    <dt>Participants :</dt>
+                                                    <dd>Witch, Guigz, Gillossen, Akallabeth, Merwin Tonnel</dd>
+                                                </dl>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

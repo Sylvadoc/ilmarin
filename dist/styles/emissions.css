@@ -4,18 +4,18 @@
 @import url(http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,900italic,400,700,900|Alegreya+SC:400,400italic,700,700italic,900,900italic);
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100);
-.row-group, .the-header, .some_card, .tools, .tools ul {
+.row-group, .the-header, .tools, .tools ul, .some_card, #all_new_chronique .critiques {
   *zoom: 1;
 }
-.row-group:before, .the-header:before, .some_card:before, .tools:before, .tools ul:before, .row-group:after, .the-header:after, .some_card:after, .tools:after, .tools ul:after {
+.row-group:before, .the-header:before, .tools:before, .tools ul:before, .some_card:before, #all_new_chronique .critiques:before, .row-group:after, .the-header:after, .tools:after, .tools ul:after, .some_card:after, #all_new_chronique .critiques:after {
   content: " ";
   display: table;
 }
-.row-group:after, .the-header:after, .some_card:after, .tools:after, .tools ul:after {
+.row-group:after, .the-header:after, .tools:after, .tools ul:after, .some_card:after, #all_new_chronique .critiques:after {
   clear: both;
 }
 
-.hidden, .fontface .text, .the-header.sticky .visit span + span {
+.hidden, .fontface .text, .the-header.sticky .visit span + span, #all_new_chronique .critiques li span, #all_new_chronique .critiques li p {
   margin: -1px;
   padding: 0;
   width: 1px;
@@ -233,7 +233,7 @@ h6, .h6-like {
 }
 
 .section-jump {
-  background-color: #de6300;
+  background-color: #de6200;
   /* Fallback */
   background-image: -o-linear-gradient(left, #BE2700, #FE9E00);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#BE2700', EndColorStr='#FE9E00')";
@@ -560,7 +560,7 @@ body {
 .row {
   margin: 0 auto;
   max-width: 91.429em;
-  /* largeur du site par défaut */
+  /* largeur du site par d├®faut */
 }
 
 .columns-inline .columns {
@@ -1480,456 +1480,6 @@ body {
   text-decoration: none;
 }
 
-/* ============== D E F A U L T   C A R D
-========================================================== */
-.some_card {
-  transition: all 0.2s ease-out;
-  border-radius: 3px;
-  background-clip: padding-box;
-  background: white;
-  display: inline-block;
-  margin: 0 1rem;
-  padding: 1rem;
-  vertical-align: top;
-}
-.some_card .icon {
-  font-size: 70px;
-  font-size: 5rem;
-  color: #BE2700;
-  display: block;
-  margin: 2rem auto 0;
-  text-align: center;
-}
-.some_card h2 {
-  font-size: 28px;
-  font-size: 2rem;
-  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-}
-.some_card p {
-  color: #6D6D6D;
-  text-align: left;
-}
-.some_card:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  background: #FE9E00;
-  cursor: pointer;
-}
-.some_card:hover a:hover, .some_card:hover a:focus, .some_card:hover a:focus {
-  text-decoration: none;
-}
-.some_card:hover p, .some_card:hover .icon {
-  color: white;
-}
-
-#association .some_card {
-  height: 32rem;
-}
-
-/* ============== R E S P O N S I V E
-========================================================== */
-@media (max-width: 1024px) {
-  #association .some_card {
-    height: 26rem;
-    margin-bottom: 2rem;
-  }
-  #association .some_card:hover {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-@media (min-width: 480px) and (max-width: 768px) {
-  #association .some_card {
-    height: auto;
-  }
-  #association .some_card:hover {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  #association .some_card .icon {
-    float: left;
-    margin-right: 2rem;
-  }
-  #association .some_card h2 {
-    text-align: left;
-  }
-}
-@media (max-width: 480px) {
-  #association .some_card {
-    height: auto;
-  }
-  #association .some_card:hover {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-/* ============== P R O F I L E   C A R D
-========================================================== */
-.profile-card {
-  border-radius: 3px;
-  background-clip: padding-box;
-  background: white;
-  border: 1px solid #ccc;
-  overflow: hidden;
-  position: relative;
-}
-.profile-card .bg-profile {
-  background-color: #E59924;
-  height: 75px;
-}
-.profile-card .img-profile {
-  height: 130px;
-  margin: 0;
-  padding: 10px;
-  position: relative;
-  top: 0;
-  width: 130px;
-}
-.profile-card .avatar {
-  border-radius: 55px;
-  background-clip: padding-box;
-  border: thick solid white;
-  height: 110px;
-  overflow: hidden;
-  width: 110px;
-}
-.profile-card h2 {
-  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
-  font-weight: 400;
-  line-height: 1;
-  margin-bottom: 10px;
-  margin-top: 0;
-  padding: 0 10px;
-  text-align: right;
-  text-indent: 110px;
-  text-transform: uppercase;
-}
-.profile-card h3 {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
-  font-weight: 300;
-  margin: 0;
-  text-transform: uppercase;
-}
-.profile-card .detail-profile {
-  padding: 0 10px;
-  margin-top: 2rem;
-}
-.profile-card .detail-profile .trophy {
-  margin-bottom: 10px;
-}
-.profile-card .detail-profile .trophy li {
-  display: inline-block;
-}
-.profile-card .detail-profile .trophy strong, .profile-card .detail-profile .trophy em {
-  display: block;
-}
-.profile-card .detail-profile .trophy em {
-  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
-.profile-card .detail-profile .trophy .icon-trophy {
-  font-size: 49px;
-  font-size: 3.5rem;
-  color: #BE2700;
-  margin-right: .1em;
-}
-.profile-card .meta-info {
-  background-color: #E5E8EA;
-  border-top: 1px solid #ccc;
-  color: #36302F;
-  display: table;
-  width: 100%;
-}
-.profile-card .meta-info .icon {
-  color: #666;
-  font-size: 28px;
-  font-size: 2rem;
-  float: left;
-  margin-right: 10px;
-}
-.profile-card .meta-info > div {
-  display: table-cell;
-  vertical-align: middle;
-  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 1;
-  padding: 10px;
-}
-.profile-card .meta-info > div:hover {
-  background: #FE9E00;
-  color: white;
-  cursor: pointer;
-}
-.profile-card .meta-info > div:hover .icon {
-  color: white;
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  top: 5px;
-}
-.profile-card .meta-info > div:hover a {
-  color: white;
-}
-.profile-card .meta-info > div:hover a:hover, .profile-card .meta-info > div:hover a:focus, .profile-card .meta-info > div:hover a:active {
-  color: white;
-}
-.profile-card .meta-info > div .icon {
-  transition: all 0.2s ease-in;
-  position: relative;
-  top: 0;
-}
-.profile-card .meta-info > div a {
-  font-size: 23.8px;
-  font-size: 1.7rem;
-  display: block;
-  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-}
-.profile-card .meta-info > div a:hover, .profile-card .meta-info > div a:focus {
-  text-decoration: none;
-}
-.profile-card .meta-info .message, .profile-card .meta-info .nb-trophy {
-  border-right: 1px solid #ccc;
-}
-
-/********************************************************************************************************************************************************************************
-********************* P R O F I L E    P A G E *****************
-/********************************************************************************************************************************************************************************/
-#head {
-  margin: 3em 0 2em 0;
-}
-#head .tabs a {
-  background-color: white;
-  color: #333;
-}
-#head .tabs a.active {
-  background-color: #BE2700;
-  color: white;
-}
-#head .row_tab .basic_list {
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  -o-columns: 2;
-  columns: 2;
-  margin: 1rem;
-}
-#head .trophies-list strong, #head .trophies-list em {
-  display: block;
-}
-#head .trophies-list strong {
-  text-transform: uppercase;
-}
-#head .trophies-list .icon {
-  font-size: 54.6px;
-  font-size: 3.9rem;
-  float: left;
-  margin-right: 1rem;
-}
-#head .trophies-list li {
-  padding: 1rem 0;
-}
-#head .trophies-list .gold-trophy .icon {
-  color: goldenrod;
-}
-#head .trophies-list .silver-trophy .icon {
-  color: lightslategray;
-}
-#head .trophies-list .bronze-trophy .icon {
-  color: sienna;
-}
-
-.bloc-profil {
-  border-radius: 5px;
-  background-clip: padding-box;
-  border: 1px solid #ccc;
-  position: relative;
-}
-.bloc-profil .nonsense {
-  background-color: #BE2700;
-  height: 66%;
-  width: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-.bloc-profil .avatar {
-  border-radius: 55px;
-  background-clip: padding-box;
-  border: thick solid white;
-  height: 110px;
-  overflow: hidden;
-  width: 110px;
-  position: absolute;
-  top: -55px;
-  left: -55px;
-  z-index: 1;
-}
-.bloc-profil .bloc {
-  float: left;
-  height: 200px;
-  margin: 50px 0;
-}
-.bloc-profil .bloc-princeps {
-  padding-left: 150px;
-  width: 62%;
-  margin-right: 50px;
-}
-.bloc-profil .bloc-princeps h1 {
-  font-size: 5rem;
-  color: #BE2700;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  line-height: 1;
-}
-.bloc-profil .bloc-princeps .title {
-  display: block;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-.bloc-profil .bloc-princeps .socially-engaged-on {
-  margin: 1em 0;
-  padding: 0;
-  list-style: none none;
-}
-.bloc-profil .bloc-princeps .socially-engaged-on li {
-  font-size: 28px;
-  font-size: 2rem;
-  display: inline-block;
-  margin-right: 1rem;
-}
-.bloc-profil .bloc-princeps .socially-engaged-on li .icon-facebook {
-  color: #47639E;
-}
-.bloc-profil .bloc-princeps .socially-engaged-on li .icon-google-plus {
-  color: #DD4B39;
-}
-.bloc-profil .bloc-princeps .socially-engaged-on li .icon-twitter {
-  color: #55ACEE;
-}
-.bloc-profil .bloc-princeps p {
-  border-top: 1px solid #ccc;
-  padding-top: 1rem;
-}
-.bloc-profil .bloc-princeps p strong {
-  text-transform: uppercase;
-}
-.bloc-profil .bloc-duke {
-  border-left: 1px solid #ccc;
-  width: 33%;
-}
-.bloc-profil .bloc-duke .side-head {
-  transform: translate(0, 50%);
-  -moz-transform: translate(0, 50%);
-  -ms-transform: translate(0, 50%);
-  -webkit-transform: translate(0, 50%);
-  zoom: 1;
-  list-style: none none;
-  position: relative;
-  text-align: center;
-  top: 30%;
-}
-.bloc-profil .bloc-duke .side-head li {
-  display: inline-block;
-  padding-right: 2rem;
-  margin-right: 2rem;
-  border-right: 1px solid #ccc;
-}
-.bloc-profil .bloc-duke .side-head li strong, .bloc-profil .bloc-duke .side-head li span {
-  display: block;
-}
-.bloc-profil .bloc-duke .side-head li span {
-  text-transform: uppercase;
-}
-.bloc-profil .bloc-duke .side-head li .icon {
-  font-size: 28px;
-  font-size: 2rem;
-  float: left;
-  margin-right: 1rem;
-}
-.bloc-profil .bloc-duke .side-head li:last-child {
-  border: 0;
-  margin-right: 0;
-  padding-right: 0;
-}
-.bloc-profil .bloc-noble {
-  border-radius: 0 0 5px 5px;
-  background-clip: padding-box;
-  background: white;
-  border-top: 1px solid #ccc;
-  clear: both;
-  padding: 1rem;
-  position: relative;
-}
-.bloc-profil .bloc-noble .tabs {
-  float: none;
-}
-
-/* ============== R E S P O N S I V E
-========================================================== */
-@media (min-width: 1024px) and (min-width: 1280px) {
-  .bloc-profil {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-/* ============== B L O C   N O S   E M I S S I O N S
-========================================================== */
-#emissions {
-  padding: 2rem 0;
-}
-#emissions h2 {
-  color: #BE2700;
-  text-align: center;
-}
-#emissions h3 {
-  color: #BE2700;
-  text-transform: uppercase;
-  font-size: 25.2px;
-  font-size: 1.8rem;
-  margin: 1em 0 0 0;
-  padding: 0;
-  font-weight: 300;
-}
-#emissions ul {
-  list-style: none none;
-  padding: 0;
-  margin: 0;
-}
-#emissions ul li {
-  display: block;
-  border-bottom: 1px solid #ccc;
-}
-#emissions ul li a {
-  display: block;
-  padding: .5em 0;
-}
-
-#dmud .article_focus {
-  background: white url("../images/illustrations/dmud.jpg") no-repeat bottom right;
-}
-#dmud li:nth-last-child(-n+4) {
-  width: 50%;
-}
-
-/* ============== RESPONSIVE EMISSIONS
-========================================================== */
-@media (max-width: 1024px) {
-  #dmud .article_focus {
-    background: white none;
-  }
-  #dmud li:nth-last-child(-n+4) {
-    width: 100%;
-  }
-}
 /********************************************************************************************************************************************************************************
 ********************* N A V I G A T I O N *****************
 /********************************************************************************************************************************************************************************/
@@ -2489,6 +2039,598 @@ body {
     height: 33vh;
   }
 }
+/* ============== D E F A U L T   C A R D
+========================================================== */
+.some_card {
+  transition: all 0.2s ease-out;
+  border-radius: 3px;
+  background-clip: padding-box;
+  background: white;
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 1rem;
+  vertical-align: top;
+}
+.some_card .icon {
+  font-size: 70px;
+  font-size: 5rem;
+  color: #BE2700;
+  display: block;
+  margin: 2rem auto 0;
+  text-align: center;
+}
+.some_card h2 {
+  font-size: 28px;
+  font-size: 2rem;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.some_card p {
+  color: #6D6D6D;
+  text-align: left;
+}
+.some_card:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  background: #FE9E00;
+  cursor: pointer;
+}
+.some_card:hover a:hover, .some_card:hover a:focus, .some_card:hover a:focus {
+  text-decoration: none;
+}
+.some_card:hover p, .some_card:hover .icon {
+  color: white;
+}
+
+#association .some_card {
+  height: 32rem;
+}
+
+/* ============== R E S P O N S I V E
+========================================================== */
+@media (max-width: 1024px) {
+  #association .some_card {
+    height: 26rem;
+    margin-bottom: 2rem;
+  }
+  #association .some_card:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  #association .some_card {
+    height: auto;
+  }
+  #association .some_card:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  #association .some_card .icon {
+    float: left;
+    margin-right: 2rem;
+  }
+  #association .some_card h2 {
+    text-align: left;
+  }
+}
+@media (max-width: 480px) {
+  #association .some_card {
+    height: auto;
+  }
+  #association .some_card:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* ============== P R O F I L E   C A R D
+========================================================== */
+.profile-card {
+  border-radius: 3px;
+  background-clip: padding-box;
+  background: white;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  position: relative;
+}
+.profile-card .bg-profile {
+  background-color: #E59924;
+  height: 75px;
+}
+.profile-card .img-profile {
+  height: 130px;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+  top: 0;
+  width: 130px;
+}
+.profile-card .avatar {
+  border-radius: 55px;
+  background-clip: padding-box;
+  border: thick solid white;
+  height: 110px;
+  overflow: hidden;
+  width: 110px;
+}
+.profile-card h2 {
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding: 0 10px;
+  text-align: right;
+  text-indent: 110px;
+  text-transform: uppercase;
+}
+.profile-card h3 {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin: 0;
+  text-transform: uppercase;
+}
+.profile-card .detail-profile {
+  padding: 0 10px;
+  margin-top: 2rem;
+}
+.profile-card .detail-profile .trophy {
+  margin-bottom: 10px;
+}
+.profile-card .detail-profile .trophy li {
+  display: inline-block;
+}
+.profile-card .detail-profile .trophy strong, .profile-card .detail-profile .trophy em {
+  display: block;
+}
+.profile-card .detail-profile .trophy em {
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.profile-card .detail-profile .trophy .icon-trophy {
+  font-size: 49px;
+  font-size: 3.5rem;
+  color: #BE2700;
+  margin-right: .1em;
+}
+.profile-card .meta-info {
+  background-color: #E5E8EA;
+  border-top: 1px solid #ccc;
+  color: #36302F;
+  display: table;
+  width: 100%;
+}
+.profile-card .meta-info .icon {
+  color: #666;
+  font-size: 28px;
+  font-size: 2rem;
+  float: left;
+  margin-right: 10px;
+}
+.profile-card .meta-info > div {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1;
+  padding: 10px;
+}
+.profile-card .meta-info > div:hover {
+  background: #FE9E00;
+  color: white;
+  cursor: pointer;
+}
+.profile-card .meta-info > div:hover .icon {
+  color: white;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  top: 5px;
+}
+.profile-card .meta-info > div:hover a {
+  color: white;
+}
+.profile-card .meta-info > div:hover a:hover, .profile-card .meta-info > div:hover a:focus, .profile-card .meta-info > div:hover a:active {
+  color: white;
+}
+.profile-card .meta-info > div .icon {
+  transition: all 0.2s ease-in;
+  position: relative;
+  top: 0;
+}
+.profile-card .meta-info > div a {
+  font-size: 23.8px;
+  font-size: 1.7rem;
+  display: block;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.profile-card .meta-info > div a:hover, .profile-card .meta-info > div a:focus {
+  text-decoration: none;
+}
+.profile-card .meta-info .message, .profile-card .meta-info .nb-trophy {
+  border-right: 1px solid #ccc;
+}
+
+/********************************************************************************************************************************************************************************
+********************* P R O F I L E    P A G E *****************
+/********************************************************************************************************************************************************************************/
+#head {
+  margin: 3em 0 2em 0;
+}
+#head .tabs a {
+  background-color: white;
+  color: #333;
+}
+#head .tabs a.active {
+  background-color: #BE2700;
+  color: white;
+}
+#head .row_tab .basic_list {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  -o-columns: 2;
+  columns: 2;
+  margin: 1rem;
+}
+#head .trophies-list strong, #head .trophies-list em {
+  display: block;
+}
+#head .trophies-list strong {
+  text-transform: uppercase;
+}
+#head .trophies-list .icon {
+  font-size: 54.6px;
+  font-size: 3.9rem;
+  float: left;
+  margin-right: 1rem;
+}
+#head .trophies-list li {
+  padding: 1rem 0;
+}
+#head .trophies-list .gold-trophy .icon {
+  color: goldenrod;
+}
+#head .trophies-list .silver-trophy .icon {
+  color: lightslategray;
+}
+#head .trophies-list .bronze-trophy .icon {
+  color: sienna;
+}
+
+.bloc-profil {
+  border-radius: 5px;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  position: relative;
+}
+.bloc-profil .nonsense {
+  background-color: #BE2700;
+  height: 66%;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.bloc-profil .avatar {
+  border-radius: 55px;
+  background-clip: padding-box;
+  border: thick solid white;
+  height: 110px;
+  overflow: hidden;
+  width: 110px;
+  position: absolute;
+  top: -55px;
+  left: -55px;
+  z-index: 1;
+}
+.bloc-profil .bloc {
+  float: left;
+  height: 200px;
+  margin: 50px 0;
+}
+.bloc-profil .bloc-princeps {
+  padding-left: 150px;
+  width: 62%;
+  margin-right: 50px;
+}
+.bloc-profil .bloc-princeps h1 {
+  font-size: 5rem;
+  color: #BE2700;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.bloc-profil .bloc-princeps .title {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.bloc-profil .bloc-princeps .socially-engaged-on {
+  margin: 1em 0;
+  padding: 0;
+  list-style: none none;
+}
+.bloc-profil .bloc-princeps .socially-engaged-on li {
+  font-size: 28px;
+  font-size: 2rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.bloc-profil .bloc-princeps .socially-engaged-on li .icon-facebook {
+  color: #47639E;
+}
+.bloc-profil .bloc-princeps .socially-engaged-on li .icon-google-plus {
+  color: #DD4B39;
+}
+.bloc-profil .bloc-princeps .socially-engaged-on li .icon-twitter {
+  color: #55ACEE;
+}
+.bloc-profil .bloc-princeps p {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+.bloc-profil .bloc-princeps p strong {
+  text-transform: uppercase;
+}
+.bloc-profil .bloc-duke {
+  border-left: 1px solid #ccc;
+  width: 33%;
+}
+.bloc-profil .bloc-duke .side-head {
+  transform: translate(0, 50%);
+  -moz-transform: translate(0, 50%);
+  -ms-transform: translate(0, 50%);
+  -webkit-transform: translate(0, 50%);
+  zoom: 1;
+  list-style: none none;
+  position: relative;
+  text-align: center;
+  top: 30%;
+}
+.bloc-profil .bloc-duke .side-head li {
+  display: inline-block;
+  padding-right: 2rem;
+  margin-right: 2rem;
+  border-right: 1px solid #ccc;
+}
+.bloc-profil .bloc-duke .side-head li strong, .bloc-profil .bloc-duke .side-head li span {
+  display: block;
+}
+.bloc-profil .bloc-duke .side-head li span {
+  text-transform: uppercase;
+}
+.bloc-profil .bloc-duke .side-head li .icon {
+  font-size: 28px;
+  font-size: 2rem;
+  float: left;
+  margin-right: 1rem;
+}
+.bloc-profil .bloc-duke .side-head li:last-child {
+  border: 0;
+  margin-right: 0;
+  padding-right: 0;
+}
+.bloc-profil .bloc-noble {
+  border-radius: 0 0 5px 5px;
+  background-clip: padding-box;
+  background: white;
+  border-top: 1px solid #ccc;
+  clear: both;
+  padding: 1rem;
+  position: relative;
+}
+.bloc-profil .bloc-noble .tabs {
+  float: none;
+}
+
+/* ============== R E S P O N S I V E
+========================================================== */
+@media (min-width: 1024px) and (min-width: 1280px) {
+  .bloc-profil {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/* ============== B L O C   C H R O N I Q U E S
+========================================================== */
+#all_new_chronique {
+  padding: 2rem 0 1rem 0;
+}
+#all_new_chronique .h2_like {
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+#all_new_chronique .h2_like + p {
+  font-style: italic;
+  margin-bottom: .5em;
+}
+#all_new_chronique .h2_like + p + p {
+  margin-bottom: 1em;
+}
+#all_new_chronique .type_item {
+  font-family: "Alegreya", Georgia, serif;
+  font-size: 28px;
+  font-size: 2rem;
+}
+#all_new_chronique .type_item span {
+  font-family: "Alegreya SC", Georgia, serif;
+}
+#all_new_chronique .critiques {
+  list-style: none none;
+  margin: 0;
+  padding: 0;
+}
+#all_new_chronique .critiques li > a {
+  display: block;
+  position: relative;
+}
+#all_new_chronique .critiques li > a img {
+  width: 100%;
+  height: auto;
+}
+#all_new_chronique .shadow-btn {
+  float: right;
+}
+
+/* ============== B L O C   O N G L E T S
+========================================================== */
+.tabs {
+  float: left;
+  list-style: none none;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+.tabs li {
+  display: inline-block;
+}
+.tabs li a {
+  border-radius: 3px;
+  background-clip: padding-box;
+  transition: background 0.2s ease-out;
+  background: transparent;
+  color: white;
+  display: inline-block;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  padding: .5em 1em;
+  text-transform: uppercase;
+}
+.tabs li a.active, .tabs li a:hover, .tabs li a:focus {
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+
+.row_tab_all {
+  clear: both;
+}
+
+.row_tab {
+  transition: all 0.2s ease-out;
+  display: none;
+  width: 100%;
+}
+.row_tab.open {
+  display: block;
+}
+.row_tab.open .active {
+  position: relative;
+}
+
+/* ============== R E S P O N S I V E
+========================================================== */
+@media (min-width: 1280px) {
+  .desc_crit {
+    height: 160px;
+    max-height: 160px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .desc_crit {
+    height: 180px;
+    max-height: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .tabs {
+    font-size: 18.2px;
+    font-size: 1.3rem;
+    clear: both;
+    float: none;
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .desc_crit {
+    display: none;
+  }
+
+  #all_new_chronique .shadow-btn {
+    float: none;
+    clear: both;
+  }
+  #all_new_chronique #chroniques {
+    text-align: center;
+  }
+  #all_new_chronique #chroniques .all_chronicles {
+    display: block;
+    float: none;
+    margin: 0 auto 1em auto;
+    text-align: center;
+    width: 20rem;
+  }
+  #all_new_chronique #chroniques .critiques .columns {
+    margin-bottom: 2em;
+  }
+}
+@media (max-width: 480px) {
+  #all_new_chronique #chroniques .critiques .columns {
+    margin-bottom: 2em;
+  }
+  #all_new_chronique #chroniques .critiques img {
+    height: 155px;
+  }
+}
+/* ============== B L O C   N O S   E M I S S I O N S
+========================================================== */
+#emissions {
+  padding: 2rem 0;
+}
+#emissions h2 {
+  color: #BE2700;
+  text-align: center;
+}
+#emissions h3 {
+  color: #BE2700;
+  text-transform: uppercase;
+  font-size: 25.2px;
+  font-size: 1.8rem;
+  margin: 1em 0 0 0;
+  padding: 0;
+  font-weight: 300;
+}
+#emissions ul {
+  list-style: none none;
+  padding: 0;
+  margin: 0;
+}
+#emissions ul li {
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+#emissions ul li a {
+  display: block;
+  padding: .5em 0;
+}
+
+#dmud .article_focus {
+  background: white url("../images/illustrations/dmud.jpg") no-repeat bottom right;
+}
+#dmud li:nth-last-child(-n+4) {
+  width: 50%;
+}
+
+/* ============== RESPONSIVE EMISSIONS
+========================================================== */
+@media (max-width: 1024px) {
+  #dmud .article_focus {
+    background: white none;
+  }
+  #dmud li:nth-last-child(-n+4) {
+    width: 100%;
+  }
+}
 /********************************************************************************************************************************************************************************
 ********************* S E C T I O N   E M I S S I O N S *****************
 /********************************************************************************************************************************************************************************/
@@ -2501,6 +2643,45 @@ body {
 .page-emission #header_section {
   padding-top: 190px;
   margin-top: -190px;
+}
+
+#une_emission {
+  padding: 2rem 0;
+}
+#une_emission .article_focus {
+  background: transparent;
+}
+#une_emission .article_focus .inner_content {
+  background: white;
+  border-radius: 5px;
+  background-clip: padding-box;
+  padding: 1em;
+  text-align: justify;
+}
+#une_emission h2 {
+  color: #be2700;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+#all_pods {
+  padding: 2rem 0;
+}
+#all_pods .shadow-btn {
+  float: right;
+}
+
+.legend-pod {
+  color: #272727;
+}
+.legend-pod dt, .legend-pod dd {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+}
+.legend-pod dt {
+  font-weight: 600;
 }
 
 #content_icon {
@@ -3735,7 +3916,7 @@ body {
 /* ============== S E C T I O N S
 ========================================================== */
 section:nth-child(2n+2), #most, .grey-section {
-  background-color: #f6f4f3;
+  background-color: #f5f4f2;
   /* Fallback */
   background-image: -o-linear-gradient(left, #ECE9E6, #FFFFFF);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ECE9E6', EndColorStr='#FFFFFF')";
@@ -3746,14 +3927,14 @@ section:nth-child(2n+2), #most, .grey-section {
 }
 
 #all_new_chronique {
-  background-color: #324a80;
+  background-color: #314a7f;
   /* Fallback */
   background-image: -o-linear-gradient(left, #4b6cb7, #182848);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#4b6cb7', EndColorStr='#182848')";
   color: white;
 }
 #all_new_chronique.jeff {
-  background-color: #3b88bd;
+  background-color: #3a88bc;
   /* Fallback */
   background-image: -o-linear-gradient(left, #24C6DC, #514A9D);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', EndColorStr='#514A9D')";
@@ -3776,7 +3957,7 @@ section:nth-child(2n+2), #most, .grey-section {
 }
 
 #discover, #social_block {
-  background-color: #3b88bd;
+  background-color: #3a88bc;
   /* Fallback */
   background-image: -o-linear-gradient(left, #24C6DC, #514A9D);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', EndColorStr='#514A9D')";
@@ -3784,7 +3965,7 @@ section:nth-child(2n+2), #most, .grey-section {
 }
 
 #last_50, .colored-section {
-  background-color: #3b88bd;
+  background-color: #3a88bc;
   /* Fallback */
   background-image: -o-linear-gradient(left, #24C6DC, #514A9D);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', EndColorStr='#514A9D')";
@@ -3792,7 +3973,7 @@ section:nth-child(2n+2), #most, .grey-section {
 }
 
 #author_bibliography {
-  background-color: #3b88bd;
+  background-color: #3a88bc;
   /* Fallback */
   background-image: -o-linear-gradient(left, #24C6DC, #514A9D);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', EndColorStr='#514A9D')";
@@ -3800,7 +3981,7 @@ section:nth-child(2n+2), #most, .grey-section {
 }
 
 #author_news, #editorial_section, #emissions {
-  background-color: #f6f4f3;
+  background-color: #f5f4f2;
   /* Fallback */
   background-image: -o-linear-gradient(left, #ECE9E6, #FFFFFF);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ECE9E6', EndColorStr='#FFFFFF')";
@@ -3815,14 +3996,14 @@ section:nth-child(2n+2), #most, .grey-section {
 }
 
 #perfect {
-  background-color: #324a80;
+  background-color: #314a7f;
   /* Fallback */
   background-image: -o-linear-gradient(left, #4b6cb7, #182848);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#4b6cb7', EndColorStr='#182848')";
   color: white;
 }
 #perfect.jeff {
-  background-color: #3b88bd;
+  background-color: #3a88bc;
   /* Fallback */
   background-image: -o-linear-gradient(left, #24C6DC, #514A9D);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', EndColorStr='#514A9D')";
