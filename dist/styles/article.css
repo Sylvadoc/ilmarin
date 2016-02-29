@@ -2376,7 +2376,7 @@ body {
   width: 34vw;
 }
 .section-01:before {
-  background-image: url("../images/library.jpg");
+  background-image: url("../../images/library.jpg");
   background-position: center bottom;
 }
 
@@ -2387,7 +2387,7 @@ body {
   width: 33vw;
 }
 .section-02:before {
-  background-image: url("../images/argonath.jpg");
+  background-image: url("../../images/argonath.jpg");
   background-position: center center;
 }
 
@@ -2398,7 +2398,7 @@ body {
   width: 33vw;
 }
 .section-03:before {
-  background-image: url("../images/fantasy.jpg");
+  background-image: url("../../images/fantasy.jpg");
   background-position: right bottom;
 }
 

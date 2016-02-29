@@ -1879,7 +1879,7 @@ body {
   width: 34vw;
 }
 .section-01:before {
-  background-image: url("../images/library.jpg");
+  background-image: url("../../images/library.jpg");
   background-position: center bottom;
 }
 
@@ -1890,7 +1890,7 @@ body {
   width: 33vw;
 }
 .section-02:before {
-  background-image: url("../images/argonath.jpg");
+  background-image: url("../../images/argonath.jpg");
   background-position: center center;
 }
 
@@ -1901,7 +1901,7 @@ body {
   width: 33vw;
 }
 .section-03:before {
-  background-image: url("../images/fantasy.jpg");
+  background-image: url("../../images/fantasy.jpg");
   background-position: right bottom;
 }
 
@@ -2739,6 +2739,14 @@ body {
 }
 #explanation .icon-03 a:hover {
   background-color: darkorange;
+  color: white;
+}
+#explanation .icon-04 a {
+  border-color: #cc181e;
+  color: #cc181e;
+}
+#explanation .icon-04 a:hover {
+  background-color: #cc181e;
   color: white;
 }
 

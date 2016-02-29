@@ -94,4 +94,15 @@
 			}
 		}
 	}
+	// youtube
+	.icon-04 {
+		a {
+			border-color: #cc181e;
+			color: #cc181e;
+			&:hover {
+				background-color: #cc181e;
+				color: white;
+			}
+		}
+	}
 }
