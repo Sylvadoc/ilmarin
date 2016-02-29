@@ -2638,7 +2638,7 @@ body {
 }
 
 #dmud .article_focus {
-  background: white url("../images/illustrations/dmud.jpg") no-repeat bottom right;
+  background: white url("../../images/illustrations/dmud.jpg") no-repeat bottom right;
 }
 #dmud li:nth-last-child(-n+4) {
   width: 50%;

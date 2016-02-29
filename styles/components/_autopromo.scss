@@ -91,7 +91,7 @@
 		}
 	}
 	aside {
-		@include gradient(#ECE9E6,#FFFFFF);
+		@include gradient-h(#ECE9E6,#FFFFFF);
 		padding: .1rem 2rem 2rem;
 		@include border-radius(5px);
 		.icon {
