@@ -44,6 +44,17 @@ body {
 		@include translate3d(100%,0,0);
 	}
 }
+.base-brick {
+	margin-bottom: 1em;
+	h2 {
+		margin: 0;
+	}
+	.inner_content {
+		@include border-radius(5px);
+		background-color: white;
+		padding: 1em;
+	}
+}
 
 /* ============== C O M M U N   M I S E   E N   P A G E   A R T I C L E
 ============================================================================== */

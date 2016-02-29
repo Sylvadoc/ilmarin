@@ -101,8 +101,8 @@ svg:not(:root) {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../../fonts/special/icomoon.eot?9nlfzs");
-  src: url("../../fonts/special/icomoon.eot?#iefix9nlfzs") format("embedded-opentype"), url("../../fonts/special/icomoon.woff?9nlfzs") format("woff"), url("../../fonts/special/icomoon.ttf?9nlfzs") format("truetype"), url("../../fonts/special/icomoon.svg?9nlfzs#icomoon") format("svg");
+  src: url("../../fonts/special/icomoon.eot?$tempFont");
+  src: url("../../fonts/special/icomoon.eot?#iefix$tempFont") format("embedded-opentype"), url("../../fonts/special/icomoon.woff?$tempFont") format("woff"), url("../../fonts/special/icomoon.ttf?$tempFont") format("truetype"), url("../../fonts/special/icomoon.svg?$tempFont#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -233,10 +233,8 @@ h6, .h6-like {
 }
 
 .section-jump {
-  background-color: #de6200;
-  /* Fallback */
-  background-image: -o-linear-gradient(left, #BE2700, #FE9E00);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#BE2700', EndColorStr='#FE9E00')";
+  background-image: linear-gradient(to right, #BE2700, #FE9E00);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#BE2700', endColorStr='#FE9E00', gradientType='1');
   border: 0;
   height: 2px;
   margin: 0;
@@ -266,209 +264,221 @@ h6, .h6-like {
 .fontface .icon {
   display: inline-block;
 }
+.fontface .icon-steam:before {
+  content: "";
+}
+.fontface .icon-users:before {
+  content: "";
+}
+.fontface .icon-apple:before {
+  content: "";
+}
+.fontface .icon-android:before {
+  content: "";
+}
 .fontface .icon-exclamation-triangle:before {
-  content: "\e600";
+  content: "";
 }
 .fontface .icon-shield:before {
-  content: "\e601";
+  content: "";
 }
 .fontface .icon-mail:before {
-  content: "\e602";
+  content: "";
 }
 .fontface .icon-minus:before {
-  content: "\e603";
+  content: "";
 }
 .fontface .icon-folder-minus:before {
-  content: "\e604";
+  content: "";
 }
 .fontface .icon-cross:before {
-  content: "\e605";
+  content: "";
 }
 .fontface .icon-folder-plus:before {
-  content: "\e606";
+  content: "";
 }
 .fontface .icon-warning:before {
-  content: "\e607";
+  content: "";
 }
 .fontface .icon-unlocked:before {
-  content: "\e608";
+  content: "";
 }
 .fontface .icon-shield2:before {
-  content: "\e609";
+  content: "";
 }
 .fontface .icon-lock:before {
-  content: "\e60a";
+  content: "";
 }
 .fontface .icon-camera:before {
-  content: "\e60b";
+  content: "";
 }
 .fontface .icon-linkedin:before {
-  content: "\e60c";
+  content: "";
 }
 .fontface .icon-linkedin2:before {
-  content: "\e60d";
+  content: "";
 }
 .fontface .icon-link:before {
-  content: "\e60e";
+  content: "";
 }
 .fontface .icon-printer:before {
-  content: "\e60f";
+  content: "";
 }
 .fontface .icon-list-numbered:before {
-  content: "\e610";
+  content: "";
 }
 .fontface .icon-question:before {
-  content: "\e611";
+  content: "";
 }
 .fontface .icon-arrow-left:before {
-  content: "\e612";
+  content: "";
 }
 .fontface .icon-arrow-down:before {
-  content: "\e613";
+  content: "";
 }
 .fontface .icon-arrow-up:before {
-  content: "\e614";
+  content: "";
 }
 .fontface .icon-arrow-right:before {
-  content: "\e615";
+  content: "";
 }
 .fontface .icon-lifebuoy:before {
-  content: "\e616";
+  content: "";
 }
 .fontface .icon-price-tags:before {
-  content: "\e617";
+  content: "";
 }
 .fontface .icon-price-tag:before {
-  content: "\e618";
+  content: "";
 }
 .fontface .icon-bookmarks:before {
-  content: "\e619";
+  content: "";
 }
 .fontface .icon-bookmark:before {
-  content: "\e61a";
+  content: "";
 }
 .fontface .icon-star-half:before {
-  content: "\e61b";
+  content: "";
 }
 .fontface .icon-star-full:before {
-  content: "\e61c";
+  content: "";
 }
 .fontface .icon-star-empty:before {
-  content: "\e61d";
+  content: "";
 }
 .fontface .icon-cog:before {
-  content: "\e61e";
+  content: "";
 }
 .fontface .icon-bubbles:before {
-  content: "\e61f";
+  content: "";
 }
 .fontface .icon-home:before {
-  content: "\e620";
+  content: "";
 }
 .fontface .icon-share:before {
-  content: "\e621";
+  content: "";
 }
 .fontface .icon-cart:before {
-  content: "\e622";
+  content: "";
 }
 .fontface .icon-fire:before {
-  content: "\e623";
+  content: "";
 }
 .fontface .icon-quotes-right:before {
-  content: "\e624";
+  content: "";
 }
 .fontface .icon-quotes-left:before {
-  content: "\e625";
+  content: "";
 }
 .fontface .icon-calendar:before {
-  content: "\e626";
+  content: "";
 }
 .fontface .icon-user:before {
-  content: "\e627";
+  content: "";
 }
 .fontface .icon-clock:before {
-  content: "\e628";
+  content: "";
 }
 .fontface .icon-clock2:before {
-  content: "\e629";
+  content: "";
 }
 .fontface .icon-search:before {
-  content: "\e62a";
+  content: "";
 }
 .fontface .icon-feed:before {
-  content: "\e62b";
+  content: "";
 }
 .fontface .icon-feed2:before {
-  content: "\e62c";
+  content: "";
 }
 .fontface .icon-feed3:before {
-  content: "\e62d";
+  content: "";
 }
 .fontface .icon-youtube:before {
-  content: "\e62e";
+  content: "";
 }
 .fontface .icon-youtube2:before {
-  content: "\e62f";
+  content: "";
 }
 .fontface .icon-youtube3:before {
-  content: "\e630";
+  content: "";
 }
 .fontface .icon-image:before {
-  content: "\e631";
+  content: "";
 }
 .fontface .icon-podcast:before {
-  content: "\e632";
+  content: "";
 }
 .fontface .icon-book:before {
-  content: "\e633";
+  content: "";
 }
 .fontface .icon-books:before {
-  content: "\e634";
+  content: "";
 }
 .fontface .icon-plus:before {
-  content: "\e635";
+  content: "";
 }
 .fontface .icon-quill:before {
-  content: "\e636";
+  content: "";
 }
 .fontface .icon-trophy:before {
-  content: "\e637";
+  content: "";
 }
 .fontface .icon-heart-broken:before {
-  content: "\e638";
+  content: "";
 }
 .fontface .icon-heart:before {
-  content: "\e639";
+  content: "";
 }
 .fontface .icon-twitter:before {
-  content: "\e63a";
+  content: "";
 }
 .fontface .icon-twitter2:before {
-  content: "\e63b";
+  content: "";
 }
 .fontface .icon-twitter3:before {
-  content: "\e63c";
+  content: "";
 }
 .fontface .icon-facebook:before {
-  content: "\e63d";
+  content: "";
 }
 .fontface .icon-facebook2:before {
-  content: "\e63e";
+  content: "";
 }
 .fontface .icon-facebook3:before {
-  content: "\e63f";
+  content: "";
 }
 .fontface .icon-google-plus:before {
-  content: "\e640";
+  content: "";
 }
 .fontface .icon-google-plus2:before {
-  content: "\e641";
+  content: "";
 }
 .fontface .icon-google-plus3:before {
-  content: "\e642";
+  content: "";
 }
 .fontface .icon-plus2:before {
-  content: "\e643";
+  content: "";
 }
 
 /* ============== I C O N   B U R G E R
@@ -560,7 +570,7 @@ body {
 .row {
   margin: 0 auto;
   max-width: 91.429em;
-  /* largeur du site par d├®faut */
+  /* largeur du site par défaut */
 }
 
 .columns-inline .columns {
@@ -585,6 +595,19 @@ body {
   -ms-transform: translate3d(100%, 0, 0);
   -webkit-transform: translate3d(100%, 0, 0);
   zoom: 1;
+}
+
+.base-brick {
+  margin-bottom: 1em;
+}
+.base-brick h2 {
+  margin: 0;
+}
+.base-brick .inner_content {
+  border-radius: 5px;
+  background-clip: padding-box;
+  background-color: white;
+  padding: 1em;
 }
 
 /* ============== C O M M U N   M I S E   E N   P A G E   A R T I C L E
@@ -3836,10 +3859,8 @@ body {
 /* ============== S E C T I O N S
 ========================================================== */
 section:nth-child(2n+2), #most, .grey-section {
-  background-color: #f5f4f2;
-  /* Fallback */
-  background-image: -o-linear-gradient(left, #ECE9E6, #FFFFFF);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ECE9E6', EndColorStr='#FFFFFF')";
+  background-image: linear-gradient(to right, #ECE9E6, #FFFFFF);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ECE9E6', endColorStr='#FFFFFF', gradientType='1');
 }
 
 #header_section.tolkien_section, #header_section.library_section, #header_section.emission_section {
@@ -3847,17 +3868,13 @@ section:nth-child(2n+2), #most, .grey-section {
 }
 
 #all_new_chronique {
-  background-color: #314a7f;
-  /* Fallback */
-  background-image: -o-linear-gradient(left, #4b6cb7, #182848);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#4b6cb7', EndColorStr='#182848')";
+  background-image: linear-gradient(to right, #4b6cb7, #182848);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4b6cb7', endColorStr='#182848', gradientType='1');
   color: white;
 }
 #all_new_chronique.jeff {
-  background-color: #3a88bc;
-  /* Fallback */
-  background-image: -o-linear-gradient(left, #24C6DC, #514A9D);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', EndColorStr='#514A9D')";
+  background-image: linear-gradient(to right, #24C6DC, #514A9D);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', endColorStr='#514A9D', gradientType='1');
 }
 
 #prix_elbakin_net, #palantir {
@@ -3870,41 +3887,31 @@ section:nth-child(2n+2), #most, .grey-section {
 }
 
 #moreover {
-  background-color: #615168;
-  /* Fallback */
-  background-image: -o-linear-gradient(left, #2E1437, #948E99);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2E1437', EndColorStr='#948E99')";
+  background-image: linear-gradient(to right, #2E1437, #948E99);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#2E1437', endColorStr='#948E99', gradientType='1');
 }
 
 #discover, #social_block {
-  background-color: #3a88bc;
-  /* Fallback */
-  background-image: -o-linear-gradient(left, #24C6DC, #514A9D);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', EndColorStr='#514A9D')";
+  background-image: linear-gradient(to right, #24C6DC, #514A9D);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', endColorStr='#514A9D', gradientType='1');
   color: white;
 }
 
 #last_50, .colored-section {
-  background-color: #3a88bc;
-  /* Fallback */
-  background-image: -o-linear-gradient(left, #24C6DC, #514A9D);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', EndColorStr='#514A9D')";
+  background-image: linear-gradient(to right, #24C6DC, #514A9D);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', endColorStr='#514A9D', gradientType='1');
   color: white;
 }
 
 #author_bibliography {
-  background-color: #3a88bc;
-  /* Fallback */
-  background-image: -o-linear-gradient(left, #24C6DC, #514A9D);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', EndColorStr='#514A9D')";
+  background-image: linear-gradient(to right, #24C6DC, #514A9D);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', endColorStr='#514A9D', gradientType='1');
   color: white;
 }
 
 #author_news, #editorial_section, #emissions {
-  background-color: #f5f4f2;
-  /* Fallback */
-  background-image: -o-linear-gradient(left, #ECE9E6, #FFFFFF);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ECE9E6', EndColorStr='#FFFFFF')";
+  background-image: linear-gradient(to right, #ECE9E6, #FFFFFF);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ECE9E6', endColorStr='#FFFFFF', gradientType='1');
 }
 
 #agenda_parutions {
@@ -3916,17 +3923,13 @@ section:nth-child(2n+2), #most, .grey-section {
 }
 
 #perfect {
-  background-color: #314a7f;
-  /* Fallback */
-  background-image: -o-linear-gradient(left, #4b6cb7, #182848);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#4b6cb7', EndColorStr='#182848')";
+  background-image: linear-gradient(to right, #4b6cb7, #182848);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4b6cb7', endColorStr='#182848', gradientType='1');
   color: white;
 }
 #perfect.jeff {
-  background-color: #3a88bc;
-  /* Fallback */
-  background-image: -o-linear-gradient(left, #24C6DC, #514A9D);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', EndColorStr='#514A9D')";
+  background-image: linear-gradient(to right, #24C6DC, #514A9D);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', endColorStr='#514A9D', gradientType='1');
 }
 
 /* ============== F O O T E R   C O L O R S
@@ -3945,10 +3948,8 @@ section:nth-child(2n+2), #most, .grey-section {
   text-decoration: none;
 }
 #footer[data-weather="sunny"], #footer[data-weather="cloudy"] {
-  background-color: #00bbff;
-  /* Fallback */
-  background-image: -o-linear-gradient(left, #00BBFF, #00BBFF);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#00BBFF', EndColorStr='#00BBFF')";
+  background-image: linear-gradient(to right, #00BBFF, #00BBFF);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#00BBFF', endColorStr='#00BBFF', gradientType='1');
   color: #f1f1f1;
 }
 #footer[data-weather="sunny"] a, #footer[data-weather="cloudy"] a {
@@ -3965,10 +3966,8 @@ section:nth-child(2n+2), #most, .grey-section {
   border-bottom: 2px solid white;
 }
 #footer[data-weather="rainy"], #footer[data-weather="rainbow"] {
-  background-color: #e6e6e6;
-  /* Fallback */
-  background-image: -o-linear-gradient(left, #E6E6E6, #E6E6E6);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#E6E6E6', EndColorStr='#E6E6E6')";
+  background-image: linear-gradient(to right, #E6E6E6, #E6E6E6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#E6E6E6', endColorStr='#E6E6E6', gradientType='1');
 }
 #footer[data-weather="rainy"] a, #footer[data-weather="rainbow"] a {
   color: #333;
@@ -3984,10 +3983,8 @@ section:nth-child(2n+2), #most, .grey-section {
   border-bottom: 2px solid black;
 }
 #footer[data-weather="snowy"], #footer[data-weather="stormy"] {
-  background-color: #444444;
-  /* Fallback */
-  background-image: -o-linear-gradient(left, #444444, #444444);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#444444', EndColorStr='#444444')";
+  background-image: linear-gradient(to right, #444444, #444444);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#444444', endColorStr='#444444', gradientType='1');
 }
 #footer[data-weather="snowy"] a, #footer[data-weather="stormy"] a {
   color: #f1f1f1;
@@ -4003,10 +4000,8 @@ section:nth-child(2n+2), #most, .grey-section {
   border-bottom: 2px solid #fff;
 }
 #footer[data-weather="starry"] {
-  background-color: #222233;
-  /* Fallback */
-  background-image: -o-linear-gradient(left, #222233, #222233);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#222233', EndColorStr='#222233')";
+  background-image: linear-gradient(to right, #222233, #222233);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#222233', endColorStr='#222233', gradientType='1');
   color: #f1f1f1;
 }
 #footer[data-weather="starry"] a {

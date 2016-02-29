@@ -158,14 +158,25 @@
 	-o-transform: $args;
 	transform: $args;
 }
-@mixin gradient($from-color, $to-color) {
-    background-color: mix($from-color, $to-color); /* Fallback */
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from-color), to($to-color));
-    background-image: -webkit-linear-gradient(left, $from-color, $to-color);
-    background-image: -moz-linear-gradient(left, $from-color, $to-color);
-    background-image: -ms-linear-gradient(left, $from-color, $to-color);
-    background-image: -o-linear-gradient(left, $from-color, $to-color);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$from-color}', EndColorStr='#{$to-color}')";
+@mixin gradient-v($startColor, $endColor) {
+	background-color: $startColor;
+	background-image: -ms-linear-gradient(top, $startColor, $endColor);
+	background-image: -o-linear-gradient(top, $startColor, $endColor);
+	background-image: linear-gradient(top, $startColor, $endColor);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}');
+}
+
+@mixin gradient-h($startColor, $endColor) {
+	background-image: -ms-linear-gradient(to right, $startColor, $endColor);
+	background-image: -o-linear-gradient(to right, $startColor, $endColor);
+	background-image: linear-gradient(to right, $startColor, $endColor);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}', gradientType='1');
+}
+
+@mixin gradient-radial($startColor, $startPos, $endColor, $endPos) {
+	background: -o-radial-gradient(center, ellipse cover, $startColor $startPos, $endColor $endPos);
+	background: -ms-radial-gradient(center, ellipse cover, $startColor $startPos, $endColor $endPos);
+	background: radial-gradient(ellipse at center, $startColor $startPos, $endColor $endPos);
 }
 @mixin box-shadow($params...) {
 	-webkit-box-shadow: $params;

@@ -19,6 +19,7 @@
 	padding: 2rem 0;
 	.article_focus {
 		background: transparent;
+		padding: 0;
 		.inner_content {
 			background: white;
 			@include border-radius(5px);
@@ -50,5 +51,47 @@
 	}
 	dt {
 		font-weight: 600;
+	}
+}
+
+#explanation {
+	ul {
+		list-style: none none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		margin-right: 1em;
+	}
+	.icon-01 {
+		a {
+			border-color: dodgerblue;
+			color: dodgerblue;
+			&:hover {
+				background-color: dodgerblue;
+				color: white;
+			}
+		}
+	}
+	.icon-02 {
+		a {
+			border-color: #a4c639;
+			color: #a4c639;
+			&:hover {
+				background-color: #a4c639;
+				color: white;
+			}
+		}
+	}
+	.icon-03 {
+		a {
+			border-color: darkorange;
+			color: darkorange;
+			&:hover {
+				background-color: darkorange;
+				color: white;
+			}
+		}
 	}
 }
