@@ -264,6 +264,9 @@ h6, .h6-like {
 .fontface .icon {
   display: inline-block;
 }
+.fontface .icon-cloud-download:before {
+  content: "";
+}
 .fontface .icon-steam:before {
   content: "";
 }

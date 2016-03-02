@@ -159,5 +159,77 @@
 		.a-propos {
 			@include rem(1.4);
 		}
+		.footer_article {
+			border-top: 1px solid #ccc;
+			padding-top: 1em;
+		}
+	}
+	.base-brick {
+		h2 {
+			color: white;
+		}
+	}
+	.tabs {
+		text-align: center;
+		float: none;
+		clear: both;
+		li {
+			margin: 0 1rem;
+		}
+		a {
+			border: 2px solid #ccc;
+			color: #ccc;
+			&.active {
+				border-color: black;
+				color: black;
+			}
+		}
+	}
+	.row_tab {
+		ul {
+			padding: 0;
+			li {
+				display: block;
+				padding: .5rem 0;
+				border-bottom: 1px solid #ccc;
+				&:last-child {
+					border: 0;
+				}
+				a {
+					color: $base-color-elbakin;
+					text-decoration: none;
+					&:hover, &:active, &:focus {
+						text-decoration: underline;
+						color: $base-color-elbakin;
+					}
+				}
+			}
+		}
+	}
+	.row_tab_all {
+		margin-bottom: 2rem;
+	}
+}
+#player {
+	iframe {
+		width: 100%;
+		background: black;
+	}
+}
+#dl-episode {
+	clear: both;
+	text-align: center;
+	p {
+		@include rem(2);
+		text-transform: uppercase;
+		font-family: $font-stack-headings;
+		margin-bottom: 1em;
+	}
+	.btn {
+		.icon {
+			@include rem(2);
+			vertical-align: text-bottom;
+			margin-right: .5rem;
+		}
 	}
 }

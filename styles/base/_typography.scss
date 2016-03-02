@@ -9,7 +9,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100);
 
-$tempFont : 1234;
+$tempFont : 5678;
 
 @font-face {
 	font-family: 'icomoon';
@@ -173,6 +173,11 @@ p {
 	}
 	.text {
 		@extend %visuallyhidden;
+	}
+	.icon-cloud-download {
+		&:before {
+			content: $icon-cloud-download;
+		}
 	}
 	.icon-steam {
 		&:before {

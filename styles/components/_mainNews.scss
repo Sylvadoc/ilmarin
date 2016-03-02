@@ -82,8 +82,18 @@
         }
         p {
             margin-bottom: 2rem;
+            line-height: 1.6;
+            a {
+                color: $base-color-elbakin;
+                text-decoration: none;
+                &:hover, &:active, &:focus {
+                    text-decoration: underline;
+                    color: $base-color-elbakin;
+                }
+            }
         }
         .footer_article {
+            clear: both;
             .social_tools {
                 float: left;
                 margin: 0;
@@ -94,6 +104,33 @@
             }
             .btn_comment {
                 margin-right: .5rem;
+            }
+            .social-links {
+                list-style: none none;
+                margin: 0;
+                padding: 0;
+                li {
+                    display: inline-block;
+                    margin-right: 1rem;
+                    vertical-align: top;
+                    strong {
+                        font-family: $font-stack-headings;
+                        font-style: normal;
+                        text-transform: uppercase;
+                    }
+                }
+                a {
+                    @include rem(1.6);
+                }
+                .icon-facebook {
+                    color: #3b5998;
+                }
+                .icon-twitter {
+                    color: #4099FF;
+                }
+                .icon-google-plus {
+                    color: #dd4b39;
+                }
             }
         }
         .social_tools {
