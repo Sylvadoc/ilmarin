@@ -1,0 +1,121 @@
+/********************************************************************************************************************************************************************************
+********************* N E W S *****************
+/********************************************************************************************************************************************************************************/
+
+.main_news {
+    background: white;
+    .pod-nb {
+        span {
+            background-color: $base-color-elbakin;
+            color: white;
+            display: inline-block;
+            font-family: $font-stack-headings;
+            line-height: 1;
+            text-transform: uppercase;
+            padding: .1em .3em;
+        }
+    }
+    .a-propos {
+        @include rem(1.7);
+        color: #ccc;
+        font-family: $font-stack-headings;
+        margin: 0;
+        text-transform: uppercase;
+        border-bottom: 1px solid #ccc;
+        em {
+            font-style: normal;
+        }
+        a {
+            color: #666;
+            &:hover, &:focus {
+                color: black;
+            }
+        }
+    }
+    .the-title {
+        @include rem(4);
+        color: black;
+        margin: 0;
+        padding: 10px 0 0;
+    }
+    .tags {
+        em {
+            @include rem(1.6);
+            color: $base-color-elbakin;
+            font-family: $font-stack-headings;
+            font-style: normal;
+            text-transform: uppercase;
+            padding: .1em 0;
+            margin-right: 1em;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        a {
+            background-color: #ccc;
+            color: white;
+            display: inline-block;
+            font-family: $font-stack-headings;
+            line-height: 1;
+            text-transform: uppercase;
+            padding: .1em .3em;
+            &:hover, &:focus {
+                text-decoration: none;
+                background-color: $orange-color-elbakin;
+                color: white;
+            }
+        }
+    }
+    .body-article {
+        margin: 1em 0;
+        background: white;
+        @extend %clearfix;
+        .complementary {
+            width: auto;
+            float: none;
+            clear: both;
+            margin: 0 auto 1em;
+            text-align: center;
+            img {
+                border: 1px solid #ccc;
+                padding: 1rem;
+            }
+        }
+        p {
+            margin-bottom: 2rem;
+        }
+        .footer_article {
+            .social_tools {
+                float: left;
+                margin: 0;
+            }
+            a {
+                float: right;
+                display: inline-block;
+            }
+            .btn_comment {
+                margin-right: .5rem;
+            }
+        }
+        .social_tools {
+            a {
+                background-color: #3D578D;
+                color: white;
+                float: none;
+                font-family: $font-stack-headings;
+                letter-spacing: 1px;
+                margin-right: .5em;
+                padding: .5em 1em;
+                text-transform: uppercase;
+                &:hover {
+                    text-decoration: none;
+                }
+                &+a {
+                    background-color: #55ACEE;
+                }
+                &+a+a {
+                    background-color: #DD4B39;
+                }
+            }
+        }
+    }
+}

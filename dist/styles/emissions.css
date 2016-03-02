@@ -4,14 +4,14 @@
 @import url(http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,900italic,400,700,900|Alegreya+SC:400,400italic,700,700italic,900,900italic);
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100);
-.row-group, .the-header, .tools, .tools ul, .some_card, #all_new_chronique .critiques {
+.row-group, .the-header, .tools, .tools ul, .some_card, .main_news .body-article, #all_new_chronique .critiques {
   *zoom: 1;
 }
-.row-group:before, .the-header:before, .tools:before, .tools ul:before, .some_card:before, #all_new_chronique .critiques:before, .row-group:after, .the-header:after, .tools:after, .tools ul:after, .some_card:after, #all_new_chronique .critiques:after {
+.row-group:before, .the-header:before, .tools:before, .tools ul:before, .some_card:before, .main_news .body-article:before, #all_new_chronique .critiques:before, .row-group:after, .the-header:after, .tools:after, .tools ul:after, .some_card:after, .main_news .body-article:after, #all_new_chronique .critiques:after {
   content: " ";
   display: table;
 }
-.row-group:after, .the-header:after, .tools:after, .tools ul:after, .some_card:after, #all_new_chronique .critiques:after {
+.row-group:after, .the-header:after, .tools:after, .tools ul:after, .some_card:after, .main_news .body-article:after, #all_new_chronique .critiques:after {
   clear: both;
 }
 
@@ -1206,24 +1206,24 @@ body {
 .header_section {
   padding: 2rem 0;
 }
-.header_section h1 {
+.header_section .global-title {
   font-family: "Roboto Slab", serif;
   font-size: 5rem;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-.header_section h1 abbr {
+.header_section .global-title abbr {
   border: 0;
 }
-.header_section p {
+.header_section .global-title + p {
   font-size: 25.2px;
   font-size: 1.8rem;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   margin-top: 1em;
 }
-.header_section p .dropcaps {
+.header_section .global-title + p .dropcaps {
   font-family: "Palatino Linotype", Palatino, "Roboto Slab", serif;
   display: block;
   font-style: normal;
@@ -2463,6 +2463,121 @@ body {
     margin: 0 auto;
   }
 }
+/********************************************************************************************************************************************************************************
+********************* N E W S *****************
+/********************************************************************************************************************************************************************************/
+.main_news {
+  background: white;
+}
+.main_news .pod-nb span {
+  background-color: #BE2700;
+  color: white;
+  display: inline-block;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: .1em .3em;
+}
+.main_news .a-propos {
+  font-size: 23.8px;
+  font-size: 1.7rem;
+  color: #ccc;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+}
+.main_news .a-propos em {
+  font-style: normal;
+}
+.main_news .a-propos a {
+  color: #666;
+}
+.main_news .a-propos a:hover, .main_news .a-propos a:focus {
+  color: black;
+}
+.main_news .the-title {
+  font-size: 56px;
+  font-size: 4rem;
+  color: black;
+  margin: 0;
+  padding: 10px 0 0;
+}
+.main_news .tags em {
+  font-size: 22.4px;
+  font-size: 1.6rem;
+  color: #BE2700;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: .1em 0;
+  margin-right: 1em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.main_news .tags a {
+  background-color: #ccc;
+  color: white;
+  display: inline-block;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: .1em .3em;
+}
+.main_news .tags a:hover, .main_news .tags a:focus {
+  text-decoration: none;
+  background-color: #FE9E00;
+  color: white;
+}
+.main_news .body-article {
+  margin: 1em 0;
+  background: white;
+}
+.main_news .body-article .complementary {
+  width: auto;
+  float: none;
+  clear: both;
+  margin: 0 auto 1em;
+  text-align: center;
+}
+.main_news .body-article .complementary img {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+.main_news .body-article p {
+  margin-bottom: 2rem;
+}
+.main_news .body-article .footer_article .social_tools {
+  float: left;
+  margin: 0;
+}
+.main_news .body-article .footer_article a {
+  float: right;
+  display: inline-block;
+}
+.main_news .body-article .footer_article .btn_comment {
+  margin-right: .5rem;
+}
+.main_news .body-article .social_tools a {
+  background-color: #3D578D;
+  color: white;
+  float: none;
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  letter-spacing: 1px;
+  margin-right: .5em;
+  padding: .5em 1em;
+  text-transform: uppercase;
+}
+.main_news .body-article .social_tools a:hover {
+  text-decoration: none;
+}
+.main_news .body-article .social_tools a + a {
+  background-color: #55ACEE;
+}
+.main_news .body-article .social_tools a + a + a {
+  background-color: #DD4B39;
+}
+
 /* ============== B L O C   C H R O N I Q U E S
 ========================================================== */
 #all_new_chronique {
@@ -2668,6 +2783,8 @@ body {
   margin-top: -190px;
 }
 
+/* ================ P R E S E N T A T I O N    I N D E X
+==================================================================== */
 #une_emission {
   padding: 2rem 0;
 }
@@ -2689,6 +2806,54 @@ body {
   text-transform: uppercase;
 }
 
+.follow-on {
+  list-style: none none;
+  margin: 0;
+  padding: 0;
+}
+.follow-on li {
+  display: inline-block;
+  margin-right: 1em;
+}
+.follow-on .icon-01 a {
+  border-color: dodgerblue;
+  color: dodgerblue;
+}
+.follow-on .icon-01 a:hover {
+  border-color: dodgerblue;
+  background-color: dodgerblue;
+  color: white;
+}
+.follow-on .icon-02 a {
+  border-color: #a4c639;
+  color: #a4c639;
+}
+.follow-on .icon-02 a:hover {
+  border-color: #a4c639;
+  background-color: #a4c639;
+  color: white;
+}
+.follow-on .icon-03 a {
+  border-color: darkorange;
+  color: darkorange;
+}
+.follow-on .icon-03 a:hover {
+  border-color: darkorange;
+  background-color: darkorange;
+  color: white;
+}
+.follow-on .icon-04 a {
+  border-color: #cc181e;
+  color: #cc181e;
+}
+.follow-on .icon-04 a:hover {
+  border-color: #cc181e;
+  background-color: #cc181e;
+  color: white;
+}
+
+/* ================ T O U S   L E S   P O D C A S T S
+===================================================== */
 #all_pods {
   padding: 2rem 0;
 }
@@ -2708,46 +2873,55 @@ body {
   font-weight: 600;
 }
 
-#explanation ul {
-  list-style: none none;
+#follow-brick {
+  text-align: center;
+  padding: 2rem 0;
+}
+#follow-brick .simili-title {
+  margin: 0;
+}
+#follow-brick p {
+  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
+  margin: 4rem 0 2rem 0;
+  position: relative;
+  text-transform: uppercase;
+}
+#follow-brick p:before {
+  transform: translate3d(-50%, 0, 0);
+  -moz-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  zoom: 1;
+  content: '';
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  width: 12rem;
+  height: 2px;
+  background-color: black;
+}
+
+/* ================ L E   P O D C A S T
+===================================================== */
+#the_podcast {
+  clear: both;
+  padding-top: 2rem;
+}
+#the_podcast .main_news {
+  border-radius: 5px;
+  background-clip: padding-box;
+  background-color: white;
+  padding: 1em;
+}
+#the_podcast .main_news .the-title {
+  font-size: 42px;
+  font-size: 3rem;
   margin: 0;
   padding: 0;
 }
-#explanation li {
-  display: inline-block;
-  margin-right: 1em;
-}
-#explanation .icon-01 a {
-  border-color: dodgerblue;
-  color: dodgerblue;
-}
-#explanation .icon-01 a:hover {
-  background-color: dodgerblue;
-  color: white;
-}
-#explanation .icon-02 a {
-  border-color: #a4c639;
-  color: #a4c639;
-}
-#explanation .icon-02 a:hover {
-  background-color: #a4c639;
-  color: white;
-}
-#explanation .icon-03 a {
-  border-color: darkorange;
-  color: darkorange;
-}
-#explanation .icon-03 a:hover {
-  background-color: darkorange;
-  color: white;
-}
-#explanation .icon-04 a {
-  border-color: #cc181e;
-  color: #cc181e;
-}
-#explanation .icon-04 a:hover {
-  background-color: #cc181e;
-  color: white;
+#the_podcast .main_news .a-propos {
+  font-size: 19.6px;
+  font-size: 1.4rem;
 }
 
 #content_icon {
@@ -3981,12 +4155,15 @@ body {
 }
 /* ============== S E C T I O N S
 ========================================================== */
-section:nth-child(2n+2), #most, .grey-section {
+section:nth-child(2n+2), #most, .m-page .grey-section {
   background-image: linear-gradient(to right, #ECE9E6, #FFFFFF);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ECE9E6', endColorStr='#FFFFFF', gradientType='1');
 }
 
-#header_section.tolkien_section, #header_section.library_section, #header_section.emission_section {
+#header_section.tolkien_section .global-title, #header_section.library_section .global-title, #header_section.emission_section .global-title {
+  color: white;
+}
+#header_section.tolkien_section .global-title + p, #header_section.library_section .global-title + p, #header_section.emission_section .global-title + p {
   color: white;
 }
 
@@ -4020,7 +4197,7 @@ section:nth-child(2n+2), #most, .grey-section {
   color: white;
 }
 
-#last_50, .colored-section {
+#last_50, .m-page .colored-section {
   background-image: linear-gradient(to right, #24C6DC, #514A9D);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', endColorStr='#514A9D', gradientType='1');
   color: white;

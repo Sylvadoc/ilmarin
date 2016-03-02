@@ -492,7 +492,7 @@
 
 .header_section {
 	padding: 2rem 0;
-	h1 {
+	.global-title {
 		font-family: $font-stack-simili;
 		font-size: $al-size;
 		margin: 0;
@@ -501,21 +501,21 @@
 		abbr {
 			border: 0;
 		}
-	}
-	p {
-		@include rem(1.8);
-		font-family: $font-stack-simili;
-		font-weight: 300;
-		margin-top: 1em;
-		.dropcaps {
-			font-family: "Palatino Linotype", Palatino, $font-stack-simili;
-			display: block;
-			font-style: normal;
-			font-size: 6.6em;
-			float: left;
-			margin: .08em .07em 0 0;
-			line-height: .67em;
-			color: white;
+		& + p {
+			@include rem(1.8);
+			font-family: $font-stack-simili;
+			font-weight: 300;
+			margin-top: 1em;
+			.dropcaps {
+				font-family: "Palatino Linotype", Palatino, $font-stack-simili;
+				display: block;
+				font-style: normal;
+				font-size: 6.6em;
+				float: left;
+				margin: .08em .07em 0 0;
+				line-height: .67em;
+				color: white;
+			}
 		}
 	}
 	.more {

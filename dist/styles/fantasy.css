@@ -1206,24 +1206,24 @@ body {
 .header_section {
   padding: 2rem 0;
 }
-.header_section h1 {
+.header_section .global-title {
   font-family: "Roboto Slab", serif;
   font-size: 5rem;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-.header_section h1 abbr {
+.header_section .global-title abbr {
   border: 0;
 }
-.header_section p {
+.header_section .global-title + p {
   font-size: 25.2px;
   font-size: 1.8rem;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   margin-top: 1em;
 }
-.header_section p .dropcaps {
+.header_section .global-title + p .dropcaps {
   font-family: "Palatino Linotype", Palatino, "Roboto Slab", serif;
   display: block;
   font-style: normal;
@@ -4531,12 +4531,15 @@ body {
 }
 /* ============== S E C T I O N S
 ========================================================== */
-section:nth-child(2n+2), #most, .grey-section {
+section:nth-child(2n+2), #most, .m-page .grey-section {
   background-image: linear-gradient(to right, #ECE9E6, #FFFFFF);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ECE9E6', endColorStr='#FFFFFF', gradientType='1');
 }
 
-#header_section.tolkien_section, #header_section.library_section, #header_section.emission_section {
+#header_section.tolkien_section .global-title, #header_section.library_section .global-title, #header_section.emission_section .global-title {
+  color: white;
+}
+#header_section.tolkien_section .global-title + p, #header_section.library_section .global-title + p, #header_section.emission_section .global-title + p {
   color: white;
 }
 
@@ -4570,7 +4573,7 @@ section:nth-child(2n+2), #most, .grey-section {
   color: white;
 }
 
-#last_50, .colored-section {
+#last_50, .m-page .colored-section {
   background-image: linear-gradient(to right, #24C6DC, #514A9D);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', endColorStr='#514A9D', gradientType='1');
   color: white;

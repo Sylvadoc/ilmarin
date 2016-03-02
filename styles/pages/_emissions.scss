@@ -15,6 +15,9 @@
 	}
 }
 
+/* ================ P R E S E N T A T I O N    I N D E X
+==================================================================== */
+
 #une_emission {
 	padding: 2rem 0;
 	.article_focus {
@@ -34,6 +37,66 @@
 		text-transform: uppercase;
 	}
 }
+.follow-on {
+	list-style: none none;
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline-block;
+		margin-right: 1em;
+	}
+	// itunes
+	.icon-01 {
+		a {
+			border-color: dodgerblue;
+			color: dodgerblue;
+			&:hover {
+				border-color: dodgerblue;
+				background-color: dodgerblue;
+				color: white;
+			}
+		}
+	}
+	// android
+	.icon-02 {
+		a {
+			border-color: #a4c639;
+			color: #a4c639;
+			&:hover {
+				border-color: #a4c639;
+				background-color: #a4c639;
+				color: white;
+			}
+		}
+	}
+	// RSS
+	.icon-03 {
+		a {
+			border-color: darkorange;
+			color: darkorange;
+			&:hover {
+				border-color: darkorange;
+				background-color: darkorange;
+				color: white;
+			}
+		}
+	}
+	// youtube
+	.icon-04 {
+		a {
+			border-color: #cc181e;
+			color: #cc181e;
+			&:hover {
+				border-color: #cc181e;
+				background-color: #cc181e;
+				color: white;
+			}
+		}
+	}
+}
+
+/* ================ T O U S   L E S   P O D C A S T S
+===================================================== */
 
 #all_pods {
 	padding: 2rem 0;
@@ -54,58 +117,47 @@
 	}
 }
 
-#explanation {
-	ul {
-		list-style: none none;
+#follow-brick {
+	text-align: center;
+	padding: 2rem 0;
+	.simili-title {
 		margin: 0;
-		padding: 0;
 	}
-	li {
-		display: inline-block;
-		margin-right: 1em;
-	}
-	// itunes
-	.icon-01 {
-		a {
-			border-color: dodgerblue;
-			color: dodgerblue;
-			&:hover {
-				background-color: dodgerblue;
-				color: white;
-			}
+	p {
+		font-family: $font-stack-headings;
+		margin: 4rem 0 2rem 0;
+		position: relative;
+		text-transform: uppercase;
+		&:before {
+			@include translate3d(-50%,0,0);
+			content: '';
+			position: absolute;
+			top: -2rem;
+			left: 50%;
+			width: 12rem;
+			height: 2px;
+			background-color: black;
 		}
 	}
-	// android
-	.icon-02 {
-		a {
-			border-color: #a4c639;
-			color: #a4c639;
-			&:hover {
-				background-color: #a4c639;
-				color: white;
-			}
+}
+
+/* ================ L E   P O D C A S T
+===================================================== */
+
+#the_podcast {
+	clear: both;
+	padding-top: 2rem;
+	.main_news {
+		@include border-radius(5px);
+		background-color: white;
+		padding: 1em;
+		.the-title {
+			@include rem(3);
+			margin: 0;
+			padding: 0;
 		}
-	}
-	// RSS
-	.icon-03 {
-		a {
-			border-color: darkorange;
-			color: darkorange;
-			&:hover {
-				background-color: darkorange;
-				color: white;
-			}
-		}
-	}
-	// youtube
-	.icon-04 {
-		a {
-			border-color: #cc181e;
-			color: #cc181e;
-			&:hover {
-				background-color: #cc181e;
-				color: white;
-			}
+		.a-propos {
+			@include rem(1.4);
 		}
 	}
 }

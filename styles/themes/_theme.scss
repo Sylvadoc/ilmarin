@@ -39,12 +39,17 @@
 /* ============== S E C T I O N S
 ========================================================== */
 
-section:nth-child(2n+2), #most, .grey-section {
+section:nth-child(2n+2), #most, .m-page .grey-section {
 	@include gradient-h(#ECE9E6,#FFFFFF);
 }
 #header_section {
 	&.tolkien_section, &.library_section, &.emission_section {
-		color: white;
+		.global-title {
+			color: white;
+			& + p {
+				color: white;
+			}
+		}
 	}
 }
 #all_new_chronique {
@@ -69,7 +74,7 @@ section:nth-child(2n+2), #most, .grey-section {
 	@include gradient-h(#24C6DC,#514A9D);
 	color: white;
 }
-#last_50, .colored-section {
+#last_50, .m-page .colored-section {
 	// test
 	@include gradient-h(#24C6DC,#514A9D);
 	color: white;
