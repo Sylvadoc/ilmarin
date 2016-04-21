@@ -92,7 +92,7 @@ $(document).ready(function() {
 			$(this).removeClass('active');
 		}
 
-		//affichage des infos
+		// affichage des infos
 		$('.desc_crit .h2_like').html(title_chronique);
 		$('.desc_crit .type_item').html(author_book);
 		$('.desc_crit .desc_item').html(description_book);
