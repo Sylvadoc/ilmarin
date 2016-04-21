@@ -583,7 +583,7 @@ body {
 
 .m-scene {
   background: white;
-  height: 100%;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
   position: relative;
@@ -593,10 +593,10 @@ body {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .m-scene.overlay-open {
-  transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
-  -ms-transform: translate3d(100%, 0, 0);
-  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100vw, 0, 0);
+  -moz-transform: translate3d(100vw, 0, 0);
+  -ms-transform: translate3d(100vw, 0, 0);
+  -webkit-transform: translate3d(100vw, 0, 0);
   zoom: 1;
 }
 
@@ -967,7 +967,7 @@ body {
   ======================================= */
 }
 .the-header .inner-wrap {
-  background: transparent url("../images/bg-grad.png") no-repeat bottom center;
+  background: transparent url("../../images/bg-grad.png") no-repeat bottom center;
   height: 190px;
   overflow: hidden;
 }
@@ -1686,12 +1686,12 @@ body {
   }
 }
 #garde {
-  background: white;
-  height: 100%;
+  background-color: white;
+  height: 100vh;
   left: 0;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 100;
 }
 
@@ -1703,18 +1703,18 @@ body {
   transition: visibility 0s 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, visibility 0s 0.5s;
   transition: transform 0.5s, visibility 0s 0.5s, -webkit-transform 0.5s;
-  transform: translate3d(-100%, 0, 0);
-  -moz-transform: translate3d(-100%, 0, 0);
-  -ms-transform: translate3d(-100%, 0, 0);
-  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100vw, 0, 0);
+  -moz-transform: translate3d(-100vw, 0, 0);
+  -ms-transform: translate3d(-100vw, 0, 0);
+  -webkit-transform: translate3d(-100vw, 0, 0);
   zoom: 1;
   visibility: hidden;
 }
 .overlay.open {
-  transform: translate3d(0%, 0, 0);
-  -moz-transform: translate3d(0%, 0, 0);
-  -ms-transform: translate3d(0%, 0, 0);
-  -webkit-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
   zoom: 1;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -2804,6 +2804,11 @@ body {
 
 /* ============== RESPONSIVE EMISSIONS
 ========================================================== */
+@media (max-width: 768px) {
+  .article_focus {
+    margin-bottom: 10px;
+  }
+}
 @media (max-width: 1024px) {
   #dmud .article_focus {
     background: white none;
@@ -3759,7 +3764,7 @@ body {
 .timelineFlat .t_line_holder {
   padding: 10px 0 0 0;
   height: 80px;
-  background: url("../images/timeline/light/line.jpg") repeat-x 0px 49px;
+  background: url("../../images/timeline/light/line.jpg") repeat-x 0px 49px;
 }
 
 /* 2 months are stored in one view */
@@ -4131,21 +4136,21 @@ body {
 .timelineFlat .t_left,
 .timelineFlat .t_left:hover:active {
   left: 0;
-  background: rgba(255, 255, 255, 0.5) url("../images/timeline/clean/blck-arrow-left.png") no-repeat center center;
+  background: rgba(255, 255, 255, 0.5) url("../../images/timeline/clean/blck-arrow-left.png") no-repeat center center;
 }
 
 .timelineFlat .t_left:hover {
-  background: rgba(255, 255, 255, 0.7) url("../images/timeline/clean/blck-arrow-left.png") no-repeat center center;
+  background: rgba(255, 255, 255, 0.7) url("../../images/timeline/clean/blck-arrow-left.png") no-repeat center center;
 }
 
 .timelineFlat .t_right,
 .timelineFlat .t_right:hover:active {
   right: 0;
-  background: rgba(255, 255, 255, 0.5) url("../images/timeline/clean/blck-arrow-right.png") no-repeat center center;
+  background: rgba(255, 255, 255, 0.5) url("../../images/timeline/clean/blck-arrow-right.png") no-repeat center center;
 }
 
 .timelineFlat .t_right:hover {
-  background: rgba(255, 255, 255, 0.7) url("../images/timeline/clean/blck-arrow-right.png") no-repeat center center;
+  background: rgba(255, 255, 255, 0.7) url("../../images/timeline/clean/blck-arrow-right.png") no-repeat center center;
 }
 
 /* -----------------------------------------------------------------------*/

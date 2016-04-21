@@ -74,7 +74,7 @@
 .timelineFlat .t_line_holder {
 	padding: 10px 0 0 0;
 	height:80px;
-	background:url('../images/timeline/light/line.jpg') repeat-x 0px 49px;
+	background:url('../../images/timeline/light/line.jpg') repeat-x 0px 49px;
 }
 
 /* 2 months are stored in one view */
@@ -431,20 +431,20 @@
 .timelineFlat .t_left,
 .timelineFlat .t_left:hover:active {
 	left:0;
-	background: rgba(255,255,255, 0.5) url('../images/timeline/clean/blck-arrow-left.png') no-repeat center center;
+	background: rgba(255,255,255, 0.5) url('../../images/timeline/clean/blck-arrow-left.png') no-repeat center center;
 }
 .timelineFlat .t_left:hover {
-	background: rgba(255,255,255, 0.7) url('../images/timeline/clean/blck-arrow-left.png') no-repeat center center;
+	background: rgba(255,255,255, 0.7) url('../../images/timeline/clean/blck-arrow-left.png') no-repeat center center;
 }
 
 .timelineFlat .t_right,
 .timelineFlat .t_right:hover:active{
 	right:0;
-	background: rgba(255,255,255, 0.5) url('../images/timeline/clean/blck-arrow-right.png') no-repeat center center;
+	background: rgba(255,255,255, 0.5) url('../../images/timeline/clean/blck-arrow-right.png') no-repeat center center;
 }
 
 .timelineFlat .t_right:hover {
-	background: rgba(255,255,255, 0.7) url('../images/timeline/clean/blck-arrow-right.png') no-repeat center center;
+	background: rgba(255,255,255, 0.7) url('../../images/timeline/clean/blck-arrow-right.png') no-repeat center center;
 }
 
 /* -----------------------------------------------------------------------*/

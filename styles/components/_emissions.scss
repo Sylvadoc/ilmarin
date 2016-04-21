@@ -41,6 +41,11 @@
 /* ============== RESPONSIVE EMISSIONS
 ========================================================== */
 
+@media (max-width: $small-screen) {
+	.article_focus {
+		margin-bottom: 10px;
+	}
+}
 @media (max-width: $medium-screen) {
 	#dmud {
 		.article_focus {

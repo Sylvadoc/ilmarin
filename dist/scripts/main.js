@@ -285,11 +285,12 @@ $(document).ready(function() {
 
 	// cnil
 	if (Cookies.get('cookie_cnil') === undefined) {
-		$('.m-scene').append('<div id="cnil"><p>En poursuivant votre navigation sur le site, vous acceptez l\'utilisation de cookies. <a href="/cookies">En savoir plus</a>. <button id="cnil_ok">j\'accepte</button></p></div>');
-		$('#cnil_ok').click(function(e){
-			Cookies.set('cookie_cnil', 'viewed');
+		$('#cnil_ok').click(function(){
+			Cookies.set('cookie_cnil', 'viewed', { expires: 365 });
 			$('#cnil').fadeOut();
 		});
+	} else {
+		$('#cnil').hide();
 	}
 
 	// panel header
@@ -426,6 +427,26 @@ $(window).load(function() {
 
 });
 
+// Kill hover on mobile
+if ('createTouch' in document) {
+	try {
+		var ignore = /:hover/;
+		for (var i = 0; i < document.styleSheets.length; i++) {
+			var sheet = document.styleSheets[i];
+			if (!sheet.cssRules) {
+				continue;
+			}
+			for (var j = sheet.cssRules.length - 1; j >= 0; j--) {
+				var rule = sheet.cssRules[j];
+				if (rule.type === CSSRule.STYLE_RULE && ignore.test(rule.selectorText)) {
+					sheet.deleteRule(j);
+				}
+			}
+		}
+	}
+	catch(e) {
+	}
+}
 /*!
  * Masonry PACKAGED v3.2.2
  * Cascading grid layout library
