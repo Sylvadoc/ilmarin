@@ -3102,7 +3102,7 @@ body {
   height: 167px;
 }
 .fantasy_section .quote-01 .author span {
-  background: transparent url("../images/illustrations/tolkien.jpg") no-repeat center top;
+  background: transparent url("../../images/illustrations/tolkien.jpg") no-repeat center top;
 }
 .fantasy_section .quote-01 .more {
   float: right;
@@ -3128,7 +3128,7 @@ body {
   height: 209px;
 }
 .fantasy_section .quote-02 .author span {
-  background: transparent url("../images/illustrations/gracq.jpg") no-repeat center top;
+  background: transparent url("../../images/illustrations/gracq.jpg") no-repeat center top;
 }
 .fantasy_section .quote-02 .more {
   float: left;
