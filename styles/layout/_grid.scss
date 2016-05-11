@@ -41,7 +41,7 @@ body {
 	/* overlay stuff */
 	@include transition(transform 0.5s);
 	&.overlay-open {
-		@include translate3d(100vw,0,0);
+		@include translate3d(70vw,0,0);
 	}
 }
 .base-brick {

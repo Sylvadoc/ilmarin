@@ -97,338 +97,93 @@
 /* ============== P A G E   D E   G A R D E
 ========================================================== */
 
-@keyframes ClosingSwordsLeft {
-	0% {
-		background: $base-color;
-		@include rotate(45deg);
-	}
-	100% {
-		@include rotate(-45deg);
-		background: $base-color-elbakin;
-	}
-}
-@keyframes ClosingSwordsRight {
-	0% {
-		@include rotate(-45deg);
-		background: $base-color;
-	}
-	100% {
-		@include rotate(45deg);
-		background: $base-color-elbakin;
-	}
-}
-
 #garde {
 	background-color: white;
 	height: 100vh;
 	left: 0;
 	position: fixed;
 	top: 0;
-	width: 100vw;
+	width: 70vw;
 	z-index: 100;
 }
 .overlay {
 	@include backface-visibility(hidden);
 	@include transform-style(preserve-3d);
 	@include transition(transform 0.5s, visibility 0s 0.5s);
-	@include translate3d(-100vw,0,0);
+	@include translate3d(-70vw,0,0);
 	visibility: hidden;
 	&.open {
 		@include translate3d(0,0,0);
 		@include transition(transform 0.5s);
 		visibility: visible;
 	}
-	.menu-close {
-		background: white;
-		color: $base-color;
-		display: block;
-		height: 3rem;
-		line-height: 1rem;
-		padding: 1rem 4rem 1rem 1rem;
-		position: absolute;
-		right: 1rem;
-		text-transform: uppercase;
-		top: 1rem;
-		z-index: 500;
-		span {
-			@include rotate(45deg);
-			background: $base-color;
-			content: '';
-			display: block;
-			height: 3rem;
-			right: 2rem;
-			position: absolute;
-			top: 0;
-			width: 2px;
-			&:before {
-				background: inherit;
-				content: '';
-				display: block;
-				height: 2px;
-				left: -0.4rem;
-				position: absolute;
-				top: 70%;
-				width: 1rem;
-			}
-		}
-		span + span {
-			@include rotate(45deg);
-		}
-		&.animate {
-			@include transition(color cubic-bezier(.68,-0.55,.27,1.55) .5s);
-			color: $base-color-elbakin;
-			span {
-				@include rotate(-45deg);
-				animation: ClosingSwordsLeft cubic-bezier(.68,-0.55,.27,1.55) .5s 1;
-				background: $base-color-elbakin;
-				right: 2rem;
-			}
-			span+span {
-				@include rotate(45deg);
-				animation: ClosingSwordsRight cubic-bezier(.68,-0.55,.27,1.55) .5s 1;
-				background: $base-color-elbakin;
-				right: 2rem;
-			}
-		}
-		&:hover {
-			text-decoration: none;
+}
+.flex-enhanced-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 3rem 0 0 3rem;
+	ul {
+		list-style: none none;
+		margin: 0;
+		padding: 0;
+	}
+	.nav-logo {
+		display: flex;
+		width: 20%;
+		padding-bottom: 3rem;
+	}
+	.section-palantir {
+		display: flex;
+		flex-wrap: wrap;
+		width: 80%;
+		padding-bottom: 3rem;
+	}
+	.nav-second {
+		display: flex;
+		flex-direction: column;
+		width: 20%;
+		ul {
+			padding-right: 3rem;
 		}
 	}
-}
-.section-item {
-	overflow: hidden;
-	position: absolute;
-	&:before {
-		@include scale(1.2);
-		@include transition(transform 0.35s ease 0s);
-		background-color: transparent;
-		background-repeat: no-repeat;
-		background-size: cover;
-		content: '';
-		height: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
+	.feature-nav {
+		display: flex;
+		flex-wrap: wrap;
+		width: 80%;
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			width: 100%;
+		}
+		li {
+			display: flex;
+			flex-basis: 50%;
+			padding-right: 3rem;
+		}
+	}
+	.feature-section {
 		width: 100%;
-		z-index: -1;
-	}
-	&:hover {
-		a {
-			&:hover, &:active, &:focus {text-decoration: none;}
-		}
-		&:before {
-			@include scale(1.05);
-		}
-		.inner-section {
-			@include translate3d(0,25%,0);
-		}
-	}
-	.inner-section {
-		@include transition(transform 0.2s ease 0s);
-		@include translate3d(0,40%,0);
-		position: relative;
-		top: 30%;
 		text-align: center;
-		a, em {color: white; display: block;}
-		a {
-			font-family: $font-stack-headings;
-			font-size: $al-size;
-			font-weight: 300;
-			text-transform: uppercase;
+		margin-bottom: 3rem;
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		h3, p {
+			margin: 0;
+			padding: 0;
 		}
 	}
-	.copyright {
-		position: absolute;
-		bottom: 1rem;
-		right: 1rem;
-		color: rgba(255,255,255,0.5);
-		font-size: small;
-	}
-	.icon {
-		color: white;
-		@include rem(4);
-	}
-}
-.section-01 {
-	// section bibliotheque
-	height: 100vh;
-	left: 33vw;
-	top: 0;
-	width: 34vw;
-	&:before {
-		background-image: url('../../images/library.jpg');
-		background-position: center bottom;
-	}
-}
-.section-02 {
-	// section tolkien
-	height: 50vh;
-	left: 0;
-	top: 50vh;
-	width: 33vw;
-	&:before {
-		background-image: url('../../images/argonath.jpg');
-		background-position: center center;
-	}
-}
-.section-03 {
-	// section fantasy
-	height: 50vh;
-	left: 0;
-	top: 0;
-	width: 33vw;
-	&:before {
-		background-image: url('../../images/fantasy.jpg');
-		background-position: right bottom;
-	}
-}
-.section-04, .section-05, .section-06 {
-	&:hover {
-		.inner-section {
-			@include translate3d(0,10%,0);
-		}
-	}
-	.inner-section {
-		@include translate3d(0,10%,0);
-	}
-}
-.section-04 {
-	// section forum
-	background: DarkSeaGreen;
-	right: 0;
-	top: 0;
-	width: 33vw;
-	height: 33vh;
-}
-.section-05 {
-	// section emission
-	background: DarkSlateGray;
-	right: 0;
-	top: 33vh;
-	width: 33vw;
-	height: 33vh;
-}
-.section-06 {
-	// section boutique
-	background: GoldenRod;
-	right: 0;
-	bottom: 0;
-	width: 33vw;
-	height: 34vh;
 }
 
 /* ============== R E S P O N S I V E
 ========================================================== */
 
 @media (max-width: $small-screen) and (orientation: portrait) {
-	.section-item {
-		display: block;
-		margin: 0;
-		width: 100vw !important;
-		.inner-section {
-			a { font-size: $h3-size;}
-			em {display: none;}
-		}
-	}
-	.section-01 {
-		// section bibliotheque
-		left: 0;
-		top: 0;
-		height: 17vh !important;
-	}
-	.section-02 {
-		// section tolkien
-		left: 0;
-		top: 17vh;
-		height: 17vh !important;
-	}
-	.section-03 {
-		// section fantasy
-		left: 0;
-		top: 34vh;
-		height: 17vh !important;
-	}
-	.section-04 {
-		// section forum
-		left: 0;
-		top: 51vh;
-		height: 17vh !important;
-	}
-	.section-05 {
-		// section emission
-		left: 0;
-		top: 68vh;
-		height: 16vh !important;
-	}
-	.section-06 {
-		// section boutique
-		left: 0;
-		top: 84vh;
-		height: 16vh !important;
-	}
+
 }
 @media (max-width: $small-screen) and (orientation: landscape) {
-	.section-item {
-		.inner-section {
-			top: 24%;
-			a { font-size: $h2-size;}
-			em {display: none;}
-		}
-	}
-	.section-01 {
-		// section bibliotheque
-		height: 33vh;
-		left: 0;
-		top: 34vh;
-		width: 100vw;
-		&:before {
-			background-position: center center;
-		}
-	}
-	.section-02 {
-		// section tolkien
-		height: 34vh;
-		left: 50vw;
-		top: 0;
-		width: 50vw;
-		&:before {
-			background-position: center center;
-		}
-	}
-	.section-03 {
-		// section fantasy
-		height: 34vh;
-		left: 0;
-		top: 0;
-		width: 50vw;
-		&:before {
-			background-position: center center;
-		}
-	}
-	.section-04 {
-		// section forum
-		left: 0;
-		right: auto;
-		top: 67vh;
-		width: 33vw;
-		height: 33vh;
-	}
-	.section-05 {
-		// section emission
-		background: DarkSlateGray;
-		left: 33vw;
-		right: auto;
-		top: 67vh;
-		width: 34vw;
-		height: 33vh;
-	}
-	.section-06 {
-		// section boutique
-		background: GoldenRod;
-		right: 0;
-		left: auto;
-		bottom: 0;
-		width: 33vw;
-		height: 33vh;
-	}
+
 }

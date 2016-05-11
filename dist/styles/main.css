@@ -593,10 +593,10 @@ body {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .m-scene.overlay-open {
-  transform: translate3d(100vw, 0, 0);
-  -moz-transform: translate3d(100vw, 0, 0);
-  -ms-transform: translate3d(100vw, 0, 0);
-  -webkit-transform: translate3d(100vw, 0, 0);
+  transform: translate3d(70vw, 0, 0);
+  -moz-transform: translate3d(70vw, 0, 0);
+  -ms-transform: translate3d(70vw, 0, 0);
+  -webkit-transform: translate3d(70vw, 0, 0);
   zoom: 1;
 }
 
@@ -3041,101 +3041,13 @@ body {
 
 /* ============== P A G E   D E   G A R D E
 ========================================================== */
-@-webkit-keyframes ClosingSwordsLeft {
-  0% {
-    background: #272727;
-    transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg))";
-    zoom: 1;
-  }
-  100% {
-    transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg))";
-    zoom: 1;
-    background: #BE2700;
-  }
-}
-@keyframes ClosingSwordsLeft {
-  0% {
-    background: #272727;
-    transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg))";
-    zoom: 1;
-  }
-  100% {
-    transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg))";
-    zoom: 1;
-    background: #BE2700;
-  }
-}
-@-webkit-keyframes ClosingSwordsRight {
-  0% {
-    transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg))";
-    zoom: 1;
-    background: #272727;
-  }
-  100% {
-    transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg))";
-    zoom: 1;
-    background: #BE2700;
-  }
-}
-@keyframes ClosingSwordsRight {
-  0% {
-    transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg))";
-    zoom: 1;
-    background: #272727;
-  }
-  100% {
-    transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg))";
-    zoom: 1;
-    background: #BE2700;
-  }
-}
 #garde {
   background-color: white;
   height: 100vh;
   left: 0;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 70vw;
   z-index: 100;
 }
 
@@ -3147,10 +3059,10 @@ body {
   transition: visibility 0s 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, visibility 0s 0.5s;
   transition: transform 0.5s, visibility 0s 0.5s, -webkit-transform 0.5s;
-  transform: translate3d(-100vw, 0, 0);
-  -moz-transform: translate3d(-100vw, 0, 0);
-  -ms-transform: translate3d(-100vw, 0, 0);
-  -webkit-transform: translate3d(-100vw, 0, 0);
+  transform: translate3d(-70vw, 0, 0);
+  -moz-transform: translate3d(-70vw, 0, 0);
+  -ms-transform: translate3d(-70vw, 0, 0);
+  -webkit-transform: translate3d(-70vw, 0, 0);
   zoom: 1;
   visibility: hidden;
 }
@@ -3165,350 +3077,97 @@ body {
   transition: transform 0.5s, -webkit-transform 0.5s;
   visibility: visible;
 }
-.overlay .menu-close {
-  background: white;
-  color: #272727;
-  display: block;
-  height: 3rem;
-  line-height: 1rem;
-  padding: 1rem 4rem 1rem 1rem;
-  position: absolute;
-  right: 1rem;
-  text-transform: uppercase;
-  top: 1rem;
-  z-index: 500;
-}
-.overlay .menu-close span {
-  transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg))";
-  zoom: 1;
-  background: #272727;
-  content: '';
-  display: block;
-  height: 3rem;
-  right: 2rem;
-  position: absolute;
-  top: 0;
-  width: 2px;
-}
-.overlay .menu-close span:before {
-  background: inherit;
-  content: '';
-  display: block;
-  height: 2px;
-  left: -0.4rem;
-  position: absolute;
-  top: 70%;
-  width: 1rem;
-}
-.overlay .menu-close span + span {
-  transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg))";
-  zoom: 1;
-}
-.overlay .menu-close.animate {
-  transition: color cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s;
-  color: #BE2700;
-}
-.overlay .menu-close.animate span {
-  transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg))";
-  zoom: 1;
-  -webkit-animation: ClosingSwordsLeft cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s 1;
-          animation: ClosingSwordsLeft cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s 1;
-  background: #BE2700;
-  right: 2rem;
-}
-.overlay .menu-close.animate span + span {
-  transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg))";
-  zoom: 1;
-  -webkit-animation: ClosingSwordsRight cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s 1;
-          animation: ClosingSwordsRight cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s 1;
-  background: #BE2700;
-  right: 2rem;
-}
-.overlay .menu-close:hover {
-  text-decoration: none;
-}
 
-.section-item {
-  overflow: hidden;
-  position: absolute;
+.flex-enhanced-navigation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 3rem 0 0 3rem;
 }
-.section-item:before {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  transition: -webkit-transform 0.35s ease 0s;
-  transition: transform 0.35s ease 0s;
-  transition: transform 0.35s ease 0s, -webkit-transform 0.35s ease 0s;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: cover;
-  content: '';
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
+.flex-enhanced-navigation ul {
+  list-style: none none;
+  margin: 0;
+  padding: 0;
+}
+.flex-enhanced-navigation .nav-logo {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  padding-bottom: 3rem;
+}
+.flex-enhanced-navigation .section-palantir {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 80%;
+  padding-bottom: 3rem;
+}
+.flex-enhanced-navigation .nav-second {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+}
+.flex-enhanced-navigation .nav-second ul {
+  padding-right: 3rem;
+}
+.flex-enhanced-navigation .feature-nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 80%;
+}
+.flex-enhanced-navigation .feature-nav ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
-  z-index: -1;
 }
-.section-item:hover a:hover, .section-item:hover a:active, .section-item:hover a:focus {
-  text-decoration: none;
+.flex-enhanced-navigation .feature-nav li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  padding-right: 3rem;
 }
-.section-item:hover:before {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-.section-item:hover .inner-section {
-  transform: translate3d(0, 25%, 0);
-  -moz-transform: translate3d(0, 25%, 0);
-  -ms-transform: translate3d(0, 25%, 0);
-  -webkit-transform: translate3d(0, 25%, 0);
-  zoom: 1;
-}
-.section-item .inner-section {
-  transition: -webkit-transform 0.2s ease 0s;
-  transition: transform 0.2s ease 0s;
-  transition: transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
-  transform: translate3d(0, 40%, 0);
-  -moz-transform: translate3d(0, 40%, 0);
-  -ms-transform: translate3d(0, 40%, 0);
-  -webkit-transform: translate3d(0, 40%, 0);
-  zoom: 1;
-  position: relative;
-  top: 30%;
+.flex-enhanced-navigation .feature-section {
+  width: 100%;
   text-align: center;
+  margin-bottom: 3rem;
 }
-.section-item .inner-section a, .section-item .inner-section em {
-  color: white;
+.flex-enhanced-navigation .feature-section img {
   display: block;
+  width: 100%;
+  height: auto;
 }
-.section-item .inner-section a {
-  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
-  font-size: 5rem;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-.section-item .copyright {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: small;
-}
-.section-item .icon {
-  color: white;
-  font-size: 56px;
-  font-size: 4rem;
-}
-
-.section-01 {
-  height: 100vh;
-  left: 33vw;
-  top: 0;
-  width: 34vw;
-}
-.section-01:before {
-  background-image: url("../../images/library.jpg");
-  background-position: center bottom;
-}
-
-.section-02 {
-  height: 50vh;
-  left: 0;
-  top: 50vh;
-  width: 33vw;
-}
-.section-02:before {
-  background-image: url("../../images/argonath.jpg");
-  background-position: center center;
-}
-
-.section-03 {
-  height: 50vh;
-  left: 0;
-  top: 0;
-  width: 33vw;
-}
-.section-03:before {
-  background-image: url("../../images/fantasy.jpg");
-  background-position: right bottom;
-}
-
-.section-04:hover .inner-section, .section-05:hover .inner-section, .section-06:hover .inner-section {
-  transform: translate3d(0, 10%, 0);
-  -moz-transform: translate3d(0, 10%, 0);
-  -ms-transform: translate3d(0, 10%, 0);
-  -webkit-transform: translate3d(0, 10%, 0);
-  zoom: 1;
-}
-.section-04 .inner-section, .section-05 .inner-section, .section-06 .inner-section {
-  transform: translate3d(0, 10%, 0);
-  -moz-transform: translate3d(0, 10%, 0);
-  -ms-transform: translate3d(0, 10%, 0);
-  -webkit-transform: translate3d(0, 10%, 0);
-  zoom: 1;
-}
-
-.section-04 {
-  background: DarkSeaGreen;
-  right: 0;
-  top: 0;
-  width: 33vw;
-  height: 33vh;
-}
-
-.section-05 {
-  background: DarkSlateGray;
-  right: 0;
-  top: 33vh;
-  width: 33vw;
-  height: 33vh;
-}
-
-.section-06 {
-  background: GoldenRod;
-  right: 0;
-  bottom: 0;
-  width: 33vw;
-  height: 34vh;
+.flex-enhanced-navigation .feature-section h3, .flex-enhanced-navigation .feature-section p {
+  margin: 0;
+  padding: 0;
 }
 
 /* ============== R E S P O N S I V E
 ========================================================== */
-@media (max-width: 768px) and (orientation: portrait) {
-  .section-item {
-    display: block;
-    margin: 0;
-    width: 100vw !important;
-  }
-  .section-item .inner-section a {
-    font-size: 1.8rem;
-  }
-  .section-item .inner-section em {
-    display: none;
-  }
-
-  .section-01 {
-    left: 0;
-    top: 0;
-    height: 17vh !important;
-  }
-
-  .section-02 {
-    left: 0;
-    top: 17vh;
-    height: 17vh !important;
-  }
-
-  .section-03 {
-    left: 0;
-    top: 34vh;
-    height: 17vh !important;
-  }
-
-  .section-04 {
-    left: 0;
-    top: 51vh;
-    height: 17vh !important;
-  }
-
-  .section-05 {
-    left: 0;
-    top: 68vh;
-    height: 16vh !important;
-  }
-
-  .section-06 {
-    left: 0;
-    top: 84vh;
-    height: 16vh !important;
-  }
-}
-@media (max-width: 768px) and (orientation: landscape) {
-  .section-item .inner-section {
-    top: 24%;
-  }
-  .section-item .inner-section a {
-    font-size: 2.5rem;
-  }
-  .section-item .inner-section em {
-    display: none;
-  }
-
-  .section-01 {
-    height: 33vh;
-    left: 0;
-    top: 34vh;
-    width: 100vw;
-  }
-  .section-01:before {
-    background-position: center center;
-  }
-
-  .section-02 {
-    height: 34vh;
-    left: 50vw;
-    top: 0;
-    width: 50vw;
-  }
-  .section-02:before {
-    background-position: center center;
-  }
-
-  .section-03 {
-    height: 34vh;
-    left: 0;
-    top: 0;
-    width: 50vw;
-  }
-  .section-03:before {
-    background-position: center center;
-  }
-
-  .section-04 {
-    left: 0;
-    right: auto;
-    top: 67vh;
-    width: 33vw;
-    height: 33vh;
-  }
-
-  .section-05 {
-    background: DarkSlateGray;
-    left: 33vw;
-    right: auto;
-    top: 67vh;
-    width: 34vw;
-    height: 33vh;
-  }
-
-  .section-06 {
-    background: GoldenRod;
-    right: 0;
-    left: auto;
-    bottom: 0;
-    width: 33vw;
-    height: 33vh;
-  }
-}
 /* ============== B L O C   C H R O N I Q U E S
 ========================================================== */
 #all_new_chronique {
