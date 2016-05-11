@@ -16,15 +16,18 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
+    sourcemaps = require('gulp-sourcemaps'),
     del = require('del');
 
 // Styles
 gulp.task('styles', function() {
   return sass('styles//**/*.scss', { style: 'expanded' })
+    .pipe(sourcemaps.init())
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest('dist/styles'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/styles'))
     .pipe(notify({ message: 'Styles task complete' }));
 });

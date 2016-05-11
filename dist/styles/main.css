@@ -628,6 +628,10 @@ body {
   display: block;
   overflow: hidden;
 }
+.article_focus .inner_content a img {
+  width: 100%;
+  height: auto;
+}
 .article_focus .inner_content a p {
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
@@ -2736,7 +2740,6 @@ body {
   border-radius: 5px;
   background-clip: padding-box;
   background: white;
-  height: 433px;
 }
 #cards .back .btn {
   margin: 0 auto 1em auto;
@@ -2939,6 +2942,14 @@ body {
   height: auto;
 }
 
+/* ============== R E S P O N S I V E
+========================================================== */
+@media (max-width: 480px) {
+  #forms-website .simili-title {
+    font-size: 42px;
+    font-size: 3rem;
+  }
+}
 /********************************************************************************************************************************************************************************
 ********************* N A V I G A T I O N *****************
 /********************************************************************************************************************************************************************************/
@@ -3640,6 +3651,43 @@ body {
     height: 155px;
   }
 }
+.flex-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.flex-list .flex-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  width: 18%;
+  margin: 0 1%;
+}
+
+/* ============== R E S P O N S I V E
+========================================================== */
+@media (max-width: 480px) {
+  .flex-list .flex-item {
+    width: 48%;
+  }
+}
+@media (min-width: 480px) and (max-width: 1024px) {
+  .flex-list .flex-item {
+    width: 30%;
+  }
+}
 /* ================ M A S O N R Y
 ===================================================== */
 .liste_ouvrage {
@@ -3685,10 +3733,10 @@ body {
   content: '';
   display: block;
   height: 35px;
-  left: -20px;
+  left: 0;
   position: absolute;
   top: -20px;
-  width: 115%;
+  width: 101%;
 }
 .liste_ouvrage article .entry-header p span {
   position: relative;

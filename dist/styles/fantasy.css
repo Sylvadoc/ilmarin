@@ -628,6 +628,10 @@ body {
   display: block;
   overflow: hidden;
 }
+.article_focus .inner_content a img {
+  width: 100%;
+  height: auto;
+}
 .article_focus .inner_content a p {
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
@@ -2176,7 +2180,6 @@ body {
   border-radius: 5px;
   background-clip: padding-box;
   background: white;
-  height: 433px;
 }
 #cards .back .btn {
   margin: 0 auto 1em auto;
@@ -2379,6 +2382,14 @@ body {
   height: auto;
 }
 
+/* ============== R E S P O N S I V E
+========================================================== */
+@media (max-width: 480px) {
+  #forms-website .simili-title {
+    font-size: 42px;
+    font-size: 3rem;
+  }
+}
 /********************************************************************************************************************************************************************************
 ********************* N A V I G A T I O N *****************
 /********************************************************************************************************************************************************************************/

@@ -628,6 +628,10 @@ body {
   display: block;
   overflow: hidden;
 }
+.article_focus .inner_content a img {
+  width: 100%;
+  height: auto;
+}
 .article_focus .inner_content a p {
   display: block;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;

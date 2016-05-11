@@ -323,11 +323,14 @@
 		padding: 0;
 		text-transform: uppercase;
 	}
+	.simili-title {
+		margin: 0 0 2rem 0
+	}
 }
 .classement {
 	h3 {
 		text-transform: uppercase;
-		margin: .5em 0;
+		margin: 1em 0 .5em 0;
 		padding: 0;
 		font-weight: 400;
 	}
@@ -398,10 +401,7 @@
 	h2 {
 		margin: 0 0 .5em 0;
 	}
-	.row {
-		@extend %clearfix;
-		list-style: none none;
-		padding: 0;
+	.flex-list {
 		h3 {
 			margin: 0;
 			padding: 0;
@@ -410,6 +410,7 @@
 		}
 		article {
 			margin-bottom: 2em;
+			width: 48%;
 			a {
 				background: white;
 				border: 1px solid #ccc;
@@ -451,6 +452,9 @@
 				}
 			}
 		}
+	}
+	.shadow-btn {
+		float: right;
 	}
 }
 
@@ -536,6 +540,9 @@
 			text-align: right;
 			width: 7rem;
 		}
+		a {
+			display: inline-block;
+		}
 		li:last-child {
 			border: 0;
 		}
@@ -552,8 +559,8 @@
 		margin: 0 auto;
 		position: relative;
 		.blason {
+			margin-bottom: 30px;
 			img {
-				@include rotateY(20deg);
 				max-width: 100%;
 				height: auto;
 			}
@@ -561,7 +568,6 @@
 	}
 }
 .ruban {
-	@include rotateY(20deg);
 	background-color: $base-color-elbakin;
 	bottom: -23px;
 	color: white;
@@ -646,6 +652,35 @@
 			a {
 	   			padding: .5em 0;
 			}
+		}
+		.shadow-btn {
+			float: right;
+		}
+	}
+}
+
+/* ============== R E S P O N S I V E
+========================================================== */
+
+@media (max-width: $tiny-screen) {
+	#author_biography {
+		.bio-title {
+			@include rem(5);
+			margin-top: 1.5rem;
+			text-align: center;
+		}
+		.basic_list, .bio {
+			@include rem(2);
+		}
+		.basic_list strong {
+			width: 9rem;
+		}
+	}
+}
+@media (min-width: $tiny-screen) and (max-width: $medium-screen) {
+	#author_biography {
+		.portrait {
+			width: 80%;
 		}
 	}
 }

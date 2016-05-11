@@ -121,12 +121,14 @@ $(document).ready(function() {
 	});
 
 	// flip forms
+	var formHeight = $('#why-sign').height() + 100;
 	$('#form-sign-in input, .why-account').click(function() {
 		$('#cards').addClass('flipped');
 	});
 	$('.allready-an-account').click(function() {
 		$('#cards').removeClass('flipped');
 	});
+	$('#pionnier').css('min-height',formHeight);
 
 	// Anathema
 	var weather = ['sunny','cloudy','rainy','snowy','rainbow','starry','stormy'];
@@ -174,23 +176,6 @@ $(document).ready(function() {
 				size: 160
 			});
 		}
-	}
-
-});
-
-$(window).load(function() {
-
-	// masonry list
-	if ($('.liste_ouvrage').length) {
-		var $container = $('#masonry_last');
-		var $container_02 = $('#masonry_lists');
-		// initialize
-		$container.masonry({
-			itemSelector: '.columns'
-		});
-		$container_02.masonry({
-			itemSelector: '.columns'
-		});
 	}
 
 });

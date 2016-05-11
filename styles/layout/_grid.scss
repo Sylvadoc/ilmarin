@@ -68,6 +68,10 @@ body {
 		a {
 			display: block;
 			overflow: hidden;
+			img {
+				width: 100%;
+				height: auto;
+			}
 			p {
 				display: block;
 				font-family: $font-stack-headings;
