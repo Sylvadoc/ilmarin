@@ -848,7 +848,7 @@ body {
 
 /* ============== R E S P O N S I V E
 ========================================================== */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .m-page {
     padding-top: 50px;
   }
@@ -1846,6 +1846,9 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .flex-enhanced-navigation .feature-nav li {
   display: -webkit-flex;
@@ -1855,6 +1858,9 @@ body {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
   padding-right: 3rem;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
 }
 
 .classic-nav ul {
@@ -1946,6 +1952,9 @@ body {
 .section-palantir form .s-r button {
   width: 100%;
 }
+.section-palantir form .s-r button .icon {
+  display: none;
+}
 .section-palantir form p {
   padding-top: 1rem;
   clear: both;
@@ -2016,6 +2025,69 @@ body {
   font-style: italic;
 }
 
+/* ============== R E S P O N S I V E
+========================================================== */
+@media (max-width: 480px) {
+  #garde .flex-enhanced-navigation {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #garde .flex-enhanced-navigation .nav-logo, #garde .flex-enhanced-navigation .feature-nav, #garde .flex-enhanced-navigation .footer-nav {
+    display: none;
+  }
+  #garde .flex-enhanced-navigation .section-palantir, #garde .flex-enhanced-navigation .nav-second {
+    width: 100%;
+  }
+  #garde .flex-enhanced-navigation .section-palantir {
+    padding-bottom: 1rem;
+  }
+  #garde .flex-enhanced-navigation .section-palantir .s-l, #garde .flex-enhanced-navigation .section-palantir .s-r {
+    padding-top: 1rem;
+  }
+  #garde .flex-enhanced-navigation .section-palantir .s-l input {
+    height: 35px;
+    line-height: 35px;
+  }
+  #garde .flex-enhanced-navigation .section-palantir .s-l input:focus ~ label {
+    top: -1.5rem;
+  }
+  #garde .flex-enhanced-navigation .section-palantir .s-l label {
+    top: 1.2rem;
+  }
+  #garde .flex-enhanced-navigation .section-palantir .s-r button {
+    height: 35px;
+  }
+  #garde .flex-enhanced-navigation .section-palantir .icon {
+    display: block;
+  }
+  #garde .flex-enhanced-navigation .section-palantir .text-icon {
+    display: none;
+  }
+  #garde .flex-enhanced-navigation .section-palantir p {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 1280px) {
+  #garde .flex-enhanced-navigation .nav-logo, #garde .flex-enhanced-navigation .footer-nav {
+    display: none;
+  }
+  #garde .flex-enhanced-navigation .section-palantir {
+    width: 100%;
+  }
+  #garde .flex-enhanced-navigation .nav-second {
+    width: 33%;
+  }
+  #garde .flex-enhanced-navigation .feature-nav {
+    width: 66%;
+  }
+  #garde .flex-enhanced-navigation .section-palantir .icon {
+    display: block;
+  }
+  #garde .flex-enhanced-navigation .section-palantir .text-icon {
+    display: none;
+  }
+}
 /* ============== D E F A U L T   C A R D
 ========================================================== */
 .some_card {
@@ -2720,14 +2792,16 @@ body {
   padding: 2rem 0;
 }
 #emissions h2 {
+  font-size: 30.8px;
+  font-size: 2.2rem;
   color: #BE2700;
   text-align: center;
 }
 #emissions h3 {
   color: #BE2700;
   text-transform: uppercase;
-  font-size: 25.2px;
-  font-size: 1.8rem;
+  font-size: 23.8px;
+  font-size: 1.7rem;
   margin: 1em 0 0 0;
   padding: 0;
   font-weight: 300;
@@ -2744,13 +2818,6 @@ body {
 #emissions ul li a {
   display: block;
   padding: .5em 0;
-}
-
-#dmud .article_focus {
-  background: white url("../../images/illustrations/dmud.jpg") no-repeat bottom right;
-}
-#dmud li:nth-last-child(-n+4) {
-  width: 50%;
 }
 
 /* ============== RESPONSIVE EMISSIONS

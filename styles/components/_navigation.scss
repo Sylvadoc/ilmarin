@@ -190,11 +190,13 @@
 			flex-wrap: wrap;
 			flex-direction: row;
 			width: 100%;
+			align-items: flex-start;
 		}
 		li {
 			display: flex;
 			flex-basis: 50%;
 			padding-right: 3rem;
+			align-self: flex-start;
 		}
 	}
 }
@@ -284,6 +286,9 @@
 			float: left;
 			button {
 				width: 100%;
+				.icon {
+					display: none;
+				}
 			}
 		}
 		p {
@@ -351,5 +356,80 @@
 	p {
 		margin: 0;
 		font-style: italic;
+	}
+}
+
+/* ============== R E S P O N S I V E
+========================================================== */
+
+@media (max-width: $tiny-screen) {
+	#garde {
+		.flex-enhanced-navigation {
+			flex-direction: column;
+			.nav-logo, .feature-nav, .footer-nav {
+				display: none;
+			}
+			.section-palantir, .nav-second {
+				width: 100%;
+			}
+			.section-palantir {
+				padding-bottom: 1rem;
+				.s-l, .s-r {
+					padding-top: 1rem;
+				}
+				.s-l {
+					input {
+						height: 35px;
+						line-height: 35px;
+						&:focus ~ label {
+							top: -1.5rem;
+						}
+					}
+					label {
+						top: 1.2rem;
+					}
+				}
+				.s-r {
+					button {
+						height: 35px;
+					}
+				}
+				.icon {
+					display: block;
+				}
+				.text-icon {
+					display: none;
+				}
+				p {
+					display: none;
+				}
+			}
+		}
+	}
+}
+@media (min-width: $tiny-screen) and (max-width: $large-screen) {
+	#garde {
+		.flex-enhanced-navigation {
+			.nav-logo, .footer-nav {
+				display: none;
+			}
+			.section-palantir {
+				width: 100%;
+			}
+			.nav-second {
+				width: 33%;
+			}
+			.feature-nav {
+				width: 66%;
+			}
+			.section-palantir {
+				.icon {
+					display: block;
+				}
+				.text-icon {
+					display: none;
+				}
+			}
+		}
 	}
 }

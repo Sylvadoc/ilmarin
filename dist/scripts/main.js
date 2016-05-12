@@ -239,7 +239,7 @@ $(document).ready(function() {
 	$('.menu-close').click(function() {
 		$('.m-scene').removeClass('overlay-open');
 		$('.overlay').removeClass('open');
-		$('#trigger').removeClass('icon-cross').addClass('icon-burger');
+		$('#trigger').find('.icon').removeClass('icon-cross').addClass('icon-burger');
 	});
 
 	// onscroll sticky header

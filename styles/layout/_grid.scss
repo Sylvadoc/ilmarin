@@ -46,6 +46,7 @@ body {
 
 /* ============== P A G E  /  O V E R L A Y
 ============================================================================== */
+
 #garde {
 	width: 70vw;
 }
@@ -241,6 +242,8 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 
-@media (max-width: $small-screen) {
-	.m-page { padding-top: 50px; }
+@media (max-width: $medium-screen) {
+	.m-page {
+		padding-top: 50px;
+	}
 }
