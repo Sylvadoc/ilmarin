@@ -48,44 +48,128 @@
 
     <body role="document" class="page-emission">
 
-        <nav id="garde" class="overlay" role="navigation">
-            <a class="menu-close" title="Fermer le menu">fermer<span></span><span></span>
-            </a>
-            <div class="section-item section-01 clickable">
-                <div class="inner-section">
-                    <a href="bibliotheque.html">Bibliothèque</a>
-                    <em>Chroniques, recherche &mp; découvertes</em>
+        <nav id="garde" class="overlay">
+            <div class="flex-enhanced-navigation">
+                <a href="#" class="menu-close" title="Fermer le menu"><span class="icon icon-cross"></span></a>
+                <div class="nav-logo">
+                    <img src="images/logo_elbakin_nav.png" alt="Elbakin.net" />
                 </div>
-            </div>
-            <div class="section-item section-02 clickable">
-                <div class="inner-section">
-                    <a href="index_section_jrr.html">Tolkien</a>
-                    <em>Rien ne vaut la recherche lorsqu’on veut trouver quelque chose.</em>
+                <div class="section-palantir">
+                    <form class="form">
+                        <div class="s-l">
+                            <input type="text" id="search-keyword" />
+                            <label for="search-keyword">Rechercher sur le site :</label>
+                        </div>
+                        <div class="s-r">
+                            <button class="btn btn_find inline_btn"><span class="icon icon-search"></span><span class="text-icon">rechercher</span></button>
+                        </div>
+                        <p><strong>Exemples :</strong> <a href="#">Jaworski</a>, <a href="#">Pevel</a>, <a href="#">Le Seigneur des Anneaux</a></p>
+                    </form>
                 </div>
-            </div>
-            <div class="section-item section-03 clickable">
-                <div class="inner-section">
-                    <a href="index_fantasy.html">Fantasy</a>
-                    <em>Dossiers, Articles, Interviews</em>
+                <div class="nav-second">
+                    <ul class="classic-nav" role="navigation">
+                        <li class="node"><strong>La fantasy</strong>
+                            <ul>
+                                <li><a href="index_fantasy.html">Présentations &amp; courants</a></li>
+                                <li><a href="index_fantasy.html">Approfondir</a></li>
+                            </ul>
+                        </li>
+                        <li class="node"><strong>Bibliothèque</strong>
+                            <ul>
+                                <li><a href="bibliotheque.html">Les romans</a></li>
+                                <li><a href="bibliotheque.html">Les bandes dessinées</a></li>
+                                <li><a href="bibliotheque.html">Les mangas</a></li>
+                                <li><a href="bibliotheque.html">Les jeux</a></li>
+                            </ul>
+                        </li>
+                        <li class="node"><strong>J.R.R. Tolkien</strong>
+                            <ul>
+                                <li><a href="index_section_jrr.html">Découvrir &amp; Comprendre</a></li>
+                                <li><a href="index_section_jrr.html">Bibliographie</a></li>
+                                <li><a href="index_section_jrr.html">Divertissements &amp; adaptations</a></li>
+                            </ul>
+                        </li>
+                        <li class="node"><strong>Les émissions</strong>
+                            <ul>
+                                <li><a href="index_podcast.html">Les podcasts d'Elbakin.net</a></li>
+                                <li><a href="index_podcast.html">Dessine-moi un dragon</a></li>
+                                <li><a href="index_podcast.html">Culture particulière</a></li>
+                                <li><a href="index_podcast.html">Procastination</a></li>
+                            </ul>
+                        </li>
+                        <li class="node"><strong>Notre réseau</strong>
+                            <ul>
+                                <li><a href="http://association-elbakin.net/" title="Le site de l'association [nouvelle fenêtre]" target="_blank">L'association Elbakin.net</a></li>
+                                <li><a href="http://archibald-bellerophon.blogspot.fr/" title="Archibald [nouvelle fenêtre]" target="_blank">Archibald Bellérophon</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="aside-btn">
+                        <a href="#" class="shadow-btn dark-shadow-btn"><span class="icon icon-bubbles" aria-hidden="true"></span> forum</a>
+                    </div>
                 </div>
-            </div>
-            <div class="section-item section-04 clickable">
-                <div class="inner-section">
-                    <span class="icon icon-bubbles"></span>
-                    <a href="#">Forum</a>
+                <div class="feature-nav">
+                    <ul>
+                        <li>
+                            <div class="feature-section clickable">
+                                <img src="images/illustrations/section_02.jpg" aria-hidden="true" alt="image illustrant la section fantasy" />
+                                <div class="cartouche">
+                                    <h3><a href="index_fantasy.html">La fantasy</a></h3>
+                                    <p>Découvrir la fantasy, ses origines, ses héros&hellip;</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-section clickable">
+                                <img src="images/illustrations/section_03.jpg" aria-hidden="true" alt="image illustrant la section bibliothèque" />
+                                <div class="cartouche">
+                                    <h3><a href="bibliotheque.html">Bibliothèque</a></h3>
+                                    <p>Chronique de romans, de bédés, de mangas, de jeux&hellip;</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-section clickable">
+                                <img src="images/illustrations/section_01.jpg" aria-hidden="true" alt="image illustrant la section Tolkien" />
+                                <div class="cartouche">
+                                    <h3><a href="index_section_jrr.html">J.R.R. Tolkien</a></h3>
+                                    <p>&Eacute;tude de ses &oelig;uvres, sa vie, son univers&hellip;</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-section clickable">
+                                <img src="images/illustrations/section_04.jpg" aria-hidden="true" alt="image illustrant les émissions" />
+                                <div class="cartouche">
+                                    <h3><a href="index_podcast.html">Les émissions</em></a></h3>
+                                    <p>Podcasts, Dessine-moi un Dragon, Culture particulière, Procastination</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="section-item section-05 clickable">
-                <div class="inner-section">
-                    <span class="icon icon-podcast"></span>
-                    <a href="index_podcast.html">&Eacute;missions</a>
-                    <em>Les podcasts, Dessine-moi un dragon, Procastination, Culture particulière</em>
-                </div>
-            </div>
-            <div class="section-item section-06 clickable">
-                <div class="inner-section">
-                    <span class="icon icon-cart"></span>
-                    <a href="#">Boutique</a>
+                <div class="footer-nav">
+                    <p>&copy; 2000 - 2016 &middot; Elbakin.net / Tous droits réservés.</p>
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.facebook.com/Elbakin.net" title="Profil Facebook Elbakin.net">
+                                <span class="icon icon-facebook" aria-hidden="true"></span>
+                                <span class="text">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/elbakin" title="Compte Twitter Elbakin.net">
+                                <span class="icon icon-twitter" aria-hidden="true"></span>
+                                <span class="text">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/ElbakinNetFantasy" title="Chaîne YouTube Elbakin.net">
+                                <span class="icon icon-google-plus" aria-hidden="true"></span>
+                                <span class="text">YouTube</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -109,19 +193,13 @@
                         <li>
                             <a href="#" class="menu-trigger" id="trigger" title="Parcourir le menu du site">
                                 <span class="icon icon-burger" aria-hidden="true"></span>
-                                <span>Menu</span>
+                                <span>Explorer</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" title="Visiter le forum">
                                 <span class="icon icon-bubbles" aria-hidden="true"></span>
                                 <span>Forum</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#search" class="toggle-panel" title="Faire une recherche">
-                                <span class="icon icon-search" aria-hidden="true"></span>
-                                <span class="text">Rechercher</span>
                             </a>
                         </li>
                     </ul>
@@ -148,12 +226,6 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="network">
-                            <a href="#web" class="toggle-panel" title="Notre réseau">
-                                <span class="icon icon-bookmark" aria-hidden="true"></span>
-                                <span class="text">Notre réseau</span>
-                            </a>
-                        </li>
                         <li>
                             <a href="form_inscription.html" title="Se connecter au site">
                                 <span>Se connecter</span>
@@ -161,36 +233,6 @@
                             </a>
                         </li>
                     </ul>
-                    <div id="search" class="panel">
-                        <form class="form">
-                            <label for="search-keyword" class="ersatz-title">Rechercher sur le site :</label>
-                            <input type="text" id="search-keyword" placeholder="Mots-clefs" class="input-style" />
-                            <button class="btn btn_default inline_btn">OK</button>
-                            <p>Exemple : <a href="#">Jaworski</a>, <a href="#">Pevel</a>, <a href="#">Le Seigneur des Anneaux</a></p>
-                        </form>
-                    </div>
-                    <div id="web" class="panel">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="images/logo_asso.png" alt="Logo de l'Association Elbakin.net" />
-                                    <span>Association<br />Elbakin.net</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/logo_archy.png" alt="Logo des Aventures d'Archibald Bellérophon" />
-                                    <span>Archibald<br />Bellérophon</span>
-                                </a>
-                                </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/logo_periannath.png" alt="Logo de Periannath" />
-                                    <span>Periannath<br />Le jeu</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </header>
             <!-- /HEADER -->
