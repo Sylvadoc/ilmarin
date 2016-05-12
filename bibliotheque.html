@@ -55,17 +55,21 @@
 				</div>
 				<div class="section-palantir">
 					<form class="form">
-						<label for="search-keyword" class="ersatz-title">Rechercher sur le site :</label>
-						<input type="text" id="search-keyword" placeholder="Mots-clefs" class="input-style" />
-						<button class="btn btn_default inline_btn">rechercher</button>
-						<p>Exemples : <a href="#">Jaworski</a>, <a href="#">Pevel</a>, <a href="#">Le Seigneur des Anneaux</a></p>
+						<div class="s-l">
+							<input type="text" id="search-keyword" />
+							<label for="search-keyword">Rechercher sur le site :</label>
+						</div>
+						<div class="s-r">
+							<button class="btn btn_find inline_btn">rechercher</button>
+						</div>
+						<p><strong>Exemples :</strong> <a href="#">Jaworski</a>, <a href="#">Pevel</a>, <a href="#">Le Seigneur des Anneaux</a></p>
 					</form>
 				</div>
 				<div class="nav-second">
-					<ul role="navigation">
+					<ul class="classic-nav" role="navigation">
 						<li><a href="index_section_jrr.html">J.R.R. Tolkien</a></li>
 						<li><a href="index_fantasy.html">La <em>fantasy</em></a></li>
-						<li><strong>La Bibliothèque</strong>
+						<li class="node"><strong>La Bibliothèque</strong>
 							<ul>
 								<li><a href="bibliotheque.html">Les romans</a></li>
 								<li><a href="bibliotheque.html">Les bandes dessinées</a></li>
@@ -73,7 +77,7 @@
 								<li><a href="bibliotheque.html">Les jeux</a></li>
 							</ul>
 						</li>
-						<li><strong>Les émissions</strong>
+						<li class="node"><strong>Les émissions</strong>
 							<ul>
 								<li><a href="index_podcast.html">Les podcasts d'Elbakin.net</a></li>
 								<li><a href="index_podcast.html">Dessine-moi un dragon</a></li>
@@ -81,43 +85,53 @@
 								<li><a href="index_podcast.html">Procastination</a></li>
 							</ul>
 						</li>
-						<li><a href="#">Le forum</a></li>
-						<li><a href="#">La boutique</a></li>
+						<li class="node"><strong>Notre réseau</strong>
+							<ul>
+								<li><a href="http://association-elbakin.net/" title="Le site de l'association [nouvelle fenêtre]" target="_blank">L'association Elbakin.net</a></li>
+								<li><a href="http://archibald-bellerophon.blogspot.fr/" title="Archibald [nouvelle fenêtre]" target="_blank">Archibald Bellérophon</a></li>
+							</ul>
+						</li>
 					</ul>
-					<h3>Notre réseau :</h3>
-					<ul>
-						<li><a href="http://association-elbakin.net/" title="Le site de l'association [nouvelle fenêtre]" target="_blank">L'association Elbakin.net</a></li>
-						<li><a href="http://archibald-bellerophon.blogspot.fr/" title="Archibald [nouvelle fenêtre]" target="_blank">Archibald Bellérophon</a></li>
-					</ul>
+					<div class="aside-btn">
+						<a href="#" class="shadow-btn dark-shadow-btn"><span class="icon icon-bubbles" aria-hidden="true"></span> forum</a>
+					</div>
 				</div>
 				<div class="feature-nav">
 					<ul>
 						<li>
 							<div class="feature-section clickable">
 								<img src="http://placehold.it/400x220" aria-hidden="true" alt="image illustrant la section Tolkien" />
-								<h3><a href="index_section_jrr.html">&Agrave; propos de J.R.R. Tolkien</a></h3>
-								<p>&Eacute;de de ses &oelig;uvres, sa vie, son univers&hellip;</p>
+								<div class="cartouche">
+									<h3><a href="index_section_jrr.html">&Agrave; propos de J.R.R. Tolkien</a></h3>
+									<p>&Eacute;tude de ses &oelig;uvres, sa vie, son univers&hellip;</p>
+								</div>
 							</div>
 						</li>
 						<li>
 							<div class="feature-section clickable">
 								<img src="http://placehold.it/400x220" aria-hidden="true" alt="image illustrant la section fantasy" />
-								<h3><a href="index_fantasy.html">La <em>fantasy</em></a></h3>
-								<p>Découvrir la fantasy, ses origines, ses héros&hellip;</p>
+								<div class="cartouche">
+									<h3><a href="index_fantasy.html">La <em>fantasy</em></a></h3>
+									<p>Découvrir la fantasy, ses origines, ses héros&hellip;</p>
+								</div>
 							</div>
 						</li>
 						<li>
 							<div class="feature-section clickable">
 								<img src="http://placehold.it/400x220" aria-hidden="true" alt="image illustrant la section bibliothèque" />
-								<h3><a href="bibliotheque.html">La bibliothèque</a></h3>
-								<p>Chronique de romans, de bédés, de mangas, de jeux&hellip;</p>
+								<div class="cartouche">
+									<h3><a href="bibliotheque.html">La bibliothèque</a></h3>
+									<p>Chronique de romans, de bédés, de mangas, de jeux&hellip;</p>
+								</div>
 							</div>
 						</li>
 						<li>
 							<div class="feature-section clickable">
 								<img src="http://placehold.it/400x220" aria-hidden="true" alt="image illustrant les émissions" />
-								<h3><a href="index_podcast.html">Les émissions</em></a></h3>
-								<p>Podcasts, Dessine-moi un Dragon, Culture particulière, Procastination</p>
+								<div class="cartouche">
+									<h3><a href="index_podcast.html">Les émissions</em></a></h3>
+									<p>Podcasts, Dessine-moi un Dragon, Culture particulière, Procastination</p>
+								</div>
 							</div>
 						</li>
 					</ul>

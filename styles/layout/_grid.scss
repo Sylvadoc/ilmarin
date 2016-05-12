@@ -32,6 +32,23 @@ body {
 		float: none;
 	}
 }
+.base-brick {
+	margin-bottom: 1em;
+	h2 {
+		margin: 0;
+	}
+	.inner_content {
+		@include border-radius(5px);
+		background-color: white;
+		padding: 1em;
+	}
+}
+
+/* ============== P A G E  /  O V E R L A Y
+============================================================================== */
+#garde {
+	width: 70vw;
+}
 .m-scene {
 	background: white;
 	height: 100vh;
@@ -44,17 +61,55 @@ body {
 		@include translate3d(70vw,0,0);
 	}
 }
-.base-brick {
-	margin-bottom: 1em;
-	h2 {
-		margin: 0;
-	}
-	.inner_content {
-		@include border-radius(5px);
-		background-color: white;
-		padding: 1em;
+.overlay {
+	@include backface-visibility(hidden);
+	@include transform-style(preserve-3d);
+	@include transition(transform 0.5s, visibility 0s 0.5s);
+	@include translate3d(-70vw,0,0);
+	visibility: hidden;
+	&.open {
+		@include translate3d(0,0,0);
+		@include transition(transform 0.5s);
+		visibility: visible;
 	}
 }
+
+	/* ============== R E S P O N S I V E
+	========================================================== */
+
+	@media (max-width: $large-screen) {
+		#garde {
+			width: 100vw;
+		}
+		.m-scene {
+			&.overlay-open {
+				@include translate3d(100vw,0,0);
+			}
+		}
+		.overlay {
+			@include translate3d(-100vw,0,0);
+			&.open {
+				@include translate3d(0,0,0);
+			}
+		}
+	}
+	@media (min-width: $large-screen) and (max-width: $extra-large-screen) {
+		#garde {
+			width: 80vw;
+		}
+		.m-scene {
+			&.overlay-open {
+				@include translate3d(80vw,0,0);
+			}
+		}
+		.overlay {
+			@include translate3d(-80vw,0,0);
+			&.open {
+				@include translate3d(0,0,0);
+			}
+		}
+	}
+
 
 /* ============== C O M M U N   M I S E   E N   P A G E   A R T I C L E
 ============================================================================== */

@@ -70,6 +70,15 @@
 		top: 1px;
 	}
 }
+.btn_find {
+	@include border-radius(0);
+	background-color: $base-color-elbakin;
+	font-family: $font-stack-headings;
+	margin: 0;
+	line-height: 55px;
+	height: 55px;
+	text-align: center;
+}
 .shadow-btn {
 	@include border-radius(3px);
 	@include transition(all 150ms ease-out);

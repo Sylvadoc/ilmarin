@@ -94,8 +94,8 @@
 	}
 }
 
-/* ============== P A G E   D E   G A R D E
-========================================================== */
+/* ============== P A G E   D E   G A R D E (voir _grid pour les tailles et l'opening)
+============================================================================================== */
 
 #garde {
 	background-color: white;
@@ -103,20 +103,7 @@
 	left: 0;
 	position: fixed;
 	top: 0;
-	width: 70vw;
 	z-index: 100;
-}
-.overlay {
-	@include backface-visibility(hidden);
-	@include transform-style(preserve-3d);
-	@include transition(transform 0.5s, visibility 0s 0.5s);
-	@include translate3d(-70vw,0,0);
-	visibility: hidden;
-	&.open {
-		@include translate3d(0,0,0);
-		@include transition(transform 0.5s);
-		visibility: visible;
-	}
 }
 .flex-enhanced-navigation {
 	display: flex;
@@ -131,19 +118,29 @@
 		display: flex;
 		width: 20%;
 		padding-bottom: 3rem;
+		padding-right: 3rem;
+		img {
+			margin: auto;
+		}
 	}
 	.section-palantir {
 		display: flex;
 		flex-wrap: wrap;
 		width: 80%;
-		padding-bottom: 3rem;
+		padding: 0 3rem 3rem 0;
 	}
 	.nav-second {
 		display: flex;
 		flex-direction: column;
 		width: 20%;
-		ul {
-			padding-right: 3rem;
+		padding-right: 3rem;
+		.aside-btn {
+			padding-top: 2rem;
+			text-align: center;
+			a {
+				display: inline-block;
+				margin: 0;
+			}
 		}
 	}
 	.feature-nav {
@@ -162,19 +159,160 @@
 			padding-right: 3rem;
 		}
 	}
-	.feature-section {
-		width: 100%;
-		text-align: center;
-		margin-bottom: 3rem;
-		img {
+}
+.classic-nav {
+	ul {
+		padding: 0 0 0 .5rem !important;
+		margin-left: .5rem;
+		border-left: 1px solid #ccc;
+		li:last-child {
+			border: 0;
+		}
+	}
+	li {
+		font-family: $font-stack-condensed;
+		border-bottom: 1px solid #ccc;
+		&.node {
+			border: 0;
+		}
+		a {
+			@include transition(all .3s);
 			display: block;
-			width: 100%;
-			height: auto;
+			padding: .5rem 0;
+			position: relative;
+			&:hover, &:active, &:focus {
+				background-color: #E8E8EE;
+				text-decoration: none;
+				padding-left: 2rem;
+				&:before {
+					position: absolute;
+					content: "\2192";
+					left: .5rem;
+				}
+			}
 		}
-		h3, p {
-			margin: 0;
-			padding: 0;
+	}
+	strong {
+		display: block;
+		font-family: $font-stack-simili;
+		text-transform: uppercase;
+		margin: .5rem 0;
+	}
+}
+.section-palantir {
+	form {
+		position: relative;
+		width: 100%;
+		label {
+			@include transition(all .3s);
+			@include rem(2);
+			position: absolute;
+			top: 3.2rem;
+			left: 1rem;
+			color: #ccc;
+			font-style: italic;
+			&.focused {
+				top: 0;
+			}
 		}
+		.s-l, .s-r {
+			padding-top: 2rem;
+		}
+		.s-l {
+			width: 85%;
+			float: left;
+			input {
+				@include rem(2);
+				border: 1px solid #ccc;
+				line-height: 55px;
+				margin: 0;
+				padding: 1rem;
+				height: 55px;
+				width: 100%;
+				&:focus {
+					outline: 0;
+					border: 0;
+					color: $base-color-elbakin;
+					border-bottom: 2px solid $base-color-elbakin;
+				}
+				&:focus ~ label {
+					top: -1rem;
+					color: black;
+				}
+			}
+		}
+		.s-r {
+			width: 15%;
+			float: left;
+			button {
+				width: 100%;
+			}
+		}
+		p {
+			padding-top: 1rem;
+			clear: both;
+		}
+	}
+}
+.feature-section {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 3rem;
+	overflow: hidden;
+	position: relative;
+	&:before {
+		@include transition(all cubic-bezier(.17,.67,.83,.67) .2s);
+		border: 1px solid white;
+		content: '';
+		display: block;
+		opacity: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		position: absolute;
+		z-index: 1;
+	}
+	&:hover {
+		&:before {
+			opacity: 1;
+			left: 15px;
+			right: 15px;
+			top: 15px;
+			bottom: 15px;
+		}
+		img {
+			@include scale(1.1);
+		}
+	}
+	img {
+		@include transition(all cubic-bezier(.17,.67,.83,.67) .2s);
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	a {
+		color: white;
+		&:hover, &:active, &:focus {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+	.cartouche {
+		@include translate(0,-50%);
+		color: white;
+		position: absolute;
+		top: 50%;
+		width: 100%;
+	}
+	h3 {
+		font-family: $font-stack-simili;
+		margin: 1rem 0 0;
+		text-transform: uppercase;
+	}
+	p {
+		margin: 0;
+		font-style: italic;
 	}
 }
 
