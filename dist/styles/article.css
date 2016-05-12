@@ -848,7 +848,7 @@ body {
 
 /* ============== R E S P O N S I V E
 ========================================================== */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .m-page {
     padding-top: 50px;
   }
@@ -1060,12 +1060,6 @@ body {
   ======================================= */
   /* ====== MENU HEADER SIMPLE
   ======================================= */
-  /* ====== P A N E L    M E N U
-  ======================================= */
-  /* ====== R E C H E R C H E R
-  ======================================= */
-  /* ====== N E T W O R K
-  ======================================= */
 }
 .the-header .inner-wrap {
   background: transparent url("../../images/bg-grad.png") no-repeat bottom center;
@@ -1182,103 +1176,6 @@ body {
 .the-header.sticky .branding .elbakin {
   display: none;
 }
-.the-header.sticky .panel {
-  margin: 1rem 0 0 0;
-  width: 100%;
-}
-.the-header.sticky .panel .form label {
-  display: none;
-}
-.the-header.sticky .panel .form .input-style {
-  border-radius: 0;
-  background-clip: padding-box;
-  font-size: 19.6px;
-  font-size: 1.4rem;
-  background: white;
-  color: #272727;
-}
-.the-header.sticky .panel .form .btn {
-  font-size: 19.6px;
-  font-size: 1.4rem;
-  line-height: 30px;
-}
-.the-header.sticky .panel .form p {
-  display: none;
-}
-.the-header .panel {
-  display: none;
-  width: 33%;
-  margin: 3rem auto;
-}
-.the-header .panel .form label {
-  color: white;
-  display: block;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.the-header .panel .form .half-form {
-  width: 40%;
-  margin-right: 1rem;
-  display: inline-block;
-}
-.the-header .panel .form .half-form:last-of-type {
-  margin-right: 0;
-}
-.the-header .panel .form .input-style {
-  border-radius: 2px;
-  background-clip: padding-box;
-  font-size: 28px;
-  font-size: 2rem;
-  background: white;
-  border: 1px solid #eaeaea;
-  display: inline-block;
-  font-style: italic;
-  padding: .5rem;
-  width: 100%;
-}
-.the-header .panel .form p, .the-header .panel .form a {
-  color: white;
-}
-.the-header .hide-panel {
-  -webkit-animation: HidePanel cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s 1;
-  animation: HidePanel cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s 1;
-}
-.the-header .show-panel {
-  -webkit-animation: ShowPanel cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s 1;
-  animation: ShowPanel cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s 1;
-  display: block;
-}
-.the-header #search .input-style {
-  width: 84%;
-}
-.the-header #web {
-  margin: 0 auto;
-  width: 45%;
-}
-.the-header #web ul {
-  text-align: center;
-}
-.the-header #web ul li {
-  display: inline-block;
-  margin: 0 1rem;
-  max-width: 130px;
-}
-.the-header #web ul li img {
-  height: auto;
-  width: 100%;
-}
-.the-header #web ul li span {
-  display: block;
-  font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
-  line-height: 1;
-}
-.the-header #web ul li:hover span {
-  color: #FE9E00;
-}
-.the-header #web a {
-  color: white;
-  text-transform: uppercase;
-}
 
 /* ============== R E S P O N S I V E
 ========================================================== */
@@ -1290,19 +1187,6 @@ body {
 @media (min-width: 480px) and (max-width: 768px) {
   header.sticky .aside_menu span:first-child {
     display: none;
-  }
-  header.sticky .panel {
-    padding: 0 7% 0 22%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  header.sticky .panel {
-    padding: 0 5% 0 11%;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
-  header.sticky .panel {
-    padding: 0 0 0 9%;
   }
 }
 /* ============== H E A D  S E C T I O N
@@ -3933,7 +3817,7 @@ body {
     background-color: transparent;
     background-image: url("../../images/simonetti_1280.jpg");
     background-repeat: no-repeat;
-    background-position: 0 77%;
+    background-position: 0 0;
     background-attachment: fixed;
   }
 }

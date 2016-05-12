@@ -256,8 +256,10 @@
 		-o-animation: Appear .5s 1;
 		animation: Appear .5s 1;
 	}
+
 	/* ====== MENU HEADER SIMPLE
 	======================================= */
+
 	ul {
 		list-style: none none;
 		margin: 0;
@@ -331,114 +333,6 @@
 				display: none;
 			}
 		}
-		.panel {
-			margin: 1rem 0 0 0;
-			width: 100%;
-			.form {
-				label {
-					display: none;
-				}
-				.input-style {
-					@include border-radius(0);
-					@include rem(1.4);
-					background: white;
-					color: $base-color;
-				}
-				.btn {
-					@include rem(1.4);
-					line-height: 30px;
-				}
-				p { display: none; }
-			}
-		}
-	}
-	/* ====== P A N E L    M E N U
-	======================================= */
-	.panel {
-		display: none;
-		width: 33%;
-		margin: 3rem auto;
-		.form {
-			label {
-				color: white;
-				display: block;
-				font-weight: bold;
-				text-transform: uppercase;
-			}
-			.half-form {
-				width: 40%;
-				margin-right: 1rem;
-				&:last-of-type {
-					margin-right: 0;
-				}
-				display: inline-block;
-			}
-			.input-style {
-				@include border-radius(2px);
-				@include rem(2);
-				background: white;
-				border: 1px solid #eaeaea;
-				display: inline-block;
-				font-style: italic;
-				padding: .5rem;
-				width: 100%;
-			}
-			p, a {
-				color: white;
-			}
-		}
-	}
-	.hide-panel {
-		-webkit-animation: HidePanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
-		-moz-animation: HidePanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
-		-o-animation: HidePanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
-		animation: HidePanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
-	}
-	.show-panel {
-		-webkit-animation: ShowPanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
-		-moz-animation: ShowPanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
-		-o-animation: ShowPanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
-		animation: ShowPanel cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
-		display: block;
-	}
-	/* ====== R E C H E R C H E R
-	======================================= */
-	#search {
-		.input-style {
-			width: 84%;
-		}
-	}
-	/* ====== N E T W O R K
-	======================================= */
-	#web {
-		margin: 0 auto;
-		width: 45%;
-		ul {
-			text-align: center;
-			li {
-				display: inline-block;
-				margin: 0 1rem;
-				max-width: 130px;
-				img {
-					height: auto;
-					width: 100%;
-				}
-				span {
-					display: block;
-					font-family: $font-stack-headings;
-					line-height: 1;
-				}
-				&:hover {
-					span {
-						color: $orange-color-elbakin;
-					}
-				}
-			}
-		}
-		a {
-			color: white;
-			text-transform: uppercase;
-		}
 	}
 }
 
@@ -462,27 +356,18 @@
 					display: none;
 				}
 			}
-			.panel {
-				padding: 0 7% 0 22%;
-			}
 		}
 	}
 }
 @media (min-width: $small-screen) and (max-width: $medium-screen) {
 	header {
 		&.sticky {
-			.panel {
-				padding: 0 5% 0 11%;
-			}
 		}
 	}
 }
 @media (min-width: $large-screen) and (max-width: $ultra-large-screen) {
 	header {
 		&.sticky {
-			.panel {
-				padding: 0 0 0 9%;
-			}
 		}
 	}
 }
