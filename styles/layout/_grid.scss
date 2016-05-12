@@ -80,6 +80,9 @@ body {
 	@media (max-width: $large-screen) {
 		#garde {
 			width: 100vw;
+			.menu-close {
+				display: block;
+			}
 		}
 		.m-scene {
 			&.overlay-open {
@@ -96,6 +99,9 @@ body {
 	@media (min-width: $large-screen) and (max-width: $extra-large-screen) {
 		#garde {
 			width: 80vw;
+			.menu-close {
+				display: none;
+			}
 		}
 		.m-scene {
 			&.overlay-open {

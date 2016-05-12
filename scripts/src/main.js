@@ -5,18 +5,15 @@ $(document).ready(function() {
 	'use strict';
 
 	// overlay navigation
-	$('.menu-trigger').click(function() {
+	$('#trigger').click(function() {
 		$('.m-scene').toggleClass('overlay-open');
 		$('.overlay').toggleClass('open');
-		$('.menu-close').removeClass('animate');
-	});
-	$('.menu-close').hover(function() {
-		$(this).toggleClass('animate');
+		$(this).find('.icon').toggleClass('icon-burger icon-cross');
 	});
 	$('.menu-close').click(function() {
-		$(this).removeClass('animate');
 		$('.m-scene').removeClass('overlay-open');
 		$('.overlay').removeClass('open');
+		$('#trigger').removeClass('icon-cross').addClass('icon-burger');
 	});
 
 	// onscroll sticky header

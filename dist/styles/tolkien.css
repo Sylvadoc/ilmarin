@@ -652,6 +652,9 @@ body {
   #garde {
     width: 100vw;
   }
+  #garde .menu-close {
+    display: block;
+  }
 
   .m-scene.overlay-open {
     transform: translate3d(100vw, 0, 0);
@@ -679,6 +682,9 @@ body {
 @media (min-width: 1280px) and (max-width: 1600px) {
   #garde {
     width: 80vw;
+  }
+  #garde .menu-close {
+    display: none;
   }
 
   .m-scene.overlay-open {
@@ -2122,10 +2128,65 @@ body {
           flex-wrap: wrap;
   padding: 3rem 0 0 3rem;
 }
+.flex-enhanced-navigation .menu-close {
+  display: none;
+  position: absolute;
+  right: 3rem;
+  top: 1rem;
+}
 .flex-enhanced-navigation ul {
   list-style: none none;
   margin: 0;
   padding: 0;
+}
+.flex-enhanced-navigation .footer-nav {
+  border-top: 2px solid #ccc;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3rem 3rem 0 0;
+  position: relative;
+  width: 100%;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.flex-enhanced-navigation .footer-nav:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
+.flex-enhanced-navigation .footer-nav p, .flex-enhanced-navigation .footer-nav ul {
+  padding-top: 3rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex-enhanced-navigation .footer-nav ul {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+.flex-enhanced-navigation .footer-nav ul li {
+  margin: 0 0 0 1rem;
+}
+.flex-enhanced-navigation .footer-nav ul a {
+  font-size: 35px;
+  font-size: 2.5rem;
+}
+.flex-enhanced-navigation .footer-nav ul .icon-twitter {
+  color: #55ACEE;
+}
+.flex-enhanced-navigation .footer-nav ul .icon-facebook {
+  color: #47639E;
+}
+.flex-enhanced-navigation .footer-nav ul .icon-google-plus {
+  color: #DD4B39;
 }
 .flex-enhanced-navigation .nav-logo {
   display: -webkit-flex;
@@ -2356,8 +2417,6 @@ body {
   font-style: italic;
 }
 
-/* ============== R E S P O N S I V E
-========================================================== */
 /* ============== B L O C   C H R O N I Q U E S
 ========================================================== */
 #all_new_chronique {
