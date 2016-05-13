@@ -251,6 +251,8 @@
 			left: 1rem;
 			color: #ccc;
 			font-style: italic;
+			text-transform: none;
+			font-family: $font-stack-common;
 			&.focused {
 				top: 0;
 			}
@@ -364,6 +366,8 @@
 
 @media (max-width: $tiny-screen) {
 	#garde {
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
 		.flex-enhanced-navigation {
 			flex-direction: column;
 			.nav-logo, .feature-nav, .footer-nav {
@@ -409,6 +413,8 @@
 }
 @media (min-width: $tiny-screen) and (max-width: $large-screen) {
 	#garde {
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
 		.flex-enhanced-navigation {
 			.nav-logo, .footer-nav {
 				display: none;
@@ -428,6 +434,71 @@
 				}
 				.text-icon {
 					display: none;
+				}
+			}
+		}
+	}
+}
+@media (min-width: $tiny-screen) and (max-width: $medium-screen) and (orientation:portrait) {
+	#garde {
+		.flex-enhanced-navigation {
+			.nav-second {
+				width: 100%;
+				ul {
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					li {
+						flex-basis: 48%;
+						&.node {
+							margin-bottom: 1em;
+						}
+					}
+					ul {
+						flex-direction: column;
+					}
+				}
+			}
+			.feature-nav {
+				display: none;
+			}
+		}
+	}
+}
+@media (min-width: $medium-screen) and (max-height: 890px), (min-width: $tiny-screen) and (orientation:landscape) {
+	#garde {
+		.flex-enhanced-navigation {
+			.section-palantir {
+				.icon {
+					display: block;
+				}
+				.text-icon {
+					display: none;
+				}
+			}
+			.nav-second {
+				width: 100%;
+				ul {
+					display: flex;
+					justify-content: space-between;
+					ul {
+						flex-direction: column;
+					}
+				}
+			}
+			.feature-nav {
+				padding-top: 3rem;
+				width: 100%;
+				ul {
+					flex-wrap: initial;
+				}
+				.feature-section {
+					.cartouche {
+						@include rem(1);
+						p {
+							display: none;
+						}
+					}
 				}
 			}
 		}
