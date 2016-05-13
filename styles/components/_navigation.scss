@@ -465,7 +465,7 @@
 		}
 	}
 }
-@media (min-width: $medium-screen) and (max-height: 890px), (min-width: $tiny-screen) and (orientation:landscape) {
+@media (min-width: $medium-screen) and (max-height: 890px), (min-width: $tiny-screen) and (max-width: $extra-large-screen) and (orientation:landscape) {
 	#garde {
 		.flex-enhanced-navigation {
 			.section-palantir {
