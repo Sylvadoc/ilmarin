@@ -163,12 +163,18 @@ $(document).ready(function() {
 		});
 	}
 
-	// select
+	// Les differents select
 	if ($('.preview').length) {
 		$('#le_cycle').select2();
 	}
 	if ($('#les_auteurs').length) {
 		$('#les_auteurs').select2();
+	}
+	if ($('#les_scenaristes').length) {
+		$('#les_scenaristes').select2();
+	}
+	if ($('#les_dessinateurs').length) {
+		$('#les_dessinateurs').select2();
 	}
 
 	// truncate text or not
