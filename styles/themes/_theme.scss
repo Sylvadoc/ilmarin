@@ -99,6 +99,9 @@ section:nth-child(2n+2), #most, .m-page .grey-section {
 		@include gradient-h(#24C6DC,#514A9D);
 	}
 }
+#all_libraries {
+	@include gradient-h($base-color-elbakin,$orange-color-elbakin);
+}
 
 /* ============== F O O T E R   C O L O R S
 ========================================================== */

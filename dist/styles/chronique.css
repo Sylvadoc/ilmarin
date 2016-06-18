@@ -573,7 +573,7 @@ body {
 .row {
   margin: 0 auto;
   max-width: 91.429em;
-  /* largeur du site par défaut */
+  /* largeur du site par d├®faut */
 }
 
 .columns-inline .columns {
@@ -592,6 +592,22 @@ body {
   background-clip: padding-box;
   background-color: white;
   padding: 1em;
+}
+
+.js-close {
+  opacity: 0 !important;
+  top: -60px !important;
+  pointer-events: none;
+}
+
+.js-close-bis {
+  opacity: 0 !important;
+  top: 60px !important;
+  pointer-events: none;
+}
+
+.js-open {
+  height: 80px !important;
 }
 
 /* ============== P A G E  /  O V E R L A Y
@@ -2694,6 +2710,56 @@ body {
   top: 2px;
 }
 
+.unusual-nav {
+  position: relative;
+  text-align: center;
+}
+.unusual-nav .unusual-close, .unusual-nav .unusual-collapse {
+  font-size: 28px;
+  font-size: 2rem;
+  background: white;
+  border-radius: 60px;
+  color: #BE2700;
+  cursor: pointer;
+  opacity: 1;
+  transition: all .3s;
+}
+.unusual-nav .unusual-close .icon, .unusual-nav .unusual-collapse .icon {
+  transition: all .3s;
+}
+.unusual-nav .unusual-close:hover .icon, .unusual-nav .unusual-collapse:hover .icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.unusual-nav .unusual-collapse {
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.7);
+  height: 60px;
+  left: 50%;
+  line-height: 60px;
+  position: absolute;
+  top: -30px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60px;
+}
+.unusual-nav .unusual-close {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 2rem;
+  position: relative;
+  top: 0;
+  width: 40px;
+}
+.unusual-nav .unusual-content {
+  height: 0;
+  overflow: hidden;
+  transition: all .3s;
+}
+.unusual-nav .unusual-content a {
+  margin: 2rem;
+}
+
 /* ================ H E A D E R
 ===================================================== */
 #form_all {
@@ -3039,6 +3105,8 @@ body {
     width: 80%;
   }
 }
+/* ================ M A N G A S
+===================================================== */
 #content_icon {
   position: relative;
   height: 210px;
@@ -4388,6 +4456,11 @@ section:nth-child(2n+2), #most, .m-page .grey-section {
 #perfect.jeff {
   background-image: linear-gradient(to right, #24C6DC, #514A9D);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', endColorStr='#514A9D', gradientType='1');
+}
+
+#all_libraries {
+  background-image: linear-gradient(to right, #BE2700, #FE9E00);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#BE2700', endColorStr='#FE9E00', gradientType='1');
 }
 
 /* ============== F O O T E R   C O L O R S

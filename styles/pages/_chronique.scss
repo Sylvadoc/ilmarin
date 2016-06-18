@@ -346,6 +346,52 @@
 		top: 2px;
 	}
 }
+.unusual-nav {
+	position: relative;
+	text-align: center;
+	.unusual-close, .unusual-collapse {
+		@include rem(2);
+		background: white;
+		border-radius: 60px;
+		color: $base-color-elbakin;
+		cursor: pointer;
+		opacity: 1;
+		transition: all .3s;
+		.icon {
+			transition: all .3s;
+		}
+		&:hover .icon {
+			transform: rotate(180deg);
+		}
+	}
+	.unusual-collapse {
+		box-shadow: 0 3px 0 rgba(0,0,0,0.7);
+		height: 60px;
+		left: 50%;
+		line-height: 60px;
+		position: absolute;
+		top: -30px;
+		transform: translateX(-50%);
+		width: 60px;
+	}
+	.unusual-close {
+		display: inline-block;
+		height: 40px;
+		line-height: 40px;
+		margin-right: 2rem;
+		position: relative;
+		top: 0;
+		width: 40px;
+	}
+	.unusual-content {
+		height: 0;
+		overflow: hidden;
+		transition: all .3s;
+		a {
+			margin: 2rem;
+		}
+	}
+}
 
 /* ================ H E A D E R
 ===================================================== */

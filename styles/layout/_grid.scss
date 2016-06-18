@@ -43,6 +43,19 @@ body {
 		padding: 1em;
 	}
 }
+.js-close {
+	opacity: 0 !important;
+	top: -60px !important;
+	pointer-events: none;
+}
+.js-close-bis {
+	opacity: 0 !important;
+	top: 60px !important;
+	pointer-events: none;
+}
+.js-open {
+	height: 80px !important;
+}
 
 /* ============== P A G E  /  O V E R L A Y
 ============================================================================== */

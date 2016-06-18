@@ -29,7 +29,6 @@ gulp.task('styles', function() {
     .pipe(cssnano())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/styles'))
-    .pipe(notify({ message: 'Styles task complete' }));
 });
 
 // Scripts
@@ -50,7 +49,6 @@ gulp.task('images', function() {
   return gulp.src('images/**/*')
     .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
     .pipe(gulp.dest('dist/images'))
-    .pipe(notify({ message: 'Images task complete' }));
 });
 
 // Clean

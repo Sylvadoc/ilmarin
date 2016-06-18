@@ -573,7 +573,7 @@ body {
 .row {
   margin: 0 auto;
   max-width: 91.429em;
-  /* largeur du site par défaut */
+  /* largeur du site par d├®faut */
 }
 
 .columns-inline .columns {
@@ -592,6 +592,22 @@ body {
   background-clip: padding-box;
   background-color: white;
   padding: 1em;
+}
+
+.js-close {
+  opacity: 0 !important;
+  top: -60px !important;
+  pointer-events: none;
+}
+
+.js-close-bis {
+  opacity: 0 !important;
+  top: 60px !important;
+  pointer-events: none;
+}
+
+.js-open {
+  height: 80px !important;
 }
 
 /* ============== P A G E  /  O V E R L A Y
@@ -4330,6 +4346,11 @@ section:nth-child(2n+2), #most, .m-page .grey-section {
 #perfect.jeff {
   background-image: linear-gradient(to right, #24C6DC, #514A9D);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', endColorStr='#514A9D', gradientType='1');
+}
+
+#all_libraries {
+  background-image: linear-gradient(to right, #BE2700, #FE9E00);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#BE2700', endColorStr='#FE9E00', gradientType='1');
 }
 
 /* ============== F O O T E R   C O L O R S

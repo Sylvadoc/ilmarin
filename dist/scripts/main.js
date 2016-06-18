@@ -343,6 +343,18 @@ $(document).ready(function() {
 		window.location = $(this).find("a").attr("href");
 	});
 
+	//unusual navigation
+	$('.js-collapse').click(function() {
+		$(this).addClass('js-close');
+		$('.js-close-unusual').removeClass('js-close-bis');
+		$('.unusual-content').addClass('js-open');
+	});
+	$('.js-close-unusual').click(function() {
+		$(this).addClass('js-close-bis');
+		$('.js-collapse').removeClass('js-close');
+		$('.unusual-content').removeClass('js-open');
+	});
+
 	// flip forms
 	var formHeight = $('#why-sign').height() + 100;
 	$('#form-sign-in input, .why-account').click(function() {
