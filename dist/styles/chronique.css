@@ -608,6 +608,7 @@ body {
 
 .js-open {
   height: 80px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 /* ============== P A G E  /  O V E R L A Y
@@ -2710,19 +2711,25 @@ body {
   top: 2px;
 }
 
+/* ================ S O U S  -  M E N U
+===================================================== */
 .unusual-nav {
+  border-top: 1px solid rgba(0, 0, 0, 0.6);
   position: relative;
   text-align: center;
 }
 .unusual-nav .unusual-close, .unusual-nav .unusual-collapse {
-  font-size: 28px;
-  font-size: 2rem;
+  font-size: 26.6px;
+  font-size: 1.9rem;
   background: white;
-  border-radius: 60px;
+  border-radius: 40px;
   color: #BE2700;
   cursor: pointer;
+  height: 40px;
+  line-height: 40px;
   opacity: 1;
   transition: all .3s;
+  width: 40px;
 }
 .unusual-nav .unusual-close .icon, .unusual-nav .unusual-collapse .icon {
   transition: all .3s;
@@ -2733,23 +2740,18 @@ body {
 }
 .unusual-nav .unusual-collapse {
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.7);
-  height: 60px;
   left: 50%;
-  line-height: 60px;
   position: absolute;
-  top: -30px;
+  top: -20px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 60px;
 }
 .unusual-nav .unusual-close {
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
   display: inline-block;
-  height: 40px;
-  line-height: 40px;
   margin-right: 2rem;
   position: relative;
   top: 0;
-  width: 40px;
 }
 .unusual-nav .unusual-content {
   height: 0;
@@ -4412,7 +4414,7 @@ section:nth-child(2n+2), #most, .m-page .grey-section {
   color: white;
 }
 
-#moreover {
+#moreover, #all_libraries {
   background-image: linear-gradient(to right, #2E1437, #948E99);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#2E1437', endColorStr='#948E99', gradientType='1');
 }
@@ -4456,11 +4458,6 @@ section:nth-child(2n+2), #most, .m-page .grey-section {
 #perfect.jeff {
   background-image: linear-gradient(to right, #24C6DC, #514A9D);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', endColorStr='#514A9D', gradientType='1');
-}
-
-#all_libraries {
-  background-image: linear-gradient(to right, #BE2700, #FE9E00);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#BE2700', endColorStr='#FE9E00', gradientType='1');
 }
 
 /* ============== F O O T E R   C O L O R S

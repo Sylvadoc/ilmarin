@@ -346,17 +346,25 @@
 		top: 2px;
 	}
 }
+
+/* ================ S O U S  -  M E N U
+===================================================== */
+
 .unusual-nav {
+	border-top: 1px solid rgba(0,0,0,0.6);
 	position: relative;
 	text-align: center;
 	.unusual-close, .unusual-collapse {
-		@include rem(2);
+		@include rem(1.9);
 		background: white;
-		border-radius: 60px;
+		border-radius: 40px;
 		color: $base-color-elbakin;
 		cursor: pointer;
+		height: 40px;
+		line-height: 40px;
 		opacity: 1;
 		transition: all .3s;
+		width: 40px;
 		.icon {
 			transition: all .3s;
 		}
@@ -366,22 +374,17 @@
 	}
 	.unusual-collapse {
 		box-shadow: 0 3px 0 rgba(0,0,0,0.7);
-		height: 60px;
 		left: 50%;
-		line-height: 60px;
 		position: absolute;
-		top: -30px;
+		top: -20px;
 		transform: translateX(-50%);
-		width: 60px;
 	}
 	.unusual-close {
+		box-shadow: 0 3px 0 rgba(0,0,0,0.5);
 		display: inline-block;
-		height: 40px;
-		line-height: 40px;
 		margin-right: 2rem;
 		position: relative;
 		top: 0;
-		width: 40px;
 	}
 	.unusual-content {
 		height: 0;

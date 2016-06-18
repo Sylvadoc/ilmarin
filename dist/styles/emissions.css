@@ -608,6 +608,7 @@ body {
 
 .js-open {
   height: 80px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 /* ============== P A G E  /  O V E R L A Y
@@ -4302,7 +4303,7 @@ section:nth-child(2n+2), #most, .m-page .grey-section {
   color: white;
 }
 
-#moreover {
+#moreover, #all_libraries {
   background-image: linear-gradient(to right, #2E1437, #948E99);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#2E1437', endColorStr='#948E99', gradientType='1');
 }
@@ -4346,11 +4347,6 @@ section:nth-child(2n+2), #most, .m-page .grey-section {
 #perfect.jeff {
   background-image: linear-gradient(to right, #24C6DC, #514A9D);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#24C6DC', endColorStr='#514A9D', gradientType='1');
-}
-
-#all_libraries {
-  background-image: linear-gradient(to right, #BE2700, #FE9E00);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#BE2700', endColorStr='#FE9E00', gradientType='1');
 }
 
 /* ============== F O O T E R   C O L O R S

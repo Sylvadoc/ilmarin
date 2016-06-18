@@ -67,7 +67,7 @@ section:nth-child(2n+2), #most, .m-page .grey-section {
 	background-repeat: no-repeat;
 	color: white;
 }
-#moreover {
+#moreover, #all_libraries {
 	@include gradient-h(#2E1437,#948E99);
 }
 #discover, #social_block {
@@ -98,9 +98,6 @@ section:nth-child(2n+2), #most, .m-page .grey-section {
 	&.jeff {
 		@include gradient-h(#24C6DC,#514A9D);
 	}
-}
-#all_libraries {
-	@include gradient-h($base-color-elbakin,$orange-color-elbakin);
 }
 
 /* ============== F O O T E R   C O L O R S
