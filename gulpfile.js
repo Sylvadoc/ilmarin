@@ -11,6 +11,9 @@ var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
+	imageminSvgo = require('imagemin-svgo'),
+	pngquant = require('imagemin-pngquant'),
+	svgSprite = require('gulp-svg-sprite'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
@@ -18,6 +21,40 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     sourcemaps = require('gulp-sourcemaps'),
     del = require('del');
+
+// configuration des plugins
+var imageminConfig = {
+	progressive: true,
+	use: [pngquant()],
+	svgoPlugins: [
+		{
+			removeViewBox: false,
+		}, {
+			cleanupIDs: false,
+		}
+	]
+};
+
+var svgConfig = {
+	shape               : {
+		dimension       : {         // Set maximum dimensions
+			maxWidth    : 32,
+			maxHeight   : 32
+		},
+		spacing         : {         // Add padding
+			padding     : 0
+		}
+	},
+	mode                : {
+		view            : {         // Activate the «view» mode
+			bust        : false,
+			render      : {
+				scss    : true      // Activate Sass output (with default options)
+			}
+		},
+		symbol          : true      // Activate the «symbol» mode
+	}
+};
 
 // Styles
 gulp.task('styles', function() {
@@ -47,8 +84,15 @@ gulp.task('scripts', function() {
 // Images
 gulp.task('images', function() {
   return gulp.src('images/**/*')
-    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(cache(imagemin(imageminConfig)))
     .pipe(gulp.dest('dist/images'))
+});
+
+// About svgs
+gulp.task('build_svg', function () {
+	return gulp.src('images/svg/icons/*')
+		.pipe(svgSprite(svgConfig))
+		.pipe(gulp.dest('dist/images/svg'));
 });
 
 // Clean
