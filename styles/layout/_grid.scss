@@ -56,6 +56,12 @@ body {
 .js-open {
 	height: 80px !important;
 }
+.lock-overflow {
+    position: fixed !important;
+    width: 100%;
+    height: 100%;
+    overflow: hidden !important;
+}
 
 /* ============== P A G E  /  O V E R L A Y
 ============================================================================== */

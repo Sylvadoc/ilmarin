@@ -243,24 +243,23 @@
 ========================================================== */
 
 .other_news {
-	@extend %clearfix;
 	background: white !important;
 	margin-bottom: 4em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	a {
 		@include transition(all .1s ease-in);
 		background-color: $news-background;
 		background-position: 0 0;
 		background-size: cover;
 		display: block;
-		float: left;
+		padding: 1rem;
 		position: relative;
-		width: 48.5%;
+		width: 49%;
 		&+a {
 			text-align: right;
-			float: right;
-			.cartouche {
-				margin: 1rem 1rem 0 0;
-			}
 		}
 		&:hover, &:focus {
 			background-position: 0 100%;
@@ -283,7 +282,6 @@
 			display: inline-block;
 			font-family: $font-stack-headings;
 			line-height: 1;
-			margin: 1rem 0 0 1rem;
 			padding: .3em .5em;
 			position: relative;
 			text-transform: uppercase;
@@ -292,7 +290,7 @@
 			color: white;
 			font-family: $font-stack-simili;
 			font-size: $h3-size;
-			margin: 1rem;
+			margin-top: 1rem;
 			position: relative;
 		}
 	}
@@ -302,7 +300,6 @@
 ========================================================== */
 
 .news_section {
-	@extend %clearfix;
 	border-top: 1px solid #ccc;
 	h2 {
 		text-transform: uppercase;
@@ -312,19 +309,19 @@
 		@include rem(2);
 	}
 	.more_news {
-		float: right;
 		margin-top: .6em;
 	}
 	ul {
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
 		list-style: none none;
 		margin: 0;
 		padding: 0;
 		li {
 			background: white;
 			margin-bottom: 2em;
-			&:nth-child(4n+1) {
-				clear: left;
-			}
+            width: 25%;
 			a {
 				border: 1px solid #ccc;
 				display: block;
@@ -332,7 +329,7 @@
 				&:hover, &:focus {
 					text-decoration: none;
 					p {
-						background: $orange-color-elbakin;
+						background-color: $orange-color-elbakin;
 						color: white;
 					}
 				}
@@ -345,7 +342,8 @@
 					font-family: $font-stack-headings;
 					padding: 0 .5rem;
 					position: relative;
-					background: white;
+					background-color: white;
+					@include transition(all .2s ease-in);
 					&:before {
 						@include rotate(-3deg);
 						background: inherit;

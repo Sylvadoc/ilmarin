@@ -12,6 +12,9 @@
 			display: inline-block;
 			vertical-align: middle;
 		}
+        .filter-news {
+            background-color: white;
+        }
 		option {
 			display: block;
 		}
@@ -70,15 +73,23 @@
 	.footer_chrono {
 		overflow: hidden;
 		background: #efefef;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		flex-wrap: wrap;
 		padding: 1rem;
-		a {
+		.all-chrono {
 			@include rem(1.2);
 			background-color: $base-color-elbakin;
 			color: white;
 			display: inline-block;
-			float: right;
 			padding: 2px 5px;
 			text-align: right;
+		}
+		ul {
+		    display: flex;
+		    flex-direction: row;
+		    flex-wrap: wrap;
 		}
 	}
 }

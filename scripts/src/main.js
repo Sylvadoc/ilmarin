@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 	// overlay navigation
 	$('#trigger').click(function() {
-		$('.m-scene').toggleClass('overlay-open');
+		$('.m-scene').toggleClass('overlay-open lock-overflow');
 		$('.overlay').toggleClass('open');
 		$(this).find('.icon').toggleClass('icon-burger icon-cross');
 	});

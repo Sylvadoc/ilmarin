@@ -257,8 +257,10 @@
                                         <a href="#">twitter</a>
                                         <a href="#">google +</a>
                                     </div>
-                                    <a href="#" class="btn_simple">Source</a>
-            						<a href="#" class="btn_simple btn_comment"><span class="icon icon-bubbles"></span> Commenter sur le forum</a>
+                                    <div class="other-tools">
+										<a href="#" class="btn_simple btn_comment"><span class="icon icon-bubbles"></span> Commenter sur le forum</a>
+										<a href="#" class="btn_simple">Source</a>
+									</div>
             					</div>
             				</section>
             			</article>
@@ -338,7 +340,7 @@
 						<aside id="chrono" role="complementary">
                             <div class="header_chrono">
                                 <h2><span class="icon icon-clock"></span> chrono</h2>
-                                <select name="filter_news">
+                                <select class="filter-news" id="filter_news" name="filter_news">
                                     <option value="01">Tout</option>
                                     <option value="02">La Bataille des cinq armées</option>
                                     <option value="03">J.R.R. Tolkien</option>
@@ -365,12 +367,12 @@
                                 </ul>
                             </div>
                             <div class="footer_chrono">
-                                <ul>
+                                <ul class="pagination-chrono">
                                     <li><a href="#" title="page précédente"><span class="icon icon-keyboard-arrow-left"></span><span class="text">précédent</span></a></li>
                                     <li>1 / 10</li>
                                     <li><a href="#" title="page suivante"><span class="icon icon-keyboard-arrow-right"></span><span class="text">suivant</span></a></li>
                                 </ul>
-                                <a href="#">Tous les chronos</a>
+                                <a class="all-chrono" href="#">Tous les chronos</a>
                             </div>
                         </aside>
             			<!-- /end chrono -->
