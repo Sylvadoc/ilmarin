@@ -569,7 +569,7 @@ h6, .h6-like {
 /* ============== I C O N   B U R G E R
 	========================================================== */
 .icon-burger {
-  transition: all 0.4s;
+  transition: all .4s;
   background-color: #333;
   height: 2px;
   width: 15px;
@@ -599,15 +599,15 @@ h6, .h6-like {
 }
 
 .mp-pushed .icon-burger {
-  transform: translateY(0) translateX(-30px) rotate(0deg);
+  transform: translate3d(30px, 0, 0) rotate(0deg);
 }
 
 .mp-pushed .icon-burger:before {
-  transform: translateY(4px) translateX(30px) rotate(-45deg);
+  transform: translate3d(30px, 4px, 0) rotate(-45deg);
 }
 
 .mp-pushed .icon-burger:after {
-  transform: translateY(-4px) translateX(30px) rotate(45deg);
+  transform: translate3d(30px, -4px, 0) rotate(45deg);
 }
 
 /********************************************************************************************************************************************************************************
@@ -1469,10 +1469,9 @@ body {
 /********************************************************************************************************************************************************************************/
 .btn {
   border-radius: 4px;
-  background-clip: padding-box;
   font-size: 22.4px;
   font-size: 1.6rem;
-  transition: all 0.3s ease-out;
+  transition: all .3s ease-out;
   border: 0;
   color: white;
   cursor: pointer;
@@ -1552,7 +1551,6 @@ body {
 
 .btn_find {
   border-radius: 0;
-  background-clip: padding-box;
   background-color: #BE2700;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   margin: 0;
@@ -1563,7 +1561,6 @@ body {
 
 .shadow-btn {
   border-radius: 3px;
-  background-clip: padding-box;
   transition: all 150ms ease-out;
   background: transparent;
   display: inline-block;
@@ -2245,8 +2242,7 @@ body {
 
 .tabs li a {
   border-radius: 3px;
-  background-clip: padding-box;
-  transition: background 0.2s ease-out;
+  transition: background .2s ease-out;
   background: transparent;
   color: white;
   display: inline-block;
@@ -2267,7 +2263,7 @@ body {
 }
 
 .row_tab {
-  transition: all 0.2s ease-out;
+  transition: all .2s ease-out;
   display: none;
   width: 100%;
 }
@@ -2289,7 +2285,7 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .desc_crit {
     height: 180px;
     max-height: 180px;

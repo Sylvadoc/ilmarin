@@ -18,7 +18,7 @@
 			position: absolute;
 			top: 0;
 			left: 50%;
-			@include border-radius(3px);
+			border-radius: 3px;
 		}
 		li {
 			@extend %clearfix;
@@ -43,7 +43,7 @@
 		}
 		.evangile {
 			@extend %clearfix;
-			@include border-radius(35px);
+			border-radius: 35px;
 			background: #ECE9E6;
 			float: right;
 			padding: 10px;
@@ -59,7 +59,7 @@
 				display: block;
 				width: 5px;
 				height: 5px;
-				@include border-radius(3px);
+				border-radius: 3px;
 				background: #ECE9E6;
 			}
 			h2 {
@@ -76,7 +76,7 @@
 				font-style: italic;
 			}
 			.icon {
-				@include border-radius(30px);
+				border-radius: 30px;
 				@include rem(2.5);
 				background: $base-color-elbakin;
 				color: white;
@@ -93,7 +93,7 @@
 	aside {
 		@include gradient-h(#ECE9E6,#FFFFFF);
 		padding: .1rem 2rem 2rem;
-		@include border-radius(5px);
+		border-radius: 5px;
 		.icon {
 			color: $orange-color-elbakin;
 		}

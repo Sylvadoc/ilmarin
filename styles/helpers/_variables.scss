@@ -128,10 +128,7 @@ $breakpoints: (
         large-screen                :	1280px,
         large-plus-screen           :	1440px,
         extra-large-screen          :	1600px,
-        ultra-large-screen          :	1920px,
-
-        mobile						:	640px,
-        desktop						:	1024px
+        ultra-large-screen          :	1920px
 );
 $tiny-screen			: 480px; // tiny screens media query (less than 480px)
 $small-screen			: 768px; // screens between 481px and 768px

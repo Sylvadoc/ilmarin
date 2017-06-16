@@ -545,7 +545,7 @@ p {
 	========================================================== */
 
 	.icon-burger {
-		@include transition(all .4s);
+	    transition: all .4s;
 		background-color: $base-color-link;
 		height: 2px;
 		width: 15px;
@@ -568,20 +568,17 @@ p {
 		.icon-burger {
 			position: relative;
 			top: -4px;
-			-webkit-transition: transform 350ms;
-			-moz-transition: transform 350ms;
-			-o-transition: transform 350ms;
 			transition: transform 350ms;
 		}
 	}
 	.mp-pushed {
 		.icon-burger {
-			@include transform(translateY(0) translateX(-30px) rotate(0deg));
+		    transform: translate3d(30px,0,0) rotate(0deg);
 			&:before {
-				@include transform(translateY(4px) translateX(30px) rotate(-45deg));
+                transform: translate3d(30px,4px,0) rotate(-45deg);
 			}
 			&:after {
-				@include transform(translateY(-4px) translateX(30px) rotate(45deg));
+                transform: translate3d(30px,-4px,0) rotate(45deg);
 			}
 		}
 	}

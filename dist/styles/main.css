@@ -569,7 +569,7 @@ h6, .h6-like {
 /* ============== I C O N   B U R G E R
 	========================================================== */
 .icon-burger {
-  transition: all 0.4s;
+  transition: all .4s;
   background-color: #333;
   height: 2px;
   width: 15px;
@@ -599,15 +599,15 @@ h6, .h6-like {
 }
 
 .mp-pushed .icon-burger {
-  transform: translateY(0) translateX(-30px) rotate(0deg);
+  transform: translate3d(30px, 0, 0) rotate(0deg);
 }
 
 .mp-pushed .icon-burger:before {
-  transform: translateY(4px) translateX(30px) rotate(-45deg);
+  transform: translate3d(30px, 4px, 0) rotate(-45deg);
 }
 
 .mp-pushed .icon-burger:after {
-  transform: translateY(-4px) translateX(30px) rotate(45deg);
+  transform: translate3d(30px, -4px, 0) rotate(45deg);
 }
 
 /********************************************************************************************************************************************************************************
@@ -1851,7 +1851,6 @@ body {
   top: 0;
   left: 50%;
   border-radius: 3px;
-  background-clip: padding-box;
 }
 
 #elbakin .saint_marc li {
@@ -1878,7 +1877,6 @@ body {
 
 #elbakin .saint_marc .evangile {
   border-radius: 35px;
-  background-clip: padding-box;
   background: #ECE9E6;
   float: right;
   padding: 10px;
@@ -1897,7 +1895,6 @@ body {
   width: 5px;
   height: 5px;
   border-radius: 3px;
-  background-clip: padding-box;
   background: #ECE9E6;
 }
 
@@ -1920,7 +1917,6 @@ body {
 
 #elbakin .saint_marc .evangile .icon {
   border-radius: 30px;
-  background-clip: padding-box;
   font-size: 35px;
   font-size: 2.5rem;
   background: #BE2700;
@@ -1939,7 +1935,6 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ECE9E6', endColorStr='#FFFFFF', gradientType='1');
   padding: .1rem 2rem 2rem;
   border-radius: 5px;
-  background-clip: padding-box;
 }
 
 #elbakin aside .icon {
@@ -1957,10 +1952,9 @@ body {
 /********************************************************************************************************************************************************************************/
 .btn {
   border-radius: 4px;
-  background-clip: padding-box;
   font-size: 22.4px;
   font-size: 1.6rem;
-  transition: all 0.3s ease-out;
+  transition: all .3s ease-out;
   border: 0;
   color: white;
   cursor: pointer;
@@ -2040,7 +2034,6 @@ body {
 
 .btn_find {
   border-radius: 0;
-  background-clip: padding-box;
   background-color: #BE2700;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   margin: 0;
@@ -2051,7 +2044,6 @@ body {
 
 .shadow-btn {
   border-radius: 3px;
-  background-clip: padding-box;
   transition: all 150ms ease-out;
   background: transparent;
   display: inline-block;
@@ -2087,9 +2079,8 @@ body {
 /* ============== D E F A U L T   C A R D
 ========================================================== */
 .some_card {
-  transition: all 0.2s ease-out;
+  transition: all .2s ease-out;
   border-radius: 3px;
-  background-clip: padding-box;
   background: white;
   display: inline-block;
   margin: 0 1rem;
@@ -2150,7 +2141,7 @@ body {
   }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   #association .some_card {
     height: auto;
   }
@@ -2179,7 +2170,6 @@ body {
 ========================================================== */
 .profile-card {
   border-radius: 3px;
-  background-clip: padding-box;
   background: white;
   border: 1px solid #ccc;
   overflow: hidden;
@@ -2202,7 +2192,6 @@ body {
 
 .profile-card .avatar {
   border-radius: 55px;
-  background-clip: padding-box;
   border: thick solid white;
   height: 110px;
   overflow: hidden;
@@ -2346,7 +2335,6 @@ body {
 }
 
 #head .row_tab .basic_list {
-  -o-columns: 2;
   columns: 2;
   margin: 1rem;
 }
@@ -2384,7 +2372,6 @@ body {
 
 .bloc-profil {
   border-radius: 5px;
-  background-clip: padding-box;
   border: 1px solid #ccc;
   position: relative;
 }
@@ -2401,7 +2388,6 @@ body {
 
 .bloc-profil .avatar {
   border-radius: 55px;
-  background-clip: padding-box;
   border: thick solid white;
   height: 110px;
   overflow: hidden;
@@ -2480,11 +2466,7 @@ body {
 }
 
 .bloc-profil .bloc-duke .side-head {
-  transform: translate(0, 50%);
-  -moz-transform: translate(0, 50%);
-  -ms-transform: translate(0, 50%);
-  -webkit-transform: translate(0, 50%);
-  zoom: 1;
+  transform: translate3d(0, 50%, 0);
   list-style: none none;
   position: relative;
   text-align: center;
@@ -2521,7 +2503,6 @@ body {
 
 .bloc-profil .bloc-noble {
   border-radius: 0 0 5px 5px;
-  background-clip: padding-box;
   background: white;
   border-top: 1px solid #ccc;
   clear: both;
@@ -2535,7 +2516,7 @@ body {
 
 /* ============== R E S P O N S I V E
 	========================================================== */
-@media (min-width: 1024px) and (min-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .bloc-profil {
     width: 90%;
     margin: 0 auto;
@@ -3847,8 +3828,7 @@ body {
 
 .tabs li a {
   border-radius: 3px;
-  background-clip: padding-box;
-  transition: background 0.2s ease-out;
+  transition: background .2s ease-out;
   background: transparent;
   color: white;
   display: inline-block;
@@ -3869,7 +3849,7 @@ body {
 }
 
 .row_tab {
-  transition: all 0.2s ease-out;
+  transition: all .2s ease-out;
   display: none;
   width: 100%;
 }
@@ -3891,7 +3871,7 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .desc_crit {
     height: 180px;
     max-height: 180px;
