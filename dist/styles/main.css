@@ -3186,7 +3186,6 @@ body {
 
 .list-avatar img {
   border-radius: 50%;
-  background-clip: padding-box;
   border: 2px solid white;
   height: auto;
   width: 100%;
@@ -3427,7 +3426,7 @@ body {
 }
 
 .classic-nav li a {
-  transition: all 0.3s;
+  transition: all .3s;
   display: block;
   padding: .5rem 0;
   position: relative;
@@ -3458,7 +3457,7 @@ body {
 }
 
 .section-palantir form label {
-  transition: all 0.3s;
+  transition: all .3s;
   font-size: 28px;
   font-size: 2rem;
   position: absolute;
@@ -3575,11 +3574,7 @@ body {
 }
 
 .feature-section .cartouche {
-  transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -webkit-transform: translate(0, -50%);
-  zoom: 1;
+  transform: translate3d(0, -50%, 0);
   color: white;
   position: absolute;
   top: 50%;
@@ -3644,7 +3639,7 @@ body {
   }
 }
 
-@media (min-width: 480px) and (max-width: 1280px) {
+@media (min-width: 481px) and (max-width: 1280px) {
   #garde {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -3669,7 +3664,7 @@ body {
   }
 }
 
-@media (min-width: 480px) and (max-width: 1024px) and (orientation: portrait) {
+@media (orientation: landscape) and (min-width: 481px) and (max-width: 1024px) {
   #garde .flex-enhanced-navigation .nav-second {
     width: 100%;
   }
@@ -3937,7 +3932,6 @@ body {
 
 .liste_ouvrage article {
   border-radius: 5px;
-  background-clip: padding-box;
   background: white;
   margin-bottom: 2em;
 }
@@ -3966,12 +3960,6 @@ body {
 
 .liste_ouvrage article .entry-header p:before {
   transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -webkit-transform: rotate(-3deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-3deg), M12=-sin(-3deg), M21=sin(-3deg), M22=cos(-3deg));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-3deg), M12=-sin(-3deg), M21=sin(-3deg), M22=cos(-3deg))";
-  zoom: 1;
   background: inherit;
   content: '';
   display: block;
