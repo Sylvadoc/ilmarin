@@ -5,7 +5,7 @@
 
 // Load plugins
 var gulp = require('gulp'),
-    sass = require('gulp-ruby-sass'),
+	sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     cssnano = require('gulp-cssnano'),
     jshint = require('gulp-jshint'),
@@ -21,6 +21,12 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     sourcemaps = require('gulp-sourcemaps'),
     del = require('del');
+
+// configuration des sass
+var SASS_FILES_PATH = 'styles//**/*.scss';
+var SASS_COMPILE_OPTIONS = {
+	outputStyle: 'expanded'
+};
 
 // configuration des plugins
 var imageminConfig = {
@@ -58,14 +64,15 @@ var svgConfig = {
 
 // Styles
 gulp.task('styles', function() {
-  return sass('styles//**/*.scss', { style: 'expanded' })
-    .pipe(sourcemaps.init())
-    .pipe(autoprefixer('last 2 version'))
-    .pipe(gulp.dest('dist/styles'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(cssnano())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dist/styles'))
+	return gulp.src(SASS_FILES_PATH)
+		.pipe(sass(SASS_COMPILE_OPTIONS).on('error', sass.logError))
+		.pipe(sourcemaps.init())
+		.pipe(autoprefixer('last 2 version'))
+		.pipe(gulp.dest('dist/styles'))
+		.pipe(rename({ suffix: '.min' }))
+		.pipe(cssnano())
+		.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest('dist/styles'))
 });
 
 // Scripts
@@ -109,7 +116,7 @@ gulp.task('default', ['clean'], function() {
 gulp.task('watch', function() {
 
   // Watch .scss files
-  gulp.watch('styles/**/*.scss', ['styles']);
+  gulp.watch(SASS_FILES_PATH, ['styles']);
 
   // Watch .js files
   gulp.watch('scripts/**/*.js', ['scripts']);
