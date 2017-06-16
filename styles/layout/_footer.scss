@@ -1,3 +1,5 @@
+@import "../vendors/include-media";
+
 /********************************************************************************************************************************************************************************
 ********************* F O O T E R *****************
 /********************************************************************************************************************************************************************************/
@@ -32,7 +34,7 @@
 		#email {
 			background: white;
 			border: 1px solid #ccc;
-			@include border-radius(3px);
+			border-radius: 3px;
 			padding: 1.5em .4em .4em;
 			@include rem(1.6);
 			width: 100%;
@@ -108,12 +110,12 @@
 /* ============== R E S P O N S I V E
 ========================================================== */
 
-@media (max-width: $medium-screen) {
+@include media('<=medium-plus-screen') {
 	#footer .columns:nth-child(-n+2) {
 		height: 20rem;
 	}
 }
-@media (max-width: $tiny-screen) {
+@include media('<=tiny-plus-screen') {
 	#footer .columns:nth-child(-n+2) {
 		height: auto;
 	}

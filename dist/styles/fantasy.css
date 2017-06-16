@@ -1332,7 +1332,6 @@ body {
   background: white;
   border: 1px solid #ccc;
   border-radius: 3px;
-  background-clip: padding-box;
   padding: 1.5em .4em .4em;
   font-size: 22.4px;
   font-size: 1.6rem;
@@ -3148,7 +3147,6 @@ body {
 #hot {
   background: white;
   border-radius: 5px;
-  background-clip: padding-box;
   padding: 0 2rem 2rem;
 }
 
