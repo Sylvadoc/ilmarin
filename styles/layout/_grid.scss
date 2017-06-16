@@ -1,3 +1,5 @@
+@import "../vendors/include-media";
+
 /********************************************************************************************************************************************************************************
 ********************* G E N E R A L *****************
 /********************************************************************************************************************************************************************************/
@@ -7,16 +9,16 @@ body {
 	background: white;
 }
 .oblique {
-	@include rotate(-$rotate);
-	@include transform-origin(left center);
+	transform: rotate(-$rotate);
+	transform-origin: left center;
 	padding: 2rem 0;
 	margin: 0 -20px;
 	display: block;
 }
 .oblique .row {
-	@include rotate($rotate);
+	transform: rotate($rotate);
 	.row {
-		@include rotate(0);
+		transform: rotate(0);
 	}
 }
 .row {
@@ -38,7 +40,7 @@ body {
 		margin: 0;
 	}
 	.inner_content {
-		@include border-radius(5px);
+		border-radius: 5px;
 		background-color: white;
 		padding: 1em;
 	}
@@ -76,20 +78,20 @@ body {
 	overflow-y: scroll;
 	position: relative;
 	/* overlay stuff */
-	@include transition(transform 0.5s);
+	transition: transform 0.5s;
 	&.overlay-open {
-		@include translate3d(70vw,0,0);
+		transform: translate3d(70vw,0,0);
 	}
 }
 .overlay {
-	@include backface-visibility(hidden);
-	@include transform-style(preserve-3d);
-	@include transition(transform 0.5s, visibility 0s 0.5s);
-	@include translate3d(-70vw,0,0);
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	transition: transform 0.5s, visibility 0s 0.5s;
+	transform: translate3d(-70vw,0,0);
 	visibility: hidden;
 	&.open {
-		@include translate3d(0,0,0);
-		@include transition(transform 0.5s);
+		transform: translate3d(0,0,0);
+		transition: transform 0.5s;
 		visibility: visible;
 	}
 }
@@ -97,7 +99,7 @@ body {
 	/* ============== R E S P O N S I V E
 	========================================================== */
 
-	@media (max-width: $large-screen) {
+	@include media('<=large-screen') {
 		#garde {
 			width: 100vw;
 			.menu-close {
@@ -106,17 +108,17 @@ body {
 		}
 		.m-scene {
 			&.overlay-open {
-				@include translate3d(100vw,0,0);
+				transform: translate3d(100vw,0,0);
 			}
 		}
 		.overlay {
-			@include translate3d(-100vw,0,0);
+            transform: translate3d(-100vw,0,0);
 			&.open {
-				@include translate3d(0,0,0);
+                transform: translate3d(0,0,0);
 			}
 		}
 	}
-	@media (min-width: $large-screen) and (max-width: $extra-large-screen) {
+@include media('>large-screen','<=extra-large-screen') {
 		#garde {
 			width: 80vw;
 			.menu-close {
@@ -125,13 +127,13 @@ body {
 		}
 		.m-scene {
 			&.overlay-open {
-				@include translate3d(80vw,0,0);
+				transform: translate3d(80vw,0,0);
 			}
 		}
 		.overlay {
-			@include translate3d(-80vw,0,0);
+			transform: translate3d(-80vw,0,0);
 			&.open {
-				@include translate3d(0,0,0);
+				transform: translate3d(0,0,0);
 			}
 		}
 	}
@@ -143,7 +145,7 @@ body {
 .article_focus {
 	background: white;
 	padding: 1em;
-	@include border-radius(5px);
+	border-radius: 5px;
 	.inner_content {
 		text-align: justify;
 		a {
@@ -162,7 +164,7 @@ body {
 				background: white;
 				text-align: left;
 				&:before {
-					@include rotate(-3deg);
+					transform: rotate(-3deg);
 					background: inherit;
 					content: '';
 					display: block;
@@ -209,7 +211,7 @@ body {
 				position: relative;
 				background: white;
 				&:before {
-					@include rotate(-3deg);
+					transform: rotate(-3deg);
 					background: inherit;
 					content: '';
 					display: block;
@@ -261,7 +263,7 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 
-@media (max-width: $small-screen) {
+@include media('<=small-plus-screen') {
 	.m-page {
 		padding-top: 50px;
 	}

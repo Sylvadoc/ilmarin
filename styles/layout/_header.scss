@@ -1,217 +1,69 @@
+@import "../vendors/include-media";
+
 	/* ====== Concerning Logo
 	======================================= */
 
-	@-webkit-keyframes LogoArrives {
-		0%   {
-			@include opacity(0);
-			@include translate3d(0,-2rem,0);
-		}
-		100% {
-			@include opacity(1);
-			@include translate3d(0,0,0);
-		}
-	}
-	@-moz-keyframes LogoArrives {
-		0%   {
-			@include opacity(0);
-			@include translate3d(0,-2rem,0);
-		}
-		100% {
-			@include opacity(1);
-			@include translate3d(0,0,0);
-		}
-	}
-	@-o-keyframes LogoArrives {
-		0%   {
-			@include opacity(0);
-			@include translate3d(0,-2rem,0);
-		}
-		100% {
-			@include opacity(1);
-			@include translate3d(0,0,0);
-		}
-	}
 	@keyframes LogoArrives {
 		0%   {
-			@include opacity(0);
-			@include translate3d(0,-2rem,0);
+			opacity: 0;
+			transform: translate3d(0,-2rem,0);
 		}
 		100% {
-			@include opacity(1);
-			@include translate3d(0,0,0);
+			opacity: 1;
+			transform: translate3d(0,0,0);
 		}
 	}
 		/* ================================ */
-		@-webkit-keyframes Appear {
-			0%   {
-				@include opacity(0);
-				@include scale(0);
-			}
-			100% {
-				@include opacity(1);
-				@include scale(1);
-			}
-		}
-		@-moz-keyframes Appear {
-			0%   {
-				@include opacity(0);
-				@include scale(0);
-			}
-			100% {
-				@include opacity(1);
-				@include scale(1);
-			}
-		}
-		@-o-keyframes Appear {
-			0%   {
-				@include opacity(0);
-				@include scale(0);
-			}
-			100% {
-				@include opacity(1);
-				@include scale(1);
-			}
-		}
 		@keyframes Appear {
 			0%   {
-				@include opacity(0);
-				@include scale(0);
+				opacity: 0;
+				transform: scale(0);
 			}
 			100% {
-				@include opacity(1);
-				@include scale(1);
+				opacity: 1;
+				transform: scale(1);
 			}
 		}
 
 	/* ====== Concerning title logo
 	======================================= */
 
-	@-webkit-keyframes ElbakinArrives {
-		0%   {
-			@include opacity(0);
-			@include translate3d(0,1rem,0);
-		}
-		100% {
-			@include opacity(1);
-			@include translate3d(0,-1rem,0);
-		}
-	}
-	@-moz-keyframes ElbakinArrives {
-		0%   {
-			@include opacity(0);
-			@include translate3d(0,1rem,0);
-		}
-		100% {
-			@include opacity(1);
-			@include translate3d(0,-1rem,0);
-		}
-	}
-	@-o-keyframes ElbakinArrives {
-		0%   {
-			@include opacity(0);
-			@include translate3d(0,1rem,0);
-		}
-		100% {
-			@include opacity(1);
-			@include translate3d(0,-1rem,0);
-		}
-	}
 	@keyframes ElbakinArrives {
 		0%   {
-			@include opacity(0);
-			@include translate3d(0,1rem,0);
+			opacity: 0;
+			transform: translate3d(0,1rem,0);
 		}
 		100% {
-			@include opacity(1);
-			@include translate3d(0,-1rem,0);
+			opacity: 1;
+			transform: translate3d(0,-1rem,0);
 		}
 	}
 
 	/* ====== ShowPanel
 	======================================= */
 
-	@-webkit-keyframes ShowPanel {
-		0%   {
-			@include opacity(0);
-			@include translate3d(0,-1rem,0);
-		}
-		100% {
-			@include opacity(1);
-			@include translate3d(0,0,0);
-		}
-	}
-	@-moz-keyframes ShowPanel {
-		0%   {
-			@include opacity(0);
-			@include translate3d(0,-1rem,0);
-		}
-		100% {
-			@include opacity(1);
-			@include translate3d(0,0,0);
-		}
-	}
-	@-o-keyframes ShowPanel {
-		0%   {
-			@include opacity(0);
-			@include translate3d(0,-1rem,0);
-		}
-		100% {
-			@include opacity(1);
-			@include translate3d(0,0,0);
-		}
-	}
 	@keyframes ShowPanel {
 		0%   {
-			@include opacity(0);
-			@include translate3d(0,-1rem,0);
+			opacity: 0;
+			transform: translate3d(0,-1rem,0);
 		}
 		100% {
-			@include opacity(1);
-			@include translate3d(0,0,0);
+			opacity: 1;
+			transform: translate3d(0,0,0);
 		}
 	}
 
 	/* ====== HidePanel
 	======================================= */
 
-	@-webkit-keyframes HidePanel {
-		0%   {
-			@include opacity(1);
-			@include translate3d(0,0,0);
-		}
-		100% {
-			@include opacity(0);
-			@include translate3d(0,1rem,0);
-		}
-	}
-	@-moz-keyframes HidePanel {
-		0%   {
-			@include opacity(1);
-			@include translate3d(0,0,0);
-		}
-		100% {
-			@include opacity(0);
-			@include translate3d(0,1rem,0);
-		}
-	}
-	@-o-keyframes HidePanel {
-		0%   {
-			@include opacity(1);
-			@include translate3d(0,0,0);
-		}
-		100% {
-			@include opacity(0);
-			@include translate3d(0,1rem,0);
-		}
-	}
 	@keyframes HidePanel {
 		0%   {
-			@include opacity(1);
-			@include translate3d(0,0,0);
+			opacity: 1;
+			transform: translate3d(0,0,0);
 		}
 		100% {
-			@include opacity(0);
-			@include translate3d(0,1rem,0);
+			opacity: 0;
+			transform: translate3d(0,1rem,0);
 		}
 	}
 
@@ -220,7 +72,7 @@
 /********************************************************************************************************************************************************************************/
 
 .the-header {
-	@include transition(height .3s);
+	transition: height .3s;
 	@extend %clearfix;
 	position: relative;
 	.inner-wrap {
@@ -236,24 +88,15 @@
 		width: 150px;
 		position: relative;
 		.logotype {
-			-webkit-animation: LogoArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
-			-moz-animation: LogoArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
-			-o-animation: LogoArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
 			animation: LogoArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
 		}
 		.elbakin {
-			-webkit-animation: ElbakinArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
-			-moz-animation: ElbakinArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
-			-o-animation: ElbakinArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
 			animation: ElbakinArrives cubic-bezier(.68,-0.55,.27,1.55) 1s 1;
-			@include translate3d(0,-1rem,0);
+			transform: translate3d(0,-1rem,0);
 		}
 		a {	display: block;	}
 	}
 	.appear {
-		-webkit-animation: Appear .5s 1;
-		-moz-animation: Appear .5s 1;
-		-o-animation: Appear .5s 1;
 		animation: Appear .5s 1;
 	}
 
@@ -339,7 +182,7 @@
 /* ============== R E S P O N S I V E
 ========================================================== */
 
-@media (max-width: $tiny-screen) {
+@include media('<=tiny-plus-screen') {
 	header {
 		&.sticky {
 			.panel {
@@ -348,7 +191,7 @@
 		}
 	}
 }
-@media (min-width: $tiny-screen) and (max-width: $small-screen) {
+@include media('>tiny-plus-screen','<=small-plus-screen') {
 	header {
 		&.sticky {
 			.aside_menu {
@@ -356,18 +199,6 @@
 					display: none;
 				}
 			}
-		}
-	}
-}
-@media (min-width: $small-screen) and (max-width: $medium-screen) {
-	header {
-		&.sticky {
-		}
-	}
-}
-@media (min-width: $large-screen) and (max-width: $ultra-large-screen) {
-	header {
-		&.sticky {
 		}
 	}
 }

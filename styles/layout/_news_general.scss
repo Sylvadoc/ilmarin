@@ -11,7 +11,7 @@
 	}
 }
 .post {
-	@include background-size(cover);
+	background-size: cover;
 	background-color: white;
 	background-position: 0 0;
 	background-repeat: no-repeat;
@@ -20,8 +20,6 @@
 		margin-top: 1.5rem;
 		z-index: 2;
 		a {
-			-webkit-box-decoration-break: clone;
-			-o-box-decoration-break: clone;
 			box-decoration-break: clone;
 			display: block;
 			z-index: 2;
@@ -31,7 +29,7 @@
 .post-teaser {
 	position: relative;
 	&:before {
-		@include transition(all .2s);
+		transition: all .2s;
 		content: '';
 		background: transparent;
 		position: absolute;
@@ -42,7 +40,7 @@
 		z-index: 1;
 	}
 	.the-title {
-		@include transition(all .2s);
+		transition: all .2s;
 		font-family: $font-stack-simili;
 		font-weight: 300;
 		line-height: 1.2;
@@ -59,9 +57,9 @@
 		}
 	}
 	.entry-extract {
-		@include transition(all .2s);
-		@include opacity(0);
-		@include translate3d(0,-20px,0);
+		transition: all .2s;
+		opacity: 0;
+		transform: translate3d(0,-20px,0);
 		margin-top: 1rem;
 		z-index: 2;
 		.post-info {
@@ -97,14 +95,14 @@
 			}
 		}
 		.entry-extract {
-			@include opacity(1);
-			@include translate3d(0,10px,0);
+			opacity: 1;
+			transform: translate3d(0,10px,0);
 			position: relative;
 		}
 	}
 }
 .post-tribune {
-	@include background-size(cover);
+	background-size: cover;
 	background-color: #404447;
 	background-image: url('../../images/quote.jpg');
 	background-position: 0 0;
@@ -143,20 +141,20 @@
 			}
 		}
 		.post-info {
-			@include skewX(-45deg);
+			transform: skewX(-45deg);
 			background-color: #26CCC5;
 			color: white;
 			left: 3.5rem;
 			overflow: hidden;
 			position: relative;
 			span, time {
-				@include skewX(45deg);
+				transform: skewX(45deg);
 				display: block;
 				font-family: $font-stack-simili;
 				text-transform: uppercase;
 			}
 			img {
-				@include skewX(45deg);
+                transform: skewX(45deg);
 				display: block;
 				float: left;
 				margin: 0 2rem 0 2.5rem;
@@ -193,17 +191,17 @@
 			.entry-extract p { margin-bottom: 1rem; }
 			.post-info {
 				text-align: center;
-				@include skewX(0);
+				transform: skewX(0);
 				background-color: transparent;
 				position: static;
 				span, time {
-					@include skewX(0);
+					transform: skewX(0);
 					display: block;
 					font-family: $font-stack-simili;
 					text-transform: uppercase;
 				}
 				img {
-					@include skewX(0);
+					transform: skewX(0);
 					display: block;
 					float: none;
 					margin: 0 auto 1em auto;
@@ -290,17 +288,17 @@
 			.entry-extract p { display: none; }
 			.post-info {
 				text-align: center;
-				@include skewX(0);
+				transform: skewX(0);
 				background-color: transparent;
 				position: static;
 				span, time {
-					@include skewX(0);
+					transform: skewX(0);
 					display: block;
 					font-family: $font-stack-simili;
 					text-transform: uppercase;
 				}
 				img {
-					@include skewX(0);
+					transform: skewX(0);
 					display: block;
 					float: none;
 					margin: 0 auto 1em auto;
