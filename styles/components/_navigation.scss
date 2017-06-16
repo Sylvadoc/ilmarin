@@ -26,7 +26,7 @@
 		width: 10%;
 	}
 	img {
-		@include border-radius(50%);
+		border-radius: 50%;
 		border: 2px solid white;
 		height: auto;
 		width: 100%;
@@ -216,7 +216,7 @@
 			border: 0;
 		}
 		a {
-			@include transition(all .3s);
+			transition: all .3s;
 			display: block;
 			padding: .5rem 0;
 			position: relative;
@@ -244,7 +244,7 @@
 		position: relative;
 		width: 100%;
 		label {
-			@include transition(all .3s);
+			transition: all .3s;
 			@include rem(2);
 			position: absolute;
 			top: 3.2rem;
@@ -306,7 +306,7 @@
 	overflow: hidden;
 	position: relative;
 	&:before {
-		@include transition(all cubic-bezier(.17,.67,.83,.67) .2s);
+		transition: all cubic-bezier(.17,.67,.83,.67) .2s;
 		border: 1px solid white;
 		content: '';
 		display: block;
@@ -327,11 +327,11 @@
 			bottom: 15px;
 		}
 		img {
-			@include scale(1.1);
+			transform: scale(1.1);
 		}
 	}
 	img {
-		@include transition(all cubic-bezier(.17,.67,.83,.67) .2s);
+		transition: all cubic-bezier(.17,.67,.83,.67) .2s;
 		display: block;
 		width: 100%;
 		height: auto;
@@ -344,7 +344,7 @@
 		}
 	}
 	.cartouche {
-		@include translate(0,-50%);
+        transform: translate3d(0,-50%,0);
 		color: white;
 		position: absolute;
 		top: 50%;
@@ -364,7 +364,7 @@
 /* ============== R E S P O N S I V E
 ========================================================== */
 
-@media (max-width: $tiny-screen) {
+@include media('<=tiny-plus-screen') {
 	#garde {
 		overflow-y: scroll;
 		-webkit-overflow-scrolling: touch;
@@ -411,7 +411,7 @@
 		}
 	}
 }
-@media (min-width: $tiny-screen) and (max-width: $large-screen) {
+@media ('>tiny-plus-screen','<=large-screen') {
 	#garde {
 		overflow-y: scroll;
 		-webkit-overflow-scrolling: touch;
@@ -439,7 +439,7 @@
 		}
 	}
 }
-@media (min-width: $tiny-screen) and (max-width: $medium-screen) and (orientation:portrait) {
+@include media('landscape','>tiny-plus-screen','<=medium-plus-screen') {
 	#garde {
 		.flex-enhanced-navigation {
 			.nav-second {

@@ -2134,21 +2134,18 @@ body {
 
 .suffix {
   border-radius: 0 2px 2px 0;
-  background-clip: padding-box;
   background-color: #BE2700;
   color: white;
 }
 
 .prefix {
   border-radius: 2px 0 0 2px;
-  background-clip: padding-box;
   background-color: #BE2700;
   color: white;
 }
 
 .card {
   border-radius: 5px;
-  background-clip: padding-box;
   background: white;
   padding: 1rem;
   color: #272727;
@@ -2169,7 +2166,6 @@ body {
 
 .form input[type=text], .form input[type=password], .form textarea {
   border-radius: 0 3px 3px 0;
-  background-clip: padding-box;
   background-color: #FFF;
   border-style: solid;
   border-width: 1px;
@@ -2208,7 +2204,6 @@ body {
 
 .chose-an-avatar .inputfile + label {
   border-radius: 50%;
-  background-clip: padding-box;
   background: #eaeaea;
   border: 2px solid #ccc;
   display: block;
@@ -2220,16 +2215,11 @@ body {
 }
 
 .chose-an-avatar .inputfile + label:before {
-  transition: opacity 0.2s;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  transition: opacity .2s;
+  opacity: .5;
   font-size: 42px;
   font-size: 3rem;
-  transform: translate(0, 35px);
-  -moz-transform: translate(0, 35px);
-  -ms-transform: translate(0, 35px);
-  -webkit-transform: translate(0, 35px);
-  zoom: 1;
+  transform: translate3d(0, 35px, 0);
   content: '\e631';
   font-family: 'icomoon', sans-serif;
   left: 0;
@@ -2243,7 +2233,6 @@ body {
 
 .chose-an-avatar .inputfile + label:hover:before {
   opacity: 1;
-  filter: alpha(opacity=100);
 }
 
 .chose-an-avatar .inputfile:focus + label {
@@ -2260,7 +2249,6 @@ body {
 
 #form-log-in.card {
   border-radius: 0;
-  background-clip: padding-box;
   background: transparent;
   padding: 0;
   color: inherit;
@@ -2268,7 +2256,6 @@ body {
 
 #form-log-in.card .form {
   border-radius: 5px;
-  background-clip: padding-box;
   background: white;
   padding: 1rem;
   color: #272727;
@@ -2278,7 +2265,6 @@ body {
    $FLIPPING FORMS
    ========================================================================== */
 .flip-container {
-  -ms-perspective: 800px;
   perspective: 800px;
   position: relative;
   width: 100%;
@@ -2294,7 +2280,7 @@ body {
 
 #cards {
   transform-style: preserve-3d;
-  transition: transform 0.5s;
+  transition: transform .5s;
   transform-origin: right center;
   height: 250px;
   position: absolute;
@@ -2303,7 +2289,7 @@ body {
 
 #cards .to-flip {
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
   color: #272727;
   display: block;
   height: 100%;
@@ -2319,7 +2305,6 @@ body {
 
 #cards .back aside {
   border-radius: 5px;
-  background-clip: padding-box;
   background: white;
 }
 
@@ -2427,7 +2412,6 @@ body {
    ========================================================================== */
 .list-form {
   border-radius: 5px;
-  background-clip: padding-box;
   background: white;
   padding: 1rem;
 }
@@ -2460,7 +2444,7 @@ body {
 }
 
 .tablist .sujet {
-  transition: all 0.3s;
+  transition: all .3s;
   background: white;
   display: block;
   padding: 1rem 0;
@@ -2481,9 +2465,8 @@ body {
 }
 
 .tablist .sujet .spectre {
-  transition: all 0.3s;
+  transition: all .3s;
   border-radius: 50%;
-  background-clip: padding-box;
   position: absolute;
   left: 1.5rem;
   top: 1.2rem;
@@ -2504,14 +2487,9 @@ body {
 }
 
 .tablist .contenu_sujet {
-  transition: all 0.3s;
+  transition: all .3s;
   opacity: 0;
-  filter: alpha(opacity=0);
   transform: translate3d(0, -10px, 0);
-  -moz-transform: translate3d(0, -10px, 0);
-  -ms-transform: translate3d(0, -10px, 0);
-  -webkit-transform: translate3d(0, -10px, 0);
-  zoom: 1;
   height: 0;
   overflow: hidden;
 }
@@ -2546,12 +2524,7 @@ body {
 
 .tablist [type="radio"]:checked ~ .contenu_sujet {
   opacity: 1;
-  filter: alpha(opacity=100);
   transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  zoom: 1;
   height: auto;
 }
 

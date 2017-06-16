@@ -14,14 +14,14 @@
 /* ============== R E S P O N S I V E
 ========================================================== */
 
-@media (max-width: $tiny-screen) {
+@include media('<=tiny-plus-screen') {
 	.flex-list {
 		.flex-item {
 			width: 48%;
 		}
 	}
 }
-@media (min-width: $tiny-screen) and (max-width: $medium-screen) {
+@include media('>=tiny-plus-screen','<=medium-plus-screen') {
 	.flex-list {
 		.flex-item {
 			width: 30%;
@@ -38,7 +38,7 @@
 		padding-bottom: 1rem;
 	}
 	article {
-		@include border-radius(5px);
+		border-radius: 5px;
 		background: white;
 		margin-bottom: 2em;
 		img {
@@ -58,7 +58,7 @@
 				background: white;
 				text-align: left;
 				&:before {
-					@include rotate(-3deg);
+					transform: rotate(-3deg);
 					background: inherit;
 					content: '';
 					display: block;

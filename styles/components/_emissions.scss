@@ -34,12 +34,12 @@
 /* ============== RESPONSIVE EMISSIONS
 ========================================================== */
 
-@media (max-width: $small-screen) {
+@include media('<=small-plus-screen') {
 	.article_focus {
 		margin-bottom: 10px;
 	}
 }
-@media (max-width: $medium-screen) {
+@include media('<=medium-plus-screen') {
 	#dmud {
 		.article_focus {
 			background: white none;

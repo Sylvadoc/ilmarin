@@ -27,7 +27,7 @@
 			padding: 0;
 			text-transform: uppercase;
 			.icon {
-				@include scale(0.8);
+				transform: scale(0.8);
 				vertical-align: top;
 			}
 		}
@@ -97,7 +97,7 @@
 /* ============== R E S P O N S I V E
 ========================================================== */
 
-@media (max-width: $medium-screen) {
+@include media('<=medium-plus-screen') {
 	#chrono {
 		margin-top: 2rem;
 		.header_chrono {
