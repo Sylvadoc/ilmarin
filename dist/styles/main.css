@@ -1371,8 +1371,7 @@ body {
 
 .post .the-title a {
   -webkit-box-decoration-break: clone;
-  -o-box-decoration-break: clone;
-  box-decoration-break: clone;
+          box-decoration-break: clone;
   display: block;
   z-index: 2;
 }
@@ -1382,7 +1381,7 @@ body {
 }
 
 .post-teaser:before {
-  transition: all 0.2s;
+  transition: all .2s;
   content: '';
   background: transparent;
   position: absolute;
@@ -1394,7 +1393,7 @@ body {
 }
 
 .post-teaser .the-title {
-  transition: all 0.2s;
+  transition: all .2s;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   line-height: 1.2;
@@ -1414,14 +1413,9 @@ body {
 }
 
 .post-teaser .entry-extract {
-  transition: all 0.2s;
+  transition: all .2s;
   opacity: 0;
-  filter: alpha(opacity=0);
   transform: translate3d(0, -20px, 0);
-  -moz-transform: translate3d(0, -20px, 0);
-  -ms-transform: translate3d(0, -20px, 0);
-  -webkit-transform: translate3d(0, -20px, 0);
-  zoom: 1;
   margin-top: 1rem;
   z-index: 2;
 }
@@ -1466,12 +1460,7 @@ body {
 
 .post-teaser:hover .entry-extract {
   opacity: 1;
-  filter: alpha(opacity=100);
   transform: translate3d(0, 10px, 0);
-  -moz-transform: translate3d(0, 10px, 0);
-  -ms-transform: translate3d(0, 10px, 0);
-  -webkit-transform: translate3d(0, 10px, 0);
-  zoom: 1;
   position: relative;
 }
 
