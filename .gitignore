@@ -3,6 +3,7 @@
 .sass-cache/
 .idea/
 node_modules/
+dist/
 
 # Logs and databases #
 ######################

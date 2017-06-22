@@ -3186,21 +3186,9 @@ body {
 @keyframes sunny {
   0% {
     transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(0deg), M12=-sin(0deg), M21=sin(0deg), M22=cos(0deg));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(0deg), M12=-sin(0deg), M21=sin(0deg), M22=cos(0deg))";
-    zoom: 1;
   }
   100% {
     transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(360deg), M12=-sin(360deg), M21=sin(360deg), M22=cos(360deg));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(360deg), M12=-sin(360deg), M21=sin(360deg), M22=cos(360deg))";
-    zoom: 1;
   }
 }
 
@@ -3235,13 +3223,13 @@ body {
 
 @keyframes cloudy {
   50% {
-    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
   }
 }
 
 @keyframes cloudy_shadow {
   50% {
-    -webkit-transform: translateY(20px) scale(1);
+    transform: translateY(20px) scale(1);
     opacity: .05;
   }
 }
@@ -3403,12 +3391,6 @@ body {
 @keyframes starry {
   50% {
     transform: rotate(10deg);
-    -moz-transform: rotate(10deg);
-    -o-transform: rotate(10deg);
-    -webkit-transform: rotate(10deg);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(10deg), M12=-sin(10deg), M21=sin(10deg), M22=cos(10deg));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(10deg), M12=-sin(10deg), M21=sin(10deg), M22=cos(10deg))";
-    zoom: 1;
   }
 }
 
@@ -3733,7 +3715,6 @@ body {
 .timelineFlat a.t_line_node:hover .t_node_desc {
   top: 0;
   opacity: 1;
-  filter: alpha(opacity=100);
 }
 
 .timelineFlat .t_node_desc span {
@@ -3876,7 +3857,7 @@ body {
 
 .timelineFlat .item span {
   display: block;
-  margin: 0px 20px 10px;
+  margin: 0 20px 10px;
   height: 75px;
 }
 
@@ -3999,7 +3980,6 @@ body {
 .timelineFlat:hover .t_left,
 .timelineFlat:hover .t_right {
   opacity: 1;
-  filter: alpha(opacity=100);
 }
 
 .timelineFlat .t_left,
@@ -4013,7 +3993,6 @@ body {
   top: 0;
   z-index: 10;
   opacity: 0;
-  filter: alpha(opacity=0);
   transition: background-color 300ms, opacity 300ms;
 }
 

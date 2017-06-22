@@ -1,7 +1,9 @@
+@import "../vendors/include-media";
+
 /* ============== P A G E S
 ========================================================== */
 
-@media (max-width: $ultra-large-screen) {
+@include media('<=ultra-large-screen') {
 	.the-header {
 		background-color: transparent;
 		background-image: url('../../images/simonetti_1920.jpg');
@@ -18,7 +20,7 @@
 		}
 	}
 }
-@media (max-width: $large-screen) {
+@include media('<=large-screen') {
 	.the-header {
 		background-color: transparent;
 		background-image: url('../../images/simonetti_1280.jpg');
@@ -60,7 +62,7 @@ section:nth-child(2n+2), #most, .m-page .grey-section {
 	}
 }
 #prix_elbakin_net, #palantir {
-	@include background-size(cover);
+	background-size: cover;
 	background-attachment: fixed;
 	background-color: transparent;
 	background-image: url('../../images/argonath.jpg');

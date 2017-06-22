@@ -1,7 +1,7 @@
 #content_icon {
 	position: relative;
 	height: 210px;
-	@include scale(.9);
+	transform: scale(.9);
 	#weather {
 		position: absolute;
 		left: 87px;
@@ -31,8 +31,7 @@
 /* ============== S U N N Y
 ========================================================== */
 
-.sunny { 
-	-webkit-animation: sunny 15s linear infinite;
+.sunny {
 	animation: sunny 15s linear infinite;
 	background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%); 
 	height: 140px;
@@ -64,20 +63,19 @@
 		top: 30px;
 	}
 }
-@-webkit-keyframes sunny { 
-	0% { @include rotate(0deg); }
-	100% { @include rotate(360deg); }
-}
-@keyframes sunny { 
-	0% { @include rotate(0deg); }
-	100% { @include rotate(360deg); }
+@keyframes sunny {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* ============== C L O U D Y
 ========================================================== */
 
 .cloudy {
-	-webkit-animation: cloudy 5s ease-in-out infinite;
 	animation: cloudy 5s ease-in-out infinite;
 	background: #FFFFFF;
 	border-radius: 50%;
@@ -94,7 +92,6 @@
 	left: 0;
 	top: 70px; 
 	&:after {
-		-webkit-animation: cloudy_shadow 5s ease-in-out infinite;
 		animation: cloudy_shadow 5s ease-in-out infinite;
 		background: #000000;
 		border-radius: 50%;
@@ -108,24 +105,17 @@
 		transform: scale(.7);
 	}
 }
-@-webkit-keyframes cloudy {
-	50% { -webkit-transform: translateY(-20px); }
-}
-@-webkit-keyframes cloudy_shadow {
-	50% { -webkit-transform: translateY(20px) scale(1); opacity:.05; }
-}
 @keyframes cloudy {
-	50% { -webkit-transform: translateY(-20px); }
+	50% { transform: translateY(-20px); }
 }
 @keyframes cloudy_shadow {
-	50% { -webkit-transform: translateY(20px) scale(1); opacity:.05; }
+	50% { transform: translateY(20px) scale(1); opacity:.05; }
 }
 
 /* ============== R A I N Y
 ========================================================== */
 
 .rainy {
-	-webkit-animation: rainy 5s ease-in-out infinite 1s;
 	animation: rainy 5s ease-in-out infinite 1s;
 	background: #CCCCCC; 
 	border-radius: 50%;
@@ -143,7 +133,6 @@
 	left: 0;
 	top: 70px;
 	&:after {
-		-webkit-animation: rainy_shadow 5s ease-in-out infinite 1s;
 		animation: rainy_shadow 5s ease-in-out infinite 1s;
 		background: #000000;
 		border-radius: 50%;
@@ -157,7 +146,6 @@
 		transform: scale(.7);
 	}
 	&:before {
-		-webkit-animation: rainy_rain .7s infinite linear;
 		animation: rainy_rain .7s infinite linear;
 		content: '';
 		background: #CCCCCC;
@@ -170,14 +158,8 @@
 	}
 }
 
-@-webkit-keyframes rainy {
-	50% { -webkit-transform: translateY(-20px); }
-}
 @keyframes rainy {
 	50% { transform: translateY(-20px); }
-}
-@-webkit-keyframes rainy_shadow {
-	50% { -webkit-transform: translateY(20px) scale(1); opacity: 0.05; }
 }
 @keyframes rainy_shadow {
 	50% { transform: translateY(20px) scale(1); opacity: 0.05; }
@@ -277,7 +259,6 @@
 ========================================================== */
 
 .rainbow {
-	-webkit-animation: rainbow 5s ease-in-out infinite;
 	animation: rainbow 5s ease-in-out infinite;
 	border-radius: 170px 0 0 0;
 	box-shadow: 
@@ -296,7 +277,6 @@
 	top: 71px;
   	transform: rotate(40deg);
 	&:after {
-		-webkit-animation: rainbow_shadow 5s ease-in-out infinite;
 		animation: rainbow_shadow 5s ease-in-out infinite;
 		background: #000000;
 		border-radius: 50%;
@@ -311,12 +291,6 @@
 	  	transform-origin: 50% 50%;
 	}
 }
-@-webkit-keyframes rainbow {
-	50% { @include rotate(50deg); }
-}
-@-webkit-keyframes rainbow_shadow {
-	50% { -webkit-transform:  rotate(-50deg) translate(10px) scale(.7); opacity: 0.05; }
-}
 @keyframes rainbow {
 	50% { transform: rotate(50deg); }
 }
@@ -328,7 +302,6 @@
 ========================================================== */
 
 .starry {
-  	-webkit-animation: starry_star 5s ease-in-out infinite;
   	animation: starry_star 5s ease-in-out infinite;
 	background: #fff;
 	border-radius: 50%;  
@@ -354,8 +327,7 @@
 	position: absolute;
   	left: 0; 
   	top: 150px;
-	&:after { 
-		-webkit-animation: starry 5s ease-in-out infinite;
+	&:after {
 		animation: starry 5s ease-in-out infinite;
 		border-radius: 50%;
 		box-shadow: #FFFFFF -25px 0;
@@ -368,31 +340,8 @@
 		transform-origin: 0 50%;
 	}
 }
-
-@-webkit-keyframes starry {
-	50% { @include rotate(10deg); }
-}
 @keyframes starry {
-	50% { @include rotate(10deg); }
-}
-@-webkit-keyframes starry_star {
-  50% { 
-	box-shadow:  
-		rgba(255,255,255,0.1) 26px 7px 0 -1px, 
-      	#FFFFFF -36px -19px 0 -1px, 
-      	#FFFFFF -51px -34px 0 -1px,
-      	rgba(255,255,255,0.1) -52px -62px 0 -1px, 
-      	rgba(255,255,255,0.1) 14px -37px,
-      	#FFFFFF 41px -19px,   
-      	rgba(255,255,255,0.1) 34px -50px,
-      	#FFFFFF 14px -71px 0 -1px,
-      	rgba(255,255,255,0.1) 64px -21px 0 -1px, 
-      	#FFFFFF 32px -85px 0 -1px,
-      	rgba(255,255,255,0.1) 64px -90px,
-      	#FFFFFF 60px -67px 0 -1px,  
-      	rgba(255,255,255,0.1) 34px -127px,
-      	#FFFFFF -26px -103px 0 -1px;
-	}
+	50% { transform: rotate(10deg); }
 }
 @keyframes starry_star {
   50% { 
@@ -418,7 +367,6 @@
 ========================================================== */
 
 .stormy {
-	-webkit-animation: stormy 5s ease-in-out infinite;
 	animation: stormy 5s ease-in-out infinite;
 	background: #222222;
 	border-radius: 50%;
@@ -435,7 +383,6 @@
 	left: 0; 
 	top: 70px; 
 	&:after {
-		-webkit-animation: stormy_shadow 5s ease-in-out infinite;
 		animation: stormy_shadow 5s ease-in-out infinite;
 		background: #000;
 		border-radius: 50%;
@@ -449,7 +396,6 @@
 		transform: scale(.7);
 	}
 	&:before {
-		-webkit-animation: stormy_thunder 2s steps(1, end) infinite; 
 		animation: stormy_thunder 2s steps(1, end) infinite; 
 		border-left: 0px solid transparent;
 		border-right: 7px solid transparent;
@@ -465,18 +411,6 @@
 		transform: rotate(14deg);
 		transform-origin: 50% -60px;
 	}
-}
-@-webkit-keyframes stormy {
-	50% { transform: translateY(-20px); } 
-}  
-@-webkit-keyframes stormy_shadow {
-	50% { transform: translateY(20px) scale(1); opacity: 0.05; }
-}
-@-webkit-keyframes stormy_thunder {
-	0%  { transform: rotate(20deg); opacity:1; }
-	5%  { transform: rotate(-34deg); opacity:1; }
-	10% { transform: rotate(0deg); opacity:1; }
-	15% { transform: rotate(-34deg); opacity:0; }
 }
 @keyframes stormy {
 	50% { transform: translateY(-20px); } 
@@ -495,7 +429,6 @@
 ========================================================== */
 
 .snowy {
-	-webkit-animation: snowy 5s ease-in-out infinite 1s;
 	animation: snowy 5s ease-in-out infinite 1s;
 	background: #FFFFFF; 
 	border-radius: 50%;
@@ -513,7 +446,6 @@
 	left: 0;
 	top: 70px;
 	&:after {
-		-webkit-animation: snowy_shadow 5s ease-in-out infinite 1s;
 		animation: snowy_shadow 5s ease-in-out infinite 1s;
 		background: #000000;
 		border-radius: 50%;
@@ -527,7 +459,6 @@
 		transform: scale(.7);
 	}
 	&:before {
-		-webkit-animation: snowy_snow 2s infinite linear;
 		animation: snowy_snow 2s infinite linear;
 		content: '';
 		border-radius: 50%;
@@ -536,102 +467,6 @@
 		width: 7px;
 		opacity: 0.8;
 		transform: scale(.9);
-	}
-}
-@-webkit-keyframes snowy {
-	50% { -webkit-transform: translateY(-20px); }
-}
-@-webkit-keyframes snowy_shadow {
-	50% { -webkit-transform: translateY(20px) scale(1); opacity: 0.05; }
-}
-@-webkit-keyframes snowy_snow {
-	0% {  
-		box-shadow: 
-			rgba(238,238,238,0) 30px 30px, 
-			rgba(238,238,238,0) 40px 40px,  
-			#EEEEEE 50px 75px, 
-			#EEEEEE 55px 50px, 
-			#EEEEEE 70px 100px, 
-			#EEEEEE 80px 95px, 
-			#EEEEEE 110px 45px, 
-			#EEEEEE 90px 35px; 
-	}
-	25% {  
-	  	box-shadow: 
-			#EEEEEE 30px 45px,
-			#EEEEEE 40px 60px,
-			#EEEEEE 50px 90px,
-			#EEEEEE 55px 65px,
-			rgba(238,238,238,0) 70px 120px,
-			rgba(238,238,238,0) 80px 120px,
-			#EEEEEE 110px 70px,
-			#EEEEEE 90px 60px;
-	}
-	26% {  
-		box-shadow:
-			#EEEEEE 30px 45px,
-			#EEEEEE 40px 60px,
-			#EEEEEE 50px 90px,
-			#EEEEEE 55px 65px,
-			rgba(238,238,238,0) 70px 40px,
-			rgba(238,238,238,0) 80px 20px,
-			#EEEEEE 110px 70px,
-			#EEEEEE 90px 60px; 
-	}
-	50% { 
-		box-shadow:
-			#EEEEEE 30px 70px,
-			#EEEEEE 40px 80px,
-			rgba(238,238,238,0) 50px 100px,
-			#EEEEEE 55px 80px,
-			#EEEEEE 70px 60px,
-			#EEEEEE 80px 45px,
-			#EEEEEE 110px 95px,
-			#EEEEEE 90px 85px;
-	}
-	51% {
-		box-shadow:
-			#EEEEEE 30px 70px,
-			#EEEEEE 40px 80px,
-			rgba(238,238,238,0) 50px 45px,
-			#EEEEEE 55px 80px,
-			#EEEEEE 70px 60px,
-			#EEEEEE 80px 45px,
-			#EEEEEE 110px 95px,
-			#EEEEEE 90px 85px;
-	}
-	75% {
-		box-shadow:
-			#EEEEEE 30px 95px,
-			#EEEEEE 40px 100px,
-			#EEEEEE 50px 60px,
-			rgba(238,238,238,0) 55px 95px,
-			#EEEEEE 70px 80px,
-			#EEEEEE 80px 70px,
-			rgba(238,238,238,0) 110px 120px,
-			rgba(238,238,238,0) 90px 110px;
-	}
-	76% {
-		box-shadow:
-			#EEEEEE 30px 95px,
-			#EEEEEE 40px 100px,
-			#EEEEEE 50px 60px,
-			rgba(238,238,238,0) 55px 35px,
-			#EEEEEE 70px 80px,
-			#EEEEEE 80px 70px,
-			rgba(238,238,238,0) 110px 25px,
-			rgba(238,238,238,0) 90px 15px;
-	}
-	100% {
-		box-shadow:
-			rgba(238,238,238,0) 30px 120px,
-			rgba(238,238,238,0) 40px 120px,
-			#EEEEEE 50px 75px,
-			#EEEEEE 55px 50px,
-			#EEEEEE 70px 100px,
-			#EEEEEE 80px 95px,
-			#EEEEEE 110px 45px,
-			#EEEEEE 90px 35px;
 	}
 }
 @keyframes snowy {
