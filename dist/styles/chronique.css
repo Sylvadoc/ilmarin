@@ -1325,7 +1325,6 @@ body {
   border: 1px solid #ccc;
   margin-bottom: 2rem;
   border-radius: 3px;
-  background-clip: padding-box;
   padding: 1rem;
 }
 
@@ -2369,7 +2368,6 @@ body {
 
 .toolbar li {
   border-radius: 3px;
-  background-clip: padding-box;
   border: 1px solid #ccc;
   display: inline-block;
   margin: 0 .5rem;
@@ -2387,7 +2385,6 @@ body {
 
 .toolbar li a {
   border-radius: 2px;
-  background-clip: padding-box;
   transition: background-color 300ms ease-out;
   background-color: white;
   display: inline-block;
@@ -2515,12 +2512,6 @@ body {
 
 .body-chronique .rating {
   transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg))";
-  zoom: 1;
   background-color: white;
   border: 1px solid #ccc;
   height: 10rem;
@@ -2533,12 +2524,6 @@ body {
 
 .body-chronique .rating span {
   transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg))";
-  zoom: 1;
   color: #ccc;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   line-height: 1;
@@ -2605,10 +2590,6 @@ body {
 
 #review-all .tabs {
   transform: translate3d(0, -45%, 0);
-  -moz-transform: translate3d(0, -45%, 0);
-  -ms-transform: translate3d(0, -45%, 0);
-  -webkit-transform: translate3d(0, -45%, 0);
-  zoom: 1;
   float: right;
   margin: 0;
 }
@@ -2619,14 +2600,7 @@ body {
 
 #review-all .tabs a {
   border-radius: 0;
-  background-clip: padding-box;
   transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg))";
-  zoom: 1;
   background-color: white;
   border: 1px solid #ccc;
   height: 5rem;
@@ -2641,12 +2615,6 @@ body {
 
 #review-all .tabs a .include {
   transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg))";
-  zoom: 1;
   color: #ccc;
   font-family: "Montserrat", "Roboto Condensed", "Arial Narrow", sans-serif;
   line-height: 1;
@@ -2908,12 +2876,6 @@ body {
 
 #les_listes .flex-list article a p:before {
   transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -webkit-transform: rotate(-3deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-3deg), M12=-sin(-3deg), M21=sin(-3deg), M22=cos(-3deg));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-3deg), M12=-sin(-3deg), M21=sin(-3deg), M22=cos(-3deg))";
-  zoom: 1;
   background: inherit;
   content: '';
   display: block;
@@ -2937,7 +2899,6 @@ body {
 ===================================================== */
 #most .article_focus {
   border-radius: 0;
-  background-clip: padding-box;
   background: transparent;
 }
 
@@ -2947,7 +2908,6 @@ body {
 
 #most .article_focus .inner_content {
   border-radius: 5px;
-  background-clip: padding-box;
   background: white;
   padding: 1em;
   text-align: justify;
@@ -2976,12 +2936,6 @@ body {
 
 #most .article_focus .inner_content a p:before {
   transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -webkit-transform: rotate(-3deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-3deg), M12=-sin(-3deg), M21=sin(-3deg), M22=cos(-3deg));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-3deg), M12=-sin(-3deg), M21=sin(-3deg), M22=cos(-3deg))";
-  zoom: 1;
   background: inherit;
   content: '';
   display: block;
@@ -3193,7 +3147,7 @@ body {
   }
 }
 
-@media (min-width: 480px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   #author_biography .portrait {
     width: 80%;
   }

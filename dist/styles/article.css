@@ -1325,7 +1325,6 @@ body {
   border: 1px solid #ccc;
   margin-bottom: 2rem;
   border-radius: 3px;
-  background-clip: padding-box;
   padding: 1rem;
 }
 
@@ -2815,16 +2814,10 @@ body {
   margin: 0 auto;
   width: 91.429em;
   transform: translate3d(0, -50%, 0);
-  -moz-transform: translate3d(0, -50%, 0);
-  -ms-transform: translate3d(0, -50%, 0);
-  -webkit-transform: translate3d(0, -50%, 0);
-  zoom: 1;
 }
 
 .header_article .the-title {
   font-family: "Roboto Slab", serif;
-  -webkit-text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
-  -moz-text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   font-size: 5rem;
   margin: 0 0 1em 0;
@@ -2842,8 +2835,6 @@ body {
 }
 
 .header_article .a-propos {
-  -webkit-text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
-  -moz-text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
   font-family: "Roboto Slab", serif;
   font-style: italic;
@@ -2927,10 +2918,6 @@ body {
 
 .body-article .align_left .inner_comp {
   transform: translate3d(-4em, 0, 0);
-  -moz-transform: translate3d(-4em, 0, 0);
-  -ms-transform: translate3d(-4em, 0, 0);
-  -webkit-transform: translate3d(-4em, 0, 0);
-  zoom: 1;
 }
 
 .body-article .quote {
@@ -3005,10 +2992,6 @@ body {
   }
   .body-article .align_right .inner_comp, .body-article .align_left .inner_comp {
     transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-    zoom: 1;
   }
 }
 
@@ -3067,7 +3050,7 @@ body {
 }
 
 .other_news a {
-  transition: all 0.1s ease-in;
+  transition: all .1s ease-in;
   background-color: #fff;
   background-position: 0 0;
   background-size: cover;
@@ -3181,17 +3164,11 @@ body {
   padding: 0 .5rem;
   position: relative;
   background-color: white;
-  transition: all 0.2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .news_section ul li a p:before {
   transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -webkit-transform: rotate(-3deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-3deg), M12=-sin(-3deg), M21=sin(-3deg), M22=cos(-3deg));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-3deg), M12=-sin(-3deg), M21=sin(-3deg), M22=cos(-3deg))";
-  zoom: 1;
   background: inherit;
   content: '';
   display: block;
@@ -3231,7 +3208,6 @@ body {
   background: white;
   padding: 1em;
   border-radius: 5px;
-  background-clip: padding-box;
 }
 
 #moreover #a_la_une h2 {
@@ -3261,12 +3237,6 @@ body {
 
 #moreover #a_la_une article a p:before {
   transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -webkit-transform: rotate(-3deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-3deg), M12=-sin(-3deg), M21=sin(-3deg), M22=cos(-3deg));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-3deg), M12=-sin(-3deg), M21=sin(-3deg), M22=cos(-3deg))";
-  zoom: 1;
   background: inherit;
   content: '';
   display: block;
@@ -3303,7 +3273,7 @@ body {
 
 #moreover #last_chronicles ul a:before {
   background: rgba(255, 255, 255, 0);
-  transition: background 0.2s ease-in;
+  transition: background .2s ease-in;
 }
 
 #moreover #last_chronicles ul a:hover:before {

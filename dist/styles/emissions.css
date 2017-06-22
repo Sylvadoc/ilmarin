@@ -1325,7 +1325,6 @@ body {
   border: 1px solid #ccc;
   margin-bottom: 2rem;
   border-radius: 3px;
-  background-clip: padding-box;
   padding: 1rem;
 }
 
@@ -2887,7 +2886,6 @@ body {
 #une_emission .article_focus .inner_content {
   background: white;
   border-radius: 5px;
-  background-clip: padding-box;
   padding: 1em;
   text-align: justify;
 }
@@ -2996,10 +2994,6 @@ body {
 
 #follow-brick p:before {
   transform: translate3d(-50%, 0, 0);
-  -moz-transform: translate3d(-50%, 0, 0);
-  -ms-transform: translate3d(-50%, 0, 0);
-  -webkit-transform: translate3d(-50%, 0, 0);
-  zoom: 1;
   content: '';
   position: absolute;
   top: -2rem;
@@ -3018,7 +3012,6 @@ body {
 
 #the_podcast .main_news {
   border-radius: 5px;
-  background-clip: padding-box;
   background-color: white;
   padding: 1em;
 }

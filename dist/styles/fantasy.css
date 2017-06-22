@@ -1325,7 +1325,6 @@ body {
   border: 1px solid #ccc;
   margin-bottom: 2rem;
   border-radius: 3px;
-  background-clip: padding-box;
   padding: 1rem;
 }
 
@@ -3143,7 +3142,7 @@ body {
 }
 
 .fantasy_section .author {
-  transition: transform 0.3s;
+  transition: transform .3s;
   display: block;
   width: 135px;
   padding: 5px;
@@ -3167,10 +3166,6 @@ body {
 
 .fantasy_section .quote-01 .author {
   transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  zoom: 1;
   float: left;
   height: 167px;
 }
@@ -3198,10 +3193,6 @@ body {
 
 .fantasy_section .quote-02 .author {
   transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  zoom: 1;
   float: right;
   height: 209px;
 }
@@ -3224,7 +3215,6 @@ body {
 
 #begin_fantasy .medium-4 h2 {
   border-radius: 5px 5px 0 0;
-  background-clip: padding-box;
   background: white;
   color: #BE2700;
   margin: 0;
@@ -3233,7 +3223,6 @@ body {
 
 #begin_fantasy .article_focus {
   border-radius: 0 0 5px 5px;
-  background-clip: padding-box;
 }
 
 #begin_fantasy .article_focus + .article_focus {
@@ -3248,7 +3237,6 @@ body {
 ========================================================== */
 @media (min-width: 1024px) {
   .fantasy_section .flipping-quote {
-    -ms-perspective: 1000px;
     perspective: 1000px;
     transform-style: preserve-3d;
   }
@@ -3257,10 +3245,6 @@ body {
   }
   .fantasy_section .flipping-quote:hover .author {
     transform: translate3d(0, -10px, 0);
-    -moz-transform: translate3d(0, -10px, 0);
-    -ms-transform: translate3d(0, -10px, 0);
-    -webkit-transform: translate3d(0, -10px, 0);
-    zoom: 1;
   }
   .fantasy_section .flipping-quote:hover .more {
     width: 100%;
@@ -3268,15 +3252,15 @@ body {
   }
   .fantasy_section .quote {
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+            backface-visibility: hidden;
     transform-style: preserve-3d;
-    transition: transform 0.3s;
+    transition: transform .3s;
   }
   .fantasy_section .more {
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+            backface-visibility: hidden;
     transform-style: preserve-3d;
-    transition: all 0.3s;
+    transition: all .3s;
   }
   .fantasy_section .quote-01 .quote {
     transform-origin: left top;
@@ -3296,7 +3280,7 @@ body {
   }
 }
 
-@media (min-width: 480px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   .fantasy_section .flipping-quote {
     position: static;
   }

@@ -1,3 +1,5 @@
+@import "../vendors/include-media";
+
 /********************************************************************************************************************************************************************************
 ********************* S E C T I O N   B I B L I O T H E Q U E *****************
 /********************************************************************************************************************************************************************************/
@@ -49,7 +51,7 @@
 	padding: 0;
 	text-align: center;
 	li {
-		@include border-radius(3px);
+		border-radius: 3px;
 		border: 1px solid #ccc;
 		display: inline-block;
 		margin: 0 .5rem;
@@ -58,8 +60,8 @@
 		&:first-child { margin-left: 0; }
 		&:last-child { margin-right: 0; }
 		a {
-			@include border-radius(2px);
-			@include transition(background-color 300ms ease-out);
+			border-radius: 2px;
+			transition: background-color 300ms ease-out;
 			background-color: white;
 			display: inline-block;
 			margin: 0;
@@ -167,7 +169,7 @@
 	margin: 2rem 0 1em;
 	position: relative;
 	.rating {
-		@include rotate(45deg);
+		transform: rotate(45deg);
 		background-color: white;
 		border: 1px solid #ccc;
 		height: 10rem;
@@ -177,7 +179,7 @@
 		top: -5rem;
 		width: 10rem;
 		span {
-			@include rotate(-45deg);
+			transform: rotate(-45deg);
 			color: #ccc;
 			font-family: $font-stack-headings;
 			line-height: 1;
@@ -236,13 +238,13 @@
 
 #review-all {
 	.tabs {
-		@include translate3d(0,-45%,0);
+		transform: translate3d(0,-45%,0);
 		float: right;
 		margin: 0;
 		li { margin: 0 1.5rem; }
 		a {
-			@include border-radius(0);
-			@include rotate(45deg);
+			border-radius: 0;
+			transform: rotate(45deg);
 			background-color: white;
 			border: 1px solid #ccc;
 			height: 5rem;
@@ -254,7 +256,7 @@
 			position: relative;
 			font-weight: 400;
 			.include {
-				@include rotate(-45deg);
+				transform: rotate(-45deg);
 				color: #ccc;
 				font-family: $font-stack-headings;
 				line-height: 1;
@@ -296,14 +298,14 @@
 /* ================ R E S P O N S I V E
 ===================================================== */
 
-@media (max-width: $medium-screen) {
+@include media('<=medium-plus-screen') {
 	.details {
 		.book-title {
 			@include rem(4);
 		}
 	}
 }
-@media (max-width: $small-screen) {
+@include media('<=small-plus-screen') {
 	.details {
 		.book-title {
 			@include rem(2);
@@ -336,7 +338,7 @@
 		font-weight: 400;
 	}
 	.basic_list {
-		@include column-count(2);
+		column-count: 2;
 	}
 }
 .follow_link {
@@ -411,9 +413,9 @@
 		text-transform: uppercase;
 	}
 	[type="text"] {
-		@include box-shadow(inset 0 1px 2px rgba(black, 0.1));
+		box-shadow: inset 0 1px 2px rgba(black, 0.1);
 		@include rem(1.6);
-		@include transition(all 0.15s linear);
+		transition: all 0.15s linear;
 		background-color: white;
 		border-radius: 0;
 		border: 1px solid #ccc;
@@ -485,7 +487,7 @@
 					position: relative;
 					text-transform: uppercase;
 					&:before {
-						@include rotate(-3deg);
+						transform: rotate(-3deg);
 						background: inherit;
 						content: '';
 						display: block;
@@ -514,14 +516,14 @@
 #most {
 	.article_focus {
 		@extend %clearfix;
-		@include border-radius(0);
+		border-radius: 0;
 		background: transparent;
 		h2 {
 			margin-bottom: .5em !important;
 		}
 		.inner_content {
 			@extend %clearfix;
-			@include border-radius(5px);
+			border-radius: 5px;
 			background: white;
 			padding: 1em;
 			text-align: justify;
@@ -541,7 +543,7 @@
 					background: white;
 					text-align: left;
 					&:before {
-						@include rotate(-3deg);
+						transform: rotate(-3deg);
 						background: inherit;
 						content: '';
 						display: block;
@@ -712,7 +714,7 @@
 /* ============== R E S P O N S I V E
 ========================================================== */
 
-@media (max-width: $tiny-screen) {
+@include media('<=tiny-plus-screen') {
 	#author_biography {
 		.bio-title {
 			@include rem(5);
@@ -727,7 +729,7 @@
 		}
 	}
 }
-@media (min-width: $tiny-screen) and (max-width: $medium-screen) {
+@include media('>tiny-plus-screen','<=medium-plus-screen') {
 	#author_biography {
 		.portrait {
 			width: 80%;

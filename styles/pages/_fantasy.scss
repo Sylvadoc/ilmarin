@@ -1,3 +1,5 @@
+@import "../vendors/include-media";
+
 /********************************************************************************************************************************************************************************
 ********************* S E C T I O N   F A N T A S Y *****************
 /********************************************************************************************************************************************************************************/
@@ -56,7 +58,7 @@
 		}
 	}
 	.author {
-		@include transition(transform .3s);
+		transition: transform .3s;
 		display: block;
 		width: 135px;
 		padding: 5px;
@@ -74,7 +76,7 @@
 			margin-left: 145px;
 		}
 		.author {
-			@include translate3d(0,0,0);
+			transform: translate3d(0,0,0);
 			float: left;
 			height: 167px;
 			span {
@@ -96,7 +98,7 @@
 			margin-right: 145px;
 		}
 		.author {
-			@include translate3d(0,0,0);
+			transform: translate3d(0,0,0);
 			float: right;
 			height: 209px;
 			span {
@@ -119,14 +121,14 @@
 }
 #begin_fantasy {
 	.medium-4 h2 {
-		@include border-radius(5px 5px 0 0);
+		border-radius: 5px 5px 0 0;
 		background: white;
 		color: #BE2700;
 		margin: 0;
 		padding: 1rem 1rem 0 1rem;
 	}
 	.article_focus {
-		@include border-radius(0 0 5px 5px);
+		border-radius: 0 0 5px 5px;
 		&+ .article_focus {
 			margin-top: 1rem;
 		}
@@ -141,57 +143,57 @@
 /* ============== R E S P O N S I V E
 ========================================================== */
 
-@media (min-width: $medium-screen) {
+@include media('>=medium-plus-screen') {
 	.fantasy_section {
 		.flipping-quote {
-			@include perspective(1000px);
-			@include transform-style(preserve-3d);
+			perspective: 1000px;
+			transform-style: preserve-3d;
 			&:hover {
 				.quote {
-					@include rotateY(0);
+					transform: rotateY(0);
 				}
 				.author {
-					@include translate3d(0,-10px,0);
+                    transform: translate3d(0,-10px,0);
 				}
 				.more {
 					width: 100%;
-					@include rotateY(0);
+                    transform: rotateY(0);
 				}
 			}
 		}
 		.quote {
-			@include backface-visibility(hidden);
-			@include transform-style(preserve-3d);
-			@include transition(transform .3s);
+			backface-visibility: hidden;
+			transform-style: preserve-3d;
+			transition: transform .3s;
 		}
 		.more {
-			@include backface-visibility(hidden);
-			@include transform-style(preserve-3d);
-			@include transition(all .3s);
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+			transition: all .3s;
 		}
 		.quote-01 {
 			.quote {
-				@include transform-origin(left top);
-				@include rotateY(20.0001deg);
+				transform-origin: left top;
+				transform: rotateY(20.0001deg);
 			}
 			.more {
-				@include transform-origin(right top);
-				@include rotateY(-20.0001deg);
+				transform-origin: right top;
+				transform: rotateY(-20.0001deg);
 			}
 		}
 		.quote-02 {
 			.quote {
-				@include transform-origin(right top);
-				@include rotateY(-20.0001deg);
+				transform-origin: right top;
+				transform: rotateY(-20.0001deg);
 			}
 			.more {
-				@include transform-origin(left top);
-				@include rotateY(20.0001deg);
+				transform-origin: left top;
+				transform: rotateY(20.0001deg);
 			}
 		}
 	}
 }
-@media (min-width: $tiny-screen) and (max-width: $medium-screen) {
+@include media('>tiny-plus-screen','<=medium-plus-screen') {
 	.fantasy_section {
 		.flipping-quote {
 			position: static;
@@ -208,7 +210,7 @@
 		}
 	}
 }
-@media (max-width: $tiny-screen) {
+@include media('<=tiny-plus-screen') {
 	.fantasy_section {
 		height: 450px;
 		.flipping-quote {

@@ -10,7 +10,7 @@
 	background: white;
 	border: 1px solid #ccc;
 	margin-bottom: 2rem;
-	@include border-radius(3px);
+	border-radius: 3px;
 	padding: 1rem;
 	h2 {
 		text-transform: uppercase;

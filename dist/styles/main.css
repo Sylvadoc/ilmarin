@@ -1325,7 +1325,6 @@ body {
   border: 1px solid #ccc;
   margin-bottom: 2rem;
   border-radius: 3px;
-  background-clip: padding-box;
   padding: 1rem;
 }
 
@@ -1536,7 +1535,7 @@ body {
 
 /* ============== R E S P O N S I V E
 ========================================================== */
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 767px) {
   #news_general {
     padding: 0.93em 0;
   }
@@ -1605,7 +1604,7 @@ body {
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1600px) {
+@media (min-width: 1281px) and (max-width: 1600px) {
   #news_general {
     padding: 1.86em 0 0;
   }
@@ -1627,7 +1626,7 @@ body {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1601px) {
   #news_general {
     padding: 1.86em 0;
   }
@@ -3961,10 +3960,6 @@ body {
 #prix_elbakin_net {
   padding: 2rem 0;
   transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -webkit-transform: translate(0, 0);
-  zoom: 1;
 }
 
 #prix_elbakin_net h3 {
@@ -4037,20 +4032,13 @@ body {
 }
 
 .all_prices li:nth-child(7) {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: .8;
   left: 679px;
   top: 0;
 }
 
 .all_prices .le-prix {
   transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45deg), M12=-sin(45deg), M21=sin(45deg), M22=cos(45deg))";
-  zoom: 1;
   background: white;
   border: thick solid white;
   height: 140px;
@@ -4061,12 +4049,6 @@ body {
 
 .all_prices .le-prix .contenu-prix {
   transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45deg), M12=-sin(-45deg), M21=sin(-45deg), M22=cos(-45deg))";
-  zoom: 1;
   left: 0;
   position: absolute;
   text-align: center;
@@ -4137,7 +4119,7 @@ body {
   }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   #prix_elbakin_net .all_prices {
     margin: 2rem auto 0;
     height: auto;
@@ -4148,12 +4130,6 @@ body {
     position: static;
     display: inline-block;
     transform: rotate(0);
-    -moz-transform: rotate(0);
-    -o-transform: rotate(0);
-    -webkit-transform: rotate(0);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(0), M12=-sin(0), M21=sin(0), M22=cos(0));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(0), M12=-sin(0), M21=sin(0), M22=cos(0))";
-    zoom: 1;
   }
   #prix_elbakin_net .all_prices li .le-prix {
     height: 200px;
@@ -4174,12 +4150,6 @@ body {
   }
   #prix_elbakin_net .all_prices li * {
     transform: rotate(0);
-    -moz-transform: rotate(0);
-    -o-transform: rotate(0);
-    -webkit-transform: rotate(0);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(0), M12=-sin(0), M21=sin(0), M22=cos(0));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(0), M12=-sin(0), M21=sin(0), M22=cos(0))";
-    zoom: 1;
   }
 }
 
@@ -4194,12 +4164,6 @@ body {
     position: static;
     display: inline-block;
     transform: rotate(0);
-    -moz-transform: rotate(0);
-    -o-transform: rotate(0);
-    -webkit-transform: rotate(0);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(0), M12=-sin(0), M21=sin(0), M22=cos(0));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(0), M12=-sin(0), M21=sin(0), M22=cos(0))";
-    zoom: 1;
   }
   #prix_elbakin_net .all_prices li .le-prix {
     height: 200px;
@@ -4220,12 +4184,6 @@ body {
   }
   #prix_elbakin_net .all_prices li * {
     transform: rotate(0);
-    -moz-transform: rotate(0);
-    -o-transform: rotate(0);
-    -webkit-transform: rotate(0);
-    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(0), M12=-sin(0), M21=sin(0), M22=cos(0));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(0), M12=-sin(0), M21=sin(0), M22=cos(0))";
-    zoom: 1;
   }
   #elbakin {
     display: none;

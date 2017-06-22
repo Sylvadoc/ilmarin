@@ -1,3 +1,5 @@
+@import "../vendors/include-media";
+
 /********************************************************************************************************************************************************************************
 ********************* A R T I C L E *****************
 /********************************************************************************************************************************************************************************/
@@ -35,11 +37,11 @@
 		top: 50%;
 		margin: 0 auto;
 		width: $row;
-		@include translate3d(0,-50%,0);
+		transform: translate3d(0,-50%,0);
 	}
 	.the-title {
 		font-family: $font-stack-simili;
-		@include text-shadow(0 0 5px rgba(0,0,0,0.9));
+		text-shadow: 0 0 5px rgba(0,0,0,0.9);
 		font-size: $al-size;
 		margin: 0 0 1em 0;
 		position: relative;
@@ -54,7 +56,7 @@
 		}
 	}
 	.a-propos {
-		@include text-shadow(0 0 3px rgba(0,0,0,0.9));
+		text-shadow: 0 0 3px rgba(0,0,0,0.9);
 		font-family: $font-stack-simili;
 		font-style: italic;
 		font-size: $h2-size;
@@ -121,7 +123,7 @@
 		float: left;
 		margin: 0 2em 1em 0;
 		.inner_comp {
-			@include translate3d(-4em,0,0);
+			transform: translate3d(-4em,0,0);
 		}
 	}
 	.quote {
@@ -144,7 +146,7 @@
 				top: 5px;
 			}
 			&:after {
-				@include skewX(-40deg);
+				transform: skewX(-40deg);
 				background: #ccc;
 				content: '';
 				display: block;
@@ -160,12 +162,12 @@
 /* ============== R E S P O N S I V E
 ========================================================== */
 
-@media (max-width: $medium-screen) {
+@include media('<=medium-plus-screen') {
 	.header_article {
 		height: 450px;
 		width: 100%;
 		.header_inner {
-			width: $medium-screen;
+			width: map-get($breakpoints, medium-plus-screen);
 		}
 		.the-title {
 			font-size: $h1-size;
@@ -193,17 +195,17 @@
 			float: none;
 			margin: 0 auto 2em auto;
 			.inner_comp {
-				@include translate3d(0,0,0);
+				transform: translate3d(0,0,0);
 			}
 		}
 	}
 }
-@media (max-width: $small-screen) {
+@include media('<=small-plus-screen') {
 	.header_article {
 		height: 350px;
 		width: 100%;
 		.header_inner {
-			width: $small-screen;
+			width: map-get($breakpoints, small-plus-screen);
 		}
 		.the-title {
 			font-size: $h2-size;
@@ -213,7 +215,7 @@
 		}
 	}
 }
-@media (max-width: $tiny-screen) {
+@include media('<=tiny-plus-screen') {
 	.header_article {
 		height: 300px;
 		width: 100%;
@@ -250,7 +252,7 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	a {
-		@include transition(all .1s ease-in);
+		transition: all .1s ease-in;
 		background-color: $news-background;
 		background-position: 0 0;
 		background-size: cover;
@@ -343,9 +345,9 @@
 					padding: 0 .5rem;
 					position: relative;
 					background-color: white;
-					@include transition(all .2s ease-in);
+					transition: all .2s ease-in;
 					&:before {
-						@include rotate(-3deg);
+						transform: rotate(-3deg);
 						background: inherit;
 						content: '';
 						display: block;
@@ -384,7 +386,7 @@
 	#a_la_une {
 		background: white;
 		padding: 1em;
-		@include border-radius(5px);
+		border-radius: 5px;
 		h2 {
 			color: $base-color-elbakin;
 			margin: .5em 0 1em 0;
@@ -403,7 +405,7 @@
 					position: relative;
 					background: white;
 					&:before {
-						@include rotate(-3deg);
+						transform: rotate(-3deg);
 						background: inherit;
 						content: '';
 						display: block;
@@ -437,7 +439,7 @@
 				}
 				&:before {
 					background: rgba(255,255,255,0);
-					@include transition(background .2s ease-in);
+					transition: background .2s ease-in;
 				}
 				&:hover {
 					&:before {
@@ -492,7 +494,7 @@
 	/* ============== R E S P O N S I V E
 	========================================================== */
 
-	@media (max-width: $medium-screen) {
+	@include media('<=medium-plus-screen') {
 		.news_section {
 			ul {
 				li {

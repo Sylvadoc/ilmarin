@@ -25,7 +25,7 @@
 		padding: 0;
 		.inner_content {
 			background: white;
-			@include border-radius(5px);
+			border-radius: 5px;
 			padding: 1em;
 			text-align: justify;
 		}
@@ -48,11 +48,11 @@
 	// itunes
 	.icon-01 {
 		a {
-			border-color: dodgerblue;
-			color: dodgerblue;
+			border-color: $itunes;
+			color: $itunes;
 			&:hover {
-				border-color: dodgerblue;
-				background-color: dodgerblue;
+				border-color: $itunes;
+				background-color: $itunes;
 				color: white;
 			}
 		}
@@ -60,11 +60,11 @@
 	// android
 	.icon-02 {
 		a {
-			border-color: #a4c639;
-			color: #a4c639;
+			border-color: $android;
+			color: $android;
 			&:hover {
-				border-color: #a4c639;
-				background-color: #a4c639;
+				border-color: $android;
+				background-color: $android;
 				color: white;
 			}
 		}
@@ -72,11 +72,11 @@
 	// RSS
 	.icon-03 {
 		a {
-			border-color: darkorange;
-			color: darkorange;
+			border-color: $rss;
+			color: $rss;
 			&:hover {
-				border-color: darkorange;
-				background-color: darkorange;
+				border-color: $rss;
+				background-color: $rss;
 				color: white;
 			}
 		}
@@ -84,11 +84,11 @@
 	// youtube
 	.icon-04 {
 		a {
-			border-color: #cc181e;
-			color: #cc181e;
+			border-color: $youtube;
+			color: $youtube;
 			&:hover {
-				border-color: #cc181e;
-				background-color: #cc181e;
+				border-color: $youtube;
+				background-color: $youtube;
 				color: white;
 			}
 		}
@@ -129,7 +129,7 @@
 		position: relative;
 		text-transform: uppercase;
 		&:before {
-			@include translate3d(-50%,0,0);
+			transform: translate3d(-50%,0,0);
 			content: '';
 			position: absolute;
 			top: -2rem;
@@ -148,7 +148,7 @@
 	clear: both;
 	padding-top: 2rem;
 	.main_news {
-		@include border-radius(5px);
+		border-radius: 5px;
 		background-color: white;
 		padding: 1em;
 		.the-title {

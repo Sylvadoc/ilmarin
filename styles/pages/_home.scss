@@ -1,3 +1,5 @@
+@import "../vendors/include-media";
+
 /********************************************************************************************************************************************************************************
 ********************* H O M E *****************
 /********************************************************************************************************************************************************************************/
@@ -22,7 +24,7 @@
 
 #prix_elbakin_net {
 	padding: 2rem 0;
-	@include translate(0,0);
+	transform: translate(0,0);
 	h3 {
 		@include rem(2);
 		font-weight: 400;
@@ -81,13 +83,13 @@
 			top: 113px;
 		}
 		&:nth-child(7) {
-			@include opacity(0.8);
+			opacity: .8;
 			left: 679px;
 			top: 0;
 		}
 	}
 	.le-prix {
-		@include rotate(45deg);
+		transform: rotate(45deg);
 		background: white;
 		border: thick solid white;
 		height: 140px;
@@ -95,7 +97,7 @@
 		width: 140px;
 		overflow: hidden;
 		.contenu-prix {
-			@include rotate(-45deg);
+			transform: rotate(-45deg);
 			left: 0;
 			position: absolute;
 			text-align: center;
@@ -105,7 +107,7 @@
 			img {
 				position: absolute;
 				left: -40%;
-				@include scale(1.4);
+				transform: scale(1.4);
 				top: -20px;
 			}
 			.detail_price {
@@ -156,12 +158,12 @@
 /* ============== R E S P O N S I V E
 ========================================================== */
 
-@media (max-width: $medium-screen) {
+@include media('<=medium-plus-screen') {
 	#prix_elbakin_net {
 		background-attachment: scroll !important;
 	}
 }
-@media (min-width: $tiny-screen) and (max-width: $small-screen) {
+@include media('>tiny-plus-screen','<=small-plus-screen') {
 	#prix_elbakin_net {
 		.all_prices {
 			margin: 2rem auto 0;
@@ -171,7 +173,7 @@
 			li {
 				position: static;
 				display: inline-block;
-				@include rotate(0);
+				transform: rotate(0);
 				.le-prix {
 					height: 200px;
 				}
@@ -190,13 +192,13 @@
 					}
 				}
 				* {
-					@include rotate(0);
+					transform: rotate(0);
 				}
 			}
 		}
 	}
 }
-@media (max-width: $tiny-screen) {
+@include media('<=tiny-plus-screen') {
 	#prix_elbakin_net {
 		.all_prices {
 			margin: 2rem auto 0;
@@ -206,7 +208,7 @@
 			li {
 				position: static;
 				display: inline-block;
-				@include rotate(0);
+				transform: rotate(0);
 				.le-prix {
 					height: 200px;
 				}
@@ -225,7 +227,7 @@
 					}
 				}
 				* {
-					@include rotate(0);
+					transform: rotate(0);
 				}
 			}
 		}
