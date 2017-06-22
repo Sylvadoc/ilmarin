@@ -24,6 +24,9 @@ var SASS_FILES_PATH = 'styles//**/*.scss';
 var SASS_COMPILE_OPTIONS = {
 	outputStyle: 'expanded'
 };
+var autoprefixerOptions = {
+	browsers: ['last 2 versions', 'Explorer >= 11']
+};
 
 // configuration des plugins
 var imageminConfig = {
@@ -64,10 +67,15 @@ gulp.task('styles', function() {
 	return gulp.src(SASS_FILES_PATH)
 		.pipe(sass(SASS_COMPILE_OPTIONS).on('error', sass.logError))
 		.pipe(sourcemaps.init())
-		.pipe(autoprefixer('last 2 version'))
+		.pipe(autoprefixer(autoprefixerOptions))
 		.pipe(gulp.dest('dist/styles'))
 		.pipe(rename({ suffix: '.min' }))
-		.pipe(cssnano())
+		.pipe(cssnano({
+			safe: true,
+			postcssZindex: false,
+			zindex: false,
+			autoprefixer: { autoprefixerOptions }
+		}))
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('dist/styles'))
 });
