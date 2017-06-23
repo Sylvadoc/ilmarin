@@ -4,6 +4,9 @@ var isMobile;
 $(document).ready(function() {
 	'use strict';
 
+	// animation de la une
+	$('#news_general').addClass('is-loaded');
+
 	// overlay navigation
 	$('#trigger').click(function() {
 		$('.m-scene').toggleClass('overlay-open lock-overflow');

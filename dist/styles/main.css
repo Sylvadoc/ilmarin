@@ -1406,6 +1406,17 @@ body {
   }
 }
 
+.grid-une__item {
+  transition: all .2s ease-in;
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+}
+
+.is-loaded .grid-une__item {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 .grid-une__item_a {
   grid-area: a;
   background-color: #E0DDCF;
@@ -1414,41 +1425,49 @@ body {
 .grid-une__item_b {
   grid-area: b;
   background-color: #2D232E;
+  transition-delay: .8s;
 }
 
 .grid-une__item_c {
   grid-area: c;
   background-color: #F1F0EA;
+  transition-delay: 1.2s;
 }
 
 .grid-une__item_d {
   grid-area: d;
   background-color: #A0D1E5;
+  transition-delay: 1.4s;
 }
 
 .grid-une__item_e {
   grid-area: e;
   background-color: #A9A9BC;
+  transition-delay: .2s;
 }
 
 .grid-une__item_f {
   grid-area: f;
   background-color: #F9C2A2;
+  transition-delay: .4s;
 }
 
 .grid-une__item_g {
   grid-area: g;
   background-color: #FCDEBE;
+  transition-delay: .6s;
 }
 
 .grid-une__item_h {
   grid-area: h;
   background-color: #E2EFDE;
+  transition-delay: 1s;
 }
 
 .grid-une__item_i {
   grid-area: i;
   background-color: #D3AB9E;
+  transition-delay: 1.6s;
 }
 
 /* ============== R E S P O N S I V E
