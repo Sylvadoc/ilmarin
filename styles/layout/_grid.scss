@@ -263,7 +263,7 @@ body {
 /* ============== R E S P O N S I V E
 ========================================================== */
 
-@include media('<=small-plus-screen') {
+@include media('<=medium-plus-screen') {
 	.m-page {
 		padding-top: 50px;
 	}

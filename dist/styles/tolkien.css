@@ -897,7 +897,7 @@ body {
 
 /* ============== R E S P O N S I V E
 ========================================================== */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .m-page {
     padding-top: 50px;
   }
@@ -973,14 +973,21 @@ body {
 .the-header {
   transition: height .3s;
   position: relative;
+  margin-bottom: 1em;
   /* ====== LOGO
 	======================================= */
   /* ====== MENU HEADER SIMPLE
 	======================================= */
 }
 
+@media (min-width: 1025px) {
+  .the-header {
+    -webkit-clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+            clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+  }
+}
+
 .the-header .inner-wrap {
-  background: transparent url("../../images/bg-grad.png") no-repeat bottom center;
   height: 190px;
   overflow: hidden;
 }

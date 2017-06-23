@@ -17,22 +17,36 @@
         grid-row-gap: 0;
         height: 900px;
     }
-    @include media('>=small-plus-screen','<large-plus-screen') {
+    @include media('>=small-plus-screen','<=medium-screen') {
+        grid-template-areas: "a b c"
+                             "d d c"
+                             "e f g"
+                             "h f i";
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(4, 150px);
+        grid-column-gap: 1%;
+        grid-row-gap: 1.5%;
+        height: 620px;
+    }
+    @include media('>medium-screen','<large-plus-screen') {
         grid-template-areas: "a a b b"
                              "c d d e"
                              "c d d e"
                              "f g h i";
-        grid-template-columns: repeat(4, 25%);
-        grid-column-gap: 0;
-        grid-row-gap: 0;
-        height: 66vh;
+        grid-template-columns: repeat(4, 24.2%);
+        grid-template-rows: repeat(4, 150px);
+        grid-column-gap: 1%;
+        grid-row-gap: 2%;
+        height: 650px;
     }
     @include media('>=large-plus-screen') {
         height: 70vh;
         grid-column-gap: 1%;
         grid-row-gap: 3%;
         grid-template-columns: repeat(5, 19.2%);
-        grid-template-areas: "a a b c d" "e f b c d" "e g b h i";
+        grid-template-areas: "a a b c c"
+                             "e f b d d"
+                             "e g h h i";
     }
 }
 .grid-une__item_a {

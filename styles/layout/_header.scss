@@ -75,10 +75,14 @@
 	transition: height .3s;
 	@extend %clearfix;
 	position: relative;
+    margin-bottom: 1em;
+    @include media('>medium-plus-screen') {
+        clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+    }
 	.inner-wrap {
-		background: transparent url('../../images/bg-grad.png') no-repeat bottom center;
 		height: 190px;
 		overflow: hidden;
+
 	}
 	/* ====== LOGO
 	======================================= */
